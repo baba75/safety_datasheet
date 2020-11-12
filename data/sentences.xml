@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- First Aid general advice -->
+        <record id="sentence_general_1" model="sds.sentences">
+            <field name="name">First Aid responders should pay attention to self-protection and use the recommended protective clothing (chemical resistant gloves, splash protection).</field>
+            <field name="category">general</field>
+        </record>
+        <record id="sentence_general_2" model="sds.sentences">
+            <field name="name">If potential for exposure exists refer to Section 8 for specific personal protective equipment.</field>
+            <field name="category">general</field>
+        </record>
+        <record id="sentence_general_3" model="sds.sentences">
+            <field name="name">Under ordinary workplace conditions: No special measures required.</field>
+            <field name="category">general</field>
+        </record>
+
+        <!-- First Aid Inhalation -->
+        <record id="sentence_inhalation_1" model="sds.sentences">
+            <field name="name">Move person to fresh air.</field>
+            <field name="category">inhalation</field>
+        </record>
+        <record id="sentence_inhalation_2" model="sds.sentences">
+            <field name="name">If effects occur, consult a physician.</field>
+            <field name="category">inhalation</field>
+        </record>
+        <record id="sentence_inhalation_3" model="sds.sentences">
+            <field name="name">Consult a physician immediately.</field>
+            <field name="category">inhalation</field>
+        </record>
+        <record id="sentence_inhalation_4" model="sds.sentences">
+            <field name="name">If breathing stops, give artificial respiration.</field>
+            <field name="category">inhalation</field>
+        </record>
+        <record id="sentence_inhalation_5" model="sds.sentences">
+            <field name="name">Adopt adequate precautions for the rescuer.</field>
+            <field name="category">inhalation</field>
+        </record>
+        <record id="sentence_inhalation_6" model="sds.sentences">
+            <field name="name">No special measures required.</field>
+            <field name="category">inhalation</field>
+        </record>
+
+        <!-- First Aid Skin Contect -->
+        <record id="sentence_skin_1_b" model="sds.sentences">
+            <field name="name">Wash with plenty of water or water and soap.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_1" model="sds.sentences">
+            <field name="name">Take off contaminated clothing.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_2" model="sds.sentences">
+            <field name="name">Immediately flush skin with plenty of water for at least 15 minutes while removing contaminated clothing.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_3" model="sds.sentences">
+            <field name="name">Take a shower immediately.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_4" model="sds.sentences">
+            <field name="name">Seek medical attention if symptoms occur or irritation persists.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_5" model="sds.sentences">
+            <field name="name">Consult a physician immediately.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_6" model="sds.sentences">
+            <field name="name">Wash clothing before reuse.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_7" model="sds.sentences">
+            <field name="name">Suitable emergency safety shower facility should be immediately available.</field>
+            <field name="category">skin</field>
+        </record>
+
+        <!-- First Aid Eye Contact -->
+        <record id="sentence_eye_1_a" model="sds.sentences">
+            <field name="name">Rinse immediately with plenty of water.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_1" model="sds.sentences">
+            <field name="name">Wash eyes immediately and continuously with water for 30 minutes.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_2" model="sds.sentences">
+            <field name="name">Remove contact lenses after the first 5 minutes and continue washing.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_2_bis" model="sds.sentences">
+            <field name="name">Remove contact lenses, if present and easy to do.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_3" model="sds.sentences">
+            <field name="name">Seek medical attention immediately, preferably from an ophthalmologist.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_3_b" model="sds.sentences">
+            <field name="name">Seek medical advice in case of continuous irritation.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_4" model="sds.sentences">
+            <field name="name">Wash eyes en route if possible.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_5" model="sds.sentences">
+            <field name="name">Suitable emergency eye wash facility should be immediately available.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_6" model="sds.sentences">
+            <field name="name">Consult a physician immediately.</field>
+            <field name="category">eye</field>
+        </record>
+
+        <!-- First Aid Ingestion -->
+        <record id="sentence_ingestion_1" model="sds.sentences">
+            <field name="name">Do not induce vomiting.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_2" model="sds.sentences">
+            <field name="name">Give one cup (8 ounces or 240 ml) of water or milk if available and transport to a medical facility.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_3" model="sds.sentences">
+            <field name="name">Give as much water to drink as possible.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_4" model="sds.sentences">
+            <field name="name">Do not give anything by mouth unless the person is fully conscious.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_5" model="sds.sentences">
+            <field name="name">If effects occur, consult a physician.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_6" model="sds.sentences">
+            <field name="name">Consult a physician immediately.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_7" model="sds.sentences">
+            <field name="name">Rinse mouth with water.</field>
+            <field name="category">ingestion</field>
+        </record>
+
+        <!-- Suitable extinguishing media -->
+        <record id="sentence_extinguishing_1" model="sds.sentences">
+            <field name="name">Water spray.</field>
+            <field name="category">extinguishing</field>
+        </record>
+        <record id="sentence_extinguishing_2" model="sds.sentences">
+            <field name="name">Alcohol-resistant foam.</field>
+            <field name="category">extinguishing</field>
+        </record>
+        <record id="sentence_extinguishing_3" model="sds.sentences">
+            <field name="name">Carbon dioxide (CO2).</field>
+            <field name="category">extinguishing</field>
+        </record>
+        <record id="sentence_extinguishing_4" model="sds.sentences">
+            <field name="name">Dry chemical.</field>
+            <field name="category">extinguishing</field>
+        </record>
+        <record id="sentence_extinguishing_5" model="sds.sentences">
+            <field name="name">None known.</field>
+            <field name="category">extinguishing</field>
+        </record>
+        <record id="sentence_extinguishing_6" model="sds.sentences">
+            <field name="name">Not applicable.</field>
+            <field name="category">extinguishing</field>
+        </record>
+
+        <record id="sentence_fire_hazards_1" model="sds.sentences">
+            <field name="name">Produces Carbon oxides.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_2" model="sds.sentences">
+            <field name="name">Produces Silicon oxides.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_3" model="sds.sentences">
+            <field name="name">Produces at low oxygen level: acetic acid.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_4" model="sds.sentences">
+            <field name="name">Exposure to combustion products may be a hazard to health.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_5" model="sds.sentences">
+            <field name="name">Over pressure can be created in containers exposed to fire with danger of explosion.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_6" model="sds.sentences">
+            <field name="name">Avoid breathing combustion products.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+
+        <record id="sentence_fire_fight_1" model="sds.sentences">
+            <field name="name">Fire residues and contaminated fire extinguishing water must be disposed of in accordance with local regulations.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_2" model="sds.sentences">
+            <field name="name">Use extinguishing measures that are appropriate to local circumstances and the surrounding environment.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_3" model="sds.sentences">
+            <field name="name">Use water spray to cool unopened containers.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_4" model="sds.sentences">
+            <field name="name">Collect contaminated fire extinguishing water separately.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_5" model="sds.sentences">
+            <field name="name">This must not be discharged into drains.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_6" model="sds.sentences">
+            <field name="name">Remove undamaged containers from fire area if it is safe to do so.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_7" model="sds.sentences">
+            <field name="name">Evacuate area.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_8" model="sds.sentences">
+            <field name="name">Product does not burn.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_9" model="sds.sentences">
+            <field name="name">Dried up material is combustible.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_protect_1" model="sds.sentences">
+            <field name="name">In the event of fire, wear self-contained breathing apparatus.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_protect_2" model="sds.sentences">
+            <field name="name">Use personal protective equipment.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+
+        <record id="sentence_protective_1" model="sds.sentences">
+            <field name="name">Use personal protective equipment.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_2" model="sds.sentences">
+            <field name="name">Follow safe handling advice and personal protective equipment recommendations.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_3" model="sds.sentences">
+            <field name="name">Stop the leak if the operation is safe.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_4" model="sds.sentences">
+            <field name="name">Keep people not involved in emergency intervention away from the area affected by the spreading.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_5" model="sds.sentences">
+            <field name="name">Whenever possible, operate upwind.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_6" model="sds.sentences">
+            <field name="name">Provide adequate ventilation of the premises affected by the spreading.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_7" model="sds.sentences">
+            <field name="name">It may be effective to slowly dilute the spread substance with water</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_8" model="sds.sentences">
+            <field name="name">If material is released indicate risk of slipping.</field>
+            <field name="category">protective</field>
+        </record>
+
+        <record id="sentence_env_precaution_1" model="sds.sentences">
+            <field name="name">Discharge into the environment must be avoided.</field>
+            <field name="category">env_precaution</field>
+        </record>
+        <record id="sentence_env_precaution_1_bis" model="sds.sentences">
+            <field name="name">Prevent the product from entering sewers, surface water, groundwater.</field>
+            <field name="category">env_precaution</field>
+        </record>
+        <record id="sentence_env_precaution_2" model="sds.sentences">
+            <field name="name">Prevent further leakage or spillage if safe to do so.</field>
+            <field name="category">env_precaution</field>
+        </record>
+        <record id="sentence_env_precaution_3" model="sds.sentences">
+            <field name="name">Prevent spreading over a wide area (e.g. by containment or oil barriers).</field>
+            <field name="category">env_precaution</field>
+        </record>
+        <record id="sentence_env_precaution_4" model="sds.sentences">
+            <field name="name">Retain and dispose of contaminated wash water.</field>
+            <field name="category">env_precaution</field>
+        </record>
+        <record id="sentence_env_precaution_5" model="sds.sentences">
+            <field name="name">Local authorities should be advised if significant spillages cannot be contained.</field>
+            <field name="category">env_precaution</field>
+        </record>
+
+        <record id="sentence_containment_1" model="sds.sentences">
+            <field name="name">Soak up with inert absorbent material.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_2" model="sds.sentences">
+            <field name="name">Suck up the leaked product into a suitable container.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_3" model="sds.sentences">
+            <field name="name">Clean up remaining materials from spill with suitable absorbant.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_4" model="sds.sentences">
+            <field name="name">Provide sufficient ventilation of the place affected by the leak</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_5" model="sds.sentences">
+            <field name="name">Local or national regulations may apply to releases and disposal of this material, as well as those materials and items employed in the cleanup of releases.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_6" model="sds.sentences">
+            <field name="name">You will need to determine which regulations are applicable.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_7" model="sds.sentences">
+            <field name="name">For large spills, provide dyking or other appropriate containment to keep material from spreading.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_8" model="sds.sentences">
+            <field name="name">If dyked material can be pumped.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_9" model="sds.sentences">
+            <field name="name">Sections 13 and 15 of this SDS provide information regarding certain local or national requirements.</field>
+            <field name="category">containment</field>
+        </record>
+
+        <record id="sentence_handling_1" model="sds.sentences">
+            <field name="name">Do not get on skin or clothing.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_2" model="sds.sentences">
+            <field name="name">Do not breathe vapours or spray mist.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_3" model="sds.sentences">
+            <field name="name">Do not swallow.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_4" model="sds.sentences">
+            <field name="name">Do not get in eyes.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_5" model="sds.sentences">
+            <field name="name">Keep container tightly closed.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_6" model="sds.sentences">
+            <field name="name">Take care to prevent spills, waste and minimize release to the environment.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_7" model="sds.sentences">
+            <field name="name">Handle in accordance with good industrial hygiene and safety practice.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_8" model="sds.sentences">
+            <field name="name">Use with local exhaust ventilation.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_9" model="sds.sentences">
+            <field name="name">See Engineering measures under EXPOSURE CONTROLS/PERSONAL PROTECTION section.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_10" model="sds.sentences">
+            <field name="name">Do not eat, drink or smoke during use.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_11" model="sds.sentences">
+            <field name="name">Remove contaminated clothing and protective equipment before entering eating areas.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_12" model="sds.sentences">
+            <field name="name">No special protective measures required.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_13" model="sds.sentences">
+            <field name="name">Spilled substance increases risk of slipping.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_14" model="sds.sentences">
+            <field name="name">No special precautions against fire and explosion required.</field>
+            <field name="category">handling</field>
+        </record>
+
+        <record id="sentence_storage_1" model="sds.sentences">
+            <field name="name">Keep in properly labelled containers.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_2" model="sds.sentences">
+            <field name="name">Keep only in the original container.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_3" model="sds.sentences">
+            <field name="name">Keep the containers closed, in a well-ventilated place, away from direct sunlight.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_4" model="sds.sentences">
+            <field name="name">Store locked up.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_5" model="sds.sentences">
+            <field name="name">Keep tightly closed.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_6" model="sds.sentences">
+            <field name="name">Store in accordance with the particular national regulations.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_7" model="sds.sentences">
+            <field name="name">Protect against frost.</field>
+            <field name="category">storage</field>
+        </record>
+
+        <record id="sentence_store_products_1" model="sds.sentences">
+            <field name="name">Strong oxidizing agents.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_2" model="sds.sentences">
+            <field name="name">Organic peroxides.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_3" model="sds.sentences">
+            <field name="name">Explosives.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_4" model="sds.sentences">
+            <field name="name">None known.</field>
+            <field name="category">store_products</field>
+        </record>
+
+        <record id="engineer_control_1" model="sds.sentences">
+            <field name="name">Use engineering controls to maintain airborne level below exposure limit requirements or guidelines.</field>
+            <field name="category">engineer_control</field>
+        </record>
+        <record id="engineer_control_2" model="sds.sentences">
+            <field name="name">If there are no applicable exposure limit requirements or guidelines, use only with adequate ventilation.</field>
+            <field name="category">engineer_control</field>
+        </record>
+        <record id="engineer_control_3" model="sds.sentences">
+            <field name="name">Local exhaust ventilation may be necessary for some operations.</field>
+            <field name="category">engineer_control</field>
+        </record>
+        <record id="engineer_control_4" model="sds.sentences">
+            <field name="name">No special measures required.</field>
+            <field name="category">engineer_control</field>
+        </record>
+
+        <record id="eye_protection_1" model="sds.sentences">
+            <field name="name">Use protective goggles.</field>
+            <field name="category">eye_protection</field>
+        </record>
+        <record id="eye_protection_2" model="sds.sentences">
+            <field name="name">Use chemical goggles.</field>
+            <field name="category">eye_protection</field>
+        </record>
+        <record id="eye_protection_3" model="sds.sentences">
+            <field name="name">Chemical goggles should be consistent with EN 166 or equivalent.</field>
+            <field name="category">eye_protection</field>
+        </record>
+        <record id="eye_protection_4" model="sds.sentences">
+            <field name="name">It is recommended to wear airtight protective goggles.</field>
+            <field name="category">eye_protection</field>
+        </record>
+
+
+        <record id="skin_protection_1" model="sds.sentences">
+            <field name="name">Use chemical resistant gloves classified under Standard EN374: Protective gloves against dangerous chemicals and micro-organisms.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_2" model="sds.sentences">
+            <field name="name">Examples of preferred glove barrier materials include: Butyl rubber. Neoprene. Nitrile/butadiene rubber ("nitrile" or "NBR"). Ethyl vinyl alcohol laminate ("EVAL"). Polyvinyl chloride ("PVC" or "vinyl"). Viton.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_2_b" model="sds.sentences">
+            <field name="name">Examples of preferred glove barrier materials include: Butyl rubber, Neoprene, NBR, PVC.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_3" model="sds.sentences">
+            <field name="name">Examples of acceptable glove barrier materials include: Natural rubber ("latex").</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_4" model="sds.sentences">
+            <field name="name">Avoid gloves made of: Polyvinyl alcohol ("PVA").</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_5" model="sds.sentences">
+            <field name="name">When prolonged or frequently repeated contact may occur, a glove with a protection class of 6 (breakthrough time greater than 480 minutes according to EN 374) is recommended.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_6" model="sds.sentences">
+            <field name="name">When only brief contact is expected, a glove with a protection class of 3 or higher (breakthrough time greater than 60 minutes according to EN 374) is recommended.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_7" model="sds.sentences">
+            <field name="name">Glove thickness alone is not a good indicator of the level of protection a glove provides against a chemical substance as this level of protection is also highly dependent on the specific composition of the material that the glove is fabricated from.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_8" model="sds.sentences">
+            <field name="name">The thickness of the glove must, depending on model and type of material, generally be more than 0.35 mm to offer sufficient protection for prolonged and frequent contact with the substance.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_9" model="sds.sentences">
+            <field name="name">As an exception to this general rule it is known that multilayer laminate gloves may offer prolonged protection at thicknesses less than 0.35 mm.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_10" model="sds.sentences">
+            <field name="name">Other glove materials with a thickness of less than 0.35 mm may offer sufficient protection when only brief contact is expected.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_11" model="sds.sentences">
+            <field name="name">Use protective clothing chemically resistant to this material.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_11_bis" model="sds.sentences">
+            <field name="name">Wear professional long-sleeved work clothes and safety footwear (category S2 or superior).</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_12" model="sds.sentences">
+            <field name="name">Selection of specific items such as face shield, boots, apron, or full body suit will depend on the task.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_13" model="sds.sentences">
+            <field name="name">Use of protective gloves is recommended when handling the material.</field>
+            <field name="category">skin_protection</field>
+        </record>
+        <record id="skin_protection_14" model="sds.sentences">
+            <field name="name">No specific indication.</field>
+            <field name="category">skin_protection</field>
+        </record>
+
+        <record id="respiratory_1" model="sds.sentences">
+            <field name="name">Respiratory protection should be worn when there is a potential to exceed the exposure limit requirements or guidelines.</field>
+            <field name="category">respiratory</field>
+        </record>
+        <record id="respiratory_2" model="sds.sentences">
+            <field name="name">If there are no applicable exposure limit requirements or guidelines, wear respiratory protection when adverse effects, such as respiratory irritation or discomfort have been experienced, or where indicated by your risk assessment process.</field>
+            <field name="category">respiratory</field>
+        </record>
+        <record id="respiratory_3" model="sds.sentences">
+            <field name="name">Use the following CE approved air-purifying respirator: Particulate filter, type P2 (meeting standard EN 143).</field>
+            <field name="category">respiratory</field>
+        </record>
+        <record id="respiratory_4" model="sds.sentences">
+            <field name="name">Wear a protective mask during spray application.</field>
+            <field name="category">respiratory</field>
+        </record>
+        <record id="respiratory_5" model="sds.sentences">
+            <field name="name">No specific indication.</field>
+            <field name="category">respiratory</field>
+        </record>
+        <record id="respiratory_6" model="sds.sentences">
+            <field name="name">Do not allow aerosol.</field>
+            <field name="category">respiratory</field>
+        </record>
+
+        <record id="env_exposure_1" model="sds.sentences">
+            <field name="name">See SECTION 7: Handling and storage and SECTION 13: Disposal considerations for measures to prevent excessive environmental exposure during use and waste disposal.</field>
+            <field name="category">env_exposure</field>
+        </record>
+
+        <record id="thermal_1" model="sds.sentences">
+            <field name="name">Not Available.</field>
+            <field name="category">thermal</field>
+        </record>
+
+        <record id="reactivity_1" model="sds.sentences">
+            <field name="name">Not classified as a reactivity hazard.</field>
+            <field name="category">reactivity</field>
+        </record>
+
+        <record id="stability_1" model="sds.sentences">
+            <field name="name">Stable under normal conditions.</field>
+            <field name="category">stability</field>
+        </record>
+
+        <record id="haz_reaction_1" model="sds.sentences">
+            <field name="name">Can react with strong oxidizing agents.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_2" model="sds.sentences">
+            <field name="name">In normal conditions of use and storage no dangerous reactions are foreseeable.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_3" model="sds.sentences">
+            <field name="name">The product can react with acids.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_4" model="sds.sentences">
+            <field name="name">It can react with aluminum, zinc, tin and their alloys to produce hydrogen.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+
+        <record id="avoid_condition_1" model="sds.sentences">
+            <field name="name">None known.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+
+        <record id="incompatible_1" model="sds.sentences">
+            <field name="name">Acids.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_2" model="sds.sentences">
+            <field name="name">Oxidizing agents.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_3" model="sds.sentences">
+            <field name="name">None known.</field>
+            <field name="category">incompatible</field>
+        </record>
+
+        <record id="decomposition_1" model="sds.sentences">
+            <field name="name">Formaldehyde.</field>
+            <field name="category">decomposition</field>
+        </record>
+        <record id="decomposition_2" model="sds.sentences">
+            <field name="name">No one in particular.</field>
+            <field name="category">decomposition</field>
+        </record>
+        <record id="decomposition_3" model="sds.sentences">
+            <field name="name">At elevated temperature: acetic acid.</field>
+            <field name="category">decomposition</field>
+        </record>
+
+
+        <record id="toxicity_3" model="sds.sentences">
+            <field name="name">Very low toxicity if swallowed.</field>
+            <field name="category">toxicity</field>
+        </record>
+        <record id="toxicity_6" model="sds.sentences">
+            <field name="name">Prolonged skin contact is unlikely to result in absorption of harmful amounts.</field>
+            <field name="category">toxicity</field>
+        </record>
+        <record id="toxicity_10" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">toxicity</field>
+        </record>
+
+        <record id="skin_corrosion_1" model="sds.sentences">
+            <field name="name">Due to the pH of the material, it is assumed that exposure will cause skin burns.</field>
+            <field name="category">skin_corrosion</field>
+        </record>
+        <record id="skin_corrosion_2" model="sds.sentences">
+            <field name="name">Based on the available data a clinically relevant skin irritation hazard is not expected.</field>
+            <field name="category">skin_corrosion</field>
+        </record>
+        <record id="skin_corrosion_3" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">skin_corrosion</field>
+        </record>
+
+        <record id="eye_damage_1" model="sds.sentences">
+            <field name="name">Due to the pH of the material, it is assumed that exposure may cause severe irritation with corneal injury which may result in permanent impairment of vision, even blindness.</field>
+            <field name="category">eye_damage</field>
+        </record>
+        <record id="eye_damage_2" model="sds.sentences">
+            <field name="name">Based on the available data a clinically relevant eye irritation hazard is not expected.</field>
+            <field name="category">eye_damage</field>
+        </record>
+        <record id="eye_damage_3" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">eye_damage</field>
+        </record>
+
+        <record id="sensitization_1" model="sds.sentences">
+            <field name="name">For skin sensitization: No relevant data found.</field>
+            <field name="category">sensitization</field>
+        </record>
+        <record id="sensitization_2" model="sds.sentences">
+            <field name="name">For respiratory sensitization: No relevant data found.</field>
+            <field name="category">sensitization</field>
+        </record>
+        <record id="sensitization_3" model="sds.sentences">
+            <field name="name">Based on the available data a sensitization reaction is not expected from this product.</field>
+            <field name="category">sensitization</field>
+        </record>
+
+        <record id="mutagenicity_1" model="sds.sentences">
+            <field name="name">Based on information for component(s):</field>
+            <field name="category">mutagenicity</field>
+        </record>
+        <record id="mutagenicity_2" model="sds.sentences">
+            <field name="name">For this family of materials:</field>
+            <field name="category">mutagenicity</field>
+        </record>
+        <record id="mutagenicity_3" model="sds.sentences">
+            <field name="name">In vitro genetic toxicity studies were negative.</field>
+            <field name="category">mutagenicity</field>
+        </record>
+        <record id="mutagenicity_4" model="sds.sentences">
+            <field name="name">Animal genetic toxicity studies were negative.</field>
+            <field name="category">mutagenicity</field>
+        </record>
+        <record id="mutagenicity_5" model="sds.sentences">
+            <field name="name">Based on known data a significant mutagenic potential may be excluded.</field>
+            <field name="category">mutagenicity</field>
+        </record>
+        <record id="mutagenicity_6" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">mutagenicity</field>
+        </record>
+
+        <record id="carcinogenicity_1" model="sds.sentences">
+            <field name="name">No relevant data found.</field>
+            <field name="category">carcinogenicity</field>
+        </record>
+        <record id="carcinogenicity_2" model="sds.sentences">
+            <field name="name">For this endpoint no toxicological test data is available for the whole product.</field>
+            <field name="category">carcinogenicity</field>
+        </record>
+        <record id="carcinogenicity_3" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">carcinogenicity</field>
+        </record>
+
+        <record id="reproductive_1" model="sds.sentences">
+            <field name="name">Based on information for component(s):</field>
+            <field name="category">reproductive</field>
+        </record>
+        <record id="reproductive_2" model="sds.sentences">
+            <field name="name">For this family of materials:</field>
+            <field name="category">reproductive</field>
+        </record>
+        <record id="reproductive_3" model="sds.sentences">
+            <field name="name">In animal studies, did not interfere with reproduction.</field>
+            <field name="category">reproductive</field>
+        </record>
+        <record id="reproductive_4" model="sds.sentences">
+            <field name="name">For this endpoint no toxicological test data is available for the whole product.</field>
+            <field name="category">reproductive</field>
+        </record>
+        <record id="reproductive_5" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">reproductive</field>
+        </record>
+
+        <record id="STOST_1" model="sds.sentences">
+            <field name="name">Material is corrosive.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_2" model="sds.sentences">
+            <field name="name">Material is not classified as a respiratory irritant; however, upper respiratory tract irritation or corrosivity may be expected.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_3" model="sds.sentences">
+            <field name="name">Based on information for component(s):</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_4" model="sds.sentences">
+            <field name="name">For this family of materials:</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_5" model="sds.sentences">
+            <field name="name">In animals, effects have been reported on the following organs:</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_6" model="sds.sentences">
+            <field name="name">Liver.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_7" model="sds.sentences">
+            <field name="name">Kidney.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_8" model="sds.sentences">
+            <field name="name">Thyroid.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_9" model="sds.sentences">
+            <field name="name">Gastrointestinal tract.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_10" model="sds.sentences">
+            <field name="name">Adrenal gland.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_11" model="sds.sentences">
+            <field name="name">For this endpoint no toxicological test data is available for the whole product.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_12" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">STOST</field>
+        </record>
+
+        <record id="aspiration_1" model="sds.sentences">
+            <field name="name">Based on physical properties, not likely to be an aspiration hazard.</field>
+            <field name="category">aspiration</field>
+        </record>
+        <record id="aspiration_2" model="sds.sentences">
+            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">aspiration</field>
+        </record>
+
+        <record id="disposal_1" model="sds.sentences">
+            <field name="name">Do not dump into any sewers, on the ground, or into any body of water.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_2" model="sds.sentences">
+            <field name="name">This product, when being disposed of in its unused and uncontaminated state should be treated as a hazardous waste according to EC Directive 2008/98/EC.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_3" model="sds.sentences">
+            <field name="name">Any disposal practices must be in compliance with all national and provincial laws and any municipal or local by-laws governing hazardous waste.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_4" model="sds.sentences">
+            <field name="name">For used, contaminated and residual materials additional evaluations may be required.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_5" model="sds.sentences">
+            <field name="name">The definitive assignment of this material to the appropriate EWC group and thus its proper EWC code will depend on the use that is made of this material.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_6" model="sds.sentences">
+            <field name="name">Contact the authorized waste disposal services.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_7" model="sds.sentences">
+            <field name="name">Containers may be recycled or re-used.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_8" model="sds.sentences">
+            <field name="name">Dispose of according to regulations by incineration in a special waste incinerator.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_9" model="sds.sentences">
+            <field name="name">Small quantities may be disposed of by incineration in an approved facility.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_10" model="sds.sentences">
+            <field name="name">Completely discharge containers (no tear drops, no powder rest, scraped carefully).</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_11" model="sds.sentences">
+            <field name="name">Recommended cleaning agent for packaging: water.</field>
+            <field name="category">disposal</field>
+        </record>
+        <record id="disposal_12" model="sds.sentences">
+            <field name="name">Product residues to be considered non-hazardous waste.</field>
+            <field name="category">disposal</field>
+        </record>
+
+        <record id="ecotoxicity_1" model="sds.sentences">
+            <field name="name">No expected damaging effects to aquatic organisms.</field>
+            <field name="category">ecotoxicity</field>
+        </record>
+        <record id="ecotoxicity_2" model="sds.sentences">
+            <field name="name">According to current knowledge adverse effects on water purification plants are not expected.</field>
+            <field name="category">ecotoxicity</field>
+        </record>
+
+        <record id="persistence_1" model="sds.sentences">
+            <field name="name">Polymer component: Not readily biodegradable.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_2" model="sds.sentences">
+            <field name="name">Elimination by adsorption to activated sludge.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_3" model="sds.sentences">
+            <field name="name">Separation by flocculation is possible.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_4" model="sds.sentences">
+            <field name="name">No information available.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_5" model="sds.sentences">
+            <field name="name">Material is readily biodegradable.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_6" model="sds.sentences">
+            <field name="name">Passes OECD test(s) for ready biodegradability.</field>
+            <field name="category">persistence</field>
+        </record>
+
+        <record id="bioaccumulative_1" model="sds.sentences">
+            <field name="name">No adverse effects expected.</field>
+            <field name="category">bioaccumulative</field>
+        </record>
+
+        <record id="mobility_1" model="sds.sentences">
+            <field name="name">No adverse effects expected.</field>
+            <field name="category">mobility</field>
+        </record>
+
+        <record id="pbtvpvb_1" model="sds.sentences">
+            <field name="name">No data available.</field>
+            <field name="category">pbtvpvb</field>
+        </record>
+
+        <record id="endocrine_1" model="sds.sentences">
+            <field name="name">None known.</field>
+            <field name="category">endocrine</field>
+        </record>
+
+        <record id="adverse_1" model="sds.sentences">
+            <field name="name">According to present knowledge no adverse influence to environment expected.</field>
+            <field name="category">adverse</field>
+        </record>
+
+
+    </data>
+</odoo>

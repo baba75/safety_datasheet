@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="P101" model="sds.precautionary.statement">
+            <field name="name">P101</field>
+            <field name="description">If medical advice is needed, have product container or label at hand.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P102" model="sds.precautionary.statement">
+            <field name="name">P102</field>
+            <field name="description">Keep out of reach of children.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P103" model="sds.precautionary.statement">
+            <field name="name">P103</field>
+            <field name="description">Read label before use.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P201" model="sds.precautionary.statement">
+            <field name="name">P201</field>
+            <field name="description">Obtain special instructions before use.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P202" model="sds.precautionary.statement">
+            <field name="name">P202</field>
+            <field name="description">Do not handle until all safety precautions have been read and understood.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P210" model="sds.precautionary.statement">
+            <field name="name">P210</field>
+            <field name="description">Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P211" model="sds.precautionary.statement">
+            <field name="name">P211</field>
+            <field name="description">Do not spray on an open flame or other ignition source.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P220" model="sds.precautionary.statement">
+            <field name="name">P220</field>
+            <field name="description">Keep/Store away from clothing/…/combustible materials.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P221" model="sds.precautionary.statement">
+            <field name="name">P221</field>
+            <field name="description">Take any precaution to avoid mixing with combustibles…</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P222" model="sds.precautionary.statement">
+            <field name="name">P222</field>
+            <field name="description">Do not allow contact with air.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P223" model="sds.precautionary.statement">
+            <field name="name">P223</field>
+            <field name="description">Do not allow contact with water.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P230" model="sds.precautionary.statement">
+            <field name="name">P230</field>
+            <field name="description">Keep wetted with…</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P231" model="sds.precautionary.statement">
+            <field name="name">P231</field>
+            <field name="description">Handle under inert gas.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P232" model="sds.precautionary.statement">
+            <field name="name">P232</field>
+            <field name="description">Protect from moisture.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P233" model="sds.precautionary.statement">
+            <field name="name">P233</field>
+            <field name="description">Keep container tightly closed.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P234" model="sds.precautionary.statement">
+            <field name="name">P234</field>
+            <field name="description">Keep only in original container.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P235" model="sds.precautionary.statement">
+            <field name="name">P235</field>
+            <field name="description">Keep cool.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P240" model="sds.precautionary.statement">
+            <field name="name">P240</field>
+            <field name="description">Ground/bond container and receiving equipment.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P241" model="sds.precautionary.statement">
+            <field name="name">P241</field>
+            <field name="description">Use explosion-proof electrical/ventilating/lighting/.../ equipment.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P242" model="sds.precautionary.statement">
+            <field name="name">P242</field>
+            <field name="description">Use only non-sparking tools.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P243" model="sds.precautionary.statement">
+            <field name="name">P243</field>
+            <field name="description">Take precautionary measures against static discharge.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P244" model="sds.precautionary.statement">
+            <field name="name">P244</field>
+            <field name="description">Keep valves and fittings free from oil and grease.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P250" model="sds.precautionary.statement">
+            <field name="name">P250</field>
+            <field name="description">Do not subject to grinding/shock/.../friction.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P251" model="sds.precautionary.statement">
+            <field name="name">P251</field>
+            <field name="description">Do not pierce or burn, even after use.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P260" model="sds.precautionary.statement">
+            <field name="name">P260</field>
+            <field name="description">Do not breathe dust/fume/gas/mist/vapours/ spray.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P261" model="sds.precautionary.statement">
+            <field name="name">P261</field>
+            <field name="description">Avoid breathing dust/fume/gas/mist/vapours/ spray.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P262" model="sds.precautionary.statement">
+            <field name="name">P262</field>
+            <field name="description">Do not get in eyes, on skin, or on clothing.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P263" model="sds.precautionary.statement">
+            <field name="name">P263</field>
+            <field name="description">Avoid contact during pregnancy/while nursing.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P264" model="sds.precautionary.statement">
+            <field name="name">P264</field>
+            <field name="description">Wash ... thoroughly after handling.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P270" model="sds.precautionary.statement">
+            <field name="name">P270</field>
+            <field name="description">Do not eat, drink or smoke when using this product.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P271" model="sds.precautionary.statement">
+            <field name="name">P271</field>
+            <field name="description">Use only outdoors or in a well-ventilated area.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P272" model="sds.precautionary.statement">
+            <field name="name">P272</field>
+            <field name="description">Contaminated work clothing should not be allowed out of the workplace.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P273" model="sds.precautionary.statement">
+            <field name="name">P273</field>
+            <field name="description">Avoid release to the environment.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P280" model="sds.precautionary.statement">
+            <field name="name">P280</field>
+            <field name="description">Wear protective gloves/protective clothing/eye protection/face protection.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P282" model="sds.precautionary.statement">
+            <field name="name">P282</field>
+            <field name="description">Wear cold insulating gloves/face shield/eye protection.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P283" model="sds.precautionary.statement">
+            <field name="name">P283</field>
+            <field name="description">Wear fire/flame resistant/retardant clothing.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P284" model="sds.precautionary.statement">
+            <field name="name">P284</field>
+            <field name="description">[In case of inadequate ventilation] wear respiratory protection.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P231_P232" model="sds.precautionary.statement">
+            <field name="name">P231 + P232</field>
+            <field name="description">Handle under inert gas. Protect from moisture.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P235_P410" model="sds.precautionary.statement">
+            <field name="name">P235 + P410</field>
+            <field name="description">Keep cool. Protect from sunlight.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P301" model="sds.precautionary.statement">
+            <field name="name">P301</field>
+            <field name="description">IF SWALLOWED:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P302" model="sds.precautionary.statement">
+            <field name="name">P302</field>
+            <field name="description">IF ON SKIN:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P303" model="sds.precautionary.statement">
+            <field name="name">P303</field>
+            <field name="description">IF ON SKIN (or hair):</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P304" model="sds.precautionary.statement">
+            <field name="name">P304</field>
+            <field name="description">IF INHALED:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P305" model="sds.precautionary.statement">
+            <field name="name">P305</field>
+            <field name="description">IF IN EYES:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P306" model="sds.precautionary.statement">
+            <field name="name">P306</field>
+            <field name="description">IF ON CLOTHING:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P308" model="sds.precautionary.statement">
+            <field name="name">P308</field>
+            <field name="description">IF exposed or concerned:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P310" model="sds.precautionary.statement">
+            <field name="name">P310</field>
+            <field name="description">Immediately call a POISON CENTER/doctor/ ...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P311" model="sds.precautionary.statement">
+            <field name="name">P311</field>
+            <field name="description">Call a POISON CENTER/doctor/ ...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P312" model="sds.precautionary.statement">
+            <field name="name">P312</field>
+            <field name="description">Call a POISON CENTER/doctor/.../if you feel unwell.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P313" model="sds.precautionary.statement">
+            <field name="name">P313</field>
+            <field name="description">Get medical advice/attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P314" model="sds.precautionary.statement">
+            <field name="name">P314</field>
+            <field name="description">Get medical advice/attention if you feel unwell.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P315" model="sds.precautionary.statement">
+            <field name="name">P315</field>
+            <field name="description">Get immediate medical advice/attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P320" model="sds.precautionary.statement">
+            <field name="name">P320</field>
+            <field name="description">Specific treatment is urgent (see ... on this label).</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P321" model="sds.precautionary.statement">
+            <field name="name">P321</field>
+            <field name="description">Specific treatment (see ... on this label).</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P330" model="sds.precautionary.statement">
+            <field name="name">P330</field>
+            <field name="description">Rinse mouth.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P331" model="sds.precautionary.statement">
+            <field name="name">P331</field>
+            <field name="description">Do NOT induce vomiting.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P332" model="sds.precautionary.statement">
+            <field name="name">P332</field>
+            <field name="description">If skin irritation occurs:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P333" model="sds.precautionary.statement">
+            <field name="name">P333</field>
+            <field name="description">If skin irritation or rash occurs:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P334" model="sds.precautionary.statement">
+            <field name="name">P334</field>
+            <field name="description">Immerse in cool water/wrap in wet bandages.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P335" model="sds.precautionary.statement">
+            <field name="name">P335</field>
+            <field name="description">Brush off loose particles from skin.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P336" model="sds.precautionary.statement">
+            <field name="name">P336</field>
+            <field name="description">Thaw frosted parts with lukewarm water. Do no rub affected area.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P337" model="sds.precautionary.statement">
+            <field name="name">P337</field>
+            <field name="description">If eye irritation persists:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P338" model="sds.precautionary.statement">
+            <field name="name">P338</field>
+            <field name="description">Remove contact lenses, if present and easy to do. Continue rinsing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P340" model="sds.precautionary.statement">
+            <field name="name">P340</field>
+            <field name="description">Remove person to fresh air and keep comfortable for breathing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P342" model="sds.precautionary.statement">
+            <field name="name">P342</field>
+            <field name="description">If experiencing respiratory symptoms:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P351" model="sds.precautionary.statement">
+            <field name="name">P351</field>
+            <field name="description">Rinse cautiously with water for several minutes.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P352" model="sds.precautionary.statement">
+            <field name="name">P352</field>
+            <field name="description">Wash with plenty of water/...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P353" model="sds.precautionary.statement">
+            <field name="name">P353</field>
+            <field name="description">Rinse skin with water/shower.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P360" model="sds.precautionary.statement">
+            <field name="name">P360</field>
+            <field name="description">Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P361" model="sds.precautionary.statement">
+            <field name="name">P361</field>
+            <field name="description">Take off immediately all contaminated clothing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P362" model="sds.precautionary.statement">
+            <field name="name">P362</field>
+            <field name="description">Take off contaminated clothing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P363" model="sds.precautionary.statement">
+            <field name="name">P363</field>
+            <field name="description">Wash contaminated clothing before reuse.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P364" model="sds.precautionary.statement">
+            <field name="name">P364</field>
+            <field name="description">And wash it before reuse.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P370" model="sds.precautionary.statement">
+            <field name="name">P370</field>
+            <field name="description">In case of fire:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P371" model="sds.precautionary.statement">
+            <field name="name">P371</field>
+            <field name="description">In case of major fire and large quantities:</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P372" model="sds.precautionary.statement">
+            <field name="name">P372</field>
+            <field name="description">Explosion risk in case of fire.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P373" model="sds.precautionary.statement">
+            <field name="name">P373</field>
+            <field name="description">DO NOT fight fire when fire reaches explosives.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P374" model="sds.precautionary.statement">
+            <field name="name">P374</field>
+            <field name="description">Fight fire with normal precautions from a reasonable distance.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P375" model="sds.precautionary.statement">
+            <field name="name">P375</field>
+            <field name="description">Fight fire remotely due to the risk of explosion.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P376" model="sds.precautionary.statement">
+            <field name="name">P376</field>
+            <field name="description">Stop leak if safe to do so.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P377" model="sds.precautionary.statement">
+            <field name="name">P377</field>
+            <field name="description">Leaking gas fire: Do not extinguish, unless leak can be stopped safely.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P378" model="sds.precautionary.statement">
+            <field name="name">P378</field>
+            <field name="description">Use ... to extinguish.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P380" model="sds.precautionary.statement">
+            <field name="name">P380</field>
+            <field name="description">Evacuate area.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P381" model="sds.precautionary.statement">
+            <field name="name">P381</field>
+            <field name="description">Eliminate all ignition sources if safe to do so.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P390" model="sds.precautionary.statement">
+            <field name="name">P390</field>
+            <field name="description">Absorb spillage to prevent material damage.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P391" model="sds.precautionary.statement">
+            <field name="name">P391</field>
+            <field name="description">Collect spillage.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P301_P310" model="sds.precautionary.statement">
+            <field name="name">P301 + P310</field>
+            <field name="description">IF SWALLOWED: Immediately call a POISON CENTER/doctor/...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P301_P312" model="sds.precautionary.statement">
+            <field name="name">P301 + P312</field>
+            <field name="description">IF SWALLOWED: Call a POISON CENTER/ doctor/.../if you feel unwell.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P301_P330_P331" model="sds.precautionary.statement">
+            <field name="name">P301 + P330 + P331</field>
+            <field name="description">IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P302_P334" model="sds.precautionary.statement">
+            <field name="name">P302 + P334</field>
+            <field name="description">IF ON SKIN: Immerse in cool water/wrap in wet bandages.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P302_P352" model="sds.precautionary.statement">
+            <field name="name">P302 + P352</field>
+            <field name="description">IF ON SKIN: Wash with plenty of water/...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P303_P361_P353" model="sds.precautionary.statement">
+            <field name="name">P303 + P361 + P353</field>
+            <field name="description">IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P304_P340" model="sds.precautionary.statement">
+            <field name="name">P304 + P340</field>
+            <field name="description">IF INHALED: Remove person to fresh air and keep comfortable for breathing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P305_P351_P338" model="sds.precautionary.statement">
+            <field name="name">P305 + P351 + P338</field>
+            <field name="description">IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rinsing.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P306_P360" model="sds.precautionary.statement">
+            <field name="name">P306 + P360</field>
+            <field name="description">IF ON CLOTHING: rinse immediately contaminated clothing and skin with plenty of water before removing clothes.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P308_P311" model="sds.precautionary.statement">
+            <field name="name">P308 + P311</field>
+            <field name="description">IF exposed or concerned: Call a POISON CENTER/doctor/...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P308_P313" model="sds.precautionary.statement">
+            <field name="name">P308 + P313</field>
+            <field name="description">IF exposed or concerned: Get medical advice/attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P332_P313" model="sds.precautionary.statement">
+            <field name="name">P332 + P313</field>
+            <field name="description">If skin irritation occurs: Get medical advice/attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P333_P313" model="sds.precautionary.statement">
+            <field name="name">P333 + P313</field>
+            <field name="description">If skin irritation or rash occurs: Get medical advice/attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P335_P334" model="sds.precautionary.statement">
+            <field name="name">P335 + P334</field>
+            <field name="description">Brush off loose particles from skin. Immerse in cool water/wrap in wet bandages.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P337_P313" model="sds.precautionary.statement">
+            <field name="name">P337 + P313</field>
+            <field name="description">If eye irritation persists: Get medical advice/ attention.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P342_P311" model="sds.precautionary.statement">
+            <field name="name">P342 + P311</field>
+            <field name="description">If experiencing respiratory symptoms: Call a POISON CENTER/doctor/...</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P361_P364" model="sds.precautionary.statement">
+            <field name="name">P361 + P364</field>
+            <field name="description">Take off immediately all contaminated clothing and wash it before reuse.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P362_P364" model="sds.precautionary.statement">
+            <field name="name">P362 + P364</field>
+            <field name="description">Take off contaminated clothing and wash it before reuse.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P370_P376" model="sds.precautionary.statement">
+            <field name="name">P370 + P376</field>
+            <field name="description">In case of fire: Stop leak if safe to do so.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P370_P378" model="sds.precautionary.statement">
+            <field name="name">P370 + P378</field>
+            <field name="description">In case of fire: Use ... to extinguish.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P370_P380" model="sds.precautionary.statement">
+            <field name="name">P370 + P380</field>
+            <field name="description">In case of fire: Evacuate area.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P370_P380_P375" model="sds.precautionary.statement">
+            <field name="name">P370 + P380 + P375</field>
+            <field name="description">In case of fire: Evacuate area. Fight fire remotely due to the risk of explosion.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P371_P380_P375" model="sds.precautionary.statement">
+            <field name="name">P371 + P380 + P375</field>
+            <field name="description">In case of major fire and large quantities: Evacuate area. Fight fire remotely due to the risk of explosion.</field>
+            <field name="mode">P3</field>
+        </record>
+        <record id="P401" model="sds.precautionary.statement">
+            <field name="name">P401</field>
+            <field name="description">Store ...</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P402" model="sds.precautionary.statement">
+            <field name="name">P402</field>
+            <field name="description">Store in a dry place.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P403" model="sds.precautionary.statement">
+            <field name="name">P403</field>
+            <field name="description">Store in a well-ventilated place.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P404" model="sds.precautionary.statement">
+            <field name="name">P404</field>
+            <field name="description">Store in a closed container.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P405" model="sds.precautionary.statement">
+            <field name="name">P405</field>
+            <field name="description">Store locked up.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P406" model="sds.precautionary.statement">
+            <field name="name">P406</field>
+            <field name="description">Store in corrosive resistant/... container with a resistant inner liner.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P407" model="sds.precautionary.statement">
+            <field name="name">P407</field>
+            <field name="description">Maintain air gap between stacks/pallets.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P410" model="sds.precautionary.statement">
+            <field name="name">P410</field>
+            <field name="description">Protect from sunlight.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P411" model="sds.precautionary.statement">
+            <field name="name">P411</field>
+            <field name="description">Store at temperatures not exceeding ...°C/ ...°F.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P412" model="sds.precautionary.statement">
+            <field name="name">P412</field>
+            <field name="description">Do not expose to temperatures exceeding 50°C/ 122°F.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P413" model="sds.precautionary.statement">
+            <field name="name">P413</field>
+            <field name="description">Store bulk masses greater than ... kg/... lbs at temperatures not exceeding ...°C/...°F.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P420" model="sds.precautionary.statement">
+            <field name="name">P420</field>
+            <field name="description">Store away from other materials.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P422" model="sds.precautionary.statement">
+            <field name="name">P422</field>
+            <field name="description">Store contents under ...</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P402_P404" model="sds.precautionary.statement">
+            <field name="name">P402 + P404</field>
+            <field name="description">Store in a dry place. Store in a closed container.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P403_P233" model="sds.precautionary.statement">
+            <field name="name">P403 + P233</field>
+            <field name="description">Store in a well-ventilated place. Keep container tightly closed.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P403_P235" model="sds.precautionary.statement">
+            <field name="name">P403 + P235</field>
+            <field name="description">Store in a well-ventilated place. Keep cool.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P410_P403" model="sds.precautionary.statement">
+            <field name="name">P410 + P403</field>
+            <field name="description">Protect from sunlight. Store in a well-ventilated place.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P410_P412" model="sds.precautionary.statement">
+            <field name="name">P410 + P412</field>
+            <field name="description">Protect from sunlight. Do no expose to temperatures exceeding 50°C/ 122°F.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P411_P235" model="sds.precautionary.statement">
+            <field name="name">P411 + P235</field>
+            <field name="description">Store at temperatures not exceeding ... °C/ ... °F. Keep cool.</field>
+            <field name="mode">P4</field>
+        </record>
+        <record id="P501" model="sds.precautionary.statement">
+            <field name="name">P501</field>
+            <field name="description">Dispose of contents/container to ...</field>
+            <field name="mode">P5</field>
+        </record>
+        <record id="P502" model="sds.precautionary.statement">
+            <field name="name">P502</field>
+            <field name="description">Refer to manufacturer/supplier for information on recovery/recycling.</field>
+            <field name="mode">P5</field>
+        </record>
+
+    </data>
+</odoo>
+

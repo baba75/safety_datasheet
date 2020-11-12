@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+            id="safety_sds_report"
+            model="sds.datasheet"
+            string="Safety Datasheet"
+            report_type="qweb-pdf"
+            name="safety_datasheet.report_safety_datasheet"
+            file="safety_datasheet.report_safety_datasheet"
+            print_report_name="'SDS_%s_%s.pdf' % (object.product_id.name or '', doc_lang)"
+            menu="False"/>
+
+
+    <template id="printpdf" name="printpdf">
+        <t t-call="web.external_layout">
+            <t t-set="doc" t-value="doc.with_context(lang=doc_lang)"/>
+            <div id="container" style="font-family: sans-serif; font-size:11px;">
+                <div id="title" class="sds_title">
+                    <h1 class="sds">Safety Data Sheet</h1>
+                    <h2 class="sds">
+                        <t t-raw="doc.product_id.name"/>
+                    </h2>
+                    <!-- The date of compilation of the safety data sheet shall be given on the first page.
+                    When a safety data sheet has been revised and the new, revised version is provided
+                    to recipients, the changes shall be brought to the attention of the recipients in
+                    Section 16 of the safety data sheet, unless the changes have been indicated
+                    elsewhere. For the revised safety data sheets, the date of compilation,
+                    identified as “Revision: (date)”, shall appear on the first page, as well as one or
+                    more indications of which version is replaced, such as version number, revision number,
+                    or supersedes date. -->
+                    <div class="sds">
+                        <h4 class="sds">Revision:</h4>
+                        <div class="sds">
+                            <span t-field="doc.revision_date"
+                                  t-options="{&quot;widget&quot;: &quot;date&quot;, &quot;format&quot;: &quot;d MMMM y&quot;}"/>
+                            <br/>
+                            <t t-if="doc.supersedes_date">
+                                <span>Supersedes version:&amp;nbsp;</span>
+                                <span t-field="doc.supersedes_date"/>
+                            </t>
+                            <t t-else="">
+                                <span>First release</span>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <hr/>
+                    <h3 class="sds">SECTION 1: Identification of the substance/mixture and of the company/undertaking
+                    </h3>
+                    <div class="sds">
+                        <h4 class="sds">1.1 Product Identifier:</h4>
+                        <p class="sds" t-raw="doc.section_1_1"/>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">1.2 Relevant identified uses of the substance or mixture and uses advised
+                            against recommended use:
+                        </h4>
+                        <p class="sds" t-raw="doc.section_1_2"/>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">1.3 Detail of the supplier of the safety data sheet:</h4>
+                        <p class="sds" t-raw="doc.section_1_3"/>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">1.4 Emergency telephone number:</h4>
+                        <p class="sds" t-raw="doc.section_1_4"/>
+                    </div>
+                    <!-- the html fields always contains at least: "<p><br></p>" -->
+                    <!-- this will leave unwanted blank space at the end of each paragraph -->
+                    <!--                    <t t-if="len(doc.section_1_note) > 12">-->
+                    <t t-if="not doc.section_1_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_1_note"/>
+                    </t>
+                </div>
+                <div id="section2">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 2: Hazards identification
+                        </h3>
+                        <div class="sds">
+                            <h4 class="sds">2.1 Classification of the substance or mixture:</h4>
+                            <h5 class="sds">EC regulation criteria 1272/2008 (CLP):</h5>
+                            <t t-if="doc.section_2_1_selector">
+                                <p class="sds">Not a hazardous substance or mixture.</p>
+                            </t>
+                            <t t-else="">
+                                <div class="sds">
+                                    <t t-foreach="doc.section_2_1" t-as="line">
+                                        <p class="sds" style="margin-bottom: 0px;">
+                                            <span t-field="line.Classification"/>
+                                            ,
+                                            <span t-field="line.HazardStatement"/>
+                                        </p>
+                                    </t>
+                                </div>
+                                <p class="sds" style="margin-top: 5px;">For the full text of the H-Statements mentioned
+                                    in this Section, see Section 16.
+                                </p>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">2.2. Label elements:</h4>
+                        <t t-if="doc.section_2_2_selector">
+                            <p class="sds">No labeling according to GHS required.</p>
+                        </t>
+                        <t t-else="">
+                            <table class="sds" style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h5 class="sds" style="display: block;">Hazard pictograms</h5>
+                                            <span t-foreach="doc.section_2_2_pictograms" t-as="symbol">
+                                                <img t-if="symbol"
+                                                     t-attf-src="data:image/*;base64,{{symbol.pictogram}}"
+                                                     style="max-height: 100px; padding:20px;"/>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <h5 class="sds" style="display: block;">Signal Word</h5>
+                                            <span t-field="doc.section_2_2_signal"/>
+                                        </td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding-left: 20px;">
+                                                            <h5 class="sds">Hazard Statements:</h5>
+                                                            <div class="sds">
+                                                                <t t-foreach="doc.section_2_1" t-as="line">
+                                                                    <span class="sds"
+                                                                          t-field="line.HazardStatement.code"/>
+                                                                    -
+                                                                    <span t-field="line.HazardStatement.name"/>
+                                                                    <br/>
+                                                                </t>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-left: 20px;">
+                                                            <h5 class="sds">Precautionary Statements:</h5>
+                                                            <div class="sds">
+                                                                <t t-foreach="doc.section_2_2_P" t-as="line">
+                                                                    <span t-field="line.name"/>
+                                                                    -
+                                                                    <span t-field="line.description"/>
+                                                                    <br/>
+                                                                </t>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                    <t t-if="not doc.section_2_2_Additional =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_2_2_Additional"/>
+                    </t>
+                    <div class="sds">
+                        <h4 class="sds">2.3. Other Hazards:</h4>
+                        <p class="sds">
+                            PVT:
+                            <span t-raw="doc.section_2_3_PBT"/>
+                            <br/>
+                            vPvB:
+                            <span t-raw="doc.section_2_3_vPvB"/>
+                            <br/>
+                            Other Hazards:
+                            <span t-raw="doc.section_2_3_OtherHazards"/>
+                        </p>
+                        <t t-if="not doc.section_2_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <span class="sds" t-raw="doc.section_2_note"/>
+                        </t>
+                    </div>
+                </div>
+                <div id="section3">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 3: Composition/information on ingredients</h3>
+                        <div class="sds">
+                            <h4 class="sds">Chemical identity:</h4>
+                            <p class="sds" t-field="doc.section_3"/>
+                        </div>
+                        <div class="sds">
+                            <h4 class="sds">3.1 Substances:</h4>
+                            <span class="sds" t-raw="doc.section_3_1"/>
+                        </div>
+                    </div>
+                    <!-- the following could be very long, lets page break -->
+                    <div class="sds" style="page-break-inside: auto;">
+                        <h4 class="sds">3.2 Mixtures:</h4>
+                        <t t-if="doc.section_3_2_selector == False">
+                            <p class="sds">
+                                This mixture does not meet the criteria for classification in accordance with
+                                Regulation (EC) No 1272/2008.
+                            </p>
+                        </t>
+                        <t t-else="">
+                            <table class="sds_narrow">
+                                <thead>
+                                    <tr class="sds_narrow">
+                                        <th>CAS / EC-No.</th>
+                                        <th>REACH Registration no.</th>
+                                        <th>Component</th>
+                                        <th>Concentration</th>
+                                        <th>Classification: REGULATION (EC) No 1272/2008</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="doc.section_3_2" t-as="line">
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 0px; border: none;">
+                                                                <b>CAS no:</b>
+                                                                <span t-field="line.substance.CASno"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding: 0px; border: none;">
+                                                                <b>EC no:</b>
+                                                                <span t-field="line.substance.ECno"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.substance.REACHno"/>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 0px; border: none;">
+                                                                <span t-field="line.substance.name"/>
+                                                            </td>
+                                                        </tr>
+                                                        <t t-if="line.substance.IUPACname">
+                                                            <tr>
+                                                                <td style="padding: 0px; border: none;">
+                                                                    <b>IUPAC:</b>
+                                                                    <span t-field="line.substance.IUPACname"/>
+                                                                </td>
+                                                            </tr>
+                                                        </t>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.concentration"/>
+                                            </td>
+                                            <td>
+                                                <t t-foreach="line.substance.Classification" t-as="hazard">
+                                                    <span t-field="hazard.HazardCategories"/>
+                                                    -
+                                                    <span t-field="hazard.HazardStatement.code"/>
+                                                    <br/>
+                                                </t>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                            <p class="sds">
+                                For the full text of the H-Statements mentioned in this Section,
+                                see Section 16.
+                            </p>
+                        </t>
+                    </div>
+                    <t t-if="not doc.section_3_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_3_note"/>
+                    </t>
+                </div>
+                <div id="section4">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 4: First aid measures</h3>
+                        <div class="sds">
+                            <h4 class="sds">4.1 Description of first aid measures</h4>
+                            <t t-if="doc.section_4_1_general">
+                                <h5 class="sds">General advice:</h5>
+                                <t t-foreach="doc.section_4_1_general" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </t>
+                                <br/>
+                            </t>
+                            <h5 class="sds">Inhalation:</h5>
+                            <t t-foreach="doc.section_4_1_inhalation" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </t>
+                            <br/>
+                            <h5 class="sds">Skin contact:</h5>
+                            <t t-foreach="doc.section_4_1_skin" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </t>
+                            <br/>
+                            <h5 class="sds">Eye contact:</h5>
+                            <t t-foreach="doc.section_4_1_eye" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </t>
+                            <br/>
+                            <h5 class="sds">Ingestion:</h5>
+                            <t t-foreach="doc.section_4_1_ingestion" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">4.2 Most important symptoms and effects, both acute and delayed:</h4>
+                        <span class="sds" t-raw="doc.section_4_2"/>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">
+                            4.3 Indication of any immediate medical attention and special treatment needed:
+                        </h4>
+                        <span class="sds" t-raw="doc.section_4_3"/>
+                    </div>
+                    <t t-if="not doc.section_4_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_4_note"/>
+                    </t>
+                </div>
+                <div id="section5">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 5: Firefighting measures</h3>
+                        <div class="sds">
+                            <h4 class="sds">5.1 Extinguishing media</h4>
+                            <h5 class="sds">Suitable extinguishing media:</h5>
+                            <span t-foreach="doc.section_5_1_1" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                            <br/>
+                            <h5 class="sds">Unsuitable extinguishing media:</h5>
+                            <span t-foreach="doc.section_5_1_2" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">5.2 Special hazards arising from the substance or mixture</h4>
+                        <t t-if="doc.section_5_2">
+                            <span t-foreach="doc.section_5_2" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                                <span>&amp;nbsp;</span>
+                            </span>
+                        </t>
+                        <t t-else="">
+                            <p class="sds">None.</p>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">5.3 Advice for firefighters</h4>
+                        <span t-foreach="doc.section_5_3" t-as="line">
+                            <span class="sds" t-field="line.name"/>
+                        </span>
+                    </div>
+                    <t t-if="not doc.section_5_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_5_note"/>
+                    </t>
+                </div>
+                <div id="section6">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 6: Accidental release measures</h3>
+                        <div class="sds">
+                            <h4 class="sds">6.1 Personal precautions, protective equipment and emergency procedures:
+                            </h4>
+                            <h5 class="sds">For non-emergency personnel:</h5>
+                            <span t-foreach="doc.section_6_1_1" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                            <br/>
+                            <h5 class="sds">For emergency responders:</h5>
+                            <span t-foreach="doc.section_6_1_2" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">6.2 Environmental precautions:</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_6_2" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                                <span>&amp;nbsp;</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">6.3 Methods and materials for containment and cleaning up:</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_6_3" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">6.4 Reference to other sections:</h4>
+                        <span class="sds" t-raw="doc.section_6_4"/>
+                    </div>
+                    <t t-if="not doc.section_6_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_6_note"/>
+                    </t>
+                </div>
+                <div id="section7">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 7: Handling and storage</h3>
+                        <div class="sds">
+                            <h4 class="sds">7.1 Precautions for safe handling:</h4>
+                            <p class="sds">
+                                <span t-foreach="doc.section_7_1" t-as="line">
+                                    <span t-field="line.name"/>
+                                    <span>&amp;nbsp;</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">7.2 Conditions for safe storage, including any incompatibilities:</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_7_2_1" t-as="line">
+                                <span t-field="line.name"/>
+                                <span>&amp;nbsp;</span>
+                            </span>
+                        </p>
+                        <t t-if="doc.section_7_2_2">
+                            <h5 class="sds">Do not store with the following product types:</h5>
+                            <span t-foreach="doc.section_7_2_2" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                            <br/>
+                        </t>
+                        <t t-if="doc.section_7_2_3">
+                            <h5 class="sds">Unsuitable materials for containers:</h5>
+                            <span t-foreach="doc.section_7_2_3" t-as="line">
+                                <span>&amp;nbsp;</span>
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                            <br/>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">7.3 Specific end use(s):</h4>
+                        <span class="sds" t-raw="doc.section_7_3"/>
+                    </div>
+                    <t t-if="not doc.section_7_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_7_note"/>
+                    </t>
+                </div>
+                <div id="section8">
+                    <hr/>
+                    <div class="sds" style="page-break-inside: auto;">
+                        <h3 class="sds">SECTION 8: Exposure controls/personal protection</h3>
+                        <div class="sds" style="page-break-inside: auto;">
+                            <div class="sds">
+                                <h4 class="sds">8.1 Control parameters</h4>
+                                <t t-if="doc.section_8_1_tlv_selector == True">
+                                    <p class="sds">TLV Occupational exposure limit: Not available</p>
+                                </t>
+                                <t t-else="">
+                                    <div class="sds">
+                                        <span class="sds" t-field="doc.section_8_1_tlv"/>
+                                    </div>
+                                </t>
+                            </div>
+                            <div class="sds">
+                                <t t-if="doc.section_8_1_dnel_selector == True">
+                                    <p class="sds">DNEL Exposure limit values: Not available</p>
+                                </t>
+                                <t t-else="">
+                                    <div class="sds">
+                                        <span class="sds" t-field="doc.section_8_1_dnel"/>
+                                    </div>
+                                </t>
+                            </div>
+                            <div class="sds">
+                                <t t-if="doc.section_8_1_pnec_selector == True">
+                                    <p class="sds">PNEC Exposure limit values: Not available</p>
+                                </t>
+                                <t t-else="">
+                                    <div class="sds">
+                                        <span class="sds" t-field="doc.section_8_1_pnec"/>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">8.2. Exposure controls</h4>
+                        <h5 class="sds">Appropriate engineering controls:</h5>
+                        <t t-if="doc.section_8_2_1">
+                            <span t-foreach="doc.section_8_2_1" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </t>
+                        <t t-else="">
+                            <p class="sds">No information available.</p>
+                        </t>
+                        <br/>
+                        <h5 class="sds" style="display:block;">Individual protection measures</h5>
+                        <div class="subheader">
+                            <h6 class="sds">Eye/Face protection:</h6>
+                            <span t-foreach="doc.section_8_2_2" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </div>
+                        <div class="subheader">
+                            <h6 class="sds">Skin Protection:</h6>
+                            <span class="sds_h7">Hand Protection:</span>
+                            <span t-foreach="doc.section_8_2_3_1" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                            <span class="sds_h7">Other:</span>
+                            <span t-foreach="doc.section_8_2_3_2" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </div>
+                        <div class="subheader">
+                            <h6 class="sds">Respiratory protection:</h6>
+                            <t t-if="doc.section_8_2_4">
+                                <span t-foreach="doc.section_8_2_4" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                    <span>&amp;nbsp;</span>
+                                </span>
+                            </t>
+                            <t t-else="">
+                                <p class="sds">No specific indication.</p>
+                            </t>
+                        </div>
+                        <div class="subheader">
+                            <h6 class="sds">Thermal hazards:</h6>
+                            <t t-if="doc.section_8_2_5">
+                                <span>&amp;nbsp;</span>
+                                <span t-foreach="doc.section_8_2_5" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </t>
+                            <t t-else="">
+                                <p class="sds">No specific indication.</p>
+                            </t>
+                        </div>
+                        <h5 class="sds">Environmental exposure controls</h5>
+                        <p class="sds">
+                            <span t-foreach="doc.section_8_3" t-as="line">
+                                <span class="sds" t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <t t-if="not doc.section_8_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_8_note"/>
+                    </t>
+                </div>
+                <div id="section9">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 9: Physical and chemical properties</h3>
+                        <div class="sds">
+                            <h4 class="sds">9.1 Information on basic physical and chemical properties</h4>
+                            <div>
+                                <table class="sds_properties">
+                                    <tbody>
+                                        <t t-foreach="doc.section_9_1" t-as="line">
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    <span t-field="line.name_id"/>
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span t-field="line.value"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">9.2 Other information</h4>
+                        <t t-if="doc.section_9_2">
+                            <span class="sds" t-raw="doc.section_9_2"/>
+                        </t>
+                        <t t-else="">
+                            <p class="sds">No other information available.</p>
+                        </t>
+                    </div>
+                    <t t-if="not doc.section_9_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_9_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section10">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 10: Stability and reactivity</h3>
+                        <div class="sds">
+                            <h4 class="sds">10.1. Reactivity</h4>
+                            <p class="sds">
+                                <span t-foreach="doc.section_10_1" t-as="line">
+                                    <span t-field="line.name"/>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">10.2. Chemical stability</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_10_2" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">10.3. Possibility of hazardous reactions</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_10_3" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">10.4. Conditions to avoid</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_10_4" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">10.5. Incompatible materials</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_10_5" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">10.6. Hazardous decomposition products</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_10_6" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                    </div>
+                    <t t-if="not doc.section_10_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_10_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section11">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 11: Toxicological information</h3>
+                        <div class="sds">
+                            <h4 class="sds">11.1. Information on hazard classes as defined in Regulation (EC) No
+                                1272/2008
+                            </h4>
+                            <h5 class="sds" style="display: block;">Acute toxicity</h5>
+                            <div class="subheader">
+                                <h6 class="sds">Acute oral toxicity</h6>
+                                <span t-foreach="doc.section_11_1_1_oral" t-as="line">
+                                    <span>&amp;nbsp;</span>
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </div>
+                            <div class="subheader">
+                                <h6 class="sds">Acute dermal toxicity</h6>
+                                <span t-foreach="doc.section_11_1_1_dermal" t-as="line">
+                                    <span>&amp;nbsp;</span>
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </div>
+                            <div class="subheader">
+                                <h6 class="sds">Acute inhalation toxicity</h6>
+                                <span t-foreach="doc.section_11_1_1_inhalation" t-as="line">
+                                    <span>&amp;nbsp;</span>
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </div>
+                            <t t-if="doc.section_11_1_1_selector==True">
+                                <h6 class="sds">Toxicity details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_1_text"/>
+                            </t>
+                            <h5 class="sds">Skin corrosion/irritation</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_2" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_2_selector==True">
+                                <h6 class="sds">Skin corrosion/irritation details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_2_text"/>
+                            </t>
+                            <h5 class="sds">Serious eye damage/eye irritation</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_3" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_3_selector==True">
+                                <h6 class="sds">Serious eye damage/eye irritation details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_3_text"/>
+                            </t>
+                            <h5 class="sds">Respiratory or skin sensitization</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_4" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_4_selector==True">
+                                <h6 class="sds">Respiratory or skin sensitization details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_4_text"/>
+                            </t>
+                            <h5 class="sds">Germ cell mutagenicity</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_5" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                           <t t-if="doc.section_11_1_5_selector==True">
+                                <h6 class="sds">Germ cell mutagenicity details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_5_text"/>
+                            </t>
+                            <h5 class="sds">Carcinogenicity</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_6" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_6_selector==True">
+                                <h6 class="sds">Carcinogenicity details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_6_text"/>
+                            </t>
+                            <h5 class="sds">Reproductive toxicity</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_7" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_7_selector==True">
+                                <h6 class="sds">Reproductive details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_7_text"/>
+                            </t>
+                            <h5 class="sds">Specific Target Organ Systemic Toxicity (Single Exposure)</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_8" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                           <t t-if="doc.section_11_1_8_selector==True">
+                                <h6 class="sds">STOT SE details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_8_text"/>
+                            </t>
+                            <h5 class="sds">Specific Target Organ Systemic Toxicity (Repeated Exposure)</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_9" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_9_selector==True">
+                                <h6 class="sds">STOT RE details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_9_text"/>
+                            </t>
+                            <h5 class="sds">Aspiration Hazard</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_1_10" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="doc.section_11_1_10_selector==True">
+                                <h6 class="sds">Aspiration Hazard details:</h6>
+                                <span class="sds" t-raw="doc.section_11_1_10_text"/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">11.2 Information on other hazards</h4>
+                        <span class="sds" t-raw="doc.section_11_2"/>
+                    </div>
+                    <t t-if="not doc.section_11_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <span class="sds" t-raw="doc.section_11_note"/>
+                    </t>
+                </div>
+                <div id="section12">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 12: Ecological information</h3>
+                        <div class="sds">
+                            <h4 class="sds">12.1. Toxicity</h4>
+                            <p class="sds">
+                                <span t-foreach="doc.section_12_1" t-as="line">
+                                    <span class="sds" t-field="line.name"/>
+                                </span>
+                            </p>
+                            <t t-if="not doc.section_12_1_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                <h6 class="sds">Product details:</h6>
+                                <span class="sds" t-raw="doc.section_12_1_text"/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.2. Persistence and degradability</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_2" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_2_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_2_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.3. Bioaccumulative potential</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_3" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_3_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_3_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.4. Mobility in soil</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_4" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_4_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_4_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.5. Results of PBT and vPvB assessment</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_5" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_5_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_5_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.6. Endocrine disrupting properties</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_6" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_6_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_6_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">12.7. Other adverse effects</h4>
+                        <p class="sds">
+                            <span t-foreach="doc.section_12_7" t-as="line">
+                                <span t-field="line.name"/>
+                            </span>
+                        </p>
+                        <t t-if="not doc.section_12_7_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <h6 class="sds">Product details:</h6>
+                            <div class="sds">
+                                <span t-field="doc.section_12_7_text"/>
+                            </div>
+                        </t>
+                    </div>
+                    <t t-if="not doc.section_12_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_12_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section13">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 13: Disposal considerations</h3>
+                        <div class="sds">
+                            <h4 class="sds">13.1. Waste treatment methods</h4>
+                            <p class="sds">
+                                <span t-foreach="doc.section_13_1" t-as="line">
+                                    <span t-field="line.name"/>
+                                    <span>&amp;nbsp;</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <t t-if="not doc.section_13_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_13_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section14">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 14: Transport information</h3>
+                        <div>
+                            <table class="sds_properties">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left;">14.1. UN number or ID number</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_1"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.2. UN proper shipping name</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_2"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.3. Transport hazard class(es)</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_3"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.4. Packing group</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_4"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.5. Environmental hazards</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_5"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.6. Special precautions for user</td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_6"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">14.7. Maritime transport in bulk according to IMO
+                                            instruments
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <span t-field="doc.section_14_7"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <t t-if="not doc.section_14_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_14_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section15">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 15: Regulatory Information</h3>
+                        <div class="sds">
+                            <h4 class="sds">15.1. Safety, health and environmental regulations/legislation specific for
+                                the substance or mixture
+                            </h4>
+                            <h5 class="sds">Regulation (EC) No 1005/2009 on substances that deplete the ozone layer:
+                            </h5>
+                            <span>&amp;nbsp;</span>
+                            <span class="sds" t-raw="doc.section_15_1_ozone"/>
+                            <br/>
+                            <h5 class="sds">Regulation (EC) No 850/2004 on persistent organic pollutants:</h5>
+                            <span>&amp;nbsp;</span>
+                            <span class="sds" t-raw="doc.section_15_1_pollutants"/>
+                            <br/>
+                            <h5 class="sds">
+                                Regulation (EU) No 649/2012 concerning the export and import of hazardous chemicals:
+                            </h5>
+                            <span>&amp;nbsp;</span>
+                            <span class="sds" t-raw="doc.section_15_1_impexp"/>
+                            <br/>
+                            <h5 class="sds">Directive 2012/18/EU Of the European Parliament (Seveso III):</h5>
+                            <span>&amp;nbsp;</span>
+                            <span class="sds" t-raw="doc.section_15_1_seveso"/>
+                            <br/>
+                            <t t-if="doc.section_15_1">
+                                <h5 class="sds">Other safety, health and environmental regulations/legislation specific
+                                    for the substance or mixture:
+                                </h5>
+                                <span class="sds" t-raw="doc.section_15_1"/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="sds">
+                        <h4 class="sds">15.2. Chemical safety assessment</h4>
+                        <p class="sds" t-field="doc.section_15_2"/>
+                    </div>
+                    <t t-if="not doc.section_15_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <p class="sds">
+                            <span t-raw="doc.section_15_note"/>
+                        </p>
+                    </t>
+                </div>
+                <div id="section16">
+                    <hr/>
+                    <div class="sds">
+                        <h3 class="sds">SECTION 16: Other information</h3>
+                        <t t-if="not doc.section_16_classification_procedure=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <div class="sds">
+                                <h4 class="sds">Classification and procedure used to derive the classification for
+                                    mixtures
+                                    according to Regulation (EC) No 1272/2008
+                                </h4>
+                                <div class="sds">
+                                    <span t-raw="doc.section_16_classification_procedure"/>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <!-- Hazard statement in section 3 should certainly also include those in section 2 -->
+                        <!--
+                    <t t-if="not doc.section_2_1_selector">
+                        <table class="sds">
+                            <tbody>
+                                <t t-foreach="doc.section_2_1" t-as="line">
+                                    <tr>
+                                        <td><span t-field="line.HazardStatement.code"/></td>
+                                        <td><span t-field="line.HazardStatement.name"/></td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    -->
+                        <t t-if="doc.section_3_2_selector == True">
+                            <h4 class="sds">Full text of H-Statements referred to under sections 2 to 15.</h4>
+                            <table class="sds">
+                                <tbody>
+                                    <t t-foreach="doc.section_3_2" t-as="line">
+                                        <t t-foreach="line.substance.Classification" t-as="hazard">
+                                            <tr>
+                                                <td class="sds" style="width:100px;">
+                                                    <span t-field="hazard.HazardStatement.code"/>
+                                                </td>
+                                                <td class="sds tdpl">
+                                                    <span t-field="hazard.HazardStatement.name"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                    <div class="sds">
+                        <t t-if="doc.section_2_2_selector == False">
+                            <h4 class="sds">Full text of P-Statements referred to under sections 2 to 15.</h4>
+                            <table class="sds">
+                                <tbody>
+                                    <t t-foreach="doc.section_2_2_P" t-as="line">
+                                        <tr>
+                                            <td class="sds" style="width:100px;">
+                                                <span t-field="line.name"/>
+                                            </td>
+                                            <td class="sds tdpl">
+                                                <span t-field="line.description"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                    <div class="sds" style="page-break-inside: auto">
+                        <div class="sds">
+                        <h4 class="sds">Legend</h4>
+                        <div class="sds">
+                            <span t-raw="doc.section_16_legend"/>
+                        </div>
+                        </div>
+                        <t t-if="doc.section_3_2_selector==True">
+                            <div class="sds">
+                                <table class="sds">
+                                    <tbody>
+                                        <t t-foreach="doc.section_3_2" t-as="line">
+                                            <t t-foreach="line.substance.Classification" t-as="hazard">
+                                                <tr>
+                                                    <td class="sds" style="width:100px;">
+                                                        <span t-field="hazard.HazardCategories.name"/>
+                                                    </td>
+                                                    <td class="sds td_pl">
+                                                        <span t-field="hazard.HazardCategories.h_class"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="sds" style="page-break-inside: auto">
+                        <h4 class="sds">Bibliography:</h4>
+                        <div class="sds">
+                            <span t-raw="doc.section_16_bibliography"/>
+                        </div>
+                    </div>
+                    <!-- TODO: It would be nice to mark the changes trough
+                    a graphical sign in the section that has been modified,
+                    such a left border on the relative div -->
+                    <div class="sds">
+                        <h4 class="sds">Changes made to the previous version:</h4>
+                        <span class="sds" t-field="doc.section_16_changes"/>
+                    </div>
+                    <t t-if="not doc.section_16_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <div class="sds mt16">
+                            <span class="sds" t-raw="doc.section_16_note"/>
+                        </div>
+                    </t>
+                </div>
+                <div id="end">
+                    <h5 class="sds">End of safety datasheet</h5>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_safety_datasheet" name="safety_datasheet.report_safety_datasheet">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="safety_datasheet.printpdf" t-lang="doc_lang"/>
+            </t>
+        </t>
+    </template>
+
+</odoo>

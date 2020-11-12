@@ -1,0 +1,170 @@
+h1.sds{
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+h2.sds{
+    font-size: 18px;
+}
+
+h3.sds{
+    font-size: 14px;
+    font-weight: bold; "
+}
+
+h4.sds{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top:5px;
+}
+
+h5.sds{
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    display: inline;
+}
+
+h6.sds{
+    font-size: 10px;
+    font-weight: bold;
+    /* padding-left: 30px; */
+    margin-top: 10px;
+    display: inline;
+}
+
+div.subheader {
+    padding-left: 30px;
+}
+
+h6.sds + p {
+    /* padding-left: 30px; */
+}
+
+
+p.sds, span.sds {
+    margin-bottom:0px;
+    font-size: 10px;
+}
+
+span.sds + p {
+    font-size: 10px;
+}
+
+
+div.sds{
+    /* padding-left: 30px; */
+    margin-bottom:0px;
+    page-break-inside: avoid;
+}
+
+p.sds p{
+    font-size: 10px;
+}
+
+table.sds, table.sds_narrow{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+table.sds td{
+    padding-top: 5px;
+    text-align: left;
+    vertical-align: top;
+    min-width: 150px;
+}
+
+table.sds_narrow td{
+    padding-left: 5px;
+    padding-top: 10px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    font-size: 9px;
+}
+
+table.sds_narrow thead{
+    display: table-header-group;
+}
+
+table.sds_narrow tr{
+    page-break-inside:avoid;
+    page-break-after:auto;
+}
+
+table.sds_properties {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table.sds_properties td, table.sds_properties th {
+  border-bottom: 1px solid #ddd;
+  padding: 3px 4px;
+}
+
+table.sds_properties tbody td {
+  font-size: 10px;
+}
+
+table.sds_legend {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+table.sds_legend td {
+    padding-top: 5px;
+    vertical-align: top;
+    min-width: 150px;
+}
+
+table.sds_legend tbody td {
+  font-size: 10px;
+}
+
+table.sds_properties thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+
+table.sds_properties thead th {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+table.sds_properties tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  border-top: 3px solid #000000;
+}
+
+table.sds_properties tfoot td {
+  font-size: 14px;
+}
+
+tr.sds_narrow th{
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+td_pl{
+    padding-left: 20px;
+}
+
+.sds_h7 {
+    text-decoration: underline;
+    font-size: 10px;
+}

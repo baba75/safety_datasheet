@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="H200" model="sds.hazard.statement">
+            <field name="code">H200</field>
+            <field name="name">Unstable explosives.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H201" model="sds.hazard.statement">
+            <field name="code">H201</field>
+            <field name="name">Explosive; mass explosion hazard.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H202" model="sds.hazard.statement">
+            <field name="code">H202</field>
+            <field name="name">Explosive, severe projection hazard.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H203" model="sds.hazard.statement">
+            <field name="code">H203</field>
+            <field name="name">Explosive; fire, blast or projection hazard.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H204" model="sds.hazard.statement">
+            <field name="code">H204</field>
+            <field name="name">Fire or projection hazard.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H205" model="sds.hazard.statement">
+            <field name="code">H205</field>
+            <field name="name">May mass explode in fire.</field>
+            <!-- no pictogram for this code -->
+        </record>
+        <record id="H220" model="sds.hazard.statement">
+            <field name="code">H220</field>
+            <field name="name">Extremely flammable gas.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H221" model="sds.hazard.statement">
+            <field name="code">H221</field>
+            <field name="name">Flammable gas.</field>
+            <!-- no pictogram for this code -->
+        </record>
+        <record id="H222" model="sds.hazard.statement">
+            <field name="code">H222</field>
+            <field name="name">Extremely flammable aerosol.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H223" model="sds.hazard.statement">
+            <field name="code">H223</field>
+            <field name="name">Flammable aerosol.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H224" model="sds.hazard.statement">
+            <field name="code">H224</field>
+            <field name="name">Extremely flammable liquid and vapour.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H225" model="sds.hazard.statement">
+            <field name="code">H225</field>
+            <field name="name">Highly flammable liquid and vapour.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H226" model="sds.hazard.statement">
+            <field name="code">H226</field>
+            <field name="name">Flammable liquid and vapour.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H228" model="sds.hazard.statement">
+            <field name="code">H228</field>
+            <field name="name">Flammable solid.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H229" model="sds.hazard.statement">
+            <field name="code">H229</field>
+            <field name="name">Pressurised container: May burst if heated.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H230" model="sds.hazard.statement">
+            <field name="code">H230</field>
+            <field name="name">May react explosively even in the absence of air.</field>
+            <!-- no pictogram for this code -->
+        </record>
+        <record id="H231" model="sds.hazard.statement">
+            <field name="code">H231</field>
+            <field name="name">May react explosively even in the absence of air at elevated pressure and/or temperature.</field>
+            <!-- no pictogram for this code -->
+        </record>
+        <record id="H240" model="sds.hazard.statement">
+            <field name="code">H240</field>
+            <field name="name">Heating may cause an explosion.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb')])]"/>
+        </record>
+        <record id="H241" model="sds.hazard.statement">
+            <field name="code">H241</field>
+            <field name="name">Heating may cause a fire or explosion.</field>
+            <!-- this one needs double pictogram!!! -->
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS01_exploding_bomb'),ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H242" model="sds.hazard.statement">
+            <field name="code">H242</field>
+            <field name="name">Heating may cause a fire.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H250" model="sds.hazard.statement">
+            <field name="code">H250</field>
+            <field name="name">Catches fire spontaneously if exposed to air.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H251" model="sds.hazard.statement">
+            <field name="code">H251</field>
+            <field name="name">Self-heating: may catch fire.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H252" model="sds.hazard.statement">
+            <field name="code">H252</field>
+            <field name="name">Self-heating in large quantities; may catch fire.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H260" model="sds.hazard.statement">
+            <field name="code">H260</field>
+            <field name="name">In contact with water releases flammable gases which may ignite spontaneously.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H261" model="sds.hazard.statement">
+            <field name="code">H261</field>
+            <field name="name">In contact with water releases flammable gases.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H270" model="sds.hazard.statement">
+            <field name="code">H270</field>
+            <field name="name">May cause or intensify fire; oxidiser.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS03_flame_over_circle')])]"/>
+        </record>
+        <record id="H271" model="sds.hazard.statement">
+            <field name="code">H271</field>
+            <field name="name">May cause fire or explosion; strong oxidiser.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS03_flame_over_circle')])]"/>
+        </record>
+        <record id="H272" model="sds.hazard.statement">
+            <field name="code">H272</field>
+            <field name="name">May intensify fire; oxidiser.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS03_flame_over_circle')])]"/>
+        </record>
+        <record id="H280" model="sds.hazard.statement">
+            <field name="code">H280</field>
+            <field name="name">Contains gas under pressure; may explode if heated.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS04_gas_cylinder')])]"/>
+        </record>
+        <record id="H281" model="sds.hazard.statement">
+            <field name="code">H281</field>
+            <field name="name">Contains refrigerated gas; may cause cryogenic burns or injury.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS04_gas_cylinder')])]"/>
+        </record>
+        <record id="H290" model="sds.hazard.statement">
+            <field name="code">H290</field>
+            <field name="name">May be corrosive to metals.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS05_corrosion')])]"/>
+        </record>
+        <record id="H300" model="sds.hazard.statement">
+            <field name="code">H300</field>
+            <field name="name">Fatal if swallowed.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H301" model="sds.hazard.statement">
+            <field name="code">H301</field>
+            <field name="name">Toxic if swallowed.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H302" model="sds.hazard.statement">
+            <field name="code">H302</field>
+            <field name="name">Harmful if swallowed.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H304" model="sds.hazard.statement">
+            <field name="code">H304</field>
+            <field name="name">May be fatal if swallowed and enters airways.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H310" model="sds.hazard.statement">
+            <field name="code">H310</field>
+            <field name="name">Fatal in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H311" model="sds.hazard.statement">
+            <field name="code">H311</field>
+            <field name="name">Toxic in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H312" model="sds.hazard.statement">
+            <field name="code">H312</field>
+            <field name="name">Harmful in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H314" model="sds.hazard.statement">
+            <field name="code">H314</field>
+            <field name="name">Causes severe skin burns and eye damage.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS05_corrosion')])]"/>
+        </record>
+        <record id="H315" model="sds.hazard.statement">
+            <field name="code">H315</field>
+            <field name="name">Causes skin irritation.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H317" model="sds.hazard.statement">
+            <field name="code">H317</field>
+            <field name="name">May cause an allergic skin reaction.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H318" model="sds.hazard.statement">
+            <field name="code">H318</field>
+            <field name="name">Causes serious eye damage.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS05_corrosion')])]"/>
+        </record>
+        <record id="H319" model="sds.hazard.statement">
+            <field name="code">H319</field>
+            <field name="name">Causes serious eye irritation.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS05_corrosion')])]"/>
+        </record>
+        <record id="H330" model="sds.hazard.statement">
+            <field name="code">H330</field>
+            <field name="name">Fatal if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H331" model="sds.hazard.statement">
+            <field name="code">H331</field>
+            <field name="name">Toxic if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H332" model="sds.hazard.statement">
+            <field name="code">H332</field>
+            <field name="name">Harmful if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H334" model="sds.hazard.statement">
+            <field name="code">H334</field>
+            <field name="name">May cause allergy or asthma symptoms or breathing difficulties if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H335" model="sds.hazard.statement">
+            <field name="code">H335</field>
+            <field name="name">May cause respiratory irritation.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS05_corrosion')])]"/>
+        </record>
+        <record id="H336" model="sds.hazard.statement">
+            <field name="code">H336</field>
+            <field name="name">May cause drowsiness or dizziness.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H340" model="sds.hazard.statement">
+            <field name="code">H340</field>
+            <field name="name">May cause genetic defects &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H341" model="sds.hazard.statement">
+            <field name="code">H341</field>
+            <field name="name">Suspected of causing genetic defects &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H350" model="sds.hazard.statement">
+            <field name="code">H350</field>
+            <field name="name">May cause cancer &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H350i" model="sds.hazard.statement">
+            <field name="code">H350i</field>
+            <field name="name">May cause cancer by inhalation.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H351" model="sds.hazard.statement">
+            <field name="code">H351</field>
+            <field name="name">Suspected of causing cancer &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360" model="sds.hazard.statement">
+            <field name="code">H360</field>
+            <field name="name">May damage fertility or the unborn child &lt;state specific effect if known&gt; &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360F" model="sds.hazard.statement">
+            <field name="code">H360F</field>
+            <field name="name">May damage fertility.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360D" model="sds.hazard.statement">
+            <field name="code">H360D</field>
+            <field name="name">May damage the unborn child.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360FD" model="sds.hazard.statement">
+            <field name="code">H360FD</field>
+            <field name="name">May damage fertility. May damage the unborn child.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360Fd_2" model="sds.hazard.statement">
+            <field name="code">H360Fd</field>
+            <field name="name">May damage fertility. Suspected of damaging the unborn child.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H360Df" model="sds.hazard.statement">
+            <field name="code">H360Df</field>
+            <field name="name">May damage the unborn child. Suspected of damaging fertility.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H361" model="sds.hazard.statement">
+            <field name="code">H361</field>
+            <field name="name">Suspected of damaging fertility or the unborn child &lt;state specific effect if known&gt; &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H361f" model="sds.hazard.statement">
+            <field name="code">H361f</field>
+            <field name="name">Suspected of damaging fertility.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H361d" model="sds.hazard.statement">
+            <field name="code">H361d</field>
+            <field name="name">Suspected of damaging the unborn child.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H361fd" model="sds.hazard.statement">
+            <field name="code">H361fd</field>
+            <field name="name">Suspected of damaging fertility. Suspected of damaging the unborn child.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H362" model="sds.hazard.statement">
+            <field name="code">H362</field>
+            <field name="name">May cause harm to breast-fed children.</field>
+            <!-- No pictogram -->
+        </record>
+        <record id="H370" model="sds.hazard.statement">
+            <field name="code">H370</field>
+            <field name="name">Causes damage to organs &lt;or state all organs affected, if known&gt; &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H371" model="sds.hazard.statement">
+            <field name="code">H371</field>
+            <field name="name">May cause damage to organs &lt;or state all organs affected, if known&gt; &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H372" model="sds.hazard.statement">
+            <field name="code">H372</field>
+            <field name="name">Causes damage to organs &lt;or state all organs affected, if known&gt; through prolonged or repeated exposure &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H373" model="sds.hazard.statement">
+            <field name="code">H373</field>
+            <field name="name">May cause damage to organs &lt;or state all organs affected, if known&gt; through prolonged or repeated exposure &lt;state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard&gt;.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS08_health_haz')])]"/>
+        </record>
+        <record id="H300_H310" model="sds.hazard.statement">
+            <field name="code">H300 + H310</field>
+            <field name="name">Fatal if swallowed or in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H300_H330" model="sds.hazard.statement">
+            <field name="code">H300 + H330</field>
+            <field name="name">Fatal if swallowed or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H310_H330" model="sds.hazard.statement">
+            <field name="code">H310 + H330</field>
+            <field name="name">Fatal in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H300_H310_H330" model="sds.hazard.statement">
+            <field name="code">H300 + H310 + H330</field>
+            <field name="name">Fatal if swallowed, in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H301_H311" model="sds.hazard.statement">
+            <field name="code">H301 + H311</field>
+            <field name="name">Toxic if swallowed or in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H301_H331" model="sds.hazard.statement">
+            <field name="code">H301 + H331</field>
+            <field name="name">Toxic if swallowed or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H311_H331" model="sds.hazard.statement">
+            <field name="code">H311 + H331</field>
+            <field name="name">Toxic in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H301_H311_H331" model="sds.hazard.statement">
+            <field name="code">H301 + H311 + H331</field>
+            <field name="name">Toxic if swallowed, in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS06_skull')])]"/>
+        </record>
+        <record id="H302_H312" model="sds.hazard.statement">
+            <field name="code">H302 + H312</field>
+            <field name="name">Harmful if swallowed or in contact with skin.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H302_H332" model="sds.hazard.statement">
+            <field name="code">H302 + H332</field>
+            <field name="name">Harmful if swallowed or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H312_H332" model="sds.hazard.statement">
+            <field name="code">H312 + H332</field>
+            <field name="name">Harmful in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H302_H312_H332" model="sds.hazard.statement">
+            <field name="code">H302 + H312 + H332</field>
+            <field name="name">Harmful if swallowed, in contact with skin or if inhaled.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+        <record id="H400" model="sds.hazard.statement">
+            <field name="code">H400</field>
+            <field name="name">Very toxic to aquatic life.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS09_environment')])]"/>
+        </record>
+        <record id="H410" model="sds.hazard.statement">
+            <field name="code">H410</field>
+            <field name="name">Very toxic to aquatic life with long lasting effects.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS09_environment')])]"/>
+        </record>
+        <record id="H411" model="sds.hazard.statement">
+            <field name="code">H411</field>
+            <field name="name">Toxic to aquatic life with long lasting effects.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS09_environment')])]"/>
+        </record>
+        <record id="H412" model="sds.hazard.statement">
+            <field name="code">H412</field>
+            <field name="name">Harmful to aquatic life with long lasting effects.</field>
+            <!-- no pictogram -->
+        </record>
+        <record id="H413" model="sds.hazard.statement">
+            <field name="code">H413</field>
+            <field name="name">May cause long lasting harmful effects to aquatic life.</field>
+            <!-- no pictogram -->
+        </record>
+        <record id="H420" model="sds.hazard.statement">
+            <field name="code">H420</field>
+            <field name="name">Harms public health and the environment by destroying ozone in the upper atmosphere.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS07_exclamation_mark')])]"/>
+        </record>
+
+        <!-- supplemental hazard information -->
+
+        <record id="EUH_001" model="sds.hazard.statement">
+            <field name="code">EUH 001</field>
+            <field name="name">Explosive when dry.</field>
+        </record>
+        <record id="EUH_014" model="sds.hazard.statement">
+            <field name="code">EUH 014</field>
+            <field name="name">Reacts violently with water.</field>
+        </record>
+        <record id="EUH_018" model="sds.hazard.statement">
+            <field name="code">EUH 018</field>
+            <field name="name">In use may form flammable/explosive vapour- air mixture.</field>
+        </record>
+        <record id="EUH_019" model="sds.hazard.statement">
+            <field name="code">EUH 019</field>
+            <field name="name">May form explosive peroxides.</field>
+        </record>
+        <record id="EUH_029" model="sds.hazard.statement">
+            <field name="code">EUH 029</field>
+            <field name="name">Contact with water liberates toxic gas.</field>
+        </record>
+        <record id="EUH_031" model="sds.hazard.statement">
+            <field name="code">EUH 031</field>
+            <field name="name">Contact with acids liberates toxic gas.</field>
+        </record>
+        <record id="EUH_032" model="sds.hazard.statement">
+            <field name="code">EUH 032</field>
+            <field name="name">Contact with acids liberates very toxic gas.</field>
+        </record>
+        <record id="EUH_044" model="sds.hazard.statement">
+            <field name="code">EUH 044</field>
+            <field name="name">Risk of explosion if heated under confinement.</field>
+        </record>
+        <record id="EUH_066" model="sds.hazard.statement">
+            <field name="code">EUH 066</field>
+            <field name="name">Repeated exposure may cause skin dryness or cracking.</field>
+        </record>
+        <record id="EUH_070" model="sds.hazard.statement">
+            <field name="code">EUH 070</field>
+            <field name="name">Toxic by eye contact.</field>
+        </record>
+        <record id="EUH_071" model="sds.hazard.statement">
+            <field name="code">EUH 071</field>
+            <field name="name">Corrosive to the respiratory tract.</field>
+        </record>
+        <record id="EUH_201" model="sds.hazard.statement">
+            <field name="code">EUH 201/201A</field>
+            <field name="name">Contains lead. Should not be used on surfaces liable to be chewed or sucked by children. Warning! Contains lead.</field>
+        </record>
+        <record id="EUH_202" model="sds.hazard.statement">
+            <field name="code">EUH 202</field>
+            <field name="name">Cyanoacrylate. Danger. Bonds skin and eyes in seconds. Keep out of the reach of children.</field>
+        </record>
+        <record id="EUH_203" model="sds.hazard.statement">
+            <field name="code">EUH 203</field>
+            <field name="name">Contains chromium (VI). May produce an allergic reaction.</field>
+        </record>
+        <record id="EUH_204" model="sds.hazard.statement">
+            <field name="code">EUH 204</field>
+            <field name="name">Contains isocyanates. May produce an allergic reaction.</field>
+        </record>
+        <record id="EUH_205" model="sds.hazard.statement">
+            <field name="code">EUH 205</field>
+            <field name="name">Contains epoxy constituents. May produce an allergic reaction.</field>
+        </record>
+        <record id="EUH_206" model="sds.hazard.statement">
+            <field name="code">EUH 206</field>
+            <field name="name">Warning! Do not use together with other products. May release dangerous gases (chlorine).</field>
+        </record>
+        <record id="EUH_207" model="sds.hazard.statement">
+            <field name="code">EUH 207</field>
+            <field name="name">Warning! Contains cadmium. Dangerous fumes are formed during use. See information supplied by the manufacturer. Comply with the safety instructions.</field>
+        </record>
+        <record id="EUH_208" model="sds.hazard.statement">
+            <field name="code">EUH 208</field>
+            <field name="name">Contains &lt;name of sensitising substance&gt;. May produce an allergic reaction.</field>
+        </record>
+        <record id="EUH_209" model="sds.hazard.statement">
+            <field name="code">EUH 209 / 209A</field>
+            <field name="name">Can become highly flammable in use. Can become flammable in use.</field>
+        </record>
+        <record id="EUH_210" model="sds.hazard.statement">
+            <field name="code">EUH 210</field>
+            <field name="name">Safety data sheet available on request.</field>
+        </record>
+        <record id="EUH_401" model="sds.hazard.statement">
+            <field name="code">EUH 401</field>
+            <field name="name">To avoid risks to human health and the environment, comply with the instructions for use.</field>
+        </record>
+    </data>
+</odoo>
