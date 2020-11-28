@@ -91,11 +91,13 @@
         </record>
         <record id="Tetrasodium_ethylenediaminetetraacetate" model="sds.chemical.substances">
             <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
-            <field name="IUPACname">tetrasodium 2-({2-[bis(carboxymethyl)amino]ethyl}(carboxymethyl)amino)acetate</field>
+            <field name="IUPACname">tetrasodium 2-({2-[bis(carboxymethyl)amino]ethyl}(carboxymethyl)amino)acetate
+            </field>
             <field name="CASno">64-02-8</field>
             <field name="ECno">200-573-9</field>
             <field name="REACHno"></field>
-            <field name="Classification" eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
         </record>
         <record id="portland_cement" model="sds.chemical.substances">
             <field name="name">Cement, portland, chemicals</field>
@@ -103,7 +105,8 @@
             <field name="CASno">65997-15-1</field>
             <field name="ECno">266-043-4</field>
             <field name="REACHno"></field>
-            <field name="Classification" eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317')])]"/>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317')])]"/>
         </record>
         <record id="2-butoxyethanol" model="sds.chemical.substances">
             <field name="name">2-butoxyethanol</field>
@@ -111,16 +114,19 @@
             <field name="CASno">111-76-2</field>
             <field name="ECno">203-905-0</field>
             <field name="REACHno"></field>
-            <field name="Classification" eval="[(6, 0, [ref('skin2_H315'),ref('tox4_H302'),ref('eye2_H319'),ref('tox4_H312'),ref('tox4_H332')])]"/>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('tox4_H302'),ref('eye2_H319'),ref('tox4_H312'),ref('tox4_H332')])]"/>
         </record>
         <record id="mixof_chloromrthylthiazol_and_methil_thiazol" model="sds.chemical.substances">
-            <field name="name">Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and 2-methyl-1,2-thiazol-3(2H)-one
-</field>
+            <field name="name">Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and
+                2-methyl-1,2-thiazol-3(2H)-one
+            </field>
             <field name="IUPACname"></field>
             <field name="CASno">55965-84-9</field>
             <field name="ECno">611-341-5</field>
             <field name="REACHno">01-2119475108-36</field>
-            <field name="Classification" eval="[(6, 0, [ref('tox2_H310'),ref('tox2_H330'),ref('tox3_H301'),ref('eye2_H319'),ref('Aquatic_acute_1_H400'),ref('Aquatic_chronic_1_H410')])]"/>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox2_H310'),ref('tox2_H330'),ref('tox3_H301'),ref('eye2_H319'),ref('Aquatic_acute_1_H400'),ref('Aquatic_chronic_1_H410')])]"/>
         </record>
         <record id="2-2-butoxyethoxyethanol" model="sds.chemical.substances">
             <field name="name">2-(2-butoxyethoxy)ethanol</field>
@@ -129,6 +135,15 @@
             <field name="ECno">203-961-6</field>
             <field name="REACHno">01-2119475104-44-XXXX</field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
+        </record>
+        <record id="cement" model="sds.chemical.substances">
+            <field name="name">Cement, portland, chemicals</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">65997-15-1</field>
+            <field name="ECno">266-043-4</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317'),ref('STOT_SE3_H335')])]"/>
         </record>
     </data>
 </odoo>
