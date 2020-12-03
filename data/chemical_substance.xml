@@ -65,7 +65,7 @@
         </record>
 
 
-        <record id="Potassium_methylsilanetriolate" model="sds.chemical.substances">
+        <record id="Potassium_methylsilanetriolate" model="sds.chemical.substance">
             <field name="name">Potassium methylsilanetriolate</field>
             <field name="IUPACname"></field>
             <field name="CASno">31795-24-1</field>
@@ -73,7 +73,7 @@
             <field name="REACHno"></field>
             <field name="Classification" eval="[(6, 0, [ref('skinA_H314'),ref('eye1_H318')])]"/>
         </record>
-        <record id="Cocoalkylmethyl_ammonium_chloride" model="sds.chemical.substances">
+        <record id="Cocoalkylmethyl_ammonium_chloride" model="sds.chemical.substance">
             <field name="name">Cocoalkylmethyl[polyoxyethylene] ammonium chloride</field>
             <field name="IUPACname"></field>
             <field name="CASno">61791-10-4</field>
@@ -81,7 +81,7 @@
             <field name="REACHno"></field>
             <field name="Classification" eval="[(6, 0, [ref('tox4_H302'),ref('eye1_H318')])]"/>
         </record>
-        <record id="Tetrapotassium_pyrophosphate" model="sds.chemical.substances">
+        <record id="Tetrapotassium_pyrophosphate" model="sds.chemical.substance">
             <field name="name">Tetrapotassium pyrophosphate</field>
             <field name="IUPACname">tetrapotassium (phosphonooxy)phosphonate</field>
             <field name="CASno">7320-34-5</field>
@@ -89,7 +89,7 @@
             <field name="REACHno"></field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
-        <record id="Tetrasodium_ethylenediaminetetraacetate" model="sds.chemical.substances">
+        <record id="Tetrasodium_ethylenediaminetetraacetate" model="sds.chemical.substance">
             <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
             <field name="IUPACname">tetrasodium 2-({2-[bis(carboxymethyl)amino]ethyl}(carboxymethyl)amino)acetate
             </field>
@@ -99,7 +99,7 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
         </record>
-        <record id="portland_cement" model="sds.chemical.substances">
+        <record id="portland_cement" model="sds.chemical.substance">
             <field name="name">Cement, portland, chemicals</field>
             <field name="IUPACname">Portland cement compound</field>
             <field name="CASno">65997-15-1</field>
@@ -108,7 +108,7 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317')])]"/>
         </record>
-        <record id="2-butoxyethanol" model="sds.chemical.substances">
+        <record id="2-butoxyethanol" model="sds.chemical.substance">
             <field name="name">2-butoxyethanol</field>
             <field name="IUPACname">Butoxyethanol</field>
             <field name="CASno">111-76-2</field>
@@ -117,7 +117,7 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('tox4_H302'),ref('eye2_H319'),ref('tox4_H312'),ref('tox4_H332')])]"/>
         </record>
-        <record id="mixof_chloromrthylthiazol_and_methil_thiazol" model="sds.chemical.substances">
+        <record id="mixof_chloromrthylthiazol_and_methil_thiazol" model="sds.chemical.substance">
             <field name="name">Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and
                 2-methyl-1,2-thiazol-3(2H)-one
             </field>
@@ -128,7 +128,7 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('tox2_H310'),ref('tox2_H330'),ref('tox3_H301'),ref('eye2_H319'),ref('Aquatic_acute_1_H400'),ref('Aquatic_chronic_1_H410')])]"/>
         </record>
-        <record id="2-2-butoxyethoxyethanol" model="sds.chemical.substances">
+        <record id="2-2-butoxyethoxyethanol" model="sds.chemical.substance">
             <field name="name">2-(2-butoxyethoxy)ethanol</field>
             <field name="IUPACname"></field>
             <field name="CASno">112-34-5</field>
@@ -136,7 +136,7 @@
             <field name="REACHno">01-2119475104-44-XXXX</field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
-        <record id="cement" model="sds.chemical.substances">
+        <record id="cement" model="sds.chemical.substance">
             <field name="name">Cement, portland, chemicals</field>
             <field name="IUPACname"></field>
             <field name="CASno">65997-15-1</field>

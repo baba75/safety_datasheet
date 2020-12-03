@@ -32,7 +32,7 @@ class SdsChemicalClassification(models.Model):
     HazardCategories = fields.Many2one('sds.hazard.class', 'Hazard Categories')
     HazardStatement = fields.Many2one('sds.hazard.statement', 'Hazard Statement')
 
-class Datasheet(models.Model):
+class SdsDatasheet(models.Model):
     """
     See Amendement to ANNEX II of REACH:
     REQUIREMENTS FOR THE COMPILATION OF SAFETY DATA SHEETS
@@ -326,7 +326,7 @@ class Datasheet(models.Model):
     section_8_note = fields.Html(string="Section 8 notes", translate=True)
 
     # Section 9: Physical and chemical properties
-    section_9_1 = fields.Many2many('sds.chemical.properties.line', relation="sds_chemical_properties_rel",
+    section_9_1 = fields.Many2many('sds.chemical.property.line', relation="sds_chemical_property_rel",
                                    string="Physical and chemical properties")
     section_9_2 = fields.Html(string="Other information", default=lambda s: _("No data available."),
                               translate=True, sanitize=False)
@@ -454,6 +454,7 @@ class Datasheet(models.Model):
     section_12_1 = fields.Many2many('sds.sentences', relation="sds_toxicity_statement_rel",
                                     domain="[('category', '=', 'ecotoxicity')]", string='Toxicity',
                                     context={'default_category': 'ecotoxicity'})
+    section_12_1_selector = fields.Boolean(string="Insert toxicity details", default=False)
     section_12_1_text = fields.Html(string="Toxicity details",
                                     default=lambda s:_(
                                         '<table class="table table-bordered"><thead>'
@@ -464,27 +465,33 @@ class Datasheet(models.Model):
     section_12_2 = fields.Many2many('sds.sentences', relation="sds_persistence_statement_rel",
                                     domain="[('category', '=', 'persistence')]", string='Persistence and degradability',
                                     context={'default_category': 'persistence'})
+    section_12_2_selector = fields.Boolean(string="Insert degradability details", default=False)
     section_12_2_text = fields.Html(string="Persistence and degradability details", translate=True, sanitize=False)
     section_12_3 = fields.Many2many('sds.sentences', relation="sds_bioaccumulative_potential_statement_rel",
                                     domain="[('category', '=', 'bioaccumulative')]", string='Bioaccumulative potential',
                                     context={'default_category': 'bioaccumulative'})
+    section_12_3_selector = fields.Boolean(string="Insert bioaccumulative details", default=False)
     section_12_3_text = fields.Html(string="Bioaccumulative potential details", translate=True, sanitize=False)
     section_12_4 = fields.Many2many('sds.sentences', relation="sds_mobility_soil_statement_rel",
                                     domain="[('category', '=', 'mobility')]", string='Mobility in soil',
                                     context={'default_category': 'mobility'})
+    section_12_4_selector = fields.Boolean(string="Insert mobility details", default=False)
     section_12_4_text = fields.Html(string="Mobility in soil details", translate=True, sanitize=False)
     section_12_5 = fields.Many2many('sds.sentences', relation="sds_pbt_vpvb_statement_rel",
                                     domain="[('category', '=', 'pbtvpvb')]",
                                     string='Results of PBT and vPvB assessment',
                                     context={'default_category': 'pbtvpvb'})
+    section_12_5_selector = fields.Boolean(string="Insert PBT and vPvB details", default=False)
     section_12_5_text = fields.Html(string="Results of PBT and vPvB assessment details", translate=True, sanitize=False)
     section_12_6 = fields.Many2many('sds.sentences', relation="sds_endocrine_disrupting_statement_rel",
                                     domain="[('category', '=', 'endocrine')]", string='Endocrine disrupting properties',
                                     context={'default_category': 'endocrine'})
+    section_12_6_selector = fields.Boolean(string="Insert endocrine details", default=False)
     section_12_6_text = fields.Html(string="Endocrine disrupting properties details", translate=True, sanitize=False)
     section_12_7 = fields.Many2many('sds.sentences', relation="sds_other_adverse_statement_rel",
                                     domain="[('category', '=', 'adverse')]", string='Other adverse effects',
                                     context={'default_category': 'adverse'})
+    section_12_7_selector = fields.Boolean(string="Insert adverse effects details", default=False)
     section_12_7_text = fields.Html(string="Other adverse effects details", translate=True, sanitize=False)
     section_12_note = fields.Html(string="Section 12 Notes", translate=True)
 
@@ -670,7 +677,7 @@ class Datasheet(models.Model):
 
     @api.model
     def create(self, vals):
-        result = super(Datasheet, self).create(vals)
+        result = super(SdsDatasheet, self).create(vals)
         self.xlate_default(result.ids)
         return result
 
@@ -681,41 +688,41 @@ class Datasheet(models.Model):
         :return:
         """
 
-        prop_id_1 = self.env['sds.chemical.properties.line'].create(
+        prop_id_1 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_1').id, 'value': 'n.d.'}).id
-        prop_id_2 = self.env['sds.chemical.properties.line'].create(
+        prop_id_2 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_2').id, 'value': 'n.d.'}).id
-        prop_id_3 = self.env['sds.chemical.properties.line'].create(
+        prop_id_3 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_3').id, 'value': 'n.d.'}).id
-        prop_id_4 = self.env['sds.chemical.properties.line'].create(
+        prop_id_4 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_4').id, 'value': 'n.d.'}).id
-        prop_id_5 = self.env['sds.chemical.properties.line'].create(
+        prop_id_5 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_5').id, 'value': 'n.d.'}).id
-        prop_id_6 = self.env['sds.chemical.properties.line'].create(
+        prop_id_6 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_6').id, 'value': 'n.d.'}).id
-        prop_id_7 = self.env['sds.chemical.properties.line'].create(
+        prop_id_7 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_7').id, 'value': 'n.d.'}).id
-        prop_id_8 = self.env['sds.chemical.properties.line'].create(
+        prop_id_8 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_8').id, 'value': 'n.d.'}).id
-        prop_id_9 = self.env['sds.chemical.properties.line'].create(
+        prop_id_9 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_9').id, 'value': 'n.d.'}).id
-        prop_id_10 = self.env['sds.chemical.properties.line'].create(
+        prop_id_10 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_10').id, 'value': 'n.d.'}).id
-        prop_id_11 = self.env['sds.chemical.properties.line'].create(
+        prop_id_11 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_11').id, 'value': 'n.d.'}).id
-        prop_id_12 = self.env['sds.chemical.properties.line'].create(
+        prop_id_12 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_12').id, 'value': 'n.d.'}).id
-        prop_id_13 = self.env['sds.chemical.properties.line'].create(
+        prop_id_13 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_13').id, 'value': 'n.d.'}).id
-        prop_id_14 = self.env['sds.chemical.properties.line'].create(
+        prop_id_14 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_14').id, 'value': 'n.d.'}).id
-        prop_id_15 = self.env['sds.chemical.properties.line'].create(
+        prop_id_15 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_15').id, 'value': 'n.d.'}).id
-        prop_id_16 = self.env['sds.chemical.properties.line'].create(
+        prop_id_16 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_16').id, 'value': 'n.d.'}).id
-        prop_id_17 = self.env['sds.chemical.properties.line'].create(
+        prop_id_17 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_17').id, 'value': 'n.d.'}).id
-        prop_id_18 = self.env['sds.chemical.properties.line'].create(
+        prop_id_18 = self.env['sds.chemical.property.line'].create(
             {'name_id': self.env.ref('safety_datasheet.chemical_property_18').id, 'value': 'n.d.'}).id
 
         prop_ids = [prop_id_1, prop_id_2, prop_id_3, prop_id_4, prop_id_5, prop_id_6,

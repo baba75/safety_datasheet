@@ -9,924 +9,960 @@
                     <header>
                         <button type="action" name="%(safety_datasheet.action_wizard_select_lang)d" string="Print"
                                 class="oe_highlight"/>
-                        <button string="Translate default values" type="object" name="xlate_default" class="oe_highlight"/>
+                        <button string="Translate default values" type="object" name="xlate_default"
+                                class="oe_highlight"/>
                     </header>
                     <sheet>
-                    <div class="oe_title">
-                        <h1>
-                            <field name="name"/>
-                        </h1>
-                    </div>
-                    <group>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
                         <group>
-                            <field name="product_id"/>
-                            <field name="revision_date" widget="date"/>
-                            <field name="supersedes_date"/>
-                        </group>
-                    </group>
-                    <notebook>
-                    <page string="1" name="section1">
-                        <form>
-                            <!-- Identification of the substance/mixture and of the company/undertaking -->
-                            <group string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
-                                   name="identification">
-                                <field name="section_1_1" string="1.1 Product Identifier"/>
-                                <field name="section_1_2"
-                                       string="1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:"/>
-                                <field name="section_1_3"
-                                       string="1.3 Detail of the supplier of the safety data sheet"/>
-                                <field name="section_1_4" string="1.4 Emergency telephone number"/>
-                            </group>
-                            <group string="SECTION 1: free notes">
-                                <field name="section_1_note"/>
-                            </group>
-                        </form>
-                    </page>
-
-                    <!--  Section 2: Hazards identification -->
-                    <page string="2" name="section2">
-                        <form>
-                            <group string="SECTION 2: Hazards identification" name="hazards">
-                                <group colspan="2">
-                                    <field name="section_2_1_selector"/>
-                                    <field name="section_2_2_selector"/>
-                                </group>
-                                <group attrs="{'invisible': [('section_2_1_selector', '=', True)]}">
-                                    <field name="section_2_1"
-                                           string="2.1 Classification of the substance or mixture"
-                                           context="{'datasheet_id': active_id}"
-                                           widget="one2many_list">
-                                        <tree string="EC regulation criteria 1272/2008 (CLP):"
-                                              editable="bottom">
-                                            <field name="Classification" options="{'no_create': True}"/>
-                                            <field name="HazardStatement"/>
-                                        </tree>
-                                    </field>
-                                </group>
-                                <group attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
-                                    <field name="section_2_2_pictograms" widget="many2many"/>
-                                </group>
-                                <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
-                                    <field name="section_2_2_signal" widget="radio"/>
-                                </group>
-                                <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
-                                    <field name="section_2_2_P" widget="many2many">
-                                        <tree editable="bottom">
-                                            <field name="sequence" widget="handle"/>
-                                            <field name="name"/>
-                                            <field name="description"/>
-                                            <field name="mode"/>
-                                        </tree>
-                                    </field>
-                                </group>
-                            </group>
                             <group>
-                                <field name="section_2_2_Additional"/>
-                                <field name="section_2_3_PBT"/>
-                                <field name="section_2_3_vPvB"/>
-                                <field name="section_2_3_OtherHazards"/>
+                                <field name="product_id"/>
+                                <field name="revision_date" widget="date"/>
+                                <field name="supersedes_date"/>
                             </group>
-                            <group string="SECTION 2: free notes">
-                                <field name="section_2_note"/>
-                            </group>
-                        </form>
-                    </page>
+                        </group>
+                        <notebook>
+                            <page string="1" name="section1">
+                                <form>
+                                    <!-- Identification of the substance/mixture and of the company/undertaking -->
+                                    <group string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
+                                           name="identification">
+                                        <field name="section_1_1" string="1.1 Product Identifier"/>
+                                        <field name="section_1_2"
+                                               string="1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:"/>
+                                        <field name="section_1_3"
+                                               string="1.3 Detail of the supplier of the safety data sheet"/>
+                                        <field name="section_1_4" string="1.4 Emergency telephone number"/>
+                                    </group>
+                                    <group string="SECTION 1: free notes">
+                                        <field name="section_1_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 3: Composition/information on ingredients -->
-                    <page string="3" name="section3">
-                        <form>
-                            <group string="SECTION 3: Composition/information on ingredients "
-                                   name="composition">
-                                <!-- FIXME: this field is not required by the regulation -->
-                                <field name="section_3"/>
-                                <field name="section_3_1"/>
-                                <field name="section_3_2_selector"/>
-                                <div colspan="2" attrs="{'invisible': [('section_3_2_selector', '=', False)]}">
-                                    <div>
-                                        <label for="section_3_2"/>
-                                    </div>
-                                    <div>
-                                        <field name="section_3_2"
-                                               context="{'datasheet_id': active_id}"
-                                               widget="one2many_list">
-                                            <tree string="Mixture:" editable="bottom">
-                                                <field name="substance"/>
-                                                <field name="concentration"/>
-                                                <!--
-                                                <field name="substance.HazardCategory"/> -->
+                            <!--  Section 2: Hazards identification -->
+                            <page string="2" name="section2">
+                                <form>
+                                    <group string="SECTION 2: Hazards identification" name="hazards">
+                                        <group colspan="2">
+                                            <field name="section_2_1_selector"/>
+                                            <field name="section_2_2_selector"/>
+                                        </group>
+                                        <group attrs="{'invisible': [('section_2_1_selector', '=', True)]}">
+                                            <field name="section_2_1"
+                                                   string="2.1 Classification of the substance or mixture"
+                                                   context="{'datasheet_id': active_id}"
+                                                   widget="one2many_list">
+                                                <tree string="EC regulation criteria 1272/2008 (CLP):"
+                                                      editable="bottom">
+                                                    <field name="Classification" options="{'no_create': True}"/>
+                                                    <field name="HazardStatement"/>
+                                                </tree>
+                                            </field>
+                                        </group>
+                                        <group attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
+                                            <field name="section_2_2_pictograms" widget="many2many"/>
+                                        </group>
+                                        <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
+                                            <field name="section_2_2_signal" widget="radio"/>
+                                        </group>
+                                        <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', True)]}">
+                                            <field name="section_2_2_P" widget="many2many">
+                                                <tree editable="bottom">
+                                                    <field name="sequence" widget="handle"/>
+                                                    <field name="name"/>
+                                                    <field name="description"/>
+                                                    <field name="mode"/>
+                                                </tree>
+                                            </field>
+                                        </group>
+                                    </group>
+                                    <group>
+                                        <field name="section_2_2_Additional"/>
+                                        <field name="section_2_3_PBT"/>
+                                        <field name="section_2_3_vPvB"/>
+                                        <field name="section_2_3_OtherHazards"/>
+                                    </group>
+                                    <group string="SECTION 2: free notes">
+                                        <field name="section_2_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 3: Composition/information on ingredients -->
+                            <page string="3" name="section3">
+                                <form>
+                                    <group string="SECTION 3: Composition/information on ingredients "
+                                           name="composition">
+                                        <!-- FIXME: this field is not required by the regulation -->
+                                        <field name="section_3"/>
+                                        <field name="section_3_1"/>
+                                        <field name="section_3_2_selector"/>
+                                        <div colspan="2" attrs="{'invisible': [('section_3_2_selector', '=', False)]}">
+                                            <div>
+                                                <label for="section_3_2"/>
+                                            </div>
+                                            <div>
+                                                <field name="section_3_2"
+                                                       context="{'datasheet_id': active_id}"
+                                                       widget="one2many_list">
+                                                    <tree string="Mixture:" editable="bottom">
+                                                        <field name="substance"/>
+                                                        <field name="concentration"/>
+                                                        <!--
+                                                        <field name="substance.HazardCategory"/> -->
+                                                    </tree>
+                                                </field>
+                                            </div>
+                                        </div>
+                                    </group>
+                                    <group string="SECTION 3: free notes">
+                                        <field name="section_3_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 4: First aid measures -->
+                            <page string="4" name="section4">
+                                <form>
+                                    <group string="Section 4: First aid measures"
+                                           name="firstaid">
+                                        <field name="section_4_1_general" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
                                             </tree>
                                         </field>
-                                    </div>
-                                </div>
-                            </group>
-                            <group string="SECTION 3: free notes">
-                                <field name="section_3_note"/>
-                            </group>
-                        </form>
-                    </page>
+                                        <field name="section_4_1_inhalation" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_4_1_skin" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_4_1_eye" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_4_1_ingestion" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                    <group>
+                                        <field name="section_4_2"/>
+                                        <field name="section_4_3"/>
+                                    </group>
+                                    <group string="SECTION 4: free notes">
+                                        <field name="section_4_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 4: First aid measures -->
-                    <page string="4" name="section4">
-                        <form>
-                            <group string="Section 4: First aid measures"
-                                   name="firstaid">
-                                <field name="section_4_1_general" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_4_1_inhalation" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_4_1_skin" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_4_1_eye" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_4_1_ingestion" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                            </group>
-                            <group>
-                                <field name="section_4_2"/>
-                                <field name="section_4_3"/>
-                            </group>
-                            <group string="SECTION 4: free notes">
-                                <field name="section_4_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 5: Firefighting measures -->
+                            <page string="5" name="section5">
+                                <form>
+                                    <group string="Section 5: Firefighting measures"
+                                           name="firefighting">
+                                        <field name="section_5_1_1" widget="many2many_checkboxes"/>
+                                        <field name="section_5_1_2" widget="many2many_checkboxes"/>
+                                        <field name="section_5_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_5_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                    <group string="SECTION 5: free notes">
+                                        <field name="section_5_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 5: Firefighting measures -->
-                    <page string="5" name="section5">
-                        <form>
-                            <group string="Section 5: Firefighting measures"
-                                   name="firefighting">
-                                <field name="section_5_1_1" widget="many2many_checkboxes"/>
-                                <field name="section_5_1_2" widget="many2many_checkboxes"/>
-                                <field name="section_5_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_5_3" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                            </group>
-                            <group string="SECTION 5: free notes">
-                                <field name="section_5_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 6: Accidental release measures -->
+                            <page string="6" name="section6">
+                                <form>
+                                    <group string="Section 6: Accidental release measures"
+                                           name="accidental">
+                                        <field name="section_6_1_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_6_1_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_6_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_6_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_6_4" widget="html"/>
+                                    </group>
+                                    <group string="SECTION 6: free notes">
+                                        <field name="section_6_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 6: Accidental release measures -->
-                    <page string="6" name="section6">
-                        <form>
-                            <group string="Section 6: Accidental release measures"
-                                   name="accidental">
-                                <field name="section_6_1_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_6_1_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_6_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_6_3" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_6_4" widget="html"/>
-                            </group>
-                            <group string="SECTION 6: free notes">
-                                <field name="section_6_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 7: Handling and storage -->
+                            <page string="7" name="section7">
+                                <form>
+                                    <group string="Section 7: Handling and storage"
+                                           name="handling">
+                                        <field name="section_7_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_7_2_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_7_2_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_7_2_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_7_3" widget="html"/>
+                                    </group>
+                                    <group string="SECTION 7: free notes">
+                                        <field name="section_7_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 7: Handling and storage -->
-                    <page string="7" name="section7">
-                        <form>
-                            <group string="Section 7: Handling and storage"
-                                   name="handling">
-                                <field name="section_7_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_7_2_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_7_2_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_7_2_3" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_7_3" widget="html"/>
-                            </group>
-                            <group string="SECTION 7: free notes">
-                                <field name="section_7_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 8: Exposure controls/personal protection -->
+                            <page string="8" name="section8">
+                                <form>
+                                    <group string="Section 8: Exposure controls/personal protection"
+                                           name="protection">
+                                        <field name="section_8_1_tlv_selector"/>
+                                        <div colspan="2"
+                                             attrs="{'invisible': [('section_8_1_tlv_selector', '=', True)]}">
+                                            <field name="section_8_1_tlv" widget="html"/>
+                                        </div>
+                                        <field name="section_8_1_dnel_selector"/>
+                                        <div colspan="2"
+                                             attrs="{'invisible': [('section_8_1_dnel_selector', '=', True)]}">
+                                            <field name="section_8_1_dnel"/>
+                                        </div>
+                                        <field name="section_8_1_pnec_selector"/>
+                                        <div colspan="2"
+                                             attrs="{'invisible': [('section_8_1_pnec_selector', '=', True)]}">
+                                            <field name="section_8_1_pnec"/>
+                                        </div>
+                                    </group>
+                                    <group>
+                                        <field name="section_8_2_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_2_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_2_3_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_2_3_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_2_4" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_2_5" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_8_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                    <group string="SECTION 8: free notes">
+                                        <field name="section_8_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 8: Exposure controls/personal protection -->
-                    <page string="8" name="section8">
-                        <form>
-                            <group string="Section 8: Exposure controls/personal protection"
-                                   name="protection">
-                                <field name="section_8_1_tlv_selector"/>
-                                <div colspan="2"
-                                     attrs="{'invisible': [('section_8_1_tlv_selector', '=', True)]}">
-                                    <field name="section_8_1_tlv" widget="html"/>
-                                </div>
-                                <field name="section_8_1_dnel_selector"/>
-                                <div colspan="2"
-                                     attrs="{'invisible': [('section_8_1_dnel_selector', '=', True)]}">
-                                    <field name="section_8_1_dnel"/>
-                                </div>
-                                <field name="section_8_1_pnec_selector"/>
-                                <div colspan="2"
-                                     attrs="{'invisible': [('section_8_1_pnec_selector', '=', True)]}">
-                                    <field name="section_8_1_pnec"/>
-                                </div>
-                            </group>
-                            <group>
-                                <field name="section_8_2_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_2_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_2_3_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_2_3_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_2_4" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_2_5" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_8_3" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                            </group>
-                            <group string="SECTION 8: free notes">
-                                <field name="section_8_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 9: Physical and chemical properties -->
+                            <page string="9" name="section9">
+                                <form>
+                                    <group string="Section 9: Physical and chemical properties"
+                                           name="properties">
+                                        <button string="Insert properties" type="object"
+                                                name="fill_properties"
+                                                class="oe_highlight"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_9_1"
+                                               context="{'datasheet_id': active_id}"
+                                               widget="one2many_list">
+                                            <tree string="Physical and chemical properties:" editable="bottom">
+                                                <field name="name_id"/>
+                                                <field name="value"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_9_2" widget="html"/>
+                                    </group>
+                                    <group string="SECTION 9: free notes">
+                                        <field name="section_9_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 9: Physical and chemical properties -->
-                    <page string="9" name="section9">
-                        <form>
-                            <group string="Section 9: Physical and chemical properties"
-                                   name="properties">
-                                <button string="Insert properties" type="object"
-                                        name="fill_properties"
-                                        class="oe_highlight"/>
-                            </group>
-                            <group>
-                                <field name="section_9_1"
-                                       context="{'datasheet_id': active_id}"
-                                       widget="one2many_list">
-                                    <tree string="Physical and chemical properties:" editable="bottom">
-                                        <field name="name_id"/>
-                                        <field name="value"/>
-                                    </tree>
-                                </field>
-                                <field name="section_9_2" widget="html"/>
-                            </group>
-                            <group string="SECTION 9: free notes">
-                                <field name="section_9_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 10: Stability and reactivity -->
+                            <page string="10" name="section10">
+                                <form>
+                                    <group string="Section 10: Stability and reactivity"
+                                           name="stability">
+                                        <field name="section_10_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_10_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_10_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_10_4" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_10_5" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_10_6" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                    <group string="SECTION 10: free notes">
+                                        <field name="section_10_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    <!--  Section 10: Stability and reactivity -->
-                    <page string="10" name="section10">
-                        <form>
-                            <group string="Section 10: Stability and reactivity"
-                                   name="stability">
-                                <field name="section_10_1" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_10_2" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_10_3" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_10_4" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_10_5" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                                <field name="section_10_6" widget="many2many">
-                                    <tree editable="bottom">
-                                        <field name="sequence" widget="handle"/>
-                                        <field name="name"/>
-                                    </tree>
-                                </field>
-                            </group>
-                            <group string="SECTION 10: free notes">
-                                <field name="section_10_note"/>
-                            </group>
-                        </form>
-                    </page>
+                            <!--  Section 11: Toxicological information -->
+                            <page string="11" name="section11">
+                                <form>
+                                    <group string="Section 11: Toxicological information"
+                                           name="toxicological">
+                                        <field name="section_11_1_1_oral" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_1_dermal" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_1_inhalation" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_1_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_1_selector', '=', False)]}">
+                                        <field name="section_11_1_1_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_2_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_2_selector', '=', False)]}">
+                                        <field name="section_11_1_2_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_3_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_3_selector', '=', False)]}">
+                                        <field name="section_11_1_3_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_4" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_4_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_4_selector', '=', False)]}">
+                                        <field name="section_11_1_4_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_5" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_5_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_5_selector', '=', False)]}">
+                                        <field name="section_11_1_5_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_6" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_6_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_6_selector', '=', False)]}">
+                                        <field name="section_11_1_6_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_7" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_7_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_7_selector', '=', False)]}">
+                                        <field name="section_11_1_7_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_8" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_8_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_8_selector', '=', False)]}">
+                                        <field name="section_11_1_8_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_9" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_9_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_9_selector', '=', False)]}">
+                                        <field name="section_11_1_9_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_1_10" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_1_10_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_11_1_10_selector', '=', False)]}">
+                                        <field name="section_11_1_10_text"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_11_2" widget="html"/>
 
-                    <!--  Section 11: Toxicological information -->
-                    <page string="11" name="section11">
-                    <form>
-                        <group string="Section 11: Toxicological information"
-                               name="toxicological">
-                            <field name="section_11_1_1_oral" widget="many2many">
-                                <tree editable="bottom">
-                                    <field name="sequence" widget="handle"/>
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                            <field name="section_11_1_1_dermal" widget="many2many">
-                                <tree editable="bottom">
-                                    <field name="sequence" widget="handle"/>
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                            <field name="section_11_1_1_inhalation" widget="many2many">
-                                <tree editable="bottom">
-                                    <field name="sequence" widget="handle"/>
-                                    <field name="name"/>
-                                </tree>
-                            </field>
-                            <field name="section_11_1_1_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_1_selector', '=', False)]}">
-                            <field name="section_11_1_1_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_2" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_2_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_2_selector', '=', False)]}">
-                            <field name="section_11_1_2_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_3" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_3_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_3_selector', '=', False)]}">
-                            <field name="section_11_1_3_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_4" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_4_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_4_selector', '=', False)]}">
-                            <field name="section_11_1_4_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_5" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_5_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_5_selector', '=', False)]}">
-                            <field name="section_11_1_5_text"/>
-                        </group>
-                        <group>
-                            <field name="section_11_1_6" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_6_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_6_selector', '=', False)]}">
-                            <field name="section_11_1_6_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_7" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_7_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_7_selector', '=', False)]}">
-                            <field name="section_11_1_7_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_8" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_8_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_8_selector', '=', False)]}">
-                            <field name="section_11_1_8_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_9" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_9_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_9_selector', '=', False)]}">
-                            <field name="section_11_1_9_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_1_10" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_11_1_10_selector" widget="checkbox"/>
-                        </group>
-                        <group attrs="{'invisible': [('section_11_1_10_selector', '=', False)]}">
-                            <field name="section_11_1_10_text"/>
-                        </group>
-                        <group>
-                        <field name="section_11_2" widget="html"/>
+                                    </group>
+                                    <group string="SECTION 11: free notes">
+                                        <field name="section_11_note"/>
+                                    </group>
+                                </form>
+                            </page>
 
-                    </group>
-                    <group string="SECTION 11: free notes">
-                        <field name="section_11_note"/>
-                    </group>
+                            <!--  Section 12: Ecological information -->
+                            <page string="12" name="section12">
+                                <form>
+                                    <group string="Section 12: Ecological information"
+                                           name="ecological">
+                                        <field name="section_12_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_1_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_1_selector', '=', False)]}">
+                                        <field name="section_12_1_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_2" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_2_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_2_selector', '=', False)]}">
+                                        <field name="section_12_2_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_3" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_3_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_3_selector', '=', False)]}">
+                                        <field name="section_12_3_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_4" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_4_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_4_selector', '=', False)]}">
+                                        <field name="section_12_4_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_5" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_5_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_5_selector', '=', False)]}">
+                                        <field name="section_12_5_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_6" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_6_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_6_selector', '=', False)]}">
+                                        <field name="section_12_6_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                        <field name="section_12_7" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                        <field name="section_12_7_selector" widget="checkbox"/>
+                                    </group>
+                                    <group attrs="{'invisible': [('section_12_7_selector', '=', False)]}">
+                                        <field name="section_12_7_text" widget="html"/>
+                                    </group>
+                                    <group>
+                                    </group>
+                                    <group string="SECTION 12: free notes">
+                                        <field name="section_12_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 13: Disposal considerations -->
+                            <page string="13" name="section13">
+                                <form>
+                                    <group string="Section 13: Disposal considerations"
+                                           name="disposal">
+                                        <field name="section_13_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="name"/>
+                                            </tree>
+                                        </field>
+                                    </group>
+                                    <group string="SECTION 13: free notes">
+                                        <field name="section_13_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 14: Transport information -->
+                            <page string="14" name="section14">
+                                <form>
+                                    <group string="Section 14: Transport information"
+                                           name="transport">
+                                        <field name="section_14_1"/>
+                                        <field name="section_14_2"/>
+                                        <field name="section_14_3"/>
+                                        <field name="section_14_4"/>
+                                        <field name="section_14_5"/>
+                                        <field name="section_14_6"/>
+                                        <field name="section_14_7"/>
+                                    </group>
+                                    <group string="SECTION 14: free notes">
+                                        <field name="section_14_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 15: Regulatory Information -->
+                            <page string="15" name="section15">
+                                <form>
+                                    <group col="3" string="Section 15: Regulatory Information"
+                                           name="regulatory">
+                                        <field name="section_15_1_ozone"/>
+                                        <field name="section_15_1_pollutants"/>
+                                        <field name="section_15_1_impexp"/>
+                                        <field name="section_15_1_seveso"/>
+                                        <field name="section_15_1"/>
+                                        <field name="section_15_2"/>
+                                    </group>
+                                    <group string="SECTION 15: free notes">
+                                        <field name="section_15_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                            <!--  Section 16: Other information -->
+                            <page string="16" name="section16">
+                                <form>
+                                    <group string="Section 16: Other information"
+                                           name="other">
+                                        <field name="section_16_classification_procedure"/>
+                                        <field name="section_16_legend"/>
+                                        <field name="section_16_bibliography"/>
+                                        <field name="section_16_changes"/>
+                                    </group>
+                                    <group string="SECTION 16: free notes">
+                                        <field name="section_16_note"/>
+                                    </group>
+                                </form>
+                            </page>
+
+                        </notebook>
+                    </sheet>
                 </form>
-            </page>
-
-            <!--  Section 12: Ecological information -->
-            <page string="12" name="section12">
-                <form>
-                    <group string="Section 12: Ecological information"
-                           name="ecological">
-                        <field name="section_12_1" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_1_text" widget="html"/>
-                        <field name="section_12_2" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_2_text" widget="html"/>
-                        <field name="section_12_3" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_3_text" widget="html"/>
-                        <field name="section_12_4" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_4_text" widget="html"/>
-                        <field name="section_12_5" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_5_text" widget="html"/>
-                        <field name="section_12_6" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_6_text" widget="html"/>
-                        <field name="section_12_7" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                        <field name="section_12_7_text" widget="html"/>
-                    </group>
-                    <group string="SECTION 12: free notes">
-                        <field name="section_12_note"/>
-                    </group>
-                </form>
-            </page>
-
-            <!--  Section 13: Disposal considerations -->
-            <page string="13" name="section13">
-                <form>
-                    <group string="Section 13: Disposal considerations"
-                           name="disposal">
-                        <field name="section_13_1" widget="many2many">
-                            <tree editable="bottom">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                            </tree>
-                        </field>
-                    </group>
-                    <group string="SECTION 13: free notes">
-                        <field name="section_13_note"/>
-                    </group>
-                </form>
-            </page>
-
-            <!--  Section 14: Transport information -->
-            <page string="14" name="section14">
-                <form>
-                    <group string="Section 14: Transport information"
-                           name="transport">
-                        <field name="section_14_1"/>
-                        <field name="section_14_2"/>
-                        <field name="section_14_3"/>
-                        <field name="section_14_4"/>
-                        <field name="section_14_5"/>
-                        <field name="section_14_6"/>
-                        <field name="section_14_7"/>
-                    </group>
-                    <group string="SECTION 14: free notes">
-                        <field name="section_14_note"/>
-                    </group>
-                </form>
-            </page>
-
-            <!--  Section 15: Regulatory Information -->
-            <page string="15" name="section15">
-                <form>
-                    <group col="3" string="Section 15: Regulatory Information"
-                           name="regulatory">
-                        <field name="section_15_1_ozone"/>
-                        <field name="section_15_1_pollutants"/>
-                        <field name="section_15_1_impexp"/>
-                        <field name="section_15_1_seveso"/>
-                        <field name="section_15_1"/>
-                        <field name="section_15_2"/>
-                    </group>
-                    <group string="SECTION 15: free notes">
-                        <field name="section_15_note"/>
-                    </group>
-                </form>
-            </page>
-
-            <!--  Section 16: Other information -->
-            <page string="16" name="section16">
-                <form>
-                    <group string="Section 16: Other information"
-                           name="other">
-                        <field name="section_16_classification_procedure"/>
-                        <field name="section_16_legend"/>
-                        <field name="section_16_bibliography"/>
-                        <field name="section_16_changes"/>
-                    </group>
-                    <group string="SECTION 16: free notes">
-                        <field name="section_16_note"/>
-                    </group>
-                </form>
-            </page>
-
-        </notebook>
-    </sheet>
-</form>
-        </field>
+            </field>
         </record>
 
-<record model="ir.ui.view" id="hazard_statement_view_form">
-<field name="name">sds.hazard.statement.view.form</field>
-<field name="model">sds.hazard.statement</field>
-<field name="arch" type="xml">
-    <form string="Safety Datasheet">
-        <sheet>
-            <div class="oe_title">
-                <h1>
-                    <field name="code" string="GHS Hazard Code"/>
-                </h1>
-            </div>
-            <group>
-                <field name="name"/>
-                <field name="pictogram_ids"/>
-            </group>
-        </sheet>
-    </form>
-</field>
-</record>
+        <record model="ir.ui.view" id="hazard_statement_view_form">
+            <field name="name">sds.hazard.statement.view.form</field>
+            <field name="model">sds.hazard.statement</field>
+            <field name="arch" type="xml">
+                <form string="Safety Datasheet">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="code" string="GHS Hazard Code"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="name"/>
+                            <field name="pictogram_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
-<record model="ir.ui.view" id="chemical_substances_view_form">
-<field name="name">sds.chemical.substances.view.form</field>
-<field name="model">sds.chemical.substances</field>
-<field name="arch" type="xml">
-    <form string="Chemical Substances">
-        <sheet>
-            <group>
-                <field name="name"/>
-                <field name="IUPACname"/>
-            </group>
-            <group>
-                <field name="CASno"/>
-                <field name="ECno"/>
-                <field name="REACHno"/>
-            </group>
-            <group>
-                <field name="Classification"
-                       widget="one2many_list">
-                    <tree string="EU Classification" editable="bottom">
-                        <field name="HazardCategories"/>
-                        <field name="HazardStatement" context="{'show_only_code': True}"/>
-                    </tree>
-                </field>
-            </group>
-        </sheet>
-    </form>
-</field>
-</record>
+        <record model="ir.ui.view" id="chemical_substances_view_form">
+            <field name="name">sds.chemical.substance.view.form</field>
+            <field name="model">sds.chemical.substance</field>
+            <field name="arch" type="xml">
+                <form string="Chemical Substances">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="IUPACname"/>
+                        </group>
+                        <group>
+                            <field name="CASno"/>
+                            <field name="ECno"/>
+                            <field name="REACHno"/>
+                        </group>
+                        <group>
+                            <field name="Classification"
+                                   widget="one2many_list">
+                                <tree string="EU Classification" editable="bottom">
+                                    <field name="HazardCategories"/>
+                                    <field name="HazardStatement" context="{'show_only_code': True}"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
-<record model="ir.ui.view" id="action_sentence_view_form">
-<field name="name">sds.sentences.view.form</field>
-<field name="model">sds.sentences</field>
-<field name="arch" type="xml">
-    <form string="Action sentences">
-        <sheet>
-            <group>
-                <field name="sequence" attrs="{'invisible': True}"/>
-                <field name="category"/>
-                <field name="name"/>
-            </group>
-        </sheet>
-    </form>
-</field>
-</record>
+        <record model="ir.ui.view" id="action_sentence_view_form">
+            <field name="name">sds.sentences.view.form</field>
+            <field name="model">sds.sentences</field>
+            <field name="arch" type="xml">
+                <form string="Action sentences">
+                    <sheet>
+                        <group>
+                            <field name="sequence" attrs="{'invisible': True}"/>
+                            <field name="category"/>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
         <!-- actions opening views on models -->
-<record model="ir.actions.act_window" id="action_sds">
-<field name="name">Safety Data Sheets</field>
-<field name="res_model">sds.datasheet</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Safety Data Sheet
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_sds">
+            <field name="name">Safety Data Sheets</field>
+            <field name="res_model">sds.datasheet</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Safety Data Sheet
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_pictograms">
-<field name="name">Pictograms</field>
-<field name="res_model">sds.pictogram</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new GHS Pictogram
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_pictograms">
+            <field name="name">Pictograms</field>
+            <field name="res_model">sds.pictogram</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new GHS Pictogram
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_precautionary_statement">
-<field name="name">Precautionary Statement</field>
-<field name="res_model">sds.precautionary.statement</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Precautionary Statement
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_precautionary_statement">
+            <field name="name">Precautionary Statement</field>
+            <field name="res_model">sds.precautionary.statement</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Precautionary Statement
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_hazard_statement">
-<field name="name">Hazard Statement</field>
-<field name="res_model">sds.hazard.statement</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Hazard Statement
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_hazard_statement">
+            <field name="name">Hazard Statement</field>
+            <field name="res_model">sds.hazard.statement</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Hazard Statement
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_hazard_classification">
-<field name="name">Hazard Classification</field>
-<field name="res_model">sds.hazard.class</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Hazard Classification
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_hazard_classification">
+            <field name="name">Hazard Classification</field>
+            <field name="res_model">sds.hazard.class</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Hazard Classification
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_chemical_substances">
-<field name="name">Chemical Substances</field>
-<field name="res_model">sds.chemical.substances</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Chemical Substance
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_chemical_substances">
+            <field name="name">Chemical Substances</field>
+            <field name="res_model">sds.chemical.substance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Chemical Substance
+                </p>
+            </field>
+        </record>
 
-<record model="ir.actions.act_window" id="action_action_sentences">
-<field name="name">Action Sentences</field>
-<field name="res_model">sds.sentences</field>
-<field name="view_mode">tree,form</field>
-<field name="view_type">form</field>
-<field name="help" type="html">
-    <p class="o_view_nocontent_smiling_face">
-        Create a new Action Sentence, e.g. First Aid Action Sentence
-    </p>
-</field>
-</record>
+        <record model="ir.actions.act_window" id="action_action_sentences">
+            <field name="name">Action Sentences</field>
+            <field name="res_model">sds.sentences</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Action Sentence, e.g. First Aid Action Sentence
+                </p>
+            </field>
+        </record>
 
         <!-- tree views -->
 
-<record id="action_sentences_tree" model="ir.ui.view">
-<field name="name">sds.sentences.tree</field>
-<field name="model">sds.sentences</field>
-<field name="arch" type="xml">
-    <tree string="Action Sentences">
-        <field name="name"/>
-        <field name="category"/>
-    </tree>
-</field>
-</record>
+        <record id="action_sentences_tree" model="ir.ui.view">
+            <field name="name">sds.sentences.tree</field>
+            <field name="model">sds.sentences</field>
+            <field name="arch" type="xml">
+                <tree string="Action Sentences">
+                    <field name="name"/>
+                    <field name="category"/>
+                </tree>
+            </field>
+        </record>
 
-<record id="precautionary_statement_tree" model="ir.ui.view">
-<field name="name">sds.precautionary.statement.tree</field>
-<field name="model">sds.precautionary.statement</field>
-<field name="arch" type="xml">
-    <tree string="Precautionary Statement">
-        <field name="name" string="Code"/>
-        <field name="description" string="Description"/>
-        <field name="mode" string="Type"/>
-    </tree>
-</field>
-</record>
+        <record id="precautionary_statement_tree" model="ir.ui.view">
+            <field name="name">sds.precautionary.statement.tree</field>
+            <field name="model">sds.precautionary.statement</field>
+            <field name="arch" type="xml">
+                <tree string="Precautionary Statement">
+                    <field name="name" string="Code"/>
+                    <field name="description" string="Description"/>
+                    <field name="mode" string="Type"/>
+                </tree>
+            </field>
+        </record>
 
-<record id="hazard_statement_tree" model="ir.ui.view">
-<field name="name">sds.hazard.statement.tree</field>
-<field name="model">sds.hazard.statement</field>
-<field name="arch" type="xml">
-    <tree string="Precautionary Statement">
-        <field name="code"/>
-        <field name="name"/>
-        <field name="pictogram_ids">
-            <field name="pictogram" widget="image"/>
-        </field>
-    </tree>
-</field>
-</record>
+        <record id="hazard_statement_tree" model="ir.ui.view">
+            <field name="name">sds.hazard.statement.tree</field>
+            <field name="model">sds.hazard.statement</field>
+            <field name="arch" type="xml">
+                <tree string="Precautionary Statement">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="pictogram_ids">
+                        <field name="pictogram" widget="image"/>
+                    </field>
+                </tree>
+            </field>
+        </record>
 
-<record id="hazard_class_tree" model="ir.ui.view">
-<field name="name">sds.hazard.class.tree</field>
-<field name="model">sds.hazard.class</field>
-<field name="arch" type="xml">
-    <tree string="Hazard Classification">
-        <field name="h_class"/>
-        <field name="name"/>
-    </tree>
-</field>
-</record>
+        <record id="hazard_class_tree" model="ir.ui.view">
+            <field name="name">sds.hazard.class.tree</field>
+            <field name="model">sds.hazard.class</field>
+            <field name="arch" type="xml">
+                <tree string="Hazard Classification">
+                    <field name="h_class"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
 
-<record id="ghs_pictogram_tree" model="ir.ui.view">
-<field name="name">sds.pictogram.tree</field>
-<field name="model">sds.pictogram</field>
-<field name="arch" type="xml">
-    <tree string="GHS Pictograms">
-        <field name="name"/>
-        <field name="description"/>
-        <field name="pictogram" widget="image"/>
-    </tree>
-</field>
-</record>
+        <record id="ghs_pictogram_tree" model="ir.ui.view">
+            <field name="name">sds.pictogram.tree</field>
+            <field name="model">sds.pictogram</field>
+            <field name="arch" type="xml">
+                <tree string="GHS Pictograms">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="pictogram" widget="image"/>
+                </tree>
+            </field>
+        </record>
 
         <!-- Menu item -->
-<menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
-<menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
-<menuitem id="safety_datasheet_tables" name="Tables" groups="base.group_user" parent="safety_datasheet_menu"/>
+        <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
+        <menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
+        <menuitem id="safety_datasheet_tables" name="Tables" groups="base.group_user" parent="safety_datasheet_menu"/>
 
-<menuitem id="pictogram_tree" name="Pictograms" action="action_pictograms" parent="safety_datasheet_tables"/>
-<menuitem id="pstatement_tree" name="Precautionary Statement" action="action_precautionary_statement"
-          parent="safety_datasheet_tables"/>
-<menuitem id="hstatement_tree" name="Hazard Statement" action="action_hazard_statement"
-          parent="safety_datasheet_tables"/>
-<menuitem id="hclass_tree" name="Hazard Classification" action="action_hazard_classification"
-          parent="safety_datasheet_tables"/>
-<menuitem id="substances_tree" name="Chemical Substances" action="action_chemical_substances"
-          parent="safety_datasheet_tables"/>
-<menuitem id="sentences_tree" name="Action Sentences" action="action_action_sentences"
-          parent="safety_datasheet_tables"/>
-        </data>
-        </odoo>
+        <menuitem id="pictogram_tree" name="Pictograms" action="action_pictograms" parent="safety_datasheet_tables"/>
+        <menuitem id="pstatement_tree" name="Precautionary Statement" action="action_precautionary_statement"
+                  parent="safety_datasheet_tables"/>
+        <menuitem id="hstatement_tree" name="Hazard Statement" action="action_hazard_statement"
+                  parent="safety_datasheet_tables"/>
+        <menuitem id="hclass_tree" name="Hazard Classification" action="action_hazard_classification"
+                  parent="safety_datasheet_tables"/>
+        <menuitem id="substances_tree" name="Chemical Substances" action="action_chemical_substances"
+                  parent="safety_datasheet_tables"/>
+        <menuitem id="sentences_tree" name="Action Sentences" action="action_action_sentences"
+                  parent="safety_datasheet_tables"/>
+    </data>
+</odoo>

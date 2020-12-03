@@ -2,58 +2,58 @@
 <odoo>
     <data>
         <!-- Chemical properites -->
-        <record id="chemical_property_1" model="sds.chemical.properties">
+        <record id="chemical_property_1" model="sds.chemical.property">
             <field name="name">Physical state</field>
         </record>
-        <record id="chemical_property_2" model="sds.chemical.properties">
+        <record id="chemical_property_2" model="sds.chemical.property">
             <field name="name">Colour</field>
         </record>
-        <record id="chemical_property_3" model="sds.chemical.properties">
+        <record id="chemical_property_3" model="sds.chemical.property">
             <field name="name">Odour</field>
         </record>
-        <record id="chemical_property_4" model="sds.chemical.properties">
+        <record id="chemical_property_4" model="sds.chemical.property">
             <field name="name">Melting point/freezing point</field>
         </record>
-        <record id="chemical_property_5" model="sds.chemical.properties">
+        <record id="chemical_property_5" model="sds.chemical.property">
             <field name="name">Boiling point or initial boiling point and boiling range</field>
         </record>
-        <record id="chemical_property_6" model="sds.chemical.properties">
+        <record id="chemical_property_6" model="sds.chemical.property">
             <field name="name">Flammability</field>
         </record>
-        <record id="chemical_property_7" model="sds.chemical.properties">
+        <record id="chemical_property_7" model="sds.chemical.property">
             <field name="name">Lower and upper explosion limit</field>
         </record>
-        <record id="chemical_property_8" model="sds.chemical.properties">
+        <record id="chemical_property_8" model="sds.chemical.property">
             <field name="name">Flash point</field>
         </record>
-        <record id="chemical_property_9" model="sds.chemical.properties">
+        <record id="chemical_property_9" model="sds.chemical.property">
             <field name="name">Auto-ignition temperature</field>
         </record>
-        <record id="chemical_property_10" model="sds.chemical.properties">
+        <record id="chemical_property_10" model="sds.chemical.property">
             <field name="name">Decomposition temperature</field>
         </record>
-        <record id="chemical_property_11" model="sds.chemical.properties">
+        <record id="chemical_property_11" model="sds.chemical.property">
             <field name="name">pH</field>
         </record>
-        <record id="chemical_property_12" model="sds.chemical.properties">
+        <record id="chemical_property_12" model="sds.chemical.property">
             <field name="name">Kinematic viscosity</field>
         </record>
-        <record id="chemical_property_13" model="sds.chemical.properties">
+        <record id="chemical_property_13" model="sds.chemical.property">
             <field name="name">Solubility</field>
         </record>
-        <record id="chemical_property_14" model="sds.chemical.properties">
+        <record id="chemical_property_14" model="sds.chemical.property">
             <field name="name">Partition coefficient n-octanol/water (log value)</field>
         </record>
-        <record id="chemical_property_15" model="sds.chemical.properties">
+        <record id="chemical_property_15" model="sds.chemical.property">
             <field name="name">Vapour pressure</field>
         </record>
-        <record id="chemical_property_16" model="sds.chemical.properties">
+        <record id="chemical_property_16" model="sds.chemical.property">
             <field name="name">Density and/or relative density</field>
         </record>
-        <record id="chemical_property_17" model="sds.chemical.properties">
+        <record id="chemical_property_17" model="sds.chemical.property">
             <field name="name">Relative vapour density</field>
         </record>
-        <record id="chemical_property_18" model="sds.chemical.properties">
+        <record id="chemical_property_18" model="sds.chemical.property">
             <field name="name">Particle characteristics</field>
         </record>
 

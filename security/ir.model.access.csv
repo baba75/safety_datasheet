@@ -1,15 +1,15 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_safety_datasheet,sds.datasheet,model_sds_datasheet,base.group_user,1,1,1,1
-access_ec_regulation_criteria,safety_datasheet.sds.regulation.criteria,model_sds_regulation_criteria,base.group_user,1,1,1,1
-access_hazard_statement,safety_datasheet.sds.hazard.statement,model_sds_hazard_statement,base.group_user,1,1,1,1
-access_hazard_class,safety_datasheet.sds.hazard.class,model_sds_hazard_class,base.group_user,1,1,1,1
-access_precautionary_statement,safety_datasheet.sds.precautionary.statement,model_sds_precautionary_statement,base.group_user,1,1,1,1
-access_sds.pictogram,safety_datasheet.sds.pictogram,model_sds_pictogram,base.group_user,1,1,1,1
-access_chemical.substances,safety_datasheet.sds.chemical.substances,model_sds_chemical_substances,base.group_user,1,1,1,1
-access_chemical.mixture,safety_datasheet.sds.chemical.mixture,model_sds_chemical_mixture,base.group_user,1,1,1,1
-access_chemical.classification,safety_datasheet.sds.chemical.classification,model_sds_chemical_classification,base.group_user,1,1,1,1
-access_sds.sentences,safety_datasheet.sds.sentences,model_sds_sentences,base.group_user,1,1,1,1
-access_chemical.properties,safety_datasheet.sds.chemical.properties,model_sds_chemical_properties,base.group_user,1,1,1,1
-access_chemical.properties.line,safety_datasheet.sds.chemical.properties.line,model_sds_chemical_properties_line,base.group_user,1,1,1,1
+access_sds_datasheet,safety_datasheet.sds.datasheet,safety_datasheet.model_sds_datasheet,base.group_user,1,1,1,1
+access_ec_regulation_criteria,sds.regulation.criteria,safety_datasheet.model_sds_regulation_criteria,base.group_user,1,1,1,1
+access_hazard_statement,sds.hazard.statement,safety_datasheet.model_sds_hazard_statement,base.group_user,1,1,1,1
+access_hazard_class,sds.hazard.class,safety_datasheet.model_sds_hazard_class,base.group_user,1,1,1,1
+access_precautionary_statement,sds.precautionary.statement,safety_datasheet.model_sds_precautionary_statement,base.group_user,1,1,1,1
+access_sds.pictogram,sds.pictogram,safety_datasheet.model_sds_pictogram,base.group_user,1,1,1,1
+access_chemical.substance,sds.chemical.substance,safety_datasheet.model_sds_chemical_substance,base.group_user,1,1,1,1
+access_chemical.mixture,sds.chemical.mixture,safety_datasheet.model_sds_chemical_mixture,base.group_user,1,1,1,1
+access_chemical.classification,sds.chemical.classification,safety_datasheet.model_sds_chemical_classification,base.group_user,1,1,1,1
+access_sds.sentences,sds.sentences,safety_datasheet.model_sds_sentences,base.group_user,1,1,1,1
+access_chemical.property,sds.chemical.property,safety_datasheet.model_sds_chemical_property,base.group_user,1,1,1,1
+access_chemical.property.line,sds.chemical.property.line,safety_datasheet.model_sds_chemical_property_line,base.group_user,1,1,1,1
 
 

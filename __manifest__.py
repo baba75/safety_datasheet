@@ -16,14 +16,13 @@
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Specific Industry Applications',
-    'version': '12.1',
+    'version': '12.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base','product','web_tree_image_tooltip'],
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
         'views/templates.xml',
         'wizards/select_lang.xml',
         'views/views.xml',
@@ -33,9 +32,9 @@
         'data/hazard_class.xml',
         'data/hazard_statement.xml',
         'data/sentences.xml',
-        'data/chemical_properties.xml',
-        'data/chemical_substances.xml',
-        
+        'data/chemical_property.xml',
+        'data/chemical_substance.xml',
+        'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
