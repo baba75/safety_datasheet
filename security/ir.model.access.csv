@@ -11,5 +11,6 @@ access_chemical.classification,sds.chemical.classification,safety_datasheet.mode
 access_sds.sentences,sds.sentences,safety_datasheet.model_sds_sentences,base.group_user,1,1,1,1
 access_chemical.property,sds.chemical.property,safety_datasheet.model_sds_chemical_property,base.group_user,1,1,1,1
 access_chemical.property.line,sds.chemical.property.line,safety_datasheet.model_sds_chemical_property_line,base.group_user,1,1,1,1
-
+access_sds_legend,access_sds_legend,model_sds_legend,base.group_user,1,1,1,1
+access_sds_bibliography,access_sds_bibliography,model_sds_bibliography,base.group_user,1,1,1,1
 

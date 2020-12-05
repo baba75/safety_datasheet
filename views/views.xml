@@ -721,6 +721,7 @@
                                            name="other">
                                         <field name="section_16_classification_procedure"/>
                                         <field name="section_16_legend"/>
+                                        <field name="section_16_bibliography_url" widget="checkbox"/>
                                         <field name="section_16_bibliography"/>
                                         <field name="section_16_changes"/>
                                     </group>
@@ -750,6 +751,36 @@
                         <group>
                             <field name="name"/>
                             <field name="pictogram_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="legend_view_form">
+            <field name="name">sds.legend.view.form</field>
+            <field name="model">sds.legend</field>
+            <field name="arch" type="xml">
+                <form string="Legend">
+                    <sheet>
+                        <group>
+                            <field name="acronym"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bibliography_view_form">
+            <field name="name">sds.bibliography.view.form</field>
+            <field name="model">sds.bibliography</field>
+            <field name="arch" type="xml">
+                <form string="Bibliography">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="url"/>
                         </group>
                     </sheet>
                 </form>
@@ -886,6 +917,30 @@
             </field>
         </record>
 
+        <record model="ir.actions.act_window" id="action_legend">
+            <field name="name">Legend</field>
+            <field name="res_model">sds.legend</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Legend entry, e.g. SDS = Safety Data Sheet
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_bibliography">
+            <field name="name">Bibliography</field>
+            <field name="res_model">sds.bibliography</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Bibliography entry
+                </p>
+            </field>
+        </record>
+
         <!-- tree views -->
 
         <record id="action_sentences_tree" model="ir.ui.view">
@@ -948,6 +1003,28 @@
             </field>
         </record>
 
+        <record id="legend_tree" model="ir.ui.view">
+            <field name="name">sds.legend.tree</field>
+            <field name="model">sds.legend</field>
+            <field name="arch" type="xml">
+                <tree string="Legend">
+                    <field name="acronym"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="bibliography_tree" model="ir.ui.view">
+            <field name="name">sds.bibliography.tree</field>
+            <field name="model">sds.bibliography</field>
+            <field name="arch" type="xml">
+                <tree string="Bibliography">
+                    <field name="name"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
         <!-- Menu item -->
         <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
         <menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
@@ -964,5 +1041,7 @@
                   parent="safety_datasheet_tables"/>
         <menuitem id="sentences_tree" name="Action Sentences" action="action_action_sentences"
                   parent="safety_datasheet_tables"/>
+        <menuitem id="legend_tree" name="Legend" action="action_legend" parent="safety_datasheet_tables"/>
+        <menuitem id="bibliography_tree" name="Bibliography" action="action_bibliography" parent="safety_datasheet_tables"/>
     </data>
 </odoo>

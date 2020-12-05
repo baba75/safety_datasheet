@@ -34,6 +34,8 @@
         'data/sentences.xml',
         'data/chemical_property.xml',
         'data/chemical_substance.xml',
+        'data/bibliography.xml',
+        'data/legend.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode

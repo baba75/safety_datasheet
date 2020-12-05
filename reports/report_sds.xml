@@ -735,7 +735,7 @@
                                     <span class="sds" t-field="line.name"/>
                                 </span>
                             </p>
-                           <t t-if="doc.section_11_1_5_selector==True">
+                            <t t-if="doc.section_11_1_5_selector==True">
                                 <h6 class="sds">Germ cell mutagenicity details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_5_text"/>
                             </t>
@@ -765,7 +765,7 @@
                                     <span class="sds" t-field="line.name"/>
                                 </span>
                             </p>
-                           <t t-if="doc.section_11_1_8_selector==True">
+                            <t t-if="doc.section_11_1_8_selector==True">
                                 <h6 class="sds">STOT SE details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_8_text"/>
                             </t>
@@ -1105,10 +1105,23 @@
                     </div>
                     <div class="sds" style="page-break-inside: auto">
                         <div class="sds">
-                        <h4 class="sds">Legend</h4>
-                        <div class="sds">
-                            <span t-raw="doc.section_16_legend"/>
-                        </div>
+                            <h4 class="sds">Legend</h4>
+                            <div class="sds">
+                                <table class="sds">
+                                    <tbody>
+                                        <t t-foreach="doc.section_16_legend" t-as="line">
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    <span t-field="line.acronym"/>
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span t-field="line.description"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <t t-if="doc.section_3_2_selector==True">
                             <div class="sds">
@@ -1134,7 +1147,16 @@
                     <div class="sds" style="page-break-inside: auto">
                         <h4 class="sds">Bibliography:</h4>
                         <div class="sds">
-                            <span t-raw="doc.section_16_bibliography"/>
+                            <ul>
+                            <t t-foreach="doc.section_16_bibliography" t-as="line">
+                                <li>
+                                    <span t-field="line.name"/>
+                                    <t t-if="doc.section_16_bibliography_url == True">
+                                        <a t-att-href="line.url"><span class="fa fa-external-link" style=""/></a>
+                                    </t>
+                                </li>
+                            </t>
+                            </ul>
                         </div>
                     </div>
                     <!-- TODO: It would be nice to mark the changes trough

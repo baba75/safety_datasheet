@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Bibliography entries (Section 16) -->
+        <record id="bibliography_1" model="sds.bibliography">
+            <field name="name">Regulation (EC) No 1907/2006 of the European Parliament and
+                of the Council of 18 December 2006 concerning the Registration, Evaluation,
+                Authorisation and Restriction of Chemicals (REACH)</field>
+            <field name="url">http://data.europa.eu/eli/reg/2006/1907/oj</field>
+        </record>
+        <record id="bibliography_2" model="sds.bibliography">
+            <field name="name">Regulation (EC) No 1272/2008 of the European Parliament and of
+                the Council of 16 December 2008 on classification, labelling and packaging of
+                substances and mixtures, amending and repealing Directives 67/548/EEC and
+                1999/45/EC, and amending Regulation (EC) No 1907/2006</field>
+            <field name="url">http://data.europa.eu/eli/reg/2008/1272/oj</field>
+        </record>
+        <record id="bibliography_3" model="sds.bibliography">
+            <field name="name">Commission Regulation (EU) 2020/878 of 18 June 2020 amending Annex II
+                to Regulation (EC) No 1907/2006 of the European Parliament and of the Council
+                concerning the Registration, Evaluation, Authorisation and Restriction of
+                Chemicals (REACH) </field>
+            <field name="url">http://data.europa.eu/eli/reg/2020/878/oj</field>
+        </record>
+        <record id="bibliography_4" model="sds.bibliography">
+            <field name="name">European Chemical Agency (https://echa.europa.eu/)</field>
+            <field name="url">https://echa.europa.eu</field>
+        </record>
+        <record id="bibliography_5" model="sds.bibliography">
+            <field name="name">Regulation (EC) No 1005/2009 of the European Parliament and
+                of the Council of 16 September 2009 on substances that deplete the ozone layer </field>
+            <field name="url">http://data.europa.eu/eli/reg/2009/1005/oj</field>
+        </record>
+        <record id="bibliography_6" model="sds.bibliography">
+            <field name="name">Regulation (EU) 2019/1021 of the European Parliament and of
+                the Council of 20 June 2019 on persistent organic pollutants </field>
+            <field name="url">http://data.europa.eu/eli/reg/2019/1021/oj</field>
+        </record>
+        <record id="bibliography_7" model="sds.bibliography">
+            <field name="name">Regulation (EU) No 649/2012 of the European Parliament and
+                of the Council of 4 July 2012 concerning the export and import of hazardous
+                chemicals Text with EEA relevance</field>
+            <field name="url">http://data.europa.eu/eli/reg/2012/649/oj</field>
+        </record>
+        <record id="bibliography_8" model="sds.bibliography">
+            <field name="name">Directive 2004/42/CE of the European Parliament and of the
+                Council of 21 April 2004 on the limitation of emissions of volatile organic
+                compounds due to the use of organic solvents in certain paints and varnishes
+                and vehicle refinishing products and amending Directive 1999/13/EC </field>
+            <field name="url">http://data.europa.eu/eli/dir/2004/42/oj</field>
+        </record>
+        <record id="bibliography_9" model="sds.bibliography">
+            <field name="name">EN ISO 374-5:2016 - Protective gloves against dangerous
+                chemicals and micro-organisms</field>
+            <field name="url"></field>
+        </record>
+        <record id="bibliography_10" model="sds.bibliography">
+            <field name="name">DIRECTIVE 2012/18/EU OF THE EUROPEAN PARLIAMENT AND OF THE
+                COUNCIL on the control of major-accident hazards involving dangerous substances,
+                amending and subsequently repealing Council Directive 96/82/EC</field>
+            <field name="url">http://data.europa.eu/eli/dir/2012/18/oj</field>
+        </record>
+
+    </data>
+</odoo>

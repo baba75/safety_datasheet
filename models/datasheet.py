@@ -519,9 +519,9 @@ class SdsDatasheet(models.Model):
     section_14_note = fields.Html(string="Section 14 Notes", translate=True)
 
     # Section 15: Regulatory Information
-    section_15_1_ozone = fields.Char(string="Regulation (EC) No 2037/2000 on substances that deplete the ozone layer",
+    section_15_1_ozone = fields.Char(string="Regulation on substances that deplete the ozone layer",
                                      default=lambda s: _("Not applicable."), translate=True)
-    section_15_1_pollutants = fields.Char(string="Regulation (EC) No 850/2004 on persistent organic pollutants",
+    section_15_1_pollutants = fields.Char(string="Regulation  on persistent organic pollutants",
                                           default=lambda s: _("Not applicable."), translate=True)
     section_15_1_impexp = fields.Char(
         string="Regulation (EU) No 649/2012 concerning the export and import of hazardous chemicals",
@@ -545,42 +545,11 @@ class SdsDatasheet(models.Model):
 
     # Only literal strings can be marked for exports, not expressions or variables.
 
-    # TODO: Transform in action sentences
-    section_16_legend = fields.Html(string="Legend",
-                                    default=lambda s: _('<table class="sds"><tbody>'
-                                                        '<tr><td class="sds">EC-Number</td><td class="sds tdpl">European Community number</td></tr>'
-                                                        '<tr><td class="sds">GHS</td><td class="sds tdpl">Globally Harmonized System</td></tr>'
-                                                        '<tr><td class="sds">IC50</td><td class="sds tdpl">Half maximal inhibitory concentration</td></tr>'
-                                                        '<tr><td class="sds">IMO</td><td class="sds tdpl">International Maritime Organization</td></tr>'
-                                                        '<tr><td class="sds">LC50</td><td class="sds tdpl">Lethal Concentration to 50 % of a test population</td></tr>'
-                                                        '<tr><td class="sds">LD50</td><td class="sds tdpl">Lethal Dose to 50% of a test population (Median Lethal Dose)</td></tr>'
-                                                        '<tr><td class="sds">OECD</td><td class="sds tdpl">Organisation for Economic Co-operation and Development</td></tr>'
-                                                        '<tr><td class="sds">PBT</td><td class="sds tdpl">Persistent, Bioaccumulative and Toxic substance</td></tr>'
-                                                        '<tr><td class="sds">REACH</td><td class="sds tdpl">Regulation (EC) No 1907/2006 of the European Parliament'
-                                                        'and of the Council concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals</td></tr>'
-                                                        '<tr><td class="sds">SDS</td><td class="sds tdpl">Safety Data Sheet</td></tr>'
-                                                        '<tr><td class="sds">UN</td><td class="sds tdpl">United Nations</td></tr>'
-                                                        '<tr><td class="sds">VOC</td><td class="sds tdpl">Volatile Organic Compounds</td></tr>'
-                                                        '<tr><td class="sds">vPvB</td><td class="sds tdpl">Very Persistent and Very Bioaccumulative</td></tr>'
-                                                        '</tbody></table>'),
-                                    translate=True, sanitize=False)
-    # FIXME: put ul style into css file
-    # TODO: Transform in action sentences
-    section_16_bibliography = fields.Html(string="Bibliography",
-                                          default=lambda s: _('<ul style="padding-left: 10px;">'
-                                                              '<li>Regulation (EC) No 1907/2006 of the European Parliament (REACH)</li>'
-                                                              '<li>Regulation (EC) No 1272/2008 of the European Parliament</li>'
-                                                              '<li>Commission Regulation (EU) 2020/878</li>'
-                                                              '<li>European Chemical Agency (https://echa.europa.eu/)</li>'
-                                                              '<li>Regulation (EC) No 2037/2000</li>'
-                                                              '<li>Regulation (EC) No 850/2004</li>'
-                                                              '<li>Regulation (EU) No 649/2012</li>'
-                                                              '<li>Directive 2004/42/CE of the European Parliament</li>'
-                                                              '<li>EN ISO374 - 1:2016 Protective gloves against dangerous chemicals and micro - organisms</li>'
-                                                              '<li>Directive 2012/18/EU Of the European Parliament (Seveso III)</li>'
-                                                              '</ul>'),
-                                          translate=True, sanitize=False)
-
+    section_16_legend = fields.Many2many('sds.legend', relation="sds_legend_rel",
+                                   string="Legend entries")
+    section_16_bibliography_url = fields.Boolean(string="Insert URL links in bibliography", default=False)
+    section_16_bibliography = fields.Many2many('sds.bibliography', relation="sds_bibliography_rel",
+                                   string="Bibliography entries")
 
     section_16_changes = fields.Char('Changes made to the previous version', default=lambda s: _('Initial version'), translate=True)
     section_16_note = fields.Html(string="Section 16 Notes",
