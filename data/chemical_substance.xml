@@ -160,7 +160,7 @@
             <field name="CASno">77-92-9</field>
             <field name="ECno">201-069-1</field>
             <field name="REACHno">01-2119457026-42-XXXX</field>
-            <field name="Classification" eval=""/>
+            <field name="Classification" eval="[(6, 0, [ref('eye2_H319'),ref('skin2_H315'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
         </record>
         <record id="CSA" model="sds.chemical.substance">
             <field name="name">Calcium sulfoaluminate clinker</field>
