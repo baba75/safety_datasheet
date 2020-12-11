@@ -7,6 +7,7 @@ from . import hazard_class
 from . import chemical_property
 from . import hazard_statement
 from . import chemical_substance
+from . import regulation
 from . import datasheet
 from . import legend
 from . import bibliography

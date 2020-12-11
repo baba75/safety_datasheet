@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Regulatory information (Section 15) -->
+        <record id="regulation_1" model="sds.regulation">
+            <field name="name">Regulation (EC) No 1005/2009 of the European Parliament and of the Council of 16 September 2009 on substances that deplete the ozone layer</field>
+            <field name="url">http://data.europa.eu/eli/reg/2009/1005/oj</field>
+        </record>
+        <record id="regulation_2" model="sds.regulation">
+            <field name="name">Regulation (EU) 2019/1021 of the European Parliament and of the Council of 20 June 2019 on persistent organic pollutants</field>
+            <field name="url">http://data.europa.eu/eli/reg/2019/1021/oj</field>
+        </record>
+        <record id="regulation_3" model="sds.regulation">
+            <field name="name">Regulation (EU) No 649/2012 of the European Parliament and of the Council of 4 July 2012 concerning the export and import of hazardous chemicals</field>
+            <field name="url">http://data.europa.eu/eli/reg/2012/649/oj</field>
+        </record>
+        <record id="regulation_4" model="sds.regulation">
+            <field name="name">Directive 2012/18/EU of the European Parliament and of the Council of 4 July 2012 on the control of major-accident hazards involving dangerous substances</field>
+            <field name="url">http://data.europa.eu/eli/dir/2012/18/oj</field>
+        </record>
+    </data>
+</odoo>

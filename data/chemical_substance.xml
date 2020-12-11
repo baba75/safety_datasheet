@@ -145,5 +145,31 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317'),ref('STOT_SE3_H335')])]"/>
         </record>
+        <record id="lithum_carbonate" model="sds.chemical.substance">
+            <field name="name">Lithium carbonate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">554-13-2</field>
+            <field name="ECno">209-062-5</field>
+            <field name="REACHno">01-2119516034-53</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H302'),ref('eye2_H319')])]"/>
+        </record>
+        <record id="citric_acid" model="sds.chemical.substance">
+            <field name="name">Citric Acid</field>
+            <field name="IUPACname">2-hydroxypropane-1,2,3-tricarboxylic acid</field>
+            <field name="CASno">77-92-9</field>
+            <field name="ECno">201-069-1</field>
+            <field name="REACHno">01-2119457026-42-XXXX</field>
+            <field name="Classification" eval=""/>
+        </record>
+        <record id="CSA" model="sds.chemical.substance">
+            <field name="name">Calcium sulfoaluminate clinker</field>
+            <field name="IUPACname"></field>
+            <field name="CASno"></field>
+            <field name="ECno">934-133-9</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('skinB_H317'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
+        </record>
     </data>
 </odoo>

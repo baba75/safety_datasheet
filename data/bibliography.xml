@@ -39,7 +39,7 @@
         <record id="bibliography_7" model="sds.bibliography">
             <field name="name">Regulation (EU) No 649/2012 of the European Parliament and
                 of the Council of 4 July 2012 concerning the export and import of hazardous
-                chemicals Text with EEA relevance</field>
+                chemicals</field>
             <field name="url">http://data.europa.eu/eli/reg/2012/649/oj</field>
         </record>
         <record id="bibliography_8" model="sds.bibliography">

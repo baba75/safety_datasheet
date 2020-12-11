@@ -82,7 +82,7 @@
                         <div class="sds">
                             <h4 class="sds">2.1 Classification of the substance or mixture:</h4>
                             <h5 class="sds">EC regulation criteria 1272/2008 (CLP):</h5>
-                            <t t-if="doc.section_2_1_selector">
+                            <t t-if="doc.section_2_1_selector == False">
                                 <p class="sds">Not a hazardous substance or mixture.</p>
                             </t>
                             <t t-else="">
@@ -103,7 +103,7 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">2.2. Label elements:</h4>
-                        <t t-if="doc.section_2_2_selector">
+                        <t t-if="doc.section_2_2_selector == False">
                             <p class="sds">No labeling according to GHS required.</p>
                         </t>
                         <t t-else="">
@@ -471,7 +471,7 @@
                         <div class="sds" style="page-break-inside: auto;">
                             <div class="sds">
                                 <h4 class="sds">8.1 Control parameters</h4>
-                                <t t-if="doc.section_8_1_tlv_selector == True">
+                                <t t-if="doc.section_8_1_tlv_selector == False">
                                     <p class="sds">TLV Occupational exposure limit: Not available</p>
                                 </t>
                                 <t t-else="">
@@ -481,7 +481,7 @@
                                 </t>
                             </div>
                             <div class="sds">
-                                <t t-if="doc.section_8_1_dnel_selector == True">
+                                <t t-if="doc.section_8_1_dnel_selector == False">
                                     <p class="sds">DNEL Exposure limit values: Not available</p>
                                 </t>
                                 <t t-else="">
@@ -491,7 +491,7 @@
                                 </t>
                             </div>
                             <div class="sds">
-                                <t t-if="doc.section_8_1_pnec_selector == True">
+                                <t t-if="doc.section_8_1_pnec_selector == False">
                                     <p class="sds">PNEC Exposure limit values: Not available</p>
                                 </t>
                                 <t t-else="">
@@ -995,31 +995,35 @@
                             <h4 class="sds">15.1. Safety, health and environmental regulations/legislation specific for
                                 the substance or mixture
                             </h4>
-                            <h5 class="sds">Regulation (EC) No 1005/2009 on substances that deplete the ozone layer:
-                            </h5>
-                            <span>&amp;nbsp;</span>
-                            <span class="sds" t-raw="doc.section_15_1_ozone"/>
-                            <br/>
-                            <h5 class="sds">Regulation (EC) No 850/2004 on persistent organic pollutants:</h5>
-                            <span>&amp;nbsp;</span>
-                            <span class="sds" t-raw="doc.section_15_1_pollutants"/>
-                            <br/>
-                            <h5 class="sds">
-                                Regulation (EU) No 649/2012 concerning the export and import of hazardous chemicals:
-                            </h5>
-                            <span>&amp;nbsp;</span>
-                            <span class="sds" t-raw="doc.section_15_1_impexp"/>
-                            <br/>
-                            <h5 class="sds">Directive 2012/18/EU Of the European Parliament (Seveso III):</h5>
-                            <span>&amp;nbsp;</span>
-                            <span class="sds" t-raw="doc.section_15_1_seveso"/>
-                            <br/>
-                            <t t-if="doc.section_15_1">
-                                <h5 class="sds">Other safety, health and environmental regulations/legislation specific
-                                    for the substance or mixture:
-                                </h5>
-                                <span class="sds" t-raw="doc.section_15_1"/>
-                            </t>
+                            <div>
+                                <table class="sds_properties">
+                                    <tbody>
+                                        <t t-foreach="doc.section_15_regulation" t-as="line">
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    <span t-field="line.regulation"/>
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span t-raw="line.text"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <t t-if="doc.section_15_1">
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    <span>Other safety, health and environmental regulations/legislation
+                                                        specific
+                                                        for the substance or mixture:
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: left;">
+                                                    <span t-raw="doc.section_15_1"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="sds">
@@ -1085,7 +1089,7 @@
                         </t>
                     </div>
                     <div class="sds">
-                        <t t-if="doc.section_2_2_selector == False">
+                        <t t-if="doc.section_2_2_selector == True">
                             <h4 class="sds">Full text of P-Statements referred to under sections 2 to 15.</h4>
                             <table class="sds">
                                 <tbody>
@@ -1148,14 +1152,16 @@
                         <h4 class="sds">Bibliography:</h4>
                         <div class="sds">
                             <ul>
-                            <t t-foreach="doc.section_16_bibliography" t-as="line">
-                                <li>
-                                    <span t-field="line.name"/>
-                                    <t t-if="doc.section_16_bibliography_url == True">
-                                        <a t-att-href="line.url"><span class="fa fa-external-link" style=""/></a>
-                                    </t>
-                                </li>
-                            </t>
+                                <t t-foreach="doc.section_16_bibliography" t-as="line">
+                                    <li>
+                                        <span t-field="line.name"/>
+                                        <t t-if="doc.section_16_bibliography_url == True">
+                                            <a t-att-href="line.url">
+                                                <span class="fa fa-external-link" style=""/>
+                                            </a>
+                                        </t>
+                                    </li>
+                                </t>
                             </ul>
                         </div>
                     </div>

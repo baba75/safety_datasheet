@@ -10,13 +10,13 @@
     """,
 
     'author': "Alberto Carollo",
-    'website': "https://github.com/baba75",
+    'website': "https://github.com/baba75/safety_datasheet",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Specific Industry Applications',
-    'version': '12.2',
+    'version': '12.3',
 
     # any module necessary for this one to work correctly
     'depends': ['base','product','web_tree_image_tooltip'],
@@ -36,6 +36,7 @@
         'data/chemical_substance.xml',
         'data/bibliography.xml',
         'data/legend.xml',
+        'data/regulation.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode

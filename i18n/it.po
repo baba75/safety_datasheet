@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200501\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:52+0000\n"
-"PO-Revision-Date: 2020-11-12 15:57+0100\n"
+"POT-Creation-Date: 2020-12-05 09:23+0000\n"
+"PO-Revision-Date: 2020-12-05 11:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
@@ -237,12 +237,12 @@ msgid "16"
 msgstr "16"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
 msgid "2-(2-butoxyethoxy)ethanol"
 msgstr "2-(2-butossiettossi)etanolo"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,name:safety_datasheet.2-butoxyethanol
 msgid "2-butoxyethanol"
 msgstr "2-butoxyethanol"
 
@@ -401,7 +401,7 @@ msgstr ""
 "                            vPvB:"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:776
+#: code:addons/safety_datasheet/models/datasheet.py:556
 #, python-format
 msgid ""
 "<p class=\"sds\">The information contained in this sheet is based on the "
@@ -427,7 +427,7 @@ msgstr ""
 "formazione adeguata al personale assegnato all'uso di prodotti chimici.</p>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:420
+#: code:addons/safety_datasheet/models/datasheet.py:224
 #, python-format
 msgid ""
 "<p><b>Derived No Effect Level<br></b>Name of the substance here</"
@@ -468,7 +468,7 @@ msgstr ""
 "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:463
+#: code:addons/safety_datasheet/models/datasheet.py:267
 #, python-format
 msgid ""
 "<p><b>Predicted No Effect Concentration</b><br>Name of the component here</"
@@ -533,53 +533,7 @@ msgid "<span>Supersedes version:&amp;nbsp;</span>"
 msgstr "<span>Sostituisce la versione: &amp;nbsp;</span>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:739
-#, python-format
-msgid ""
-"<table class=\"sds\"><tbody><tr><td class=\"sds\">EC-Number</td><td class="
-"\"sds tdpl\">European Community number</td></tr><tr><td class=\"sds\">GHS</"
-"td><td class=\"sds tdpl\">Globally Harmonized System</td></tr><tr><td class="
-"\"sds\">IC50</td><td class=\"sds tdpl\">Half maximal inhibitory "
-"concentration</td></tr><tr><td class=\"sds\">IMO</td><td class=\"sds tdpl"
-"\">International Maritime Organization</td></tr><tr><td class=\"sds\">LC50</"
-"td><td class=\"sds tdpl\">Lethal Concentration to 50 % of a test population</"
-"td></tr><tr><td class=\"sds\">LD50</td><td class=\"sds tdpl\">Lethal Dose to "
-"50% of a test population (Median Lethal Dose)</td></tr><tr><td class=\"sds"
-"\">OECD</td><td class=\"sds tdpl\">Organisation for Economic Co-operation "
-"and Development</td></tr><tr><td class=\"sds\">PBT</td><td class=\"sds tdpl"
-"\">Persistent, Bioaccumulative and Toxic substance</td></tr><tr><td class="
-"\"sds\">REACH</td><td class=\"sds tdpl\">Regulation (EC) No 1907/2006 of the "
-"European Parliamentand of the Council concerning the Registration, "
-"Evaluation, Authorisation and Restriction of Chemicals</td></tr><tr><td "
-"class=\"sds\">SDS</td><td class=\"sds tdpl\">Safety Data Sheet</td></"
-"tr><tr><td class=\"sds\">UN</td><td class=\"sds tdpl\">United Nations</td></"
-"tr><tr><td class=\"sds\">VOC</td><td class=\"sds tdpl\">Volatile Organic "
-"Compounds</td></tr><tr><td class=\"sds\">vPvB</td><td class=\"sds tdpl"
-"\">Very Persistent and Very Bioaccumulative</td></tr></tbody></table>"
-msgstr ""
-"<table class=\"sds\"><tbody><tr><td class=\"sds\">Numero CE</td><td class="
-"\"sds tdpl\">Numero della Comunità Europea</td></tr><tr><td class=\"sds"
-"\">GHS</td><td class=\"sds tdpl\">Sistema Globale Armonizzato</td></"
-"tr><tr><td class=\"sds\">IC50</td><td class=\"sds tdpl\">Metà della "
-"concentrazione inibitoria massima</td></tr><tr><td class=\"sds\">Imo</td><td "
-"class=\"sds tdpl\">Organizzazione marittima internazionale</td></tr><tr><td "
-"class=\"sds\">LC50</td><td class=\"sds tdpl\">Concentrazione letale al 50 "
-"% di una popolazione di prova</td></tr><tr><td class=\"sds\">LD50</td><td "
-"class=\"sds tdpl\">Dose letale al 50% di una popolazione di prova (Dose "
-"letale mediana)</td></tr><tr><td class=“sds”>OCSE</td><td class=“sds "
-"tdpl”>Organizzazione per la cooperazione e lo sviluppo economico</td></"
-"tr><tr><td class=\"sds\">PBT</td><td class=\"sds tdpl\">Sostanza "
-"persistente, bioaccumulativa e tossica</td></tr><tr><td class=\"sds\">REACH</"
-"td><td class=\"sds tdpl\">Regolamento (CE) N. 1907/2006 del Parlamento "
-"europeo e del Consiglio relativo alla registrazione, valutazione, "
-"autorizzazione e restrizione delle sostanze chimiche</td></tr><tr><td class="
-"\"sds\">SDS</td><td class=\"sds tdpl\">Scheda dati di sicurezza</td></"
-"tr><tr><td class=\"sds\">UN</td><td class=\"sds tdpl\">Nazioni Unite</td></"
-"tr><tr><td class=\"sds\">vPvB</td><td class=\"sds tdpl\">Molto persistente e "
-"molto bioaccumulativo</td></tr></tbody></table>"
-
-#. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:394
+#: code:addons/safety_datasheet/models/datasheet.py:198
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -612,16 +566,9 @@ msgstr ""
 "tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:609
-#: code:addons/safety_datasheet/models/models.py:654
+#: code:addons/safety_datasheet/models/datasheet.py:413
+#: code:addons/safety_datasheet/models/datasheet.py:459
 #, python-format
-#| msgid ""
-#| "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
-#| "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></"
-#| "tr></thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></"
-#| "td><td><br></td></tr><tr><td>Inhalation</td><td><br></td><td><br></"
-#| "td><td><br></td></tr><tr><td>Skin/eye</td><td><br></td><td><br></"
-#| "td><td><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
 "th><th>Species/Test system</th><th>Source</th></tr></"
@@ -632,7 +579,7 @@ msgstr ""
 "thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:574
+#: code:addons/safety_datasheet/models/datasheet.py:378
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
@@ -648,30 +595,6 @@ msgstr ""
 "td></tr><tr><td>Inalazione</td><td><br></td><td><br></td><td><br></td></"
 "tr><tr><td>Contatto con pelle/occhi.</td><td><br></td><td><br></td><td><br></"
 "td></tr></tbody></table>"
-
-#. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:759
-#, python-format
-msgid ""
-"<ul style=\"padding-left: 10px;\"><li>Regulation (EC) No 1907/2006 of the "
-"European Parliament (REACH)</li><li>Regulation (EC) No 1272/2008 of the "
-"European Parliament</li><li>Commission Regulation (EU) 2020/878</"
-"li><li>European Chemical Agency (https://echa.europa.eu/)</li><li>Regulation "
-"(EC) No 2037/2000</li><li>Regulation (EC) No 850/2004</li><li>Regulation "
-"(EU) No 649/2012</li><li>Directive 2004/42/CE of the European Parliament</"
-"li><li>EN ISO374 - 1:2016 Protective gloves against dangerous chemicals and "
-"micro - organisms</li><li>Directive 2012/18/EU Of the European Parliament "
-"(Seveso III)</li></ul>"
-msgstr ""
-"<ul style=“padding-left: 10px;”><li>Regolamento (CE) N. 1907/2006 del "
-"Parlamento europeo (REACH)</li><li>Regolamento (CE) N. 1272/2008 del "
-"Parlamento europeo</li><li>Regolamento della Commissione (UE) 2020/878</"
-"li><li>Agenzia europea per le sostanze chimiche (https://echa.europa.eu/)</"
-"li><li>Regolamento (CE) N. 2037/2000</li><li>Regolamento (CE) N. 850/2004</"
-"li><li>Regolamento (UE) N. 649/2012</li><li>Direttiva 2004/42/CE del "
-"Parlamento europeo</li><li>EN ISO374 - 1:2016 Guanti protettivi contro "
-"sostanze chimiche pericolose e microrganismi</li><li>Direttiva 2012/18/UE "
-"del Parlamento europeo (Seveso III)</li></ul>"
 
 # P390
 #. module: safety_datasheet
@@ -705,6 +628,11 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.incompatible_1
 msgid "Acids."
 msgstr "Acidi."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__acronym
+msgid "Acronym"
+msgstr "Acronimo"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_action_sentences
@@ -855,7 +783,7 @@ msgid "At elevated temperature: acetic acid."
 msgstr "A temperatura elevata: acido acetico."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_9
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_9
 msgid "Auto-ignition temperature"
 msgstr "Temperatura di autoaccensione"
 
@@ -951,9 +879,17 @@ msgstr ""
 "sensibilizzazione da questo prodotto."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_bibliography
+#: model:ir.actions.act_window,name:safety_datasheet.action_bibliography
+#: model:ir.ui.menu,name:safety_datasheet.bibliography_tree
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.bibliography_view_form
 msgid "Bibliography"
 msgstr "Bibliografia"
+
+#. module: safety_datasheet
+#: model:ir.model,name:safety_datasheet.model_sds_bibliography
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_bibliography
+msgid "Bibliography entries"
+msgstr "Voci della Bibliografia"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -972,7 +908,7 @@ msgid "Bioaccumulative potential details"
 msgstr "Dettagli sul potenziale di bioaccumulo"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_5
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr ""
 "Punto di ebollizione o punto iniziale di ebollizione e intervallo di "
@@ -995,7 +931,7 @@ msgstr ""
 "avvolgere con un bendaggio umido."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:707
+#: code:addons/safety_datasheet/models/datasheet.py:518
 #, python-format
 msgid "Bulk transport in tankers is not intended."
 msgstr "Il trasporto alla rinfusa in autocisterne non è previsto."
@@ -1006,7 +942,7 @@ msgid "CAS / EC-No."
 msgstr "CAS / Nr. CE"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__CASno
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__CASno
 msgid "CAS Number"
 msgstr "Numero CAS"
 
@@ -1128,7 +1064,8 @@ msgid "Causes skin irritation."
 msgstr "Provoca irritazione cutanea."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,name:safety_datasheet.cement
+#: model:sds.chemical.substance,name:safety_datasheet.portland_cement
 msgid "Cement, portland, chemicals"
 msgstr "Cemento, portland, prodotti chimici"
 
@@ -1153,13 +1090,13 @@ msgid "Chemical Mixture"
 msgstr "Miscela chimica"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__name
 msgid "Chemical Name"
 msgstr "Nome chimico"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_chemical_substances
-#: model:ir.model,name:safety_datasheet.model_sds_chemical_substances
+#: model:ir.model,name:safety_datasheet.model_sds_chemical_substance
 #: model:ir.ui.menu,name:safety_datasheet.substances_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
 msgid "Chemical Substances"
@@ -1227,7 +1164,7 @@ msgstr ""
 "Pulire i materiali rimanenti dalla fuoriuscita con un assorbente adatto."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
 msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
 msgstr "Cocoalkylmethyl[polyoxyethylene] cloruro di ammonio"
 
@@ -1250,9 +1187,24 @@ msgid "Collect spillage."
 msgstr "Raccogliere il materiale fuoriuscito."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_2
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_2
 msgid "Colour"
 msgstr "Colore"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_3
+msgid ""
+"Commission Regulation (EU) 2020/878 of 18 June 2020 amending Annex II\n"
+"                to Regulation (EC) No 1907/2006 of the European Parliament "
+"and of the Council\n"
+"                concerning the Registration, Evaluation, Authorisation and "
+"Restriction of\n"
+"                Chemicals (REACH) "
+msgstr ""
+"Regolamento (UE) 2020/878 della Commissione del 18 giugno 2020 che modifica "
+"l’allegato II del regolamento (CE) n. 1907/2006 del Parlamento europeo e del "
+"Consiglio concernente la registrazione, la valutazione, l’autorizzazione e "
+"la restrizione delle sostanze chimiche (REACH) "
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_10
@@ -1399,6 +1351,11 @@ msgstr ""
 "soccorso"
 
 #. module: safety_datasheet
+#: model_terms:ir.actions.act_window,help:safety_datasheet.action_bibliography
+msgid "Create a new Bibliography entry"
+msgstr "Crea una nuova voce nella bibliografia"
+
+#. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_chemical_substances
 msgid "Create a new Chemical Substance"
 msgstr "Creare una nuova sostanza chimica"
@@ -1419,6 +1376,11 @@ msgid "Create a new Hazard Statement"
 msgstr "Crea una nuova frase H"
 
 #. module: safety_datasheet
+#: model_terms:ir.actions.act_window,help:safety_datasheet.action_legend
+msgid "Create a new Legend entry, e.g. SDS = Safety Data Sheet"
+msgstr "Crea una nuova voce Legenda, ad esempio SDS = Scheda Di Sicurezza"
+
+#. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_precautionary_statement
 msgid "Create a new Precautionary Statement"
 msgstr "Crea un nuovo consiglio di prudenza P"
@@ -1429,14 +1391,16 @@ msgid "Create a new Safety Data Sheet"
 msgstr "Crea una nuova Scheda di Sicurezza"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__create_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__create_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__create_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__create_uid
@@ -1446,14 +1410,16 @@ msgid "Created by"
 msgstr "Creato da"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__create_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__create_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__create_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__create_date
@@ -1470,6 +1436,20 @@ msgid ""
 msgstr ""
 "Cianoacrilato. Pericolo. Incolla la pelle e gli occhi in pochi secondi. "
 "Tenere fuori dalla portata dei bambini."
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_10
+msgid ""
+"DIRECTIVE 2012/18/EU OF THE EUROPEAN PARLIAMENT AND OF THE\n"
+"                COUNCIL on the control of major-accident hazards involving "
+"dangerous substances,\n"
+"                amending and subsequently repealing Council Directive 96/82/"
+"EC"
+msgstr ""
+"Direttiva 2012/18/UE del Parlamento europeo e del Consiglio, del 4 luglio "
+"2012 , sul controllo del pericolo di incidenti rilevanti connessi con "
+"sostanze pericolose, recante modifica e successiva abrogazione della "
+"direttiva 96/82/CE del Consiglio"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel
@@ -1503,12 +1483,12 @@ msgid "Decomposition products"
 msgstr "Prodotti di decomposizione"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_10
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_10
 msgid "Decomposition temperature"
 msgstr "Prodotti di decomposizione"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_16
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_16
 msgid "Density and/or relative density"
 msgstr "Densità e/o densità relativa"
 
@@ -1530,6 +1510,23 @@ msgid "Detail of the supplier of the safety data sheet"
 msgstr "Informazioni sul fornitore della scheda di dati di sicurezza"
 
 #. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_8
+msgid ""
+"Directive 2004/42/CE of the European Parliament and of the\n"
+"                Council of 21 April 2004 on the limitation of emissions of "
+"volatile organic\n"
+"                compounds due to the use of organic solvents in certain "
+"paints and varnishes\n"
+"                and vehicle refinishing products and amending Directive "
+"1999/13/EC "
+msgstr ""
+"Direttiva 2004/42/CE del Parlamento europeo e del Consiglio, del 21 aprile "
+"2004, relativa alla limitazione delle emissioni di composti organici "
+"volatili dovute all’uso di solventi organici in talune pitture e vernici e "
+"in taluni prodotti per carrozzeria e recante modifica della direttiva "
+"1999/13/CE "
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_seveso
 msgid "Directive 2012/18/EU Of the European Parliament (Seveso III)"
 msgstr "Direttiva 2012/18/UE del Parlamento europeo (Seveso III)"
@@ -1546,14 +1543,16 @@ msgstr "Evitare lo scarico nell'ambiente."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__display_name
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__display_name
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__display_name
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__display_name
@@ -1729,7 +1728,7 @@ msgstr ""
 "cutanee."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__ECno
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 msgid "EC Number"
 msgstr "Numero CE"
 
@@ -1745,7 +1744,21 @@ msgid "EC regulation criteria 1272/2008 (CLP):"
 msgstr "Criteri regolamento CE 1272/2008 (CLP):"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__Classification
+#: model:sds.legend,acronym:safety_datasheet.legend_1
+msgid "EC-Number"
+msgstr "Numero CE"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_9
+msgid ""
+"EN ISO 374-5:2016 - Protective gloves against dangerous\n"
+"                chemicals and micro-organisms"
+msgstr ""
+"EN ISO 374-5:2016 - Guanti di protezione contro i prodotti chimici e "
+"microorganismi pericolosi"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__Classification
 msgid "EU Chemical Classification"
 msgstr "Classificazione chimica CE"
 
@@ -1822,9 +1835,20 @@ msgid "Environmental precautions"
 msgstr "Precauzioni ambientali"
 
 #. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_4
+msgid "European Chemical Agency (https://echa.europa.eu/)"
+msgstr ""
+"Agenzia europea per le sostanze chimiche (ECHA - https://echa.europa.eu/)"
+
+#. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_regulation_criteria
 msgid "European Community Regulation Criteria"
 msgstr "Criteri di regolamentazione della Comunità Europea"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_1
+msgid "European Community number"
+msgstr "Numero della Comunità europea"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P380
@@ -1923,6 +1947,11 @@ msgstr "Esplosivi."
 msgid "Exposure to combustion products may be a hazard to health."
 msgstr ""
 "L'esposizione ai prodotti a combustione può essere un pericolo per la salute."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__description
+msgid "Extended description"
+msgstr "Descrizione estesa"
 
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
@@ -2083,7 +2112,7 @@ msgid "Flame over circle"
 msgstr "Fiamma sopra cerchio"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_6
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_6
 msgid "Flammability"
 msgstr "Infiammabilità"
 
@@ -2115,7 +2144,7 @@ msgid "Flammable solid."
 msgstr "Solido infiammabile."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_8
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_8
 msgid "Flash point"
 msgstr "Punto d’infiammabilità"
 
@@ -2220,6 +2249,11 @@ msgstr ""
 "Testo completo dei consigli di prudenza P di cui alle sezioni da 2 a 15."
 
 #. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_2
+msgid "GHS"
+msgstr "GHS"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.hazard_statement_view_form
 msgid "GHS Hazard Code"
 msgstr "Codice di pericolo GHS"
@@ -2311,6 +2345,11 @@ msgstr ""
 "trasporto in una struttura medica."
 
 #. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_2
+msgid "Globally Harmonized System"
+msgstr "Sistema Globale Armonizzato"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_7
 msgid ""
 "Glove thickness alone is not a good indicator of the level of protection a "
@@ -2327,6 +2366,11 @@ msgstr ""
 #: model:sds.precautionary.statement,description:safety_datasheet.P240
 msgid "Ground/bond container and receiving equipment."
 msgstr "Mettere a terra/massa il contenitore e il dispositivo ricevente."
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_3
+msgid "Half maximal inhibitory concentration"
+msgstr "Metà della concentrazione inibitoria massima"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_7
@@ -2492,15 +2536,22 @@ msgid "Highly flammable liquid and vapour."
 msgstr "Liquido e vapori facilmente infiammabili."
 
 #. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_3
+msgid "IC50"
+msgstr "IC50"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__id
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__id
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__id
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__id
@@ -2626,7 +2677,12 @@ msgstr ""
 "IN CASO di esposizione o di possibile esposizione, consultare un medico."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__IUPACname
+#: model:sds.legend,acronym:safety_datasheet.legend_4
+msgid "IMO"
+msgstr "IMO"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__IUPACname
 msgid "IUPAC Name"
 msgstr "Nome IUPAC"
 
@@ -2888,10 +2944,15 @@ msgid "Inhalation:"
 msgstr "Inalazione:"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:774
+#: code:addons/safety_datasheet/models/datasheet.py:554
 #, python-format
 msgid "Initial version"
 msgstr "Versione iniziale"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "Insert PBT and vPvB details"
+msgstr "Inserire dettagli PBT e vPvB"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
@@ -2904,9 +2965,19 @@ msgid "Insert STOST SE details"
 msgstr "Inserire i dettagli STOST SE"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_bibliography_url
+msgid "Insert URL links in bibliography"
+msgstr "Link URL nella bibliografia"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
 msgid "Insert acute toxicity details"
 msgstr "Inserire i dettagli di tossicità acuta"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
+msgid "Insert adverse effects details"
+msgstr "Inserire dettagli sugli effetti avversi"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
@@ -2914,14 +2985,34 @@ msgid "Insert aspiration Hazard details"
 msgstr "Inserire i dettagli aspirazione"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Insert bioaccumulative details"
+msgstr "Inserire dettagli sul bioaccumulo"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
 msgid "Insert carcinogenicity details"
 msgstr "Inserire i dettagli sulla cancerogenicità"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
+msgid "Insert degradability details"
+msgstr "Inserire dettagli sulla degradabilità"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Insert endocrine details"
+msgstr "Inserire i dettagli interferenza endocrina"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
 msgid "Insert eye damage corrosion/irritation details"
 msgstr "Inserire dettagli danni oculari"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Insert mobility details"
+msgstr "Inserire i dettagli della mobilità"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
@@ -2947,6 +3038,16 @@ msgstr "Dettagli di sensibilizzazione respiratoria"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
 msgid "Insert skin corrosion/irritation details"
 msgstr "Dettagli su corrosione della pelle"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
+msgid "Insert toxicity details"
+msgstr "Inserire i dettagli di tossicità"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_4
+msgid "International Maritime Organization"
+msgstr "Organizzazione marittima internazionale"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_4
@@ -3056,9 +3157,19 @@ msgid "Kidney."
 msgstr "Rene."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_12
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_12
 msgid "Kinematic viscosity"
 msgstr "Viscosità cinematica"
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_5
+msgid "LC50"
+msgstr "LC50"
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_6
+msgid "LD50"
+msgstr "LD50"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_pictograms
@@ -3072,14 +3183,16 @@ msgstr "Lingua"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture____last_update
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties____last_update
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line____last_update
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria____last_update
@@ -3089,14 +3202,16 @@ msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__write_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__write_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__write_uid
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__write_uid
@@ -3106,14 +3221,16 @@ msgid "Last Updated by"
 msgstr "Ultima modifica di"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__write_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__write_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__write_date
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__write_date
@@ -3131,10 +3248,37 @@ msgstr ""
 "sia possibile bloccare la perdita senza pericolo."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_legend
+#: model:ir.actions.act_window,name:safety_datasheet.action_legend
+#: model:ir.ui.menu,name:safety_datasheet.legend_tree
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.legend_view_form
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Legend"
 msgstr "Legenda"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_legend
+msgid "Legend entries"
+msgstr "Voci legenda"
+
+#. module: safety_datasheet
+#: model:ir.model,name:safety_datasheet.model_sds_legend
+msgid "Lengend entries"
+msgstr "Voci della Legenda"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_5
+msgid "Lethal Concentration to 50 % of a test population"
+msgstr "Concentrazione letale al 50 % di una popolazione di prova"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_6
+msgid "Lethal Dose to 50% of a test population (Median Lethal Dose)"
+msgstr "Dose letale al 50% di una popolazione di prova (Dose letale mediana)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__url
+msgid "Link URL"
+msgstr "URL del Link"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.STOST_6
@@ -3167,7 +3311,7 @@ msgstr ""
 "impiegati nella pulizia degli spandimenti."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_7
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
 msgstr "Limite di esplosione inferiore e superiore"
 
@@ -3391,7 +3535,7 @@ msgid "May react explosively even in the absence of air."
 msgstr "Può esplodere anche in assenza di aria."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_4
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_4
 msgid "Melting point/freezing point"
 msgstr "Punto di fusione/punto di congelamento"
 
@@ -3457,13 +3601,13 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:254
+#: code:addons/safety_datasheet/models/datasheet.py:58
 #, python-format
 msgid "New SDS"
 msgstr "Nuova SDS"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:725
+#: code:addons/safety_datasheet/models/datasheet.py:536
 #, python-format
 msgid ""
 "No Chemical Safety Assessment has been carried out for this substance/"
@@ -3479,7 +3623,7 @@ msgid "No adverse effects expected."
 msgstr "Non si prevede alcun effetto negativo."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:527
+#: code:addons/safety_datasheet/models/datasheet.py:331
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_1
 #, python-format
 msgid "No data available."
@@ -3546,8 +3690,8 @@ msgid "No specific indication."
 msgstr "Nessuna indicazione specifica."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:644
-#: code:addons/safety_datasheet/models/models.py:723
+#: code:addons/safety_datasheet/models/datasheet.py:448
+#: code:addons/safety_datasheet/models/datasheet.py:534
 #, python-format
 msgid "None available."
 msgstr "Non disponibile."
@@ -3572,7 +3716,7 @@ msgid "Not Available."
 msgstr "Non disponibile."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:701
+#: code:addons/safety_datasheet/models/datasheet.py:512
 #, python-format
 msgid "Not Hazardous to the environment."
 msgstr "Non pericoloso per l'ambiente."
@@ -3588,18 +3732,18 @@ msgid "Not a hazardous substance or mixture."
 msgstr "Non è una sostanza o una miscela pericolosa."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:293
-#: code:addons/safety_datasheet/models/models.py:712
-#: code:addons/safety_datasheet/models/models.py:714
-#: code:addons/safety_datasheet/models/models.py:717
-#: code:addons/safety_datasheet/models/models.py:720
+#: code:addons/safety_datasheet/models/datasheet.py:97
+#: code:addons/safety_datasheet/models/datasheet.py:523
+#: code:addons/safety_datasheet/models/datasheet.py:525
+#: code:addons/safety_datasheet/models/datasheet.py:528
+#: code:addons/safety_datasheet/models/datasheet.py:531
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_6
 #, python-format
 msgid "Not applicable."
 msgstr "Non applicabile."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:323
+#: code:addons/safety_datasheet/models/datasheet.py:127
 #, python-format
 msgid "Not available."
 msgstr "Non disponibile."
@@ -3610,13 +3754,18 @@ msgid "Not classified as a reactivity hazard."
 msgstr "Non classificato come rischio di reattività."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:695
-#: code:addons/safety_datasheet/models/models.py:696
-#: code:addons/safety_datasheet/models/models.py:698
-#: code:addons/safety_datasheet/models/models.py:700
+#: code:addons/safety_datasheet/models/datasheet.py:506
+#: code:addons/safety_datasheet/models/datasheet.py:507
+#: code:addons/safety_datasheet/models/datasheet.py:509
+#: code:addons/safety_datasheet/models/datasheet.py:511
 #, python-format
 msgid "Not regulated for transport."
 msgstr "Non regolamentato per il trasporto."
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_7
+msgid "OECD"
+msgstr "OCSE"
 
 # P201
 #. module: safety_datasheet
@@ -3625,7 +3774,7 @@ msgid "Obtain special instructions before use."
 msgstr "Procurarsi istruzioni specifiche prima dell’uso."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_3
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_3
 msgid "Odour"
 msgstr "Odore"
 
@@ -3633,6 +3782,11 @@ msgstr "Odore"
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_2
 msgid "Organic peroxides."
 msgstr "Perossidi organici."
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_7
+msgid "Organisation for Economic Co-operation and Development"
+msgstr "Organizzazione per la cooperazione e lo sviluppo economico"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_OtherHazards
@@ -3693,6 +3847,7 @@ msgstr "Agenti ossidanti."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_PBT
+#: model:sds.legend,acronym:safety_datasheet.legend_8
 msgid "PBT"
 msgstr "PBT"
 
@@ -3722,12 +3877,12 @@ msgid "Packing group"
 msgstr "Gruppo di imballaggio"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_18
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_18
 msgid "Particle characteristics"
 msgstr "Caratteristiche delle particelle"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_14
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_14
 msgid "Partition coefficient n-octanol/water (log value)"
 msgstr "Coefficiente di ripartizione n-ottanolo/acqua (valore logaritmico)"
 
@@ -3752,6 +3907,11 @@ msgid "Persistence and degradability details"
 msgstr "Dettagli su persistenza e degradabilità"
 
 #. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_8
+msgid "Persistent, Bioaccumulative and Toxic substance"
+msgstr "Sostanze persistenti, bioaccumulative e tossiche (sostanze PBT)"
+
+#. module: safety_datasheet
 #: selection:sds.sentences,category:0
 msgid "Personal equipment"
 msgstr "Dispositivi personali"
@@ -3767,13 +3927,13 @@ msgid "Personal precautions for non-emergency personnel"
 msgstr "Precauzioni personali per chi non interviene direttamente"
 
 #. module: safety_datasheet
-#: model:ir.model,name:safety_datasheet.model_sds_chemical_properties
+#: model:ir.model,name:safety_datasheet.model_sds_chemical_property
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_9_1
 msgid "Physical and chemical properties"
 msgstr "Proprietà fisiche e chimiche"
 
 #. module: safety_datasheet
-#: model:ir.model,name:safety_datasheet.model_sds_chemical_properties_line
+#: model:ir.model,name:safety_datasheet.model_sds_chemical_property_line
 msgid "Physical and chemical properties line"
 msgstr "Linea di proprietà fisiche e chimiche"
 
@@ -3783,7 +3943,7 @@ msgid "Physical and chemical properties:"
 msgstr "Proprietà fisiche e chimiche:"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_1
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_1
 msgid "Physical state"
 msgstr "Stato fisico"
 
@@ -3814,7 +3974,7 @@ msgid "Possibility of hazardous reactions"
 msgstr "Possibilità di reazioni pericolose"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,name:safety_datasheet.Potassium_methylsilanetriolate
 msgid "Potassium methylsilanetriolate"
 msgstr "Metilsiliconato di potassio"
 
@@ -3940,17 +4100,17 @@ msgstr ""
 "l'assorbimento di quantità nocive."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__name_id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__name_id
 msgid "Property"
 msgstr "Proprietà"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties__name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property__name
 msgid "Property name"
 msgstr "Nome proprietà"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_properties_line__value
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__value
 msgid "Property value"
 msgstr "Valore della proprietà"
 
@@ -3998,7 +4158,12 @@ msgstr ""
 "Fornire una ventilazione sufficiente del luogo interessato allo spandimento"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substances__REACHno
+#: model:sds.legend,acronym:safety_datasheet.legend_9
+msgid "REACH"
+msgstr "REACH"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__REACHno
 msgid "REACH Number"
 msgstr "Numero REACH"
 
@@ -4008,13 +4173,15 @@ msgid "REACH Registration no."
 msgstr "Registrazione REACH n."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,name:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
 msgid ""
-"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and 2-methyl-1,2-"
-"thiazol-3(2H)-one\n"
+"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
+"                2-methyl-1,2-thiazol-3(2H)-one\n"
+"            "
 msgstr ""
-"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and 2-methyl-1,2-"
-"thiazol-3(2H)-one\n"
+"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
+"                2-methyl-1,2-thiazol-3(2H)-one\n"
+"            "
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_10_1
@@ -4051,6 +4218,21 @@ msgid "Reference to other sections"
 msgstr "Riferimento ad altre sezioni"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_pollutants
+msgid "Regulation  on persistent organic pollutants"
+msgstr "Regolamento sugli inquinanti organici persistenti"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_5
+msgid ""
+"Regulation (EC) No 1005/2009 of the European Parliament and\n"
+"                of the Council of 16 September 2009 on substances that "
+"deplete the ozone layer "
+msgstr ""
+"Regolamento (CE) n. 1005/2009 del Parlamento europeo e del Consiglio, del 16 "
+"settembre 2009 , sulle sostanze che riducono lo strato di ozono "
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid ""
 "Regulation (EC) No 1005/2009 on substances that deplete the ozone layer:"
@@ -4067,22 +4249,58 @@ msgstr ""
 "confezionamento di sostanze e miscele (CLP)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_ozone
-msgid "Regulation (EC) No 2037/2000 on substances that deplete the ozone layer"
+#: model:sds.bibliography,name:safety_datasheet.bibliography_2
+msgid ""
+"Regulation (EC) No 1272/2008 of the European Parliament and of\n"
+"                the Council of 16 December 2008 on classification, labelling "
+"and packaging of\n"
+"                substances and mixtures, amending and repealing Directives "
+"67/548/EEC and\n"
+"                1999/45/EC, and amending Regulation (EC) No 1907/2006"
 msgstr ""
-"Regolamento (CE) N. 2037/2000 sulle sostanze che riducono lo strato di ozono"
+"Regolamento (CE) n. 1272/2008 del Parlamento europeo e del Consiglio, del 16 "
+"dicembre 2008 , relativo alla classificazione, all’etichettatura e "
+"all’imballaggio delle sostanze e delle miscele che modifica e abroga le "
+"direttive 67/548/CEE e 1999/45/CE e che reca modifica al regolamento (CE) n. "
+"1907/2006"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_pollutants
-msgid "Regulation (EC) No 850/2004 on persistent organic pollutants"
+#: model:sds.bibliography,name:safety_datasheet.bibliography_1
+msgid ""
+"Regulation (EC) No 1907/2006 of the European Parliament and\n"
+"                of the Council of 18 December 2006 concerning the "
+"Registration, Evaluation,\n"
+"                Authorisation and Restriction of Chemicals (REACH)"
 msgstr ""
-"Regolamento (CE) N. 850/2004 relativo agli inquinanti organici persistenti"
+"Regolamento (CE) n. 1907/2006 del Parlamento europeo e del Consiglio, del 18 "
+"dicembre 2006, concernente la registrazione, la valutazione, "
+"l’autorizzazione e la restrizione delle sostanze chimiche (REACH)"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_9
+msgid ""
+"Regulation (EC) No 1907/2006 of the European Parliamentand of the Council "
+"concerning the\n"
+"Registration, Evaluation, Authorisation and Restriction of Chemicals"
+msgstr ""
+"Regolamento (CE) n. 1907/2006 del Parlamento europeo e del Consiglio, del 18 "
+"dicembre 2006, concernente la registrazione, la valutazione, "
+"l’autorizzazione e la restrizione delle sostanze chimiche"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Regulation (EC) No 850/2004 on persistent organic pollutants:"
 msgstr ""
 "Regolamento (CE) N. 850/2004 relativo agli inquinanti organici persistenti:"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_6
+msgid ""
+"Regulation (EU) 2019/1021 of the European Parliament and of\n"
+"                the Council of 20 June 2019 on persistent organic pollutants "
+msgstr ""
+"Regolamento (UE) 2019/1021 del Parlamento europeo e del Consiglio, del 20 "
+"giugno 2019, relativo agli inquinanti organici persistenti "
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_impexp
@@ -4103,13 +4321,30 @@ msgstr ""
 "chimiche pericolose:"
 
 #. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_7
+msgid ""
+"Regulation (EU) No 649/2012 of the European Parliament and\n"
+"                of the Council of 4 July 2012 concerning the export and "
+"import of hazardous\n"
+"                chemicals Text with EEA relevance"
+msgstr ""
+"Regolamento (UE) n. 649/2012 del Parlamento europeo e del Consiglio, del 4 "
+"luglio 2012 , sull’esportazione e importazione di sostanze chimiche "
+"pericolose"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_1_ozone
+msgid "Regulation on substances that deplete the ozone layer"
+msgstr "Regolamento relativo alle sostanze che riducono lo strato di ozono"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__datasheet_id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__datasheet_id
 msgid "Related Datasheet"
 msgstr "Scheda di sicurezza collegata"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_17
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_17
 msgid "Relative vapour density"
 msgstr "Densità di vapore relativa"
 
@@ -4122,7 +4357,7 @@ msgstr ""
 "Usi identificati pertinenti della sostanza o della miscela e usi sconsigliati"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:704
+#: code:addons/safety_datasheet/models/datasheet.py:515
 #, python-format
 msgid "Relevant information in other sections has to be considered."
 msgstr "Prendere in considerazione informazioni pertinenti in altre sezioni."
@@ -4309,6 +4544,11 @@ msgstr "Sciacquare la pelle/fare una doccia."
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_044
 msgid "Risk of explosion if heated under confinement."
 msgstr "Rischio di esplosione per riscaldamento in ambiente confinato."
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_10
+msgid "SDS"
+msgstr "SDS"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -4508,6 +4748,7 @@ msgstr "Stoccaggio sicuro"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model:sds.legend,description:safety_datasheet.legend_10
 msgid "Safety Data Sheet"
 msgstr "Scheda di sicurezza"
 
@@ -4713,13 +4954,13 @@ msgstr ""
 "esposizione ambientale durante l'uso e lo smaltimento dei rifiuti."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:364
+#: code:addons/safety_datasheet/models/datasheet.py:168
 #, python-format
 msgid "See sections: 7, 8, 11, 12 and 13."
 msgstr "Vedi le sezioni: 7, 8, 11, 12 e 13."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:386
+#: code:addons/safety_datasheet/models/datasheet.py:190
 #, python-format
 msgid "See the technical data sheet on this product for further information."
 msgstr ""
@@ -4883,7 +5124,7 @@ msgid "Soak up with inert absorbent material."
 msgstr "Assorbire con materiale inerte."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_13
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_13
 msgid "Solubility"
 msgstr "Solubilità"
 
@@ -4922,7 +5163,7 @@ msgid "Specific end use"
 msgstr "Usi finali particolari"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:319
+#: code:addons/safety_datasheet/models/datasheet.py:123
 #, python-format
 msgid ""
 "Specific information on symptoms and effects caused by the product are "
@@ -5256,12 +5497,12 @@ msgid "Take precautionary measures against static discharge."
 msgstr "Prendere precauzioni contro le scariche elettrostatiche."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.Tetrapotassium_pyrophosphate
+#: model:sds.chemical.substance,name:safety_datasheet.Tetrapotassium_pyrophosphate
 msgid "Tetrapotassium pyrophosphate"
 msgstr "Pirofosfato tetrapotassio"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substances,name:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,name:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
 msgid "Tetrasodium ethylenediaminetetraacetate"
 msgstr "Tetrasodium ethylenediaminetetraacetate"
 
@@ -5339,6 +5580,11 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.STOST_8
 msgid "Thyroid."
 msgstr "Tiroide."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__name
+msgid "Title of the regulation"
+msgstr "Titolo del regolamento"
 
 # EUH 401
 #. module: safety_datasheet
@@ -5436,6 +5682,11 @@ msgid "Type"
 msgstr "Tipo"
 
 #. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_11
+msgid "UN"
+msgstr "ONU"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_1
 msgid "UN number"
 msgstr "Numero ONU"
@@ -5450,6 +5701,11 @@ msgstr "Nome di spedizione dell’ONU"
 msgid "Under ordinary workplace conditions: No special measures required."
 msgstr ""
 "In condizioni ordinarie di lavoro: non sono necessarie misure speciali."
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_11
+msgid "United Nations"
+msgstr "Organizzazione delle Nazioni Unite"
 
 # H200
 #. module: safety_datasheet
@@ -5580,9 +5836,19 @@ msgid "Use with local exhaust ventilation."
 msgstr "Utilizzare una cappa aspirante."
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_15
+#: model:sds.legend,acronym:safety_datasheet.legend_12
+msgid "VOC"
+msgstr "VOC"
+
+#. module: safety_datasheet
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_15
 msgid "Vapour pressure"
 msgstr "Pressione di vapore"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_13
+msgid "Very Persistent and Very Bioaccumulative"
+msgstr "Molto persistente e molto bioaccumulabile"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.toxicity_3
@@ -5600,6 +5866,11 @@ msgstr "Molto tossico per gli organismi acquatici con effetti di lunga durata."
 #: model:sds.hazard.statement,name:safety_datasheet.H400
 msgid "Very toxic to aquatic life."
 msgstr "Molto tossico per gli organismi acquatici."
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_12
+msgid "Volatile Organic Compounds"
+msgstr "Composti organici volatili"
 
 #. module: safety_datasheet
 #: selection:sds.datasheet,section_2_2_signal:0
@@ -5758,15 +6029,60 @@ msgstr ""
 "di protezione respiratoria."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/models.py:281
-#: code:addons/safety_datasheet/models/models.py:284
-#: code:addons/safety_datasheet/models/models.py:285
+#: model:sds.bibliography,url:safety_datasheet.bibliography_8
+msgid "http://data.europa.eu/eli/dir/2004/42/oj"
+msgstr "http://data.europa.eu/eli/dir/2004/42/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_10
+msgid "http://data.europa.eu/eli/dir/2012/18/oj"
+msgstr "http://data.europa.eu/eli/dir/2012/18/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_1
+msgid "http://data.europa.eu/eli/reg/2006/1907/oj"
+msgstr "http://data.europa.eu/eli/reg/2006/1907/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_2
+msgid "http://data.europa.eu/eli/reg/2008/1272/oj"
+msgstr "http://data.europa.eu/eli/reg/2008/1272/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_5
+msgid "http://data.europa.eu/eli/reg/2009/1005/oj"
+msgstr "http://data.europa.eu/eli/reg/2009/1005/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_7
+msgid "http://data.europa.eu/eli/reg/2012/649/oj"
+msgstr "http://data.europa.eu/eli/reg/2012/649/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_6
+msgid "http://data.europa.eu/eli/reg/2019/1021/oj"
+msgstr "http://data.europa.eu/eli/reg/2019/1021/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_3
+msgid "http://data.europa.eu/eli/reg/2020/878/oj"
+msgstr "http://data.europa.eu/eli/reg/2020/878/oj"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_4
+msgid "https://echa.europa.eu"
+msgstr "https://echa.europa.eu"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:85
+#: code:addons/safety_datasheet/models/datasheet.py:88
+#: code:addons/safety_datasheet/models/datasheet.py:89
 #, python-format
 msgid "none"
 msgstr "nessuno"
 
 #. module: safety_datasheet
-#: model:sds.chemical.properties,name:safety_datasheet.chemical_property_11
+#: model:sds.chemical.property,name:safety_datasheet.chemical_property_11
 msgid "pH"
 msgstr "pH"
 
@@ -5777,6 +6093,7 @@ msgstr "sostanze persistenti, bioaccumulative e tossiche (sostanze PBT)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
+#: model:sds.legend,acronym:safety_datasheet.legend_13
 msgid "vPvB"
 msgstr "vPvB"
 
@@ -5784,6 +6101,73 @@ msgstr "vPvB"
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr "sostanze molto persistenti e molto bioaccumulative (sostanze vPvB)"
+
+#, python-format
+#~ msgid ""
+#~ "<table class=\"sds\"><tbody><tr><td class=\"sds\">EC-Number</td><td class="
+#~ "\"sds tdpl\">European Community number</td></tr><tr><td class=\"sds"
+#~ "\">GHS</td><td class=\"sds tdpl\">Globally Harmonized System</td></"
+#~ "tr><tr><td class=\"sds\">IC50</td><td class=\"sds tdpl\">Half maximal "
+#~ "inhibitory concentration</td></tr><tr><td class=\"sds\">IMO</td><td class="
+#~ "\"sds tdpl\">International Maritime Organization</td></tr><tr><td class="
+#~ "\"sds\">LC50</td><td class=\"sds tdpl\">Lethal Concentration to 50 % of a "
+#~ "test population</td></tr><tr><td class=\"sds\">LD50</td><td class=\"sds "
+#~ "tdpl\">Lethal Dose to 50% of a test population (Median Lethal Dose)</td></"
+#~ "tr><tr><td class=\"sds\">OECD</td><td class=\"sds tdpl\">Organisation for "
+#~ "Economic Co-operation and Development</td></tr><tr><td class=\"sds\">PBT</"
+#~ "td><td class=\"sds tdpl\">Persistent, Bioaccumulative and Toxic "
+#~ "substance</td></tr><tr><td class=\"sds\">REACH</td><td class=\"sds tdpl"
+#~ "\">Regulation (EC) No 1907/2006 of the European Parliamentand of the "
+#~ "Council concerning the Registration, Evaluation, Authorisation and "
+#~ "Restriction of Chemicals</td></tr><tr><td class=\"sds\">SDS</td><td class="
+#~ "\"sds tdpl\">Safety Data Sheet</td></tr><tr><td class=\"sds\">UN</td><td "
+#~ "class=\"sds tdpl\">United Nations</td></tr><tr><td class=\"sds\">VOC</"
+#~ "td><td class=\"sds tdpl\">Volatile Organic Compounds</td></tr><tr><td "
+#~ "class=\"sds\">vPvB</td><td class=\"sds tdpl\">Very Persistent and Very "
+#~ "Bioaccumulative</td></tr></tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"sds\"><tbody><tr><td class=\"sds\">Numero CE</td><td class="
+#~ "\"sds tdpl\">Numero della Comunità Europea</td></tr><tr><td class=\"sds"
+#~ "\">GHS</td><td class=\"sds tdpl\">Sistema Globale Armonizzato</td></"
+#~ "tr><tr><td class=\"sds\">IC50</td><td class=\"sds tdpl\">Metà della "
+#~ "concentrazione inibitoria massima</td></tr><tr><td class=\"sds\">Imo</"
+#~ "td><td class=\"sds tdpl\">Organizzazione marittima internazionale</td></"
+#~ "tr><tr><td class=\"sds\">LC50</td><td class=\"sds tdpl\">Concentrazione "
+#~ "letale al 50 % di una popolazione di prova</td></tr><tr><td class=\"sds"
+#~ "\">LD50</td><td class=\"sds tdpl\">Dose letale al 50% di una popolazione "
+#~ "di prova (Dose letale mediana)</td></tr><tr><td class=“sds”>OCSE</td><td "
+#~ "class=“sds tdpl”>Organizzazione per la cooperazione e lo sviluppo "
+#~ "economico</td></tr><tr><td class=\"sds\">PBT</td><td class=\"sds tdpl"
+#~ "\">Sostanza persistente, bioaccumulativa e tossica</td></tr><tr><td class="
+#~ "\"sds\">REACH</td><td class=\"sds tdpl\">Regolamento (CE) N. 1907/2006 "
+#~ "del Parlamento europeo e del Consiglio relativo alla registrazione, "
+#~ "valutazione, autorizzazione e restrizione delle sostanze chimiche</td></"
+#~ "tr><tr><td class=\"sds\">SDS</td><td class=\"sds tdpl\">Scheda dati di "
+#~ "sicurezza</td></tr><tr><td class=\"sds\">UN</td><td class=\"sds tdpl"
+#~ "\">Nazioni Unite</td></tr><tr><td class=\"sds\">vPvB</td><td class=\"sds "
+#~ "tdpl\">Molto persistente e molto bioaccumulativo</td></tr></tbody></table>"
+
+#, python-format
+#~ msgid ""
+#~ "<ul style=\"padding-left: 10px;\"><li>Regulation (EC) No 1907/2006 of the "
+#~ "European Parliament (REACH)</li><li>Regulation (EC) No 1272/2008 of the "
+#~ "European Parliament</li><li>Commission Regulation (EU) 2020/878</"
+#~ "li><li>European Chemical Agency (https://echa.europa.eu/)</"
+#~ "li><li>Regulation (EC) No 2037/2000</li><li>Regulation (EC) No 850/2004</"
+#~ "li><li>Regulation (EU) No 649/2012</li><li>Directive 2004/42/CE of the "
+#~ "European Parliament</li><li>EN ISO374 - 1:2016 Protective gloves against "
+#~ "dangerous chemicals and micro - organisms</li><li>Directive 2012/18/EU Of "
+#~ "the European Parliament (Seveso III)</li></ul>"
+#~ msgstr ""
+#~ "<ul style=“padding-left: 10px;”><li>Regolamento (CE) N. 1907/2006 del "
+#~ "Parlamento europeo (REACH)</li><li>Regolamento (CE) N. 1272/2008 del "
+#~ "Parlamento europeo</li><li>Regolamento della Commissione (UE) 2020/878</"
+#~ "li><li>Agenzia europea per le sostanze chimiche (https://echa.europa."
+#~ "eu/)</li><li>Regolamento (CE) N. 2037/2000</li><li>Regolamento (CE) N. "
+#~ "850/2004</li><li>Regolamento (UE) N. 649/2012</li><li>Direttiva 2004/42/"
+#~ "CE del Parlamento europeo</li><li>EN ISO374 - 1:2016 Guanti protettivi "
+#~ "contro sostanze chimiche pericolose e microrganismi</li><li>Direttiva "
+#~ "2012/18/UE del Parlamento europeo (Seveso III)</li></ul>"
 
 #, python-format
 #~ msgid ""
@@ -5951,14 +6335,6 @@ msgstr "sostanze molto persistenti e molto bioaccumulative (sostanze vPvB)"
 #~ msgstr ""
 #~ "Regolamento (CE) N. 1907/2006 - Restrizione all'uso di determinate "
 #~ "sostanze pericolose (allegato XVII)"
-
-#~ msgid ""
-#~ "Regulation (EU) No 649/2012 concerning the export and import of "
-#~ "hazardous\n"
-#~ "                            chemicals"
-#~ msgstr ""
-#~ "Regolamento (UE) No 649/2012 sull’esportazione e importazione di sostanze "
-#~ "chimiche pericolose"
 
 #~ msgid ""
 #~ "This material does not contain any ingredients above the permitted "

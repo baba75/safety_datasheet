@@ -45,10 +45,12 @@ class SdsDatasheet(models.Model):
     @api.model
     def _default_company(self):
         company = self.env['res.company']._company_default_get()
-        result = '<p>' + company.name + '<br/>' + company.street
-        #FIXME: If one of these fields are empty (null) an error arise
-        result += '<br/>' + company.zip + ' ' + company.city + ' ' + company.state_id.name
-        result += '<br/>' + company.country_id.name + '</p>'
+        if(company.street and company.zip and company.city):
+            result = '<p>' + company.name + '<br/>' + company.street
+            result += '<br/>' + company.zip + ' ' + company.city + ' ' + company.state_id.name
+            result += '<br/>' + company.country_id.name + '</p>'
+        else:
+            result = '<p>' + company.name + '<br/>' + 'Insert you company full adrees here</p>'
         return result
 
     @api.model
@@ -72,10 +74,10 @@ class SdsDatasheet(models.Model):
     section_1_note = fields.Html(string="Section 1 notes", translate=True)
 
     # Section 2: Hazards identification
-    section_2_1_selector = fields.Boolean(string="Not a hazardous substance or mixture", default=True)
+    section_2_1_selector = fields.Boolean(string="Hazardous substance or mixture", default=False)
     section_2_1 = fields.One2many('sds.regulation.criteria', 'datasheet_id', string='EC regulation',
                                   help='Regulation (EC) No 1272/2008 - classification, labelling and packaging of substances and mixtures (CLP)')
-    section_2_2_selector = fields.Boolean(string="GHS Labelling not necessary", default=True)
+    section_2_2_selector = fields.Boolean(string="GHS Labelling", default=False)
     section_2_2_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms", copy=True)
     section_2_2_signal = fields.Selection([('danger', 'Danger'), ('warning', 'Warning')], string="SignalWords")
     section_2_2_P = fields.Many2many('sds.precautionary.statement', string="Precautionary Statement", copy=True)
@@ -193,7 +195,7 @@ class SdsDatasheet(models.Model):
     section_7_note = fields.Html(string="Section 7 notes", translate=True)
 
     # Section 8: Exposure controls/personal protection
-    section_8_1_tlv_selector = fields.Boolean(string="No occupational exposure limit available (TLV).", default=True)
+    section_8_1_tlv_selector = fields.Boolean(string="Occupational exposure limit (TLV).", default=False)
     section_8_1_tlv = fields.Html(string='TLV',
                                   default=lambda s: _('<table class="table table-bordered">'
                                        '<thead class="table-columns">' 
@@ -219,7 +221,7 @@ class SdsDatasheet(models.Model):
                                             '<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td>'
                                         '</tr></tbody></table>'),
                                   translate=True,sanitize=False)
-    section_8_1_dnel_selector = fields.Boolean(string="Derived No Effect Level (DNEL) not available.", default=True)
+    section_8_1_dnel_selector = fields.Boolean(string="Derived No Effect Level (DNEL)", default=False)
     section_8_1_dnel = fields.Html(string='DNEL',
                                    default=lambda s: _(
                                        '<p><b>Derived No Effect Level<br>'
@@ -261,8 +263,8 @@ class SdsDatasheet(models.Model):
                                         '</tbody>'
                                     '</table>'),
                                    translate=True, sanitize=False)
-    section_8_1_pnec_selector = fields.Boolean(string="Predicted No Effect Concentration (PNEC) not available.",
-                                               default=True)
+    section_8_1_pnec_selector = fields.Boolean(string="Predicted No Effect Concentration (PNEC)",
+                                               default=False)
     section_8_1_pnec = fields.Html(string='PNEC',
                                    default=lambda s: _(
                                        '<p><b>Predicted No Effect Concentration</b><br>'
@@ -519,18 +521,12 @@ class SdsDatasheet(models.Model):
     section_14_note = fields.Html(string="Section 14 Notes", translate=True)
 
     # Section 15: Regulatory Information
-    section_15_1_ozone = fields.Char(string="Regulation on substances that deplete the ozone layer",
-                                     default=lambda s: _("Not applicable."), translate=True)
-    section_15_1_pollutants = fields.Char(string="Regulation  on persistent organic pollutants",
-                                          default=lambda s: _("Not applicable."), translate=True)
-    section_15_1_impexp = fields.Char(
-        string="Regulation (EU) No 649/2012 concerning the export and import of hazardous chemicals",
-        default=lambda s: _('Not applicable.'), translate=True)
-    # Information on "Seveso" categories here: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012L0018&from=IT#d1e32-19-1
-    section_15_1_seveso = fields.Char(string="Directive 2012/18/EU Of the European Parliament (Seveso III)",
-                                      default=lambda s: _("Not applicable."), translate=True)
+
+    section_15_regulation = fields.Many2many('sds.regulatory.information', relation="sds_regulatory_information_rel",
+                                   string="Regulatory Information")
+
     section_15_1 = fields.Html(
-        string="Safety, health and environmental regulations/legislation specific for the substance or mixture",
+        string="Other regulations specific for the substance or mixture",
         default=lambda s: _('None available.'), translate=True, sanitize=False)
     section_15_2 = fields.Char('Chemical safety assessment',
                                default=lambda s: _(
@@ -541,13 +537,17 @@ class SdsDatasheet(models.Model):
     # Section 16: Other information
     section_16_classification_procedure = fields.Html(
         string="Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008",
+        default=lambda s: _('<p>The information contained in this Safety Data Sheet is derived '
+                            'from the data provided by the suppliers of the components of the mixture, '
+                            'that we verified adequate and reliable by analogy with similar products '
+                            'and with the information provided by ECHA.</p>'),
         translate=True, sanitize=False)
 
     # Only literal strings can be marked for exports, not expressions or variables.
 
     section_16_legend = fields.Many2many('sds.legend', relation="sds_legend_rel",
                                    string="Legend entries")
-    section_16_bibliography_url = fields.Boolean(string="Insert URL links in bibliography", default=False)
+    section_16_bibliography_url = fields.Boolean(string="Bibliography URL in PDF", default=False)
     section_16_bibliography = fields.Many2many('sds.bibliography', relation="sds_bibliography_rel",
                                    string="Bibliography entries")
 

@@ -13,4 +13,7 @@ access_chemical.property,sds.chemical.property,safety_datasheet.model_sds_chemic
 access_chemical.property.line,sds.chemical.property.line,safety_datasheet.model_sds_chemical_property_line,base.group_user,1,1,1,1
 access_sds_legend,access_sds_legend,model_sds_legend,base.group_user,1,1,1,1
 access_sds_bibliography,access_sds_bibliography,model_sds_bibliography,base.group_user,1,1,1,1
+access_sds_regulation,access_sds_regulation,model_sds_regulation,base.group_user,1,1,1,1
+access_sds_regulatory.information,access_sds_regulatory_informarion,model_sds_regulatory_information,base.group_user,1,1,1,1
+
 
