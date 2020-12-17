@@ -74,6 +74,14 @@
             <field name="name">Suitable emergency safety shower facility should be immediately available.</field>
             <field name="category">skin</field>
         </record>
+        <record id="sentence_skin_8" model="sds.sentences">
+            <field name="name">If the product is dry: wipe all residues with a cloth.</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_9" model="sds.sentences">
+            <field name="name">If the product is wet:</field>
+            <field name="category">skin</field>
+        </record>
 
         <!-- First Aid Eye Contact -->
         <record id="sentence_eye_1_a" model="sds.sentences">
@@ -110,6 +118,10 @@
         </record>
         <record id="sentence_eye_6" model="sds.sentences">
             <field name="name">Consult a physician immediately.</field>
+            <field name="category">eye</field>
+        </record>
+        <record id="sentence_eye_7" model="sds.sentences">
+            <field name="name">Do not rub to avoid further damage to the cornea.</field>
             <field name="category">eye</field>
         </record>
 
@@ -165,7 +177,7 @@
             <field name="category">extinguishing</field>
         </record>
         <record id="sentence_extinguishing_6" model="sds.sentences">
-            <field name="name">Not applicable.</field>
+            <field name="name">All extinguishing agents can be used.</field>
             <field name="category">extinguishing</field>
         </record>
 
@@ -271,6 +283,14 @@
             <field name="name">If material is released indicate risk of slipping.</field>
             <field name="category">protective</field>
         </record>
+        <record id="sentence_protective_9" model="sds.sentences">
+            <field name="name">Avoid contact with skin and eyes.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_10" model="sds.sentences">
+            <field name="name">Do not breathe dust.</field>
+            <field name="category">protective</field>
+        </record>
 
         <record id="sentence_env_precaution_1" model="sds.sentences">
             <field name="name">Discharge into the environment must be avoided.</field>
@@ -330,6 +350,31 @@
             <field name="category">containment</field>
         </record>
         <record id="sentence_containment_9" model="sds.sentences">
+            <field name="name">Clean up dry the product using methods that do not cause the dispersion of the dry product
+                into the air, for example: - suction cleaners (portable industrial strength, equipped with an effective
+                air particle filter (HEPA filter) or some other equivalent technique) - floorcloths, damp brushes or
+                hosepipe with spray attachment (set to "fine spray" in order to avoid dispersing the product into the air).</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_10" model="sds.sentences">
+            <field name="name">Recover the resulting slurry.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_11" model="sds.sentences">
+            <field name="name">If the product cannot be removed dry using a suction cleaner or made wet, make sure that staff
+                responsible for sweeping it up dry wear appropriate individual protection equipment and that further dispersion
+                of dust is prevented.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_12" model="sds.sentences">
+            <field name="name">Place the recovered product in a closed container.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_13" model="sds.sentences">
+            <field name="name">Wash contaminated area with large amounts of water.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_14" model="sds.sentences">
             <field name="name">Sections 13 and 15 of this SDS provide information regarding certain local or national requirements.</field>
             <field name="category">containment</field>
         </record>
@@ -347,47 +392,59 @@
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_4" model="sds.sentences">
-            <field name="name">Do not get in eyes.</field>
+            <field name="name">Avoid contact with eyes.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_5" model="sds.sentences">
-            <field name="name">Keep container tightly closed.</field>
+            <field name="name">Avoid contact with skin and eyes.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_6" model="sds.sentences">
-            <field name="name">Take care to prevent spills, waste and minimize release to the environment.</field>
+            <field name="name">Keep container tightly closed.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_7" model="sds.sentences">
-            <field name="name">Handle in accordance with good industrial hygiene and safety practice.</field>
+            <field name="name">Take care to prevent spills, waste and minimize release to the environment.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_8" model="sds.sentences">
-            <field name="name">Use with local exhaust ventilation.</field>
+            <field name="name">Handle in accordance with good industrial hygiene and safety practice.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_9" model="sds.sentences">
-            <field name="name">See Engineering measures under EXPOSURE CONTROLS/PERSONAL PROTECTION section.</field>
+            <field name="name">Use with local exhaust ventilation.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_10" model="sds.sentences">
-            <field name="name">Do not eat, drink or smoke during use.</field>
+            <field name="name">See Engineering measures under EXPOSURE CONTROLS/PERSONAL PROTECTION section.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_11" model="sds.sentences">
-            <field name="name">Remove contaminated clothing and protective equipment before entering eating areas.</field>
+            <field name="name">Do not eat, drink or smoke during use.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_12" model="sds.sentences">
-            <field name="name">No special protective measures required.</field>
+            <field name="name">Remove contaminated clothing and protective equipment before entering eating areas.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_13" model="sds.sentences">
-            <field name="name">Spilled substance increases risk of slipping.</field>
+            <field name="name">No special protective measures required.</field>
             <field name="category">handling</field>
         </record>
         <record id="sentence_handling_14" model="sds.sentences">
+            <field name="name">Spilled substance increases risk of slipping.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_15" model="sds.sentences">
             <field name="name">No special precautions against fire and explosion required.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_16" model="sds.sentences">
+            <field name="name">Avoid creating or spreading dust.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_17" model="sds.sentences">
+            <field name="name">Do not breathe dust.</field>
             <field name="category">handling</field>
         </record>
 
@@ -419,6 +476,10 @@
             <field name="name">Protect against frost.</field>
             <field name="category">storage</field>
         </record>
+        <record id="sentence_storage_8" model="sds.sentences">
+            <field name="name">Keep closed and in a cool and dry atmosphere.</field>
+            <field name="category">storage</field>
+        </record>
 
         <record id="sentence_store_products_1" model="sds.sentences">
             <field name="name">Strong oxidizing agents.</field>
@@ -433,6 +494,10 @@
             <field name="category">store_products</field>
         </record>
         <record id="sentence_store_products_4" model="sds.sentences">
+            <field name="name">Aluminium.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_5" model="sds.sentences">
             <field name="name">None known.</field>
             <field name="category">store_products</field>
         </record>
@@ -561,6 +626,10 @@
             <field name="name">Do not allow aerosol.</field>
             <field name="category">respiratory</field>
         </record>
+        <record id="respiratory_7" model="sds.sentences">
+            <field name="name">Dust mask FFP2</field>
+            <field name="category">respiratory</field>
+        </record>
 
         <record id="env_exposure_1" model="sds.sentences">
             <field name="name">See SECTION 7: Handling and storage and SECTION 13: Disposal considerations for measures to prevent excessive environmental exposure during use and waste disposal.</field>
@@ -598,9 +667,17 @@
             <field name="name">It can react with aluminum, zinc, tin and their alloys to produce hydrogen.</field>
             <field name="category">haz_reaction</field>
         </record>
+        <record id="haz_reaction_5" model="sds.sentences">
+            <field name="name">It can react with aluminum to produce hydrogen.</field>
+            <field name="category">haz_reaction</field>
+        </record>
 
         <record id="avoid_condition_1" model="sds.sentences">
             <field name="name">None known.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+        <record id="avoid_condition_2" model="sds.sentences">
+            <field name="name">Humid conditions during storage may cause lump formation and loss of product quality.</field>
             <field name="category">avoid_condition</field>
         </record>
 
@@ -613,6 +690,14 @@
             <field name="category">incompatible</field>
         </record>
         <record id="incompatible_3" model="sds.sentences">
+            <field name="name">Ammonium salts.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_4" model="sds.sentences">
+            <field name="name">Aluminium and other non-noble metals.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_5" model="sds.sentences">
             <field name="name">None known.</field>
             <field name="category">incompatible</field>
         </record>
@@ -649,10 +734,14 @@
             <field name="category">skin_corrosion</field>
         </record>
         <record id="skin_corrosion_2" model="sds.sentences">
-            <field name="name">Based on the available data a clinically relevant skin irritation hazard is not expected.</field>
+            <field name="name">Due to the pH of the material, it is assumed that exposure may cause skin irritation.</field>
             <field name="category">skin_corrosion</field>
         </record>
         <record id="skin_corrosion_3" model="sds.sentences">
+            <field name="name">Based on the available data a clinically relevant skin irritation hazard is not expected.</field>
+            <field name="category">skin_corrosion</field>
+        </record>
+        <record id="skin_corrosion_4" model="sds.sentences">
             <field name="name">Based on available data, the classification criteria are not met</field>
             <field name="category">skin_corrosion</field>
         </record>
@@ -662,23 +751,31 @@
             <field name="category">eye_damage</field>
         </record>
         <record id="eye_damage_2" model="sds.sentences">
-            <field name="name">Based on the available data a clinically relevant eye irritation hazard is not expected.</field>
+            <field name="name">Due to the pH of the material, it is assumed that exposure may cause severe eye damage.</field>
             <field name="category">eye_damage</field>
         </record>
         <record id="eye_damage_3" model="sds.sentences">
+            <field name="name">Based on the available data a clinically relevant eye irritation hazard is not expected.</field>
+            <field name="category">eye_damage</field>
+        </record>
+        <record id="eye_damage_4" model="sds.sentences">
             <field name="name">Based on available data, the classification criteria are not met</field>
             <field name="category">eye_damage</field>
         </record>
 
         <record id="sensitization_1" model="sds.sentences">
-            <field name="name">For skin sensitization: No relevant data found.</field>
+            <field name="name">May cause an allergic skin reaction.</field>
             <field name="category">sensitization</field>
         </record>
         <record id="sensitization_2" model="sds.sentences">
-            <field name="name">For respiratory sensitization: No relevant data found.</field>
+            <field name="name">For skin sensitization: No relevant data found.</field>
             <field name="category">sensitization</field>
         </record>
         <record id="sensitization_3" model="sds.sentences">
+            <field name="name">For respiratory sensitization: No relevant data found.</field>
+            <field name="category">sensitization</field>
+        </record>
+        <record id="sensitization_4" model="sds.sentences">
             <field name="name">Based on the available data a sensitization reaction is not expected from this product.</field>
             <field name="category">sensitization</field>
         </record>
@@ -787,7 +884,11 @@
             <field name="category">STOST</field>
         </record>
         <record id="STOST_12" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
+            <field name="category">STOST</field>
+        </record>
+        <record id="STOST_13" model="sds.sentences">
+            <field name="name">May cause respiratory irritation.</field>
             <field name="category">STOST</field>
         </record>
 
@@ -797,6 +898,10 @@
         </record>
         <record id="aspiration_2" model="sds.sentences">
             <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="category">aspiration</field>
+        </record>
+        <record id="aspiration_3" model="sds.sentences">
+            <field name="name">Not classified (Technical impossibility to obtain the data / the product is not used as an aerosol)</field>
             <field name="category">aspiration</field>
         </record>
 
@@ -879,6 +984,10 @@
             <field name="category">persistence</field>
         </record>
         <record id="persistence_6" model="sds.sentences">
+            <field name="name">Material is not biodegradable.</field>
+            <field name="category">persistence</field>
+        </record>
+        <record id="persistence_7" model="sds.sentences">
             <field name="name">Passes OECD test(s) for ready biodegradability.</field>
             <field name="category">persistence</field>
         </record>
@@ -895,6 +1004,14 @@
 
         <record id="pbtvpvb_1" model="sds.sentences">
             <field name="name">No data available.</field>
+            <field name="category">pbtvpvb</field>
+        </record>
+        <record id="pbtvpvb_2" model="sds.sentences">
+            <field name="name">This substance/mixture does not meet the PBT criteria of REACH regulation, annex XIII.</field>
+            <field name="category">pbtvpvb</field>
+        </record>
+        <record id="pbtvpvb_3" model="sds.sentences">
+            <field name="name">This substance/mixture does not meet the vPvB criteria of REACH regulation, annex XIII.</field>
             <field name="category">pbtvpvb</field>
         </record>
 

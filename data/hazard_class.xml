@@ -31,6 +31,58 @@
             <field name="h_class">Explosive</field>
         </record>
 
+        <!-- Flammable Gases -->
+        <record id="Flam_Gas_1A" model="sds.hazard.class">
+            <field name="name">Flam. Gas 1A</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+        <record id="Flam_Gas_1B" model="sds.hazard.class">
+            <field name="name">Flam. Gas 1B</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+        <record id="Flam_Gas_2" model="sds.hazard.class">
+            <field name="name">Flam. Gas 2</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+        <record id="Flam_Pyr_Gas" model="sds.hazard.class">
+            <field name="name">Pyr. Gas</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+        <record id="Flam_Unst_A" model="sds.hazard.class">
+            <field name="name">Chem. Unst. Gas A</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+        <record id="Flam_Unst_B" model="sds.hazard.class">
+            <field name="name">Chem. Unst. Gas B</field>
+            <field name="h_class">Flammable gases</field>
+        </record>
+
+        <!-- Aerosol -->
+        <record id="Aerosol_1" model="sds.hazard.class">
+            <field name="name">Aerosol 1</field>
+            <field name="h_class">Aerosol</field>
+        </record>
+        <record id="Aerosol_2" model="sds.hazard.class">
+            <field name="name">Aerosol 2</field>
+            <field name="h_class">Aerosol</field>
+        </record>
+        <record id="Aerosol_3" model="sds.hazard.class">
+            <field name="name">Aerosol 3</field>
+            <field name="h_class">Aerosol</field>
+        </record>
+
+        <!-- Oxidising gas -->
+        <record id="Ox_Gas_1" model="sds.hazard.class">
+            <field name="name">Ox. Gas 1</field>
+            <field name="h_class">Oxidising gas</field>
+        </record>
+
+        <!-- Gases under pressure -->
+        <record id="Press_Gas" model="sds.hazard.class">
+            <field name="name">Press. Gas</field>
+            <field name="h_class">Gases under pressure</field>
+        </record>
+
         <!-- Flammable liquids -->
         <record id="Flam_Liq_1" model="sds.hazard.class">
             <field name="name">Flam. Liq. 1</field>
@@ -43,6 +95,148 @@
         <record id="Flam_Liq_3" model="sds.hazard.class">
             <field name="name">Flam. Liq. 3</field>
             <field name="h_class">Flammable liquid</field>
+        </record>
+
+        <!-- Flammable solid -->
+        <record id="Flam_Sol_1" model="sds.hazard.class">
+            <field name="name">Flam. Sol. 1</field>
+            <field name="h_class">Flammable solid</field>
+        </record>
+        <record id="Flam_Sol_2" model="sds.hazard.class">
+            <field name="name">Flam. Sol. 2</field>
+            <field name="h_class">Flammable solid</field>
+        </record>
+
+        <!-- Self-reactive substance or mixture -->
+        <record id="Self_react_A" model="sds.hazard.class">
+            <field name="name">Self-react. A</field>
+            <field name="h_class">Self-reactive substance or mixture</field>
+        </record>
+        <record id="Self_react_B" model="sds.hazard.class">
+            <field name="name">Self-react. B</field>
+            <field name="h_class">Self-reactive substance or mixture</field>
+        </record>
+        <record id="Self_react_CD" model="sds.hazard.class">
+            <field name="name">Self-react. CD</field>
+            <field name="h_class">Self-reactive substance or mixture</field>
+        </record>
+        <record id="Self_react_EF" model="sds.hazard.class">
+            <field name="name">Self-react. EF</field>
+            <field name="h_class">Self-reactive substance or mixture</field>
+        </record>
+        <record id="Self_react_G" model="sds.hazard.class">
+            <field name="name">Self-react. G</field>
+            <field name="h_class">Self-reactive substance or mixture</field>
+        </record>
+
+        <!-- Pyrophoric liquid -->
+        <record id="Pyr_Liq_1" model="sds.hazard.class">
+            <field name="name">Pyr. Liq. 1</field>
+            <field name="h_class">Pyrophoric liquid</field>
+        </record>
+
+        <!-- Pyrophoric solid -->
+        <record id="Pyr_Sol_1" model="sds.hazard.class">
+            <field name="name">Pyr. Sol. 1</field>
+            <field name="h_class">Pyrophoric solid</field>
+        </record>
+
+        <!-- Self-heating substance or mixture -->
+        <record id="Self_heat_1" model="sds.hazard.class">
+            <field name="name">Self-heat. 1</field>
+            <field name="h_class">Self-heating substance or mixture</field>
+        </record>
+        <record id="Self_heat_2" model="sds.hazard.class">
+            <field name="name">Self-heat. 2</field>
+            <field name="h_class">Self-heating substance or mixture</field>
+        </record>
+
+        <!-- Substance or mixture which in contact with water emits flammable gas -->
+        <record id="Water_react_1" model="sds.hazard.class">
+            <field name="name">Water-react. 1</field>
+            <field name="h_class">Substance or mixture which in contact with water emits flammable gas</field>
+        </record>
+        <record id="Water_react_2" model="sds.hazard.class">
+            <field name="name">Water-react. 2</field>
+            <field name="h_class">Substance or mixture which in contact with water emits flammable gas</field>
+        </record>
+        <record id="Water_react_3" model="sds.hazard.class">
+            <field name="name">Water-react. 3</field>
+            <field name="h_class">Substance or mixture which in contact with water emits flammable gas</field>
+        </record>
+
+        <!-- Oxidising liquid -->
+        <record id="Ox_Liq_1" model="sds.hazard.class">
+            <field name="name">Ox. Liq. 1</field>
+            <field name="h_class">Oxidising liquid</field>
+        </record>
+        <record id="Ox_Liq_2" model="sds.hazard.class">
+            <field name="name">Ox. Liq. 2</field>
+            <field name="h_class">Oxidising liquid</field>
+        </record>
+        <record id="Ox_Liq_2" model="sds.hazard.class">
+            <field name="name">Ox. Liq. 2</field>
+            <field name="h_class">Oxidising liquid</field>
+        </record>
+
+        <!-- Oxidising solid -->
+        <record id="Ox_Sol_1" model="sds.hazard.class">
+            <field name="name">Ox. Sol. 1</field>
+            <field name="h_class">Oxidising solid</field>
+        </record>
+        <record id="Ox_Sol_2" model="sds.hazard.class">
+            <field name="name">Ox. Sol. 2</field>
+            <field name="h_class">Oxidising solid</field>
+        </record>
+        <record id="Ox_Sol_3" model="sds.hazard.class">
+            <field name="name">Ox. Sol. 3</field>
+            <field name="h_class">Oxidising solid</field>
+        </record>
+
+        <!-- Organic peroxide -->
+        <record id="Org_Perox_A" model="sds.hazard.class">
+            <field name="name">Org. Perox. A</field>
+            <field name="h_class">Organic peroxide</field>
+        </record>
+        <record id="Org_Perox_B" model="sds.hazard.class">
+            <field name="name">Org. Perox. B</field>
+            <field name="h_class">Organic peroxide</field>
+        </record>
+        <record id="Org_Perox_CD" model="sds.hazard.class">
+            <field name="name">Org. Perox. CD</field>
+            <field name="h_class">Organic peroxide</field>
+        </record>
+        <record id="Org_Perox_EF" model="sds.hazard.class">
+            <field name="name">Org. Perox. EF</field>
+            <field name="h_class">Organic peroxide</field>
+        </record>
+        <record id="Org_Perox_G" model="sds.hazard.class">
+            <field name="name">Org. Perox. G</field>
+            <field name="h_class">Organic peroxide</field>
+        </record>
+
+        <!-- Substance or mixture corrosive to metals -->
+        <record id="Met_Corr_1" model="sds.hazard.class">
+            <field name="name">Met. Corr. 1</field>
+            <field name="h_class">Substance or mixture corrosive to metals</field>
+        </record>
+
+        <!-- Desensitised explosives -->
+        <record id="Desen_Expl_1" model="sds.hazard.class">
+            <field name="name">Desen. Expl. 1</field>
+            <field name="h_class">Desensitised explosives</field>
+        </record>
+        <record id="Desen_Expl_2" model="sds.hazard.class">
+            <field name="name">Desen. Expl. 2</field>
+            <field name="h_class">Desensitised explosives</field>
+        </record>
+        <record id="Desen_Expl_3" model="sds.hazard.class">
+            <field name="name">Desen. Expl. 3</field>
+            <field name="h_class">Desensitised explosives</field>
+        </record>
+        <record id="Desen_Expl_4" model="sds.hazard.class">
+            <field name="name">Desen. Expl. 4</field>
+            <field name="h_class">Desensitised explosives</field>
         </record>
 
         <!-- Acute toxicity -->
@@ -93,6 +287,62 @@
         <record id="Eye_Irrit_2" model="sds.hazard.class">
             <field name="name">Eye Irrit. 2</field>
             <field name="h_class">Serious eye damage/eye irritation</field>
+        </record>
+
+        <!-- Respiratory/skin sensitization -->
+        <record id="Resp_Sens_1" model="sds.hazard.class">
+            <field name="name">Resp. Sens. 1, 1A, 1B</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+        <record id="Skin_Sens_1" model="sds.hazard.class">
+            <field name="name">Skin. Sens. 1, 1A, 1B</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+
+        <!-- Germ cell mutagenicity -->
+        <record id="Muta_1A" model="sds.hazard.class">
+            <field name="name">Muta. 1A</field>
+            <field name="h_class">Germ cell mutagenicity</field>
+        </record>
+        <record id="Muta_1B" model="sds.hazard.class">
+            <field name="name">Muta. 1B</field>
+            <field name="h_class">Germ cell mutagenicity</field>
+        </record>
+        <record id="Muta_2" model="sds.hazard.class">
+            <field name="name">Muta. 2</field>
+            <field name="h_class">Germ cell mutagenicity</field>
+        </record>
+
+        <!-- Carcinogenicity -->
+        <record id="Carc_1A" model="sds.hazard.class">
+            <field name="name">Carc. 1A</field>
+            <field name="h_class">Carcinogenicity</field>
+        </record>
+        <record id="Carc_1B" model="sds.hazard.class">
+            <field name="name">Carc. 1B</field>
+            <field name="h_class">Carcinogenicity</field>
+        </record>
+        <record id="Carc_2" model="sds.hazard.class">
+            <field name="name">Carc. 1A</field>
+            <field name="h_class">Carcinogenicity</field>
+        </record>
+
+        <!-- Reproductive toxicity -->
+        <record id="Repr_1A" model="sds.hazard.class">
+            <field name="name">Repr. 1A</field>
+            <field name="h_class">Reproductive toxicity</field>
+        </record>
+        <record id="Repr_1B" model="sds.hazard.class">
+            <field name="name">Repr. 1B</field>
+            <field name="h_class">Reproductive toxicity</field>
+        </record>
+        <record id="Repr_2" model="sds.hazard.class">
+            <field name="name">Repr. 2</field>
+            <field name="h_class">Reproductive toxicity</field>
+        </record>
+        <record id="Lact" model="sds.hazard.class">
+            <field name="name">Lact.</field>
+            <field name="h_class">Reproductive toxicity</field>
         </record>
 
         <!-- Specific target organ toxicity — single exposure -->
@@ -148,8 +398,8 @@
         </record>
 
         <!-- Hazardous for the ozone layer -->
-        <record id="Ozone" model="sds.hazard.class">
-            <field name="name">Ozone</field>
+        <record id="Ozone_1" model="sds.hazard.class">
+            <field name="name">Ozone 1</field>
             <field name="h_class">Hazardous for the ozone layer</field>
         </record>
 

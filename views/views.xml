@@ -29,7 +29,8 @@
                             <page string="1" name="section1">
                                 <form>
                                     <!-- Identification of the substance/mixture and of the company/undertaking -->
-                                    <group col="3" string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
+                                    <group col="3"
+                                           string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
                                            name="identification">
                                         <field name="section_1_1" string="1.1 Product Identifier"/>
                                         <field name="section_1_2"
@@ -60,17 +61,26 @@
                                                 <tree string="EC regulation criteria 1272/2008 (CLP):"
                                                       editable="bottom">
                                                     <field name="Classification" options="{'no_create': True}"/>
-                                                    <field name="HazardStatement"/>
+                                                    <field name="HazardStatement" context="{'show_only_code': True}"/>
                                                 </tree>
                                             </field>
                                         </group>
                                         <group attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
-                                            <field name="section_2_2_pictograms" widget="many2many"/>
+                                            <field name="section_2_2_pictograms" widget="many2many">
+                                                <tree editable="bottom">
+                                                    <field name="sequence" widget="handle"/>
+                                                    <field name="name"/>
+                                                    <field name="description"/>
+                                                    <field name="pictogram" widget="image"/>
+                                                </tree>
+                                            </field>
                                         </group>
-                                        <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
+                                        <group colspan="2"
+                                               attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
                                             <field name="section_2_2_signal" widget="radio"/>
                                         </group>
-                                        <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
+                                        <group colspan="2"
+                                               attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
                                             <field name="section_2_2_P" widget="many2many">
                                                 <tree editable="bottom">
                                                     <field name="sequence" widget="handle"/>
@@ -853,6 +863,18 @@
             </field>
         </record>
 
+        <!-- search views -->
+        <record id="view_hazard_statement_search" model="ir.ui.view">
+            <field name="name">sds.hazard.statement.search</field>
+            <field name="model">sds.hazard.statement</field>
+            <field name="arch" type="xml">
+                <search string="Hazard">
+                    <field name="code" string="Hazard code"/>
+                    <field name="name" string="Description"/>
+                </search>
+            </field>
+        </record>
+
         <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="action_sds">
             <field name="name">Safety Data Sheets</field>
@@ -894,6 +916,7 @@
             <field name="name">Hazard Statement</field>
             <field name="res_model">sds.hazard.statement</field>
             <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_hazard_statement_search"/>
             <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
@@ -1069,6 +1092,7 @@
             </field>
         </record>
 
+
         <!-- Menu item -->
         <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
         <menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
@@ -1086,7 +1110,8 @@
         <menuitem id="sentences_tree" name="Action Sentences" action="action_action_sentences"
                   parent="safety_datasheet_tables"/>
         <menuitem id="legend_tree" name="Legend" action="action_legend" parent="safety_datasheet_tables"/>
-        <menuitem id="bibliography_tree" name="Bibliography" action="action_bibliography" parent="safety_datasheet_tables"/>
+        <menuitem id="bibliography_tree" name="Bibliography" action="action_bibliography"
+                  parent="safety_datasheet_tables"/>
         <menuitem id="regulation_tree" name="Regulation" action="action_regulation" parent="safety_datasheet_tables"/>
     </data>
 </odoo>

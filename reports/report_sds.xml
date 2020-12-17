@@ -87,13 +87,20 @@
                             </t>
                             <t t-else="">
                                 <div class="sds">
-                                    <t t-foreach="doc.section_2_1" t-as="line">
-                                        <p class="sds" style="margin-bottom: 0px;">
-                                            <span t-field="line.Classification"/>
-                                            ,
-                                            <span t-field="line.HazardStatement"/>
-                                        </p>
-                                    </t>
+                                    <table class="sds_properties">
+                                        <tbody>
+                                            <t t-foreach="doc.section_2_1" t-as="line">
+                                                <tr>
+                                                    <td style="text-align: left;">
+                                                        <span t-field="line.Classification"/>
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                        <span t-field="line.HazardStatement"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <p class="sds" style="margin-top: 5px;">For the full text of the H-Statements mentioned
                                     in this Section, see Section 16.
@@ -810,7 +817,7 @@
                                     <span class="sds" t-field="line.name"/>
                                 </span>
                             </p>
-                            <t t-if="not doc.section_12_1_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                            <t t-if="doc.section_12_1_selector == True">
                                 <h6 class="sds">Product details:</h6>
                                 <span class="sds" t-raw="doc.section_12_1_text"/>
                             </t>
@@ -1053,36 +1060,19 @@
                         </t>
                     </div>
                     <div class="sds">
-                        <!-- Hazard statement in section 3 should certainly also include those in section 2 -->
-                        <!--
-                    <t t-if="not doc.section_2_1_selector">
-                        <table class="sds">
-                            <tbody>
-                                <t t-foreach="doc.section_2_1" t-as="line">
-                                    <tr>
-                                        <td><span t-field="line.HazardStatement.code"/></td>
-                                        <td><span t-field="line.HazardStatement.name"/></td>
-                                    </tr>
-                                </t>
-                            </tbody>
-                        </table>
-                    </t>
-                    -->
-                        <t t-if="doc.section_3_2_selector == True">
+                        <t t-if="doc.section_2_2_selector == True">
                             <h4 class="sds">Full text of H-Statements referred to under sections 2 to 15.</h4>
                             <table class="sds">
                                 <tbody>
-                                    <t t-foreach="doc.section_3_2" t-as="line">
-                                        <t t-foreach="line.substance.Classification" t-as="hazard">
-                                            <tr>
-                                                <td class="sds" style="width:100px;">
-                                                    <span t-field="hazard.HazardStatement.code"/>
-                                                </td>
-                                                <td class="sds tdpl">
-                                                    <span t-field="hazard.HazardStatement.name"/>
-                                                </td>
-                                            </tr>
-                                        </t>
+                                    <t t-foreach="doc.section_2_1" t-as="line">
+                                        <tr>
+                                            <td class="sds" style="width:100px;">
+                                                <span t-field="line.HazardStatement.code"/>
+                                            </td>
+                                            <td class="sds tdpl">
+                                                <span t-field="line.HazardStatement.name"/>
+                                            </td>
+                                        </tr>
                                     </t>
                                 </tbody>
                             </table>
@@ -1127,18 +1117,18 @@
                                 </table>
                             </div>
                         </div>
-                        <t t-if="doc.section_3_2_selector==True">
+                        <t t-if="doc.section_2_2_selector == True">
                             <div class="sds">
                                 <table class="sds">
                                     <tbody>
-                                        <t t-foreach="doc.section_3_2" t-as="line">
-                                            <t t-foreach="line.substance.Classification" t-as="hazard">
+                                        <t t-foreach="doc.section_2_1" t-as="line">
+                                            <t t-foreach="line.Classification" t-as="hazard">
                                                 <tr>
                                                     <td class="sds" style="width:100px;">
-                                                        <span t-field="hazard.HazardCategories.name"/>
+                                                        <span t-field="hazard.name"/>
                                                     </td>
                                                     <td class="sds td_pl">
-                                                        <span t-field="hazard.HazardCategories.h_class"/>
+                                                        <span t-field="hazard.h_class"/>
                                                     </td>
                                                 </tr>
                                             </t>

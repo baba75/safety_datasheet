@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.osv import expression
 
 class SdsHazardStatement(models.Model):
     """
@@ -39,15 +40,11 @@ class SdsHazardStatement(models.Model):
                 res.append((hazard.id, name))
             return res
 
-    # FIXME: This search needs review
     @api.model
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
-        if not self._context.get('show_only_code'):
-            return super(SdsHazardStatement, self)._name_search(name, args=args, operator=operator, limit=limit,
-                                                             name_get_uid=name_get_uid)
-        else:
-            if operator == 'ilike' and not (name or '').strip():
 
+        if self._context.get('show_only_code') == True:
+            if operator == 'ilike' and not (name or '').strip():
                 return super(SdsHazardStatement, self)._name_search(name, args=args, operator=operator, limit=limit,
                                                                  name_get_uid=name_get_uid)
             elif operator in ('ilike', 'like', '=', '=like', '=ilike'):
@@ -57,3 +54,6 @@ class SdsHazardStatement(models.Model):
                 ])
                 hazard_ids = self._search(domain, limit=limit, access_rights_uid=name_get_uid)
                 return self.browse(hazard_ids).name_get()
+        else:
+            return super(SdsHazardStatement, self)._name_search(name, args=args, operator=operator, limit=limit,
+                                                             name_get_uid=name_get_uid)

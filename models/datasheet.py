@@ -79,7 +79,8 @@ class SdsDatasheet(models.Model):
                                   help='Regulation (EC) No 1272/2008 - classification, labelling and packaging of substances and mixtures (CLP)')
     section_2_2_selector = fields.Boolean(string="GHS Labelling", default=False)
     section_2_2_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms", copy=True)
-    section_2_2_signal = fields.Selection([('danger', 'Danger'), ('warning', 'Warning')], string="SignalWords")
+    section_2_2_signal = fields.Selection([('danger', 'Danger'), ('warning', 'Warning')], string="SignalWords",
+                                          default='warning')
     section_2_2_P = fields.Many2many('sds.precautionary.statement', string="Precautionary Statement", copy=True)
     section_2_2_Additional = fields.Html('Additional Labelling', translate=True)
     section_2_3_PBT = fields.Char(string="PBT",

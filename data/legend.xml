@@ -44,14 +44,18 @@ Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
             <field name="description">Safety Data Sheet</field>
         </record>
         <record id="legend_11" model="sds.legend">
+            <field name="acronym">TWA</field>
+            <field name="description">Time Weighted Average</field>
+        </record>
+        <record id="legend_12" model="sds.legend">
             <field name="acronym">UN</field>
             <field name="description">United Nations</field>
         </record>
-        <record id="legend_12" model="sds.legend">
+        <record id="legend_13" model="sds.legend">
             <field name="acronym">VOC</field>
             <field name="description">Volatile Organic Compounds</field>
         </record>
-        <record id="legend_13" model="sds.legend">
+        <record id="legend_14" model="sds.legend">
             <field name="acronym">vPvB</field>
             <field name="description">Very Persistent and Very Bioaccumulative</field>
         </record>
