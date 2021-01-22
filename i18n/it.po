@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200501\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-17 09:51+0000\n"
-"PO-Revision-Date: 2020-12-17 11:57+0100\n"
+"POT-Creation-Date: 2021-01-20 15:00+0000\n"
+"PO-Revision-Date: 2021-01-20 16:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
@@ -1359,6 +1359,20 @@ msgid "Conditions to avoid"
 msgstr "Condizioni da evitare"
 
 #. module: safety_datasheet
+#: model:sds.regulation,name:safety_datasheet.regulation_5
+msgid ""
+"Consolidated text: Directive 2004/42/EC of the European Parliament and of "
+"the Council of 21 April 2004 on the limitation of emissions of volatile "
+"organic compounds due to the use of organic solvents in certain paints and "
+"varnishes and vehicle refinishing products and amending Directive 1999/13/EC"
+msgstr ""
+"Direttiva 2004/42/CE del Parlamento europeo e del Consiglio, del 21 aprile "
+"2004, relativa alla limitazione delle emissioni di composti organici "
+"volatili dovute all’uso di solventi organici in talune pitture e vernici e "
+"in taluni prodotti per carrozzeria e recante modifica della direttiva "
+"1999/13/CE "
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_eye_6
 #: model:sds.sentences,name:safety_datasheet.sentence_ingestion_6
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_3
@@ -1911,6 +1925,11 @@ msgid "EC-Number"
 msgstr "Numero CE"
 
 #. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_15
+msgid "ECHA"
+msgstr "ECHA"
+
+#. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_9
 msgid ""
 "EN ISO 374-5:2016 - Protective gloves against dangerous\n"
@@ -2001,6 +2020,11 @@ msgstr "Precauzioni ambientali"
 msgid "European Chemical Agency (https://echa.europa.eu/)"
 msgstr ""
 "Agenzia europea per le sostanze chimiche (ECHA - https://echa.europa.eu/)"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_15
+msgid "European Chemicals Agency"
+msgstr "Agenzia europea per le sostanze chimiche"
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_regulation_criteria
@@ -6418,6 +6442,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_8
+#: model:sds.regulation,url:safety_datasheet.regulation_5
 msgid "http://data.europa.eu/eli/dir/2004/42/oj"
 msgstr "http://data.europa.eu/eli/dir/2004/42/oj"
 

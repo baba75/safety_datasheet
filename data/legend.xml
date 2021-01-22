@@ -59,5 +59,10 @@ Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
             <field name="acronym">vPvB</field>
             <field name="description">Very Persistent and Very Bioaccumulative</field>
         </record>
+        <record id="legend_15" model="sds.legend">
+            <field name="acronym">ECHA</field>
+            <field name="description">European Chemicals Agency</field>
+        </record>
+
     </data>
 </odoo>

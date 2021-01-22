@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
-from odoo.osv import expression
 
 class SdsRegulationCriteria(models.Model):
     """
@@ -613,8 +612,6 @@ class SdsDatasheet(models.Model):
         xlat_obj = self.env['ir.translation']
         model = 'sds'
         my_fields = self.fields_get().keys()
-        # FIXME: if the user changed the default field (and his translation), the translation
-        # will be overwritten
         my_defaults = self.default_get(my_fields)
 
         for my_field in my_fields:
@@ -627,11 +624,18 @@ class SdsDatasheet(models.Model):
 
             if my_field in my_defaults:
                 xlat_src = my_defaults[my_field]
-                xlat_values = xlat_obj.search([('name','like','addons/safety_datasheet/models/models.py'),
+                # First we want to see if the user made a translation
+                xlat_values = xlat_obj.search([('name','like',fname),
+                                               ('src','like',xlat_src),
+                                               ('state','like','translated')])
+                if not xlat_values:
+                    # Then we take the default
+                    xlat_values = xlat_obj.search([('name','like','addons/safety_datasheet/models/models.py'),
                                                ('src','like',xlat_src)
                                                ])
-                if not xlat_values:
-                    continue
+                    # If even the default does not exists, give up
+                    if not xlat_values:
+                        continue
                 xlat_dict = dict(zip(xlat_values.mapped('lang'),xlat_values.mapped('value')))
                 for lang in xlat_values.mapped('lang'):
                     xlat_obj._set_ids(
@@ -650,6 +654,15 @@ class SdsDatasheet(models.Model):
         result = super(SdsDatasheet, self).create(vals)
         self.xlate_default(result.ids)
         return result
+
+    @api.multi
+    @api.returns('self', lambda value: value.id)
+    def copy(self, default=None):
+        self.ensure_one()
+        default = dict(default or {})
+        if 'name' not in default:
+            default['name'] = _("%s (copy)") % (self.name)
+        return super(SdsDatasheet, self).copy(default=default)
 
     @api.multi
     def fill_properties(self):

@@ -1139,8 +1139,8 @@
                         </t>
                     </div>
                     <div class="sds" style="page-break-inside: auto">
-                        <h4 class="sds">Bibliography:</h4>
                         <div class="sds">
+                            <h4 class="sds">Bibliography:</h4>
                             <ul>
                                 <t t-foreach="doc.section_16_bibliography" t-as="line">
                                     <li>
