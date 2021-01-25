@@ -329,7 +329,7 @@ class SdsDatasheet(models.Model):
 
     # Section 9: Physical and chemical properties
     section_9_1 = fields.Many2many('sds.chemical.property.line', relation="sds_chemical_property_rel",
-                                   string="Physical and chemical properties")
+                                   string="Physical and chemical properties", copy=False)
     section_9_2 = fields.Html(string="Other information", default=lambda s: _("No data available."),
                               translate=True, sanitize=False)
 
@@ -646,7 +646,6 @@ class SdsDatasheet(models.Model):
                         xlat_dict[lang],
                         xlat_src,
                     )
-        #TODO: display a dialog box with confirmation. Use raise ?
         return
 
     @api.model
@@ -662,57 +661,74 @@ class SdsDatasheet(models.Model):
         default = dict(default or {})
         if 'name' not in default:
             default['name'] = _("%s (copy)") % (self.name)
-        return super(SdsDatasheet, self).copy(default=default)
+        # Retrieve properties values for copy (section 9.1)
+        pvals = dict(zip(self.section_9_1.mapped('name_id.name'),self.section_9_1.mapped('value')))
+        cvals = dict(zip(self.section_2_1.mapped('Classification'),self.section_2_1.mapped('HazardStatement')))
+        mvals = dict(zip(self.section_3_2.mapped('substance'),self.section_3_2.mapped('concentration')))
+        rec = super(SdsDatasheet, self).copy(default=default)
+        rec.fill_properties(pvals)
+        rec.fill_classification(cvals)
+        rec.fill_mixture(mvals)
+        return rec
 
     @api.multi
-    def fill_properties(self):
+    def fill_mixture(self, values=None):
         """
-        Preload all the properties in the properties table (Section 9.1)
+        This function helps the copy of section 3.2, a one2Many field
         :return:
         """
+        values = dict(values or {})
+        mixture_ids = []
+        for sub, conc in values.items():
+            mixture_ids += self.env['sds.chemical.mixture'].create({
+                'datasheet_id': self._context.get('active_id'),
+                'substance': sub.id,
+                'concentration': conc,
+            })
+        vals = {}
+        vals.update({'section_3_2': [(4, new_mixture.id) for new_mixture in mixture_ids]})
+        return self.update(vals)
 
-        prop_id_1 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_1').id, 'value': 'n.d.'}).id
-        prop_id_2 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_2').id, 'value': 'n.d.'}).id
-        prop_id_3 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_3').id, 'value': 'n.d.'}).id
-        prop_id_4 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_4').id, 'value': 'n.d.'}).id
-        prop_id_5 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_5').id, 'value': 'n.d.'}).id
-        prop_id_6 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_6').id, 'value': 'n.d.'}).id
-        prop_id_7 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_7').id, 'value': 'n.d.'}).id
-        prop_id_8 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_8').id, 'value': 'n.d.'}).id
-        prop_id_9 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_9').id, 'value': 'n.d.'}).id
-        prop_id_10 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_10').id, 'value': 'n.d.'}).id
-        prop_id_11 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_11').id, 'value': 'n.d.'}).id
-        prop_id_12 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_12').id, 'value': 'n.d.'}).id
-        prop_id_13 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_13').id, 'value': 'n.d.'}).id
-        prop_id_14 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_14').id, 'value': 'n.d.'}).id
-        prop_id_15 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_15').id, 'value': 'n.d.'}).id
-        prop_id_16 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_16').id, 'value': 'n.d.'}).id
-        prop_id_17 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_17').id, 'value': 'n.d.'}).id
-        prop_id_18 = self.env['sds.chemical.property.line'].create(
-            {'name_id': self.env.ref('safety_datasheet.chemical_property_18').id, 'value': 'n.d.'}).id
+    @api.multi
+    def fill_classification(self, values=None):
+        """
+        This function helps the copy of section 2.1, a one2Many field
+        :return:
+        """
+        values = dict(values or {})
+        c_ids = []
+        for classification, hazstat in values.items():
+            c_ids += self.env['sds.regulation.criteria'].create({
+                'datasheet_id': self._context.get('active_id'),
+                'Classification': classification.id,
+                'HazardStatement': hazstat.id ,
+            })
+        vals = {}
+        vals.update({'section_2_1': [(4, new_classification_id.id) for new_classification_id in c_ids]})
+        return self.update(vals)
 
-        prop_ids = [prop_id_1, prop_id_2, prop_id_3, prop_id_4, prop_id_5, prop_id_6,
-                    prop_id_7, prop_id_8, prop_id_9, prop_id_10, prop_id_11, prop_id_12,
-                    prop_id_13, prop_id_14, prop_id_15, prop_id_16, prop_id_17, prop_id_18]
+    @api.multi
+    def fill_properties(self, values=None):
+        """
+        Preload all the properties in the properties table (Section 9.1)
+        # TODO: Translations of values are lost
+        :return:
+        """
+        values = dict(values or {})
+        props = {}
+        prop_obj = self.env['sds.chemical.property'].search([])
+        prop_ids = []
+
+        for prop in prop_obj:
+            if prop.name in values:
+                props.update({prop.name: values[prop.name]})
+            else:
+                props.update({prop.name: _('n.a.')})
+            prop_ids += self.env['sds.chemical.property.line'].create(
+                {'name_id': prop.id , 'value': props[prop.name]}
+            )
 
         vals = {}
-        vals.update({'section_9_1': [(4, new_prop_id) for new_prop_id in prop_ids]})
+        vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
         return self.update(vals)
 

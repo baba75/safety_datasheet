@@ -1092,7 +1092,6 @@
             </field>
         </record>
 
-
         <!-- Menu item -->
         <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
         <menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
