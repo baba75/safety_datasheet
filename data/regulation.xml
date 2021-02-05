@@ -19,8 +19,12 @@
             <field name="url">http://data.europa.eu/eli/dir/2012/18/oj</field>
         </record>
         <record id="regulation_5" model="sds.regulation">
-            <field name="name">Consolidated text: Directive 2004/42/EC of the European Parliament and of the Council of 21 April 2004 on the limitation of emissions of volatile organic compounds due to the use of organic solvents in certain paints and varnishes and vehicle refinishing products and amending Directive 1999/13/EC</field>
+            <field name="name">Directive 2004/42/EC of the European Parliament and of the Council of 21 April 2004 on the limitation of emissions of volatile organic compounds due to the use of organic solvents in certain paints and varnishes and vehicle refinishing products and amending Directive 1999/13/EC</field>
             <field name="url">http://data.europa.eu/eli/dir/2004/42/oj</field>
+        </record>
+        <record id="regulation_6" model="sds.regulation">
+            <field name="name">REACH - ANNEX XVII : Restrictions on the manufacture, placing on the market nd use of certain dangerous substances, mixtures and articles</field>
+            <field name="url">http://data.europa.eu/eli/reg/2006/1907</field>
         </record>
 
     </data>

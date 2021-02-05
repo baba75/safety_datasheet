@@ -10,7 +10,7 @@ class SdsSentences(models.Model):
 
     SECTION = [('general', 'General'), ('inhalation', 'Inhalation'), ('skin', 'Skin contact'),
                ('eye', 'Eye contact'), ('ingestion', 'Ingestion'), ('extinguishing', 'Extinguishing'),
-               ('fire_hazards', 'Fire special hazards'), ('fire_fight_advice', 'Advice dor Firefighters'),
+               ('fire_hazards', 'Fire special hazards'), ('fire_fight_advice', 'Advice for Firefighters'),
                ('protective', 'Personal equipment'), ('env_precaution', 'Environmental precautions'),
                ('env_exposure', 'Environmental exposure'), ('containment', 'Containment methods'),
                ('handling', 'Safe handling'), ('storage', 'Safe storage'), ('store_products', 'Store products'),

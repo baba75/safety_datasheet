@@ -14,6 +14,11 @@
             <field name="HazardCategories" ref="Skin_Corr_B"/>
             <field name="HazardStatement" ref="H317"/>
         </record>
+        <record id="skinSens_H317" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Skin_Sens_1"/>
+            <field name="HazardStatement" ref="H317"/>
+        </record>
+
         <record id="eye1_H318" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Eye_Dam_1"/>
             <field name="HazardStatement" ref="H318"/>
@@ -21,6 +26,11 @@
         <record id="eye2_H319" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Eye_Irrit_2"/>
             <field name="HazardStatement" ref="H319"/>
+        </record>
+
+        <record id="tox1_H330" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Acute_Tox_1"/>
+            <field name="HazardStatement" ref="H330"/>
         </record>
         <record id="tox2_H310" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Acute_Tox_2"/>
@@ -42,11 +52,11 @@
             <field name="HazardCategories" ref="Acute_Tox_4"/>
             <field name="HazardStatement" ref="H312"/>
         </record>
-
         <record id="tox4_H332" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Acute_Tox_4"/>
             <field name="HazardStatement" ref="H332"/>
         </record>
+
         <record id="STOT_RE2_H373" model="sds.chemical.classification">
             <field name="HazardCategories" ref="STOT_RE_2"/>
             <field name="HazardStatement" ref="H373"/>
@@ -55,6 +65,7 @@
             <field name="HazardCategories" ref="STOT_SE_3"/>
             <field name="HazardStatement" ref="H335"/>
         </record>
+
         <record id="Aquatic_acute_1_H400" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Aquatic_acute_1"/>
             <field name="HazardStatement" ref="H400"/>
@@ -62,6 +73,15 @@
         <record id="Aquatic_chronic_1_H410" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Aquatic_chronic_1"/>
             <field name="HazardStatement" ref="H410"/>
+        </record>
+        <record id="Aquatic_chronic_3_H412" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Aquatic_chronic_3"/>
+            <field name="HazardStatement" ref="H412"/>
+        </record>
+
+        <record id="RespSens_H334" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Resp_Sens_1"/>
+            <field name="HazardStatement" ref="H334"/>
         </record>
 
 
@@ -160,7 +180,7 @@
             <field name="CASno">77-92-9</field>
             <field name="ECno">201-069-1</field>
             <field name="REACHno">01-2119457026-42-XXXX</field>
-            <field name="Classification" eval="[(6, 0, [ref('eye2_H319'),ref('skin2_H315'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
+            <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
         <record id="CSA" model="sds.chemical.substance">
             <field name="name">Cement, calcium sulfoaluminate, chemicals</field>
@@ -180,6 +200,44 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('skinB_H317'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
         </record>
-
+        <record id="cas_666723-27-9" model="sds.chemical.substance">
+            <field name="name">Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">666723-27-9</field>
+            <field name="ECno">679-494-0</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('STOT_SE3_H335'),ref('skinSens_H317'),ref('Aquatic_chronic_3_H412')])]"/>
+        </record>
+        <record id="cas_3779-63-3" model="sds.chemical.substance">
+            <field name="name">(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">3779-63-3</field>
+            <field name="ECno">223-242-0</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('STOT_SE3_H335'),ref('skinSens_H317')])]"/>
+        </record>
+        <record id="cas_1574548-27-8" model="sds.chemical.substance">
+            <field name="name">3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,
+                oligomers reaction product with 3-(cyclohexylamino)propane-1-sulfonic acid
+                and N,N-dimethylcyclohexanamine</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">1574548-27-8</field>
+            <field name="ECno">808-295-5</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skinSens_H317'),ref('Aquatic_chronic_3_H412')])]"/>
+        </record>
+        <record id="Hexamethylene_diisocyanate" model="sds.chemical.substance">
+            <field name="name">Hexamethylene diisocyanate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">822-06-0</field>
+            <field name="ECno">212-485-8</field>
+            <field name="REACHno">01-2119457571-37-XXXX</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox1_H330'),ref('tox4_H302'),ref('eye2_H319'),ref('skin2_H315'),
+                   ref('STOT_SE3_H335'),ref('RespSens_H334'),ref('skinSens_H317')])]"/>
+        </record>
     </data>
 </odoo>

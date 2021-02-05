@@ -14,6 +14,14 @@
             <field name="name">Under ordinary workplace conditions: No special measures required.</field>
             <field name="category">general</field>
         </record>
+        <record id="sentence_general_4" model="sds.sentences">
+            <field name="name">Show safety data sheet to the doctor in attendance.</field>
+            <field name="category">general</field>
+        </record>
+        <record id="sentence_general_5" model="sds.sentences">
+            <field name="name">Immediate medical attention is not required.</field>
+            <field name="category">general</field>
+        </record>
 
         <!-- First Aid Inhalation -->
         <record id="sentence_inhalation_1" model="sds.sentences">
@@ -80,6 +88,10 @@
         </record>
         <record id="sentence_skin_9" model="sds.sentences">
             <field name="name">If the product is wet:</field>
+            <field name="category">skin</field>
+        </record>
+        <record id="sentence_skin_10" model="sds.sentences">
+            <field name="name">No specific measures.</field>
             <field name="category">skin</field>
         </record>
 
@@ -152,6 +164,10 @@
         </record>
         <record id="sentence_ingestion_7" model="sds.sentences">
             <field name="name">Rinse mouth with water.</field>
+            <field name="category">ingestion</field>
+        </record>
+        <record id="sentence_ingestion_8" model="sds.sentences">
+            <field name="name">Drink plenty of water.</field>
             <field name="category">ingestion</field>
         </record>
 
@@ -242,6 +258,11 @@
             <field name="name">Dried up material is combustible.</field>
             <field name="category">fire_fight_advice</field>
         </record>
+        <record id="sentence_fire_fight_10" model="sds.sentences">
+            <field name="name">Standard procedure for chemical fires.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+
         <record id="sentence_fire_protect_1" model="sds.sentences">
             <field name="name">In the event of fire, wear self-contained breathing apparatus.</field>
             <field name="category">fire_fight_advice</field>
@@ -250,6 +271,7 @@
             <field name="name">Use personal protective equipment.</field>
             <field name="category">fire_fight_advice</field>
         </record>
+
 
         <record id="sentence_protective_1" model="sds.sentences">
             <field name="name">Use personal protective equipment.</field>
@@ -316,6 +338,10 @@
             <field name="name">Local authorities should be advised if significant spillages cannot be contained.</field>
             <field name="category">env_precaution</field>
         </record>
+        <record id="sentence_env_precaution_6" model="sds.sentences">
+            <field name="name">No special environmental precautions required.</field>
+            <field name="category">env_precaution</field>
+        </record>
 
         <record id="sentence_containment_1" model="sds.sentences">
             <field name="name">Soak up with inert absorbent material.</field>
@@ -378,6 +404,15 @@
             <field name="name">Sections 13 and 15 of this SDS provide information regarding certain local or national requirements.</field>
             <field name="category">containment</field>
         </record>
+        <record id="sentence_containment_15" model="sds.sentences">
+            <field name="name">Pick up and transfer to properly labelled containers.</field>
+            <field name="category">containment</field>
+        </record>
+        <record id="sentence_containment_16" model="sds.sentences">
+            <field name="name">After cleaning, flush away traces with water.</field>
+            <field name="category">containment</field>
+        </record>
+
 
         <record id="sentence_handling_1" model="sds.sentences">
             <field name="name">Do not get on skin or clothing.</field>
@@ -480,6 +515,18 @@
             <field name="name">Keep closed and in a cool and dry atmosphere.</field>
             <field name="category">storage</field>
         </record>
+        <record id="sentence_storage_9" model="sds.sentences">
+            <field name="name">Keep away from heat, sparks and open flames.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_10" model="sds.sentences">
+            <field name="name">Strong bases.</field>
+            <field name="category">storage</field>
+        </record>
+        <record id="sentence_storage_11" model="sds.sentences">
+            <field name="name">Protect from temperatures above: 40 °C</field>
+            <field name="category">storage</field>
+        </record>
 
         <record id="sentence_store_products_1" model="sds.sentences">
             <field name="name">Strong oxidizing agents.</field>
@@ -516,6 +563,10 @@
         </record>
         <record id="engineer_control_4" model="sds.sentences">
             <field name="name">No special measures required.</field>
+            <field name="category">engineer_control</field>
+        </record>
+        <record id="engineer_control_5" model="sds.sentences">
+            <field name="name">Ensure adequate ventilation of the rooms.</field>
             <field name="category">engineer_control</field>
         </record>
 
@@ -671,6 +722,18 @@
             <field name="name">It can react with aluminum to produce hydrogen.</field>
             <field name="category">haz_reaction</field>
         </record>
+        <record id="haz_reaction_6" model="sds.sentences">
+            <field name="name">Corrosive to metals.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_7" model="sds.sentences">
+            <field name="name">Can react with strong alkalis.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_8" model="sds.sentences">
+            <field name="name">Can react with reducing agents.</field>
+            <field name="category">haz_reaction</field>
+        </record>
 
         <record id="avoid_condition_1" model="sds.sentences">
             <field name="name">None known.</field>
@@ -680,6 +743,11 @@
             <field name="name">Humid conditions during storage may cause lump formation and loss of product quality.</field>
             <field name="category">avoid_condition</field>
         </record>
+        <record id="avoid_condition_3" model="sds.sentences">
+            <field name="name">Strong heating.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+
 
         <record id="incompatible_1" model="sds.sentences">
             <field name="name">Acids.</field>

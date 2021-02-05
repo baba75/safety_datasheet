@@ -385,7 +385,7 @@ class SdsDatasheet(models.Model):
                                                     '<th>Source</th></tr></thead>'
                                             '<tbody><tr><td>Ingestion</td><td><br></td><td><br></td><td><br></td></tr>'
                                                 '<tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></tr>'
-                                                '<tr><td>Skin/eye</td><td><br></td><td><br></td><td><br></td></tr>'
+                                                '<tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr>'
                                             '</tbody></table>'),
                                       translate=True, sanitize=False)
     section_11_1_2 = fields.Many2many('sds.sentences', relation="sds_skin_corrosion_statement_rel",
@@ -468,7 +468,14 @@ class SdsDatasheet(models.Model):
                                     domain="[('category', '=', 'persistence')]", string='Persistence and degradability',
                                     context={'default_category': 'persistence'})
     section_12_2_selector = fields.Boolean(string="Insert degradability details", default=False)
-    section_12_2_text = fields.Html(string="Persistence and degradability details", translate=True, sanitize=False)
+    section_12_2_text = fields.Html(string="Persistence and degradability details",
+                                    default=lambda s:_(
+                                        '<table class="table table-bordered"><thead><tr>'
+                                        '<th>Substance</th><th>Biodegradation in water</th>'
+                                        '<th>Source</th></tr></thead><tbody><tr><td></td>'
+                                        '<td></td><td></td></tr></tbody></table>'
+                                    ),
+                                    translate=True, sanitize=False)
     section_12_3 = fields.Many2many('sds.sentences', relation="sds_bioaccumulative_potential_statement_rel",
                                     domain="[('category', '=', 'bioaccumulative')]", string='Bioaccumulative potential',
                                     context={'default_category': 'bioaccumulative'})

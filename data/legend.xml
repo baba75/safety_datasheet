@@ -63,6 +63,10 @@ Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
             <field name="acronym">ECHA</field>
             <field name="description">European Chemicals Agency</field>
         </record>
+        <record id="legend_16" model="sds.legend">
+            <field name="acronym">EWC</field>
+            <field name="description">European Waste Catalogue</field>
+        </record>
 
     </data>
 </odoo>

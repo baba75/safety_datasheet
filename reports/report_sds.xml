@@ -3,13 +3,14 @@
 
     <report
             id="safety_sds_report"
-            model="sds.datasheet"
             string="Safety Datasheet"
+            model="sds.datasheet"
             report_type="qweb-pdf"
             name="safety_datasheet.report_safety_datasheet"
             file="safety_datasheet.report_safety_datasheet"
-            print_report_name="'SDS_%s_%s.pdf' % (object.product_id.name or '', doc_lang)"
-            menu="False"/>
+            print_report_name="SDS - %s - %s' % (object.product_id.name, doc_lang)"
+            menu="False"
+    />
 
 
     <template id="printpdf" name="printpdf">

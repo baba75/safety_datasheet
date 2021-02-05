@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200827\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 15:00+0000\n"
-"PO-Revision-Date: 2021-01-20 16:02+0100\n"
+"POT-Creation-Date: 2021-02-05 10:25+0000\n"
+"PO-Revision-Date: 2021-02-05 11:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -16,6 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.4.2\n"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:670
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (Copie)"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_3779-63-3
+msgid ""
+"(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
+msgstr ""
+"(2,4,6-trioxotriazine-1,3,5 (2H,4H,6H)-triyl)tris (hexaméthylène) isocyanate"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -270,6 +283,19 @@ msgid "2.3. Other Hazards:"
 msgstr "2.3 Autres dangers:"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
+msgid ""
+"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+"                oligomers reaction product with 3-(cyclohexylamino)propane-1-"
+"sulfonic acid\n"
+"                and N,N-dimethylcyclohexanamine"
+msgstr ""
+"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+"                produit de réaction d’oligomers avec l’acide 3-"
+"(cyclohexylamino)propane-1-sulfonique\n"
+"                et N,N-dimethylcyclohexanamine"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "3.1 Substances:"
 msgstr "3.1 Substances:"
@@ -405,7 +431,7 @@ msgstr ""
 "                            vPvB :"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:557
+#: code:addons/safety_datasheet/models/datasheet.py:563
 #, python-format
 msgid ""
 "<p class=\"sds\">The information contained in this sheet is based on the "
@@ -432,7 +458,7 @@ msgstr ""
 "personnel affecté à l’utilisation de produits chimiques.</p>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:227
+#: code:addons/safety_datasheet/models/datasheet.py:226
 #, python-format
 msgid ""
 "<p><b>Derived No Effect Level<br></b>Name of the substance here</"
@@ -473,7 +499,7 @@ msgstr ""
 "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:270
+#: code:addons/safety_datasheet/models/datasheet.py:269
 #, python-format
 msgid ""
 "<p><b>Predicted No Effect Concentration</b><br>Name of the component here</"
@@ -512,7 +538,7 @@ msgstr ""
 "table></div></div>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:541
+#: code:addons/safety_datasheet/models/datasheet.py:547
 #, python-format
 msgid ""
 "<p>The information contained in this Safety Data Sheet is derived from the "
@@ -565,7 +591,7 @@ msgid "<span>Supersedes version:&amp;nbsp;</span>"
 msgstr "<span> Remplace la version:&amp;nbsp; </span>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:201
+#: code:addons/safety_datasheet/models/datasheet.py:200
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -598,8 +624,8 @@ msgstr ""
 "tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:416
-#: code:addons/safety_datasheet/models/datasheet.py:462
+#: code:addons/safety_datasheet/models/datasheet.py:415
+#: code:addons/safety_datasheet/models/datasheet.py:461
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
@@ -611,15 +637,15 @@ msgstr ""
 "thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:381
+#: code:addons/safety_datasheet/models/datasheet.py:380
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
 "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
 "thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></td><td><br></td></"
 "tr><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>Skin/eye</td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>"
+"tr><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th>Voie d’exposition</"
 "th><th>Résultat / Effet</th><th>Espèce /Système d’essai</th><th>Source</th></"
@@ -629,14 +655,26 @@ msgstr ""
 "tbody></table>"
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:472
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Substance</"
+"th><th>Biodegradation in water</th><th>Source</th></tr></"
+"thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Résultat / Effet</"
+"th><th>Biodégradation dans l’eau</th><th>Source</th></tr></"
+"thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P390
 msgid "Absorb spillage to prevent material damage."
-msgstr ""
+msgstr "Absorber les déversements pour éviter les dommages matériels."
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_report_safety_datasheet_report_safety_datasheet
 msgid "Abstract model for custom SDS report"
-msgstr ""
+msgstr "Modèle abstrait pour rapport SDS personnalisé"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_2
@@ -663,7 +701,7 @@ msgstr "Acides."
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__acronym
 msgid "Acronym"
-msgstr ""
+msgstr "Acronyme"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_action_sentences
@@ -671,12 +709,12 @@ msgstr ""
 #: model:ir.ui.menu,name:safety_datasheet.sentences_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.action_sentences_tree
 msgid "Action Sentences"
-msgstr ""
+msgstr "Peines d’action"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.action_sentence_view_form
 msgid "Action sentences"
-msgstr ""
+msgstr "Peines d’action"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_dermal
@@ -714,34 +752,39 @@ msgstr "Détails de toxicité aiguë"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_Additional
 msgid "Additional Labelling"
-msgstr ""
+msgstr "Étiquetage supplémentaire"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_5
 msgid "Adopt adequate precautions for the rescuer."
-msgstr ""
+msgstr "Prendre des précautions adéquates pour le sauveteur."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.STOST_10
 msgid "Adrenal gland."
-msgstr ""
+msgstr "Surrénale."
 
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
 msgid "Advice dor Firefighters"
-msgstr ""
+msgstr "Conseils aux pompiers"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_3
 msgid "Advice for firefighters"
-msgstr ""
+msgstr "Conseils aux pompiers"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_3
 msgid "Aerosol"
-msgstr ""
+msgstr "Aérosol"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_containment_16
+msgid "After cleaning, flush away traces with water."
+msgstr "Après le nettoyage, rincer les traces avec de l’eau."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_2
@@ -900,7 +943,7 @@ msgstr ""
 msgid "Based on available data, the classification criteria are not met."
 msgstr ""
 "D’après les données disponibles, les critères de classification ne sont pas "
-"remplis"
+"remplis."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.STOST_3
@@ -984,6 +1027,11 @@ msgid "Bioaccumulative potential details"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_666723-27-9
+msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr ""
@@ -1002,7 +1050,7 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:521
+#: code:addons/safety_datasheet/models/datasheet.py:527
 #, python-format
 msgid "Bulk transport in tankers is not intended."
 msgstr "Le transport en vrac dans des camions-citernes n’est pas prévu."
@@ -1031,6 +1079,16 @@ msgstr ""
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_209
 msgid "Can become highly flammable in use. Can become flammable in use."
 msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.haz_reaction_8
+msgid "Can react with reducing agents."
+msgstr "Peut réagir avec des agents réducteurs."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.haz_reaction_7
+msgid "Can react with strong alkalis."
+msgstr "Peut réagir avec des alcalins forts."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_1
@@ -1322,20 +1380,6 @@ msgid "Conditions to avoid"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.regulation,name:safety_datasheet.regulation_5
-msgid ""
-"Consolidated text: Directive 2004/42/EC of the European Parliament and of "
-"the Council of 21 April 2004 on the limitation of emissions of volatile "
-"organic compounds due to the use of organic solvents in certain paints and "
-"varnishes and vehicle refinishing products and amending Directive 1999/13/EC"
-msgstr ""
-"Directive 2004/42/CE du Parlement européen et du Conseil du 21 avril 2004 "
-"relative à la réduction des émissions de composés organiques volatils dues à "
-"l’utilisation de solvants organiques dans certains vernis et peintures et "
-"dans les produits de retouche de véhicules, et modifiant la directive "
-"1999/13/CE"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_eye_6
 #: model:sds.sentences,name:safety_datasheet.sentence_ingestion_6
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_3
@@ -1419,6 +1463,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.GHS05_corrosion
 msgid "Corrosion"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.haz_reaction_6
+msgid "Corrosive to metals."
 msgstr ""
 
 #. module: safety_datasheet
@@ -1620,7 +1669,32 @@ msgstr ""
 "relative à la réduction des émissions de composés organiques volatils dues à "
 "l’utilisation de solvants organiques dans certains vernis et peintures et "
 "dans les produits de retouche de véhicules, et modifiant la directive "
+"1999/13/CE "
+
+#. module: safety_datasheet
+#: model:sds.regulation,name:safety_datasheet.regulation_5
+msgid ""
+"Directive 2004/42/EC of the European Parliament and of the Council of 21 "
+"April 2004 on the limitation of emissions of volatile organic compounds due "
+"to the use of organic solvents in certain paints and varnishes and vehicle "
+"refinishing products and amending Directive 1999/13/EC"
+msgstr ""
+"Directive 2004/42/CE du Parlement européen et du Conseil du 21 avril 2004 "
+"relative à la réduction des émissions de composés organiques volatils dues à "
+"l’utilisation de solvants organiques dans certains vernis et peintures et "
+"dans les produits de retouche de véhicules, et modifiant la directive "
 "1999/13/CE"
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_11
+msgid ""
+"Directive 2008/98/EC of the European Parliament and of\n"
+"                the Council of 19 November 2008 on waste and repealing "
+"certain Directive "
+msgstr ""
+"Directive 2008/98/CE du Parlement européen et de\n"
+"                le Conseil du 19 novembre 2008 sur les déchets et "
+"l’abrogation de certaines directives "
 
 #. module: safety_datasheet
 #: model:sds.regulation,name:safety_datasheet.regulation_4
@@ -1804,6 +1878,11 @@ msgid "Dried up material is combustible."
 msgstr "Le matériau séché est combustible."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_ingestion_8
+msgid "Drink plenty of water."
+msgstr "Boir beaucoup d’eau."
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_4
 msgid "Dry chemical."
 msgstr "Produit chimique sec."
@@ -1897,6 +1976,11 @@ msgid "EU Classification"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_16
+msgid "EWC"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P381
 msgid "Eliminate all ignition sources if safe to do so."
 msgstr ""
@@ -1934,6 +2018,11 @@ msgstr ""
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
 msgid "Engineer control"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.engineer_control_5
+msgid "Ensure adequate ventilation of the rooms."
 msgstr ""
 
 #. module: safety_datasheet
@@ -1982,6 +2071,11 @@ msgstr ""
 #: model:sds.legend,description:safety_datasheet.legend_1
 msgid "European Community number"
 msgstr "Numéro de la Communauté européenne"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_16
+msgid "European Waste Catalogue"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P380
@@ -2669,6 +2763,11 @@ msgid "Heating may cause an explosion."
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Hexamethylene_diisocyanate
+msgid "Hexamethylene diisocyanate"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H225
 msgid "Highly flammable liquid and vapour."
 msgstr ""
@@ -2935,12 +3034,17 @@ msgstr ""
 "limites d’exposition, portez une protection respiratoire lorsque des effets "
 "indésirables, tels qu’une irritation ou une gêne respiratoire, ont été "
 "ressentis, ou lorsque cela est indiqué par votre processus d’évaluation des "
-"risques.Toxicity details:"
+"risques."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_general_5
+msgid "Immediate medical attention is not required."
+msgstr "Des soins médicaux immédiats ne sont pas nécessaires."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P310
 msgid "Immediately call a POISON CENTER/doctor/ ..."
-msgstr "Appelez immédiatement un CENTRE DE POISON/médecin"
+msgstr "Appelez immédiatement un CENTRE DE POISON/médecin/…"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_2
@@ -3091,7 +3195,7 @@ msgid "Inhalation:"
 msgstr "Inhalation :"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:555
+#: code:addons/safety_datasheet/models/datasheet.py:561
 #, python-format
 msgid "Initial version"
 msgstr ""
@@ -3219,6 +3323,11 @@ msgstr ""
 msgid ""
 "Keep away from heat, hot surfaces, sparks, open flames and other ignition "
 "sources. No smoking."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_storage_9
+msgid "Keep away from heat, sparks and open flames."
 msgstr ""
 
 #. module: safety_datasheet
@@ -3714,13 +3823,13 @@ msgid "Name"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:60
+#: code:addons/safety_datasheet/models/datasheet.py:59
 #, python-format
 msgid "New SDS"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:533
+#: code:addons/safety_datasheet/models/datasheet.py:539
 #, python-format
 msgid ""
 "No Chemical Safety Assessment has been carried out for this substance/"
@@ -3736,7 +3845,7 @@ msgid "No adverse effects expected."
 msgstr "Aucun effet indésirable prévu."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:334
+#: code:addons/safety_datasheet/models/datasheet.py:333
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_1
 #, python-format
 msgid "No data available."
@@ -3775,6 +3884,11 @@ msgid "No relevant data found."
 msgstr "Aucune donnée pertinente trouvée."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_env_precaution_6
+msgid "No special environmental precautions required."
+msgstr "Aucune précaution environnementale particulière n’est requise."
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.engineer_control_4
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_6
 msgid "No special measures required."
@@ -3798,8 +3912,13 @@ msgid "No specific indication."
 msgstr "Aucune indication spécifique."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:451
-#: code:addons/safety_datasheet/models/datasheet.py:531
+#: model:sds.sentences,name:safety_datasheet.sentence_skin_10
+msgid "No specific measures."
+msgstr "Pas de mesures spécifiques."
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:450
+#: code:addons/safety_datasheet/models/datasheet.py:537
 #, python-format
 msgid "None available."
 msgstr "Aucun disponible."
@@ -3824,7 +3943,7 @@ msgid "Not Available."
 msgstr "Non disponible."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:515
+#: code:addons/safety_datasheet/models/datasheet.py:521
 #, python-format
 msgid "Not Hazardous to the environment."
 msgstr "Pas dangereux pour l’environnement."
@@ -3835,14 +3954,14 @@ msgid "Not a hazardous substance or mixture."
 msgstr "Pas une substance ou un mélange dangereux."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:100
+#: code:addons/safety_datasheet/models/datasheet.py:99
 #: code:addons/safety_datasheet/models/regulation.py:28
 #, python-format
 msgid "Not applicable."
 msgstr "N’est pas applicable."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:130
+#: code:addons/safety_datasheet/models/datasheet.py:129
 #, python-format
 msgid "Not available."
 msgstr ""
@@ -3860,10 +3979,10 @@ msgid "Not classified as a reactivity hazard."
 msgstr "Non classé comme un danger de réactivité."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:509
-#: code:addons/safety_datasheet/models/datasheet.py:510
-#: code:addons/safety_datasheet/models/datasheet.py:512
-#: code:addons/safety_datasheet/models/datasheet.py:514
+#: code:addons/safety_datasheet/models/datasheet.py:515
+#: code:addons/safety_datasheet/models/datasheet.py:516
+#: code:addons/safety_datasheet/models/datasheet.py:518
+#: code:addons/safety_datasheet/models/datasheet.py:520
 #, python-format
 msgid "Not regulated for transport."
 msgstr "Non réglementé pour le transport."
@@ -4077,6 +4196,11 @@ msgid "Physical state"
 msgstr "État physique"
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_containment_15
+msgid "Pick up and transfer to properly labelled containers."
+msgstr "Ramasser et transférer dans des contenants correctement étiquetés."
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__description
 msgid "Pictogram description"
 msgstr ""
@@ -4277,6 +4401,11 @@ msgid "Protect from sunlight. Store in a well-ventilated place."
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_storage_11
+msgid "Protect from temperatures above: 40 °C"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_6
 msgid "Provide adequate ventilation of the premises affected by the spreading."
 msgstr ""
@@ -4299,6 +4428,13 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_9
 msgid "REACH"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.regulation,name:safety_datasheet.regulation_6
+msgid ""
+"REACH - ANNEX XVII : Restrictions on the manufacture, placing on the market "
+"nd use of certain dangerous substances, mixtures and articles"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4372,7 +4508,7 @@ msgid ""
 "deplete the ozone layer "
 msgstr ""
 "Règlement (CE) n o 1005/2009 du Parlement européen et du Conseil du 16 "
-"septembre 2009 relatif à des substances qui appauvrissent la couche d’ozone"
+"septembre 2009 relatif à des substances qui appauvrissent la couche d’ozone "
 
 #. module: safety_datasheet
 #: model:sds.regulation,name:safety_datasheet.regulation_1
@@ -4438,7 +4574,7 @@ msgid ""
 "                the Council of 20 June 2019 on persistent organic pollutants "
 msgstr ""
 "Règlement (UE) 2019/1021 du Parlement européen et du Conseil du 20 juin 2019 "
-"concernant les polluants organiques persistants"
+"concernant les polluants organiques persistants "
 
 #. module: safety_datasheet
 #: model:sds.regulation,name:safety_datasheet.regulation_2
@@ -4515,7 +4651,7 @@ msgid "Relevant information"
 msgstr "Informations pertinentes"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:518
+#: code:addons/safety_datasheet/models/datasheet.py:524
 #, python-format
 msgid "Relevant information in other sections has to be considered."
 msgstr ""
@@ -5101,13 +5237,13 @@ msgstr ""
 "relatives à l’élimination."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:171
+#: code:addons/safety_datasheet/models/datasheet.py:170
 #, python-format
 msgid "See sections: 7, 8, 11, 12 and 13."
 msgstr "Voir les rubriques: 7, 8, 11, 12 et 13."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:193
+#: code:addons/safety_datasheet/models/datasheet.py:192
 #, python-format
 msgid "See the technical data sheet on this product for further information."
 msgstr "Consultez la fiche technique de ce produit pour plus d’informations."
@@ -5197,6 +5333,11 @@ msgstr "Lésions oculaires graves/irritation oculaire"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Serious eye damage/eye irritation details:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_general_4
+msgid "Show safety data sheet to the doctor in attendance."
 msgstr ""
 
 #. module: safety_datasheet
@@ -5322,7 +5463,7 @@ msgid "Specific end use"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:126
+#: code:addons/safety_datasheet/models/datasheet.py:125
 #, python-format
 msgid ""
 "Specific information on symptoms and effects caused by the product are "
@@ -5368,6 +5509,11 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.stability_1
 msgid "Stable under normal conditions."
 msgstr "Stable dans des conditions normales."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_10
+msgid "Standard procedure for chemical fires."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__name
@@ -5471,6 +5617,16 @@ msgstr ""
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
 msgid "Store products"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_storage_10
+msgid "Strong bases."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.avoid_condition_3
+msgid "Strong heating."
 msgstr ""
 
 #. module: safety_datasheet
@@ -5798,11 +5954,6 @@ msgstr "Détails de toxicité"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Toxicity details:"
 msgstr "Détails de toxicité aiguë :"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
-msgid "Translate default values"
-msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3
@@ -6145,9 +6296,19 @@ msgid "http://data.europa.eu/eli/dir/2004/42/oj"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_11
+msgid "http://data.europa.eu/eli/dir/2008/98/oj"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_10
 #: model:sds.regulation,url:safety_datasheet.regulation_4
 msgid "http://data.europa.eu/eli/dir/2012/18/oj"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.regulation,url:safety_datasheet.regulation_6
+msgid "http://data.europa.eu/eli/reg/2006/1907"
 msgstr ""
 
 #. module: safety_datasheet
@@ -6189,9 +6350,15 @@ msgid "https://echa.europa.eu"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:88
+#: code:addons/safety_datasheet/models/datasheet.py:733
+#, python-format
+msgid "n.a."
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:87
+#: code:addons/safety_datasheet/models/datasheet.py:90
 #: code:addons/safety_datasheet/models/datasheet.py:91
-#: code:addons/safety_datasheet/models/datasheet.py:92
 #, python-format
 msgid "none"
 msgstr "aucun"

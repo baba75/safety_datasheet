@@ -290,6 +290,13 @@
         </record>
 
         <!-- Respiratory/skin sensitization -->
+        <!--[...]
+        Annex VI to Regulation (EC) No 1272/2008 is amended as follows:
+        Table 1.1 is amended as follows:
+        in the Hazard Class Respiratory/skin sensitisation, the Category Code ‘Resp. Sens. 1’
+        is replaced by ‘Resp. Sens. 1, 1A, 1B’ and the Category Code ‘Skin Sens. 1’ is replaced
+        by ‘Skin. Sens. 1, 1A, 1B’;
+        [...] -->
         <record id="Resp_Sens_1" model="sds.hazard.class">
             <field name="name">Resp. Sens. 1, 1A, 1B</field>
             <field name="h_class">Respiratory/skin sensitization</field>

@@ -50,3 +50,4 @@ class SelectLangRecap(models.AbstractModel):
             'doc_lang': lang,
             'docs': datasheets,
         }
+

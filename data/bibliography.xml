@@ -60,5 +60,10 @@
                 amending and subsequently repealing Council Directive 96/82/EC</field>
             <field name="url">http://data.europa.eu/eli/dir/2012/18/oj</field>
         </record>
+        <record id="bibliography_11" model="sds.bibliography">
+            <field name="name">Directive 2008/98/EC of the European Parliament and of
+                the Council of 19 November 2008 on waste and repealing certain Directive </field>
+            <field name="url">http://data.europa.eu/eli/dir/2008/98/oj</field>
+        </record>
     </data>
 </odoo>
