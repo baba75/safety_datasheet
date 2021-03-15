@@ -330,7 +330,7 @@
             <field name="h_class">Carcinogenicity</field>
         </record>
         <record id="Carc_2" model="sds.hazard.class">
-            <field name="name">Carc. 1A</field>
+            <field name="name">Carc. 2</field>
             <field name="h_class">Carcinogenicity</field>
         </record>
 

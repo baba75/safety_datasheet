@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200827\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-05 10:25+0000\n"
-"PO-Revision-Date: 2021-02-05 11:41+0100\n"
+"POT-Creation-Date: 2021-02-09 08:24+0000\n"
+"PO-Revision-Date: 2021-02-09 10:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:670
+#: code:addons/safety_datasheet/models/datasheet.py:669
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (Copie)"
@@ -766,7 +766,9 @@ msgstr "Surrénale."
 
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
-msgid "Advice dor Firefighters"
+#, fuzzy
+#| msgid "Advice dor Firefighters"
+msgid "Advice for Firefighters"
 msgstr "Conseils aux pompiers"
 
 #. module: safety_datasheet
@@ -799,27 +801,27 @@ msgstr "Tous les agents extincteurs peuvent être utilisés."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_4
 msgid "Aluminium and other non-noble metals."
-msgstr ""
+msgstr "Aluminium et autres métaux non nobles."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
-msgstr ""
+msgstr "Aluminium."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_3
 msgid "Ammonium salts."
-msgstr ""
+msgstr "Sels d’ammonium."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P364
 msgid "And wash it before reuse."
-msgstr ""
+msgstr "Et lavez-le avant de le réutiliser."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_4
 msgid "Animal genetic toxicity studies were negative."
-msgstr ""
+msgstr "Les études sur la toxicité génétique animale étaient négatives."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_3
@@ -847,6 +849,9 @@ msgid ""
 "As an exception to this general rule it is known that multilayer laminate "
 "gloves may offer prolonged protection at thicknesses less than 0.35 mm."
 msgstr ""
+"A titre d’exception à cette règle générale, il est connu que les gants "
+"stratifiés multicouches peuvent offrir une protection prolongée à des "
+"épaisseurs inférieures à 0,35 mm."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10
@@ -913,7 +918,7 @@ msgstr "Évitez tout contact avec la peau et les yeux."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_16
 msgid "Avoid creating or spreading dust."
-msgstr ""
+msgstr "Évitez de créer ou de répandre de la poussière."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_4
@@ -1295,6 +1300,12 @@ msgid ""
 "                hosepipe with spray attachment (set to \"fine spray\" in "
 "order to avoid dispersing the product into the air)."
 msgstr ""
+"Nettoyer à sec le produit en utilisant des méthodes qui ne provoquent pas la "
+"dispersion du produit sec dans l’air, par exemple: - des aspirateurs "
+"(portables, équipés d’un filtre à particules d’air efficace (filtre HEPA) ou "
+"une autre technique équivalente) - des serpillières, brosses humides ou "
+"tuyau d’arrosage avec embout de pulvérisation (réglé sur «pulvérisation "
+"fine» afin d’éviter de disperser le produit dans l’air)."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_3
@@ -1385,7 +1396,7 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_3
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_5
 msgid "Consult a physician immediately."
-msgstr ""
+msgstr "Consultez immédiatement un médecin."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_6
@@ -1426,7 +1437,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_203
 msgid "Contains chromium (VI). May produce an allergic reaction."
-msgstr ""
+msgstr "Contient du chrome (VI). Peut produire une réaction allergique."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_205
@@ -1772,16 +1783,19 @@ msgstr ""
 msgid "Do not allow contact with water."
 msgstr ""
 
+# P260
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_17
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_10
 msgid "Do not breathe dust."
-msgstr "Ne respirez pas la poussière."
+msgstr "Ne pas respirer les poussières."
 
+# P260
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P260
 msgid "Do not breathe dust/fume/gas/mist/vapours/ spray."
 msgstr ""
+"Ne pas respirer les poussières/fumées/gaz/brouillards/vapeurs/ aérosols."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_2
@@ -1845,7 +1859,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_eye_7
 msgid "Do not rub to avoid further damage to the cornea."
-msgstr ""
+msgstr "Ne frottez pas pour éviter d’endommager davantage la cornée."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P211
@@ -1928,7 +1942,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.respiratory_7
 msgid "Dust mask FFP2"
-msgstr ""
+msgstr "Masque antipoussière FFP2"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
@@ -2778,6 +2792,8 @@ msgid ""
 "Humid conditions during storage may cause lump formation and loss of product "
 "quality."
 msgstr ""
+"Des conditions humides pendant le stockage peuvent entraîner la formation de "
+"grumeaux et une perte de qualité du produit."
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_3
@@ -2849,7 +2865,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P303
 msgid "IF ON SKIN (or hair):"
-msgstr ""
+msgstr "EN CAS DE CONTACT AVEC LA PEAU (ou les cheveux):"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P303_P361_P353
@@ -2860,20 +2876,24 @@ msgstr ""
 "EN CAS DE CONTACT AVEC LA PEAU (ou les cheveux): Enlever immédiatement tous "
 "les vêtements contaminés. Rincer la peau à l’eau/Se doucher."
 
+# P302
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P302
 msgid "IF ON SKIN:"
-msgstr ""
+msgstr "EN CAS DE CONTACT AVEC LA PEAU:"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P302_P334
 msgid "IF ON SKIN: Immerse in cool water/wrap in wet bandages."
 msgstr ""
+"EN CAS DE CONTACT AVEC LA PEAU : Plonger dans de l’eau fraîche / envelopper "
+"dans des bandages humides."
 
+# P302 + P352
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P302_P352
 msgid "IF ON SKIN: Wash with plenty of water/..."
-msgstr ""
+msgstr "EN CAS DE CONTACT AVEC LA PEAU: Laver abondamment à l’eau/…"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P301
@@ -2976,22 +2996,24 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P332
 msgid "If skin irritation occurs:"
-msgstr ""
+msgstr "En cas d’irritation cutanée :"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P332_P313
 msgid "If skin irritation occurs: Get medical advice/attention."
-msgstr ""
+msgstr "En cas d’irritation cutanée: consulter un médecin."
 
+# P333
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P333
 msgid "If skin irritation or rash occurs:"
-msgstr ""
+msgstr "En cas d’irritation ou d’éruption cutanée:"
 
+# P333 + P313
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P333_P313
 msgid "If skin irritation or rash occurs: Get medical advice/attention."
-msgstr ""
+msgstr "En cas d’irritation ou d’éruption cutanée: consulter un médecin."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_11
@@ -3002,16 +3024,21 @@ msgid ""
 "individual protection equipment and that further dispersion\n"
 "                of dust is prevented."
 msgstr ""
+"Si le produit ne peut pas être retiré à sec à l’aide d’un aspirateur ou "
+"mouillé, assurez-vous que le personnel\n"
+"                 responsable de le balayer à sec porter un équipement de "
+"protection individuelle approprié et de cette dispersion ultérieure\n"
+"                 de la poussière est évitée."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_8
 msgid "If the product is dry: wipe all residues with a cloth."
-msgstr ""
+msgstr "Si le produit est sec : essuyez tous les résidus avec un chiffon."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_9
 msgid "If the product is wet:"
-msgstr ""
+msgstr "Si le produit est mouillé :"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.engineer_control_2
@@ -3311,7 +3338,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.eye_protection_4
 msgid "It is recommended to wear airtight protective goggles."
-msgstr ""
+msgstr "Il est recommandé de porter des lunettes de protection hermétiques."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_7
@@ -3333,7 +3360,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_storage_8
 msgid "Keep closed and in a cool and dry atmosphere."
-msgstr ""
+msgstr "Conserver fermé et dans une atmosphère fraîche et sèche."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P233
@@ -3624,11 +3651,12 @@ msgid ""
 "May cause allergy or asthma symptoms or breathing difficulties if inhaled."
 msgstr ""
 
+# H317
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H317
 #: model:sds.sentences,name:safety_datasheet.sensitization_1
 msgid "May cause an allergic skin reaction."
-msgstr ""
+msgstr "Peut provoquer une allergie cutanée."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H350
@@ -3690,11 +3718,12 @@ msgstr ""
 msgid "May cause or intensify fire; oxidiser."
 msgstr ""
 
+# H335
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
 #: model:sds.sentences,name:safety_datasheet.STOST_13
 msgid "May cause respiratory irritation."
-msgstr ""
+msgstr "Peut irriter les voies respiratoires."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H360
@@ -3972,6 +4001,8 @@ msgid ""
 "Not classified (Technical impossibility to obtain the data / the product is "
 "not used as an aerosol)"
 msgstr ""
+"Non classé (impossibilité technique d’obtenir les données / le produit n’est "
+"pas utilisé en aérosol)"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_1
@@ -4479,7 +4510,7 @@ msgstr "Produit de nettoyage recommandé pour l’emballage: eau."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_10
 msgid "Recover the resulting slurry."
-msgstr ""
+msgstr "Récupérez la barbotine résultant."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P502
@@ -5455,7 +5486,7 @@ msgstr ""
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
 msgid "Specific Target Toxicity"
-msgstr ""
+msgstr "Toxicité cible spécifique"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_7_3
@@ -5476,14 +5507,14 @@ msgstr ""
 #: model:sds.hazard.class,h_class:safety_datasheet.STOT_RE_1
 #: model:sds.hazard.class,h_class:safety_datasheet.STOT_RE_2
 msgid "Specific target organ toxicity — repeated exposure"
-msgstr ""
+msgstr "Toxicité spécifique pour certains organes cibles - exposition répétée"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.STOT_SE_1
 #: model:sds.hazard.class,h_class:safety_datasheet.STOT_SE_2
 #: model:sds.hazard.class,h_class:safety_datasheet.STOT_SE_3
 msgid "Specific target organ toxicity — single exposure"
-msgstr ""
+msgstr "Toxicité spécifique pour certains organes cibles - exposition unique"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P321
@@ -6350,7 +6381,7 @@ msgid "https://echa.europa.eu"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:733
+#: code:addons/safety_datasheet/models/datasheet.py:732
 #, python-format
 msgid "n.a."
 msgstr ""

@@ -6,6 +6,10 @@
             <field name="HazardCategories" ref="Skin_Corr_A"/>
             <field name="HazardStatement" ref="H314"/>
         </record>
+        <record id="skinB_H314" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Skin_Corr_B"/>
+            <field name="HazardStatement" ref="H314"/>
+        </record>
         <record id="skin2_H315" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Skin_Irrit_2"/>
             <field name="HazardStatement" ref="H315"/>
@@ -83,6 +87,17 @@
             <field name="HazardCategories" ref="Resp_Sens_1"/>
             <field name="HazardStatement" ref="H334"/>
         </record>
+
+        <record id="MetCorr_H290" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Met_Corr_1"/>
+            <field name="HazardStatement" ref="H290"/>
+        </record>
+
+        <record id="Carc2_H351" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Carc_2"/>
+            <field name="HazardStatement" ref="H351"/>
+        </record>
+
 
 
         <record id="Potassium_methylsilanetriolate" model="sds.chemical.substance">
@@ -238,6 +253,69 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('tox1_H330'),ref('tox4_H302'),ref('eye2_H319'),ref('skin2_H315'),
                    ref('STOT_SE3_H335'),ref('RespSens_H334'),ref('skinSens_H317')])]"/>
+        </record>
+        <record id="Aluminium_sulphate" model="sds.chemical.substance">
+            <field name="name">Aluminium sulphate</field>
+            <field name="IUPACname">dialuminium(3+) trisulfate</field>
+            <field name="CASno">10043-01-3</field>
+            <field name="ECno"> 233-135-0</field>
+            <field name="REACHno">01-2119531538-36-XXXX</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('eye1_H318'),ref('MetCorr_H290')])]"/>
+        </record>
+        <record id="4_coco_alkylamine_ethoxylate" model="sds.chemical.substance">
+            <field name="name">Cocoalkylmethyl[polyoxyethylene] ammonium chloride</field>
+            <field name="IUPACname">Quatenary coco alkylamine ethoxylate</field>
+            <field name="CASno">61791-10-4</field>
+            <field name="ECno">612-393-1</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H302'),ref('eye1_H318')])]"/>
+        </record>
+        <record id="potassium_pyrophosphate" model="sds.chemical.substance">
+            <field name="name">Tetrapotassium pyrophosphate</field>
+            <field name="IUPACname">Potassium pyrophosphate</field>
+            <field name="CASno">7320-34-5</field>
+            <field name="ECno">230-785-7</field>
+            <field name="REACHno">01-2119489369-18</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('eye2_H319')])]"/>
+        </record>
+        <record id="EDTA_tetrasodium_salt" model="sds.chemical.substance">
+            <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
+            <field name="IUPACname">EDTA tetrasodium salt</field>
+            <field name="CASno">64-02-8</field>
+            <field name="ECno">200-573-9</field>
+            <field name="REACHno">01-21194-86762-27</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
+        </record>
+        <record id="Natriummetasilicat_Pentahydrat" model="sds.chemical.substance">
+            <field name="name">Natriummetasilicat Pentahydrat</field>
+            <field name="IUPACname">Sodium metasilicate pentahydrate</field>
+            <field name="CASno">10213-79-3</field>
+            <field name="ECno">600-279-4</field>
+            <field name="REACHno">01-2119449811-37</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skinB_H314'),ref('STOT_SE3_H335'),ref('MetCorr_H290')])]"/>
+        </record>
+        <record id="ec_932-183-6" model="sds.chemical.substance">
+            <field name="name">Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)</field>
+            <field name="IUPACname"></field>
+            <field name="CASno"></field>
+            <field name="ECno">932-183-6</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('eye1_H318')])]"/>
+        </record>
+        <record id="Trisodium_nitrilotriacetate" model="sds.chemical.substance">
+            <field name="name">Trisodium nitrilotriacetate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">5064-31-3</field>
+            <field name="ECno">225-768-6</field>
+            <field name="REACHno">01-21194-86762-27</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('Carc2_H351'),ref('tox4_H302'),ref('eye2_H319')])]"/>
         </record>
     </data>
 </odoo>

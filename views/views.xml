@@ -9,7 +9,6 @@
                     <header>
                         <button type="action" name="%(safety_datasheet.action_wizard_select_lang)d" string="Print"
                                 class="oe_highlight"/>
-
                     </header>
                     <sheet>
                         <div class="oe_title">

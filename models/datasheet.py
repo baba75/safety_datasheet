@@ -610,7 +610,6 @@ class SdsDatasheet(models.Model):
         This function set the translation of default values.
         It is called by create function or by the specific button (last option is
         necessary when importing from csv, for example)
-        TODO: disable the button once called with create function
         :return:
         """
         if self.ids:

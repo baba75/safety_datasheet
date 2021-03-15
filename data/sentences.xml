@@ -221,6 +221,10 @@
             <field name="name">Avoid breathing combustion products.</field>
             <field name="category">fire_hazards</field>
         </record>
+        <record id="sentence_fire_hazards_7" model="sds.sentences">
+            <field name="name">Sulphur oxides (SOx) may be released when heating above the decomposition temperature.</field>
+            <field name="category">fire_hazards</field>
+        </record>
 
         <record id="sentence_fire_fight_1" model="sds.sentences">
             <field name="name">Fire residues and contaminated fire extinguishing water must be disposed of in accordance with local regulations.</field>
@@ -527,6 +531,10 @@
             <field name="name">Protect from temperatures above: 40 °C</field>
             <field name="category">storage</field>
         </record>
+        <record id="sentence_storage_12" model="sds.sentences">
+            <field name="name">Keep away from incompatible products.</field>
+            <field name="category">storage</field>
+        </record>
 
         <record id="sentence_store_products_1" model="sds.sentences">
             <field name="name">Strong oxidizing agents.</field>
@@ -546,6 +554,18 @@
         </record>
         <record id="sentence_store_products_5" model="sds.sentences">
             <field name="name">None known.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_6" model="sds.sentences">
+            <field name="name">Non acid-proof metals (such as aluminium, copper and iron).</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_7" model="sds.sentences">
+            <field name="name">Unalloyed steel.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_8" model="sds.sentences">
+            <field name="name">Galvanized surfaces.</field>
             <field name="category">store_products</field>
         </record>
 
@@ -732,6 +752,18 @@
         </record>
         <record id="haz_reaction_8" model="sds.sentences">
             <field name="name">Can react with reducing agents.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_9" model="sds.sentences">
+            <field name="name">Possible dangerous reaction with hypo-chlorites.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_10" model="sds.sentences">
+            <field name="name">Possible dangerous reaction with chlorides.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_11" model="sds.sentences">
+            <field name="name">Possible dangerous reaction with sulphates.</field>
             <field name="category">haz_reaction</field>
         </record>
 
