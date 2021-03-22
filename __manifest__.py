@@ -44,4 +44,5 @@
         'demo/demo.xml',
     ],
     'css': ['static/src/css/sds.css'],
+    'application': True,
 }

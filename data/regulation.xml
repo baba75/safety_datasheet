@@ -26,6 +26,14 @@
             <field name="name">REACH - ANNEX XVII : Restrictions on the manufacture, placing on the market nd use of certain dangerous substances, mixtures and articles</field>
             <field name="url">http://data.europa.eu/eli/reg/2006/1907</field>
         </record>
+        <record id="regulation_7" model="sds.regulation">
+            <field name="name">Regulation (EU) No 305/2011 of the European Parliament and of the Council of 9 March 2011 laying down harmonised conditions for the marketing of construction products and repealing Council Directive 89/106/EEC</field>
+            <field name="url">http://data.europa.eu/eli/reg/2011/305/oj</field>
+        </record>
+        <record id="regulation_8" model="sds.regulation">
+            <field name="name">CLP - ANNEX VI : Harmonised classification and labelling for certain hazardous substances</field>
+            <field name="url">http://data.europa.eu/eli/reg/2008/1272/oj</field>
+        </record>
 
     </data>
 </odoo>

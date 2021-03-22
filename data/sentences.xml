@@ -196,6 +196,11 @@
             <field name="name">All extinguishing agents can be used.</field>
             <field name="category">extinguishing</field>
         </record>
+        <record id="sentence_extinguishing_7" model="sds.sentences">
+            <field name="name">High volume water jet.</field>
+            <field name="category">extinguishing</field>
+        </record>
+
 
         <record id="sentence_fire_hazards_1" model="sds.sentences">
             <field name="name">Produces Carbon oxides.</field>
@@ -302,7 +307,7 @@
             <field name="category">protective</field>
         </record>
         <record id="sentence_protective_7" model="sds.sentences">
-            <field name="name">It may be effective to slowly dilute the spread substance with water</field>
+            <field name="name">It may be effective to slowly dilute the spread substance with water.</field>
             <field name="category">protective</field>
         </record>
         <record id="sentence_protective_8" model="sds.sentences">
@@ -486,6 +491,14 @@
             <field name="name">Do not breathe dust.</field>
             <field name="category">handling</field>
         </record>
+        <record id="sentence_handling_18" model="sds.sentences">
+            <field name="name">Keep away from sources of ignition.</field>
+            <field name="category">handling</field>
+        </record>
+        <record id="sentence_handling_19" model="sds.sentences">
+            <field name="name">Take precautionary measures against static discharges.</field>
+            <field name="category">handling</field>
+        </record>
 
         <record id="sentence_storage_1" model="sds.sentences">
             <field name="name">Keep in properly labelled containers.</field>
@@ -521,10 +534,6 @@
         </record>
         <record id="sentence_storage_9" model="sds.sentences">
             <field name="name">Keep away from heat, sparks and open flames.</field>
-            <field name="category">storage</field>
-        </record>
-        <record id="sentence_storage_10" model="sds.sentences">
-            <field name="name">Strong bases.</field>
             <field name="category">storage</field>
         </record>
         <record id="sentence_storage_11" model="sds.sentences">
@@ -566,6 +575,10 @@
         </record>
         <record id="sentence_store_products_8" model="sds.sentences">
             <field name="name">Galvanized surfaces.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_9" model="sds.sentences">
+            <field name="name">Strong bases.</field>
             <field name="category">store_products</field>
         </record>
 
@@ -1062,6 +1075,14 @@
             <field name="name">According to current knowledge adverse effects on water purification plants are not expected.</field>
             <field name="category">ecotoxicity</field>
         </record>
+        <record id="ecotoxicity_3" model="sds.sentences">
+            <field name="name">The product is to be considered as dangerous for the environment .</field>
+            <field name="category">ecotoxicity</field>
+        </record>
+        <record id="ecotoxicity_4" model="sds.sentences">
+            <field name="name">Is harmful to aquatic organisms with long-term negative effects for the aquatic environment.</field>
+            <field name="category">ecotoxicity</field>
+        </record>
 
         <record id="persistence_1" model="sds.sentences">
             <field name="name">Polymer component: Not readily biodegradable.</field>
@@ -1096,9 +1117,17 @@
             <field name="name">No adverse effects expected.</field>
             <field name="category">bioaccumulative</field>
         </record>
+        <record id="bioaccumulative_2" model="sds.sentences">
+            <field name="name">No data available.</field>
+            <field name="category">bioaccumulative</field>
+        </record>
 
         <record id="mobility_1" model="sds.sentences">
             <field name="name">No adverse effects expected.</field>
+            <field name="category">mobility</field>
+        </record>
+        <record id="mobility_2" model="sds.sentences">
+            <field name="name">No data available.</field>
             <field name="category">mobility</field>
         </record>
 
@@ -1122,6 +1151,10 @@
 
         <record id="adverse_1" model="sds.sentences">
             <field name="name">According to present knowledge no adverse influence to environment expected.</field>
+            <field name="category">adverse</field>
+        </record>
+        <record id="adverse_2" model="sds.sentences">
+            <field name="name">None known.</field>
             <field name="category">adverse</field>
         </record>
 

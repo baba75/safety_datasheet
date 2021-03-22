@@ -997,7 +997,7 @@
 
         <!-- tree views -->
 
-        <record id="action_sentences_tree" model="ir.ui.view">
+        <record id="view_action_sentences_tree" model="ir.ui.view">
             <field name="name">sds.sentences.tree</field>
             <field name="model">sds.sentences</field>
             <field name="arch" type="xml">
@@ -1008,7 +1008,7 @@
             </field>
         </record>
 
-        <record id="precautionary_statement_tree" model="ir.ui.view">
+        <record id="view_precautionary_statement_tree" model="ir.ui.view">
             <field name="name">sds.precautionary.statement.tree</field>
             <field name="model">sds.precautionary.statement</field>
             <field name="arch" type="xml">
@@ -1020,7 +1020,7 @@
             </field>
         </record>
 
-        <record id="hazard_statement_tree" model="ir.ui.view">
+        <record id="view_hazard_statement_tree" model="ir.ui.view">
             <field name="name">sds.hazard.statement.tree</field>
             <field name="model">sds.hazard.statement</field>
             <field name="arch" type="xml">
@@ -1034,7 +1034,7 @@
             </field>
         </record>
 
-        <record id="hazard_class_tree" model="ir.ui.view">
+        <record id="view_hazard_class_tree" model="ir.ui.view">
             <field name="name">sds.hazard.class.tree</field>
             <field name="model">sds.hazard.class</field>
             <field name="arch" type="xml">
@@ -1045,7 +1045,7 @@
             </field>
         </record>
 
-        <record id="ghs_pictogram_tree" model="ir.ui.view">
+        <record id="view_ghs_pictogram_tree" model="ir.ui.view">
             <field name="name">sds.pictogram.tree</field>
             <field name="model">sds.pictogram</field>
             <field name="arch" type="xml">
@@ -1057,7 +1057,7 @@
             </field>
         </record>
 
-        <record id="legend_tree" model="ir.ui.view">
+        <record id="view_legend_tree" model="ir.ui.view">
             <field name="name">sds.legend.tree</field>
             <field name="model">sds.legend</field>
             <field name="arch" type="xml">
@@ -1068,7 +1068,7 @@
             </field>
         </record>
 
-        <record id="bibliography_tree" model="ir.ui.view">
+        <record id="view_bibliography_tree" model="ir.ui.view">
             <field name="name">sds.bibliography.tree</field>
             <field name="model">sds.bibliography</field>
             <field name="arch" type="xml">
@@ -1079,7 +1079,7 @@
             </field>
         </record>
 
-        <record id="regulation_tree" model="ir.ui.view">
+        <record id="view_regulation_tree" model="ir.ui.view">
             <field name="name">sds.regulation.tree</field>
             <field name="model">sds.regulation</field>
             <field name="arch" type="xml">

@@ -67,6 +67,14 @@ Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
             <field name="acronym">EWC</field>
             <field name="description">European Waste Catalogue</field>
         </record>
+        <record id="legend_17" model="sds.legend">
+            <field name="acronym">CLP</field>
+            <field name="description">Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures</field>
+        </record>
+        <record id="legend_18" model="sds.legend">
+            <field name="acronym">NOAEL</field>
+            <field name="description">No Observed Adverse Effect Level</field>
+        </record>
 
     </data>
 </odoo>

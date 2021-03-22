@@ -831,7 +831,7 @@
                                 <span t-field="line.name"/>
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_2_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_2_selector == True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_2_text"/>
