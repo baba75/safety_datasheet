@@ -13,7 +13,7 @@
         </record>
         <record id="P103" model="sds.precautionary.statement">
             <field name="name">P103</field>
-            <field name="description">Read label before use.</field>
+            <field name="description">Read carefully and follow all instructions.</field>
             <field name="mode">P2</field>
         </record>
         <record id="P201" model="sds.precautionary.statement">
@@ -34,6 +34,11 @@
         <record id="P211" model="sds.precautionary.statement">
             <field name="name">P211</field>
             <field name="description">Do not spray on an open flame or other ignition source.</field>
+            <field name="mode">P2</field>
+        </record>
+        <record id="P212" model="sds.precautionary.statement">
+            <field name="name">P212</field>
+            <field name="description">Avoid heating under confinement or reduction of the desensitising agent.</field>
             <field name="mode">P2</field>
         </record>
         <record id="P220" model="sds.precautionary.statement">
@@ -168,7 +173,7 @@
         </record>
         <record id="P280" model="sds.precautionary.statement">
             <field name="name">P280</field>
-            <field name="description">Wear protective gloves/protective clothing/eye protection/face protection.</field>
+            <field name="description">Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/…</field>
             <field name="mode">P2</field>
         </record>
         <record id="P282" model="sds.precautionary.statement">
@@ -649,6 +654,11 @@
         <record id="P502" model="sds.precautionary.statement">
             <field name="name">P502</field>
             <field name="description">Refer to manufacturer/supplier for information on recovery/recycling.</field>
+            <field name="mode">P5</field>
+        </record>
+        <record id="P503" model="sds.precautionary.statement">
+            <field name="name">P503</field>
+            <field name="description">Refer to manufacturer/ supplier/… for information on disposal/recovery/ recycling</field>
             <field name="mode">P5</field>
         </record>
 

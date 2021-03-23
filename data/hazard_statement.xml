@@ -31,6 +31,22 @@
             <field name="name">May mass explode in fire.</field>
             <!-- no pictogram for this code -->
         </record>
+        <record id="H206" model="sds.hazard.statement">
+            <field name="code">H206</field>
+            <field name="name">Fire, blast or projection hazard; increased risk of explosion if desensitising agent is reduced.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H207" model="sds.hazard.statement">
+            <field name="code">H207</field>
+            <field name="name">Fire or projection hazard; increased risk of explosion if desensitising agent is reduced.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+        <record id="H208" model="sds.hazard.statement">
+            <field name="code">H208</field>
+            <field name="name">Fire hazard; increased risk of explosion if desensitising agent is reduced.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
+        </record>
+
         <record id="H220" model="sds.hazard.statement">
             <field name="code">H220</field>
             <field name="name">Extremely flammable gas.</field>
@@ -85,6 +101,11 @@
             <field name="code">H231</field>
             <field name="name">May react explosively even in the absence of air at elevated pressure and/or temperature.</field>
             <!-- no pictogram for this code -->
+        </record>
+        <record id="H232" model="sds.hazard.statement">
+            <field name="code">H232</field>
+            <field name="name">May ignite spontaneously if exposed to air.</field>
+            <field name="pictogram_ids" eval="[(6, 0, [ref('GHS02_flame')])]"/>
         </record>
         <record id="H240" model="sds.hazard.statement">
             <field name="code">H240</field>

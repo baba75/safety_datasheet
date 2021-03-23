@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200827\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-22 11:32+0000\n"
-"PO-Revision-Date: 2021-03-22 12:54+0100\n"
+"PO-Revision-Date: 2021-03-23 09:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -1104,7 +1104,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P312
 msgid "Call a POISON CENTER/doctor/.../if you feel unwell."
-msgstr ""
+msgstr "Appeler un CENTRE ANTIPOISON/un médecin/…/en cas de malaise."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_209
@@ -2694,6 +2694,8 @@ msgstr "Nocif par contact cutané."
 #: model:sds.hazard.statement,name:safety_datasheet.H412
 msgid "Harmful to aquatic life with long lasting effects."
 msgstr ""
+"Nocif pour les organismes aquatiques, entraîne des effets néfastes à long "
+"terme."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H420
@@ -2786,7 +2788,7 @@ msgstr "Substance ou mélange dangereux"
 #: model:sds.hazard.class,h_class:safety_datasheet.Aquatic_chronic_3
 #: model:sds.hazard.class,h_class:safety_datasheet.Aquatic_chronic_4
 msgid "Hazardous to the aquatic environment"
-msgstr ""
+msgstr "Danger pour le milieu aquatique"
 
 #. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.GHS08_health_haz
@@ -4860,7 +4862,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Reproductive details:"
-msgstr ""
+msgstr "Détails reproductifs :"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7
@@ -4892,7 +4894,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Respiratory or skin sensitization details:"
-msgstr ""
+msgstr "Détails de sensibilisation respiratoire ou cutanée :"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_4
@@ -5177,7 +5179,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "STOT RE details:"
-msgstr ""
+msgstr "Détails STOT RE :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -5485,7 +5487,7 @@ msgstr "Lésions oculaires graves/irritation oculaire"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Serious eye damage/eye irritation details:"
-msgstr ""
+msgstr "Détails des lésions oculaires graves / irritation oculaire :"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_general_4
@@ -5743,6 +5745,8 @@ msgstr ""
 #: model:sds.precautionary.statement,description:safety_datasheet.P403_P233
 msgid "Store in a well-ventilated place. Keep container tightly closed."
 msgstr ""
+"Stocker dans un endroit bien ventilé. Maintenir le récipient fermé de "
+"manière étanche."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P403_P235
@@ -6332,7 +6336,7 @@ msgstr "Les composés organiques volatils"
 #. module: safety_datasheet
 #: selection:sds.datasheet,section_2_2_signal:0
 msgid "Warning"
-msgstr ""
+msgstr "Attention"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_207
