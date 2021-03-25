@@ -608,8 +608,7 @@ class SdsDatasheet(models.Model):
     def xlate_default(self,ids=False):
         """
         This function set the translation of default values.
-        It is called by create function or by the specific button (last option is
-        necessary when importing from csv, for example)
+        It is called by the specific button
         :return:
         """
         if self.ids:
@@ -636,8 +635,8 @@ class SdsDatasheet(models.Model):
                                                ('state','like','translated')])
                 if not xlat_values:
                     # Then we take the default
-                    xlat_values = xlat_obj.search([('name','like','addons/safety_datasheet/models/models.py'),
-                                               ('src','like',xlat_src)
+                    xlat_values = xlat_obj.search([['name','like','addons/safety_datasheet'],
+                                               ['src','like',xlat_src]
                                                ])
                     # If even the default does not exists, give up
                     if not xlat_values:
@@ -654,12 +653,6 @@ class SdsDatasheet(models.Model):
                     )
         return
 
-    @api.model
-    def create(self, vals):
-        result = super(SdsDatasheet, self).create(vals)
-        self.xlate_default(result.ids)
-        return result
-
     @api.multi
     @api.returns('self', lambda value: value.id)
     def copy(self, default=None):
@@ -669,10 +662,11 @@ class SdsDatasheet(models.Model):
             default['name'] = _("%s (copy)") % (self.name)
         # Retrieve properties values for copy (section 9.1)
         pvals = dict(zip(self.section_9_1.mapped('name_id.name'),self.section_9_1.mapped('value')))
+        pids = dict(zip(self.section_9_1.mapped('name_id.name'),self.section_9_1.mapped('id')))
         cvals = dict(zip(self.section_2_1.mapped('Classification'),self.section_2_1.mapped('HazardStatement')))
         mvals = dict(zip(self.section_3_2.mapped('substance'),self.section_3_2.mapped('concentration')))
         rec = super(SdsDatasheet, self).copy(default=default)
-        rec.fill_properties(pvals)
+        rec.fill_properties(pvals,pids)
         rec.fill_classification(cvals)
         rec.fill_mixture(mvals)
         return rec
@@ -714,25 +708,46 @@ class SdsDatasheet(models.Model):
         return self.update(vals)
 
     @api.multi
-    def fill_properties(self, values=None):
+    def fill_properties(self, values=None, pids=None):
         """
         Preload all the properties in the properties table (Section 9.1)
-        # TODO: Translations of values are lost
         :return:
         """
         values = dict(values or {})
+        pids = dict(pids or {})
         props = {}
         prop_obj = self.env['sds.chemical.property'].search([])
+        xlat_obj = self.env['ir.translation']
+        #orig_id = dict(zip(self.section_9_1.mapped('name_id.name'),self.section_9_1.mapped('id')))
+        #xlat_values = False
         prop_ids = []
 
         for prop in prop_obj:
             if prop.name in values:
                 props.update({prop.name: values[prop.name]})
+                # Find the translations
+                # I do not know why full name search (like 'sds.chemical.property.line,value') is not working
+                xlat_values = xlat_obj.search([
+                    ['name','like','sds.chemical.property.line,value'],
+                    ['res_id','=',pids[prop.name]],
+                    ['src','like',values[prop.name]]
+                ])
             else:
+                xlat_values = False
                 props.update({prop.name: _('n.a.')})
-            prop_ids += self.env['sds.chemical.property.line'].create(
-                {'name_id': prop.id , 'value': props[prop.name]}
-            )
+            prop_id = self.env['sds.chemical.property.line'].create(
+                {'name_id': prop.id , 'value': props[prop.name]})
+            prop_ids += prop_id
+            xlat_dict = dict(zip(xlat_values.mapped('lang'), xlat_values.mapped('value')))
+            for lang in xlat_values.mapped('lang'):
+                xlat_obj._set_ids(
+                    'sds.chemical.property.line,value',
+                    'model',
+                    lang,
+                    [prop_id.id],
+                    xlat_dict[lang],
+                    values[prop.name],
+                )
 
         vals = {}
         vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
