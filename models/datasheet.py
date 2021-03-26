@@ -718,8 +718,7 @@ class SdsDatasheet(models.Model):
         props = {}
         prop_obj = self.env['sds.chemical.property'].search([])
         xlat_obj = self.env['ir.translation']
-        #orig_id = dict(zip(self.section_9_1.mapped('name_id.name'),self.section_9_1.mapped('id')))
-        #xlat_values = False
+
         prop_ids = []
 
         for prop in prop_obj:
@@ -738,16 +737,17 @@ class SdsDatasheet(models.Model):
             prop_id = self.env['sds.chemical.property.line'].create(
                 {'name_id': prop.id , 'value': props[prop.name]})
             prop_ids += prop_id
-            xlat_dict = dict(zip(xlat_values.mapped('lang'), xlat_values.mapped('value')))
-            for lang in xlat_values.mapped('lang'):
-                xlat_obj._set_ids(
-                    'sds.chemical.property.line,value',
-                    'model',
-                    lang,
-                    [prop_id.id],
-                    xlat_dict[lang],
-                    values[prop.name],
-                )
+            if xlat_values:
+                xlat_dict = dict(zip(xlat_values.mapped('lang'), xlat_values.mapped('value')))
+                for lang in xlat_values.mapped('lang'):
+                    xlat_obj._set_ids(
+                        'sds.chemical.property.line,value',
+                        'model',
+                        lang,
+                        [prop_id.id],
+                        xlat_dict[lang],
+                        values[prop.name],
+                    )
 
         vals = {}
         vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
