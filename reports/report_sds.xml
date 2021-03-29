@@ -54,6 +54,11 @@
                         <h4 class="sds">1.1 Product Identifier:</h4>
                         <p class="sds" t-raw="doc.section_1_1"/>
                     </div>
+                    <div t-if="doc.section_1_1_UFI">
+                        <p class="sds">UFI:
+                            <span class="sds" t-raw="doc.section_1_1_UFI"/>
+                        </p>
+                    </div>
                     <div class="sds">
                         <h4 class="sds">1.2 Relevant identified uses of the substance or mixture and uses advised
                             against recommended use:

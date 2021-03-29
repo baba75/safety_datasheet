@@ -32,6 +32,7 @@
                                            string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
                                            name="identification">
                                         <field name="section_1_1" string="1.1 Product Identifier"/>
+                                        <field name="section_1_1_UFI" string="Unique formula identifier (UFI)" />
                                         <field name="section_1_2"
                                                string="1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:"/>
                                         <field name="section_1_3"

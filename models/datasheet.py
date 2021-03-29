@@ -63,6 +63,7 @@ class SdsDatasheet(models.Model):
 
     # Section 1: Identification of the substance/mixture and of the company/undertaking
     section_1_1 = fields.Char(string="Product Identifier", required=True, translate=True)
+    section_1_1_UFI = fields.Char(string="UFI", help="Unique Formula Identifier")
     section_1_2 = fields.Text(
         string="Relevant identified uses of the substance or mixture and uses advised against recommended use",
         required=True, translate=True)
