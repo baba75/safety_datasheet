@@ -170,6 +170,10 @@
             <field name="name">Drink plenty of water.</field>
             <field name="category">ingestion</field>
         </record>
+        <record id="sentence_ingestion_9" model="sds.sentences">
+            <field name="name">Do not give anything to drink.</field>
+            <field name="category">ingestion</field>
+        </record>
 
         <!-- Suitable extinguishing media -->
         <record id="sentence_extinguishing_1" model="sds.sentences">
@@ -210,6 +214,10 @@
             <field name="name">Produces Silicon oxides.</field>
             <field name="category">fire_hazards</field>
         </record>
+        <record id="sentence_fire_hazards_2bis" model="sds.sentences">
+            <field name="name">Produces Nitrogen oxides.</field>
+            <field name="category">fire_hazards</field>
+        </record>
         <record id="sentence_fire_hazards_3" model="sds.sentences">
             <field name="name">Produces at low oxygen level: acetic acid.</field>
             <field name="category">fire_hazards</field>
@@ -228,6 +236,14 @@
         </record>
         <record id="sentence_fire_hazards_7" model="sds.sentences">
             <field name="name">Sulphur oxides (SOx) may be released when heating above the decomposition temperature.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_8" model="sds.sentences">
+            <field name="name">Combustible.</field>
+            <field name="category">fire_hazards</field>
+        </record>
+        <record id="sentence_fire_hazards_9" model="sds.sentences">
+            <field name="name">Reacts with water releasing large amounts of carbon dioxide which may cause pressure build-up in confined spaces.</field>
             <field name="category">fire_hazards</field>
         </record>
 
@@ -269,6 +285,14 @@
         </record>
         <record id="sentence_fire_fight_10" model="sds.sentences">
             <field name="name">Standard procedure for chemical fires.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_11" model="sds.sentences">
+            <field name="name">Stay upwind.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        <record id="sentence_fire_fight_12" model="sds.sentences">
+            <field name="name">Evacuate the personnel away from the fumes.</field>
             <field name="category">fire_fight_advice</field>
         </record>
 
@@ -320,6 +344,10 @@
         </record>
         <record id="sentence_protective_10" model="sds.sentences">
             <field name="name">Do not breathe dust.</field>
+            <field name="category">protective</field>
+        </record>
+        <record id="sentence_protective_11" model="sds.sentences">
+            <field name="name">Do not breathe gas.</field>
             <field name="category">protective</field>
         </record>
 
@@ -544,6 +572,10 @@
             <field name="name">Keep away from incompatible products.</field>
             <field name="category">storage</field>
         </record>
+        <record id="sentence_storage_12" model="sds.sentences">
+            <field name="name">Avoid contact with water or humidity.</field>
+            <field name="category">storage</field>
+        </record>
 
         <record id="sentence_store_products_1" model="sds.sentences">
             <field name="name">Strong oxidizing agents.</field>
@@ -579,6 +611,14 @@
         </record>
         <record id="sentence_store_products_9" model="sds.sentences">
             <field name="name">Strong bases.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_10" model="sds.sentences">
+            <field name="name">Nitrosating agents.</field>
+            <field name="category">store_products</field>
+        </record>
+        <record id="sentence_store_products_11" model="sds.sentences">
+            <field name="name">Halogens.</field>
             <field name="category">store_products</field>
         </record>
 

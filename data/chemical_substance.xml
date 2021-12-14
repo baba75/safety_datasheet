@@ -48,6 +48,14 @@
             <field name="HazardCategories" ref="Acute_Tox_3"/>
             <field name="HazardStatement" ref="H301"/>
         </record>
+        <record id="tox3_H311" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Acute_Tox_3"/>
+            <field name="HazardStatement" ref="H311"/>
+        </record>
+        <record id="tox3_H331" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Acute_Tox_3"/>
+            <field name="HazardStatement" ref="H331"/>
+        </record>
         <record id="tox4_H302" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Acute_Tox_4"/>
             <field name="HazardStatement" ref="H302"/>
@@ -78,6 +86,10 @@
             <field name="HazardCategories" ref="Aquatic_chronic_1"/>
             <field name="HazardStatement" ref="H410"/>
         </record>
+        <record id="Aquatic_chronic_2_H411" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Aquatic_chronic_2"/>
+            <field name="HazardStatement" ref="H411"/>
+        </record>
         <record id="Aquatic_chronic_3_H412" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Aquatic_chronic_3"/>
             <field name="HazardStatement" ref="H412"/>
@@ -96,6 +108,21 @@
         <record id="Carc2_H351" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Carc_2"/>
             <field name="HazardStatement" ref="H351"/>
+        </record>
+
+        <record id="Repr2_H361fd" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Repr_2"/>
+            <field name="HazardStatement" ref="H361fd"/>
+        </record>
+
+        <record id="FlamLiq1_H226" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Flam_Liq_1"/>
+            <field name="HazardStatement" ref="H226"/>
+        </record>
+
+        <record id="FlamGas2_H221" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Flam_Gas_2"/>
+            <field name="HazardStatement" ref="H221"/>
         </record>
 
 
@@ -316,6 +343,73 @@
             <field name="REACHno">01-21194-86762-27</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('Carc2_H351'),ref('tox4_H302'),ref('eye2_H319')])]"/>
+        </record>
+        <record id="Sodium_silicate" model="sds.chemical.substance">
+            <field name="name">Silicic acid, sodium salt</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">1344-09-8</field>
+            <field name="ECno">215-687-4</field>
+            <field name="REACHno">01-2119448725-31-0020</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318')])]"/>
+        </record>
+        <record id="nitrilotriethanol" model="sds.chemical.substance">
+            <field name="name">2,2',2''-nitrilotriethanol</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">102-71-6</field>
+            <field name="ECno">203-049-8</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('eye2_H319'),ref('Repr2_H361fd')])]"/>
+        </record>
+        <record id="ammonia" model="sds.chemical.substance">
+            <field name="name">Ammonia</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">7664-41-7</field>
+            <field name="ECno">231-635-3</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skinB_H314'),ref('Aquatic_acute_1_H400'),
+                   ref('FlamGas2_H221'),ref('tox3_H331')])]"/>
+        </record>
+        <record id="butoxy_propanol" model="sds.chemical.substance">
+            <field name="name">1-(2-butoxy-1-methylethoxy)propan-2-ol</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">29911-28-2</field>
+            <field name="ECno">249-951-5</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('eye2_H319'),ref('eye1_H318')])]"/>
+        </record>
+        <record id="chem_EC_931-274-8" model="sds.chemical.substance">
+            <field name="name">HDI oligomers, isocyanurate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">-</field>
+            <field name="ECno">931-274-8</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('skinSens_H317'),ref('STOT_SE3_H335')])]"/>
+        </record>
+        <record id="chem_EC_618-558-4" model="sds.chemical.substance">
+            <field name="name">2-tridecoxyethyl dihydrogen phosphate</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">9046-01-9</field>
+            <field name="ECno">618-558-4</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('Aquatic_chronic_2_H411'),ref('skinA_H314')])]"/>
+        </record>
+        <record id="chem_EC_202-715-5" model="sds.chemical.substance">
+            <field name="name">Cyclohexyldimethylamine</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">98-94-2</field>
+            <field name="ECno">202-715-5</field>
+            <field name="REACHno"></field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('FlamLiq1_H226'),ref('skinB_H314'),
+                                  ref('tox3_H311'),ref('tox3_H301'),
+                                  ref('tox3_H331'),ref('eye1_H318'),
+                                  ref('Aquatic_chronic_3_H412')])]"/>
         </record>
     </data>
 </odoo>

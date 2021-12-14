@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200827\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-22 11:32+0000\n"
-"PO-Revision-Date: 2021-03-23 09:41+0100\n"
+"PO-Revision-Date: 2021-07-12 12:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:669
@@ -1798,7 +1798,7 @@ msgstr "NE PAS faire vomir."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.respiratory_6
 msgid "Do not allow aerosol."
-msgstr ""
+msgstr "Ne pas permettre les aérosols."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P222
@@ -2064,7 +2064,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.engineer_control_5
 msgid "Ensure adequate ventilation of the rooms."
-msgstr ""
+msgstr "Assurer une ventilation adéquate des pièces."
 
 #. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.GHS09_environment
@@ -5575,7 +5575,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_1
 msgid "Soak up with inert absorbent material."
-msgstr ""
+msgstr "Imprégnez-vous d’un matériau absorbant inerte."
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_13
@@ -5667,7 +5667,7 @@ msgstr "Stable dans des conditions normales."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_10
 msgid "Standard procedure for chemical fires."
-msgstr ""
+msgstr "Procédure standard pour les incendies chimiques."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__name
