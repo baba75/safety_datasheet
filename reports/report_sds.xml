@@ -156,7 +156,7 @@
                                                         <td style="padding-left: 20px;">
                                                             <h5 class="sds">Precautionary Statements:</h5>
                                                             <div class="sds">
-                                                                <t t-foreach="doc.section_2_2_P" t-as="line">
+                                                                <t t-foreach="doc.section_2_2_P.sorted(key=lambda r: r.sequence)" t-as="line">
                                                                     <span t-field="line.name"/>
                                                                     -
                                                                     <span t-field="line.description"/>

@@ -2,6 +2,7 @@
 <odoo>
     <data>
         <!-- definition of Category/Statement couples -->
+        <!-- definition of Category/Statement couples -->
         <record id="skinA_H314" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Skin_Corr_A"/>
             <field name="HazardStatement" ref="H314"/>
@@ -316,6 +317,15 @@
             <field name="REACHno">01-21194-86762-27</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('Carc2_H351'),ref('tox4_H302'),ref('eye2_H319')])]"/>
+        </record>
+        <record id="Sodium_silicate" model="sds.chemical.substance">
+            <field name="name">Silicic acid, sodium salt</field>
+            <field name="IUPACname"></field>
+            <field name="CASno">1344-09-8</field>
+            <field name="ECno">215-687-4</field>
+            <field name="REACHno">01-2119448725-31-0020</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318')])]"/>
         </record>
     </data>
 </odoo>
