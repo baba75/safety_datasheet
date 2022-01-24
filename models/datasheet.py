@@ -68,7 +68,7 @@ class SdsDatasheet(models.Model):
         string="Relevant identified uses of the substance or mixture and uses advised against recommended use",
         required=True, translate=True)
     section_1_3 = fields.Html(string="Detail of the supplier of the safety data sheet", default=_default_company,
-                              required=True)
+                              required=True, translate=True)
     section_1_4 = fields.Text(string="Emergency telephone number", default=_default_emergency_phone,
                               required=True, translate=True)
     section_1_note = fields.Html(string="Section 1 notes", translate=True)
