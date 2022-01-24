@@ -75,6 +75,7 @@ class SdsDatasheet(models.Model):
 
     # Section 2: Hazards identification
     section_2_1_selector = fields.Boolean(string="Hazardous substance or mixture", default=False)
+    section_2_1_b_selector = fields.Boolean(string="Non Hazardous mixture with hazardous components", default=False)
     section_2_1 = fields.One2many('sds.regulation.criteria', 'datasheet_id', string='EC regulation',
                                   help='Regulation (EC) No 1272/2008 - classification, labelling and packaging of substances and mixtures (CLP)')
     section_2_2_selector = fields.Boolean(string="GHS Labelling", default=False)
@@ -594,14 +595,45 @@ class SdsDatasheet(models.Model):
     def section_2_1_selector_change(self):
         """
         If not hazardous, then GHS Labelling should be not necessary
+        If hazardous, then the optional hazard in section 3 does not need to be explicitly declared here.
         :return:
         """
         vals = {}
         status_butt_1 = self.section_2_1_selector
         status_butt_2 = self.section_2_2_selector
+        status_butt_3 = self.section_2_1_b_selector
         if status_butt_1 != status_butt_2:
             status_butt_2 = status_butt_1
-        vals.update(section_2_1_selector=status_butt_1, section_2_2_selector=status_butt_2)
+
+        if status_butt_1 == True:
+            status_butt_3 = False
+        vals.update(section_2_1_selector=status_butt_1,
+                    section_2_2_selector=status_butt_2,
+                    section_2_1_b_selector=status_butt_3)
+        result = self.update(vals)
+        return result
+
+    @api.multi
+    @api.onchange('section_2_1_b_selector')
+    def section_2_1_b_selector_change(self):
+        """
+        If not hazardous, but with optional hazard in section 3 then remove GHS Labeling and hazard declaration here.
+        :return:
+        """
+        vals = {}
+        status_butt_1 = self.section_2_1_selector
+        status_butt_2 = self.section_2_2_selector
+        status_butt_3 = self.section_2_1_b_selector
+        status_butt_4 = self.section_3_2_selector
+        if status_butt_3 == True:
+            status_butt_1 = False
+            status_butt_2 = False
+            status_butt_4 = True
+            
+        vals.update(section_2_1_selector=status_butt_1,
+                    section_2_2_selector=status_butt_2,
+                    section_2_1_b_selector=status_butt_3,
+                    section_3_2_selector=status_butt_4)
         result = self.update(vals)
         return result
 

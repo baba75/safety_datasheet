@@ -91,6 +91,9 @@
                             <t t-if="doc.section_2_1_selector == False">
                                 <p class="sds">Not a hazardous substance or mixture.</p>
                             </t>
+                            <t t-if="doc.section_2_1_b_selector == True">
+                                <p class="sds">The product contains dangerous substances in a concentration such as to be declared in section 3</p>
+                            </t>
                             <t t-else="">
                                 <div class="sds">
                                     <table class="sds_properties">

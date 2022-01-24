@@ -51,6 +51,7 @@
                                     <group string="SECTION 2: Hazards identification" name="hazards">
                                         <group colspan="2">
                                             <field name="section_2_1_selector"/>
+                                            <field name="section_2_1_b_selector"/>
                                             <field name="section_2_2_selector"/>
                                         </group>
                                         <group attrs="{'invisible': [('section_2_1_selector', '=', False)]}">
