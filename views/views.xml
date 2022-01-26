@@ -877,6 +877,19 @@
             </field>
         </record>
 
+        <record id="view_substances_search" model="ir.ui.view">
+            <field name="name">sds.chemical.substance.search</field>
+            <field name="model">sds.chemical.substance</field>
+            <field name="arch" type="xml">
+                <search string="Substance">
+                    <field name="name" string="Substance name"/>
+                    <field name="ECno" string="EC number"/>
+                    <field name="CASno" string="CAS number"/>
+                </search>
+            </field>
+
+        </record>
+
         <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="action_sds">
             <field name="name">Safety Data Sheets</field>
@@ -1090,6 +1103,18 @@
                 <tree string="Regulation">
                     <field name="name"/>
                     <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_substances_tree" model="ir.ui.view">
+            <field name="name">sds.chemical.substance.tree</field>
+            <field name="model">sds.chemical.substance</field>
+            <field name="arch" type="xml">
+                <tree string="Chemical Substances">
+                    <field name="name"/>
+                    <field name="ECno"/>
+                    <field name="CASno"/>
                 </tree>
             </field>
         </record>
