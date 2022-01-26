@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200501\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-24 04:54+0000\n"
-"PO-Revision-Date: 2022-01-24 06:01+0100\n"
+"POT-Creation-Date: 2022-01-26 09:32+0000\n"
+"PO-Revision-Date: 2022-01-26 10:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
@@ -6133,6 +6133,12 @@ msgid "Substance or mixture which in contact with water emits flammable gas"
 msgstr "Sostanza o miscela che a contatto con l’acqua libera gas infiammabile"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Substance with a community workplace exposure limit.<br/>"
+msgstr ""
+"Sostanza con un limite comunitario di esposizione sul posto di lavoro.<br/>"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_3_1
 msgid "Substances"
 msgstr "Sostanze"
@@ -6902,6 +6908,11 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_5
 msgid "Whenever possible, operate upwind."
 msgstr "Quando possibile, operare sopravento."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_limit
+msgid "Workplace exposure limit"
+msgstr "Limite di esposizione sul posto di lavoro"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_6

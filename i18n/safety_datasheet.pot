@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20211011\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-24 04:54+0000\n"
-"PO-Revision-Date: 2022-01-24 04:54+0000\n"
+"POT-Creation-Date: 2022-01-26 09:32+0000\n"
+"PO-Revision-Date: 2022-01-26 09:32+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -5261,6 +5261,11 @@ msgid "Substance or mixture which in contact with water emits flammable gas"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Substance with a community workplace exposure limit.<br/>"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_3_1
 msgid "Substances"
 msgstr ""
@@ -5865,6 +5870,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_5
 msgid "Whenever possible, operate upwind."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_limit
+msgid "Workplace exposure limit"
 msgstr ""
 
 #. module: safety_datasheet
