@@ -820,6 +820,7 @@
                             <field name="REACHno"/>
                         </group>
                         <group>
+                            <field name="wrk_exp_limit"/>
                             <field name="Classification"
                                    widget="one2many_list">
                                 <tree string="EU Classification" editable="bottom">

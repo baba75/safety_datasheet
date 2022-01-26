@@ -28,6 +28,7 @@ class SdsChemicalSubstance(models.Model):
     CASno = fields.Char('CAS Number')
     ECno = fields.Char('EC Number')
     REACHno = fields.Char('REACH Number')
+    wrk_exp_limit = fields.Boolean('Workplace exposure limit', defalt=False)
     Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
 
 class SdsChemicalMixture(models.Model):

@@ -276,6 +276,9 @@
                                                 <span t-field="line.concentration"/>
                                             </td>
                                             <td>
+                                                <t if="wrk_exp_limit">
+                                                    Substance with a community workplace exposure limit.<br/>
+                                                </t>
                                                 <t t-foreach="line.substance.Classification" t-as="hazard">
                                                     <span t-field="hazard.HazardCategories"/>
                                                     -
