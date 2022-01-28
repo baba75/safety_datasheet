@@ -342,6 +342,7 @@ class SdsDatasheet(models.Model):
                                     domain="[('category', '=', 'reactivity')]",
                                     string='Reactivity',
                                     context={'default_category': 'reactivity'})
+    section_10_1_component = fields.Boolean('Insert reactivity of the components', default=False)
     section_10_2 = fields.Many2many('sds.sentences', relation="sds_stability_statement_rel",
                                     domain="[('category', '=', 'stability')]",
                                     string='Chemical stability',

@@ -9,7 +9,7 @@
                     <header>
                         <button type="action" name="%(safety_datasheet.action_wizard_select_lang)d" string="Print"
                                 class="oe_highlight"/>
-                        <button string="Translate default values" type="object" name="xlate_default" />
+                        <button string="Translate default values" type="object" name="xlate_default"/>
                     </header>
                     <sheet>
                         <div class="oe_title">
@@ -32,7 +32,7 @@
                                            string="SECTION 1: Identification of the substance/mixture and of the company/undertaking"
                                            name="identification">
                                         <field name="section_1_1" string="1.1 Product Identifier"/>
-                                        <field name="section_1_1_UFI" string="Unique formula identifier (UFI)" />
+                                        <field name="section_1_1_UFI" string="Unique formula identifier (UFI)"/>
                                         <field name="section_1_2"
                                                string="1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:"/>
                                         <field name="section_1_3"
@@ -391,6 +391,7 @@
                                                 <field name="name"/>
                                             </tree>
                                         </field>
+                                        <field name="section_10_1_component"/>
                                         <field name="section_10_2" widget="many2many">
                                             <tree editable="bottom">
                                                 <field name="sequence" widget="handle"/>
@@ -826,6 +827,14 @@
                                 <tree string="EU Classification" editable="bottom">
                                     <field name="HazardCategories"/>
                                     <field name="HazardStatement" context="{'show_only_code': True}"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group>
+                            <field name="reactivity" widget="many2many">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
                                 </tree>
                             </field>
                         </group>

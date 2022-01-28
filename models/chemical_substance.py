@@ -30,6 +30,10 @@ class SdsChemicalSubstance(models.Model):
     REACHno = fields.Char('REACH Number')
     wrk_exp_limit = fields.Boolean('Workplace exposure limit', defalt=False)
     Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
+    reactivity = fields.Many2many('sds.sentences', relation="sds_substance_reactivity_rel",
+                                    domain="[('category', '=', 'reactivity')]",
+                                    string='Reactivity',
+                                    context={'default_category': 'reactivity'})
 
 class SdsChemicalMixture(models.Model):
     """
