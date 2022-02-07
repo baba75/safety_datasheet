@@ -197,7 +197,7 @@ class SdsDatasheet(models.Model):
     section_7_note = fields.Html(string="Section 7 notes", translate=True)
 
     # Section 8: Exposure controls/personal protection
-    section_8_1_tlv_selector = fields.Boolean(string="Occupational exposure limit (TLV).", default=False)
+    section_8_1_tlv_selector = fields.Boolean(string="Occupational exposure limit of the entire mixture (TLV).", default=False)
     section_8_1_tlv = fields.Html(string='TLV',
                                   default=lambda s: _('<table class="table table-bordered">'
                                        '<thead class="table-columns">' 

@@ -2,7 +2,6 @@
 <odoo>
     <data>
         <!-- definition of Category/Statement couples -->
-        <!-- definition of Category/Statement couples -->
         <record id="skinA_H314" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Skin_Corr_A"/>
             <field name="HazardStatement" ref="H314"/>
@@ -120,34 +119,76 @@
             <field name="HazardCategories" ref="Flam_Liq_1"/>
             <field name="HazardStatement" ref="H226"/>
         </record>
+         <record id="FlamLiq2_H225" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Flam_Liq_2"/>
+            <field name="HazardStatement" ref="H225"/>
+        </record>
 
         <record id="FlamGas2_H221" model="sds.chemical.classification">
             <field name="HazardCategories" ref="Flam_Gas_2"/>
             <field name="HazardStatement" ref="H221"/>
         </record>
 
+        <record id="OxSol2_H272" model="sds.chemical.classification">
+            <field name="HazardCategories" ref="Ox_Sol_2"/>
+            <field name="HazardStatement" ref="H272"/>
+        </record>
+
+
+        <!-- Substances -->
+        <record id="EC252-104-2" model="sds.chemical.substance">
+            <field name="name">(2-methoxymethylethoxy)propanol</field>
+            <field name="IUPACname">Dipropylene glycol, monomethyl ether</field>
+            <field name="CASno">34590-94-8</field>
+            <field name="ECno">252-104-2</field>
+            <field name="REACHno">01-2119450011-XXXX</field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]></field>
+            <field name="Classification" eval=""/>
+            <field name="reactivity" eval="[(6, 0, [ref('reactivity_2')])]"/>
+        </record>
+        <record id="EC231-764-5" model="sds.chemical.substance">
+            <field name="name">Ammonium dihydrogenorthophosphate</field>
+            <field name="CASno">7722-76-1</field>
+            <field name="ECno">231-764-5</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+        </record>
+        <record id="EC220-120-9" model="sds.chemical.substance">
+            <field name="name">1,2-benzisothiazol-3(2H)-one</field>
+            <field name="CASno">2634-33-5</field>
+            <field name="ECno">220-120-9</field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification" eval="[(6, 0, [ref('tox4_H302'), ref('eye1_H318'), ref('skin2_H315'),
+                                                ref('skinSens_H317'), ref('Aquatic_acute_1_H400')])]"/>
+        </record>
         <record id="Potassium_methylsilanetriolate" model="sds.chemical.substance">
             <field name="name">Potassium methylsilanetriolate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">31795-24-1</field>
             <field name="ECno">250-807-9</field>
-            <field name="REACHno"></field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification" eval="[(6, 0, [ref('skinA_H314'),ref('eye1_H318')])]"/>
         </record>
         <record id="Cocoalkylmethyl_ammonium_chloride" model="sds.chemical.substance">
             <field name="name">Cocoalkylmethyl[polyoxyethylene] ammonium chloride</field>
-            <field name="IUPACname"></field>
             <field name="CASno">61791-10-4</field>
             <field name="ECno">612-393-1</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification" eval="[(6, 0, [ref('tox4_H302'),ref('eye1_H318')])]"/>
         </record>
-        <record id="Tetrapotassium_pyrophosphate" model="sds.chemical.substance">
+        <record id="potassium_pyrophosphate" model="sds.chemical.substance">
             <field name="name">Tetrapotassium pyrophosphate</field>
             <field name="IUPACname">tetrapotassium (phosphonooxy)phosphonate</field>
             <field name="CASno">7320-34-5</field>
             <field name="ECno">230-785-7</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
         <record id="Tetrasodium_ethylenediaminetetraacetate" model="sds.chemical.substance">
@@ -156,7 +197,8 @@
             </field>
             <field name="CASno">64-02-8</field>
             <field name="ECno">200-573-9</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
         </record>
@@ -165,7 +207,11 @@
             <field name="IUPACname">Portland cement compound</field>
             <field name="CASno">65997-15-1</field>
             <field name="ECno">266-043-4</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></th></tr></thead><tbody class="table-data"><tr><td>UK<br></td><td>WEL TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]></field>
             <field name="Classification"
                    eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317')])]"/>
         </record>
@@ -174,7 +220,12 @@
             <field name="IUPACname">Butoxyethanol</field>
             <field name="CASno">111-76-2</field>
             <field name="ECno">203-905-0</field>
-            <field name="REACHno"></field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]>
+            </field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('tox4_H302'),ref('eye2_H319'),ref('tox4_H312'),ref('tox4_H332')])]"/>
         </record>
@@ -182,36 +233,46 @@
             <field name="name">Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and
                 2-methyl-1,2-thiazol-3(2H)-one
             </field>
-            <field name="IUPACname"></field>
             <field name="CASno">55965-84-9</field>
             <field name="ECno">611-341-5</field>
             <field name="REACHno">01-2119475108-36</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox2_H310'),ref('tox2_H330'),ref('tox3_H301'),ref('eye2_H319'),ref('Aquatic_acute_1_H400'),ref('Aquatic_chronic_1_H410')])]"/>
         </record>
         <record id="2-2-butoxyethoxyethanol" model="sds.chemical.substance">
             <field name="name">2-(2-butoxyethoxy)ethanol</field>
-            <field name="IUPACname"></field>
             <field name="CASno">112-34-5</field>
             <field name="ECno">203-961-6</field>
             <field name="REACHno">01-2119475104-44-XXXX</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]>
+            </field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
         <record id="cement" model="sds.chemical.substance">
             <field name="name">Cement, portland, chemicals</field>
-            <field name="IUPACname"></field>
             <field name="CASno">65997-15-1</field>
             <field name="ECno">266-043-4</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></th></tr></thead><tbody class="table-data"><tr><td>UK<br></td><td>WEL TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]></field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317'),ref('STOT_SE3_H335')])]"/>
         </record>
         <record id="lithum_carbonate" model="sds.chemical.substance">
             <field name="name">Lithium carbonate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">554-13-2</field>
             <field name="ECno">209-062-5</field>
             <field name="REACHno">01-2119516034-53</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H302'),ref('eye2_H319')])]"/>
         </record>
@@ -221,41 +282,49 @@
             <field name="CASno">77-92-9</field>
             <field name="ECno">201-069-1</field>
             <field name="REACHno">01-2119457026-42-XXXX</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
         <record id="CSA" model="sds.chemical.substance">
             <field name="name">Cement, calcium sulfoaluminate, chemicals</field>
-            <field name="IUPACname"></field>
             <field name="CASno">960375-09-1</field>
-            <field name="ECno"></field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></th></tr></thead><tbody class="table-data"><tr><td>UK<br></td><td>WEL TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]>
+            </field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('skinB_H317'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
         </record>
         <record id="natural_cement" model="sds.chemical.substance">
             <field name="name">Prompt natural quick-setting cement</field>
-            <field name="IUPACname"></field>
             <field name="CASno">65997-15-1</field>
             <field name="ECno">266-043-4</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></th></tr></thead><tbody class="table-data"><tr><td>UK<br></td><td>WEL TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]></field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('skinB_H317'),ref('eye1_H318'),ref('STOT_SE3_H335')])]"/>
         </record>
         <record id="cas_666723-27-9" model="sds.chemical.substance">
             <field name="name">Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)</field>
-            <field name="IUPACname"></field>
             <field name="CASno">666723-27-9</field>
             <field name="ECno">679-494-0</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H332'),ref('STOT_SE3_H335'),ref('skinSens_H317'),ref('Aquatic_chronic_3_H412')])]"/>
         </record>
         <record id="cas_3779-63-3" model="sds.chemical.substance">
             <field name="name">(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">3779-63-3</field>
             <field name="ECno">223-242-0</field>
-            <field name="REACHno"></field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H332'),ref('STOT_SE3_H335'),ref('skinSens_H317')])]"/>
         </record>
@@ -263,19 +332,20 @@
             <field name="name">3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,
                 oligomers reaction product with 3-(cyclohexylamino)propane-1-sulfonic acid
                 and N,N-dimethylcyclohexanamine</field>
-            <field name="IUPACname"></field>
             <field name="CASno">1574548-27-8</field>
             <field name="ECno">808-295-5</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('STOT_SE3_H335'),ref('skinSens_H317'),ref('Aquatic_chronic_3_H412')])]"/>
         </record>
         <record id="Hexamethylene_diisocyanate" model="sds.chemical.substance">
             <field name="name">Hexamethylene diisocyanate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">822-06-0</field>
             <field name="ECno">212-485-8</field>
             <field name="REACHno">01-2119457571-37-XXXX</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox1_H330'),ref('tox4_H302'),ref('eye2_H319'),ref('skin2_H315'),
                    ref('STOT_SE3_H335'),ref('RespSens_H334'),ref('skinSens_H317')])]"/>
@@ -284,28 +354,13 @@
             <field name="name">Aluminium sulphate</field>
             <field name="IUPACname">dialuminium(3+) trisulfate</field>
             <field name="CASno">10043-01-3</field>
-            <field name="ECno"> 233-135-0</field>
+            <field name="ECno">233-135-0</field>
             <field name="REACHno">01-2119531538-36-XXXX</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('eye1_H318'),ref('MetCorr_H290')])]"/>
-        </record>
-        <record id="4_coco_alkylamine_ethoxylate" model="sds.chemical.substance">
-            <field name="name">Cocoalkylmethyl[polyoxyethylene] ammonium chloride</field>
-            <field name="IUPACname">Quatenary coco alkylamine ethoxylate</field>
-            <field name="CASno">61791-10-4</field>
-            <field name="ECno">612-393-1</field>
-            <field name="REACHno"></field>
-            <field name="Classification"
-                   eval="[(6, 0, [ref('tox4_H302'),ref('eye1_H318')])]"/>
-        </record>
-        <record id="potassium_pyrophosphate" model="sds.chemical.substance">
-            <field name="name">Tetrapotassium pyrophosphate</field>
-            <field name="IUPACname">Potassium pyrophosphate</field>
-            <field name="CASno">7320-34-5</field>
-            <field name="ECno">230-785-7</field>
-            <field name="REACHno">01-2119489369-18</field>
-            <field name="Classification"
-                   eval="[(6, 0, [ref('eye2_H319')])]"/>
+            <field name="reactivity" eval=""/>
         </record>
         <record id="EDTA_tetrasodium_salt" model="sds.chemical.substance">
             <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
@@ -317,98 +372,208 @@
                    eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
         </record>
         <record id="Natriummetasilicat_Pentahydrat" model="sds.chemical.substance">
-            <field name="name">Natriummetasilicat Pentahydrat</field>
+            <field name="name">Disodium dioxido(oxo)silane pentahydrate</field>
             <field name="IUPACname">Sodium metasilicate pentahydrate</field>
             <field name="CASno">10213-79-3</field>
             <field name="ECno">600-279-4</field>
             <field name="REACHno">01-2119449811-37</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skinB_H314'),ref('STOT_SE3_H335'),ref('MetCorr_H290')])]"/>
         </record>
         <record id="ec_932-183-6" model="sds.chemical.substance">
             <field name="name">Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)</field>
-            <field name="IUPACname"></field>
-            <field name="CASno"></field>
             <field name="ECno">932-183-6</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('eye1_H318')])]"/>
         </record>
         <record id="Trisodium_nitrilotriacetate" model="sds.chemical.substance">
             <field name="name">Trisodium nitrilotriacetate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">5064-31-3</field>
             <field name="ECno">225-768-6</field>
             <field name="REACHno">01-21194-86762-27</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('Carc2_H351'),ref('tox4_H302'),ref('eye2_H319')])]"/>
         </record>
         <record id="Sodium_silicate" model="sds.chemical.substance">
             <field name="name">Silicic acid, sodium salt</field>
-            <field name="IUPACname"></field>
             <field name="CASno">1344-09-8</field>
             <field name="ECno">215-687-4</field>
             <field name="REACHno">01-2119448725-31-0020</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318')])]"/>
+            <field name="reactivity" eval="[(6, 0, [ref('reactivity_5'),ref('reactivity_6')])]"/>
         </record>
         <record id="nitrilotriethanol" model="sds.chemical.substance">
             <field name="name">2,2',2''-nitrilotriethanol</field>
-            <field name="IUPACname"></field>
             <field name="CASno">102-71-6</field>
             <field name="ECno">203-049-8</field>
-            <field name="REACHno"></field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('eye2_H319'),ref('Repr2_H361fd')])]"/>
         </record>
         <record id="ammonia" model="sds.chemical.substance">
             <field name="name">Ammonia</field>
-            <field name="IUPACname"></field>
             <field name="CASno">7664-41-7</field>
             <field name="ECno">231-635-3</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]></field>
             <field name="Classification"
                    eval="[(6, 0, [ref('skinB_H314'),ref('Aquatic_acute_1_H400'),
                    ref('FlamGas2_H221'),ref('tox3_H331')])]"/>
         </record>
         <record id="butoxy_propanol" model="sds.chemical.substance">
             <field name="name">1-(2-butoxy-1-methylethoxy)propan-2-ol</field>
-            <field name="IUPACname"></field>
             <field name="CASno">29911-28-2</field>
             <field name="ECno">249-951-5</field>
-            <field name="REACHno"></field>
+            <field name="last_update">03/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('eye2_H319'),ref('eye1_H318')])]"/>
         </record>
         <record id="chem_EC_931-274-8" model="sds.chemical.substance">
             <field name="name">HDI oligomers, isocyanurate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">-</field>
             <field name="ECno">931-274-8</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('tox4_H332'),ref('skinSens_H317'),ref('STOT_SE3_H335')])]"/>
         </record>
         <record id="chem_EC_618-558-4" model="sds.chemical.substance">
             <field name="name">2-tridecoxyethyl dihydrogen phosphate</field>
-            <field name="IUPACname"></field>
             <field name="CASno">9046-01-9</field>
             <field name="ECno">618-558-4</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
-                   eval="[(6, 0, [ref('Aquatic_chronic_2_H411'),ref('skinA_H314')])]"/>
+                   eval="[(6, 0, [ref('Aquatic_chronic_2_H411'),ref('eye1_H318'),ref('skinA_H314')])]"/>
         </record>
         <record id="chem_EC_202-715-5" model="sds.chemical.substance">
             <field name="name">Cyclohexyldimethylamine</field>
-            <field name="IUPACname"></field>
             <field name="CASno">98-94-2</field>
             <field name="ECno">202-715-5</field>
-            <field name="REACHno"></field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('FlamLiq1_H226'),ref('skinB_H314'),
                                   ref('tox3_H311'),ref('tox3_H301'),
                                   ref('tox3_H331'),ref('eye1_H318'),
                                   ref('Aquatic_chronic_3_H412')])]"/>
+            <field name="reactivity" eval="[(6, 0, [ref('reactivity_3'),ref('reactivity_4')])]"/>
+        </record>
+        <record id="EC203-473-3" model="sds.chemical.substance">
+            <field name="name">Ethane-1,2-diol</field>
+            <field name="CASno">107-21-1</field>
+            <field name="ECno">203-473-3</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]>
+            </field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('STOT_RE2_H373')])]"/>
+        </record>
+        <record id="ethanol" model="sds.chemical.substance">
+            <field name="name">Ethanol</field>
+            <field name="CASno">64-17-5</field>
+            <field name="ECno">200-578-6</field>
+            <field name="last_update">04/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('FlamLiq2_H225')])]"/>
+        </record>
+        <record id="EC231-633-2" model="sds.chemical.substance">
+            <field name="name">Orthophosphoric acid</field>
+            <field name="CASno">7664-38-2</field>
+            <field name="ECno">231-633-2</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">True</field>
+            <field name="wrk_exp_tlv"><![CDATA[
+            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
+            ]]>
+            </field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skinB_H314')])]"/>
+            <field name="reactivity" eval="[(6, 0, [ref('reactivity_7'),
+                                        ref('reactivity_8'),
+                                        ref('reactivity_9'),
+                                        ref('reactivity_10')])]"/>
+        </record>
+        <record id="quartz" model="sds.chemical.substance">
+            <field name="name">Quartz (SiO2)</field>
+            <field name="CASno">14808-60-7</field>
+            <field name="ECno">238-878-4</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('STOT_RE2_H373'),ref('Carc2_H351')])]"/>
+        </record>
+        <record id="EC231-944-3" model="sds.chemical.substance">
+            <field name="name">Trizinc bis(orthophosphate)</field>
+            <field name="CASno">7779-90-0</field>
+            <field name="ECno">231-944-3</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('Aquatic_acute_1_H400'),ref('Aquatic_chronic_1_H410')])]"/>
+        </record>
+        <record id="Zinc_nitrate" model="sds.chemical.substance">
+            <field name="name">Zinc nitrate</field>
+            <field name="CASno">7779-88-6</field>
+            <field name="ECno">231-943-8</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H302'),ref('skin2_H315'),
+                                ref('OxSol2_H272'),ref('Aquatic_acute_1_H400'),
+                                ref('Aquatic_chronic_2_H411'),ref('eye1_H318'),
+                                ref('STOT_SE3_H335')])]"/>
+        </record>
+        <record id="CAS28182-81-2" model="sds.chemical.substance">
+            <field name="name">Hexamethylene diisocyanate, oligomers</field>
+            <field name="IUPACname">Poly(hexamethylene diisocyanate)</field>
+            <field name="CASno">28182-81-2</field>
+            <field name="ECno">500-060-2</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('tox4_H332'),ref('RespSens_H334'),
+                                  ref('eye2_H319'),ref('skinSens_H317'),
+                                  ref('Aquatic_chronic_2_H411')])]"/>
+        </record>
+        <record id="CAS12788-93-1" model="sds.chemical.substance">
+            <field name="name">Phosphoric acid, butyl ester</field>
+            <field name="CASno">12788-93-1</field>
+            <field name="ECno">235-826-2</field>
+            <field name="REACHno">01-2119970716-27</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('skinB_H314'),ref('eye1_H318')])]"/>
+            <field name="reactivity" eval="[(6, 0, [ref('reactivity_8a'),ref('reactivity_7a')])]"/>
+        </record>
+        <record id="CAS7087-68-5" model="sds.chemical.substance">
+            <field name="name">Ethyldiisopropylamine</field>
+            <field name="CASno">7087-68-5</field>
+            <field name="ECno">230-392-0</field>
+            <field name="REACHno">01-2119973181-39</field>
+            <field name="last_update">07/02/2022</field>
+            <field name="wrk_exp_limit">False</field>
+            <field name="Classification"
+                   eval="[(6, 0, [ref('FlamLiq2_H225'),ref('tox3_H311'),ref('eye1_H318')])]"/>
         </record>
     </data>
 </odoo>

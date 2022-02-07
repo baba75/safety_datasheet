@@ -495,13 +495,22 @@
                             <div class="sds">
                                 <h4 class="sds">8.1 Control parameters</h4>
                                 <t t-if="doc.section_8_1_tlv_selector == False">
-                                    <p class="sds">TLV Occupational exposure limit: Not available</p>
+                                    <p class="sds">TLV Occupational exposure limit of the entire mixture: Not available</p>
+                                    <t t-foreach="doc.section_3_2" t-as="line">
+                                        <p class="sds">
+                                            <t t-if="line.substance.wrk_exp_limit == True">
+                                                <p class="sds_h7" t-field="line.substance.name"/>
+                                                <p t-field="line.substance.wrk_exp_tlv"/>
+                                            </t>
+                                        </p>
+                                    </t>
                                 </t>
                                 <t t-else="">
                                     <div class="sds">
                                         <span class="sds" t-field="doc.section_8_1_tlv"/>
                                     </div>
                                 </t>
+
                             </div>
                             <div class="sds">
                                 <t t-if="doc.section_8_1_dnel_selector == False">

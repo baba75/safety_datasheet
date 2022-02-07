@@ -769,6 +769,50 @@
             <field name="name">Not classified as a reactivity hazard.</field>
             <field name="category">reactivity</field>
         </record>
+        <record id="reactivity_2" model="sds.sentences">
+            <field name="name">Forms peroxides with: air.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_3" model="sds.sentences">
+            <field name="name">Product slowly corrodes copper, aluminum, zinc and galvanized surfaces.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_4" model="sds.sentences">
+            <field name="name">Reaction with peroxides may result in violent decomposition of peroxide possibly creating an explosion.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_5" model="sds.sentences">
+            <field name="name">Reacts with acids: Heat released.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_6" model="sds.sentences">
+            <field name="name">Aqueous solutions react with light metals, e.g. aluminum, with the formation of hydrogen.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_7a" model="sds.sentences">
+            <field name="name">Exothermic reaction.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_7" model="sds.sentences">
+            <field name="name">Exothermic reaction with water.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_8a" model="sds.sentences">
+            <field name="name">Reacts with alkalies.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_8" model="sds.sentences">
+            <field name="name">Reacts violently with strong alkalis.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_9" model="sds.sentences">
+            <field name="name">In contact with reactive metals (as steel to carbon &amp; aluminum) may produce hydrogen.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_10" model="sds.sentences">
+            <field name="name">At high temperature formation of phosphorous oxides.</field>
+            <field name="category">reactivity</field>
+        </record>
 
         <record id="stability_1" model="sds.sentences">
             <field name="name">Stable under normal conditions.</field>

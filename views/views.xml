@@ -821,7 +821,13 @@
                             <field name="REACHno"/>
                         </group>
                         <group>
+                            <field name="last_update"/>
                             <field name="wrk_exp_limit"/>
+                        </group>
+                        <group attrs="{'invisible': [('wrk_exp_limit', '=', False)]}">
+                            <field name="wrk_exp_tlv" widget="html"/>
+                        </group>
+                        <group>
                             <field name="Classification"
                                    widget="one2many_list">
                                 <tree string="EU Classification" editable="bottom">

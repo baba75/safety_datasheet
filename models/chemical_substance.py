@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields
+from odoo import models, fields, _
 
 class SdsChemicalClassification(models.Model):
     """
@@ -28,12 +28,34 @@ class SdsChemicalSubstance(models.Model):
     CASno = fields.Char('CAS Number')
     ECno = fields.Char('EC Number')
     REACHno = fields.Char('REACH Number')
+    last_update = fields.Date(string="Revision date", default=fields.Date.today(), required=True)
     wrk_exp_limit = fields.Boolean('Workplace exposure limit', defalt=False)
+    wrk_exp_tlv = fields.Html(string="TLV details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered"><thead class="table-columns">'
+                                          '<tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th>'
+                                          '<th colspan="3">Long-term Exposure Limit (LTEL) Values</th>'
+                                          '<th colspan="3">Short-term Exposure Limit (STEL) Values</th>'
+                                          '<th rowspan="2">Skin Designation</th>'
+                                          '<th rowspan="2">Dermal Sensitization</th>'
+                                          '<th rowspan="2">Respiratory Sensitization</th>'
+                                          '<th rowspan="2">Work Sector</th>'
+                                          '<th rowspan="2">Effective Date</th>'
+                                          '<th rowspan="2">Expiration Date</th>'
+                                          '<th rowspan="2">Miscellaneous Notes</th></tr>'
+                                          '<tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th>'
+                                          '<th>ppm</th><th>f/ml</th></tr></thead>'
+                                          '<tbody class="table-data"><tr><td><br></td><td><br></td><td><br></td>'
+                                          '<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td>'
+                                          '<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td>'
+                                          '<td><br></td><td><br></td></tr></tbody></table>'),
+                                      translate=True, sanitize=False)
     Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
     reactivity = fields.Many2many('sds.sentences', relation="sds_substance_reactivity_rel",
                                     domain="[('category', '=', 'reactivity')]",
                                     string='Reactivity',
                                     context={'default_category': 'reactivity'})
+
 
 class SdsChemicalMixture(models.Model):
     """
