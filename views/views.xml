@@ -109,27 +109,35 @@
                                 <form>
                                     <group string="SECTION 3: Composition/information on ingredients "
                                            name="composition">
-                                        <!-- FIXME: this field is not required by the regulation -->
-                                        <field name="section_3"/>
-                                        <field name="section_3_1"/>
-                                        <field name="section_3_2_selector"/>
-                                        <div colspan="2" attrs="{'invisible': [('section_3_2_selector', '=', False)]}">
-                                            <div>
-                                                <label for="section_3_2"/>
+                                        <group>
+                                            <!-- FIXME: this field is not required by the regulation -->
+                                            <field name="section_3"/>
+                                            <field name="section_3_type" widget="radio"/>
+                                        </group>
+                                        <group colspan="2" attrs="{'invisible': [('section_3_type', 'like', 'mixture')]}">
+                                            <field name="section_3_1"/>
+                                        </group>
+                                        <group colspan="2" attrs="{'invisible': [('section_3_type', 'like', 'substance')]}">
+                                            <field name="section_3_2_selector"/>
+                                            <div colspan="2"
+                                                 attrs="{'invisible': [('section_3_2_selector', '=', False)]}">
+                                                <div>
+                                                    <label for="section_3_2"/>
+                                                </div>
+                                                <div>
+                                                    <field name="section_3_2"
+                                                           context="{'datasheet_id': active_id}"
+                                                           widget="one2many_list">
+                                                        <tree string="Mixture:" editable="bottom">
+                                                            <field name="substance"/>
+                                                            <field name="concentration"/>
+                                                            <!--
+                                                            <field name="substance.HazardCategory"/> -->
+                                                        </tree>
+                                                    </field>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <field name="section_3_2"
-                                                       context="{'datasheet_id': active_id}"
-                                                       widget="one2many_list">
-                                                    <tree string="Mixture:" editable="bottom">
-                                                        <field name="substance"/>
-                                                        <field name="concentration"/>
-                                                        <!--
-                                                        <field name="substance.HazardCategory"/> -->
-                                                    </tree>
-                                                </field>
-                                            </div>
-                                        </div>
+                                        </group>
                                     </group>
                                     <group string="SECTION 3: free notes">
                                         <field name="section_3_note"/>

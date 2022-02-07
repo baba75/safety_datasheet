@@ -98,8 +98,10 @@ class SdsDatasheet(models.Model):
     # Hint: Look at https://www.echa.europa.eu/substance-information/
     # FIXME: only subsection 3.1 or subsection 3.2 needs to be included as appropriate
     section_3 = fields.Char(string="Chemical identity", translate=True)
-    section_3_1 = fields.Html(string="Substances", default=lambda s: _("Not applicable."), required=True,
-                              translate=True, sanitize=False)
+    section_3_type = fields.Selection([('substance', 'Substance'), ('mixture', 'Mixture')],
+                                              string="Product type",
+                                              default='mixture')
+    section_3_1 = fields.Html(string="Substances",  required=False, translate=True, sanitize=False)
     section_3_2_selector = fields.Boolean(string="Mixture", default=False)
     section_3_2 = fields.One2many('sds.chemical.mixture', 'datasheet_id', string='Mixture elements')
     section_3_note = fields.Html(string="Section 3 notes", translate=True)

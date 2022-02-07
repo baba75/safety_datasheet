@@ -207,97 +207,102 @@
                             <h4 class="sds">Chemical identity:</h4>
                             <p class="sds" t-field="doc.section_3"/>
                         </div>
-                        <div class="sds">
-                            <h4 class="sds">3.1 Substances:</h4>
-                            <span class="sds" t-raw="doc.section_3_1"/>
-                        </div>
                     </div>
                     <!-- the following could be very long, lets page break -->
                     <div class="sds" style="page-break-inside: auto;">
-                        <h4 class="sds">3.2 Mixtures:</h4>
-                        <t t-if="doc.section_3_2_selector == False">
-                            <p class="sds">
-                                This mixture does not meet the criteria for classification in accordance with
-                                Regulation (EC) No 1272/2008.
-                            </p>
+                        <!-- only one of section 3.1 (substances) and 3.2 (mixture) must be displayed -->
+                        <t t-if="doc.section_3_type=='substance'">
+                            <div class="sds">
+                                <h4 class="sds">3.1 Substances:</h4>
+                                <span class="sds" t-raw="doc.section_3_1"/>
+                            </div>
                         </t>
                         <t t-else="">
-                            <table class="sds_narrow">
-                                <thead>
-                                    <tr class="sds_narrow">
-                                        <th>CAS / EC-No.</th>
-                                        <th>REACH Registration no.</th>
-                                        <th>Component</th>
-                                        <th>Concentration</th>
-                                        <th>Classification: REGULATION (EC) No 1272/2008</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <t t-foreach="doc.section_3_2" t-as="line">
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding: 0px; border: none;">
-                                                                <b>CAS no:</b>
-                                                                <span t-field="line.substance.CASno"/>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="padding: 0px; border: none;">
-                                                                <b>EC no:</b>
-                                                                <span t-field="line.substance.ECno"/>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <span t-field="line.substance.REACHno"/>
-                                            </td>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding: 0px; border: none;">
-                                                                <span t-field="line.substance.name"/>
-                                                            </td>
-                                                        </tr>
-                                                        <t t-if="line.substance.IUPACname">
+                            <h4 class="sds">3.2 Mixtures:</h4>
+                            <t t-if="doc.section_3_2_selector == False">
+                                <p class="sds">
+                                    This mixture does not meet the criteria for classification in accordance with
+                                    Regulation (EC) No 1272/2008.
+                                </p>
+                            </t>
+                            <t t-else="">
+                                <table class="sds_narrow">
+                                    <thead>
+                                        <tr class="sds_narrow">
+                                            <th>CAS / EC-No.</th>
+                                            <th>REACH Registration no.</th>
+                                            <th>Component</th>
+                                            <th>Concentration</th>
+                                            <th>Classification: REGULATION (EC) No 1272/2008</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="doc.section_3_2" t-as="line">
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tbody>
                                                             <tr>
                                                                 <td style="padding: 0px; border: none;">
-                                                                    <b>IUPAC:</b>
-                                                                    <span t-field="line.substance.IUPACname"/>
+                                                                    <b>CAS no:</b>
+                                                                    <span t-field="line.substance.CASno"/>
                                                                 </td>
                                                             </tr>
-                                                        </t>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <span t-field="line.concentration"/>
-                                            </td>
-                                            <td>
-                                                <t t-if="line.substance.wrk_exp_limit==True">
-                                                    Substance with a community workplace exposure limit.
-                                                    <br/>
-                                                </t>
-                                                <t t-foreach="line.substance.Classification" t-as="hazard">
-                                                    <span t-field="hazard.HazardCategories"/>
-                                                    -
-                                                    <span t-field="hazard.HazardStatement.code"/>
-                                                    <br/>
-                                                </t>
-                                            </td>
-                                        </tr>
-                                    </t>
-                                </tbody>
-                            </table>
-                            <p class="sds">
-                                For the full text of the H-Statements mentioned in this Section,
-                                see Section 16.
-                            </p>
+                                                            <tr>
+                                                                <td style="padding: 0px; border: none;">
+                                                                    <b>EC no:</b>
+                                                                    <span t-field="line.substance.ECno"/>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.substance.REACHno"/>
+                                                </td>
+                                                <td>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 0px; border: none;">
+                                                                    <span t-field="line.substance.name"/>
+                                                                </td>
+                                                            </tr>
+                                                            <t t-if="line.substance.IUPACname">
+                                                                <tr>
+                                                                    <td style="padding: 0px; border: none;">
+                                                                        <b>IUPAC:</b>
+                                                                        <span t-field="line.substance.IUPACname"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.concentration"/>
+                                                </td>
+                                                <td>
+                                                    <t t-if="line.substance.wrk_exp_limit==True">
+                                                        Substance with a community workplace exposure limit.
+                                                        <br/>
+                                                    </t>
+                                                    <t t-foreach="line.substance.Classification" t-as="hazard">
+                                                        <span t-field="hazard.HazardCategories"/>
+                                                        -
+                                                        <span t-field="hazard.HazardStatement.code"/>
+                                                        <br/>
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                                <p class="sds">
+                                    For the full text of the H-Statements mentioned in this Section,
+                                    see Section 16.
+                                </p>
+                            </t>
                         </t>
                     </div>
                     <t t-if="not doc.section_3_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -495,7 +500,9 @@
                             <div class="sds">
                                 <h4 class="sds">8.1 Control parameters</h4>
                                 <t t-if="doc.section_8_1_tlv_selector == False">
-                                    <p class="sds">TLV Occupational exposure limit of the entire mixture: Not available</p>
+                                    <p class="sds">TLV Occupational exposure limit of the entire mixture: Not
+                                        available
+                                    </p>
                                     <t t-foreach="doc.section_3_2" t-as="line">
                                         <p class="sds">
                                             <t t-if="line.substance.wrk_exp_limit == True">
