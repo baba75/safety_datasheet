@@ -51,7 +51,7 @@
                     <h3 class="sds">SECTION 1: Identification of the substance/mixture and of the company/undertaking
                     </h3>
                     <div class="sds">
-                        <h4 class="sds">1.1 Product Identifier:</h4>
+                        <h4 class="sds">1.1. Product Identifier</h4>
                         <p class="sds" t-raw="doc.section_1_1"/>
                     </div>
                     <div t-if="doc.section_1_1_UFI">
@@ -60,17 +60,17 @@
                         </p>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">1.2 Relevant identified uses of the substance or mixture and uses advised
-                            against recommended use:
+                        <h4 class="sds">1.2. Relevant identified uses of the substance or mixture and uses advised
+                            against recommended use
                         </h4>
                         <p class="sds" t-raw="doc.section_1_2"/>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">1.3 Detail of the supplier of the safety data sheet:</h4>
+                        <h4 class="sds">1.3. Detail of the supplier of the safety data sheet</h4>
                         <p class="sds" t-raw="doc.section_1_3"/>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">1.4 Emergency telephone number:</h4>
+                        <h4 class="sds">1.4. Emergency telephone number</h4>
                         <p class="sds" t-raw="doc.section_1_4"/>
                     </div>
                     <!-- the html fields always contains at least: "<p><br></p>" -->
@@ -86,7 +86,7 @@
                         <h3 class="sds">SECTION 2: Hazards identification
                         </h3>
                         <div class="sds">
-                            <h4 class="sds">2.1 Classification of the substance or mixture:</h4>
+                            <h4 class="sds">2.1. Classification of the substance or mixture</h4>
                             <h5 class="sds">EC regulation criteria 1272/2008 (CLP):</h5>
                             <t t-if="doc.section_2_1_selector == False">
                                 <p class="sds">Not a hazardous substance or mixture.</p>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">2.2. Label elements:</h4>
+                        <h4 class="sds">2.2. Label elements</h4>
                         <t t-if="doc.section_2_2_selector == False">
                             <p class="sds">No labeling according to GHS required.</p>
                         </t>
@@ -183,7 +183,7 @@
                         <span class="sds" t-raw="doc.section_2_2_Additional"/>
                     </t>
                     <div class="sds">
-                        <h4 class="sds">2.3. Other Hazards:</h4>
+                        <h4 class="sds">2.3. Other Hazards</h4>
                         <p class="sds">
                             PBT:
                             <span t-raw="doc.section_2_3_PBT"/>
@@ -213,12 +213,12 @@
                         <!-- only one of section 3.1 (substances) and 3.2 (mixture) must be displayed -->
                         <t t-if="doc.section_3_type=='substance'">
                             <div class="sds">
-                                <h4 class="sds">3.1 Substances:</h4>
+                                <h4 class="sds">3.1. Substances</h4>
                                 <span class="sds" t-raw="doc.section_3_1"/>
                             </div>
                         </t>
                         <t t-else="">
-                            <h4 class="sds">3.2 Mixtures:</h4>
+                            <h4 class="sds">3.2. Mixtures</h4>
                             <t t-if="doc.section_3_2_selector == False">
                                 <p class="sds">
                                     This mixture does not meet the criteria for classification in accordance with
@@ -314,7 +314,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 4: First aid measures</h3>
                         <div class="sds">
-                            <h4 class="sds">4.1 Description of first aid measures</h4>
+                            <h4 class="sds">4.1. Description of first aid measures</h4>
                             <t t-if="doc.section_4_1_general">
                                 <h5 class="sds">General advice:</h5>
                                 <t t-foreach="doc.section_4_1_general" t-as="line">
@@ -348,12 +348,12 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">4.2 Most important symptoms and effects, both acute and delayed:</h4>
+                        <h4 class="sds">4.2. Most important symptoms and effects, both acute and delayed</h4>
                         <span class="sds" t-raw="doc.section_4_2"/>
                     </div>
                     <div class="sds">
                         <h4 class="sds">
-                            4.3 Indication of any immediate medical attention and special treatment needed:
+                            4.3. Indication of any immediate medical attention and special treatment needed
                         </h4>
                         <span class="sds" t-raw="doc.section_4_3"/>
                     </div>
@@ -366,7 +366,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 5: Firefighting measures</h3>
                         <div class="sds">
-                            <h4 class="sds">5.1 Extinguishing media</h4>
+                            <h4 class="sds">5.1. Extinguishing media</h4>
                             <h5 class="sds">Suitable extinguishing media:</h5>
                             <span t-foreach="doc.section_5_1_1" t-as="line">
                                 <span class="sds" t-field="line.name"/>
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">5.2 Special hazards arising from the substance or mixture</h4>
+                        <h4 class="sds">5.2. Special hazards arising from the substance or mixture</h4>
                         <t t-if="doc.section_5_2">
                             <span t-foreach="doc.section_5_2" t-as="line">
                                 <span class="sds" t-field="line.name"/>
@@ -391,9 +391,10 @@
                         </t>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">5.3 Advice for firefighters</h4>
+                        <h4 class="sds">5.3. Advice for firefighters</h4>
                         <span t-foreach="doc.section_5_3" t-as="line">
                             <span class="sds" t-field="line.name"/>
+                            <span>&amp;nbsp;</span>
                         </span>
                     </div>
                     <t t-if="not doc.section_5_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -405,7 +406,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 6: Accidental release measures</h3>
                         <div class="sds">
-                            <h4 class="sds">6.1 Personal precautions, protective equipment and emergency procedures:
+                            <h4 class="sds">6.1. Personal precautions, protective equipment and emergency procedures:
                             </h4>
                             <h5 class="sds">For non-emergency personnel:</h5>
                             <span t-foreach="doc.section_6_1_1" t-as="line">
@@ -421,7 +422,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">6.2 Environmental precautions:</h4>
+                        <h4 class="sds">6.2. Environmental precautions</h4>
                         <p class="sds">
                             <span t-foreach="doc.section_6_2" t-as="line">
                                 <span class="sds" t-field="line.name"/>
@@ -430,7 +431,7 @@
                         </p>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">6.3 Methods and materials for containment and cleaning up:</h4>
+                        <h4 class="sds">6.3. Methods and materials for containment and cleaning up</h4>
                         <p class="sds">
                             <span t-foreach="doc.section_6_3" t-as="line">
                                 <span class="sds" t-field="line.name"/>
@@ -438,7 +439,7 @@
                         </p>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">6.4 Reference to other sections:</h4>
+                        <h4 class="sds">6.4. Reference to other sections</h4>
                         <span class="sds" t-raw="doc.section_6_4"/>
                     </div>
                     <t t-if="not doc.section_6_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -450,7 +451,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 7: Handling and storage</h3>
                         <div class="sds">
-                            <h4 class="sds">7.1 Precautions for safe handling:</h4>
+                            <h4 class="sds">7.1. Precautions for safe handling</h4>
                             <p class="sds">
                                 <span t-foreach="doc.section_7_1" t-as="line">
                                     <span t-field="line.name"/>
@@ -460,7 +461,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">7.2 Conditions for safe storage, including any incompatibilities:</h4>
+                        <h4 class="sds">7.2. Conditions for safe storage, including any incompatibilities</h4>
                         <p class="sds">
                             <span t-foreach="doc.section_7_2_1" t-as="line">
                                 <span t-field="line.name"/>
@@ -485,7 +486,7 @@
                         </t>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">7.3 Specific end use(s):</h4>
+                        <h4 class="sds">7.3. Specific end use(s)</h4>
                         <span class="sds" t-raw="doc.section_7_3"/>
                     </div>
                     <t t-if="not doc.section_7_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -498,7 +499,7 @@
                         <h3 class="sds">SECTION 8: Exposure controls/personal protection</h3>
                         <div class="sds" style="page-break-inside: auto;">
                             <div class="sds">
-                                <h4 class="sds">8.1 Control parameters</h4>
+                                <h4 class="sds">8.1. Control parameters</h4>
                                 <t t-if="doc.section_8_1_tlv_selector == False">
                                     <p class="sds">TLV Occupational exposure limit of the entire mixture: Not
                                         available
@@ -611,7 +612,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 9: Physical and chemical properties</h3>
                         <div class="sds">
-                            <h4 class="sds">9.1 Information on basic physical and chemical properties</h4>
+                            <h4 class="sds">9.1. Information on basic physical and chemical properties</h4>
                             <div>
                                 <table class="sds_properties">
                                     <tbody>
@@ -631,7 +632,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">9.2 Other information</h4>
+                        <h4 class="sds">9.2. Other information</h4>
                         <t t-if="doc.section_9_2">
                             <span class="sds" t-raw="doc.section_9_2"/>
                         </t>
@@ -722,9 +723,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 11: Toxicological information</h3>
                         <div class="sds">
-                            <h4 class="sds">11.1. Information on hazard classes as defined in Regulation (EC) No
-                                1272/2008
-                            </h4>
+                            <h4 class="sds">11.1. Information on hazard classes as defined in Regulation (EC) No. 1272/2008</h4>
                             <h5 class="sds" style="display: block;">Acute toxicity</h5>
                             <div class="subheader">
                                 <h6 class="sds">Acute oral toxicity</h6>
@@ -844,7 +843,7 @@
                         </div>
                     </div>
                     <div class="sds">
-                        <h4 class="sds">11.2 Information on other hazards</h4>
+                        <h4 class="sds">11.2. Information on other hazards</h4>
                         <span class="sds" t-raw="doc.section_11_2"/>
                     </div>
                     <t t-if="not doc.section_11_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -1044,9 +1043,7 @@
                     <div class="sds">
                         <h3 class="sds">SECTION 15: Regulatory Information</h3>
                         <div class="sds">
-                            <h4 class="sds">15.1. Safety, health and environmental regulations/legislation specific for
-                                the substance or mixture
-                            </h4>
+                            <h4 class="sds">15.1. Safety, health and environmental regulations/legislation specific for the substance or mixture</h4>
                             <div>
                                 <table class="sds_properties">
                                     <tbody>
@@ -1094,10 +1091,7 @@
                         <h3 class="sds">SECTION 16: Other information</h3>
                         <t t-if="not doc.section_16_classification_procedure=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                             <div class="sds">
-                                <h4 class="sds">Classification and procedure used to derive the classification for
-                                    mixtures
-                                    according to Regulation (EC) No 1272/2008
-                                </h4>
+                                <h4 class="sds">Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008</h4>
                                 <div class="sds">
                                     <span t-raw="doc.section_16_classification_procedure"/>
                                 </div>
