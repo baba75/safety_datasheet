@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20210302\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 14:34+0000\n"
-"PO-Revision-Date: 2022-07-06 16:38+0200\n"
+"PO-Revision-Date: 2022-07-06 17:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -696,12 +696,12 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span class=\"sds_h7\">Hand Protection:</span>"
-msgstr ""
+msgstr "<span class=\"sds_h7\">Protección de las manos:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span class=\"sds_h7\">Other:</span>"
-msgstr ""
+msgstr "<span class=\"sds_h7\">Otros:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1067,7 +1067,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_1
 msgid "Appropriate engineering controls"
-msgstr ""
+msgstr "Controles técnicos apropiados"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1127,7 +1127,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_9
 msgid "Auto-ignition temperature"
-msgstr ""
+msgstr "Temperatura de auto-inflamación"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_6
@@ -1279,6 +1279,7 @@ msgstr ""
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr ""
+"Punto de ebullición o punto inicial de ebullición e intervalo de ebullición"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P335
@@ -1495,7 +1496,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Chemical identity:"
-msgstr ""
+msgstr "Identidad química:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__substance
@@ -1571,7 +1572,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_2
 msgid "Colour"
-msgstr ""
+msgstr "Color"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_8
@@ -1869,12 +1870,12 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_10
 msgid "Decomposition temperature"
-msgstr ""
+msgstr "Temperatura de descomposición"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_16
 msgid "Density and/or relative density"
-msgstr ""
+msgstr "Densidad y/o densidad relativa"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
@@ -2182,7 +2183,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "EC regulation criteria 1272/2008 (CLP):"
-msgstr ""
+msgstr "Criterios del Reglamento CE 1272/2008 (CLP):"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_1
@@ -2275,7 +2276,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_3
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Environmental exposure controls"
-msgstr ""
+msgstr "Controles de exposición medioambiental"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_5
@@ -2487,7 +2488,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Eye/Face protection:"
-msgstr ""
+msgstr "Protección de los ojos/la cara:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_2
@@ -2597,7 +2598,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_6
 msgid "Flammability"
-msgstr ""
+msgstr "Inflamabilidad"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H223
@@ -2645,7 +2646,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_8
 msgid "Flash point"
-msgstr ""
+msgstr "Punto de inflamación"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_2
@@ -2657,7 +2658,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "For emergency responders:"
-msgstr ""
+msgstr "Para el personal de emergencia:"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_7
@@ -2669,7 +2670,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "For non-emergency personnel:"
-msgstr ""
+msgstr "Para el personal que no forma parte de los servicios de emergencia:"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sensitization_3
@@ -3445,6 +3446,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Individual protection measures"
 msgstr ""
+"Medidas de protección individual, tales como equipos de protección personal"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_2
@@ -3708,7 +3710,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_12
 msgid "Kinematic viscosity"
-msgstr ""
+msgstr "Viscosidad cinemática"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_5
@@ -3863,7 +3865,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
-msgstr ""
+msgstr "Límite superior e inferior de explosividad"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P407
@@ -4053,7 +4055,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_4
 msgid "Melting point/freezing point"
-msgstr ""
+msgstr "Punto de fusión/punto de congelación"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_6_3
@@ -4340,7 +4342,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_3
 msgid "Odour"
-msgstr ""
+msgstr "Olor"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Org_Perox_A
@@ -4467,12 +4469,12 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_18
 msgid "Particle characteristics"
-msgstr ""
+msgstr "Características de las partículas"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_14
 msgid "Partition coefficient n-octanol/water (log value)"
-msgstr ""
+msgstr "Coeficiente de reparto n-octanol/agua (valor logarítmico)"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.persistence_7
@@ -4538,7 +4540,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_1
 msgid "Physical state"
-msgstr ""
+msgstr "Estado físico"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_15
@@ -4686,7 +4688,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_1
 msgid "Product Identifier"
-msgstr ""
+msgstr "Identificador de producto"
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_datasheet
@@ -5039,7 +5041,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_17
 msgid "Relative vapour density"
-msgstr ""
+msgstr "Densidad de vapor relativa"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_2
@@ -5138,7 +5140,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_4
 #: selection:sds.sentences,category:0
 msgid "Respiratory protection"
-msgstr ""
+msgstr "Protección respiratoria"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.respiratory_1
@@ -5150,7 +5152,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Respiratory protection:"
-msgstr ""
+msgstr "Protección respiratoria:"
 
 #. module: safety_datasheet
 #: selection:sds.sentences,category:0
@@ -5187,7 +5189,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__revision_date
 msgid "Revision date"
-msgstr ""
+msgstr "Fecha de revisión"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -5753,7 +5755,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Skin Protection:"
-msgstr ""
+msgstr "Protección de la piel:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_skin
@@ -5816,7 +5818,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_13
 msgid "Solubility"
-msgstr ""
+msgstr "Solubilidad"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_2
@@ -6080,7 +6082,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Suitable extinguishing media:"
-msgstr ""
+msgstr "Medios de extinción apropiados:"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_7
@@ -6092,7 +6094,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__supersedes_date
 msgid "Supersedes version/date"
-msgstr ""
+msgstr "Reemplaza la versión/fecha"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H351
@@ -6265,7 +6267,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Thermal hazards:"
-msgstr ""
+msgstr "Peligros térmicos:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -6467,12 +6469,12 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_1_2
 msgid "Unsuitable extinguishing media"
-msgstr ""
+msgstr "Medios de extinción no apropiados"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Unsuitable extinguishing media:"
-msgstr ""
+msgstr "Medios de extinción no apropiados:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_7_2_3
@@ -6576,7 +6578,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_15
 msgid "Vapour pressure"
-msgstr ""
+msgstr "Presión de vapor"
 
 #. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_14
@@ -6834,7 +6836,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_11
 msgid "pH"
-msgstr ""
+msgstr "pH"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_PBT
