@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20210302\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 14:34+0000\n"
-"PO-Revision-Date: 2022-07-06 16:36+0200\n"
+"PO-Revision-Date: 2022-07-06 16:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -244,7 +244,7 @@ msgid ""
 "                            against recommended use"
 msgstr ""
 "1.2 Usos pertinentes identificados de la sustancia o de la mezcla y usos "
-"desaconsejados:"
+"desaconsejados"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -470,12 +470,12 @@ msgstr "2.1. Clasificación de la sustancia o de la mezcla"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "2.2. Label elements"
-msgstr "2.2. Elementos de la etiqueta:"
+msgstr "2.2. Elementos de la etiqueta"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "2.3. Other Hazards"
-msgstr "2.3. Otros peligros:"
+msgstr "2.3. Otros peligros"
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
@@ -489,12 +489,12 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "3.1. Substances"
-msgstr "3.1. Sustancias:"
+msgstr "3.1. Sustancias"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "3.2. Mixtures"
-msgstr "3.2. Mezclas:"
+msgstr "3.2. Mezclas"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -504,7 +504,7 @@ msgstr "4.1. Descripción de los primeros auxilios"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "4.2. Most important symptoms and effects, both acute and delayed"
-msgstr "4.2. Principales síntomas y efectos, agudos y retardados:"
+msgstr "4.2. Principales síntomas y efectos, agudos y retardados"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -513,7 +513,7 @@ msgid ""
 "needed"
 msgstr ""
 "4.3. Indicación de toda atención médica y de los tratamientos especiales que "
-"deban dispensarse inmediatamente:"
+"deban dispensarse inmediatamente"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -541,29 +541,29 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "6.2. Environmental precautions"
-msgstr "6.2. Precauciones relativas al medio ambiente:"
+msgstr "6.2. Precauciones relativas al medio ambiente"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "6.3. Methods and materials for containment and cleaning up"
-msgstr "6.3. Métodos y material de contención y de limpieza:"
+msgstr "6.3. Métodos y material de contención y de limpieza"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "6.4. Reference to other sections"
-msgstr "6.4. Referencia a otras secciones:"
+msgstr "6.4. Referencia a otras secciones"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "7.1. Precautions for safe handling"
-msgstr "7.1. Precauciones para una manipulación segura:"
+msgstr "7.1. Precauciones para una manipulación segura"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "7.2. Conditions for safe storage, including any incompatibilities"
 msgstr ""
 "7.2. Condiciones de almacenamiento seguro, incluidas posibles "
-"incompatibilidades:"
+"incompatibilidades"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
