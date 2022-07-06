@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20210302\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 11:48+0000\n"
-"PO-Revision-Date: 2022-02-23 11:48+0000\n"
+"POT-Creation-Date: 2022-07-06 14:34+0000\n"
+"PO-Revision-Date: 2022-07-06 14:34+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -111,18 +111,18 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.1 Product Identifier:"
-msgstr ""
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.2 Relevant identified uses of the substance or mixture and uses advised\n"
-"                            against recommended use:"
+msgid "1.1. Product Identifier"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "1.2. Relevant identified uses of the substance or mixture and uses advised\n"
+"                            against recommended use"
 msgstr ""
 
 #. module: safety_datasheet
@@ -132,7 +132,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.3 Detail of the supplier of the safety data sheet:"
+msgid "1.3. Detail of the supplier of the safety data sheet"
 msgstr ""
 
 #. module: safety_datasheet
@@ -142,7 +142,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.4 Emergency telephone number:"
+msgid "1.4. Emergency telephone number"
 msgstr ""
 
 #. module: safety_datasheet
@@ -187,13 +187,12 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "11.1. Information on hazard classes as defined in Regulation (EC) No\n"
-"                                1272/2008"
+msgid "11.1. Information on hazard classes as defined in Regulation (EC) No. 1272/2008"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "11.2 Information on other hazards"
+msgid "11.2. Information on other hazards"
 msgstr ""
 
 #. module: safety_datasheet
@@ -294,8 +293,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "15.1. Safety, health and environmental regulations/legislation specific for\n"
-"                                the substance or mixture"
+msgid "15.1. Safety, health and environmental regulations/legislation specific for the substance or mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -335,17 +333,17 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.1 Classification of the substance or mixture:"
+msgid "2.1. Classification of the substance or mixture"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.2. Label elements:"
+msgid "2.2. Label elements"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.3. Other Hazards:"
+msgid "2.3. Other Hazards"
 msgstr ""
 
 #. module: safety_datasheet
@@ -357,82 +355,82 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "3.1 Substances:"
+msgid "3.1. Substances"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "3.2 Mixtures:"
+msgid "3.2. Mixtures"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "4.1 Description of first aid measures"
+msgid "4.1. Description of first aid measures"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "4.2 Most important symptoms and effects, both acute and delayed:"
+msgid "4.2. Most important symptoms and effects, both acute and delayed"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "4.3 Indication of any immediate medical attention and special treatment needed:"
+msgid "4.3. Indication of any immediate medical attention and special treatment needed"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.1 Extinguishing media"
+msgid "5.1. Extinguishing media"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.2 Special hazards arising from the substance or mixture"
+msgid "5.2. Special hazards arising from the substance or mixture"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.3 Advice for firefighters"
+msgid "5.3. Advice for firefighters"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.1 Personal precautions, protective equipment and emergency procedures:"
+msgid "6.1. Personal precautions, protective equipment and emergency procedures:"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.2 Environmental precautions:"
+msgid "6.2. Environmental precautions"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.3 Methods and materials for containment and cleaning up:"
+msgid "6.3. Methods and materials for containment and cleaning up"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.4 Reference to other sections:"
+msgid "6.4. Reference to other sections"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.1 Precautions for safe handling:"
+msgid "7.1. Precautions for safe handling"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.2 Conditions for safe storage, including any incompatibilities:"
+msgid "7.2. Conditions for safe storage, including any incompatibilities"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.3 Specific end use(s):"
+msgid "7.3. Specific end use(s)"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "8.1 Control parameters"
+msgid "8.1. Control parameters"
 msgstr ""
 
 #. module: safety_datasheet
@@ -442,12 +440,12 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "9.1 Information on basic physical and chemical properties"
+msgid "9.1. Information on basic physical and chemical properties"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "9.2 Other information"
+msgid "9.2. Other information"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1225,14 +1223,8 @@ msgid "Citric Acid"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Classification and procedure used to derive the classification for\n"
-"                                    mixtures\n"
-"                                    according to Regulation (EC) No 1272/2008"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_classification_procedure
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008"
 msgstr ""
 
