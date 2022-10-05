@@ -577,7 +577,6 @@ class SdsDatasheet(models.Model):
                                   translate=True, sanitize=False)
 
 
-    @api.multi
     @api.onchange('product_id')
     def product_id_change(self):
         """
@@ -593,7 +592,6 @@ class SdsDatasheet(models.Model):
         result = self.update(vals)
         return result
 
-    @api.multi
     @api.onchange('section_2_1_selector')
     def section_2_1_selector_change(self):
         """
@@ -616,7 +614,6 @@ class SdsDatasheet(models.Model):
         result = self.update(vals)
         return result
 
-    @api.multi
     @api.onchange('section_2_1_b_selector')
     def section_2_1_b_selector_change(self):
         """
@@ -640,7 +637,6 @@ class SdsDatasheet(models.Model):
         result = self.update(vals)
         return result
 
-    @api.multi
     def xlate_default(self,ids=False):
         """
         This function set the translation of default values.
@@ -689,7 +685,6 @@ class SdsDatasheet(models.Model):
                     )
         return
 
-    @api.multi
     @api.returns('self', lambda value: value.id)
     def copy(self, default=None):
         self.ensure_one()
@@ -707,7 +702,6 @@ class SdsDatasheet(models.Model):
         rec.fill_mixture(mvals)
         return rec
 
-    @api.multi
     def fill_mixture(self, values=None):
         """
         This function helps the copy of section 3.2, a one2Many field
@@ -725,7 +719,6 @@ class SdsDatasheet(models.Model):
         vals.update({'section_3_2': [(4, new_mixture.id) for new_mixture in mixture_ids]})
         return self.update(vals)
 
-    @api.multi
     def fill_classification(self, values=None):
         """
         This function helps the copy of section 2.1, a one2Many field
@@ -743,7 +736,6 @@ class SdsDatasheet(models.Model):
         vals.update({'section_2_1': [(4, new_classification_id.id) for new_classification_id in c_ids]})
         return self.update(vals)
 
-    @api.multi
     def fill_properties(self, values=None, pids=None):
         """
         Preload all the properties in the properties table (Section 9.1)

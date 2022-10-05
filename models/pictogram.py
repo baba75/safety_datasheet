@@ -15,7 +15,6 @@ class SdsPictogram(models.Model):
     pictogram = fields.Binary("GHS Pictogram", attachment=True)
     sequence = fields.Integer(string='Sequence', default=10)
 
-    @api.multi
     def name_get(self):
         if self._context.get('show_description'):
             res = []

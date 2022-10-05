@@ -11,7 +11,6 @@ class SelectLangReportWizard(models.TransientModel):
         langs = self.env['res.lang'].search([('translatable', '=', True)])
         return [(lang.code, lang.name) for lang in langs]
 
-    @api.multi
     def get_report(self):
         """Call when button 'Print' clicked.
                """

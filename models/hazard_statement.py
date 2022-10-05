@@ -20,7 +20,6 @@ class SdsHazardStatement(models.Model):
     code = fields.Char('Hazard Code', required=True)
     name = fields.Char('Description', required=True, translate=True)
 
-    @api.multi
     def name_get(self):
         """
         Display Hazard Code + Hazard name
