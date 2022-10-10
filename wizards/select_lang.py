@@ -8,7 +8,7 @@ class SelectLangReportWizard(models.TransientModel):
 
     @api.model
     def _get_languages(self):
-        langs = self.env['res.lang'].search([('translatable', '=', True)])
+        langs = self.env['res.lang'].search([('active', '=', True)])
         return [(lang.code, lang.name) for lang in langs]
 
     def get_report(self):

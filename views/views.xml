@@ -918,7 +918,6 @@
             <field name="name">Safety Data Sheets</field>
             <field name="res_model">sds.datasheet</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Safety Data Sheet
@@ -930,7 +929,6 @@
             <field name="name">Pictograms</field>
             <field name="res_model">sds.pictogram</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new GHS Pictogram
@@ -942,7 +940,6 @@
             <field name="name">Precautionary Statement</field>
             <field name="res_model">sds.precautionary.statement</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Precautionary Statement
@@ -955,7 +952,6 @@
             <field name="res_model">sds.hazard.statement</field>
             <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="view_hazard_statement_search"/>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Hazard Statement
@@ -967,7 +963,6 @@
             <field name="name">Hazard Classification</field>
             <field name="res_model">sds.hazard.class</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Hazard Classification
@@ -979,7 +974,6 @@
             <field name="name">Chemical Substances</field>
             <field name="res_model">sds.chemical.substance</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Chemical Substance
@@ -991,7 +985,6 @@
             <field name="name">Action Sentences</field>
             <field name="res_model">sds.sentences</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Action Sentence, e.g. First Aid Action Sentence
@@ -1003,7 +996,6 @@
             <field name="name">Legend</field>
             <field name="res_model">sds.legend</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Legend entry, e.g. SDS = Safety Data Sheet
@@ -1015,7 +1007,6 @@
             <field name="name">Bibliography</field>
             <field name="res_model">sds.bibliography</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new Bibliography entry
@@ -1027,7 +1018,6 @@
             <field name="name">Regulation</field>
             <field name="res_model">sds.regulation</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create a new regulation entry
