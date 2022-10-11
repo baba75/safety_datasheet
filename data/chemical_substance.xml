@@ -147,7 +147,7 @@
             <field name="wrk_exp_tlv"><![CDATA[
             <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th colspan="3">Long-term Exposure Limit (LTEL) Values</th><th colspan="3">Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th><th rowspan="2">Work Sector</th><th rowspan="2">Effective Date</th><th rowspan="2">Expiration Date</th><th rowspan="2">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class="table-data"><tr><td>European Union<br></td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
             ]]></field>
-            <field name="Classification" eval=""/>
+		    <!-- <field name="Classification" eval=""/> -->
             <field name="reactivity" eval="[(6, 0, [ref('reactivity_2')])]"/>
         </record>
         <record id="EC231-764-5" model="sds.chemical.substance">
@@ -360,7 +360,7 @@
             <field name="wrk_exp_limit">False</field>
             <field name="Classification"
                    eval="[(6, 0, [ref('eye1_H318'),ref('MetCorr_H290')])]"/>
-            <field name="reactivity" eval=""/>
+		    <!-- <field name="reactivity" eval=""/> -->
         </record>
         <record id="EDTA_tetrasodium_salt" model="sds.chemical.substance">
             <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
