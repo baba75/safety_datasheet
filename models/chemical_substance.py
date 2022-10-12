@@ -29,7 +29,7 @@ class SdsChemicalSubstance(models.Model):
     ECno = fields.Char('EC Number')
     REACHno = fields.Char('REACH Number')
     last_update = fields.Date(string="Revision date", default=fields.Date.today(), required=True)
-    wrk_exp_limit = fields.Boolean('Workplace exposure limit', defalt=False)
+    wrk_exp_limit = fields.Boolean('Workplace exposure limit', default=False)
     wrk_exp_tlv = fields.Html(string="TLV details",
                                       default=lambda s: _(
                                           '<table class="table table-bordered"><thead class="table-columns">'
