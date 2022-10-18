@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <report
+    <record
             id="safety_sds_report"
             string="Safety Datasheet"
             model="sds.datasheet"
