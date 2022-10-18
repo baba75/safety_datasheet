@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-    <record
-            id="safety_sds_report"
-            string="Safety Datasheet"
-            model="sds.datasheet"
-            report_type="qweb-pdf"
-            name="safety_datasheet.report_safety_datasheet"
-            file="safety_datasheet.report_safety_datasheet"
-            print_report_name="SDS - %s - %s' % (object.product_id.name, doc_lang)"
-            menu="False"
-    />
-
+    <record id="safety_sds_report" model="ir.actions.report">
+        <field name="name">Safety Datasheet</field>
+        <field name="model">sds.datasheet</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">safety_datasheet.report_safety_datasheet</field>
+        <field name="print_report_name">SDS - %s - %s' % (object.product_id.name, doc_lang)</field>
+        <!-- <field name="binding_model_id" ref="model_sale_order"/> -->
+        <field name="binding_type">report</field>
+    </record>
 
     <template id="printpdf" name="printpdf">
         <t t-call="web.external_layout">
