@@ -16,6 +16,9 @@ class SdsHazardStatement(models.Model):
 
     pictogram_ids = fields.Many2many('sds.pictogram',
                                      string="GHS pictograms",
+                                     relation="sds_pictogram_ghs_rel",
+                                     domain="[('category', '=', 'hazard')]",
+                                     context={'default_category': 'hazard'},
                                      copy=True)
     code = fields.Char('Hazard Code', required=True)
     name = fields.Char('Description', required=True, translate=True)

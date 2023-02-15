@@ -79,7 +79,10 @@ class SdsDatasheet(models.Model):
     section_2_1 = fields.One2many('sds.regulation.criteria', 'datasheet_id', string='EC regulation',
                                   help='Regulation (EC) No 1272/2008 - classification, labelling and packaging of substances and mixtures (CLP)')
     section_2_2_selector = fields.Boolean(string="GHS Labelling", default=False)
-    section_2_2_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms", copy=True)
+    section_2_2_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms", 
+                                     relation="sds_pictogram_hazard_rel",
+                                     domain="[('category', '=', 'hazard')]",
+                                     context={'default_category': 'hazard'},copy=True)
     section_2_2_signal = fields.Selection([('danger', 'Danger'), ('warning', 'Warning')], string="SignalWords",
                                           default='warning')
     section_2_2_P = fields.Many2many('sds.precautionary.statement', string="Precautionary Statement", copy=True)
@@ -517,11 +520,40 @@ class SdsDatasheet(models.Model):
     section_13_note = fields.Html(string="Section 13 Notes", translate=True)
 
     # Section 14: Transport information
+    section_14_selector = fields.Boolean(string="Specify ADR/RID/ADN/IMDG/IATA transport regulation", default=False)
+    # We assume UN number the same for ADR/RID/ADN/IMDG/IATA
     section_14_1 = fields.Char('UN number', default=lambda s: _("Not regulated for transport."), translate=True)
-    section_14_2 = fields.Char('UN proper shipping name', default=lambda s: _("Not regulated for transport."),
+    # First part is for ADR/RID/ADN
+    section_14_2 = fields.Char('Proper shipping name (ADR)', default=lambda s: _("Not regulated for transport."),
                                translate=True)
-    section_14_3 = fields.Char('Transport hazard class(es)', default=lambda s: _("Not regulated for transport."),
+    section_14_3 = fields.Char('Transport hazard class(es) (ADR)', default=lambda s: _("Not regulated for transport."),
                                translate=True)
+    section_14_3_adr_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms (ADR)", 
+                                     relation="sds_pictogram_adr_rel",
+                                     domain="[('category', '=', 'transport')]",
+                                     context={'default_category': 'transport'},copy=True)
+    section_14_3_adr_notes = fields.Html(string="ADR/RID/ADN additional notes", translate=True)
+    # Maritime Dangerous Goods (IMDG)
+    section_14_2_imdg = fields.Char('Proper shipping name (IMDG)', default=lambda s: _("Not regulated for transport."),
+                               translate=True)
+    section_14_3_imdg = fields.Char('Transport hazard class(es) (IMDG)', default=lambda s: _("Not regulated for transport."),
+                               translate=True)
+    section_14_3_imdg_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms (IMDG)", 
+                                     relation="sds_pictogram_imgd_rel",
+                                     domain="[('category', '=', 'transport')]",
+                                     context={'default_category': 'transport'},copy=True)
+    section_14_3_imdg_notes = fields.Html(string="IMDG additional notes", translate=True)
+    # Dangerous Goods by Air (ICAO) - IATA 
+    section_14_2_iata = fields.Char('Proper shipping name (IATA)', default=lambda s: _("Not regulated for transport."),
+                               translate=True)
+    section_14_3_iata = fields.Char('Transport hazard class(es) (IATA)', default=lambda s: _("Not regulated for transport."),
+                               translate=True)
+    section_14_3_iata_pictograms = fields.Many2many('sds.pictogram', string="Label pictograms (IATA)", 
+                                     relation="sds_pictogram_iata_rel",
+                                     domain="[('category', '=', 'transport')]",
+                                     context={'default_category': 'transport'},copy=True)
+    section_14_3_iata_notes = fields.Html(string="ICAO - IATA additional notes", translate=True)
+
     section_14_4 = fields.Char('Packing group', default=lambda s: _("Not regulated for transport."), translate=True)
     section_14_5 = fields.Char('Environmental hazards', default=lambda s: _("Not Hazardous to the environment."),
                                translate=True)

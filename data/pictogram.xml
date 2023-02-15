@@ -4,6 +4,7 @@
         <record id="GHS01_exploding_bomb" model="sds.pictogram">
             <field name="name">GHS01</field>
             <field name="description">Exploding bomb</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS01_exploding_bomb.jpg"/>
@@ -11,6 +12,7 @@
         <record id="GHS02_flame" model="sds.pictogram">
             <field name="name">GHS02</field>
             <field name="description">Flame</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS02_flame.jpg"/>
@@ -18,6 +20,7 @@
         <record id="GHS03_flame_over_circle" model="sds.pictogram">
             <field name="name">GHS03</field>
             <field name="description">Flame over circle</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS03_flame_over_circle.jpg"/>
@@ -25,6 +28,7 @@
         <record id="GHS04_gas_cylinder" model="sds.pictogram">
             <field name="name">GHS04</field>
             <field name="description">Gas cylinder</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS04_gas_cylinder.jpg"/>
@@ -32,6 +36,7 @@
         <record id="GHS05_corrosion" model="sds.pictogram">
             <field name="name">GHS05</field>
             <field name="description">Corrosion</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS05_corrosion.jpg"/>
@@ -39,6 +44,7 @@
         <record id="GHS06_skull" model="sds.pictogram">
             <field name="name">GHS06</field>
             <field name="description">Skull and crossbones</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS06_skull_and_crossbones.jpg"/>
@@ -46,6 +52,7 @@
         <record id="GHS07_exclamation_mark" model="sds.pictogram">
             <field name="name">GHS07</field>
             <field name="description">Exclamation mark</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS07_exclamation_mark.jpg"/>
@@ -53,6 +60,7 @@
         <record id="GHS08_health_haz" model="sds.pictogram">
             <field name="name">GHS08</field>
             <field name="description">Health hazard</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS08_health_hazard.jpg"/>
@@ -60,9 +68,18 @@
         <record id="GHS09_environment" model="sds.pictogram">
             <field name="name">GHS09</field>
             <field name="description">Environment</field>
+            <field name="category">hazard</field>
             <field name="pictogram"
                    type="base64"
                    file="safety_datasheet/static/src/img/GHS09_environment.jpg"/>
+        </record>
+        <record id="ADR_8" model="sds.pictogram">
+            <field name="name">ADR8</field>
+            <field name="description">Class 8 - Corrosive materials</field>
+            <field name="category">transport</field>
+            <field name="pictogram"
+                   type="base64"
+                   file="safety_datasheet/static/src/img/ADR_Class_8.png"/>
         </record>
 
     </data>

@@ -6,14 +6,14 @@
             <field name="name">Regulation (EC) No 1907/2006 of the European Parliament and
                 of the Council of 18 December 2006 concerning the Registration, Evaluation,
                 Authorisation and Restriction of Chemicals (REACH)</field>
-            <field name="url">http://data.europa.eu/eli/reg/2006/1907/oj</field>
+            <field name="url">http://data.europa.eu/eli/reg/2006/1907/2022-12-17</field>
         </record>
         <record id="bibliography_2" model="sds.bibliography">
             <field name="name">Regulation (EC) No 1272/2008 of the European Parliament and of
                 the Council of 16 December 2008 on classification, labelling and packaging of
                 substances and mixtures, amending and repealing Directives 67/548/EEC and
                 1999/45/EC, and amending Regulation (EC) No 1907/2006</field>
-            <field name="url">http://data.europa.eu/eli/reg/2008/1272/oj</field>
+            <field name="url">http://data.europa.eu/eli/reg/2008/1272/2022-12-17</field>
         </record>
         <record id="bibliography_3" model="sds.bibliography">
             <field name="name">Commission Regulation (EU) 2020/878 of 18 June 2020 amending Annex II
@@ -29,25 +29,25 @@
         <record id="bibliography_5" model="sds.bibliography">
             <field name="name">Regulation (EC) No 1005/2009 of the European Parliament and
                 of the Council of 16 September 2009 on substances that deplete the ozone layer </field>
-            <field name="url">http://data.europa.eu/eli/reg/2009/1005/oj</field>
+            <field name="url">http://data.europa.eu/eli/reg/2009/1005/2017-04-19</field>
         </record>
         <record id="bibliography_6" model="sds.bibliography">
             <field name="name">Regulation (EU) 2019/1021 of the European Parliament and of
                 the Council of 20 June 2019 on persistent organic pollutants </field>
-            <field name="url">http://data.europa.eu/eli/reg/2019/1021/oj</field>
+            <field name="url">http://data.europa.eu/eli/reg/2019/1021/2022-12-13</field>
         </record>
         <record id="bibliography_7" model="sds.bibliography">
             <field name="name">Regulation (EU) No 649/2012 of the European Parliament and
                 of the Council of 4 July 2012 concerning the export and import of hazardous
                 chemicals</field>
-            <field name="url">http://data.europa.eu/eli/reg/2012/649/oj</field>
+            <field name="url">http://data.europa.eu/eli/reg/2012/649/2022-07-01</field>
         </record>
         <record id="bibliography_8" model="sds.bibliography">
             <field name="name">Directive 2004/42/CE of the European Parliament and of the
                 Council of 21 April 2004 on the limitation of emissions of volatile organic
                 compounds due to the use of organic solvents in certain paints and varnishes
                 and vehicle refinishing products and amending Directive 1999/13/EC </field>
-            <field name="url">http://data.europa.eu/eli/dir/2004/42/oj</field>
+            <field name="url">http://data.europa.eu/eli/dir/2004/42/2021-07-16</field>
         </record>
         <record id="bibliography_9" model="sds.bibliography">
             <field name="name">EN ISO 374-5:2016 - Protective gloves against dangerous
@@ -63,7 +63,12 @@
         <record id="bibliography_11" model="sds.bibliography">
             <field name="name">Directive 2008/98/EC of the European Parliament and of
                 the Council of 19 November 2008 on waste and repealing certain Directive </field>
-            <field name="url">http://data.europa.eu/eli/dir/2008/98/oj</field>
+            <field name="url">http://data.europa.eu/eli/dir/2008/98/2018-07-05</field>
+        </record>
+        <record id="bibliography_12" model="sds.bibliography">
+            <field name="name">Directive 2008/68/EC of the European Parliament and of the 
+                Council of 24 September 2008 on the inland transport of dangerous goods</field>
+            <field name="url">http://data.europa.eu/eli/dir/2008/68/oj</field>
         </record>
     </data>
 </odoo>

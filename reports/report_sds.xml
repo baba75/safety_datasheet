@@ -30,8 +30,7 @@
                     <div class="sds">
                         <h4 class="sds">Revision:</h4>
                         <div class="sds">
-                            <span t-field="doc.revision_date"
-                                  t-options="{&quot;widget&quot;: &quot;date&quot;, &quot;format&quot;: &quot;d MMMM y&quot;}"/>
+                            <span t-field="doc.revision_date" t-options="{&quot;widget&quot;: &quot;date&quot;, &quot;format&quot;: &quot;d MMMM y&quot;}"/>
                             <br/>
                             <t t-if="doc.supersedes_date">
                                 <span>Supersedes version:&amp;nbsp;</span>
@@ -128,9 +127,7 @@
                                         <td>
                                             <h5 class="sds" style="display: block;">Hazard pictograms</h5>
                                             <span t-foreach="doc.section_2_2_pictograms" t-as="symbol">
-                                                <img t-if="symbol"
-                                                     t-attf-src="data:image/*;base64,{{symbol.pictogram}}"
-                                                     style="max-height: 100px; padding:20px;"/>
+                                                <img t-if="symbol" t-attf-src="data:image/*;base64,{{symbol.pictogram}}" style="max-height: 100px; padding:20px;"/>
                                             </span>
                                         </td>
                                         <td>
@@ -145,8 +142,7 @@
                                                             <h5 class="sds">Hazard Statements:</h5>
                                                             <div class="sds">
                                                                 <t t-foreach="doc.section_2_1" t-as="line">
-                                                                    <span class="sds"
-                                                                          t-field="line.HazardStatement.code"/>
+                                                                    <span class="sds" t-field="line.HazardStatement.code"/>
                                                                     -
                                                                     <span t-field="line.HazardStatement.name"/>
                                                                     <br/>
@@ -158,8 +154,7 @@
                                                         <td style="padding-left: 20px;">
                                                             <h5 class="sds">Precautionary Statements:</h5>
                                                             <div class="sds">
-                                                                <t t-foreach="doc.section_2_2_P.sorted(key=lambda r: r.sequence)"
-                                                                   t-as="line">
+                                                                <t t-foreach="doc.section_2_2_P.sorted(key=lambda r: r.sequence)" t-as="line">
                                                                     <span t-field="line.name"/>
                                                                     -
                                                                     <span t-field="line.description"/>
@@ -988,16 +983,134 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left;">14.2. UN proper shipping name</td>
-                                        <td style="text-align: left;">
-                                            <span t-field="doc.section_14_2"/>
-                                        </td>
+                                        <t t-if="doc.section_14_selector == True">
+                                            <td colspan="2" style="padding: 0px;">
+                                                <table class="sds" style="border: none;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: left;">14.2. Proper shipping name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; padding-left: 30px; border: none;">ADR/RID/ADN</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <span t-field="doc.section_14_2"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; padding-left: 30px; border: none;">IMDG</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <span t-field="doc.section_14_2_imdg"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; padding-left: 30px; border: none;">IATA</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <span t-field="doc.section_14_2_iata"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td style="text-align: left;">14.2. Proper shipping name</td>
+                                            <td style="text-align: left;">
+                                                <span t-field="doc.section_14_2"/>
+                                            </td>
+                                        </t>
                                     </tr>
-                                    <tr>
-                                        <td style="text-align: left;">14.3. Transport hazard class(es)</td>
-                                        <td style="text-align: left;">
-                                            <span t-field="doc.section_14_3"/>
-                                        </td>
+                                    <tr>                                        
+                                        <t t-if="doc.section_14_selector == True">
+                                            <td colspan="2" style="padding: 0px;">
+                                                <table class="sds" style="border: none;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: left;">14.3. Transport hazard class(es)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; border: none;">ADR/RID/ADN</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">Class:</td>
+                                                                            <td style="text-align: left; border: none;"><span t-field="doc.section_14_3"/></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">
+                                                                                <span t-foreach="doc.section_14_3_adr_pictograms" t-as="symbol">
+                                                                                    <img t-if="symbol" t-attf-src="data:image/*;base64,{{symbol.pictogram}}" style="max-height: 100px; padding:20px;"/>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td style="text-align: left; border: none;" 
+                                                                                t-if="not doc.section_14_3_adr_notes =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                                                                <span t-field="doc.section_14_3_adr_notes"/>
+                                                                            </td>
+                                                                        </tr>
+                                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; border: none;">IMDG</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">Class:</td>
+                                                                            <td style="text-align: left; border: none;"><span t-field="doc.section_14_3_imdg"/></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">
+                                                                                <span t-foreach="doc.section_14_3_imdg_pictograms" t-as="symbol">
+                                                                                    <img t-if="symbol" t-attf-src="data:image/*;base64,{{symbol.pictogram}}" style="max-height: 100px; padding:20px;"/>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td style="text-align: left; border: none;" 
+                                                                                t-if="not doc.section_14_3_imdg_notes =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                                                                <span t-field="doc.section_14_3_imgd_notes"/>
+                                                                            </td>
+                                                                        </tr>                                                                                                                                                                                                                       
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: left; border: none;">IATA</td>
+                                                            <td style="text-align: left; border: none;">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">Class:</td>
+                                                                            <td style="text-align: left; border: none;"><span t-field="doc.section_14_3_iata"/></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align: left; border: none;">
+                                                                                <span t-foreach="doc.section_14_3_iata_pictograms" t-as="symbol">
+                                                                                    <img t-if="symbol" t-attf-src="data:image/*;base64,{{symbol.pictogram}}" style="max-height: 100px; padding:20px;"/>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td style="text-align: left; border: none;" 
+                                                                                t-if="not doc.section_14_3_iata_notes =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                                                                <span t-field="doc.section_14_3_iata_notes"/>
+                                                                            </td>
+                                                                        </tr>                                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                        </t>
+                                        <t t-else="">
+                                            <td style="text-align: left;">14.3. Transport hazard class(es)</td>
+                                            <td style="text-align: left;">
+                                                <span t-field="doc.section_14_3"/>
+                                            </td>
+                                        </t>
                                     </tr>
                                     <tr>
                                         <td style="text-align: left;">14.4. Packing group</td>
