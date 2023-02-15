@@ -1069,7 +1069,7 @@
                                                                             </td>
                                                                             <td style="text-align: left; border: none;" 
                                                                                 t-if="not doc.section_14_3_imdg_notes =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                                                                                <span t-field="doc.section_14_3_imgd_notes"/>
+                                                                                <span t-field="doc.section_14_3_imdg_notes"/>
                                                                             </td>
                                                                         </tr>                                                                                                                                                                                                                       
                                                                     </tbody>
