@@ -1118,7 +1118,10 @@
         </record>
 
         <!-- Menu item -->
-        <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user"/>
+        <menuitem id="safety_datasheet_menu" 
+                  name="Safety Datasheet" 
+                  groups="base.group_user"
+                  web_icon="safety_datasheet,static/description/icon.png"/>
         <menuitem id="safety_datasheet_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu"/>
         <menuitem id="safety_datasheet_tables" name="Tables" groups="base.group_user" parent="safety_datasheet_menu"/>
 
