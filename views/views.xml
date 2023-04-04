@@ -710,7 +710,7 @@
                                 <form>
                                     <group string="Section 15: Regulatory Information" name="regulatory">
                                         <field name="section_15_regulation" context="{'datasheet_id': active_id}" widget="one2many_list">
-                                            <tree string="Regulatory Information:" editable="bottom">
+                                            <tree string="Regulatory Information:">
                                                 <field name="regulation"/>
                                                 <field name="text"/>
                                             </tree>
@@ -866,6 +866,21 @@
                         <group>
                             <field name="name"/>
                             <field name="url"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="regulatory_information_view_form">
+            <field name="name">sds.regulatory.information.view.form</field>
+            <field name="model">sds.regulatory.information</field>
+            <field name="arch" type="xml">
+                <form string="Regulatory Information">
+                    <sheet>
+                        <group>
+                            <field name="regulation"/>
+                            <field name="text"/>
                         </group>
                     </sheet>
                 </form>
@@ -1101,6 +1116,17 @@
                 <tree string="Regulation">
                     <field name="name"/>
                     <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_regulatory_information_tree" model="ir.ui.view">
+            <field name="name">sds.regulatory.information.tree</field>
+            <field name="model">sds.regulatory.information</field>
+            <field name="arch" type="xml">
+                <tree string="Regulation">
+                    <field name="regulation"/>
+                    <field name="text"/>
                 </tree>
             </field>
         </record>

@@ -17,7 +17,7 @@
                 <div id="title" class="sds_title">
                     <h1 class="sds">Safety Data Sheet</h1>
                     <h2 class="sds">
-                        <t t-raw="doc.product_id.name"/>
+                        <t t-raw="doc.name"/>
                     </h2>
                     <!-- The date of compilation of the safety data sheet shall be given on the first page.
                     When a safety data sheet has been revised and the new, revised version is provided
