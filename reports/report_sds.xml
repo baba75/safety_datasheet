@@ -1015,7 +1015,7 @@
                                         <t t-else="">
                                             <td style="text-align: left;">14.2. Proper shipping name</td>
                                             <td style="text-align: left;">
-                                                <span t-field="doc.section_14_2"/>
+                                                Not regulated for transport.
                                             </td>
                                         </t>
                                     </tr>
@@ -1108,7 +1108,7 @@
                                         <t t-else="">
                                             <td style="text-align: left;">14.3. Transport hazard class(es)</td>
                                             <td style="text-align: left;">
-                                                <span t-field="doc.section_14_3"/>
+                                                Not regulated for transport.
                                             </td>
                                         </t>
                                     </tr>

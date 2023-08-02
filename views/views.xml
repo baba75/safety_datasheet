@@ -768,6 +768,22 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="chemical_classification_view_form">
+            <field name="name">sds.chemical.classification.view.form</field>
+            <field name="model">sds.chemical.classification</field>
+            <field name="arch" type="xml">
+                <form string="EU Classification">
+                    <sheet>
+                        <group>
+                            <field name="HazardCategories"/>
+                            <field name="HazardStatement"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
         <record model="ir.ui.view" id="legend_view_form">
             <field name="name">sds.legend.view.form</field>
             <field name="model">sds.legend</field>
@@ -884,6 +900,17 @@
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="view_chemical_classification_form" model="ir.ui.view">
+            <field name="name">sds.chemical.classification.view.form</field>
+            <field name="model">sds.chemical.classification</field>
+            <field name="arch" type="xml">
+                <tree string="EU Classification">
+                    <field name="HazardCategories"/>
+                    <field name="HazardStatement"/>
+                </tree>
             </field>
         </record>
 
@@ -1033,6 +1060,17 @@
                 <tree string="Action Sentences">
                     <field name="name"/>
                     <field name="category"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_chemical_classification_tree" model="ir.ui.view">
+            <field name="name">sds.chemical.classification.tree</field>
+            <field name="model">sds.chemical.classification</field>
+            <field name="arch" type="xml">
+                <tree string="EU Classification">
+                    <field name="HazardCategories"/>
+                    <field name="HazardStatement"/>
                 </tree>
             </field>
         </record>
