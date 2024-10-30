@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <record id="wizard_select_lang" model="ir.ui.view">
         <field name="name">Select SDS Language Wizard</field>
@@ -7,6 +11,7 @@
             <form string="Select language">
                 <group>
                     <field name="lang"/>
+                    <field name="country"/>
                 </group>
                 <footer>
                     <button name="get_report" string="Print" type="object" class="btn-primary"/>

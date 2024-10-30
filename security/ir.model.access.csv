@@ -16,4 +16,8 @@ access_sds_bibliography,access_sds_bibliography,model_sds_bibliography,base.grou
 access_sds_regulation,access_sds_regulation,model_sds_regulation,base.group_user,1,1,1,1
 access_sds_regulatory.information,access_sds_regulatory_information,model_sds_regulatory_information,base.group_user,1,1,1,1
 access_select_lang_report_wizard,access_select_lang_report_wizard,model_select_lang_report_wizard,base.group_user,1,1,1,1
+access_sds_poison_centre,access_sds_poison_centre,model_sds_poison_centre,base.group_user,1,1,1,1
+access_sds_distributor,access_sds_distributor,model_sds_distributor,base.group_user,1,1,1,1
+
+
 

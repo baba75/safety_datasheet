@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <data>
         <!-- Bibliography entries (Section 16) -->
@@ -69,6 +73,12 @@
             <field name="name">Directive 2008/68/EC of the European Parliament and of the 
                 Council of 24 September 2008 on the inland transport of dangerous goods</field>
             <field name="url">http://data.europa.eu/eli/dir/2008/68/oj</field>
+        </record>
+        <record id="bibliography_13" model="sds.bibliography">
+            <field name="name">Commission Delegated Regulation (EU) 2023/707 of 19 December 2022 
+                amending Regulation (EC) No 1272/2008 as regards hazard classes and criteria for 
+                the classification, labelling and packaging of substances and mixtures</field>
+            <field name="url">http://data.europa.eu/eli/reg_del/2023/707/oj</field>
         </record>
     </data>
 </odoo>

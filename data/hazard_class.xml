@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <data>
         <!-- Explosives -->
@@ -290,19 +294,28 @@
         </record>
 
         <!-- Respiratory/skin sensitization -->
-        <!--[...]
-        Annex VI to Regulation (EC) No 1272/2008 is amended as follows:
-        Table 1.1 is amended as follows:
-        in the Hazard Class Respiratory/skin sensitisation, the Category Code ‘Resp. Sens. 1’
-        is replaced by ‘Resp. Sens. 1, 1A, 1B’ and the Category Code ‘Skin Sens. 1’ is replaced
-        by ‘Skin. Sens. 1, 1A, 1B’;
-        [...] -->
         <record id="Resp_Sens_1" model="sds.hazard.class">
-            <field name="name">Resp. Sens. 1, 1A, 1B</field>
+            <field name="name">Resp. Sens. 1</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+        <record id="Resp_Sens_2" model="sds.hazard.class">
+            <field name="name">Resp. Sens. 1A</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+        <record id="Resp_Sens_3" model="sds.hazard.class">
+            <field name="name">Resp. Sens. 1B</field>
             <field name="h_class">Respiratory/skin sensitization</field>
         </record>
         <record id="Skin_Sens_1" model="sds.hazard.class">
-            <field name="name">Skin. Sens. 1, 1A, 1B</field>
+            <field name="name">Skin Sens. 1</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+        <record id="Skin_Sens_2" model="sds.hazard.class">
+            <field name="name">Skin Sens. 1A</field>
+            <field name="h_class">Respiratory/skin sensitization</field>
+        </record>
+        <record id="Skin_Sens_3" model="sds.hazard.class">
+            <field name="name">Skin Sens.1B</field>
             <field name="h_class">Respiratory/skin sensitization</field>
         </record>
 

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Copyright 2023 Alberto Carollo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, fields, _
 
@@ -21,7 +23,7 @@ class SdsRegulatoryInformation(models.Model):
     that is not already provided in the safety data sheet  - for section 15
     """
     _name = "sds.regulatory.information"
-    _description = "Regulatory information"
+    _description = "Regulatory Information"
 
     regulation = fields.Many2one('sds.regulation', 'Regulation', copy=True)
     text = fields.Html(string="Relevant information",

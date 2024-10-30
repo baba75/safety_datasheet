@@ -1,6 +1,20 @@
 # -*- coding: utf-8 -*-
+# Copyright 2023 Alberto Carollo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, fields, api, _
+
+COUNTRY = [('Austria','Austria'),('Belgium','Belgium'),('Bulgaria','Bulgaria'),
+               ('Croatia','Croatia'),('Cyprus','Cyprus'),('Czech Republic','Czech Republic'),
+               ('Denmark','Denmark'),('Estonia','Estonia'),('Finland','Finland'),
+               ('France','France'),('Germany','Germany'),('Greece','Greece'),
+               ('Hungary','Hungary'),('Iceland','Iceland'),('Ireland','Ireland'),
+               ('Italy','Italy'),('Latvia','Latvia'),('Liechtenstein','Liechtenstein'),
+               ('Lithuania','Lithuania'),('Luxembourg','Luxembourg'),('Malta','Malta'),
+               ('Netherlands','Netherlands'),('Norway','Norway'),('Poland','Poland'),
+               ('Portugal','Portugal'),('Romania','Romania'),('Slovakia','Slovakia'),
+               ('Slovenia','Slovenia'),('Spain','Spain'),('Sweden','Sweden'),
+               ('United Kingdom','United Kingdom')]
 
 class SdsRegulationCriteria(models.Model):
     """
@@ -43,18 +57,17 @@ class SdsDatasheet(models.Model):
 
     @api.model
     def _default_company(self):
-        company = self.env['res.company']._company_default_get()
+        company = self.env.company
         if(company.street and company.zip and company.city):
             result = '<p>' + company.name + '<br/>' + company.street
             result += '<br/>' + company.zip + ' ' + company.city + ' ' + company.state_id.name
-            result += '<br/>' + company.country_id.name + '</p>'
+            result += '<br/>' + company.country_id.name 
+            result += '<br/> Phone: ' + company.phone
+            result += '<br/> Email: ' + company.email
+            result += '</p>'
         else:
             result = '<p>' + company.name + '<br/>' + 'Insert you company full adrees here</p>'
         return result
-
-    @api.model
-    def _default_emergency_phone(self):
-        return self.env['res.company']._company_default_get().phone
 
     name = fields.Char(string='Name', required=True, index=True, default=lambda self: _('New SDS'))
     product_id = fields.Many2one('product.template', 'Product', required=True, copy=True)
@@ -68,9 +81,9 @@ class SdsDatasheet(models.Model):
         string="Relevant identified uses of the substance or mixture and uses advised against recommended use",
         required=True, translate=True)
     section_1_3 = fields.Html(string="Detail of the supplier of the safety data sheet", default=_default_company,
-                              required=True, translate=True)
-    section_1_4 = fields.Text(string="Emergency telephone number", default=_default_emergency_phone,
-                              required=True, translate=True)
+                              required=True, translate=True, sanitize=False)
+    section_1_3_info = fields.Char(string="Email of the person responsible for the safety data sheet")
+    section_1_3_distributor_selector = fields.Boolean(string="Insert National Distributor contact", default=False)
     section_1_note = fields.Html(string="Section 1 notes", translate=True)
 
     # Section 2: Hazards identification
@@ -93,7 +106,7 @@ class SdsDatasheet(models.Model):
     section_2_3_vPvB = fields.Char(string="vPvB",
                                    help="very persistent and very bioaccumulative substances (vPvB substances)",
                                    default=lambda s: _('none'), required=True, translate=True)
-    section_2_3_OtherHazards = fields.Char(string="Other Hazards", default=lambda s: _("none"), required=True,
+    section_2_3_OtherHazards = fields.Html(string="Other Hazards", default=lambda s: _('none'), required=True,
                                            translate=True)
     section_2_note = fields.Html(string="Section 2 notes", translate=True)
 
@@ -813,3 +826,47 @@ class SdsDatasheet(models.Model):
         vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
         return self.update(vals)
 
+    def clear_dnel(self, values=None, pids=None):
+        """
+        Clear the textbox about DNEL  (Section 8.1)
+        and all translations
+        :return:
+        """
+        vals = {}
+        vals.update({'section_8_1_dnel': _('<p><br></p>')})
+        self.update(vals)
+
+        xlat_obj = self.env['ir.translation']
+        xlat_values = xlat_obj.search([
+                    ['name','like','sds.datasheet,section_8_1_dnel']
+                ])
+        for lang in xlat_values.mapped('lang'):
+                    xlat_obj._set_ids(
+                        'sds.datasheet,section_8_1_dnel',
+                        'model',
+                        lang,
+                        [self.id],
+                        '<p><br></p>',
+                        '<p><br></p>',
+                    )  
+        return 
+    
+    @api.model
+    def _get_available_dnel(self):
+        """
+        This function looks at which substances are declared in section 3, 
+        which ones have a DNEL section filled, and returns a dictionary 
+        of DNEL descriptions.
+        """
+        chem_sub = {}
+
+        # Check if this is a mixture
+        status_butt = self.section_3_2_selector
+        if status_butt == False:
+            return chem_sub
+        
+        for chem in self.section_3_2:
+            if chem.substance.dnel == True:
+                chem_sub.update({chem.substance.name: chem.substance.wrk_aq_sys_dermal})
+
+        return chem_sub

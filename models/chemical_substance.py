@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Copyright 2023 Alberto Carollo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, fields, _
 
@@ -30,6 +32,7 @@ class SdsChemicalSubstance(models.Model):
     REACHno = fields.Char('REACH Number')
     last_update = fields.Date(string="Revision date", default=fields.Date.today(), required=True)
     wrk_exp_limit = fields.Boolean('Workplace exposure limit', default=False)
+    
     wrk_exp_tlv = fields.Html(string="TLV details",
                                       default=lambda s: _(
                                           '<table class="table table-bordered"><thead class="table-columns">'
@@ -50,6 +53,48 @@ class SdsChemicalSubstance(models.Model):
                                           '<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td>'
                                           '<td><br></td><td><br></td></tr></tbody></table>'),
                                       translate=True, sanitize=False)
+    
+    # Useful link for future calculation development
+    # https://www.chemsafetypro.com/Topics/CRA/How_to_Derive_Derived_No-Effect_Level_(DNEL).html
+    dnel = fields.Boolean('DNEL', default=False)
+    # DNEL for workers
+    wrk_aq_sys_dermal = fields.Char('Acute systemic dermal effect (workers)', translate=True)
+    wrk_aq_sys_inhalation = fields.Char('Acute systemic inhalation effect (workers)', translate=True)
+    wrk_aq_lcl_dermal = fields.Char('Acute local dermal effect (workers)', translate=True)
+    wrk_aq_lcl_inhalation = fields.Char('Acute local inhalation effect (workers)', translate=True)
+    wrk_ln_sys_dermal = fields.Char('Long-term systemic dermal effect (workers)', translate=True)
+    wrk_ln_sys_inhalation = fields.Char('Long-term systemic inhalation effect (workers)', translate=True)
+    wrk_ln_lcl_dermal = fields.Char('Long-term local dermal effect (workers)', translate=True)
+    wrk_ln_lcl_inhalation = fields.Char('Long-term local inhalation effect (workers)', translate=True)
+    wrk_eye = fields.Char('Eye Exposure (workers)', translate=True)
+
+    # DNEL for the general population
+    pop_aq_sys_dermal = fields.Char('Acute systemic dermal effect', translate=True)
+    pop_aq_sys_inhalation = fields.Char('Acute systemic inhalation effect', translate=True)
+    pop_aq_lcl_dermal = fields.Char('Acute local dermal effect', translate=True)
+    pop_aq_lcl_inhalation = fields.Char('Acute local inhalation effect', translate=True)
+    pop_aq_sys_oral = fields.Char('Acute systemic oral effect', translate=True)
+    pop_ln_sys_dermal = fields.Char('Long-term systemic dermal effect', translate=True)
+    pop_ln_sys_inhalation = fields.Char('Long-term systemic inhalation effect', translate=True)
+    pop_ln_lcl_dermal = fields.Char('Long-term local dermal effect', translate=True)
+    pop_ln_lcl_inhalation = fields.Char('Long-term local inhalation effect', translate=True)
+    pop_ln_sys_oral = fields.Char('Long-term systemic oral effect', translate=True)
+    pop_eye = fields.Char('Eye Exposure', translate=True)
+
+    pnec = fields.Boolean('PNEC', default=False)
+    freshwater = fields.Char('Freshwater', translate=True)
+    int_rel_fw = fields.Char('Intermittent releases (freshwater)', translate=True)
+    marinew = fields.Char('Marine water', translate=True)
+    int_rel_mw = fields.Char('Intermittent releases (marine water)', translate=True)
+    stp = fields.Char('Sewage treatment plant (STP)', translate=True)
+    sediment_fw = fields.Char('Sediment (freshwater)', translate=True)
+    sediment_mw = fields.Char('Sediment (marine water)', translate=True)
+    air = fields.Char('Air', translate=True)
+    soil = fields.Char('Soil', translate=True)
+    sec_poisoning = fields.Char('Secondary poisoning', translate=True)
+    
+
+
     Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
     reactivity = fields.Many2many('sds.sentences', relation="sds_substance_reactivity_rel",
                                     domain="[('category', '=', 'reactivity')]",
@@ -65,5 +110,5 @@ class SdsChemicalMixture(models.Model):
     _description = "Chemical Mixture"
 
     datasheet_id = fields.Many2one('sds.datasheet', 'Related Datasheet', copy=True)
-    substance = fields.Many2one('sds.chemical.substance', 'Chemical name')
+    substance = fields.Many2one('sds.chemical.substance', 'Chemical Name')
     concentration = fields.Char('Concentration Range', translate=True)

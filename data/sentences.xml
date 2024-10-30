@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <data>
         <!-- First Aid general advice -->
@@ -94,6 +98,10 @@
             <field name="name">No specific measures.</field>
             <field name="category">skin</field>
         </record>
+        <record id="sentence_skin_11" model="sds.sentences">
+            <field name="name">If irritation persists, consult a physician.</field>
+            <field name="category">skin</field>
+        </record>
 
         <!-- First Aid Eye Contact -->
         <record id="sentence_eye_1_a" model="sds.sentences">
@@ -139,7 +147,7 @@
 
         <!-- First Aid Ingestion -->
         <record id="sentence_ingestion_1" model="sds.sentences">
-            <field name="name">Do not induce vomiting.</field>
+            <field name="name">Do NOT induce vomiting.</field>
             <field name="category">ingestion</field>
         </record>
         <record id="sentence_ingestion_2" model="sds.sentences">
@@ -413,7 +421,7 @@
             <field name="category">containment</field>
         </record>
         <record id="sentence_containment_9" model="sds.sentences">
-            <field name="name">Clean up dry the product using methods that do not cause the dispersion of the dry product
+            <field name="name">Clean up the dry product using methods that do not cause the dispersion of the dry product
                 into the air, for example: - suction cleaners (portable industrial strength, equipped with an effective
                 air particle filter (HEPA filter) or some other equivalent technique) - floorcloths, damp brushes or
                 hosepipe with spray attachment (set to "fine spray" in order to avoid dispersing the product into the air).</field>
@@ -813,9 +821,25 @@
             <field name="name">At high temperature formation of phosphorous oxides.</field>
             <field name="category">reactivity</field>
         </record>
+        <record id="reactivity_11" model="sds.sentences">
+            <field name="name">No particular dangers of reaction with other substances under normal conditions of use.</field>
+            <field name="category">reactivity</field>
+        </record>
+        <record id="reactivity_12" model="sds.sentences">
+            <field name="name">Reacts with water, acids, alcohols, amines, bases and oxidants.</field>
+            <field name="category">reactivity</field>
+        </record>
 
         <record id="stability_1" model="sds.sentences">
             <field name="name">Stable under normal conditions.</field>
+            <field name="category">stability</field>
+        </record>
+        <record id="stability_2" model="sds.sentences">
+            <field name="name">TDI reacts with water to form predominantly solid and insoluble polyureas.</field>
+            <field name="category">stability</field>
+        </record>
+        <record id="stability_3" model="sds.sentences">
+            <field name="name">Stability in alcohol, benzene, diglycolmonomethylether, ether, kerosene, acetone, carbon tetrachloride, chlorobenzene.</field>
             <field name="category">stability</field>
         </record>
 
@@ -863,6 +887,17 @@
             <field name="name">Possible dangerous reaction with sulphates.</field>
             <field name="category">haz_reaction</field>
         </record>
+        <record id="haz_reaction_12" model="sds.sentences">
+            <field name="name">The reaction is slow with cold or warm water (&lt;50 °C), 
+                with hot water or steam the reaction is faster, producing carbon dioxide 
+                which causes an increase in pressure.</field>
+            <field name="category">haz_reaction</field>
+        </record>
+        <record id="haz_reaction_13" model="sds.sentences">
+            <field name="name">Acids, alcohols, amines, bases and oxidants can cause overheating 
+                due to the heat of an exothermic reaction with a high risk of fire.</field>
+            <field name="category">haz_reaction</field>
+        </record>
 
         <record id="avoid_condition_1" model="sds.sentences">
             <field name="name">None known.</field>
@@ -874,6 +909,18 @@
         </record>
         <record id="avoid_condition_3" model="sds.sentences">
             <field name="name">Strong heating.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+        <record id="avoid_condition_4" model="sds.sentences">
+            <field name="name">High temperature.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+        <record id="avoid_condition_5" model="sds.sentences">
+            <field name="name">Humidity.</field>
+            <field name="category">avoid_condition</field>
+        </record>
+        <record id="avoid_condition_6" model="sds.sentences">
+            <field name="name">Strong light.</field>
             <field name="category">avoid_condition</field>
         </record>
 
@@ -898,6 +945,20 @@
             <field name="name">None known.</field>
             <field name="category">incompatible</field>
         </record>
+        <record id="incompatible_6" model="sds.sentences">
+            <field name="name">Water.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_7" model="sds.sentences">
+            <field name="name">Alcohols.</field>
+            <field name="category">incompatible</field>
+        </record>
+        <record id="incompatible_8" model="sds.sentences">
+            <field name="name">Amines.</field>
+            <field name="category">incompatible</field>
+        </record>
+        
+    
 
         <record id="decomposition_1" model="sds.sentences">
             <field name="name">Formaldehyde.</field>
@@ -922,7 +983,7 @@
             <field name="category">toxicity</field>
         </record>
         <record id="toxicity_10" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">toxicity</field>
         </record>
 
@@ -939,7 +1000,7 @@
             <field name="category">skin_corrosion</field>
         </record>
         <record id="skin_corrosion_4" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">skin_corrosion</field>
         </record>
 
@@ -956,7 +1017,7 @@
             <field name="category">eye_damage</field>
         </record>
         <record id="eye_damage_4" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">eye_damage</field>
         </record>
 
@@ -998,7 +1059,7 @@
             <field name="category">mutagenicity</field>
         </record>
         <record id="mutagenicity_6" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">mutagenicity</field>
         </record>
 
@@ -1011,7 +1072,7 @@
             <field name="category">carcinogenicity</field>
         </record>
         <record id="carcinogenicity_3" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">carcinogenicity</field>
         </record>
 
@@ -1032,7 +1093,7 @@
             <field name="category">reproductive</field>
         </record>
         <record id="reproductive_5" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">reproductive</field>
         </record>
 
@@ -1094,7 +1155,7 @@
             <field name="category">aspiration</field>
         </record>
         <record id="aspiration_2" model="sds.sentences">
-            <field name="name">Based on available data, the classification criteria are not met</field>
+            <field name="name">Based on available data, the classification criteria are not met.</field>
             <field name="category">aspiration</field>
         </record>
         <record id="aspiration_3" model="sds.sentences">
@@ -1230,6 +1291,12 @@
 
         <record id="endocrine_1" model="sds.sentences">
             <field name="name">None known.</field>
+            <field name="category">endocrine</field>
+        </record>
+        <record id="endocrine_2" model="sds.sentences">
+            <field name="name">The substance/mixture does not contain any components considered to have endocrine disrupting 
+                properties within the meaning of Article 57(f) of REACH or Commission Delegated Regulation (EU) 2017/2100 or 
+                Commission Regulation (EU) 2018/605 at levels of 0.1% or higher.</field>
             <field name="category">endocrine</field>
         </record>
 

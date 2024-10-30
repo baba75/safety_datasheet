@@ -6,19 +6,364 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20210302\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 11:32+0000\n"
-"PO-Revision-Date: 2021-11-08 15:14+0100\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2024-10-30 13:41+0000\n"
+"PO-Revision-Date: 2024-10-30 14:59+0100\n"
+"Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.5\n"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:669
+#: model:sds.poison.centre,name:safety_datasheet.PC_Belgium
+msgid ""
+"\n"
+"                \n"
+"                <p>Belgium - België | Belgisch Antigifcentrum<br/>\n"
+"                070 245 245 (elke dag, 24 op 24 uur)<br/>\n"
+"                <a href=\"https://www.poisoncentre.be/\">www.poisoncentre."
+"be</a></p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Czech
+msgid ""
+"\n"
+"                \n"
+"                <p>Czech Republic - Česká republika | Toxikologické "
+"informační středisko<br/>\n"
+"                Telefon: +420 224 919 293, +420 224 915 402<br/>\n"
+"                <a href=\"http://www.tis-cz.cz/\">www.tis-cz.cz</a></p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Finland
+msgid ""
+"\n"
+"                \n"
+"                <p>Finland - Suomi | Myrkytystietokeskus<br/>\n"
+"                Puhelin: 0800 147 111, 09 471 977<br/>\n"
+"                <a href=\"https://www.hus.fi/potilaalle/sairaalat-ja-"
+"toimipisteet/myrkytystietokeskus\">https://www.hus.fi/potilaalle/sairaalat-"
+"ja-toimipisteet/myrkytystietokeskus</a></p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_France
+msgid ""
+"\n"
+"                \n"
+"                <p>France | Centre AntiPoison et de ToxicoVigilance<br/>\n"
+"                numéro ORFILA : + 33 (0)1 45 42 59 59<br/>\n"
+"                <a href=\"https://reach-info.ineris.fr/numero-"
+"orfila\">https://reach-info.ineris.fr/numero-orfila</a></p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Hungary
+msgid ""
+"\n"
+"                \n"
+"                <p>Hungary - Magyarország | +36-80-201-199</p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Italy
+msgid ""
+"\n"
+"                \n"
+"                <p>Italy - Italia | Azienda Ospedaliera Integrata Verona: "
+"800 011 858<br/>\n"
+"                Lista completa su: <a href=\"https://preparatipericolosi.iss."
+"it/\">preparatipericolosi.iss.it</a>\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Portugal
+msgid ""
+"\n"
+"                \n"
+"                <p>Portugal | CIAV - Centro de Informação Antivenenos<br/>\n"
+"                800 250 250<br/>\n"
+"                <a href=\"https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos/\">https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos</a>\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Romania
+msgid ""
+"\n"
+"                \n"
+"                <p>Romania - România | S.C.U.B. - Spitaulu Clinic de Urgență "
+"Bucureßști<br/>\n"
+"                021.599.23.00<br/>\n"
+"                <a href=\"https://www.urgentafloreasca.ro/#!/Ati2\">https://"
+"www.urgentafloreasca.ro/#!/Ati2</a>\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Slovenia
+msgid ""
+"\n"
+"                \n"
+"                <p>Slovenia - Slovenija | Telefonska številka: 112</p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Spain
+msgid ""
+"\n"
+"                \n"
+"                <p>Spain - España | Servicio de Información Toxicológica "
+"(SIT)<br/>\n"
+"                + 34 91 562 04 20 <br/>\n"
+"                <a href=\"https://www.mjusticia.gob.es/es/institucional/"
+"organismos/instituto-nacional/servicios/servicio-informacion\">https://www."
+"mjusticia.gob.es/es/institucional/organismos/instituto-nacional/servicios/"
+"servicio-informacion</a>\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Sweden
+msgid ""
+"\n"
+"                \n"
+"                <p>Sweden - Sverige | 112 - begär Giftinformation\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_UK
+msgid ""
+"\n"
+"                \n"
+"                <p>United Kingdom | Call NHS 111 <br/>\n"
+"                111 online: <a href=\"http://111.nhs.uk/\">111.nhs.uk/</a>\n"
+"                </p>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.poison.centre,name:safety_datasheet.PC_Austria
+msgid ""
+"\n"
+"                <p>Austria - Österreich | Vergiftungsinformationszentrale "
+"(VIZ)<br/>\n"
+"                Notruf 0-24 Uhr: 01 406 43 43<br>\n"
+"                <a href=\"https://goeg.at/Vergiftungsinformation\">goeg.at/"
+"Vergiftungsinformation</a></p>\n"
+"                "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-butoxyethanol
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</"
+"td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></"
+"td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-633-2
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</"
+"td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ammonia
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</"
+"td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
+"td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC203-473-3
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</"
+"td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></"
+"td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-2-butoxyethoxyethanol
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></"
+"td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></"
+"td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>\n"
+"            \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cement
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.portland_cement
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
+"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>\n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CSA
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
+"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>\n"
+"            \n"
+"            "
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr ""
@@ -32,23 +377,35 @@ msgstr ""
 "izocianát"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC252-104-2
+#, fuzzy
+#| msgid "2-(2-butoxyethoxy)ethanol"
+msgid "(2-methoxymethylethoxy)propanol"
+msgstr " 2-(2-butoxi-etoxi)etanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC220-120-9
+msgid "1,2-benzisothiazol-3(2H)-one"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.butoxy_propanol
+#, fuzzy
+#| msgid "2-(2-butoxyethoxy)ethanol"
+msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
+msgstr " 2-(2-butoxi-etoxi)etanol"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "1.1 Product Identifier"
 msgstr "1.1. Termékazonosító"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.1 Product Identifier:"
+#, fuzzy
+#| msgid "1.1 Product Identifier"
+msgid "1.1. Product Identifier"
 msgstr "1.1. Termékazonosító"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"1.2 Relevant identified uses of the substance or mixture and uses advised\n"
-"                            against recommended use:"
-msgstr ""
-"1.2 Az anyag vagy keverék lényeges azonosított felhasználásai, illetve "
-"ellenjavallt felhasználásai"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -58,24 +415,37 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "1.2 Relevant identified uses of the substance or mixture and uses "
+#| "advised\n"
+#| "                            against recommended use:"
+msgid ""
+"1.2. Relevant identified uses of the substance or mixture and uses advised "
+"against recommended use"
+msgstr ""
+"1.2 Az anyag vagy keverék lényeges azonosított felhasználásai, illetve "
+"ellenjavallt felhasználásai"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "1.3 Detail of the supplier of the safety data sheet"
 msgstr "1.3 A biztonsági adatlap szállítójának adatai"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.3 Detail of the supplier of the safety data sheet:"
+#, fuzzy
+#| msgid "1.3 Detail of the supplier of the safety data sheet"
+msgid "1.3. Detail of the supplier of the safety data sheet"
 msgstr "1.3 A biztonsági adatlap szállítójának adatai"
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
-msgid "1.4 Emergency telephone number"
-msgstr "1.4 Sürgősségi telefonszám"
-
-#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "1.4 Emergency telephone number:"
-msgstr "1.4 Sürgősségi telefonszám:"
+#, fuzzy
+#| msgid "1.4 Emergency telephone number"
+msgid "1.4. Emergency telephone number"
+msgstr "1.4 Sürgősségi telefonszám"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -119,16 +489,22 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "11.1. Information on hazard classes as defined in Regulation (EC) No\n"
+#| "                                1272/2008"
 msgid ""
-"11.1. Information on hazard classes as defined in Regulation (EC) No\n"
-"                                1272/2008"
+"11.1. Information on hazard classes as defined in Regulation (EC) No. "
+"1272/2008"
 msgstr ""
 "11.1. Az 1272/2008/EK rendeletben meghatározott, veszélyességi osztályokra "
 "vonatkozó információk"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "11.2 Information on other hazards"
+#, fuzzy
+#| msgid "11.2 Information on other hazards"
+msgid "11.2. Information on other hazards"
 msgstr "11.2 Egyéb veszélyekkel kapcsolatos információ"
 
 #. module: safety_datasheet
@@ -193,7 +569,9 @@ msgstr "14.1 UN-szám vagy azonosító szám"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "14.2. UN proper shipping name"
+#, fuzzy
+#| msgid "14.2. UN proper shipping name"
+msgid "14.2. Proper shipping name"
 msgstr "14.2. Az ENSZ szerinti megfelelő szállítási megnevezés"
 
 #. module: safety_datasheet
@@ -218,9 +596,11 @@ msgstr "14.6. A felhasználót érintő különleges óvintézkedések"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"14.7. Maritime transport in bulk according to IMO\n"
-"                                            instruments"
+#, fuzzy
+#| msgid ""
+#| "14.7. Maritime transport in bulk according to IMO\n"
+#| "                                            instruments"
+msgid "14.7. Maritime transport in bulk according to IMO instruments"
 msgstr "14.7. Az IMO-szabályok szerinti tengeri ömlesztett szállítás"
 
 #. module: safety_datasheet
@@ -230,9 +610,14 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "15.1. Safety, health and environmental regulations/legislation specific "
+#| "for\n"
+#| "                                the substance or mixture"
 msgid ""
-"15.1. Safety, health and environmental regulations/legislation specific for\n"
-"                                the substance or mixture"
+"15.1. Safety, health and environmental regulations/legislation specific for "
+"the substance or mixture"
 msgstr ""
 "15.1. Az adott anyaggal vagy keverékkel kapcsolatos biztonsági, egészségügyi "
 "és környezetvédelmi előírások/jogszabályok"
@@ -248,6 +633,11 @@ msgid "16"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.nitrilotriethanol
+msgid "2,2',2''-nitrilotriethanol"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
 msgid "2-(2-butoxyethoxy)ethanol"
 msgstr " 2-(2-butoxi-etoxi)etanol"
@@ -258,23 +648,34 @@ msgid "2-butoxyethanol"
 msgstr "2-butoxi-etanol"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_618-558-4
+msgid "2-tridecoxyethyl dihydrogen phosphate"
+msgstr ""
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "2.1 Classification of the substance or mixture"
 msgstr "2.1 Az anyag vagy keverék besorolása"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.1 Classification of the substance or mixture:"
-msgstr "2.1 Az anyag vagy keverék besorolása:"
+#, fuzzy
+#| msgid "2.1 Classification of the substance or mixture"
+msgid "2.1. Classification of the substance or mixture"
+msgstr "2.1 Az anyag vagy keverék besorolása"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.2. Label elements:"
+#, fuzzy
+#| msgid "2.2. Label elements:"
+msgid "2.2. Label elements"
 msgstr "2.2 Címkézési elemek:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "2.3. Other Hazards:"
+#, fuzzy
+#| msgid "2.3. Other Hazards:"
+msgid "2.3. Other Hazards"
 msgstr "2.3 Egyéb veszélyek:"
 
 #. module: safety_datasheet
@@ -291,89 +692,124 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "3.1 Substances:"
+#, fuzzy
+#| msgid "3.1 Substances:"
+msgid "3.1. Substances"
 msgstr "3.1 Anyagok:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "3.2 Mixtures:"
+#, fuzzy
+#| msgid "3.2 Mixtures:"
+msgid "3.2. Mixtures"
 msgstr "3.2 Keverékek:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "4.1 Description of first aid measures"
+#, fuzzy
+#| msgid "4.1 Description of first aid measures"
+msgid "4.1. Description of first aid measures"
 msgstr "4.1 Az elsősegély-nyújtási intézkedések ismertetése"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "4.2 Most important symptoms and effects, both acute and delayed:"
+#, fuzzy
+#| msgid "4.2 Most important symptoms and effects, both acute and delayed:"
+msgid "4.2. Most important symptoms and effects, both acute and delayed"
 msgstr "4.2 A legfontosabb – akut és késleltetett – tünetek és hatások"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "4.3 Indication of any immediate medical attention and special treatment "
+#| "needed:"
 msgid ""
-"4.3 Indication of any immediate medical attention and special treatment "
-"needed:"
+"4.3. Indication of any immediate medical attention and special treatment "
+"needed"
 msgstr "4.3 A szükséges azonnali orvosi ellátás és különleges ellátás jelzése"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.1 Extinguishing media"
+#, fuzzy
+#| msgid "5.1 Extinguishing media"
+msgid "5.1. Extinguishing media"
 msgstr "5.1 Oltóanyag"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.2 Special hazards arising from the substance or mixture"
+#, fuzzy
+#| msgid "5.2 Special hazards arising from the substance or mixture"
+msgid "5.2. Special hazards arising from the substance or mixture"
 msgstr "5.2 Az anyaghoz vagy a keverékhez társuló különleges veszélyek"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "5.3 Advice for firefighters"
+#, fuzzy
+#| msgid "5.3 Advice for firefighters"
+msgid "5.3. Advice for firefighters"
 msgstr "5.3 Tűzoltóknak szóló javaslat"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "6.1 Personal precautions, protective equipment and emergency procedures:"
 msgid ""
-"6.1 Personal precautions, protective equipment and emergency procedures:"
+"6.1. Personal precautions, protective equipment and emergency procedures:"
 msgstr ""
 "6.1 Személyi óvintézkedések, egyéni védőeszközök és vészhelyzeti eljárások:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.2 Environmental precautions:"
+#, fuzzy
+#| msgid "6.2 Environmental precautions:"
+msgid "6.2. Environmental precautions"
 msgstr "6.2 Környezetvédelmi óvintézkedések:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.3 Methods and materials for containment and cleaning up:"
+#, fuzzy
+#| msgid "6.3 Methods and materials for containment and cleaning up:"
+msgid "6.3. Methods and materials for containment and cleaning up"
 msgstr ""
 "6.3 A területi elhatárolás és a szennyezésmentesítés módszerei és anyagai:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "6.4 Reference to other sections:"
+#, fuzzy
+#| msgid "6.4 Reference to other sections:"
+msgid "6.4. Reference to other sections"
 msgstr "6.4 Hivatkozás más szakaszokra:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.1 Precautions for safe handling:"
+#, fuzzy
+#| msgid "7.1 Precautions for safe handling:"
+msgid "7.1. Precautions for safe handling"
 msgstr "7.1 A biztonságos kezelésre irányuló óvintézkedések:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.2 Conditions for safe storage, including any incompatibilities:"
+#, fuzzy
+#| msgid "7.2 Conditions for safe storage, including any incompatibilities:"
+msgid "7.2. Conditions for safe storage, including any incompatibilities"
 msgstr ""
 "7.2 A biztonságos tárolás feltételei, az esetleges összeférhetetlenséggel "
 "együtt:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "7.3 Specific end use(s):"
+#, fuzzy
+#| msgid "7.3 Specific end use(s):"
+msgid "7.3. Specific end use(s)"
 msgstr "7.3 Meghatározott végfelhasználás (végfelhasználások):"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "8.1 Control parameters"
+#, fuzzy
+#| msgid "8.1 Control parameters"
+msgid "8.1. Control parameters"
 msgstr "8.1 Ellenőrzési paraméterek"
 
 #. module: safety_datasheet
@@ -383,13 +819,17 @@ msgstr "8.2 Az expozíció elleni védekezés"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "9.1 Information on basic physical and chemical properties"
+#, fuzzy
+#| msgid "9.1 Information on basic physical and chemical properties"
+msgid "9.1. Information on basic physical and chemical properties"
 msgstr ""
 "9.1 Az alapvető fizikai és kémiai tulajdonságokra vonatkozó információk"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "9.2 Other information"
+#, fuzzy
+#| msgid "9.2 Other information"
+msgid "9.2. Other information"
 msgstr "9.2 Egyéb információk"
 
 #. module: safety_datasheet
@@ -409,22 +849,18 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"<br/>\n"
-"                            Other Hazards:"
-msgstr ""
-"<br/>\n"
-"                            Egyéb veszélyek:"
+#, fuzzy
+#| msgid "Other Hazards"
+msgid "<br/> Other Hazards:"
+msgstr "Egyéb veszélyek"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"<br/>\n"
-"                            vPvB:"
+msgid "<br/> vPvB:"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:563
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<p class=\"sds\">The information contained in this sheet is based on the "
@@ -440,30 +876,31 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:226
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<p><b>Derived No Effect Level<br></b>Name of the substance here</"
-"p><p>Workers</p><table class=\"table table-bordered\"><thead><tr><th colspan="
-"\"2\">Acute systemic effects</th><th colspan=\"2\">Acute local effects</"
-"th><th colspan=\"2\">Long-term systemic effects</th><th colspan=\"2\">Long-"
-"term local effects</th></tr></thead><tbody><tr><td>Dermal</"
+"p><p>Workers</p><table class=\"table table-bordered\"><thead><tr><th "
+"colspan=\"2\">Acute systemic effects</th><th colspan=\"2\">Acute local "
+"effects</th><th colspan=\"2\">Long-term systemic effects</th><th "
+"colspan=\"2\">Long-term local effects</th></tr></"
+"thead><tbody><tr><td>Dermal</td><td>Inhalation</td><td>Dermal</"
 "td><td>Inhalation</td><td>Dermal</td><td>Inhalation</td><td>Dermal</"
-"td><td>Inhalation</td><td>Dermal</td><td>Inhalation</td></tr><tr><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table><p>Consumers</p><table "
-"class=\"table table-bordered\"><thead><tr><th colspan=\"3\">Acute systemic "
-"effects</th><th colspan=\"2\">Acute local effects</th><th colspan=\"3\">Long-"
-"term systemic effects</th><th colspan=\"2\">Long-term local effects</th></"
-"tr></thead><tbody><tr><td>Dermal</td><td>Inhalation</td><td>Oral</"
-"td><td>Dermal</td><td>Inhalation</td><td>Dermal</td><td>Inhalation</"
-"td><td>Oral</td><td>Dermal</td><td>Inhalation</td></tr><tr><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+"td><td>Inhalation</td></tr><tr><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table><p>Consumers</p><table class=\"table table-"
+"bordered\"><thead><tr><th colspan=\"3\">Acute systemic effects</th><th "
+"colspan=\"2\">Acute local effects</th><th colspan=\"3\">Long-term systemic "
+"effects</th><th colspan=\"2\">Long-term local effects</th></tr></"
+"thead><tbody><tr><td>Dermal</td><td>Inhalation</td><td>Oral</td><td>Dermal</"
+"td><td>Inhalation</td><td>Dermal</td><td>Inhalation</td><td>Oral</"
+"td><td>Dermal</td><td>Inhalation</td></tr><tr><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:269
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<p><b>Predicted No Effect Concentration</b><br>Name of the component here</"
@@ -476,16 +913,22 @@ msgid ""
 "(freshwater)</td><td>-</td></tr><tr><td>Sediment (marine water)</td><td>-</"
 "td></tr></tbody></table></div><div class=\"col-6\"><table class=\"table "
 "table-bordered\"><thead><tr><th colspan=\"2\">Hazard for Air</th></tr></"
-"thead><tbody><tr><td>Air</td><td>-</td></tr></tbody></table><table class="
-"\"table table-bordered\"><thead><tr><th colspan=\"2\">Hazard for Terrestrial "
-"Organism</th></tr></thead><tbody><tr><td>Soil</td><td>-</td></tr></tbody></"
-"table><table class=\"table table-bordered\"><thead><tr><th colspan="
-"\"2\">Hazard for Predators</th></tr></thead><tbody><tr><td>Secondary "
+"thead><tbody><tr><td>Air</td><td>-</td></tr></tbody></table><table "
+"class=\"table table-bordered\"><thead><tr><th colspan=\"2\">Hazard for "
+"Terrestrial Organism</th></tr></thead><tbody><tr><td>Soil</td><td>-</td></"
+"tr></tbody></table><table class=\"table table-bordered\"><thead><tr><th "
+"colspan=\"2\">Hazard for Predators</th></tr></thead><tbody><tr><td>Secondary "
 "poisoning</td><td>-</td></tr></tbody></table></div></div>"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:547
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid "<p><br></p>"
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<p>The information contained in this Safety Data Sheet is derived from the "
@@ -506,8 +949,47 @@ msgstr "<span class=\"sds_h7\">Egyéb:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "<span>Other safety, health and environmental regulations/legislation\n"
+#| "                                                        specific\n"
+#| "                                                        for the substance "
+#| "or mixture:\n"
+#| "                                                    </span>"
+msgid ""
+"<span>\n"
+"                                                        Other safety, health "
+"and environmental regulations/legislation\n"
+"                                                        specific for the "
+"substance or mixture:\n"
+"                                                    </span>"
+msgstr ""
+"<span>Az adott anyaggal vagy keverékkel kapcsolatos biztonsági, egészségügyi "
+"és környezetvédelmi előírások, jogszabályok.</span>"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>&amp;nbsp;</span>"
 msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+#, fuzzy
+#| msgid ""
+#| "<span>Other safety, health and environmental regulations/legislation\n"
+#| "                                                        specific\n"
+#| "                                                        for the substance "
+#| "or mixture:\n"
+#| "                                                    </span>"
+msgid ""
+"<span>1.3 Set National Distributor contacts under Tables\n"
+"                                            -&gt; Distributors</span><br/>\n"
+"                                        <span>1.4 Set Emergency Telephone "
+"numbers under Tables -&gt;\n"
+"                                            Poison Centres</span>"
+msgstr ""
+"<span>Az adott anyaggal vagy keverékkel kapcsolatos biztonsági, egészségügyi "
+"és környezetvédelmi előírások, jogszabályok.</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -516,43 +998,62 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"<span>Other safety, health and environmental regulations/legislation\n"
-"                                                        specific\n"
-"                                                        for the substance or "
-"mixture:\n"
-"                                                    </span>"
-msgstr ""
-"<span>Az adott anyaggal vagy keverékkel kapcsolatos biztonsági, egészségügyi "
-"és környezetvédelmi előírások, jogszabályok.</span>"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>Supersedes version:&amp;nbsp;</span>"
 msgstr "<span>Felülvizsgálat dátuma: </span>"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:200
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EDTA_tetrasodium_salt
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ethanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</th><th colspan="
-"\"3\">Long-term Exposure Limit (LTEL) Values</th><th colspan=\"3\">Short-"
-"term Exposure Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</"
-"th><th rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th><th rowspan=\"2\">Work Sector</th><th rowspan="
-"\"2\">Effective Date</th><th rowspan=\"2\">Expiration Date</th><th rowspan="
-"\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</"
-"th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></"
-"thead><tbody class=\"table-data\"><tr><td><br></td><td><br></td><td><br></"
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</th><th "
+"colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td><td><br></"
 "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
 "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table>"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:415
-#: code:addons/safety_datasheet/models/datasheet.py:461
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
@@ -561,7 +1062,7 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:380
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
@@ -573,12 +1074,28 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:472
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Substance</"
 "th><th>Biodegradation in water</th><th>Source</th></tr></"
 "thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table>"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "ADR/RID/ADN"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_adr_notes
+msgid "ADR/RID/ADN additional notes"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_pictogram__category__transport
+msgid "ADR/Transport Pictograms"
 msgstr ""
 
 #. module: safety_datasheet
@@ -607,6 +1124,20 @@ msgstr ""
 msgid ""
 "According to present knowledge no adverse influence to environment expected."
 msgstr "A jelenlegi ismeretek szerint nem várható káros környezeti hatás."
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_440
+msgid ""
+"Accumulates in the environment and living organisms including in humans."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.haz_reaction_13
+msgid ""
+"Acids, alcohols, amines, bases and oxidants can cause overheating \n"
+"                due to the heat of an exothermic reaction with a high risk "
+"of fire."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_1
@@ -644,18 +1175,71 @@ msgid "Acute inhalation toxicity"
 msgstr "Akut belélegzési toxicitás"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_lcl_dermal
+#, fuzzy
+#| msgid "Acute dermal toxicity"
+msgid "Acute local dermal effect"
+msgstr "Akut dermális toxicitás"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_lcl_dermal
+msgid "Acute local dermal effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_lcl_inhalation
+#, fuzzy
+#| msgid "Acute inhalation toxicity"
+msgid "Acute local inhalation effect"
+msgstr "Akut belélegzési toxicitás"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_lcl_inhalation
+msgid "Acute local inhalation effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_oral
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Acute oral toxicity"
 msgstr "Akut orális toxicitás"
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_dermal
+#, fuzzy
+#| msgid "Acute dermal toxicity"
+msgid "Acute systemic dermal effect"
+msgstr "Akut dermális toxicitás"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_sys_dermal
+msgid "Acute systemic dermal effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_inhalation
+#, fuzzy
+#| msgid "Acute inhalation toxicity"
+msgid "Acute systemic inhalation effect"
+msgstr "Akut belélegzési toxicitás"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_sys_inhalation
+msgid "Acute systemic inhalation effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_oral
+msgid "Acute systemic oral effect"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__toxicity
 #: model:sds.hazard.class,h_class:safety_datasheet.Acute_Tox_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Acute_Tox_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Acute_Tox_3
 #: model:sds.hazard.class,h_class:safety_datasheet.Acute_Tox_4
-#: selection:sds.sentences,category:0
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Acute toxicity"
 msgstr "Akut toxicitás"
 
@@ -680,7 +1264,7 @@ msgid "Adrenal gland."
 msgstr "Mellékvese."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__fire_fight_advice
 msgid "Advice for Firefighters"
 msgstr ""
 
@@ -702,6 +1286,11 @@ msgid "After cleaning, flush away traces with water."
 msgstr "Tisztítás után öblítse le vízzel a visszamaradó nyomokat."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__air
+msgid "Air"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_2
 msgid "Alcohol-resistant foam."
 msgstr "Alkoholálló hab."
@@ -710,6 +1299,11 @@ msgstr "Alkoholálló hab."
 #: model:sds.chemical.substance,name:safety_datasheet.ec_932-183-6
 msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
 msgstr "Alkoholok, C9-11-izo,. C10-gazdag, etoxilált (> 2,5 mol EO)"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.incompatible_7
+msgid "Alcohols."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_6
@@ -730,6 +1324,23 @@ msgstr "Alumínium-szulfát"
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
 msgstr "Alumínium."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.incompatible_8
+msgid "Amines."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.ammonia
+#, fuzzy
+#| msgid "Ammonium salts."
+msgid "Ammonia"
+msgstr "Ammóniumsók. "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-764-5
+msgid "Ammonium dihydrogenorthophosphate"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_3
@@ -764,6 +1375,13 @@ msgid "Appropriate engineering controls:"
 msgstr "Megfelelő műszaki ellenőrzés:"
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_6
+msgid ""
+"Aqueous solutions react with light metals, e.g. aluminum, with the formation "
+"of hydrogen."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_9
 msgid ""
 "As an exception to this general rule it is known that multilayer laminate "
@@ -794,7 +1412,7 @@ msgid "Aspiration hazard"
 msgstr "Aspirációs veszély"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__aspiration
 msgid "Aspiration hazards"
 msgstr "Aspirációs veszélyek"
 
@@ -802,6 +1420,18 @@ msgstr "Aspirációs veszélyek"
 #: model:sds.sentences,name:safety_datasheet.decomposition_3
 msgid "At elevated temperature: acetic acid."
 msgstr "Emelt hőmérsékleten: ecetsav."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_10
+msgid "At high temperature formation of phosphorous oxides."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__austria
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__austria
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__austria
+msgid "Austria"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_9
@@ -836,6 +1466,13 @@ msgid "Avoid contact with skin and eyes."
 msgstr "Kerülje a bőrrel és szemmel való érintkezést. "
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_storage_12
+#, fuzzy
+#| msgid "Avoid contact with eyes."
+msgid "Avoid contact with water or humidity."
+msgstr "Kerülje a szemmel való érintkezést. "
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_16
 msgid "Avoid creating or spreading dust."
 msgstr "Kerülje a por keletkezését vagy terjedését."
@@ -844,8 +1481,16 @@ msgstr "Kerülje a por keletkezését vagy terjedését."
 #: model:sds.sentences,name:safety_datasheet.skin_protection_4
 msgid "Avoid gloves made of: Polyvinyl alcohol (\"PVA\")."
 msgstr ""
-"Kerülje az alábbi anyagokból készült kesztyűket: Polivinil -alkohol (\"PVA"
-"\")."
+"Kerülje az alábbi anyagokból készült kesztyűket: Polivinil -alkohol "
+"(\"PVA\")."
+
+#. module: safety_datasheet
+#: model:sds.precautionary.statement,description:safety_datasheet.P212
+msgid ""
+"Avoid heating under confinement or reduction of the desensitising agent."
+msgstr ""
+"Kerülje a hevítést zárt térben vagy a deszenzibilizáló szer mennyiségének "
+"csökkenése esetén."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P273
@@ -853,6 +1498,7 @@ msgid "Avoid release to the environment."
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.STOST_12
 #: model:sds.sentences,name:safety_datasheet.aspiration_2
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_3
 #: model:sds.sentences,name:safety_datasheet.eye_damage_4
@@ -860,13 +1506,6 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.reproductive_5
 #: model:sds.sentences,name:safety_datasheet.skin_corrosion_4
 #: model:sds.sentences,name:safety_datasheet.toxicity_10
-msgid "Based on available data, the classification criteria are not met"
-msgstr ""
-"A rendelkezésre álló adatok alapján az osztályozási kritériumok nem "
-"teljesülnek"
-
-#. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
 msgid "Based on available data, the classification criteria are not met."
 msgstr ""
 "A rendelkezésre álló adatok alapján az osztályozási kritériumok nem "
@@ -918,9 +1557,17 @@ msgstr ""
 "szenzibilizáló reakció."
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__belgium
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__belgium
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__belgium
+msgid "Belgium"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_bibliography
 #: model:ir.ui.menu,name:safety_datasheet.bibliography_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.bibliography_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_bibliography_tree
 msgid "Bibliography"
 msgstr "Bibliográfia"
@@ -937,13 +1584,8 @@ msgid "Bibliography entries"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Bibliography:"
-msgstr "Bibliográfia:"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__bioaccumulative
 msgid "Bioaccumulative potential"
 msgstr ""
 
@@ -977,7 +1619,14 @@ msgstr ""
 "nedves kötéssel] kell hűteni."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:527
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__bulgaria
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__bulgaria
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__bulgaria
+msgid "Bulgaria"
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "Bulk transport in tankers is not intended."
 msgstr ""
@@ -989,6 +1638,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__CASno
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
 msgid "CAS Number"
 msgstr ""
 
@@ -1024,6 +1674,17 @@ msgstr ""
 "tűzveszélyessé válhat."
 
 #. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_450
+msgid "Can cause long-lasting and diffuse contamination of water resources."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_451
+msgid ""
+"Can cause very long-lasting and diffuse contamination of water resources."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_8
 msgid "Can react with reducing agents."
 msgstr "Redukálószerekkel reagálhat. "
@@ -1050,11 +1711,11 @@ msgstr "Szén-dioxid (CO2)."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__carcinogenicity
 #: model:sds.hazard.class,h_class:safety_datasheet.Carc_1A
 #: model:sds.hazard.class,h_class:safety_datasheet.Carc_1B
 #: model:sds.hazard.class,h_class:safety_datasheet.Carc_2
-#: selection:sds.sentences,category:0
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Carcinogenicity"
 msgstr "Rákkeltő hatás"
 
@@ -1074,6 +1735,7 @@ msgid "Catches fire spontaneously if exposed to air."
 msgstr "Levegővel érintkezve önmagától meggyullad."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__category
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__category
 msgid "Category"
 msgstr "Kategória"
@@ -1159,6 +1821,7 @@ msgid "Chemical Mixture"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__substance
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__name
 msgid "Chemical Name"
 msgstr ""
@@ -1168,6 +1831,7 @@ msgstr ""
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_substance
 #: model:ir.ui.menu,name:safety_datasheet.substances_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_tree
 msgid "Chemical Substances"
 msgstr ""
 
@@ -1189,11 +1853,6 @@ msgid "Chemical identity:"
 msgstr "Kémiai azonosító:"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__substance
-msgid "Chemical name"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_2
 msgid "Chemical safety assessment"
 msgstr ""
@@ -1209,15 +1868,20 @@ msgid "Citric Acid"
 msgstr "Citromsav"
 
 #. module: safety_datasheet
+#: model:sds.pictogram,description:safety_datasheet.ADR_8
+#, fuzzy
+#| msgid "Corrosive to metals."
+msgid "Class 8 - Corrosive materials"
+msgstr "Fémekre korrozív hatású."
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"Classification and procedure used to derive the classification for\n"
-"                                    mixtures\n"
-"                                    according to Regulation (EC) No 1272/2008"
-msgstr "A keverék osztályozása: osztályozás az 1272/2008/EK rendelet szerint"
+msgid "Class:"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_classification_procedure
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid ""
 "Classification and procedure used to derive the classification for mixtures "
 "according to Regulation (EC) No 1272/2008"
@@ -1229,9 +1893,24 @@ msgid "Classification: REGULATION (EC) No 1272/2008"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_containment_3
+msgid "Clean up remaining materials from spill with suitable absorbant."
+msgstr "Megfelelő nedvszívóval tisztítsa meg a maradék anyagokat a kiömlésből."
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_9
+#, fuzzy
+#| msgid ""
+#| "Clean up dry the product using methods that do not cause the dispersion "
+#| "of the dry product\n"
+#| "                into the air, for example: - suction cleaners (portable "
+#| "industrial strength, equipped with an effective\n"
+#| "                air particle filter (HEPA filter) or some other "
+#| "equivalent technique) - floorcloths, damp brushes or\n"
+#| "                hosepipe with spray attachment (set to \"fine spray\" in "
+#| "order to avoid dispersing the product into the air)."
 msgid ""
-"Clean up dry the product using methods that do not cause the dispersion of "
+"Clean up the dry product using methods that do not cause the dispersion of "
 "the dry product\n"
 "                into the air, for example: - suction cleaners (portable "
 "industrial strength, equipped with an effective\n"
@@ -1250,12 +1929,6 @@ msgstr ""
 "permetezésre\", hogy elkerülje a termék levegőben való szétszóródását)."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.sentence_containment_3
-msgid "Clean up remaining materials from spill with suitable absorbant."
-msgstr "Megfelelő nedvszívóval tisztítsa meg a maradék anyagokat a kiömlésből."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.4_coco_alkylamine_ethoxylate
 #: model:sds.chemical.substance,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
 msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
 msgstr ""
@@ -1279,6 +1952,21 @@ msgstr "A kiömlött anyagot össze kell gyűjteni."
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_2
 msgid "Colour"
 msgstr "Szín"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_8
+msgid "Combustible."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_13
+msgid ""
+"Commission Delegated Regulation (EU) 2023/707 of 19 December 2022 \n"
+"                amending Regulation (EC) No 1272/2008 as regards hazard "
+"classes and criteria for \n"
+"                the classification, labelling and packaging of substances "
+"and mixtures"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_3
@@ -1320,7 +2008,7 @@ msgid "Concentration Range"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__avoid_condition
 msgid "Condition to avoid"
 msgstr ""
 
@@ -1341,6 +2029,16 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_5
 msgid "Consult a physician immediately."
 msgstr "Azonnal forduljon orvoshoz."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__name
+msgid "Contact details of the National Distributor"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__name
+msgid "Contact details of the poison centres"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_6
@@ -1368,7 +2066,7 @@ msgid "Containers may be recycled or re-used."
 msgstr "A tartályok újrahasznosíthatók vagy újra felhasználhatók."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__containment
 msgid "Containment methods"
 msgstr ""
 
@@ -1433,6 +2131,13 @@ msgid "Corrosive to the respiratory tract."
 msgstr "Maró hatású a légutakra."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__country
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__country
+#: model:ir.model.fields,field_description:safety_datasheet.field_select_lang_report_wizard__country
+msgid "Country"
+msgstr ""
+
+#. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_action_sentences
 msgid "Create a new Action Sentence, e.g. First Aid Action Sentence"
 msgstr ""
@@ -1448,11 +2153,6 @@ msgid "Create a new Chemical Substance"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.actions.act_window,help:safety_datasheet.action_pictograms
-msgid "Create a new GHS Pictogram"
-msgstr ""
-
-#. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_hazard_classification
 msgid "Create a new Hazard Classification"
 msgstr ""
@@ -1465,6 +2165,21 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_legend
 msgid "Create a new Legend entry, e.g. SDS = Safety Data Sheet"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.actions.act_window,help:safety_datasheet.action_distributor
+msgid "Create a new National Distributor entry"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.actions.act_window,help:safety_datasheet.action_pictograms
+msgid "Create a new Pictogram"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.actions.act_window,help:safety_datasheet.action_poisoncentre
+msgid "Create a new Poison Centre entry"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1490,10 +2205,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__create_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__create_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__create_uid
@@ -1511,10 +2228,12 @@ msgstr "Létrehozta"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__create_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__create_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__create_date
@@ -1525,6 +2244,13 @@ msgid "Created on"
 msgstr "Létrehozva"
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__croatia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__croatia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__croatia
+msgid "Croatia"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_202
 msgid ""
 "Cyanoacrylate. Danger. Bonds skin and eyes in seconds. Keep out of the reach "
@@ -1532,6 +2258,25 @@ msgid ""
 msgstr ""
 "Cianoakrilát. Veszély! Néhány másodperc alatt a bőrre és a szembe ragad. "
 "Gyermekektől elzárva tartandó."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_202-715-5
+msgid "Cyclohexyldimethylamine"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__cyprus
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__cyprus
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__cyprus
+msgid "Cyprus"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__czech_republic
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__czech_republic
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__czech_republic
+msgid "Czech Republic"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_10
@@ -1548,6 +2293,7 @@ msgstr ""
 "helyezéséről"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__dnel
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel
 msgid "DNEL"
 msgstr ""
@@ -1563,9 +2309,19 @@ msgid "DO NOT fight fire when fire reaches explosives."
 msgstr "TILOS a tűz oltása, ha az robbanóanyagra átterjedt."
 
 #. module: safety_datasheet
-#: selection:sds.datasheet,section_2_2_signal:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_2_2_signal__danger
 msgid "Danger"
 msgstr "Veszély"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Data for the general population"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Data for workers"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.ui.menu,name:safety_datasheet.safety_datasheet_tree
@@ -1573,7 +2329,7 @@ msgid "Datasheet"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__decomposition
 msgid "Decomposition products"
 msgstr ""
 
@@ -1583,6 +2339,13 @@ msgid "Decomposition temperature"
 msgstr "Bomlási hőmérséklet"
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__denmark
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__denmark
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__denmark
+msgid "Denmark"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_16
 msgid "Density and/or relative density"
 msgstr "Sűrűség és/vagy relatív sűrűség"
@@ -1590,6 +2353,11 @@ msgstr "Sűrűség és/vagy relatív sűrűség"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
 msgid "Derived No Effect Level (DNEL)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Dermal Exposure"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1640,6 +2408,21 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.bibliography,name:safety_datasheet.bibliography_12
+#, fuzzy
+#| msgid ""
+#| "Directive 2008/98/EC of the European Parliament and of\n"
+#| "                the Council of 19 November 2008 on waste and repealing "
+#| "certain Directive "
+msgid ""
+"Directive 2008/68/EC of the European Parliament and of the \n"
+"                Council of 24 September 2008 on the inland transport of "
+"dangerous goods"
+msgstr ""
+"Az Európai Parlament és a Tanács 2008/98/EK irányelve (2008. november 19.) a "
+"hulladékokról és egyes irányelvek hatályon kívül helyezéséről"
+
+#. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_11
 msgid ""
 "Directive 2008/98/EC of the European Parliament and of\n"
@@ -1664,6 +2447,11 @@ msgid "Discharge into the environment must be avoided."
 msgstr "Kerülni kell az anyag környezetbe jutását."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Natriummetasilicat_Pentahydrat
+msgid "Disodium dioxido(oxo)silane pentahydrate"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__display_name
@@ -1672,10 +2460,12 @@ msgstr "Kerülni kell az anyag környezetbe jutását."
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__display_name
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__display_name
@@ -1686,7 +2476,7 @@ msgid "Display Name"
 msgstr "Megjelenített név"
 
 #. module: safety_datasheet
-#: selection:sds.precautionary.statement,mode:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_precautionary_statement__mode__p5
 msgid "Disposal"
 msgstr ""
 
@@ -1708,6 +2498,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P331
+#: model:sds.sentences,name:safety_datasheet.sentence_ingestion_1
 msgid "Do NOT induce vomiting."
 msgstr "TILOS hánytatni."
 
@@ -1736,6 +2527,13 @@ msgstr "Ne lélegezze be a port. "
 #: model:sds.precautionary.statement,description:safety_datasheet.P260
 msgid "Do not breathe dust/fume/gas/mist/vapours/ spray."
 msgstr " A por/füst/gáz/köd/gőzök/permet belélegzése tilos."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_protective_11
+#, fuzzy
+#| msgid "Do not breathe dust."
+msgid "Do not breathe gas."
+msgstr "Ne lélegezze be a port. "
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_2
@@ -1778,17 +2576,19 @@ msgid "Do not give anything by mouth unless the person is fully conscious."
 msgstr " Eszméletlen személynek soha ne adjon semmit szájon át."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_ingestion_9
+#, fuzzy
+#| msgid "Do not get on skin or clothing."
+msgid "Do not give anything to drink."
+msgstr "Ne kerüljön bőrre vagy ruházatra. "
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P202
 msgid ""
 "Do not handle until all safety precautions have been read and understood."
 msgstr ""
 "Ne használja addig, amíg az összes biztonsági óvintézkedést el nem olvasta "
 "és meg nem értette."
-
-#. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.sentence_ingestion_1
-msgid "Do not induce vomiting."
-msgstr "Ne hánytassa. "
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P251
@@ -1885,6 +2685,8 @@ msgstr "FFP2 osztályú pormaszk. "
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
+#: model:sds.legend,acronym:safety_datasheet.legend_1
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
 msgid "EC Number"
 msgstr ""
 
@@ -1898,11 +2700,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "EC regulation criteria 1272/2008 (CLP):"
 msgstr "Az 1272/2008/EK rendelet (CLP) kritériumai:"
-
-#. module: safety_datasheet
-#: model:sds.legend,acronym:safety_datasheet.legend_1
-msgid "EC-Number"
-msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_15
@@ -1924,7 +2721,10 @@ msgid "EU Chemical Classification"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_classification_view_form
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_chemical_classification_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_chemical_classification_tree
 msgid "EU Classification"
 msgstr ""
 
@@ -1944,9 +2744,18 @@ msgid "Elimination by adsorption to activated sludge."
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_4
-msgid "Emergency telephone number"
-msgstr "Sürgősségi telefonszám"
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+#, fuzzy
+#| msgid "Detail of the supplier of the safety data sheet"
+msgid "Email of the person responsible for safety data sheets"
+msgstr "A biztonsági adatlap szállítójának adatai"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_3_info
+#, fuzzy
+#| msgid "Detail of the supplier of the safety data sheet"
+msgid "Email of the person responsible for the safety data sheet"
+msgstr "A biztonsági adatlap szállítójának adatai"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1964,12 +2773,12 @@ msgid "Endocrine disrupting properties details"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__endocrine
 msgid "Endocrine disruption"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__engineer_control
 msgid "Engineer control"
 msgstr ""
 
@@ -1984,7 +2793,7 @@ msgid "Environment"
 msgstr "Környezetkárosító anyag"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__env_exposure
 msgid "Environmental exposure"
 msgstr ""
 
@@ -2001,8 +2810,30 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_6_2
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__env_precaution
 msgid "Environmental precautions"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__estonia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__estonia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__estonia
+msgid "Estonia"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC203-473-3
+msgid "Ethane-1,2-diol"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.ethanol
+msgid "Ethanol"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS7087-68-5
+msgid "Ethyldiisopropylamine"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2035,6 +2866,11 @@ msgstr "Európai Hulladékkatalógus"
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_7
 msgid "Evacuate area."
 msgstr "A területet ki kell üríteni."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_12
+msgid "Evacuate the personnel away from the fumes."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_3
@@ -2070,6 +2906,18 @@ msgstr ""
 #: model:sds.pictogram,description:safety_datasheet.GHS07_exclamation_mark
 msgid "Exclamation mark"
 msgstr "Figyelmeztető jelzés"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_7
+#, fuzzy
+#| msgid "Reacts violently with water."
+msgid "Exothermic reaction with water."
+msgstr "Vízzel hevesen reagál."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_7a
+msgid "Exothermic reaction."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.GHS01_exploding_bomb
@@ -2128,7 +2976,7 @@ msgid "Extended description"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__extinguishing
 msgid "Extinguishing"
 msgstr ""
 
@@ -2153,13 +3001,24 @@ msgid "Extremely flammable liquid and vapour."
 msgstr "Rendkívül tűzveszélyes folyadék és gőz."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye_damage
 msgid "Eye Damage"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_eye
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Eye Exposure"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_eye
+msgid "Eye Exposure (workers)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_eye
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye
 msgid "Eye contact"
 msgstr "Szembe kerülés"
 
@@ -2174,7 +3033,7 @@ msgid "Eye damage/irritation details"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye_protection
 msgid "Eye/Face protection"
 msgstr "Szem-/arcvédelem"
 
@@ -2234,9 +3093,32 @@ msgid "Fight fire with normal precautions from a reasonable distance."
 msgstr "Tűzoltás normál óvintézkedésekkel ésszerű távolságból."
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__finland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__finland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__finland
+msgid "Finland"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.H208
+msgid ""
+"Fire hazard; increased risk of explosion if desensitising agent is reduced."
+msgstr ""
+"Tűz veszélye; fokozott robbanásveszély a deszenzibilizáló szer csökkenésével."
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H204
 msgid "Fire or projection hazard."
 msgstr "Tűz vagy kivetés veszélye."
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.H207
+msgid ""
+"Fire or projection hazard; increased risk of explosion if desensitising "
+"agent is reduced."
+msgstr ""
+"Tűz vagy kivetés veszélye; fokozott robbanásveszély a deszenzibilizáló szer "
+"csökkenésével."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_1
@@ -2248,9 +3130,18 @@ msgstr ""
 "megfelelően kell megsemmisíteni. "
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__fire_hazards
 msgid "Fire special hazards"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.H206
+msgid ""
+"Fire, blast or projection hazard; increased risk of explosion if "
+"desensitising agent is reduced."
+msgstr ""
+"Tűz, robbanás vagy kivetés veszélye; fokozott robbanásveszély a "
+"deszenzibilizáló szer csökkenésével."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_general_1
@@ -2366,17 +3257,14 @@ msgstr "Bőrérzékenység esetén: Nem találhatók releváns adatok."
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "For the full text of the H-Statements mentioned\n"
+#| "                                    in this Section, see Section 16."
 msgid ""
-"For the full text of the H-Statements mentioned\n"
-"                                    in this Section, see Section 16."
+"For the full text of the H-Statements mentioned in this Section, see Section "
+"16."
 msgstr "A figyemeztető H-mondatok teljes szövege: lsd a 16. szakaszt."
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid ""
-"For the full text of the H-Statements mentioned in this Section,\n"
-"                                see Section 16."
-msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.STOST_11
@@ -2409,6 +3297,25 @@ msgid "Formaldehyde."
 msgstr "Formaldehid."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_2
+msgid "Forms peroxides with: air."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__france
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__france
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__france
+#, fuzzy
+#| msgid "Cancel"
+msgid "France"
+msgstr "Mégsem"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__freshwater
+msgid "Freshwater"
+msgstr ""
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Full text of H-Statements referred to under sections 2 to 15."
 msgstr "A H-nyilatkozatok teljes szövege a 2–15."
@@ -2434,14 +3341,8 @@ msgid "GHS Labelling"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model,name:safety_datasheet.model_sds_pictogram
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__pictogram
 msgid "GHS Pictogram"
-msgstr ""
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_ghs_pictogram_tree
-msgid "GHS Pictograms"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2470,7 +3371,7 @@ msgid "Gastrointestinal tract."
 msgstr "Emésztőrendszer."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__general
 msgid "General"
 msgstr ""
 
@@ -2486,16 +3387,23 @@ msgstr "Általános tanács:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.hazard.class,h_class:safety_datasheet.Muta_1A
 #: model:sds.hazard.class,h_class:safety_datasheet.Muta_1B
 #: model:sds.hazard.class,h_class:safety_datasheet.Muta_2
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Germ cell mutagenicity"
 msgstr "Csírasejt-mutagenitás"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Germ cell mutagenicity details:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__germany
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__germany
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__germany
+msgid "Germany"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2545,14 +3453,31 @@ msgstr ""
 "nagyban függ a kesztyű anyagának speciális összetételétől is."
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__greece
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__greece
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__greece
+msgid "Greece"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P240
 msgid "Ground/bond container and receiving equipment."
 msgstr "A tárolóedényt és a fogadóedényt le kell földelni és át kell kötni."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_931-274-8
+msgid "HDI oligomers, isocyanurate"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_3
 msgid "Half maximal inhibitory concentration"
 msgstr "Fél maximális gátló koncentráció"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_store_products_11
+msgid "Halogens."
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_8
@@ -2645,8 +3570,17 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__code
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_hazard_statement_search
 msgid "Hazard Code"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_pictogram__category__hazard
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Hazard Pictograms"
+msgstr "Veszélyt jelző piktogram(ok)"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_hazard_statement
@@ -2667,17 +3601,29 @@ msgid "Hazard Statements:"
 msgstr "Figyelmeztető mondatok"
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_hazard_statement_search
-msgid "Hazard code"
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Hazard for Air"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Hazard pictograms"
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Hazard for Aquatic Organisms"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Hazard for Predators"
 msgstr "Veszélyt jelző piktogram(ok)"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Hazard for Terrestrial Organism"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__haz_reaction
 msgid "Hazardous Reaction"
 msgstr ""
 
@@ -2731,6 +3677,20 @@ msgid "Hexamethylene diisocyanate"
 msgstr "Hexametilén-diizocianát"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS28182-81-2
+#, fuzzy
+#| msgid "Hexamethylene diisocyanate"
+msgid "Hexamethylene diisocyanate, oligomers"
+msgstr "Hexametilén-diizocianát"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.avoid_condition_4
+#, fuzzy
+#| msgid "Auto-ignition temperature"
+msgid "High temperature."
+msgstr "Öngyulladási hőmérséklet"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_7
 msgid "High volume water jet."
 msgstr "Nagy térfogatú vízsugár."
@@ -2750,8 +3710,35 @@ msgstr ""
 "minőségét."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.avoid_condition_5
+msgid "Humidity."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__hungary
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__hungary
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__hungary
+msgid "Hungary"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "IATA"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "IATA / ICAO"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_3
 msgid "IC50"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_iata_notes
+msgid "ICAO - IATA additional notes"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2763,10 +3750,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__id
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__id
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__id
@@ -2885,6 +3874,17 @@ msgid "IF exposed or concerned: Get medical advice/attention."
 msgstr "Expozíció vagy annak gyanúja esetén: Orvosi ellátást kell kérni."
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "IMDG"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_imdg_notes
+msgid "IMDG additional notes"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_4
 msgid "IMO"
 msgstr ""
@@ -2892,6 +3892,13 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__IUPACname
 msgid "IUPAC Name"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__iceland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__iceland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__iceland
+msgid "Iceland"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2929,6 +3936,13 @@ msgstr "Ha a szemirritáció nem múlik el:"
 #: model:sds.precautionary.statement,description:safety_datasheet.P337_P313
 msgid "If eye irritation persists: Get medical advice/ attention."
 msgstr "Ha a szemirritáció nem múlik el: orvosi ellátást kell kérni."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_skin_11
+#, fuzzy
+#| msgid "If effects occur, consult a physician."
+msgid "If irritation persists, consult a physician."
+msgstr "Ha tünetek jelentkeznek, forduljon orvoshoz."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_8
@@ -3089,6 +4103,15 @@ msgstr ""
 "oltását robbanásveszély miatt távolból kell végezni."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_9
+#, fuzzy
+#| msgid "It can react with aluminum to produce hydrogen."
+msgid ""
+"In contact with reactive metals (as steel to carbon & aluminum) may produce "
+"hydrogen."
+msgstr "Alumíniummal reakcióba lép hidrogént fejlesztve. "
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H260
 msgid ""
 "In contact with water releases flammable gases which may ignite "
@@ -3129,7 +4152,7 @@ msgstr "Az in vitro genetikai toxicitási vizsgálatok szerint negatívak."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_10_5
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__incompatible
 msgid "Incompatible materials"
 msgstr ""
 
@@ -3145,13 +4168,18 @@ msgid "Individual protection measures"
 msgstr "Egyéni óvintézkedések, például egyéni védőeszközök"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Information about the Safety Data Sheet:"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_2
 msgid "Information on other hazards"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_ingestion
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__ingestion
 msgid "Ingestion"
 msgstr "Lenyelés"
 
@@ -3162,8 +4190,15 @@ msgstr "Lenyelés:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_inhalation
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__inhalation
 msgid "Inhalation"
+msgstr "Belélegzés"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#, fuzzy
+#| msgid "Inhalation"
+msgid "Inhalation Exposure"
 msgstr "Belélegzés"
 
 #. module: safety_datasheet
@@ -3172,9 +4207,15 @@ msgid "Inhalation:"
 msgstr "Belélegzés:"
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:561
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "Initial version"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_3_distributor_selector
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "Insert National Distributor contact"
 msgstr ""
 
 #. module: safety_datasheet
@@ -3248,6 +4289,11 @@ msgid "Insert properties"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_10_1_component
+msgid "Insert reactivity of the components"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
 msgid "Insert reproductive toxicity details"
 msgstr ""
@@ -3268,9 +4314,26 @@ msgid "Insert toxicity details"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_fw
+msgid "Intermittent releases (freshwater)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_mw
+msgid "Intermittent releases (marine water)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_4
 msgid "International Maritime Organization"
 msgstr "Nemzetközi Tengerészeti Szervezet"
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__ireland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__ireland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__ireland
+msgid "Ireland"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_4
@@ -3303,6 +4366,13 @@ msgid "It may be effective to slowly dilute the spread substance with water."
 msgstr "Hatékony lehet a kiömlött anyag vízzel történő lassú hígítása."
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__italy
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__italy
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__italy
+msgid "Italy"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P210
 msgid ""
 "Keep away from heat, hot surfaces, sparks, open flames and other ignition "
@@ -3315,11 +4385,6 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.sentence_storage_9
 msgid "Keep away from heat, sparks and open flames."
 msgstr "Tartsa távol hőtől, szikrától és nyílt lángtól."
-
-#. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.sentence_storage_12
-msgid "Keep away from incompatible products."
-msgstr "Tartsa távol inkompatibilis termékektől."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_18
@@ -3432,6 +4497,27 @@ msgid "Label pictograms"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_adr_pictograms
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Label pictograms (ADR)"
+msgstr "Veszélyt jelző piktogram(ok)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_iata_pictograms
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Label pictograms (IATA)"
+msgstr "Veszélyt jelző piktogram(ok)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_imdg_pictograms
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Label pictograms (IMDG)"
+msgstr "Veszélyt jelző piktogram(ok)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_select_lang_report_wizard__lang
 msgid "Language"
 msgstr "Nyelv"
@@ -3445,10 +4531,12 @@ msgstr "Nyelv"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram____last_update
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation____last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria____last_update
@@ -3466,10 +4554,12 @@ msgstr "Legutóbb frissítve"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__write_uid
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__write_uid
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__write_uid
@@ -3487,10 +4577,12 @@ msgstr "Legutóbb frissítette"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_class__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__write_date
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__write_date
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation_criteria__write_date
@@ -3499,6 +4591,13 @@ msgstr "Legutóbb frissítette"
 #: model:ir.model.fields,field_description:safety_datasheet.field_select_lang_report_wizard__write_date
 msgid "Last Updated on"
 msgstr "Legutóbb frissítve "
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__latvia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__latvia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__latvia
+msgid "Latvia"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P377
@@ -3533,6 +4632,13 @@ msgid "Lethal Dose to 50% of a test population (Median Lethal Dose)"
 msgstr "Letális dózis a vizsgált populáció 50 %-ánál (közepesen letális dózis)"
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__liechtenstein
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__liechtenstein
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__liechtenstein
+msgid "Liechtenstein"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__url
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__url
 msgid "Link URL"
@@ -3541,6 +4647,15 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.lithum_carbonate
 msgid "Lithium carbonate"
+msgstr "Lítium-karbonát"
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__lithuania
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__lithuania
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__lithuania
+#, fuzzy
+#| msgid "Lithium carbonate"
+msgid "Lithuania"
 msgstr "Lítium-karbonát"
 
 #. module: safety_datasheet
@@ -3574,14 +4689,78 @@ msgstr ""
 "nemzeti előírások vonatkozhatnak."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_ln_lcl_dermal
+msgid "Long-term local dermal effect"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_ln_lcl_dermal
+msgid "Long-term local dermal effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_ln_lcl_inhalation
+msgid "Long-term local inhalation effect"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_ln_lcl_inhalation
+msgid "Long-term local inhalation effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_ln_sys_dermal
+msgid "Long-term systemic dermal effect"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_ln_sys_dermal
+msgid "Long-term systemic dermal effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_ln_sys_inhalation
+msgid "Long-term systemic inhalation effect"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_ln_sys_inhalation
+msgid "Long-term systemic inhalation effect (workers)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_ln_sys_oral
+msgid "Long-term systemic oral effect"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
 msgstr "Alsó és felső robbanási határ"
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__luxembourg
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__luxembourg
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__luxembourg
+msgid "Luxembourg"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P407
 msgid "Maintain air gap between stacks/pallets."
 msgstr "A rakatok vagy raklapok között térközt kell hagyni."
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__malta
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__malta
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__malta
+msgid "Malta"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__marinew
+msgid "Marine water"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_7
@@ -3677,6 +4856,16 @@ msgid "May cause drowsiness or dizziness."
 msgstr "Álmosságot vagy szédülést okozhat."
 
 #. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_380
+msgid "May cause endocrine disruption in humans."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_430
+msgid "May cause endocrine disruption in the environment."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H271
 msgid "May cause fire or explosion; strong oxidiser."
 msgstr "Tüzet vagy robbanást okozhat; erősen oxidáló hatású."
@@ -3755,6 +4944,11 @@ msgid "May form explosive peroxides."
 msgstr "Robbanásveszélyes peroxidokat képezhet."
 
 #. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.H232
+msgid "May ignite spontaneously if exposed to air."
+msgstr "Levegővel érintkezve öngyulladásra hajlamos."
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H272
 msgid "May intensify fire; oxidiser."
 msgstr "Fokozhatja a tűz intenzitását; oxidáló hatású."
@@ -3790,6 +4984,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_3_2_selector
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_3_type__mixture
 msgid "Mixture"
 msgstr ""
 
@@ -3805,7 +5000,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__mobility
 msgid "Mobility in soil"
 msgstr ""
 
@@ -3830,7 +5025,7 @@ msgid "Move person to fresh air."
 msgstr "Vigye az érintett személyt friss levegőre."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__mutagenicity
 msgid "Mutagenicity"
 msgstr ""
 
@@ -3850,18 +5045,41 @@ msgid "Name"
 msgstr "Név"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Natriummetasilicat_Pentahydrat
-msgid "Natriummetasilicat Pentahydrat"
-msgstr "Nátrium-metaszilikát-pentahidrát"
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.distributor_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_distributor_tree
+msgid "National Distributor"
+msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:59
+#: model:ir.actions.act_window,name:safety_datasheet.action_distributor
+#: model:ir.model,name:safety_datasheet.model_sds_distributor
+#: model:ir.ui.menu,name:safety_datasheet.distributor_tree
+msgid "National Distributors"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__netherlands
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__netherlands
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__netherlands
+msgid "Netherlands"
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "New SDS"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:539
+#: model:sds.sentences,name:safety_datasheet.sentence_store_products_10
+#, fuzzy
+#| msgid "Oxidizing agents."
+msgid "Nitrosating agents."
+msgstr "Oxidálószerek. "
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "No Chemical Safety Assessment has been carried out for this substance/"
@@ -3880,7 +5098,7 @@ msgid "No adverse effects expected."
 msgstr "Nem várható káros hatás."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:333
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #: model:sds.sentences,name:safety_datasheet.bioaccumulative_2
 #: model:sds.sentences,name:safety_datasheet.mobility_2
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_1
@@ -3894,8 +5112,8 @@ msgid "No expected damaging effects to aquatic organisms."
 msgstr "Nem ártalmas a vízi szervezetekre. "
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.sentences,name:safety_datasheet.persistence_4
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "No information available."
 msgstr "Nincs rendelkezésre álló információ."
 
@@ -3912,6 +5130,13 @@ msgstr "Semmi különleges."
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "No other information available."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_11
+msgid ""
+"No particular dangers of reaction with other substances under normal "
+"conditions of use."
 msgstr ""
 
 #. module: safety_datasheet
@@ -3941,9 +5166,9 @@ msgid "No special protective measures required."
 msgstr "Nincs szükség különleges intézkedésre."
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.sentences,name:safety_datasheet.respiratory_5
 #: model:sds.sentences,name:safety_datasheet.skin_protection_14
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "No specific indication."
 msgstr "Nincs konkrét jelzés."
 
@@ -3953,13 +5178,17 @@ msgid "No specific measures."
 msgstr "Nincsenek konkrét intézkedések."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_1_b_selector
+msgid "Non Hazardous mixture with hazardous components"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_6
 msgid "Non acid-proof metals (such as aluminium, copper and iron)."
 msgstr "Nem saválló fémek (például alumínium, réz és vas)."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:450
-#: code:addons/safety_datasheet/models/datasheet.py:537
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "None available."
 msgstr ""
@@ -3980,12 +5209,19 @@ msgid "None."
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__norway
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__norway
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__norway
+msgid "Norway"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.thermal_1
 msgid "Not Available."
 msgstr "Nem elérhető. "
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:521
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "Not Hazardous to the environment."
 msgstr ""
@@ -3996,14 +5232,13 @@ msgid "Not a hazardous substance or mixture."
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:99
-#: code:addons/safety_datasheet/models/regulation.py:28
+#: code:addons/safety_datasheet/models/regulation.py:0
 #, python-format
 msgid "Not applicable."
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:129
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "Not available."
 msgstr ""
@@ -4021,10 +5256,8 @@ msgid "Not classified as a reactivity hazard."
 msgstr "Nincs besorolva reaktivitási veszélyként."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:515
-#: code:addons/safety_datasheet/models/datasheet.py:516
-#: code:addons/safety_datasheet/models/datasheet.py:518
-#: code:addons/safety_datasheet/models/datasheet.py:520
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #, python-format
 msgid "Not regulated for transport."
 msgstr ""
@@ -4042,13 +5275,32 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
-msgid "Occupational exposure limit (TLV)."
-msgstr ""
+#, fuzzy
+#| msgid "TLV Occupational exposure limit: Not available"
+msgid "Occupational exposure limit of the entire mixture (TLV)."
+msgstr "TLV Foglalkozási expozíciós határérték: Nem áll rendelkezésre"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_3
 msgid "Odour"
 msgstr "Szag"
+
+#. module: safety_datasheet
+#: model:ir.model.constraint,message:safety_datasheet.constraint_sds_distributor_country
+msgid "Only one National Distributor per country is allowed."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.constraint,message:safety_datasheet.constraint_sds_poison_centre_country
+msgid ""
+"Only one Poison Centre text per country is allowed. You can put multiple "
+"lines in this field"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+msgid "Oral Exposure"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Org_Perox_A
@@ -4070,12 +5322,19 @@ msgid "Organisation for Economic Co-operation and Development"
 msgstr "Gazdasági Együttműködési és Fejlesztési Szervezet"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-633-2
+#, fuzzy
+#| msgid "Pyrophoric solid"
+msgid "Orthophosphoric acid"
+msgstr "Piroforos szilárd anyag"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_OtherHazards
 msgid "Other Hazards"
 msgstr "Egyéb veszélyek"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__adverse
 msgid "Other adverse"
 msgstr ""
 
@@ -4147,11 +5406,17 @@ msgid "PBT"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__pbtvpvb
 msgid "PBT and vPvB assessment"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "PBT:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pnec
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec
 msgid "PNEC"
 msgstr ""
@@ -4159,11 +5424,6 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "PNEC Exposure limit values: Not available"
-msgstr ""
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PVT:"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4187,7 +5447,7 @@ msgid "Passes OECD test(s) for ready biodegradability."
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__persistence
 msgid "Persistence"
 msgstr ""
 
@@ -4207,7 +5467,7 @@ msgid "Persistent, Bioaccumulative and Toxic substance"
 msgstr "Perzisztens, bioakkumulatív és mérgező anyag"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__protective
 msgid "Personal equipment"
 msgstr ""
 
@@ -4219,6 +5479,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_6_1_1
 msgid "Personal precautions for non-emergency personnel"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS12788-93-1
+msgid "Phosphoric acid, butyl ester"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4248,6 +5513,13 @@ msgid "Pick up and transfer to properly labelled containers."
 msgstr "Vegye fel és helyezze át megfelelően címkézett edényekbe."
 
 #. module: safety_datasheet
+#: model:ir.model,name:safety_datasheet.model_sds_pictogram
+#, fuzzy
+#| msgid "Hazard pictograms"
+msgid "Pictogram"
+msgstr "Veszélyt jelző piktogram(ok)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__description
 msgid "Pictogram description"
 msgstr ""
@@ -4260,6 +5532,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_pictograms
 #: model:ir.ui.menu,name:safety_datasheet.pictogram_tree
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_pictogram_tree
 msgid "Pictograms"
 msgstr ""
 
@@ -4269,8 +5542,35 @@ msgid "Place the recovered product in a closed container."
 msgstr "Helyezze a visszanyert terméket zárt tartályba."
 
 #. module: safety_datasheet
+#: model:ir.actions.act_window,name:safety_datasheet.action_poisoncentre
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.poisoncentre_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_poisoncentre_tree
+msgid "Poison Centre"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model,name:safety_datasheet.model_sds_poison_centre
+#: model:ir.ui.menu,name:safety_datasheet.poisoncentre_tree
+msgid "Poison Centres"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__poland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__poland
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__poland
+msgid "Poland"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.persistence_1
 msgid "Polymer component: Not readily biodegradable."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__portugal
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__portugal
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__portugal
+msgid "Portugal"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4320,6 +5620,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
 msgid "Predicted No Effect Concentration (PNEC)"
 msgstr ""
 
@@ -4350,7 +5651,7 @@ msgstr ""
 "Akadályozza meg a termék csatornába, felszíni vizekbe és talajvízbe jutását."
 
 #. module: safety_datasheet
-#: selection:sds.precautionary.statement,mode:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_precautionary_statement__mode__p2
 msgid "Prevention"
 msgstr ""
 
@@ -4368,6 +5669,13 @@ msgstr "Nyomtatás"
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_1
 msgid "Produces Carbon oxides."
+msgstr "Szén-oxidokat termel."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_2bis
+#, fuzzy
+#| msgid "Produces Carbon oxides."
+msgid "Produces Nitrogen oxides."
 msgstr "Szén-oxidokat termel."
 
 #. module: safety_datasheet
@@ -4411,6 +5719,18 @@ msgid "Product residues to be considered non-hazardous waste."
 msgstr "A termékmaradványokat nem kell veszélyes hulladéknak tekinteni."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_3
+msgid "Product slowly corrodes copper, aluminum, zinc and galvanized surfaces."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_3_type
+#, fuzzy
+#| msgid "Product"
+msgid "Product type"
+msgstr "Termék"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.toxicity_6
 msgid ""
 "Prolonged skin contact is unlikely to result in absorption of harmful "
@@ -4423,6 +5743,27 @@ msgstr ""
 #: model:sds.chemical.substance,name:safety_datasheet.natural_cement
 msgid "Prompt natural quick-setting cement"
 msgstr "Gyors természetes kötésű gyors cement"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_2
+#, fuzzy
+#| msgid "14.2. UN proper shipping name"
+msgid "Proper shipping name (ADR)"
+msgstr "14.2. Az ENSZ szerinti megfelelő szállítási megnevezés"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_2_iata
+#, fuzzy
+#| msgid "14.2. UN proper shipping name"
+msgid "Proper shipping name (IATA)"
+msgstr "14.2. Az ENSZ szerinti megfelelő szállítási megnevezés"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_2_imdg
+#, fuzzy
+#| msgid "14.2. UN proper shipping name"
+msgid "Proper shipping name (IMDG)"
+msgstr "14.2. Az ENSZ szerinti megfelelő szállítási megnevezés"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_property_line__name_id
@@ -4493,6 +5834,11 @@ msgid "Pyrophoric solid"
 msgstr "Piroforos szilárd anyag"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.quartz
+msgid "Quartz (SiO2)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_9
 msgid "REACH"
 msgstr ""
@@ -4526,10 +5872,25 @@ msgid ""
 msgstr "5-klór-2-metil-1,2-tiazol-3 (2H) -on és  2-metil-1,2-tiazol-3 (2H) -on"
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_4
+msgid ""
+"Reaction with peroxides may result in violent decomposition of peroxide "
+"possibly creating an explosion."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__reactivity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_10_1
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__reactivity
 msgid "Reactivity"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_8
+#, fuzzy
+#| msgid "Reacts violently with water."
+msgid "Reacts violently with strong alkalis."
+msgstr "Vízzel hevesen reagál."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_014
@@ -4537,9 +5898,35 @@ msgid "Reacts violently with water."
 msgstr "Vízzel hevesen reagál."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_5
+#, fuzzy
+#| msgid "Contact with acids liberates toxic gas."
+msgid "Reacts with acids: Heat released."
+msgstr "Savval érintkezve mérgező gázok képződnek."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_8a
+#, fuzzy
+#| msgid "Can react with strong alkalis."
+msgid "Reacts with alkalies."
+msgstr "Erős lúgokkal reagálhat. "
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_9
+msgid ""
+"Reacts with water releasing large amounts of carbon dioxide which may cause "
+"pressure build-up in confined spaces."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.reactivity_12
+msgid "Reacts with water, acids, alcohols, amines, bases and oxidants."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P103
-msgid "Read label before use."
-msgstr "Használat előtt olvassa el a címkét."
+msgid "Read carefully and follow all instructions."
+msgstr "Olvassa el figyelmesen és kövesse az összes utasítást."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_11
@@ -4550,6 +5937,15 @@ msgstr "A termék csomagolásának tisztítására ajánlott tisztítószer: ví
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_10
 msgid "Recover the resulting slurry."
 msgstr "A keletkezett iszapot nyerje vissza. "
+
+#. module: safety_datasheet
+#: model:sds.precautionary.statement,description:safety_datasheet.P503
+msgid ""
+"Refer to manufacturer/ supplier/… for information on disposal/recovery/ "
+"recycling"
+msgstr ""
+"A hulladékanyag visszanyeréséhez/újrahasznosításához a gyártótól/"
+"forgalmazótól/… kell tájékoztatást kérni."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P502
@@ -4570,6 +5966,7 @@ msgstr ""
 #: model:ir.ui.menu,name:safety_datasheet.regulation_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.regulation_view_form
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_regulation_tree
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_regulatory_information_tree
 msgid "Regulation"
 msgstr ""
 
@@ -4701,18 +6098,11 @@ msgid "Regulations"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_regulation
-msgid "Regulatory Information"
-msgstr ""
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
-msgid "Regulatory Information:"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_regulatory_information
-msgid "Regulatory information"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_15_regulation
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.regulatory_information_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "Regulatory Information"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4739,7 +6129,7 @@ msgid "Relevant information"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:524
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "Relevant information in other sections has to be considered."
 msgstr ""
@@ -4796,16 +6186,16 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Reproductive details:"
-msgstr ""
+msgstr "A reproduktív toxicitás részletei:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__reproductive
 #: model:sds.hazard.class,h_class:safety_datasheet.Lact
 #: model:sds.hazard.class,h_class:safety_datasheet.Repr_1A
 #: model:sds.hazard.class,h_class:safety_datasheet.Repr_1B
 #: model:sds.hazard.class,h_class:safety_datasheet.Repr_2
-#: selection:sds.sentences,category:0
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Reproductive toxicity"
 msgstr "Reprodukciós toxicitás"
 
@@ -4823,16 +6213,16 @@ msgstr "Légzőszervi vagy bőrszenzibilizáció"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_text
 msgid "Respiratory or skin sensitization details"
-msgstr ""
+msgstr "A légúti vagy bőrszenzibilizáció részletei"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Respiratory or skin sensitization details:"
-msgstr ""
+msgstr "A légúti vagy bőrszenzibilizáció részletei:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_4
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__respiratory
 msgid "Respiratory protection"
 msgstr "A légutak védelme"
 
@@ -4851,18 +6241,22 @@ msgid "Respiratory protection:"
 msgstr "A légutak védelme:"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__sensitization
 msgid "Respiratory/Skin sensitization"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_1
+#: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_2
+#: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_3
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Sens_1
+#: model:sds.hazard.class,h_class:safety_datasheet.Skin_Sens_2
+#: model:sds.hazard.class,h_class:safety_datasheet.Skin_Sens_3
 msgid "Respiratory/skin sensitization"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.precautionary.statement,mode:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_precautionary_statement__mode__p3
 msgid "Response"
 msgstr ""
 
@@ -4883,6 +6277,7 @@ msgstr ""
 "A szennyezett mosóvizet össze kell gyűjteni és hulladékként elhelyezni."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__last_update
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__revision_date
 msgid "Revision date"
 msgstr ""
@@ -4932,8 +6327,20 @@ msgid "Risk of explosion if heated under confinement."
 msgstr "Zárt térben hő hatására robbanhat."
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__romania
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__romania
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__romania
+msgid "Romania"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_10
 msgid "SDS"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.actions.report,print_report_name:safety_datasheet.safety_sds_report
+msgid "SDS - %s - %s' % (object.product_id.name, doc_lang)"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5114,7 +6521,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "STOT RE details:"
-msgstr ""
+msgstr "STOT IE részletei:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -5122,18 +6529,18 @@ msgid "STOT SE details:"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__handling
 msgid "Safe handling"
 msgstr ""
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__storage
 msgid "Safe storage"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.legend,description:safety_datasheet.legend_10
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Safety Data Sheet"
 msgstr "Biztonsági Adatlap"
 
@@ -5154,6 +6561,11 @@ msgstr ""
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_210
 msgid "Safety data sheet available on request."
 msgstr "Kérésre biztonsági adatlap kapható."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sec_poisoning
+msgid "Secondary poisoning"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_note
@@ -5310,6 +6722,16 @@ msgstr ""
 "helyi vagy nemzetközi követelményekről szóló információkat. "
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_fw
+msgid "Sediment (freshwater)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_mw
+msgid "Sediment (marine water)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_10
 msgid ""
 "See Engineering measures under EXPOSURE CONTROLS/PERSONAL PROTECTION section."
@@ -5329,13 +6751,13 @@ msgstr ""
 "és a hulladékkezelés során."
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:170
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "See sections: 7, 8, 11, 12 and 13."
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:192
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "See the technical data sheet on this product for further information."
 msgstr ""
@@ -5415,15 +6837,20 @@ msgstr "Sorszám"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.hazard.class,h_class:safety_datasheet.Eye_Dam_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Eye_Irrit_2
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Serious eye damage/eye irritation"
 msgstr "Súlyos szemkárosodás/szemirritáció"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Serious eye damage/eye irritation details:"
+msgstr "Súlyos szemkárosodás/szemirritáció részletek:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stp
+msgid "Sewage treatment plant (STP)"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5442,6 +6869,11 @@ msgid "SignalWords"
 msgstr "Figyelmeztetések"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Sodium_silicate
+msgid "Silicic acid, sodium salt"
+msgstr "Kovasav, nátriumsó"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_3_1
 msgid "Skin Protection - Hand"
 msgstr "Bőrvédelem - kézvédelem"
@@ -5458,7 +6890,7 @@ msgstr "Bőrvédelem:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_skin
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin
 msgid "Skin contact"
 msgstr "Bőrrel való érintkezés"
 
@@ -5468,33 +6900,33 @@ msgid "Skin contact:"
 msgstr "Bőrrel való érintkezés:"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_corrosion
 msgid "Skin corrosion"
-msgstr ""
+msgstr "Bőrkorrózió"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Corr_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Corr_A
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Corr_B
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Corr_C
 #: model:sds.hazard.class,h_class:safety_datasheet.Skin_Irrit_2
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Skin corrosion/irritation"
 msgstr "Bőrkorrózió/bőrirritáció"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_text
 msgid "Skin corrosion/irritation details"
-msgstr ""
+msgstr "Bőrkorrózió/bőrirritáció részletei"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Skin corrosion/irritation details:"
-msgstr ""
+msgstr "Bőrkorrózió/bőrirritáció részletei:"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_protection
 msgid "Skin protection"
 msgstr ""
 
@@ -5502,6 +6934,20 @@ msgstr ""
 #: model:sds.pictogram,description:safety_datasheet.GHS06_skull
 msgid "Skull and crossbones"
 msgstr "Mérgező anyag"
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__slovakia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__slovakia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__slovakia
+msgid "Slovakia"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__slovenia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__slovenia
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__slovenia
+msgid "Slovenia"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_9
@@ -5517,9 +6963,21 @@ msgid "Soak up with inert absorbent material."
 msgstr "Inert nedvszívó anyaggal itassa fel."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__soil
+msgid "Soil"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_13
 msgid "Solubility"
 msgstr "Oldhatóság"
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__spain
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__spain
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__spain
+msgid "Spain"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_2
@@ -5544,7 +7002,7 @@ msgid "Specific Target Organ Systemic Toxicity (Single Exposure)"
 msgstr "Egyetlen expozíció utáni célszervi toxicitás (STOT)"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
 msgid "Specific Target Toxicity"
 msgstr ""
 
@@ -5554,7 +7012,7 @@ msgid "Specific end use"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:125
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
 "Specific information on symptoms and effects caused by the product are "
@@ -5585,13 +7043,25 @@ msgid "Specific treatment is urgent (see ... on this label)."
 msgstr "Sürgős szakellátás szükséges (lásd … a címkén)."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_selector
+msgid "Specify ADR/RID/ADN/IMDG/IATA transport regulation"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_14
 msgid "Spilled substance increases risk of slipping."
 msgstr "A kiömlött anyag csúszásveszélyt jelent."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stability
 msgid "Stability"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.stability_3
+msgid ""
+"Stability in alcohol, benzene, diglycolmonomethylether, ether, kerosene, "
+"acetone, carbon tetrachloride, chlorobenzene."
 msgstr ""
 
 #. module: safety_datasheet
@@ -5610,6 +7080,11 @@ msgid "Statement"
 msgstr "Kivonat"
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_11
+msgid "Stay upwind."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P376
 msgid "Stop leak if safe to do so."
 msgstr "Meg kell szüntetni a szivárgást, ha ez biztonságosan megtehető."
@@ -5620,7 +7095,7 @@ msgid "Stop the leak if the operation is safe."
 msgstr "Akadályozza meg a szivárgást, ha ez biztonságosan megtehető. "
 
 #. module: safety_datasheet
-#: selection:sds.precautionary.statement,mode:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_precautionary_statement__mode__p4
 msgid "Storage"
 msgstr ""
 
@@ -5706,7 +7181,7 @@ msgid "Store locked up."
 msgstr "Elzárva tárolandó."
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__store_products
 msgid "Store products"
 msgstr ""
 
@@ -5721,9 +7196,38 @@ msgid "Strong heating."
 msgstr "Erős melegítés. "
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.avoid_condition_6
+#, fuzzy
+#| msgid "Strong heating."
+msgid "Strong light."
+msgstr "Erős melegítés. "
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_1
 msgid "Strong oxidizing agents."
 msgstr "Erős oxidálószerek. "
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_441
+msgid ""
+"Strongly accumulates in the environment and living organisms including in "
+"humans."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_3_type__substance
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
+#, fuzzy
+#| msgid "3.1 Substances:"
+msgid "Substance"
+msgstr "3.1 Anyagok:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
+#, fuzzy
+#| msgid "3.1 Substances:"
+msgid "Substance name"
+msgstr "3.1 Anyagok:"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Met_Corr_1
@@ -5738,6 +7242,11 @@ msgid "Substance or mixture which in contact with water emits flammable gas"
 msgstr ""
 "Olyan anyagok vagy keverékek, amely vízzel érintkezve gyúlékony gázt "
 "bocsátanak ki. "
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Substance with a community workplace exposure limit. <br/>"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_3_1
@@ -5791,6 +7300,16 @@ msgstr ""
 "meggyőzően bizonyított, hogy más expozíciós útvonal nem okozza a veszélyt >."
 
 #. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_381
+msgid "Suspected of causing endocrine disruption in humans."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.hazard.statement,name:safety_datasheet.EUH_431
+msgid "Suspected of causing endocrine disruption in the environment."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H341
 msgid ""
 "Suspected of causing genetic defects <state route of exposure if it is "
@@ -5831,14 +7350,36 @@ msgid "Suspected of damaging the unborn child."
 msgstr "Feltehetően károsítja a születendő gyermeket. "
 
 #. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__sweden
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__sweden
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__sweden
+msgid "Sweden"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.stability_2
+msgid ""
+"TDI reacts with water to form predominantly solid and insoluble polyureas."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv
 msgid "TLV"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "TLV Occupational exposure limit: Not available"
+#, fuzzy
+#| msgid "TLV Occupational exposure limit: Not available"
+msgid "TLV Occupational exposure limit of the entire mixture: Not available"
 msgstr "TLV Foglalkozási expozíciós határérték: Nem áll rendelkezésre"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_tlv
+#, fuzzy
+#| msgid "Toxicity details"
+msgid "TLV details"
+msgstr "Toxicitás részletei"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_11
@@ -5908,7 +7449,6 @@ msgstr ""
 "Tegye meg a szükséges óvintézkedéseket az elektrosztatikus kisülések ellen."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Tetrapotassium_pyrophosphate
 #: model:sds.chemical.substance,name:safety_datasheet.potassium_pyrophosphate
 msgid "Tetrapotassium pyrophosphate"
 msgstr "Tetrakálium-pirofoszfát"
@@ -5942,8 +7482,35 @@ msgid "The product can react with acids."
 msgstr "A termék reagálhat savakkal."
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid ""
+"The product contains dangerous substances in a concentration such as to be "
+"declared in section 3"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_3
 msgid "The product is to be considered as dangerous for the environment ."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.haz_reaction_12
+msgid ""
+"The reaction is slow with cold or warm water (<50 °C), \n"
+"                with hot water or steam the reaction is faster, producing "
+"carbon dioxide \n"
+"                which causes an increase in pressure."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.endocrine_2
+msgid ""
+"The substance/mixture does not contain any components considered to have "
+"endocrine disrupting \n"
+"                properties within the meaning of Article 57(f) of REACH or "
+"Commission Delegated Regulation (EU) 2017/2100 or \n"
+"                Commission Regulation (EU) 2018/605 at levels of 0.1% or "
+"higher."
 msgstr ""
 
 #. module: safety_datasheet
@@ -5959,7 +7526,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_5
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__thermal
 msgid "Thermal hazards"
 msgstr "Hőveszély"
 
@@ -5970,11 +7537,17 @@ msgstr "Hőveszély:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+#, fuzzy
+#| msgid ""
+#| "Classification and procedure used to derive the classification for\n"
+#| "                                    mixtures\n"
+#| "                                    according to Regulation (EC) No "
+#| "1272/2008"
 msgid ""
-"This mixture does not meet the criteria for classification in accordance "
-"with\n"
-"                                Regulation (EC) No 1272/2008."
-msgstr ""
+"This mixture does not meet the criteria for classification in\n"
+"                                    accordance with Regulation (EC) No "
+"1272/2008."
+msgstr "A keverék osztályozása: osztályozás az 1272/2008/EK rendelet szerint"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_5
@@ -6073,7 +7646,7 @@ msgstr "Mérgező a vízi élővilágra, hosszan tartó károsodást okoz."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__ecotoxicity
 msgid "Toxicity"
 msgstr ""
 
@@ -6088,9 +7661,30 @@ msgid "Toxicity details:"
 msgstr "Toxicitás részletei:"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3
-msgid "Transport hazard class(es)"
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "Translate default values"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3
+#, fuzzy
+#| msgid "14.3. Transport hazard class(es)"
+msgid "Transport hazard class(es) (ADR)"
+msgstr "14.3 Szállítási veszélyességi osztály(ok)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_iata
+#, fuzzy
+#| msgid "14.3. Transport hazard class(es)"
+msgid "Transport hazard class(es) (IATA)"
+msgstr "14.3 Szállítási veszélyességi osztály(ok)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_imdg
+#, fuzzy
+#| msgid "14.3. Transport hazard class(es)"
+msgid "Transport hazard class(es) (IMDG)"
+msgstr "14.3 Szállítási veszélyességi osztály(ok)"
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.Trisodium_nitrilotriacetate
@@ -6098,9 +7692,24 @@ msgid "Trisodium nitrilotriacetate"
 msgstr "Trinátrium-nitrilotriacetát"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-944-3
+msgid "Trizinc bis(orthophosphate)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
 msgid "Type"
 msgstr "Típus"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+msgid "UFI"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "UFI:"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_12
@@ -6113,11 +7722,6 @@ msgid "UN number"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_2
-msgid "UN proper shipping name"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_7
 msgid "Unalloyed steel."
 msgstr "Ötvözetlen acél. "
@@ -6127,6 +7731,27 @@ msgstr "Ötvözetlen acél. "
 msgid "Under ordinary workplace conditions: No special measures required."
 msgstr ""
 "Szokásos munkahelyi körülmények mellett: Különleges intézkedés nem szükséges."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#, fuzzy
+#| msgid "Product Identifier"
+msgid "Unique Formula Identifier"
+msgstr "Termékazonosító"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
+msgid "Unique formula identifier (UFI)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__united_kingdom
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__united_kingdom
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__united_kingdom
+#, fuzzy
+#| msgid "United Nations"
+msgid "United Kingdom"
+msgstr "Egyesült Nemzetek Szervezete"
 
 #. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_12
@@ -6287,7 +7912,7 @@ msgid "Volatile Organic Compounds"
 msgstr "Illékony szerves vegyületek"
 
 #. module: safety_datasheet
-#: selection:sds.datasheet,section_2_2_signal:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_2_2_signal__warning
 msgid "Warning"
 msgstr ""
 
@@ -6352,7 +7977,7 @@ msgid "Wash with plenty of water/..."
 msgstr "Lemosás bő vízzel/……"
 
 #. module: safety_datasheet
-#: selection:sds.sentences,category:0
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__disposal
 msgid "Waste treatment"
 msgstr ""
 
@@ -6364,6 +7989,13 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_1
 msgid "Water spray."
+msgstr "Víz spray. "
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.incompatible_6
+#, fuzzy
+#| msgid "Water spray."
+msgid "Water."
 msgstr "Víz spray. "
 
 #. module: safety_datasheet
@@ -6393,7 +8025,8 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P280
 msgid ""
-"Wear protective gloves/protective clothing/eye protection/face protection."
+"Wear protective gloves/protective clothing/eye protection/face protection/"
+"hearing protection/…"
 msgstr ""
 
 #. module: safety_datasheet
@@ -6424,8 +8057,18 @@ msgid "Whenever possible, operate upwind."
 msgstr "Amennyiben lehetséges, legyen ellenszélben. "
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_limit
+msgid "Workplace exposure limit"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_6
 msgid "You will need to determine which regulations are applicable."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Zinc_nitrate
+msgid "Zinc nitrate"
 msgstr ""
 
 #. module: safety_datasheet
@@ -6435,13 +8078,22 @@ msgstr "[Nem megfelelő szellőzés esetén] légzésvédelem kötelező."
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_8
+msgid "http://data.europa.eu/eli/dir/2004/42/2021-07-16"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.regulation,url:safety_datasheet.regulation_5
 msgid "http://data.europa.eu/eli/dir/2004/42/oj"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_12
+msgid "http://data.europa.eu/eli/dir/2008/68/oj"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_11
-msgid "http://data.europa.eu/eli/dir/2008/98/oj"
+msgid "http://data.europa.eu/eli/dir/2008/98/2018-07-05"
 msgstr ""
 
 #. module: safety_datasheet
@@ -6457,17 +8109,25 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_1
-msgid "http://data.europa.eu/eli/reg/2006/1907/oj"
+msgid "http://data.europa.eu/eli/reg/2006/1907/2022-12-17"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_2
+msgid "http://data.europa.eu/eli/reg/2008/1272/2022-12-17"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.regulation,url:safety_datasheet.regulation_8
 msgid "http://data.europa.eu/eli/reg/2008/1272/oj"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_5
+msgid "http://data.europa.eu/eli/reg/2009/1005/2017-04-19"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.regulation,url:safety_datasheet.regulation_1
 msgid "http://data.europa.eu/eli/reg/2009/1005/oj"
 msgstr ""
@@ -6479,12 +8139,20 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_7
+msgid "http://data.europa.eu/eli/reg/2012/649/2022-07-01"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.regulation,url:safety_datasheet.regulation_3
 msgid "http://data.europa.eu/eli/reg/2012/649/oj"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_6
+msgid "http://data.europa.eu/eli/reg/2019/1021/2022-12-13"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.regulation,url:safety_datasheet.regulation_2
 msgid "http://data.europa.eu/eli/reg/2019/1021/oj"
 msgstr ""
@@ -6495,20 +8163,23 @@ msgid "http://data.europa.eu/eli/reg/2020/878/oj"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:sds.bibliography,url:safety_datasheet.bibliography_13
+msgid "http://data.europa.eu/eli/reg_del/2023/707/oj"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.bibliography,url:safety_datasheet.bibliography_4
 msgid "https://echa.europa.eu"
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:732
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "n.a."
 msgstr ""
 
 #. module: safety_datasheet
-#: code:addons/safety_datasheet/models/datasheet.py:87
-#: code:addons/safety_datasheet/models/datasheet.py:90
-#: code:addons/safety_datasheet/models/datasheet.py:91
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "none"
 msgstr ""
@@ -6534,45 +8205,59 @@ msgstr ""
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr ""
 
-#~ msgid ""
-#~ "Avoid heating under confinement or reduction of the desensitising agent."
-#~ msgstr ""
-#~ "Kerülje a hevítést zárt térben vagy a deszenzibilizáló szer mennyiségének "
-#~ "csökkenése esetén."
+#~ msgid "1.4 Emergency telephone number"
+#~ msgstr "1.4 Sürgősségi telefonszám"
 
 #~ msgid ""
-#~ "Fire hazard; increased risk of explosion if desensitising agent is "
-#~ "reduced."
+#~ "<br/>\n"
+#~ "                            Other Hazards:"
 #~ msgstr ""
-#~ "Tűz veszélye; fokozott robbanásveszély a deszenzibilizáló szer "
-#~ "csökkenésével."
+#~ "<br/>\n"
+#~ "                            Egyéb veszélyek:"
 
+#~ msgid "Based on available data, the classification criteria are not met"
+#~ msgstr ""
+#~ "A rendelkezésre álló adatok alapján az osztályozási kritériumok nem "
+#~ "teljesülnek"
+
+#~ msgid "Bibliography:"
+#~ msgstr "Bibliográfia:"
+
+#~ msgid "Do not induce vomiting."
+#~ msgstr "Ne hánytassa. "
+
+#~ msgid "Emergency telephone number"
+#~ msgstr "Sürgősségi telefonszám"
+
+#, fuzzy
+#~| msgid ""
+#~| "For the full text of the H-Statements mentioned\n"
+#~| "                                    in this Section, see Section 16."
 #~ msgid ""
-#~ "Fire or projection hazard; increased risk of explosion if desensitising "
-#~ "agent is reduced."
-#~ msgstr ""
-#~ "Tűz vagy kivetés veszélye; fokozott robbanásveszély a deszenzibilizáló "
-#~ "szer csökkenésével."
+#~ "For the full text of the H-Statements mentioned in this Section,\n"
+#~ "                                    see Section 16."
+#~ msgstr "A figyemeztető H-mondatok teljes szövege: lsd a 16. szakaszt."
 
-#~ msgid ""
-#~ "Fire, blast or projection hazard; increased risk of explosion if "
-#~ "desensitising agent is reduced."
-#~ msgstr ""
-#~ "Tűz, robbanás vagy kivetés veszélye; fokozott robbanásveszély a "
-#~ "deszenzibilizáló szer csökkenésével."
+#~ msgid "Hazard pictograms"
+#~ msgstr "Veszélyt jelző piktogram(ok)"
 
-#~ msgid "May ignite spontaneously if exposed to air."
-#~ msgstr "Levegővel érintkezve öngyulladásra hajlamos."
+#~ msgid "1.1 Product Identifier:"
+#~ msgstr "1.1. Termékazonosító"
 
-#~ msgid "Read carefully and follow all instructions."
-#~ msgstr "Olvassa el figyelmesen és kövesse az összes utasítást."
+#~ msgid "1.3 Detail of the supplier of the safety data sheet:"
+#~ msgstr "1.3 A biztonsági adatlap szállítójának adatai"
 
-#~ msgid ""
-#~ "Refer to manufacturer/ supplier/… for information on disposal/recovery/ "
-#~ "recycling"
-#~ msgstr ""
-#~ "A hulladékanyag visszanyeréséhez/újrahasznosításához a gyártótól/"
-#~ "forgalmazótól/… kell tájékoztatást kérni."
+#~ msgid "1.4 Emergency telephone number:"
+#~ msgstr "1.4 Sürgősségi telefonszám:"
 
-#~ msgid "Silicic acid, sodium salt"
-#~ msgstr "Kovasav, nátriumsó"
+#~ msgid "2.1 Classification of the substance or mixture:"
+#~ msgstr "2.1 Az anyag vagy keverék besorolása:"
+
+#~ msgid "Keep away from incompatible products."
+#~ msgstr "Tartsa távol inkompatibilis termékektől."
+
+#~ msgid "Natriummetasilicat Pentahydrat"
+#~ msgstr "Nátrium-metaszilikát-pentahidrát"
+
+#~ msgid "Read label before use."
+#~ msgstr "Használat előtt olvassa el a címkét."

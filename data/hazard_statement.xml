@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <data>
         <record id="H200" model="sds.hazard.statement">
@@ -549,5 +553,39 @@
             <field name="code">EUH 401</field>
             <field name="name">To avoid risks to human health and the environment, comply with the instructions for use.</field>
         </record>
+        <!-- Commission Delegated Regulation (EU) 2023/707 of 19 December 2022 -->
+        <record id="EUH_380" model="sds.hazard.statement">
+            <field name="code">EUH 380</field>
+            <field name="name">May cause endocrine disruption in humans.</field>
+        </record>
+        <record id="EUH_381" model="sds.hazard.statement">
+            <field name="code">EUH 381</field>
+            <field name="name">Suspected of causing endocrine disruption in humans.</field>
+        </record>
+        <record id="EUH_430" model="sds.hazard.statement">
+            <field name="code">EUH 430</field>
+            <field name="name">May cause endocrine disruption in the environment.</field>
+        </record>
+        <record id="EUH_431" model="sds.hazard.statement">
+            <field name="code">EUH 431</field>
+            <field name="name">Suspected of causing endocrine disruption in the environment.</field>
+        </record>
+        <record id="EUH_440" model="sds.hazard.statement">
+            <field name="code">EUH 440</field>
+            <field name="name">Accumulates in the environment and living organisms including in humans.</field>
+        </record>
+        <record id="EUH_441" model="sds.hazard.statement">
+            <field name="code">EUH 441</field>
+            <field name="name">Strongly accumulates in the environment and living organisms including in humans.</field>
+        </record>
+        <record id="EUH_450" model="sds.hazard.statement">
+            <field name="code">EUH 450</field>
+            <field name="name">Can cause long-lasting and diffuse contamination of water resources.</field>
+        </record>
+        <record id="EUH_451" model="sds.hazard.statement">
+            <field name="code">EUH 451</field>
+            <field name="name">Can cause very long-lasting and diffuse contamination of water resources.</field>
+        </record>
+
     </data>
 </odoo>

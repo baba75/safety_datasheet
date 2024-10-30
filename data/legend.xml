@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
 <odoo>
     <data>
         <!-- Legend entries (Section 16) -->
         <record id="legend_1" model="sds.legend">
-            <field name="acronym">EC-Number</field>
+            <field name="acronym">EC No.</field>
             <field name="description">European Community number</field>
         </record>
         <record id="legend_2" model="sds.legend">
@@ -74,6 +78,18 @@ Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
         <record id="legend_18" model="sds.legend">
             <field name="acronym">NOAEL</field>
             <field name="description">No Observed Adverse Effect Level</field>
+        </record>
+        <record id="legend_19" model="sds.legend">
+            <field name="acronym">UFI</field>
+            <field name="description">Unique Formula Identifier</field>
+        </record>
+        <record id="legend_20" model="sds.legend">
+            <field name="acronym">CAS No.</field>
+            <field name="description">Chemical Abstracts Service (CAS) Registry Number</field>
+        </record>
+        <record id="legend_21" model="sds.legend">
+            <field name="acronym">IUPAC</field>
+            <field name="description">International Union of Pure and Applied Chemistry</field>
         </record>
 
     </data>

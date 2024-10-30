@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# Copyright 2023 Alberto Carollo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
 {
     'name': "Safety Data Sheets",
 
@@ -25,6 +28,7 @@
     'data': [
         'views/templates.xml',
         'wizards/select_lang.xml',
+        #'wizards/sci_property_wizard.xml',
         'views/views.xml',
         'reports/report_sds.xml',
         'data/pictogram.xml',
@@ -37,6 +41,7 @@
         'data/bibliography.xml',
         'data/legend.xml',
         'data/regulation.xml',
+        'data/poisoncentre.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
