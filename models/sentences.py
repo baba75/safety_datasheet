@@ -31,6 +31,14 @@ class SdsSentences(models.Model):
                ('adverse', 'Other adverse')
                ]
 
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
+        
     sequence = fields.Integer(string='Sequence', default=10)
     name = fields.Char('Statement', translate=True)
     category = fields.Selection(SECTION)

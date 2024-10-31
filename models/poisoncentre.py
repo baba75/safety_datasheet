@@ -26,7 +26,14 @@ class SdsPoisonCentre(models.Model):
         default_phone = '<p>' + company.name + ' : ' + company.phone + '</p>'
         return default_phone
    
-        
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
+            
     # We use translation cause some countries are multilingual
     name = fields.Html(string="Contact details of the poison centres", default=_default_emergency_phone, required="True", 
                        translate=True, sanitize=False)

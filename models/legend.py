@@ -11,6 +11,14 @@ class SdsLegend(models.Model):
     _name = "sds.legend"
     _description = "Legend entries"
     _order = "acronym"
+    
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
 
     acronym = fields.Char('Acronym', required="True", translate=True)
     description = fields.Char('Extended description', required="True", translate=True)

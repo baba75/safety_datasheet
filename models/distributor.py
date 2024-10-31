@@ -17,5 +17,13 @@ class SdsDistributor(models.Model):
                       'Only one National Distributor per country is allowed.')
                     ]
            
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
+        
     name = fields.Html(string="Contact details of the National Distributor", required="True", translate=False)
     country = fields.Selection(datasheet.COUNTRY, required="True")

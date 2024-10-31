@@ -25,6 +25,14 @@ class SdsRegulatoryInformation(models.Model):
     _name = "sds.regulatory.information"
     _description = "Regulatory Information"
 
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
+        
     regulation = fields.Many2one('sds.regulation', 'Regulation', copy=True)
     text = fields.Html(string="Relevant information",
                        default = lambda s: _("Not applicable."),

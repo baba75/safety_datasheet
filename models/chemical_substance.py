@@ -108,6 +108,14 @@ class SdsChemicalMixture(models.Model):
     """
     _name = "sds.chemical.mixture"
     _description = "Chemical Mixture"
+    
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
 
     datasheet_id = fields.Many2one('sds.datasheet', 'Related Datasheet', copy=True)
     substance = fields.Many2one('sds.chemical.substance', 'Chemical Name')

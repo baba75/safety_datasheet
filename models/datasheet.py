@@ -54,6 +54,14 @@ class SdsDatasheet(models.Model):
     _name = 'sds.datasheet'
     _description = 'Product Safety Datasheet'
     _order = "name"
+    
+    active = fields.Boolean(default=True)
+    
+    def action_archive(self):
+        self.active = False
+
+    def action_unarchive(self):
+        self.active = True 
 
     @api.model
     def _default_company(self):
