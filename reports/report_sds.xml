@@ -2,6 +2,10 @@
 <!-- 
   Copyright 2023 Alberto Carollo
   License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+  ## For see the report in html go to:
+  https://<yourserver>/report/html/safety_datasheet.report_safety_datasheet?ids=<your_id>&model=sds.datasheet
+
 -->
 <odoo>
     <record id="safety_sds_report" model="ir.actions.report">
@@ -204,9 +208,11 @@
                     </t>
                     <div class="sds">
                         <h4 class="sds">2.3. Other Hazards</h4>
-                        <p class="sds"> PBT: <span t-raw="doc.section_2_3_PBT" />
-                            <br /> vPvB: <span t-raw="doc.section_2_3_vPvB" />
-                            <br /> Other Hazards: <span class="sds" t-field="doc.section_2_3_OtherHazards" />
+                        <p class="sds"> 
+                            <span t-raw="doc.section_2_3_PBT" /><br/>
+                            <span t-raw="doc.section_2_3_vPvB" /><br/>
+                            <span t-raw="doc.section_2_3_endocrine" /><br/>
+                            Other Hazards: <span class="sds" t-field="doc.section_2_3_OtherHazards" />
                         </p>
                         <t t-if="not doc.section_2_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                             <span class="sds" t-raw="doc.section_2_note" />
@@ -527,13 +533,24 @@
                                     <p class="sds">
                                         TLV Occupational exposure limit of the entire mixture: Not available
                                     </p>
-                                    <t t-foreach="doc.section_3_2" t-as="line">
-                                        <p class="sds">
+                                    <t t-if="doc.section_8_1_tlv_selector_ing == True">
+                                        <p class="sds">TLV Occupational exposure limit of the ingredients:</p>
+                                        <t t-foreach="doc.section_3_2" t-as="line">
                                             <t t-if="line.substance.wrk_exp_limit == True">
-                                                <p class="sds_h7" t-field="line.substance.name" />
-                                                <p t-field="line.substance.wrk_exp_tlv" />
+                                                <table class="sds_substances">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><span t-field="line.substance.name" /></th>
+                                                        </tr>        
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> <span t-field="line.substance.wrk_exp_tlv" /></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>                                            
                                             </t>
-                                        </p>
+                                        </t>
                                     </t>
                                 </t>
                                 <t t-else="">
@@ -545,17 +562,250 @@
                             </div>
                             <div class="sds">
                                 <t t-if="doc.section_8_1_dnel_selector == False">
-                                    <p class="sds">DNEL Exposure limit values: Not available</p>
+                                    <p class="sds">DNEL Exposure limit values for the whole mixture: Not available</p>
+                                    <t t-if="doc.section_8_1_dnel_selector_ing == True">
+                                        <p class="sds">DNEL Exposure limit values of the ingredients:</p>
+                                        <div class="sds">
+                                            <t t-foreach="doc.section_3_2" t-as="line">
+                                                <p class="sds">
+                                                    <t t-if="line.substance.dnel == True">
+                                                        <!-- Building the DNEL table for the ingredient -->
+                                                        <table class="sds_substances">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="4"><span t-field="line.substance.name" /></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="4">Data for WORKERS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>INHALATION Exposure</th><th>Threshold</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td colspan="2">Systemic Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.wrk_ln_sys_inhalation"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.wrk_aq_sys_inhalation"/></td></tr>
+                                                                                <tr><td colspan="2">Local Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.wrk_ln_lcl_inhalation"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.wrk_aq_lcl_inhalation"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>DERMAL Exposure</th><th>Threshold</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td colspan="2">Systemic Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.wrk_ln_sys_dermal"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.wrk_aq_sys_dermal"/></td></tr>
+                                                                                <tr><td colspan="2">Local Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.wrk_ln_lcl_dermal"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.wrk_aq_lcl_dermal"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>EYE Exposure</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td><span t-field="line.substance.wrk_eye"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td><br/></td>
+                                                                </tr>
+                                                                <tr>                                                                    
+                                                                    <td colspan="4">Data for GENERAL POPULATION</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>INHALATION Exposure</th><th>Threshold</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td colspan="2">Systemic Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.pop_ln_sys_inhalation"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.pop_aq_sys_inhalation"/></td></tr>
+                                                                                <tr><td colspan="2">Local Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.pop_ln_lcl_inhalation"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.pop_aq_lcl_inhalation"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>DERMAL Exposure</th><th>Threshold</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td colspan="2">Systemic Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.pop_ln_sys_dermal"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.pop_aq_sys_dermal"/></td></tr>
+                                                                                <tr><td colspan="2">Local Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.pop_ln_lcl_dermal"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.pop_aq_lcl_dermal"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>ORAL Exposure</th><th>Threshold</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td colspan="2">Systemic Effects</td></tr>
+                                                                                <tr><td>Long-term:</td><td><span t-field="line.substance.pop_aq_sys_oral"/></td></tr>
+                                                                                <tr><td>Acute / short term:</td><td><span t-field="line.substance.pop_ln_sys_oral"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr><th>EYE Exposure</th></tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr><td><span t-field="line.substance.pop_eye"/></td></tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </t>
+                                                </p>
+                                            </t>
+                                        </div>
+                                    </t>
                                 </t>
                                 <t t-else="">
                                     <div class="sds">
                                         <span class="sds" t-field="doc.section_8_1_dnel" />
                                     </div>
                                 </t>
+                                
                             </div>
                             <div class="sds">
                                 <t t-if="doc.section_8_1_pnec_selector == False">
-                                    <p class="sds">PNEC Exposure limit values: Not available</p>
+                                    <p class="sds">PNEC Exposure limit values for the entire mixture: Not available</p>
+                                    <t t-if="doc.section_8_1_pnec_selector_ing == True">
+                                        <p class="sds">PNEC Exposure limit values of the ingredients:</p>
+                                        <t t-foreach="doc.section_3_2" t-as="line">
+                                            <p class="sds">
+                                                <t t-if="line.substance.pnec == True">
+                                                    <table class="sds_substances">
+                                                        <thead>
+                                                            <tr>
+                                                                <th><span t-field="line.substance.name" /></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>                                                                    
+                                                                <td colspan="2"><br/></td>
+                                                            </tr>
+                                                            <tr><td>
+                                                            <table class="sds_substances">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="2">Hazard for Aquatic Organism</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Freshwater</td>
+                                                                                    <td><span t-field="line.substance.freshwater"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Intermittent releases (freshwater)</td>
+                                                                                    <td><span t-field="line.substance.int_rel_fw"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Marine water</td>
+                                                                                    <td><span t-field="line.substance.marinew"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Intermittent releases (marine water)</td>
+                                                                                    <td><span t-field="line.substance.int_rel_mw"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Sewage treatment plant (STP)</td>
+                                                                                    <td><span t-field="line.substance.stp"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Sediment (freshwater)</td>
+                                                                                    <td><span t-field="line.substance.sediment_fw"/></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Sediment (marine water)</td>
+                                                                                    <td><span t-field="line.substance.sediment_mw"/></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td>
+                                                                        <table class="sds_substances table-bordered full">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="2">Hazard for Air</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Air</td>
+                                                                                    <td><span t-field="line.substance.air"/></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table class="sds_substances table-bordered full">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="2">Hazard for Terrestrial Organism</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Soil</td>
+                                                                                    <td><span t-field="line.substance.soil"/></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table class="sds_substances table-bordered full">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="2">Hazard for Predators</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Secondary poisoning</td>
+                                                                                    <td><span t-field="line.substance.sec_poisoning"/></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>  
+                                                                    </td>
+                                                                </tr> 
+                                                            </table>  
+                                                            </td></tr>                                                       
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                            </p>
+                                        </t>
+                                    </t>
                                 </t>
                                 <t t-else="">
                                     <div class="sds">
@@ -774,6 +1024,15 @@
                                 <h6 class="sds">Toxicity details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_1_text" />
                             </t>
+                            <t t-if="doc.section_11_1_1_component==True">
+                                <h6 class="sds">Toxicity details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.acute_summary == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.acute_summary" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">Skin corrosion/irritation</h5>
                             <p class="sds">
                                 <span t-foreach="doc.section_11_1_2" t-as="line">
@@ -783,6 +1042,15 @@
                             <t t-if="doc.section_11_1_2_selector==True">
                                 <h6 class="sds">Skin corrosion/irritation details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_2_text" />
+                            </t>
+                            <t t-if="doc.section_11_1_2_component==True">
+                                <h6 class="sds">Corrosion/irritation details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.skin_corrosion == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.skin_corrosion" />
+                                    </t>      
+                                </t>                                
                             </t>
                             <h5 class="sds">Serious eye damage/eye irritation</h5>
                             <p class="sds">
@@ -794,6 +1062,15 @@
                                 <h6 class="sds">Serious eye damage/eye irritation details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_3_text" />
                             </t>
+                            <t t-if="doc.section_11_1_3_component==True">
+                                <h6 class="sds">Eye damage/irritation details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.eye_damage == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.eye_damage" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">Respiratory or skin sensitization</h5>
                             <p class="sds">
                                 <span t-foreach="doc.section_11_1_4" t-as="line">
@@ -803,6 +1080,15 @@
                             <t t-if="doc.section_11_1_4_selector==True">
                                 <h6 class="sds">Respiratory or skin sensitization details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_4_text" />
+                            </t>
+                            <t t-if="doc.section_11_1_4_component==True">
+                                <h6 class="sds">Respiratory/Skin sensitization details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.sensitization == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.sensitization" />
+                                    </t>      
+                                </t>                                
                             </t>
                             <h5 class="sds">Germ cell mutagenicity</h5>
                             <p class="sds">
@@ -814,6 +1100,15 @@
                                 <h6 class="sds">Germ cell mutagenicity details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_5_text" />
                             </t>
+                            <t t-if="doc.section_11_1_5_component==True">
+                                <h6 class="sds">Germ cell mutagenicity details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.mutagenity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.mutagenity" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">Carcinogenicity</h5>
                             <p class="sds">
                                 <span t-foreach="doc.section_11_1_6" t-as="line">
@@ -824,6 +1119,15 @@
                                 <h6 class="sds">Carcinogenicity details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_6_text" />
                             </t>
+                            <t t-if="doc.section_11_1_6_component==True">
+                                <h6 class="sds">Carcinogenicity details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.carcinogenicity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.carcinogenicity" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">Reproductive toxicity</h5>
                             <p class="sds">
                                 <span t-foreach="doc.section_11_1_7" t-as="line">
@@ -831,8 +1135,17 @@
                                 </span>
                             </p>
                             <t t-if="doc.section_11_1_7_selector==True">
-                                <h6 class="sds">Reproductive details:</h6>
+                                <h6 class="sds">Reproductive toxicity details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_7_text" />
+                            </t>
+                            <t t-if="doc.section_11_1_7_component==True">
+                                <h6 class="sds">Reproductive toxicity details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.reproductive_toxicity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.reproductive_toxicity" />
+                                    </t>      
+                                </t>                                
                             </t>
                             <h5 class="sds">
                                 Specific Target Organ Systemic Toxicity (Single Exposure)
@@ -846,6 +1159,15 @@
                                 <h6 class="sds">STOT SE details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_8_text" />
                             </t>
+                            <t t-if="doc.section_11_1_8_component==True">
+                                <h6 class="sds">STOT SE details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.stot_se == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.stot_se" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">
                                 Specific Target Organ Systemic Toxicity (Repeated Exposure)
                             </h5>
@@ -858,6 +1180,15 @@
                                 <h6 class="sds">STOT RE details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_9_text" />
                             </t>
+                            <t t-if="doc.section_11_1_9_component==True">
+                                <h6 class="sds">STOT RE details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.stot_re == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.stot_re" />
+                                    </t>      
+                                </t>                                
+                            </t>
                             <h5 class="sds">Aspiration Hazard</h5>
                             <p class="sds">
                                 <span t-foreach="doc.section_11_1_10" t-as="line">
@@ -867,6 +1198,15 @@
                             <t t-if="doc.section_11_1_10_selector==True">
                                 <h6 class="sds">Aspiration Hazard details:</h6>
                                 <span class="sds" t-raw="doc.section_11_1_10_text" />
+                            </t>
+                            <t t-if="doc.section_11_1_10_component==True">
+                                <h6 class="sds">Aspiration Hazard details of the ingredients:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.aspiration_hazard == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.aspiration_hazard" />
+                                    </t>      
+                                </t>                                
                             </t>
                         </div>
                     </div>
@@ -893,6 +1233,15 @@
                                 <h6 class="sds">Product details:</h6>
                                 <span class="sds" t-raw="doc.section_12_1_text" />
                             </t>
+                            <t t-if="doc.section_12_1_component==True">
+                                <h6 class="sds">Ingredients details:</h6>
+                                <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                    <t t-if="not line.substance.toxicity_detail == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                        <p class="sds_h7" t-field="line.substance.name" />
+                                        <span class="sds" t-raw="line.substance.toxicity_detail" />
+                                    </t>      
+                                </t>                                
+                            </t>
                         </div>
                     </div>
                     <div class="sds">
@@ -908,6 +1257,15 @@
                                 <span t-field="doc.section_12_2_text" />
                             </div>
                         </t>
+                        <t t-if="doc.section_12_2_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.degradability == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.degradability" />
+                                </t>      
+                            </t>                                
+                        </t>
                     </div>
                     <div class="sds">
                         <h4 class="sds">12.3. Bioaccumulative potential</h4>
@@ -921,6 +1279,15 @@
                             <div class="sds">
                                 <span t-field="doc.section_12_3_text" />
                             </div>
+                        </t>
+                        <t t-if="doc.section_12_3_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.bioaccumulation == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.bioaccumulation" />
+                                </t>      
+                            </t>                                
                         </t>
                     </div>
                     <div class="sds">
@@ -936,6 +1303,15 @@
                                 <span t-field="doc.section_12_4_text" />
                             </div>
                         </t>
+                        <t t-if="doc.section_12_4_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.mobility == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.mobility" />
+                                </t>      
+                            </t>                                
+                        </t>
                     </div>
                     <div class="sds">
                         <h4 class="sds">12.5. Results of PBT and vPvB assessment</h4>
@@ -949,6 +1325,15 @@
                             <div class="sds">
                                 <span t-field="doc.section_12_5_text" />
                             </div>
+                        </t>
+                        <t t-if="doc.section_12_5_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.pbt_vPvB == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.pbt_vPvB" />
+                                </t>      
+                            </t>                                
                         </t>
                     </div>
                     <div class="sds">
@@ -964,6 +1349,15 @@
                                 <span t-field="doc.section_12_6_text" />
                             </div>
                         </t>
+                        <t t-if="doc.section_12_6_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.endocrine == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.endocrine" />
+                                </t>      
+                            </t>                                
+                        </t>
                     </div>
                     <div class="sds">
                         <h4 class="sds">12.7. Other adverse effects</h4>
@@ -977,6 +1371,15 @@
                             <div class="sds">
                                 <span t-field="doc.section_12_7_text" />
                             </div>
+                        </t>
+                        <t t-if="doc.section_12_7_component==True">
+                            <h6 class="sds">Ingredients details:</h6>
+                            <t t-foreach="doc.section_3_2" t-as="line">                                    
+                                <t t-if="not line.substance.other_effects == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                                    <p class="sds_h7" t-field="line.substance.name" />
+                                    <span class="sds" t-raw="line.substance.other_effects" />
+                                </t>      
+                            </t>                                
                         </t>
                     </div>
                     <t t-if="not doc.section_12_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -1021,7 +1424,7 @@
                                     <tr>
                                         <t t-if="doc.section_14_selector == True">
                                             <td colspan="2" style="padding: 0px;">
-                                                <table class="sds" style="border: none;">
+                                                <table class="sds noborder">
                                                     <tbody>
                                                         <tr>
                                                             <td colspan="2"
@@ -1073,7 +1476,7 @@
                                     <tr>
                                         <t t-if="doc.section_14_selector == True">
                                             <td colspan="2" style="padding: 0px;">
-                                                <table class="sds" style="border: none;">
+                                                <table class="sds noborder">
                                                     <tbody>
                                                         <tr>
                                                             <td colspan="2"

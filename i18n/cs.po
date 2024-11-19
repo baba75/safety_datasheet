@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20231205\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 13:41+0000\n"
-"PO-Revision-Date: 2024-10-30 14:54+0100\n"
+"POT-Creation-Date: 2024-11-19 09:26+0000\n"
+"PO-Revision-Date: 2024-11-19 10:59+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -29,6 +29,13 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Belgie - België | Belgisch Antigifcentrum<br/> 070 245 245 "
+"(volný den, 24 hodin 24 hodin)<br/> <a href=\"https://www.poisoncentre.be/"
+"\">www.poisoncentre.be</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Czech
@@ -42,6 +49,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Czech Republic - Česká republika | Toxikologické "
+"informační středisko<br/>\n"
+"                Telefon: +420 224 919 293, +420 224 915 402<br/>\n"
+"                <a href=\"http://www.tis-cz.cz/\">www.tis-cz.cz</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Finland
@@ -56,6 +71,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Finsko - Suomi | Myrkytystietokeskus<br/> Puhelin: 0800 "
+"147 111, 09 471 977<br/> <a href=\"https://www.hus.fi/potilaalle/sairaalat-ja-"
+"toimipisteet/myrkytystietokeskus\">https://www.hus.fi/potilaalle/sairaalat-ja-"
+"toimipisteet/myrkytystietokeskus</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_France
@@ -69,6 +92,13 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Francie | Centrum AntiPoison et de ToxicoVigilance<br/> "
+"číslo ORFILA : + 33 (0)1 45 42 59 59<br/> <a href=\"https://reach-info.ineris."
+"fr/numero-orfila\">https://reach-info.ineris.fr/numero-orfila</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Hungary
@@ -79,6 +109,11 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Maďarsko - Magyarország | +36-80-201-199</p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Italy
@@ -93,6 +128,13 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Itálie - Italia | Azienda Ospedaliera Integrata Verona: "
+"800 011 858<br/> Seznam kompletních su: <a href=\"https://preparatipericolosi."
+"iss.it/\">preparatipericolosi.iss.it</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Portugal
@@ -108,6 +150,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Portugalsko | CIAV – Centro de Informação Antivenenos<br/> "
+"800 250 250<br/> <a href=\"https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos/\">https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Romania
@@ -123,6 +173,16 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Romania - România | S.C.U.B. - Spitaulu Clinic de Urgență "
+"Bucureßști<br/>\n"
+"                021.599.23.00<br/>\n"
+"                <a href=\"https://www.urgentafloreasca.ro/#!/Ati2\">https://"
+"www.urgentafloreasca.ro/#!/Ati2</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Slovenia
@@ -133,6 +193,11 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Slovenia - Slovenija | Telefonska številka: 112</p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Spain
@@ -150,6 +215,15 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Španělsko - España | Servicio de Información Toxicológica "
+"(SIT)<br/> + 34 91 562 04 20<br/> <a href=\"https://www.mjusticia.gob.es/es/"
+"institucional/organismos/instituto-nacional/servicios/servicio-"
+"informacion\">https://www.mjusticia.gob.es/es/institucional/organismos/"
+"instituto-nacional/servicios/servicio-informacion</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Sweden
@@ -161,6 +235,11 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Švédsko - Sverige | 112 - begär Informace o dárcích</p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_UK
@@ -173,6 +252,13 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>United Kingdom | Call NHS 111 <br/>\n"
+"                111 online: <a href=\"http://111.nhs.uk/\">111.nhs.uk/</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Austria
@@ -185,318 +271,17 @@ msgid ""
 "Vergiftungsinformation</a></p>\n"
 "                "
 msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-butoxyethanol
-msgid ""
 "\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</"
-"td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-633-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</"
-"td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ammonia
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</"
-"td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
-"td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC203-473-3
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</"
-"td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-2-butoxyethoxyethanol
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></"
-"td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></"
-"td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.natural_cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.portland_cement
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CSA
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
-"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
-"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
-"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
-"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
-"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
-"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
-"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+"                <p>Rakousko - Österreich | Vergiftungsinformationszentrale "
+"(VIZ)<br/> Notruf 0-24 Uhr: 01 406 43 43<br> <a href=\"https://goeg.at/"
+"Vergiftungsinformation\">goeg.at/Vergiftungsinformation</a></p>\n"
+"                "
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (kopie)"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_3779-63-3
-msgid ""
-"(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
-msgstr "(2,4,6-trioxotriazin-1,3,5(2H,4H,6H)-triyl)tris(hexamethylen) isokyanát"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC252-104-2
-msgid "(2-methoxymethylethoxy)propanol"
-msgstr "(2-methoxymethylethoxy)propanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC220-120-9
-msgid "1,2-benzisothiazol-3(2H)-one"
-msgstr "1,2-benzisothiazol-3(2H)-on"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.butoxy_propanol
-msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
-msgstr "2-(2-butoxyethoxy)ethanol"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -517,14 +302,10 @@ msgstr "1.2 Příslušná určená použití látky nebo směsi a nedoporučená
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "1.2 Relevant identified uses of the substance or mixture and uses advised "
-#| "against recommended use:"
 msgid ""
 "1.2. Relevant identified uses of the substance or mixture and uses advised "
 "against recommended use"
-msgstr "1.2 Příslušná určená použití látky nebo směsi a nedoporučená použití:"
+msgstr "1.2 Příslušná určená použití látky nebo směsi a nedoporučená použití"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -583,10 +364,6 @@ msgstr "11"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "11.1. Information on hazard classes as defined in\n"
-#| "                                Regulation (EC) No. 1272/2008"
 msgid ""
 "11.1. Information on hazard classes as defined in Regulation (EC) No. "
 "1272/2008"
@@ -686,10 +463,8 @@ msgstr "14.6 Zvláštní bezpečnostní opatření pro uživatele"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid "Maritime transport in bulk according to IMO instruments"
 msgid "14.7. Maritime transport in bulk according to IMO instruments"
-msgstr "Hromadná námořní přeprava podle nástrojů IMO"
+msgstr "14.7 Námořní hromadná přeprava podle nástrojů IMO"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -698,11 +473,6 @@ msgstr "15"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "15.1. Safety, health and environmental\n"
-#| "                                regulations/legislation specific for the "
-#| "substance or mixture"
 msgid ""
 "15.1. Safety, health and environmental regulations/legislation specific for "
 "the substance or mixture"
@@ -719,26 +489,6 @@ msgstr "15.2 Posouzení chemické bezpečnosti"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "16"
 msgstr "16"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.nitrilotriethanol
-msgid "2,2',2''-nitrilotriethanol"
-msgstr "2,2',2''-nitrilotriethanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
-msgid "2-(2-butoxyethoxy)ethanol"
-msgstr "2-(2-butoxyethoxy)ethanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-butoxyethanol
-msgid "2-butoxyethanol"
-msgstr "2-butoxyethanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_618-558-4
-msgid "2-tridecoxyethyl dihydrogen phosphate"
-msgstr "2-tridekoxyethyldihydrogenfosfát"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -761,19 +511,6 @@ msgid "2.3. Other Hazards"
 msgstr "2.3 Další nebezpečnost"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
-msgid ""
-"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
-"                oligomers reaction product with 3-(cyclohexylamino)propane-1-"
-"sulfonic acid\n"
-"                and N,N-dimethylcyclohexanamine"
-msgstr ""
-"3-isokyanatomethyl-3,5,5-trimethylcyklohexyl isokyanát,\n"
-"                reakční produkt oligomerů s 3-(cyklohexylamino)propan-1-"
-"sulfonovou kyselinou\n"
-"                a N,N-dimethylcyklohexanamin"
-
-#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "3.1. Substances"
 msgstr "3.1. Látky"
@@ -790,22 +527,15 @@ msgstr "4.1 Popis první pomoci"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid "Most important symptoms and effects, both acute and delayed"
 msgid "4.2. Most important symptoms and effects, both acute and delayed"
-msgstr "Nejdůležitější akutní a opožděné symptomy a účinky"
+msgstr "4.2. Nejdůležitější akutní a opožděné symptomy a účinky"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "Indication of any immediate medical attention and special treatment needed"
 msgid ""
 "4.3. Indication of any immediate medical attention and special treatment "
 "needed"
-msgstr ""
-"Údaj o případné okamžité lékařské péči a zvláštním ošetření, které je třeba "
-"provést"
+msgstr "4.3. Pokyn týkající se okamžité lékařské pomoci a zvláštního ošetření"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -824,10 +554,6 @@ msgstr "5.3 Pokyny pro hasiče"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "6.1. Personal precautions, protective equipment and\n"
-#| "                                emergency procedures:"
 msgid ""
 "6.1. Personal precautions, protective equipment and emergency procedures:"
 msgstr "6.1 Opatření na ochranu osob, ochranné prostředky a nouzové postupy:"
@@ -854,10 +580,10 @@ msgstr "7.1 Opatření pro bezpečné zacházení"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid "Conditions for safe storage, including any incompatibilities"
 msgid "7.2. Conditions for safe storage, including any incompatibilities"
-msgstr "Podmínky pro bezpečné skladování, včetně případných neslučitelností"
+msgstr ""
+"7.2. Podmínky pro bezpečné skladování látek a směsí včetně neslučitelných "
+"látek a směsí"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -876,10 +602,6 @@ msgstr "8.2 Omezování expozice"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "9.1. Information on basic physical and chemical\n"
-#| "                                properties"
 msgid "9.1. Information on basic physical and chemical properties"
 msgstr "9.1 Informace o základních fyzikálních a chemických vlastnostech"
 
@@ -905,13 +627,12 @@ msgstr "<b>IUPAC:</b>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "<br/> Other Hazards:"
-msgstr "<br/> Další nebezpečí:"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "<br/> vPvB:"
-msgstr "<br/> vPvB:"
+msgid ""
+"<br/>\n"
+"                            Other Hazards:"
+msgstr ""
+"<br/>\n"
+"                            Další nebezpečí:"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -1048,15 +769,6 @@ msgstr "<span class=\"sds_h7\">Ostatní:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "<span>Other safety, health and environmental\n"
-#| "                                                        regulations/"
-#| "legislation\n"
-#| "                                                        specific\n"
-#| "                                                        for the substance "
-#| "or mixture:\n"
-#| "                                                    </span>"
 msgid ""
 "<span>\n"
 "                                                        Other safety, health "
@@ -1078,13 +790,6 @@ msgstr "<span>&amp;nbsp;</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
-#, fuzzy
-#| msgid ""
-#| "<span>Other safety, health and environmental regulations/legislation\n"
-#| "                                                        specific\n"
-#| "                                                        for the substance "
-#| "or mixture:\n"
-#| "                                                    </span>"
 msgid ""
 "<span>1.3 Set National Distributor contacts under Tables\n"
 "                                            -&gt; Distributors</span><br/>\n"
@@ -1092,11 +797,9 @@ msgid ""
 "numbers under Tables -&gt;\n"
 "                                            Poison Centres</span>"
 msgstr ""
-"<span>Další předpisy/legislativa v oblasti bezpečnosti, zdraví a životního "
-"prostředí\n"
-"                                                        specifické\n"
-"                                                        pro látku nebo směs\n"
-"                                                    </span>"
+"<span>1.3 Nastavte kontakty národního distributora v části Tabulky -&gt; "
+"Distributoři</span><br/> <span>1.4 Nastavte nouzová telefonní čísla v části "
+"Tabulky -&gt; Poison Centers</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1111,37 +814,6 @@ msgstr "<span>Nahrazuje verzi:&amp;nbsp;</span>"
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
 #: code:addons/safety_datasheet/models/datasheet.py:0
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Aluminium_sulphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS12788-93-1
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS28182-81-2
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS7087-68-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC220-120-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-764-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-944-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EDTA_tetrasodium_salt
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Hexamethylene_diisocyanate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Natriummetasilicat_Pentahydrat
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Potassium_methylsilanetriolate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Sodium_silicate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Trisodium_nitrilotriacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Zinc_nitrate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.butoxy_propanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_1574548-27-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_3779-63-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_666723-27-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_202-715-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_618-558-4
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_931-274-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.citric_acid
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ec_932-183-6
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.lithum_carbonate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.nitrilotriethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.potassium_pyrophosphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -1173,6 +845,100 @@ msgstr ""
 "td><td><br></td><td><br></td><td><br></td></tr></tbody></ table>"
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Result/"
+"Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td>Effect on developmental toxicity<br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Cesta expozice</"
+"th><th>Výsledek/Účinek</th><th>Druh/Testovací systém</th><th >Zdroj</th></"
+"tr></thead><tbody><tr><td>Zpracování</td><td><br></td><td><br></td><td ><br></"
+"td></tr><tr><td>Inhalačně</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Dermálně</td><td><br></td><td><br></td><td><br></td></ tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Adsorption/"
+"desorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
+"Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Adsorpce/desorpce</"
+"td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Bioaccumulation: "
+"aquatic / sediment</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/><br></"
+"td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
+"Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Bioakumulace: vodní / "
+"sediment</td><td><br/><br></td><td><br/><br></td></tr><tr><td> Bioakumulace: "
+"suchozemská</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Biodegradation in "
+"water - screening tests</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Biodegradation in water & sediment - simulation tests</td><td><br/"
+"><br></td><td><br/><br></td></tr><tr><td>Biodegradation in soil</td><td><br/"
+"><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
+"Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Biodegradace ve vodě "
+"- screeningové testy</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Biodegradace ve vodě a sedimentu - simulační testy</td><td><br/><br></"
+"td><td><br/><br></td></tr><tr><td> Biodegradace v půdě</td><td><br/><br></"
+"td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Environmental fate</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td>Photochemical ozone "
+"creation potential</td><td><br/><br></td><td><br/><br></td></tr><tr><td>Ozone "
+"depletion potential</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Global warming potential</td><td><br/><br></td><td><br/><br></td></"
+"tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
+"Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Environmentální osud</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td> Potenciál tvorby "
+"fotochemického ozonu</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Potenciál poškozování ozónové vrstvy</td><td><br/><br></td><td><br/><br></"
+"td></tr><tr><td> Potenciál globálního oteplování</td><td><br/><br></"
+"td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
+"th><th>Species/Test system</th><th>Source</th></tr></thead><tbody><tr><td><br/"
+"></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Výsledek/Účinek</"
+"th><th>Druh/Testovací systém</th><th>Zdroj</th></tr> </"
+"thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
@@ -1201,6 +967,42 @@ msgstr ""
 "td></tr><tr><td>Inhalačně</td><td><br></td><td><br></td><td><br>< /td></"
 "tr><tr><td>Dermálně</td><td><br></td><td><br></td><td><br></td></ tr></"
 "tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Cesta expozice</th><th> "
+"Výsledek/Účinek</th><th> Druh/Testovací systém</th><th> Zdroj</th></tr></"
+"thead><tbody><tr><td> Ústní</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td> Inhalace</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td> Kožní</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
+"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Cesta expozice</"
+"th><th>Výsledek/Účinek</th><th>Druh/Testovací systém</th><th >Zdroj</th></"
+"tr></thead><tbody><tr><td>Zpracování</td><td><br></td><td><br></td><td ><br></"
+"td></tr><tr><td>Inhalačně</td><td><br></td><td><br></td><td><br>< /td></"
+"tr><tr><td>Dermálně</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -1296,6 +1098,23 @@ msgid "Action sentences"
 msgstr "Akční věty"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulatory_information__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__active
+msgid "Active"
+msgstr "Aktivní"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Acute / short term:"
+msgstr "Akutní/krátkodobé:"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_dermal
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Acute dermal toxicity"
@@ -1374,6 +1193,21 @@ msgid "Acute toxicity details"
 msgstr "Podrobnosti o akutní toxicitě"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_component
+msgid "Acute toxicity details (ingredients)"
+msgstr "Podrobnosti o akutní toxicitě (složky)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
+msgid "Acute toxicity details (mixture)"
+msgstr "Podrobnosti o akutní toxicitě (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__acute_summary
+msgid "Acute toxicity summary"
+msgstr "Souhrn akutní toxicity"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_Additional
 msgid "Additional Labelling"
 msgstr "Dodatečné značení"
@@ -1384,9 +1218,19 @@ msgid "Adopt adequate precautions for the rescuer."
 msgstr "Přijměte odpovídající bezpečnostní opatření pro záchranné složky."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_10
+#: model:sds.sentences,name:safety_datasheet.STOT_10
 msgid "Adrenal gland."
 msgstr "Nadledvinka."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Adverse effects details (ingredients)"
+msgstr "Podrobnosti o nežádoucích účincích (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
+msgid "Adverse effects details (mixture)"
+msgstr "Podrobnosti o nežádoucích účincích (směs)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__fire_fight_advice
@@ -1412,6 +1256,7 @@ msgstr "Po vyčištění spláchněte stopy vodou."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__air
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Air"
 msgstr "Vzduch"
 
@@ -1523,14 +1368,30 @@ msgid "Aspiration Hazard"
 msgstr "Nebezpečí aspirace"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__aspiration_hazard
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_text
 msgid "Aspiration Hazard details"
 msgstr "Podrobnosti o Nebezpečí Aspirace"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Aspiration Hazard details of the ingredients:"
+msgstr "Podrobnosti o nebezpečí aspirace složek:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Aspiration Hazard details:"
 msgstr "Podrobnosti o Nebezpečí Aspirace:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Aspiration haz. details (ingredients)"
+msgstr "Aspirační zákal. detaily (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Aspiration haz. details (mixture)"
+msgstr "Podrobnosti o Nebezpečí Aspirace (složky)"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Asp_Tox_1
@@ -1557,7 +1418,7 @@ msgstr "Při vysoké teplotě se tvoří oxidy fosforu."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__austria
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__austria
 msgid "Austria"
-msgstr ""
+msgstr "Rakousko"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_9
@@ -1618,7 +1479,7 @@ msgid "Avoid release to the environment."
 msgstr "Zabraňte uvolnění do životního prostředí."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
+#: model:sds.sentences,name:safety_datasheet.STOT_12
 #: model:sds.sentences,name:safety_datasheet.aspiration_2
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_3
 #: model:sds.sentences,name:safety_datasheet.eye_damage_4
@@ -1630,7 +1491,7 @@ msgid "Based on available data, the classification criteria are not met."
 msgstr "Na základě dostupných údajů nejsou kritéria klasifikace splněna."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_3
+#: model:sds.sentences,name:safety_datasheet.STOT_3
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_1
 #: model:sds.sentences,name:safety_datasheet.reproductive_1
 msgid "Based on information for component(s):"
@@ -1680,7 +1541,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__belgium
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__belgium
 msgid "Belgium"
-msgstr ""
+msgstr "Belgie"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_bibliography
@@ -1703,6 +1564,17 @@ msgid "Bibliography entries"
 msgstr "Záznamy v bibliografii"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Bioaccumulative details (ingredients)"
+msgstr "Podrobnosti o bioakumulačním potenciálu (složky)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Bioaccumulative details (mixture)"
+msgstr "Údaje o bioakumulaci (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__bioaccumulation
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__bioaccumulative
 msgid "Bioaccumulative potential"
@@ -1742,7 +1614,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__bulgaria
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__bulgaria
 msgid "Bulgaria"
-msgstr ""
+msgstr "Bulharsko"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -1754,6 +1626,11 @@ msgstr "Hromadná přeprava v cisternách není zamýšlena."
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "CAS / EC-No."
 msgstr "CAS / EC-č."
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_20
+msgid "CAS No."
+msgstr "Č. CAS"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__CASno
@@ -1838,9 +1715,25 @@ msgid "Carcinogenicity"
 msgstr "Karcinogenita"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__carcinogenicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_text
 msgid "Carcinogenicity details"
 msgstr "Podrobnosti o karcinogenitě"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Carcinogenicity details (ingredients)"
+msgstr "Podrobnosti o karcinogenitě (složky)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Carcinogenicity details (mixture)"
+msgstr "Podrobnosti o karcinogenitě (směs)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Carcinogenicity details of the ingredients:"
+msgstr "Podrobnosti o karcinogenitě složek:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1926,6 +1819,11 @@ msgstr "Změny oproti předchozí verzi"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Changes made to the previous version:"
 msgstr "Změny oproti předchozí verzi:"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_20
+msgid "Chemical Abstracts Service (CAS) Registry Number"
+msgstr "Registrační číslo služby Chemical Abstracts Service (CAS)"
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_classification
@@ -2232,6 +2130,11 @@ msgid "Corrosion"
 msgstr "Koroze"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Corrosion/irritation details of the ingredients:"
+msgstr "Podrobnosti o žíravosti/podráždění složek:"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_6
 msgid "Corrosive to metals."
 msgstr "Žíravý pro kovy."
@@ -2246,7 +2149,7 @@ msgstr "Žíravý pro dýchací cesty."
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__country
 #: model:ir.model.fields,field_description:safety_datasheet.field_select_lang_report_wizard__country
 msgid "Country"
-msgstr ""
+msgstr "Stát/Země"
 
 #. module: safety_datasheet
 #: model_terms:ir.actions.act_window,help:safety_datasheet.action_action_sentences
@@ -2359,7 +2262,7 @@ msgstr "Vytvořeno dne"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__croatia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__croatia
 msgid "Croatia"
-msgstr ""
+msgstr "Chorvatsko"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_202
@@ -2380,14 +2283,19 @@ msgstr "Cyklohexyldimethylamin"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__cyprus
 msgid "Cyprus"
-msgstr ""
+msgstr "Kypr"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__czech_republic
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__czech_republic
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__czech_republic
 msgid "Czech Republic"
-msgstr ""
+msgstr "Česká Republika"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DERMAL Exposure"
+msgstr "DERMÁLNÍ Expozice"
 
 #. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_10
@@ -2410,8 +2318,23 @@ msgstr "DNEL"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "DNEL Exposure limit values: Not available"
-msgstr "DNEL Limitní hodnoty expozice: Není k dispozici"
+msgid "DNEL Exposure limit values for the whole mixture: Not available"
+msgstr "DNEL Limitní hodnoty expozice pro celou směs: Nejsou k dispozici"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DNEL Exposure limit values of the ingredients:"
+msgstr "DNEL Limitní hodnoty expozice složek:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "DNEL of ingredients"
+msgstr "DNEL složek"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "DNEL of the mixture"
+msgstr "DNEL směsi"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P373
@@ -2422,6 +2345,16 @@ msgstr "NEHASTE požár, když se oheň dostane k výbušninám."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_2_2_signal__danger
 msgid "Danger"
 msgstr "Nebezpečí"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for GENERAL POPULATION"
+msgstr "Údaje pro OBECNÉ OBYVATELSTVO"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for WORKERS"
+msgstr "Údaje pro PRACOVNÍKY"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -2449,11 +2382,21 @@ msgid "Decomposition temperature"
 msgstr "Teplota rozkladu"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Degradability details (ingredients)"
+msgstr "Podrobnosti o rozložitelnosti (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
+msgid "Degradability details (mixture)"
+msgstr "Podrobnosti o rozložitelnosti (směs)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__denmark
 msgid "Denmark"
-msgstr ""
+msgstr "Dánsko"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_16
@@ -2461,9 +2404,9 @@ msgid "Density and/or relative density"
 msgstr "Hustota a/nebo relativní hustota"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
-msgid "Derived No Effect Level (DNEL)"
-msgstr "Odvozená úroveň, při níž nedochází k žádným účinkům (DNEL)"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "Derived No Effect Level (DNEL) of the mixture"
+msgstr "Odvozená hladina bez účinku (DNEL) směsi"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -2787,8 +2730,12 @@ msgid "Dust mask FFP2"
 msgstr "Prachová maska FFP2"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model:sds.legend,acronym:safety_datasheet.legend_1
+msgid "EC No."
+msgstr "EC č."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
 msgid "EC Number"
 msgstr "EC Číslo"
@@ -2837,6 +2784,16 @@ msgid "EWC"
 msgstr "EWC"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "EYE Exposure"
+msgstr "Expozice OČÍ"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ecological
+msgid "Ecological Information"
+msgstr "Ekologické informace"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P381
 msgid "Eliminate all ignition sources if safe to do so."
 msgstr "Pokud je to bezpečné, odstraňte všechny zdroje vznícení."
@@ -2862,7 +2819,24 @@ msgid "End of safety datasheet"
 msgstr "Konec bezpečnostního listu"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Endocrine details (ingredients)"
+msgstr "Endokrinní detaily (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Endocrine details (mixture)"
+msgstr "Endokrinní detaily (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
+msgid "Endocrine disrupting"
+msgstr "Endokrinní narušení"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__endocrine
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
 msgid "Endocrine disrupting properties"
 msgstr "Vlastnosti narušující endokrinní systém"
 
@@ -2878,7 +2852,7 @@ msgstr "Endokrinní poruchy"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__engineer_control
-msgid "Engineer control"
+msgid "Engineering control"
 msgstr "Inženýrské řízení"
 
 #. module: safety_datasheet
@@ -2918,7 +2892,7 @@ msgstr "Opatření na ochranu životního prostředí"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__estonia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__estonia
 msgid "Estonia"
-msgstr ""
+msgstr "Estonsko"
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.EC203-473-3
@@ -3110,10 +3084,8 @@ msgstr "Expozice očí"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_eye
-#, fuzzy
-#| msgid "Eye exposure (workers)"
 msgid "Eye Exposure (workers)"
-msgstr "Expozice očí (pracovníci)"
+msgstr "Oční expozice (pracovníci)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_eye
@@ -3127,9 +3099,25 @@ msgid "Eye contact:"
 msgstr "Oční kontakt:"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Eye cor/irr details (ingredients)"
+msgstr "Detaily eye cor/irr (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Eye cor/irr details (mixture)"
+msgstr "Detaily eye cor/irr (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__eye_damage
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_text
 msgid "Eye damage/irritation details"
 msgstr "Podrobnosti o poškození/podráždění očí"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Eye damage/irritation details of the ingredients:"
+msgstr "Podrobnosti o složkách o poškození/podráždění očí:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye_protection
@@ -3197,7 +3185,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__finland
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__finland
 msgid "Finland"
-msgstr ""
+msgstr "Finsko"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H208
@@ -3357,10 +3345,6 @@ msgstr "Pro senzibilizaci kůže: Nebyly nalezeny žádné relevantní údaje."
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "For the full text of the H-Statements mentioned in this Section,\n"
-#| "                                    see Section 16."
 msgid ""
 "For the full text of the H-Statements mentioned in this Section, see Section "
 "16."
@@ -3369,7 +3353,7 @@ msgstr ""
 "                                naleznete v oddíle 16."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_11
+#: model:sds.sentences,name:safety_datasheet.STOT_11
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_4
 msgid ""
@@ -3380,7 +3364,7 @@ msgstr ""
 "pro celý výrobek."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_4
+#: model:sds.sentences,name:safety_datasheet.STOT_4
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_2
 msgid "For this family of materials:"
@@ -3414,24 +3398,17 @@ msgstr "Francie"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__freshwater
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Freshwater"
 msgstr "Sladkovodní"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "Full text of H-Statements referred to under sections 2\n"
-#| "                                to 15."
 msgid "Full text of H-Statements referred to under sections 2 to 15."
 msgstr "Úplné znění H-vět uvedených v oddílech 2 až 15."
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "Full text of P-Statements referred to under sections 2\n"
-#| "                                to 15."
 msgid "Full text of P-Statements referred to under sections 2 to 15."
 msgstr "Úplné znění P-vět uvedených v oddílech 2 až 15."
 
@@ -3476,7 +3453,7 @@ msgid "Gases under pressure"
 msgstr "Plyny pod tlakem"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_9
+#: model:sds.sentences,name:safety_datasheet.STOT_9
 msgid "Gastrointestinal tract."
 msgstr "Gastrointestinální trakt."
 
@@ -3506,6 +3483,11 @@ msgstr "Mutagenita v zárodečných buňkách"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Germ cell mutagenicity details of the ingredients:"
+msgstr "Podrobnosti o mutagenitě v zárodečných buňkách složek:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Germ cell mutagenicity details:"
 msgstr "Podrobnosti o mutagenitě v zárodečných buňkách:"
 
@@ -3514,7 +3496,7 @@ msgstr "Podrobnosti o mutagenitě v zárodečných buňkách:"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__germany
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__germany
 msgid "Germany"
-msgstr ""
+msgstr "Německo"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P315
@@ -3568,7 +3550,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__greece
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__greece
 msgid "Greece"
-msgstr ""
+msgstr "Řecko"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P240
@@ -3712,8 +3694,14 @@ msgstr "Prohlášení o nebezpečnosti:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Air"
 msgstr "Nebezpečí pro ovzduší"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Hazard for Aquatic Organism"
+msgstr "Nebezpečí pro vodní organismy"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -3722,11 +3710,13 @@ msgstr "Nebezpečí pro vodní organismy"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Predators"
 msgstr "Nebezpečí pro dravce"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Terrestrial Organism"
 msgstr "Nebezpečí pro suchozemské organismy"
 
@@ -3823,7 +3813,7 @@ msgstr "Vlhkost."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__hungary
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__hungary
 msgid "Hungary"
-msgstr ""
+msgstr "Maďarsko"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -3994,6 +3984,16 @@ msgid "IMO"
 msgstr "IMO"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "INHALATION Exposure"
+msgstr "VDECHOVÁNÍ Expozice"
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_21
+msgid "IUPAC"
+msgstr "Název IUPAC"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__IUPACname
 msgid "IUPAC Name"
 msgstr "Název IUPAC"
@@ -4003,7 +4003,7 @@ msgstr "Název IUPAC"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__iceland
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__iceland
 msgid "Iceland"
-msgstr ""
+msgstr "Island"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_4
@@ -4165,7 +4165,7 @@ msgid "In animal studies, did not interfere with reproduction."
 msgstr "Ve studiích na zvířatech nenarušoval reprodukci."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_5
+#: model:sds.sentences,name:safety_datasheet.STOT_5
 msgid "In animals, effects have been reported on the following organs:"
 msgstr "U zvířat byly zaznamenány účinky na tyto orgány:"
 
@@ -4298,6 +4298,11 @@ msgid "Ingestion:"
 msgstr "Požití:"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Ingredients details:"
+msgstr "Podrobnosti o ingrediencích:"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_inhalation
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__inhalation
 msgid "Inhalation"
@@ -4323,72 +4328,111 @@ msgstr "Původní verze"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_3_distributor_selector
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "Insert National Distributor contact"
+msgstr "Vložte kontakt na národního distributora"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Insert aspiration hazard details (ingredients)"
+msgstr "Vložte podrobnosti o nebezpečí vdechnutí (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Insert aspiration hazard details (mixture)"
+msgstr "Vložte podrobnosti o nebezpečí vdechnutí (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Insert carcinogenicity details (ingredients)"
+msgstr "Uveďte podrobnosti o karcinogenitě (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Insert carcinogenicity details (mixture)"
+msgstr "Vložte podrobnosti o karcinogenitě (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Insert endocrine disrupting properties details (ingredients)"
 msgstr ""
+"Vložte podrobnosti o vlastnostech narušujících endokrinní systém (ingredience)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
-msgid "Insert PBT and vPvB details"
-msgstr "Vložte podrobnosti o PBT a vPvB"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Insert endocrine disrupting properties details (mixture)"
+msgstr "Vložte podrobnosti o vlastnostech narušujících endokrinní systém (směs)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
-msgid "Insert STOST RE details"
-msgstr "Vložte podrobnosti o STOST RE"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Insert eye damage corrosion/irritation details (ingredients)"
+msgstr "Vložte detaily poleptání/podráždění očí (přísady)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
-msgid "Insert STOST SE details"
-msgstr "Vložte podrobnosti o STOST RE"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Insert eye damage corrosion/irritation details (mixture)"
+msgstr "Vložte detaily poleptání/podráždění očí (směs)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
-msgid "Insert acute toxicity details"
-msgstr "Vložte údaje o akutní toxicitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Insert germ cell mutagenicity details (ingredients)"
+msgstr "Vložte podrobnosti o mutagenitě zárodečných buněk (ingredience)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
-msgid "Insert adverse effects details"
-msgstr "Vložte podrobnosti o nežádoucích účincích"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Insert germ cell mutagenicity details (mixture)"
+msgstr "Vložte podrobnosti o mutagenitě zárodečných buněk (směs)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
-msgid "Insert aspiration Hazard details"
-msgstr "Vložte podrobnosti o nebezpečí aspirace"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Insert ingredients bioaccumulative details"
+msgstr "Vložte podrobnosti o bioakumulaci složek"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
-msgid "Insert bioaccumulative details"
-msgstr "Vložte podrobnosti o bioakumulaci"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Insert ingredients degradability details"
+msgstr "Vložte podrobnosti o rozložitelnosti přísad"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
-msgid "Insert carcinogenicity details"
-msgstr "Vložte podrobnosti o karcinogenitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Insert ingredients mobility in soil details"
+msgstr "Vložte mobilitu přísad do detailů půdy"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
-msgid "Insert degradability details"
-msgstr "Vložte podrobnosti o degradovatelnosti"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Insert ingredients toxicity details"
+msgstr "Vložte podrobnosti o toxicitě přísad"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
-msgid "Insert endocrine details"
-msgstr "Vložte endokrinní detaily"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Insert mixture bioaccumulative potential details"
+msgstr "Vložte podrobnosti o bioakumulačním potenciálu směsi"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
-msgid "Insert eye damage corrosion/irritation details"
-msgstr "Vložte detaily poleptání/podráždění poškození očí"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Insert mobility in soil details of the mixture"
+msgstr "Vložte pohyblivost do půdních detailů směsi"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
-msgid "Insert mobility details"
-msgstr "Vložte podrobnosti o mobilitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Insert other adverse effects details (ingredients)"
+msgstr "Vložte další podrobnosti o nežádoucích účincích (ingredience)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
-msgid "Insert mutagenicity details"
-msgstr "Vložte podrobnosti o mutagenitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(ingredients)"
+msgstr ""
+"Vložte podrobnosti o specifické systémové toxicitě cílového orgánu "
+"(jednorázová expozice) (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(mixture)"
+msgstr ""
+"Vložte podrobnosti o specifické systémové toxicitě cílového orgánu "
+"(jednorázová expozice) (směs)"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -4401,32 +4445,55 @@ msgid "Insert reactivity of the components"
 msgstr "Vložte reaktivitu komponent"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
-msgid "Insert reproductive toxicity details"
-msgstr "Vložte podrobnosti o reprodukční toxicitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Insert reproductive toxicity details (ingredients)"
+msgstr "Vložte podrobnosti o reprodukční toxicitě (ingredience)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
-msgid "Insert respiratory or skin sensitization details"
-msgstr "Vložte podrobnosti o senzibilizaci dýchacích cest nebo pokožky"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Insert reproductive toxicity details (mixture)"
+msgstr "Vložte podrobnosti o reprodukční toxicitě (směs)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
-msgid "Insert skin corrosion/irritation details"
-msgstr "Vložte detaily poleptání/podráždění kůže"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Insert respiratory or skin sensitization details (ingredients)"
+msgstr ""
+"Vložte podrobnosti o senzibilizaci dýchacích cest nebo pokožky (přísady)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
-msgid "Insert toxicity details"
-msgstr "Vložte podrobnosti o toxicitě"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Insert respiratory or skin sensitization details (mixture)"
+msgstr "Vložte podrobnosti o respirační nebo kožní senzibilizaci (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "Insert results of ingredients PBT and vPvB assessment"
+msgstr "Vložte výsledky posouzení složek PBT a vPvB"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "Insert results of mixture PBT and vPvB assessment"
+msgstr "Uveďte výsledky posouzení směsi PBT a vPvB"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Insert skin corrosion/irritation details (ingredients)"
+msgstr "Vložte detaily poleptání/podráždění kůže (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Insert skin corrosion/irritation details (mixture)"
+msgstr "Vložte detaily poleptání/podráždění kůže (směs)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (freshwater)"
 msgstr "Přerušované uvolňování (sladká voda)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (marine water)"
 msgstr "Přerušované úniky (mořská voda)"
 
@@ -4436,11 +4503,16 @@ msgid "International Maritime Organization"
 msgstr "Mezinárodní námořní organizace"
 
 #. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_21
+msgid "International Union of Pure and Applied Chemistry"
+msgstr "Mezinárodní unie čisté a aplikované chemie"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__ireland
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__ireland
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__ireland
 msgid "Ireland"
-msgstr ""
+msgstr "Irsko"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_4
@@ -4478,7 +4550,7 @@ msgstr "Může být účinné pomalu ředit nanášenou látku vodou."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__italy
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__italy
 msgid "Italy"
-msgstr ""
+msgstr "Itálie"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P210
@@ -4579,7 +4651,7 @@ msgid "Keep/Store away from clothing/…/combustible materials."
 msgstr "Uchovávejte/skladujte odděleně od oděvů/…/hořlavých materiálů."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_7
+#: model:sds.sentences,name:safety_datasheet.STOT_7
 msgid "Kidney."
 msgstr "Ledviny."
 
@@ -4698,7 +4770,7 @@ msgstr "Naposledy aktualizováno dne"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__latvia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__latvia
 msgid "Latvia"
-msgstr ""
+msgstr "Lotyšsko"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P377
@@ -4735,7 +4807,7 @@ msgstr "Smrtelná dávka pro 50 % testované populace (medián smrtelné dávky)
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__liechtenstein
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__liechtenstein
 msgid "Liechtenstein"
-msgstr ""
+msgstr "Lichtenštejnsko"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__url
@@ -4756,9 +4828,14 @@ msgid "Lithuania"
 msgstr "Litva"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_6
+#: model:sds.sentences,name:safety_datasheet.STOT_6
 msgid "Liver."
 msgstr "Játra."
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Local Effects"
+msgstr "Místní efekty"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_env_precaution_5
@@ -4830,6 +4907,11 @@ msgid "Long-term systemic oral effect"
 msgstr "Dlouhodobý systémový perorální účinek"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Long-term:"
+msgstr "Dlouhodobý:"
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
 msgstr "Dolní a horní mez výbušnosti"
@@ -4839,7 +4921,7 @@ msgstr "Dolní a horní mez výbušnosti"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__luxembourg
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__luxembourg
 msgid "Luxembourg"
-msgstr ""
+msgstr "Lucembursko"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P407
@@ -4851,10 +4933,11 @@ msgstr "Udržujte vzduchovou mezeru mezi stohy/paletami."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__malta
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__malta
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__marinew
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Marine water"
 msgstr "Mořská voda"
 
@@ -4864,7 +4947,7 @@ msgid "Maritime transport in bulk according to IMO instruments"
 msgstr "Hromadná námořní přeprava podle nástrojů IMO"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_1
+#: model:sds.sentences,name:safety_datasheet.STOT_1
 msgid "Material is corrosive."
 msgstr "Materiál je korozivní."
 
@@ -4874,7 +4957,7 @@ msgid "Material is not biodegradable."
 msgstr "Materiál není biologicky odbouratelný."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_2
+#: model:sds.sentences,name:safety_datasheet.STOT_2
 msgid ""
 "Material is not classified as a respiratory irritant; however, upper "
 "respiratory tract irritation or corrosivity may be expected."
@@ -4993,7 +5076,7 @@ msgstr "Může způsobit nebo zesílit požár; oxidační činidlo."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
-#: model:sds.sentences,name:safety_datasheet.STOST_13
+#: model:sds.sentences,name:safety_datasheet.STOT_13
 msgid "May cause respiratory irritation."
 msgstr "Může způsobit podráždění dýchacích cest."
 
@@ -5094,6 +5177,17 @@ msgid "Mixture:"
 msgstr "Směs:"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Mobility details (ingredients)"
+msgstr "Podrobnosti o mobilitě (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Mobility details (mixture)"
+msgstr "Podrobnosti o mobilitě (směs)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mobility
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__mobility
 msgid "Mobility in soil"
@@ -5125,9 +5219,20 @@ msgid "Mutagenicity"
 msgstr "Mutagenita"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mutagenity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_text
 msgid "Mutagenicity details"
 msgstr "Podrobnosti o mutagenitě"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Mutagenicity details (ingredients)"
+msgstr "Podrobnosti o mutagenitě (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Mutagenicity details (mixture)"
+msgstr "Podrobnosti o mutagenitě (směs)"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_18
@@ -5158,7 +5263,7 @@ msgstr "Národní distributoři"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__netherlands
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__netherlands
 msgid "Netherlands"
-msgstr ""
+msgstr "Nizozemsko"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -5309,7 +5414,7 @@ msgstr "Žádné."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__norway
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__norway
 msgid "Norway"
-msgstr ""
+msgstr "Norsko"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.thermal_1
@@ -5366,14 +5471,24 @@ msgid "OECD"
 msgstr "OECD"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "ORAL Exposure"
+msgstr "Orální expozice"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P201
 msgid "Obtain special instructions before use."
 msgstr "Před použitím se seznamte se speciálními pokyny pro daný materiál."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
 msgid "Occupational exposure limit of the entire mixture (TLV)."
 msgstr "Limitní hodnota expozice na pracovišti pro celou směs (TLV)."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "Occupational exposure limit of the ingredients (TLV)."
+msgstr "Expoziční limity složek (TLV)."
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_3
@@ -5383,7 +5498,7 @@ msgstr "Zápach"
 #. module: safety_datasheet
 #: model:ir.model.constraint,message:safety_datasheet.constraint_sds_distributor_country
 msgid "Only one National Distributor per country is allowed."
-msgstr ""
+msgstr "V každé zemi je povolen pouze jeden národní distributor."
 
 #. module: safety_datasheet
 #: model:ir.model.constraint,message:safety_datasheet.constraint_sds_poison_centre_country
@@ -5391,6 +5506,8 @@ msgid ""
 "Only one Poison Centre text per country is allowed. You can put multiple "
 "lines in this field"
 msgstr ""
+"Pro každou zemi je povolen pouze jeden text z Poison Center. Do tohoto pole "
+"můžete vložit více řádků"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -5432,6 +5549,7 @@ msgid "Other adverse"
 msgstr "Jiné nežádoucí účinky"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__other_effects
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7
 msgid "Other adverse effects"
 msgstr "Další nežádoucí účinky"
@@ -5503,9 +5621,14 @@ msgid "PBT and vPvB assessment"
 msgstr "Hodnocení PBT a vPvB"
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PBT:"
-msgstr "PBT:"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "PBT and vPvB details (ingredients)"
+msgstr "Podrobnosti o PBT a vPvB (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "PBT and vPvB details (mixture)"
+msgstr "Podrobnosti o PBT a vPvB (směs)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pnec
@@ -5515,8 +5638,23 @@ msgstr "PNEC"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PNEC Exposure limit values: Not available"
-msgstr "PNEC Limitní hodnoty expozice: Nejsou k dispozici"
+msgid "PNEC Exposure limit values for the entire mixture: Not available"
+msgstr "PNEC Limitní hodnoty expozice pro celou směs: Nejsou k dispozici"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "PNEC Exposure limit values of the ingredients:"
+msgstr "PNEC Limitní hodnoty expozice složek:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "PNEC of ingredients"
+msgstr "PNEC složek"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "PNEC of the mixture"
+msgstr "PNEC směsi"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_4
@@ -5544,6 +5682,7 @@ msgid "Persistence"
 msgstr "Perzistence"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__degradability
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2
 msgid "Persistence and degradability"
 msgstr "Perzistence a rozložitelnost"
@@ -5649,7 +5788,7 @@ msgstr "Jedová centra"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__poland
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__poland
 msgid "Poland"
-msgstr ""
+msgstr "Polsko"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.persistence_1
@@ -5661,7 +5800,7 @@ msgstr "Polymerní složka: Není snadno biologicky odbouratelná."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__portugal
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__portugal
 msgid "Portugal"
-msgstr ""
+msgstr "Portugalsko"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_10_3
@@ -5709,10 +5848,14 @@ msgid "Precautions for safe handling"
 msgstr "Opatření pro bezpečnou manipulaci"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
 msgid "Predicted No Effect Concentration (PNEC)"
 msgstr "Predikovaná koncentrace bez účinku (PNEC)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "Predicted No Effect Concentration (PNEC) of the mixture"
+msgstr "Předpokládaná koncentrace bez účinku (PNEC) směsi"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H229
@@ -6259,9 +6402,14 @@ msgid "Repeated exposure may cause skin dryness or cracking."
 msgstr "Opakovaná expozice může způsobit vysušení nebo popraskání kůže."
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Reproductive details:"
-msgstr "Podrobnosti o reprodukci:"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Reproductive tox. details (ingredients)"
+msgstr "Reprodukční toxin. detaily (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Reproductive tox. details (mixture)"
+msgstr "Reprodukční toxin. detaily (směs)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7
@@ -6275,9 +6423,30 @@ msgid "Reproductive toxicity"
 msgstr "Reprodukční toxicita"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__reproductive_toxicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_text
 msgid "Reproductive toxicity details"
 msgstr "Podrobnosti o reprodukční toxicitě"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details of the ingredients:"
+msgstr "Podrobnosti o reprodukční toxicitě složek:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details:"
+msgstr "Podrobnosti o reprodukční toxicitě:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Resp/skin sens. details (ingredients)"
+msgstr "Resp/skin sens. detaily (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Resp/skin sens. details (mixture)"
+msgstr "Resp/skin sens. detaily (směs)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4
@@ -6286,6 +6455,7 @@ msgid "Respiratory or skin sensitization"
 msgstr "Senzibilizace dýchacích cest nebo kůže"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sensitization
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_text
 msgid "Respiratory or skin sensitization details"
 msgstr "Podrobnosti o senzibilizaci dýchacích cest nebo kůže"
@@ -6321,6 +6491,11 @@ msgid "Respiratory/Skin sensitization"
 msgstr "Senzibilizace dýchacích cest/kůže"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Respiratory/Skin sensitization details of the ingredients:"
+msgstr "Podrobnosti o senzibilizaci dýchacích cest/kůže složek:"
+
+#. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_3
@@ -6336,6 +6511,7 @@ msgid "Response"
 msgstr "Odezva"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pbt_vPvB
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5
 msgid "Results of PBT and vPvB assessment"
 msgstr "Výsledky posouzení PBT a vPvB"
@@ -6405,7 +6581,7 @@ msgstr "Nebezpečí výbuchu při zahřívání v uzavřeném obalu."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__romania
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__romania
 msgid "Romania"
-msgstr ""
+msgstr "Rumunsko"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_10
@@ -6583,19 +6759,51 @@ msgid "SECTION 9: free notes"
 msgstr "ODDÍL 9: volné poznámky"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_re
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_text
-msgid "STOST RE details"
-msgstr "Podrobnosti STOST RE"
+msgid "STOT RE details"
+msgstr "Podrobnosti STOT RE"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
-msgid "STOST SE details"
-msgstr "Podrobnosti STOST RE"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid "STOT RE details (ingredients)"
+msgstr "Podrobnosti STOT RE (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid "STOT RE details (mixture)"
+msgstr "Podrobnosti STOT RE (směs)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT RE details of the ingredients:"
+msgstr "STOT RE podrobnosti o složkách:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "STOT RE details:"
 msgstr "Podrobnosti STOT RE:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_se
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
+msgid "STOT SE details"
+msgstr "Podrobnosti STOT RE"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid "STOT SE details (ingredients)"
+msgstr "Podrobnosti STOT SE (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid "STOT SE details (mixture)"
+msgstr "Podrobnosti STOT SE (směs)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT SE details of the ingredients:"
+msgstr "STOT SE podrobnosti o složkách:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -6638,6 +6846,7 @@ msgstr "Bezpečnostní list k dispozici na vyžádání."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sec_poisoning
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Secondary poisoning"
 msgstr "Sekundární otrava"
 
@@ -6797,11 +7006,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (freshwater)"
 msgstr "Sediment (sladkovodní)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (marine water)"
 msgstr "Sediment (mořská voda)"
 
@@ -6924,8 +7135,19 @@ msgstr "Podrobnosti o vážném poškození očí/podráždění očí:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stp
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sewage treatment plant (STP)"
 msgstr "Čistírna odpadních vod (ČOV)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "Show DNEL of ingredients"
+msgstr "Zobrazit DNEL složek"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "Show PNEC of ingredients"
+msgstr "Zobrazit PNEC složek"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_general_4
@@ -6974,6 +7196,16 @@ msgid "Skin contact:"
 msgstr "Kontakt s kůží:"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Skin cor/irr det. (ingredients)"
+msgstr "Skin cor/irr det. (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Skin cor/irr details (mixture)"
+msgstr "Detaily kůže cor/irr (směs)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_corrosion
 msgid "Skin corrosion"
 msgstr "Poleptání kůže"
@@ -6990,6 +7222,7 @@ msgid "Skin corrosion/irritation"
 msgstr "Poleptání/podráždění kůže"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__skin_corrosion
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_text
 msgid "Skin corrosion/irritation details"
 msgstr "Podrobnosti o poleptání/podráždění kůže"
@@ -7014,14 +7247,14 @@ msgstr "Lebka a zkřížené hnáty"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__slovakia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__slovakia
 msgid "Slovakia"
-msgstr ""
+msgstr "Slovensko"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__slovenia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__slovenia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__slovenia
 msgid "Slovenia"
-msgstr ""
+msgstr "Slovinsko"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_9
@@ -7036,6 +7269,7 @@ msgstr "Nechejte vsáknout do inertního absorpčního materiálu."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__soil
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Soil"
 msgstr "Půda"
 
@@ -7049,7 +7283,7 @@ msgstr "Rozpustnost"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__spain
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__spain
 msgid "Spain"
-msgstr ""
+msgstr "Španělsko"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_2
@@ -7074,7 +7308,7 @@ msgid "Specific Target Organ Systemic Toxicity (Single Exposure)"
 msgstr "Systémová toxicita pro specifické cílové orgány (jednorázová expozice)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stot
 msgid "Specific Target Toxicity"
 msgstr "Specifická cílová toxicita"
 
@@ -7314,11 +7548,6 @@ msgstr "Látka nebo směs, která při kontaktu s vodou uvolňuje hořlavý plyn
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "Substance with a community workplace\n"
-#| "                                                        exposure limit. "
-#| "<br/>"
 msgid "Substance with a community workplace exposure limit. <br/>"
 msgstr "Látka s expozičním limitem pro komunitu na pracovišti.<br/>"
 
@@ -7421,7 +7650,12 @@ msgstr "Podezření na poškození nenarozeného dítěte."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__sweden
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__sweden
 msgid "Sweden"
-msgstr ""
+msgstr "Švédsko"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Systemic Effects"
+msgstr "Systémové účinky"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.stability_2
@@ -7437,15 +7671,30 @@ msgstr "TLV"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid "Occupational exposure limit of the entire mixture (TLV)."
 msgid "TLV Occupational exposure limit of the entire mixture: Not available"
-msgstr "Limitní hodnota expozice na pracovišti pro celou směs (TLV)."
+msgstr ""
+"Limitní hodnota expozice na pracovišti pro celou směs (TLV): Nejsou k "
+"dispozici"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "TLV Occupational exposure limit of the ingredients:"
+msgstr "TLV Expoziční limity složek na pracovišti:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_tlv
 msgid "TLV details"
 msgstr "Podrobnosti o TLV"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "TLV of the ingredients"
+msgstr "TLV složek"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+msgid "TLV of the mixture"
+msgstr "TLV směsi"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_11
@@ -7540,17 +7789,24 @@ msgstr "Produkt může reagovat s kyselinami."
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "The product contains dangerous substances in a\n"
-#| "                                    concentration such as to\n"
-#| "                                    be declared in section 3"
 msgid ""
 "The product contains dangerous substances in a concentration such as to be "
 "declared in section 3"
 msgstr ""
 "Výrobek obsahuje nebezpečné látky v koncentraci jako např\n"
 "                                    být deklarován v části 3"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"The product is not listed or identified as having endocrine disrupting "
+"properties in accordance with the criteria set out in Commission Delegated "
+"Regulation (EU) 2017/2100"
+msgstr ""
+"Produkt není uveden nebo označen jako produkt s vlastnostmi narušujícími "
+"endokrinní systém v souladu s kritérii stanovenými v nařízení Komise v "
+"přenesené pravomoci (EU) 2017/2100"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_3
@@ -7610,11 +7866,6 @@ msgstr "Tepelná rizika:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "This mixture does not meet the criteria for classification in\n"
-#| "                                    accordance with\n"
-#| "                                    Regulation (EC) No 1272/2008."
 msgid ""
 "This mixture does not meet the criteria for classification in\n"
 "                                    accordance with Regulation (EC) No "
@@ -7638,12 +7889,22 @@ msgstr ""
 "by se mělo zacházet jako s nebezpečným odpadem podle směrnice ES 2008/98/ES."
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_2
+#, python-format
 msgid ""
 "This substance/mixture does not meet the PBT criteria of REACH regulation, "
 "annex XIII."
 msgstr ""
 "Tato látka/směs nesplňuje kritéria PBT podle nařízení REACH, příloha XIII."
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"This substance/mixture does not meet the vPvB criteria of REACH regulation, "
+"annex XIII"
+msgstr "Tato látka/směs nesplňuje kritéria vPvB nařízení REACH, příloha XIII"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_3
@@ -7653,7 +7914,12 @@ msgid ""
 msgstr "Tato látka/směs nesplňuje kritéria vPvB nařízení REACH, příloha XIII."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_8
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Threshold"
+msgstr "Prahová hodnota"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.STOT_8
 msgid "Thyroid."
 msgstr "Štítná žláza."
 
@@ -7728,14 +7994,35 @@ msgid "Toxicity"
 msgstr "Toxicita"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicity_detail
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_text
 msgid "Toxicity details"
 msgstr "Podrobnosti o toxicitě"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Toxicity details (ingredients)"
+msgstr "Podrobnosti o toxicitě (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
+msgid "Toxicity details (mixture)"
+msgstr "Podrobnosti o toxicitě (směs)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Toxicity details of the ingredients:"
+msgstr "Podrobnosti o toxicitě složek:"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Toxicity details:"
 msgstr "Podrobnosti o toxicitě:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicological
+msgid "Toxicological"
+msgstr "Toxikologické"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -7774,6 +8061,7 @@ msgstr "Typ"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,acronym:safety_datasheet.legend_19
 msgid "UFI"
 msgstr "UFI"
 
@@ -7805,6 +8093,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,description:safety_datasheet.legend_19
 msgid "Unique Formula Identifier"
 msgstr "Identifikátor produktu"
 
@@ -8237,6 +8526,24 @@ msgid "https://echa.europa.eu"
 msgstr "https://echa.europa.eu"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(ingredients)"
+msgstr ""
+"vložte podrobnosti o systémové toxicitě specifického cílového orgánu "
+"(opakovaná expozice) (ingredience)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(mixture)"
+msgstr ""
+"vložte podrobnosti o systémové toxicitě specifického cílového orgánu "
+"(opakovaná expozice) (směs)"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "n.a."
@@ -8268,6 +8575,438 @@ msgstr "vPvB"
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list</td><td>98.0</td><td>20.0</"
+#~ "td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>1.0</td><td><br></"
+#~ "td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>14.0</td><td>20.0</"
+#~ "td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
+#~ "td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>52.0</td><td>20.0</"
+#~ "td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></td><td>10.0 "
+#~ "&nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></td><td>15.0<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
+#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
+#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
+#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
+#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table> "
+
+#~ msgid ""
+#~ "(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
+#~ msgstr ""
+#~ "(2,4,6-trioxotriazin-1,3,5(2H,4H,6H)-triyl)tris(hexamethylen) isokyanát"
+
+#~ msgid "(2-methoxymethylethoxy)propanol"
+#~ msgstr "(2-methoxymethylethoxy)propanol"
+
+#~ msgid "1,2-benzisothiazol-3(2H)-one"
+#~ msgstr "1,2-benzisothiazol-3(2H)-on"
+
+#~ msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
+#~ msgstr "2-(2-butoxyethoxy)ethanol"
+
+#~ msgid "2,2',2''-nitrilotriethanol"
+#~ msgstr "2,2',2''-nitrilotriethanol"
+
+#~ msgid "2-(2-butoxyethoxy)ethanol"
+#~ msgstr "2-(2-butoxyethoxy)ethanol"
+
+#~ msgid "2-butoxyethanol"
+#~ msgstr "2-butoxyethanol"
+
+#~ msgid "2-tridecoxyethyl dihydrogen phosphate"
+#~ msgstr "2-tridekoxyethyldihydrogenfosfát"
+
+#~ msgid ""
+#~ "3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+#~ "                oligomers reaction product with 3-"
+#~ "(cyclohexylamino)propane-1-sulfonic acid\n"
+#~ "                and N,N-dimethylcyclohexanamine"
+#~ msgstr ""
+#~ "3-isokyanatomethyl-3,5,5-trimethylcyklohexyl isokyanát,\n"
+#~ "                reakční produkt oligomerů s 3-(cyklohexylamino)propan-1-"
+#~ "sulfonovou kyselinou\n"
+#~ "                a N,N-dimethylcyklohexanamin"
+
+#~ msgid ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>Norway<br></td><td>Forskrift om endring i "
+#~ "forskrift om tiltaksverdier og grenseverdier for fysiske og kjemiske "
+#~ "faktorer i arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer "
+#~ "(forskrift om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></"
+#~ "td><td><br></td><td>0,005<br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Kraj</th><th rowspan=\"2\"> Legislativa</"
+#~ "th><th colspan=\"3\"> Hodnoty dlouhodobého limitu expozice (LTEL).</th><th "
+#~ "colspan=\"3\"> Hodnoty krátkodobého limitu expozice (STEL).</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\"> Dermální "
+#~ "senzibilizace</th><th rowspan=\"2\"> Senzibilizace dýchacích cest</th><th "
+#~ "rowspan=\"2\"> Pracovní sektor</th><th rowspan=\"2\"> Datum účinnosti</"
+#~ "th><th rowspan=\"2\"> Datum spotřeby</th><th rowspan=\"2\"> Různé "
+#~ "poznámky</th></tr><tr><th> mg/ <sup>m3</sup></th><th> ppm</th><th> f/ml</"
+#~ "th><th> mg/ <sup>m3</sup></th><th> ppm</th><th> f/ml</th></tr></"
+#~ "thead><tbody class=\"table-data\"><tr><td> Norsko<br></td><td> Forskrift "
+#~ "om endring i forskrift om tiltaksverdier og grenseverdier for fysiske og "
+#~ "kjemiske faktorer a arbeidsmiljøet samt smitterisikogrupper for biologiske "
+#~ "factorer (forskrift om tiltaks- og grenseverdier), 21. srpna 2018. "
+#~ "1255<br></td><td><br></td><td> 0,005<br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+#~ "table>"
+
+#~ msgid ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>Specific TLV</td><td>xxx</td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td></tr></tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
+#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
+#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
+#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
+#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
+#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></ table>"
+
+#~ msgid "Acute Dermal Route"
+#~ msgstr "Akutní dermální cesta"
+
+#~ msgid "Acute Inhalation Route"
+#~ msgstr "Akutní inhalační cesta"
+
+#~ msgid "Acute Oral Route"
+#~ msgstr "Akutní orální cesta"
+
+#~ msgid "Insert STOT RE details"
+#~ msgstr "Vložte podrobnosti o STOT RE"
+
+#~ msgid "Insert STOT SE details"
+#~ msgstr "Vložte podrobnosti o STOT RE"
+
+#~ msgid "Insert acute toxicity details"
+#~ msgstr "Vložte údaje o akutní toxicitě"
+
+#~ msgid "Insert mutagenicity details"
+#~ msgstr "Vložte podrobnosti o mutagenitě"
+
+#~ msgid "Insert toxicity details"
+#~ msgstr "Vložte podrobnosti o toxicitě"
+
+#~ msgid "Reproductive details:"
+#~ msgstr "Podrobnosti o reprodukci:"
+
+#, python-format
+#~ msgid ""
+#~ "This substance/mixture does not meet the PBT criteria of REACH regulation, "
+#~ "annex XIII"
+#~ msgstr ""
+#~ "Tato látka/směs nesplňuje kritéria PBT podle nařízení REACH, příloha XIII"
+
+#~ msgid "<br/> Other Hazards:"
+#~ msgstr "<br/> Další nebezpečí:"
+
+#~ msgid "<br/> vPvB:"
+#~ msgstr "<br/> vPvB:"
+
+#~ msgid "PBT:"
+#~ msgstr "PBT:"
 
 #~ msgid ""
 #~ "1.2. Relevant identified uses of the substance or mixture\n"
@@ -8321,44 +9060,6 @@ msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 #~ msgstr ""
 #~ "7.2 Podmínky pro bezpečné skladování látek a směsí včetně neslučitelných "
 #~ "látek a směsí"
-
-#~ msgid ""
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>Norway<br></td><td>Forskrift om endring i "
-#~ "forskrift om tiltaksverdier og grenseverdier for fysiske og kjemiske "
-#~ "faktorer i arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer "
-#~ "(forskrift om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></"
-#~ "td><td><br></td><td>0,005<br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
-#~ msgstr ""
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Kraj</th><th rowspan=\"2\"> Legislativa</"
-#~ "th><th colspan=\"3\"> Hodnoty dlouhodobého limitu expozice (LTEL).</th><th "
-#~ "colspan=\"3\"> Hodnoty krátkodobého limitu expozice (STEL).</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\"> Dermální "
-#~ "senzibilizace</th><th rowspan=\"2\"> Senzibilizace dýchacích cest</th><th "
-#~ "rowspan=\"2\"> Pracovní sektor</th><th rowspan=\"2\"> Datum účinnosti</"
-#~ "th><th rowspan=\"2\"> Datum spotřeby</th><th rowspan=\"2\"> Různé "
-#~ "poznámky</th></tr><tr><th> mg/ <sup>m3</sup></th><th> ppm</th><th> f/ml</"
-#~ "th><th> mg/ <sup>m3</sup></th><th> ppm</th><th> f/ml</th></tr></"
-#~ "thead><tbody class=\"table-data\"><tr><td> Norsko<br></td><td> Forskrift "
-#~ "om endring i forskrift om tiltaksverdier og grenseverdier for fysiske og "
-#~ "kjemiske faktorer a arbeidsmiljøet samt smitterisikogrupper for biologiske "
-#~ "factorer (forskrift om tiltaks- og grenseverdier), 21. srpna 2018. "
-#~ "1255<br></td><td><br></td><td> 0,005<br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
-#~ "table>"
 
 #~ msgid "Bibliography:"
 #~ msgstr "Bibliografie:"
@@ -8449,13 +9150,6 @@ msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 
 #~ msgid "1.4 Emergency telephone number"
 #~ msgstr "1.4 Telefonní číslo pro naléhavé situace"
-
-#~ msgid ""
-#~ "<br/>\n"
-#~ "                            Other Hazards:"
-#~ msgstr ""
-#~ "<br/>\n"
-#~ "                            Další nebezpečí:"
 
 #~ msgid ""
 #~ "<br/>\n"

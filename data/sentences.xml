@@ -1097,57 +1097,57 @@
             <field name="category">reproductive</field>
         </record>
 
-        <record id="STOST_1" model="sds.sentences">
+        <record id="STOT_1" model="sds.sentences">
             <field name="name">Material is corrosive.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_2" model="sds.sentences">
+        <record id="STOT_2" model="sds.sentences">
             <field name="name">Material is not classified as a respiratory irritant; however, upper respiratory tract irritation or corrosivity may be expected.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_3" model="sds.sentences">
+        <record id="STOT_3" model="sds.sentences">
             <field name="name">Based on information for component(s):</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_4" model="sds.sentences">
+        <record id="STOT_4" model="sds.sentences">
             <field name="name">For this family of materials:</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_5" model="sds.sentences">
+        <record id="STOT_5" model="sds.sentences">
             <field name="name">In animals, effects have been reported on the following organs:</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_6" model="sds.sentences">
+        <record id="STOT_6" model="sds.sentences">
             <field name="name">Liver.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_7" model="sds.sentences">
+        <record id="STOT_7" model="sds.sentences">
             <field name="name">Kidney.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_8" model="sds.sentences">
+        <record id="STOT_8" model="sds.sentences">
             <field name="name">Thyroid.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_9" model="sds.sentences">
+        <record id="STOT_9" model="sds.sentences">
             <field name="name">Gastrointestinal tract.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_10" model="sds.sentences">
+        <record id="STOT_10" model="sds.sentences">
             <field name="name">Adrenal gland.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_11" model="sds.sentences">
+        <record id="STOT_11" model="sds.sentences">
             <field name="name">For this endpoint no toxicological test data is available for the whole product.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_12" model="sds.sentences">
+        <record id="STOT_12" model="sds.sentences">
             <field name="name">Based on available data, the classification criteria are not met.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
-        <record id="STOST_13" model="sds.sentences">
+        <record id="STOT_13" model="sds.sentences">
             <field name="name">May cause respiratory irritation.</field>
-            <field name="category">STOST</field>
+            <field name="category">STOT</field>
         </record>
 
         <record id="aspiration_1" model="sds.sentences">

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200827\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 13:41+0000\n"
-"PO-Revision-Date: 2024-10-30 14:59+0100\n"
+"POT-Creation-Date: 2024-11-19 09:26+0000\n"
+"PO-Revision-Date: 2024-11-19 11:40+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -292,346 +292,10 @@ msgstr ""
 "                "
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-butoxyethanol
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</"
-"td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 1ère liste</td><td>98.0</td><td>20.0</"
-"td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Oui</td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>\n"
-"            \n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-633-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</"
-"td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 1ère liste<br></td><td>1.0</td><td><br></"
-"td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>\n"
-"            \n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ammonia
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</"
-"td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 1ère liste<br></td><td>14.0</td><td>20.0</"
-"td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>\n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
-"td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 1ère liste<br></td><td>308.0<br></td><td>50.0</"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td>oui<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC203-473-3
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</"
-"td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 1ère liste<br></td><td>52.0</td><td>20.0</"
-"td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Oui</td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>\n"
-"            \n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-2-butoxyethoxyethanol
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></"
-"td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></"
-"td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</th><th "
-"colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</th><th "
-"rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
-"cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th><th "
-"rowspan=\"2\">Secteur d'activité</th><th rowspan=\"2\">Date d'entrée en "
-"vigueur</th><th rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes "
-"diverses</th></tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</"
-"th><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-"class=\"table-data\"><tr><td>Union européenne<br></td><td>VLEP - Limites "
-"d'exposition professionnelle - 2ème liste<br></td><td>67.5<br></td><td>10.0 "
-"<br></td><td><br></td><td>101.2<br></td><td>15.0<br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.natural_cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.portland_cement
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th>Valeurs limites d'exposition à long terme (LTEL)</th><th>Valeurs "
-"limites d'exposition à court terme (STEL)</th><th rowspan=\"2\">Désignation "
-"de la peau</th><th rowspan=\"2\">Sensibilisation cutanée</th><th "
-"rowspan=\"2\">Sensibilisation respiratoire</th></tr><tr><th><sup>mg/m3</sup></"
-"th><th><sup>mg/m3</sup></th></tr></thead><tbody class=\"table-"
-"data\"><tr><td>ROYAUME-UNI<br></td><td>WEL TWA<br></td><td>10 mg/m³ de "
-"poussières inhalables <br>4 mg/m³ de poussières respirables<br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></"
-"td><td>VME<br></td><td>10 mg/m³ de poussières inhalables <br>4 mg/m³ de "
-"poussières respirables</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ de poussières "
-"alvéolaires<br></td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr></tbody></table>\n"
-"            "
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CSA
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-"th><th>Valeurs limites d'exposition à long terme (LTEL)</th><th>Valeurs "
-"limites d'exposition à court terme (STEL)</th><th rowspan=\"2\">Désignation "
-"de la peau</th><th rowspan=\"2\">Sensibilisation cutanée</th><th "
-"rowspan=\"2\">Sensibilisation respiratoire</th></tr><tr><th><sup>mg/m3</sup></"
-"th><th><sup>mg/m3</sup></th></tr></thead><tbody class=\"table-"
-"data\"><tr><td>ROYAUME-UNI<br></td><td>WEL TWA<br></td><td>10 mg/m³ de "
-"poussières inhalables <br>4 mg/m³ de poussières respirables<br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></"
-"td><td>VME<br></td><td>10 mg/m³ de poussières inhalables <br>4 mg/m³ de "
-"poussières respirables</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ de poussières "
-"alvéolaires<br></td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr></tbody></table>\n"
-"            \n"
-"            "
-
-#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (Copie)"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_3779-63-3
-msgid ""
-"(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
-msgstr ""
-"(2,4,6-trioxotriazine-1,3,5 (2H,4H,6H)-triyl)tris (hexaméthylène) isocyanate"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC252-104-2
-msgid "(2-methoxymethylethoxy)propanol"
-msgstr "2- (2-butoxyéthoxy) éthanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC220-120-9
-msgid "1,2-benzisothiazol-3(2H)-one"
-msgstr "1,2-benzisothiazol-3(2H)-one"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.butoxy_propanol
-msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
-msgstr "2- (2-butoxyéthoxy) éthanol"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -849,26 +513,6 @@ msgid "16"
 msgstr "16"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.nitrilotriethanol
-msgid "2,2',2''-nitrilotriethanol"
-msgstr "2,2',2''-nitrilotriéthanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
-msgid "2-(2-butoxyethoxy)ethanol"
-msgstr "2- (2-butoxyéthoxy) éthanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-butoxyethanol
-msgid "2-butoxyethanol"
-msgstr "2-butoxyéthanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_618-558-4
-msgid "2-tridecoxyethyl dihydrogen phosphate"
-msgstr "phosphate de dihydrogène de 2-tridécoxyéthyle"
-
-#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "2.1 Classification of the substance or mixture"
 msgstr "2.1 Classification de la substance ou du mélange"
@@ -887,19 +531,6 @@ msgstr "2.2 Éléments d’étiquetage"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "2.3. Other Hazards"
 msgstr "2.3 Autres dangers"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
-msgid ""
-"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
-"                oligomers reaction product with 3-(cyclohexylamino)propane-1-"
-"sulfonic acid\n"
-"                and N,N-dimethylcyclohexanamine"
-msgstr ""
-"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
-"                produit de réaction d’oligomers avec l’acide 3-"
-"(cyclohexylamino)propane-1-sulfonique\n"
-"                et N,N-dimethylcyclohexanamine"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -1022,13 +653,10 @@ msgstr "<b>IUPAC:</b>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "<br/> Other Hazards:"
+msgid ""
+"<br/>\n"
+"                            Other Hazards:"
 msgstr "<br/>Autres dangers :"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "<br/> vPvB:"
-msgstr "<br/> vPvB :"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -1214,37 +842,6 @@ msgstr "<span> Remplace la version:&amp;nbsp; </span>"
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
 #: code:addons/safety_datasheet/models/datasheet.py:0
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Aluminium_sulphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS12788-93-1
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS28182-81-2
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS7087-68-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC220-120-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-764-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-944-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EDTA_tetrasodium_salt
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Hexamethylene_diisocyanate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Natriummetasilicat_Pentahydrat
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Potassium_methylsilanetriolate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Sodium_silicate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Trisodium_nitrilotriacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Zinc_nitrate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.butoxy_propanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_1574548-27-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_3779-63-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_666723-27-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_202-715-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_618-558-4
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_931-274-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.citric_acid
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ec_932-183-6
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.lithum_carbonate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.nitrilotriethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.potassium_pyrophosphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -1276,6 +873,103 @@ msgstr ""
 "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Result/"
+"Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td>Effect on developmental toxicity<br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Résultat/"
+"Effet</th><th> Espèce/Système d'essai</th><th> Source</th></tr></"
+"thead><tbody><tr><td> Effet sur la fertilité<br></td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td> Effet sur la toxicité pour le "
+"développement<br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Adsorption/"
+"desorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Résultats/"
+"Résumés</th><th> Source</th></tr></thead><tbody><tr><td> Adsorption/"
+"désorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Bioaccumulation: "
+"aquatic / sediment</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/><br></"
+"td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Résultats/"
+"Résumés</th><th> Source</th></tr></thead><tbody><tr><td> Bioaccumulation : "
+"aquatique / sédimentaire</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td> Bioaccumulation : terrestre</td><td><br/><br></td><td><br/><br></"
+"td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Biodegradation in "
+"water - screening tests</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Biodegradation in water & sediment - simulation tests</td><td><br/"
+"><br></td><td><br/><br></td></tr><tr><td>Biodegradation in soil</td><td><br/"
+"><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Résultats/"
+"Résumés</th><th> Source</th></tr></thead><tbody><tr><td> Biodégradation dans "
+"l&#39;eau - tests de dépistage</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td> Biodégradation dans l&#39;eau et les sédiments - tests de "
+"simulation</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Biodégradation dans le sol</td><td><br/><br></td><td><br/><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Environmental fate</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td>Photochemical ozone "
+"creation potential</td><td><br/><br></td><td><br/><br></td></tr><tr><td>Ozone "
+"depletion potential</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Global warming potential</td><td><br/><br></td><td><br/><br></td></"
+"tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Résultats/"
+"Résumés</th><th> Source</th></tr></thead><tbody><tr><td> Devenir "
+"environnemental</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Potentiel de création d'ozone photochimique</td><td><br/><br></td><td><br/"
+"><br></td></tr><tr><td> Potentiel d’appauvrissement de la couche d’ozone</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td> Potentiel de "
+"réchauffement climatique</td><td><br/><br></td><td><br/><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
+"th><th>Species/Test system</th><th>Source</th></tr></thead><tbody><tr><td><br/"
+"></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Résultat / Effet</"
+"th><th>Espèce /Système d’essai</th><th>Source</th></tr></"
+"thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid ""
@@ -1303,6 +997,42 @@ msgstr ""
 "tr></thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></td><td><br></"
 "td></tr><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
 "tr><tr><td>Peau/oeil</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Voie d'exposition</"
+"th><th> Résultat/Effet</th><th> Espèce/Système d'essai</th><th> Source</th></"
+"tr></thead><tbody><tr><td> Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td> Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td> Dermique</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
+"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Voie d'exposition</"
+"th><th> Résultat/Effet</th><th> Espèce/Système d'essai</th><th> Source</th></"
+"tr></thead><tbody><tr><td> Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td> Inhalation<br></td><td> mg/m³</td><td><br></td><td><br></td></"
+"tr><tr><td> Peau/œil<br></td><td><br></td><td><br></td><td><br></td></tr></"
 "tbody></table>"
 
 #. module: safety_datasheet
@@ -1403,6 +1133,23 @@ msgid "Action sentences"
 msgstr "Peines d’action"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulatory_information__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Acute / short term:"
+msgstr "Aiguë / à court terme :"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_dermal
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Acute dermal toxicity"
@@ -1481,6 +1228,21 @@ msgid "Acute toxicity details"
 msgstr "Détails de toxicité aiguë"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_component
+msgid "Acute toxicity details (ingredients)"
+msgstr "Détails sur la toxicité aiguë (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
+msgid "Acute toxicity details (mixture)"
+msgstr "Détails sur la toxicité aiguë (mélange)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__acute_summary
+msgid "Acute toxicity summary"
+msgstr "Résumé de la toxicité aiguë"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_Additional
 msgid "Additional Labelling"
 msgstr "Étiquetage supplémentaire"
@@ -1491,9 +1253,19 @@ msgid "Adopt adequate precautions for the rescuer."
 msgstr "Prendre des précautions adéquates pour le sauveteur."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_10
+#: model:sds.sentences,name:safety_datasheet.STOT_10
 msgid "Adrenal gland."
 msgstr "Surrénale."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Adverse effects details (ingredients)"
+msgstr "Détails des effets indésirables (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
+msgid "Adverse effects details (mixture)"
+msgstr "Détails des effets indésirables (mélange)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__fire_fight_advice
@@ -1519,6 +1291,7 @@ msgstr "Après le nettoyage, rincer les traces avec de l’eau."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__air
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Air"
 msgstr "Air"
 
@@ -1633,14 +1406,30 @@ msgid "Aspiration Hazard"
 msgstr "Danger par aspiration"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__aspiration_hazard
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_text
 msgid "Aspiration Hazard details"
 msgstr "Détails du danger d’aspiration"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Aspiration Hazard details of the ingredients:"
+msgstr "Détails sur le danger d'aspiration des ingrédients :"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Aspiration Hazard details:"
 msgstr "Détails du danger d’aspiration :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Aspiration haz. details (ingredients)"
+msgstr "Détails sur les dangers liés à l'aspiration (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Aspiration haz. details (mixture)"
+msgstr "Détails sur les dangers liés à l'aspiration (mélange)"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Asp_Tox_1
@@ -1731,7 +1520,7 @@ msgid "Avoid release to the environment."
 msgstr "Éviter le rejet dans l’environnement."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
+#: model:sds.sentences,name:safety_datasheet.STOT_12
 #: model:sds.sentences,name:safety_datasheet.aspiration_2
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_3
 #: model:sds.sentences,name:safety_datasheet.eye_damage_4
@@ -1745,7 +1534,7 @@ msgstr ""
 "remplis."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_3
+#: model:sds.sentences,name:safety_datasheet.STOT_3
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_1
 #: model:sds.sentences,name:safety_datasheet.reproductive_1
 msgid "Based on information for component(s):"
@@ -1819,6 +1608,17 @@ msgid "Bibliography entries"
 msgstr "Entrées de bibliographie"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Bioaccumulative details (ingredients)"
+msgstr "Détails bioaccumulatifs (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Bioaccumulative details (mixture)"
+msgstr "Détails bioaccumulatifs (mélange)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__bioaccumulation
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__bioaccumulative
 msgid "Bioaccumulative potential"
@@ -1871,6 +1671,11 @@ msgstr "Le transport en vrac dans des camions-citernes n’est pas prévu."
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "CAS / EC-No."
 msgstr "N ° CAS / CE"
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_20
+msgid "CAS No."
+msgstr "Numéro CAS"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__CASno
@@ -1959,9 +1764,25 @@ msgid "Carcinogenicity"
 msgstr "Cancérogénicité"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__carcinogenicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_text
 msgid "Carcinogenicity details"
 msgstr "Détails de la cancérogénicité"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Carcinogenicity details (ingredients)"
+msgstr "Détails sur la cancérogénicité (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Carcinogenicity details (mixture)"
+msgstr "Détails sur la cancérogénicité (mélange)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Carcinogenicity details of the ingredients:"
+msgstr "Détails sur la cancérogénicité des ingrédients :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -2046,6 +1867,11 @@ msgstr "Modifications apportées à la version précédente"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Changes made to the previous version:"
 msgstr "Modifications apportées à la version précédente :"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_20
+msgid "Chemical Abstracts Service (CAS) Registry Number"
+msgstr "Numéro de registre du Chemical Abstracts Service (CAS)"
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_classification
@@ -2360,6 +2186,11 @@ msgid "Corrosion"
 msgstr "Corrosion"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Corrosion/irritation details of the ingredients:"
+msgstr "Détails sur la corrosion/l'irritation des ingrédients :"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_6
 msgid "Corrosive to metals."
 msgstr "Corrosif pour les métaux."
@@ -2522,6 +2353,11 @@ msgid "Czech Republic"
 msgstr "République Tchèque"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DERMAL Exposure"
+msgstr "Exposition CUTANÉE"
+
+#. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_10
 msgid ""
 "DIRECTIVE 2012/18/EU OF THE EUROPEAN PARLIAMENT AND OF THE\n"
@@ -2542,8 +2378,24 @@ msgstr "DNEL"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "DNEL Exposure limit values: Not available"
-msgstr "Valeurs limites d’exposition DNEL : Non disponibles"
+msgid "DNEL Exposure limit values for the whole mixture: Not available"
+msgstr ""
+"Valeurs limites d'exposition DNEL pour l'ensemble du mélange : Non disponible"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DNEL Exposure limit values of the ingredients:"
+msgstr "DNEL Valeurs limites d'exposition des ingrédients :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "DNEL of ingredients"
+msgstr "DNEL des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "DNEL of the mixture"
+msgstr "DNEL du mélange"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P373
@@ -2554,6 +2406,16 @@ msgstr "NE PAS lutter contre l'incendie lorsque le feu atteint les explosifs."
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_2_2_signal__danger
 msgid "Danger"
 msgstr "Danger"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for GENERAL POPULATION"
+msgstr "Données pour la POPULATION GÉNÉRALE"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for WORKERS"
+msgstr "Données pour les TRAVAILLEURS"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -2581,6 +2443,16 @@ msgid "Decomposition temperature"
 msgstr "Température de décomposition"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Degradability details (ingredients)"
+msgstr "Détails sur la dégradabilité (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
+msgid "Degradability details (mixture)"
+msgstr "Détails sur la dégradabilité (mélange)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__denmark
@@ -2593,9 +2465,9 @@ msgid "Density and/or relative density"
 msgstr "Densité et/ou densité relative"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
-msgid "Derived No Effect Level (DNEL)"
-msgstr "Niveau dérivé sans effet (DNEL)"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "Derived No Effect Level (DNEL) of the mixture"
+msgstr "Niveau dérivé sans effet (DNEL) du mélange"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -2936,8 +2808,12 @@ msgid "Dust mask FFP2"
 msgstr "Masque antipoussière FFP2"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model:sds.legend,acronym:safety_datasheet.legend_1
+msgid "EC No."
+msgstr "N° CE"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
 msgid "EC Number"
 msgstr "Numéro CE"
@@ -2986,6 +2862,16 @@ msgid "EWC"
 msgstr "CEE"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "EYE Exposure"
+msgstr "Exposition des YEUX"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ecological
+msgid "Ecological Information"
+msgstr "Informations écologiques"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P381
 msgid "Eliminate all ignition sources if safe to do so."
 msgstr ""
@@ -3012,7 +2898,24 @@ msgid "End of safety datasheet"
 msgstr "Fin de la fiche de données de sécurité"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Endocrine details (ingredients)"
+msgstr "Détails endocriniens (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Endocrine details (mixture)"
+msgstr "Détails endocriniens (mélange)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
+msgid "Endocrine disrupting"
+msgstr "Perturbateur endocrinien"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__endocrine
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
 msgid "Endocrine disrupting properties"
 msgstr "Propriétés perturbant le système endocrinien"
 
@@ -3028,7 +2931,7 @@ msgstr "Perturbation endocrinienne"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__engineer_control
-msgid "Engineer control"
+msgid "Engineering control"
 msgstr "Contrôle technique"
 
 #. module: safety_datasheet
@@ -3276,9 +3179,25 @@ msgid "Eye contact:"
 msgstr "Contact oculaire :"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Eye cor/irr details (ingredients)"
+msgstr "Détails de la cor/irr oculaire (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Eye cor/irr details (mixture)"
+msgstr "Détails de la cor/irr oculaire (mélange)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__eye_damage
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_text
 msgid "Eye damage/irritation details"
 msgstr "Lésions oculaires/irritation"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Eye damage/irritation details of the ingredients:"
+msgstr "Lésions/irritations oculaires Détails des ingrédients :"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye_protection
@@ -3517,7 +3436,7 @@ msgstr ""
 "rubrique 16."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_11
+#: model:sds.sentences,name:safety_datasheet.STOT_11
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_4
 msgid ""
@@ -3528,7 +3447,7 @@ msgstr ""
 "disponible pour l’ensemble du produit."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_4
+#: model:sds.sentences,name:safety_datasheet.STOT_4
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_2
 msgid "For this family of materials:"
@@ -3562,6 +3481,7 @@ msgstr "France"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__freshwater
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Freshwater"
 msgstr "Eau douce"
 
@@ -3616,7 +3536,7 @@ msgid "Gases under pressure"
 msgstr "Gaz sous pression"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_9
+#: model:sds.sentences,name:safety_datasheet.STOT_9
 msgid "Gastrointestinal tract."
 msgstr "Appareil gastro-intestinal."
 
@@ -3643,6 +3563,11 @@ msgstr "Conseil général :"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Germ cell mutagenicity"
 msgstr "Mutagénicité sur les cellules germinales"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Germ cell mutagenicity details of the ingredients:"
+msgstr "Détails sur la mutagénicité des cellules germinales des ingrédients :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -3854,8 +3779,14 @@ msgstr "Mentions de danger :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Air"
 msgstr "Risque pour l'air"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Hazard for Aquatic Organism"
+msgstr "Danger pour les organismes aquatiques"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
@@ -3864,11 +3795,13 @@ msgstr "Danger pour les organismes aquatiques"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Predators"
 msgstr "Danger pour les prédateurs"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Terrestrial Organism"
 msgstr "Risque pour les organismes terrestres"
 
@@ -4141,6 +4074,16 @@ msgid "IMO"
 msgstr "OMI"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "INHALATION Exposure"
+msgstr "Exposition par INHALATION"
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_21
+msgid "IUPAC"
+msgstr "UIPAC"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__IUPACname
 msgid "IUPAC Name"
 msgstr "Nom IUPAC"
@@ -4315,7 +4258,7 @@ msgid "In animal studies, did not interfere with reproduction."
 msgstr "Dans les études animales, n’a pas interférer avec la reproduction."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_5
+#: model:sds.sentences,name:safety_datasheet.STOT_5
 msgid "In animals, effects have been reported on the following organs:"
 msgstr ""
 "Chez les animaux, des effets ont été rapportés sur les organes suivants :"
@@ -4453,6 +4396,11 @@ msgid "Ingestion:"
 msgstr "Ingestion :"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Ingredients details:"
+msgstr "Détails des ingrédients :"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_inhalation
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__inhalation
 msgid "Inhalation"
@@ -4481,69 +4429,115 @@ msgid "Insert National Distributor contact"
 msgstr "Insérer le contact du distributeur national"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
-msgid "Insert PBT and vPvB details"
-msgstr "Insérer les détails PBT et vPvB"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Insert aspiration hazard details (ingredients)"
+msgstr "Insérer les détails du danger d'aspiration (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
-msgid "Insert STOST RE details"
-msgstr "Insérer les détails de STOST RE"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Insert aspiration hazard details (mixture)"
+msgstr "Insérer les détails du danger d'aspiration (mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
-msgid "Insert STOST SE details"
-msgstr "Insérer les détails de STOST SE"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Insert carcinogenicity details (ingredients)"
+msgstr "Insérer les détails de cancérogénicité (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
-msgid "Insert acute toxicity details"
-msgstr "Insérer des détails de toxicité"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Insert carcinogenicity details (mixture)"
+msgstr "Insérer les détails de cancérogénicité (mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
-msgid "Insert adverse effects details"
-msgstr "Insérer des détails sur les effets indésirables"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Insert endocrine disrupting properties details (ingredients)"
+msgstr ""
+"Insérer les détails des propriétés perturbatrices endocriniennes (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
-msgid "Insert aspiration Hazard details"
-msgstr "Insérer les détails de danger d’aspiration"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Insert endocrine disrupting properties details (mixture)"
+msgstr ""
+"Insérer les détails des propriétés perturbatrices endocriniennes (mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
-msgid "Insert bioaccumulative details"
-msgstr "Insérer des détails bioaccumulatifs"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Insert eye damage corrosion/irritation details (ingredients)"
+msgstr ""
+"Insérer les détails sur les lésions oculaires, la corrosion/l'irritation "
+"(ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
-msgid "Insert carcinogenicity details"
-msgstr "Insérer des détails de cancérogénicité"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Insert eye damage corrosion/irritation details (mixture)"
+msgstr ""
+"Insérer les détails sur les lésions oculaires, la corrosion/l'irritation "
+"(mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
-msgid "Insert degradability details"
-msgstr "Insérer des détails de dégradabilité"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Insert germ cell mutagenicity details (ingredients)"
+msgstr ""
+"Insérer les détails sur la mutagénicité des cellules germinales (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
-msgid "Insert endocrine details"
-msgstr "Insérer les détails endocriniens"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Insert germ cell mutagenicity details (mixture)"
+msgstr ""
+"Insérer les détails sur la mutagénicité des cellules germinales (mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
-msgid "Insert eye damage corrosion/irritation details"
-msgstr "Insérer des détails de corrosion/irritation des lésions oculaires"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Insert ingredients bioaccumulative details"
+msgstr "Insérer les détails bioaccumulables des ingrédients"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
-msgid "Insert mobility details"
-msgstr "Insérer les détails de la mobilité"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Insert ingredients degradability details"
+msgstr "Insérer les détails de dégradabilité des ingrédients"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
-msgid "Insert mutagenicity details"
-msgstr "Insérer les détails de la mutagène"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Insert ingredients mobility in soil details"
+msgstr "Insérer la mobilité des ingrédients dans les détails du sol"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Insert ingredients toxicity details"
+msgstr "Insérer les détails de toxicité des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Insert mixture bioaccumulative potential details"
+msgstr "Insérer les détails du potentiel de bioaccumulation du mélange"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Insert mobility in soil details of the mixture"
+msgstr "Insérer la mobilité dans les détails du mélange du sol"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Insert other adverse effects details (ingredients)"
+msgstr "Insérer d'autres détails sur les effets indésirables (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(ingredients)"
+msgstr ""
+"Insérer les détails spécifiques de la toxicité systémique pour certains "
+"organes cibles (exposition unique) (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(mixture)"
+msgstr ""
+"Insérer les détails spécifiques de la toxicité systémique pour certains "
+"organes cibles (exposition unique) (mélange)"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -4556,32 +4550,56 @@ msgid "Insert reactivity of the components"
 msgstr "Insérer la réactivité des composants"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
-msgid "Insert reproductive toxicity details"
-msgstr "Insérer les détails de la toxicité de la reproduction"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Insert reproductive toxicity details (ingredients)"
+msgstr "Insérer les détails de la toxicité pour la reproduction (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
-msgid "Insert respiratory or skin sensitization details"
-msgstr "Insérer des détails de sensibilisation respiratoire ou cutanée"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Insert reproductive toxicity details (mixture)"
+msgstr "Insérer les détails de la toxicité pour la reproduction (mélange)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
-msgid "Insert skin corrosion/irritation details"
-msgstr "Insérer des détails de corrosion/irritation de la peau"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Insert respiratory or skin sensitization details (ingredients)"
+msgstr ""
+"Insérer les détails de sensibilisation respiratoire ou cutanée (ingrédients)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
-msgid "Insert toxicity details"
-msgstr "Insérer des détails de toxicité"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Insert respiratory or skin sensitization details (mixture)"
+msgstr ""
+"Insérer les détails de sensibilisation respiratoire ou cutanée (mélange)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "Insert results of ingredients PBT and vPvB assessment"
+msgstr "Insérer les résultats de l'évaluation PBT et vPvB des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "Insert results of mixture PBT and vPvB assessment"
+msgstr "Insérer les résultats de l'évaluation PBT et vPvB du mélange"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Insert skin corrosion/irritation details (ingredients)"
+msgstr "Insérer les détails sur la corrosion/irritation cutanée (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Insert skin corrosion/irritation details (mixture)"
+msgstr "Insérer les détails sur la corrosion/irritation cutanée (mélange)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (freshwater)"
 msgstr "Rejets intermittents (eau douce)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (marine water)"
 msgstr "Rejets intermittents (eau de mer)"
 
@@ -4589,6 +4607,11 @@ msgstr "Rejets intermittents (eau de mer)"
 #: model:sds.legend,description:safety_datasheet.legend_4
 msgid "International Maritime Organization"
 msgstr "Organisation maritime internationale"
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_21
+msgid "International Union of Pure and Applied Chemistry"
+msgstr "Union internationale de chimie pure et appliquée"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__ireland
@@ -4738,7 +4761,7 @@ msgid "Keep/Store away from clothing/…/combustible materials."
 msgstr "Conserver/stocker à l'écart des vêtements/.../matériaux combustibles."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_7
+#: model:sds.sentences,name:safety_datasheet.STOT_7
 msgid "Kidney."
 msgstr "Rein."
 
@@ -4917,9 +4940,14 @@ msgid "Lithuania"
 msgstr "Lituanie"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_6
+#: model:sds.sentences,name:safety_datasheet.STOT_6
 msgid "Liver."
 msgstr "Foie."
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Local Effects"
+msgstr "Effets locaux"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_env_precaution_5
@@ -4994,6 +5022,11 @@ msgid "Long-term systemic oral effect"
 msgstr "Effet oral systémique à long terme"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Long-term:"
+msgstr "À long terme :"
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
 msgstr "Limites inférieure et supérieure d’explosion"
@@ -5019,6 +5052,7 @@ msgstr "Malte"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__marinew
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Marine water"
 msgstr "Eau de mer"
 
@@ -5028,7 +5062,7 @@ msgid "Maritime transport in bulk according to IMO instruments"
 msgstr "Transport maritime en vrac selon les instruments de l'OMI"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_1
+#: model:sds.sentences,name:safety_datasheet.STOT_1
 msgid "Material is corrosive."
 msgstr "Le matériau est corrosif."
 
@@ -5038,7 +5072,7 @@ msgid "Material is not biodegradable."
 msgstr "Le matériau n’est pas biodégradable."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_2
+#: model:sds.sentences,name:safety_datasheet.STOT_2
 msgid ""
 "Material is not classified as a respiratory irritant; however, upper "
 "respiratory tract irritation or corrosivity may be expected."
@@ -5163,7 +5197,7 @@ msgstr "Peut provoquer ou intensifier un incendie ; comburant."
 # H335
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
-#: model:sds.sentences,name:safety_datasheet.STOST_13
+#: model:sds.sentences,name:safety_datasheet.STOT_13
 msgid "May cause respiratory irritation."
 msgstr "Peut irriter les voies respiratoires."
 
@@ -5264,6 +5298,17 @@ msgid "Mixture:"
 msgstr "Mélange :"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Mobility details (ingredients)"
+msgstr "Détails sur la mobilité (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Mobility details (mixture)"
+msgstr "Détails de mobilité (mix)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mobility
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__mobility
 msgid "Mobility in soil"
@@ -5295,9 +5340,20 @@ msgid "Mutagenicity"
 msgstr "Mutagénicité"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mutagenity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_text
 msgid "Mutagenicity details"
 msgstr "Insérer les détails de la mutagène"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Mutagenicity details (ingredients)"
+msgstr "Détails sur la mutagénicité (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Mutagenicity details (mixture)"
+msgstr "Détails sur la mutagénicité (mélange)"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_18
@@ -5539,14 +5595,24 @@ msgid "OECD"
 msgstr "OCDE"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "ORAL Exposure"
+msgstr "Exposition ORALE"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P201
 msgid "Obtain special instructions before use."
 msgstr "Obtenir des instructions spéciales avant l'utilisation."
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
 msgid "Occupational exposure limit of the entire mixture (TLV)."
 msgstr "Limite d’exposition professionnelle (TLV)."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "Occupational exposure limit of the ingredients (TLV)."
+msgstr "Limite d'exposition professionnelle des ingrédients (TLV)."
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_3
@@ -5607,6 +5673,7 @@ msgid "Other adverse"
 msgstr "Autres effets négatifs"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__other_effects
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7
 msgid "Other adverse effects"
 msgstr "Autres effets néfastes"
@@ -5679,9 +5746,14 @@ msgid "PBT and vPvB assessment"
 msgstr "Évaluation PBT et vPvB"
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PBT:"
-msgstr "PBT :"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "PBT and vPvB details (ingredients)"
+msgstr "Détails PBT et vPvB (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "PBT and vPvB details (mixture)"
+msgstr "Détails PBT et vPvB (mélange)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pnec
@@ -5691,8 +5763,24 @@ msgstr "PNEC"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PNEC Exposure limit values: Not available"
-msgstr "Valeurs limites d’exposition PNEC : Non disponibles"
+msgid "PNEC Exposure limit values for the entire mixture: Not available"
+msgstr ""
+"Valeurs limites d'exposition PNEC pour l'ensemble du mélange : Non disponible"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "PNEC Exposure limit values of the ingredients:"
+msgstr "Valeurs limites d'exposition PNEC des ingrédients :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "PNEC of ingredients"
+msgstr "PNEC des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "PNEC of the mixture"
+msgstr "PNEC du mélange"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_4
@@ -5720,6 +5808,7 @@ msgid "Persistence"
 msgstr "Persistance"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__degradability
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2
 msgid "Persistence and degradability"
 msgstr "Persistance et dégradabilité"
@@ -5887,10 +5976,14 @@ msgid "Precautions for safe handling"
 msgstr "Précautions à prendre pour une manipulation sans danger"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
 msgid "Predicted No Effect Concentration (PNEC)"
 msgstr "Concentration prédite sans effet (PNEC)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "Predicted No Effect Concentration (PNEC) of the mixture"
+msgstr "Concentration prédite sans effet (PNEC) du mélange"
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H229
@@ -6461,9 +6554,14 @@ msgstr ""
 "la peau."
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Reproductive details:"
-msgstr "Détails reproductifs :"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Reproductive tox. details (ingredients)"
+msgstr "Détails sur la toxicité pour la reproduction (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Reproductive tox. details (mixture)"
+msgstr "Détails sur la toxicité pour la reproduction (mélange)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7
@@ -6477,9 +6575,30 @@ msgid "Reproductive toxicity"
 msgstr "Toxicité pour la reproduction"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__reproductive_toxicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_text
 msgid "Reproductive toxicity details"
 msgstr "Insérer les détails de la toxicité de la reproduction"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details of the ingredients:"
+msgstr "Détails sur la toxicité pour la reproduction des ingrédients :"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details:"
+msgstr "Détails sur la toxicité pour la reproduction :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Resp/skin sens. details (ingredients)"
+msgstr "Détails sur la sensibilité cutanée/respiratoire (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Resp/skin sens. details (mixture)"
+msgstr "Détails de la sensibilité cutanée/respiratoire (mélange)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4
@@ -6488,6 +6607,7 @@ msgid "Respiratory or skin sensitization"
 msgstr "Sensibilisation respiratoire ou cutanée"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sensitization
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_text
 msgid "Respiratory or skin sensitization details"
 msgstr "Détails de sensibilisation respiratoire ou cutanée"
@@ -6523,6 +6643,11 @@ msgid "Respiratory/Skin sensitization"
 msgstr "Sensibilisation respiratoire/cutanée"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Respiratory/Skin sensitization details of the ingredients:"
+msgstr "Détails sur la sensibilisation respiratoire/cutanée des ingrédients :"
+
+#. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_3
@@ -6538,6 +6663,7 @@ msgid "Response"
 msgstr "Réponse"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pbt_vPvB
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5
 msgid "Results of PBT and vPvB assessment"
 msgstr "Résultats des évaluations PBT et vPvB"
@@ -6787,19 +6913,51 @@ msgid "SECTION 9: free notes"
 msgstr "SECTION 9 : notes libres"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_re
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_text
-msgid "STOST RE details"
-msgstr "STOST RE détails"
+msgid "STOT RE details"
+msgstr "STOT RE détails"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
-msgid "STOST SE details"
-msgstr "STOST SE détails"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid "STOT RE details (ingredients)"
+msgstr "Détails STOT RE (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid "STOT RE details (mixture)"
+msgstr "Détails STOT RE (mélange)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT RE details of the ingredients:"
+msgstr "STOT RE détails des ingrédients :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "STOT RE details:"
 msgstr "Détails STOT RE :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_se
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
+msgid "STOT SE details"
+msgstr "STOT SE détails"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid "STOT SE details (ingredients)"
+msgstr "Détails STOT SE (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid "STOT SE details (mixture)"
+msgstr "Détails STOT SE (mélange)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT SE details of the ingredients:"
+msgstr "STOT SE détails des ingrédients :"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -6842,6 +7000,7 @@ msgstr "Fiche de données de sécurité disponible sur demande."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sec_poisoning
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Secondary poisoning"
 msgstr "Empoisonnement secondaire"
 
@@ -7001,11 +7160,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (freshwater)"
 msgstr "Sédiments (eau douce)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (marine water)"
 msgstr "Sédiments (eau de mer)"
 
@@ -7129,8 +7290,19 @@ msgstr "Détails des lésions oculaires graves / irritation oculaire :"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stp
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sewage treatment plant (STP)"
 msgstr "Station d'épuration des eaux usées (STP)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "Show DNEL of ingredients"
+msgstr "Afficher le DNEL des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "Show PNEC of ingredients"
+msgstr "Afficher le PNEC des ingrédients"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_general_4
@@ -7179,6 +7351,16 @@ msgid "Skin contact:"
 msgstr "Contact cutané :"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Skin cor/irr det. (ingredients)"
+msgstr "Peau cor/irr det. (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Skin cor/irr details (mixture)"
+msgstr "Détails de corrosion cutanée/irritation cutanée (mélange)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_corrosion
 msgid "Skin corrosion"
 msgstr "Corrosion cutanée"
@@ -7195,6 +7377,7 @@ msgid "Skin corrosion/irritation"
 msgstr "Corrosion cutanée/irritation cutanée"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__skin_corrosion
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_text
 msgid "Skin corrosion/irritation details"
 msgstr "Détails de corrosion cutanée/irritation cutanée"
@@ -7243,6 +7426,7 @@ msgstr "Imprégnez-vous d’un matériau absorbant inerte."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__soil
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Soil"
 msgstr "Sol"
 
@@ -7283,7 +7467,7 @@ msgstr ""
 "Toxicité spécifique pour certains organes cibles (STOT) — exposition unique"
 
 #. module: safety_datasheet
-#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stot
 msgid "Specific Target Toxicity"
 msgstr "Toxicité cible spécifique"
 
@@ -7643,6 +7827,11 @@ msgid "Sweden"
 msgstr "Suède"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Systemic Effects"
+msgstr "Effets systémiques"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.stability_2
 msgid ""
 "TDI reacts with water to form predominantly solid and insoluble polyureas."
@@ -7661,9 +7850,24 @@ msgid "TLV Occupational exposure limit of the entire mixture: Not available"
 msgstr "TLV Limite d’exposition professionnelle : Non disponible"
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "TLV Occupational exposure limit of the ingredients:"
+msgstr "TLV Limite d'exposition professionnelle des ingrédients :"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_tlv
 msgid "TLV details"
 msgstr "Détails des TLV"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "TLV of the ingredients"
+msgstr "TLV des ingrédients"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+msgid "TLV of the mixture"
+msgstr "TLV du mélange"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_11
@@ -7772,6 +7976,18 @@ msgstr ""
 "                                    être déclarée dans la section 3"
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"The product is not listed or identified as having endocrine disrupting "
+"properties in accordance with the criteria set out in Commission Delegated "
+"Regulation (EU) 2017/2100"
+msgstr ""
+"Le produit n'est pas répertorié ou identifié comme ayant des propriétés "
+"perturbatrices du système endocrinien conformément aux critères énoncés dans "
+"le règlement délégué (UE) 2017/2100 de la Commission"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_3
 msgid "The product is to be considered as dangerous for the environment ."
 msgstr "Le produit doit être considéré comme dangereux pour l’environnement."
@@ -7855,12 +8071,24 @@ msgstr ""
 "2008/98/CE."
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_2
+#, python-format
 msgid ""
 "This substance/mixture does not meet the PBT criteria of REACH regulation, "
 "annex XIII."
 msgstr ""
 "Cette substance / mélange ne remplit pas les critères PBT du règlement REACH "
+"annexe XIII."
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"This substance/mixture does not meet the vPvB criteria of REACH regulation, "
+"annex XIII"
+msgstr ""
+"Cette substance / mélange ne remplit pas les critères vPvB du règlement REACH "
 "annexe XIII."
 
 #. module: safety_datasheet
@@ -7873,7 +8101,12 @@ msgstr ""
 "annexe XIII."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_8
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Threshold"
+msgstr "Seuil"
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.STOT_8
 msgid "Thyroid."
 msgstr "Thyroïde."
 
@@ -7948,14 +8181,35 @@ msgid "Toxicity"
 msgstr "Toxicité"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicity_detail
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_text
 msgid "Toxicity details"
 msgstr "Détails de toxicité"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Toxicity details (ingredients)"
+msgstr "Détails sur la toxicité (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
+msgid "Toxicity details (mixture)"
+msgstr "Détails sur la toxicité (mélange)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Toxicity details of the ingredients:"
+msgstr "Détails sur la toxicité des ingrédients :"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Toxicity details:"
 msgstr "Détails de toxicité aiguë :"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicological
+msgid "Toxicological"
+msgstr "Toxicologique"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -7994,6 +8248,7 @@ msgstr "Type"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,acronym:safety_datasheet.legend_19
 msgid "UFI"
 msgstr "UFI"
 
@@ -8026,6 +8281,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,description:safety_datasheet.legend_19
 msgid "Unique Formula Identifier"
 msgstr "Identifiant unique de la formule"
 
@@ -8469,6 +8725,24 @@ msgid "https://echa.europa.eu"
 msgstr "https://echa.europa.eu"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(ingredients)"
+msgstr ""
+"insérer les détails de la toxicité systémique pour certains organes cibles "
+"(exposition répétée) (ingrédients)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(mixture)"
+msgstr ""
+"insérer les détails de la toxicité systémique pour certains organes cibles "
+"(exposition répétée) (mélange)"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "n.a."
@@ -8501,6 +8775,476 @@ msgstr "vPvB"
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr "substances très persistantes et très bioaccumulables (substances vPvB)"
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list</td><td>98.0</td><td>20.0</"
+#~ "td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 1ère liste</td><td>98.0</td><td>20.0</td><td><br></"
+#~ "td><td>246.0</td><td>50.0</td><td><br></td><td>Oui</td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+#~ "tbody></table>\n"
+#~ "            \n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>1.0</td><td><br></"
+#~ "td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 1ère liste<br></td><td>1.0</td><td><br></td><td><br></"
+#~ "td><td>2.0</td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+#~ "tbody></table>\n"
+#~ "            \n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>14.0</td><td>20.0</"
+#~ "td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 1ère liste<br></td><td>14.0</td><td>20.0</td><td><br></"
+#~ "td><td>36.0</td><td>50.0</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+#~ "tbody></table>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
+#~ "td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 1ère liste<br></td><td>308.0<br></td><td>50.0</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td>oui<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 1st list<br></td><td>52.0</td><td>20.0</"
+#~ "td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 1ère liste<br></td><td>52.0</td><td>20.0</td><td><br></"
+#~ "td><td>104.0</td><td>40.0</td><td><br></td><td>Oui</td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+#~ "tbody></table>\n"
+#~ "            \n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
+#~ "Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></td><td>10.0 "
+#~ "&nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></td><td>15.0<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Union européenne<br></td><td>VLEP - Limites d'exposition "
+#~ "professionnelle - 2ème liste<br></td><td>67.5<br></td><td>10.0 <br></"
+#~ "td><td><br></td><td>101.2<br></td><td>15.0<br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
+#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
+#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td></tr></tbody></table>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th>Valeurs limites d'exposition à long terme (LTEL)</th><th>Valeurs "
+#~ "limites d'exposition à court terme (STEL)</th><th "
+#~ "rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
+#~ "cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th><sup>mg/m3</sup></th></tr></"
+#~ "thead><tbody class=\"table-data\"><tr><td>ROYAUME-UNI<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ de poussières inhalables <br>4 mg/m³ de "
+#~ "poussières respirables<br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ "
+#~ "de poussières inhalables <br>4 mg/m³ de poussières respirables</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></"
+#~ "td><td>ACGIH<br></td><td>1 mg/m³ de poussières alvéolaires<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+#~ "table>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
+#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
+#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td></tr></tbody></table>\n"
+#~ "            \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th>Valeurs limites d'exposition à long terme (LTEL)</th><th>Valeurs "
+#~ "limites d'exposition à court terme (STEL)</th><th "
+#~ "rowspan=\"2\">Désignation de la peau</th><th rowspan=\"2\">Sensibilisation "
+#~ "cutanée</th><th rowspan=\"2\">Sensibilisation respiratoire</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th><sup>mg/m3</sup></th></tr></"
+#~ "thead><tbody class=\"table-data\"><tr><td>ROYAUME-UNI<br></td><td>WEL "
+#~ "TWA<br></td><td>10 mg/m³ de poussières inhalables <br>4 mg/m³ de "
+#~ "poussières respirables<br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ "
+#~ "de poussières inhalables <br>4 mg/m³ de poussières respirables</"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></"
+#~ "td><td>ACGIH<br></td><td>1 mg/m³ de poussières alvéolaires<br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+#~ "table>\n"
+#~ "            \n"
+#~ "            "
+
+#~ msgid ""
+#~ "(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
+#~ msgstr ""
+#~ "(2,4,6-trioxotriazine-1,3,5 (2H,4H,6H)-triyl)tris (hexaméthylène) "
+#~ "isocyanate"
+
+#~ msgid "(2-methoxymethylethoxy)propanol"
+#~ msgstr "2- (2-butoxyéthoxy) éthanol"
+
+#~ msgid "1,2-benzisothiazol-3(2H)-one"
+#~ msgstr "1,2-benzisothiazol-3(2H)-one"
+
+#~ msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
+#~ msgstr "2- (2-butoxyéthoxy) éthanol"
+
+#~ msgid "2,2',2''-nitrilotriethanol"
+#~ msgstr "2,2',2''-nitrilotriéthanol"
+
+#~ msgid "2-(2-butoxyethoxy)ethanol"
+#~ msgstr "2- (2-butoxyéthoxy) éthanol"
+
+#~ msgid "2-butoxyethanol"
+#~ msgstr "2-butoxyéthanol"
+
+#~ msgid "2-tridecoxyethyl dihydrogen phosphate"
+#~ msgstr "phosphate de dihydrogène de 2-tridécoxyéthyle"
+
+#~ msgid ""
+#~ "3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+#~ "                oligomers reaction product with 3-"
+#~ "(cyclohexylamino)propane-1-sulfonic acid\n"
+#~ "                and N,N-dimethylcyclohexanamine"
+#~ msgstr ""
+#~ "3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+#~ "                produit de réaction d’oligomers avec l’acide 3-"
+#~ "(cyclohexylamino)propane-1-sulfonique\n"
+#~ "                et N,N-dimethylcyclohexanamine"
+
+#~ msgid ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>Norway<br></td><td>Forskrift om endring i "
+#~ "forskrift om tiltaksverdier og grenseverdier for fysiske og kjemiske "
+#~ "faktorer i arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer "
+#~ "(forskrift om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></"
+#~ "td><td><br></td><td>0,005<br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
+#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
+#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
+#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
+#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
+#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
+#~ "data\"><tr><td>Norvège<br></td><td>Forskrift om endring i forskrift om "
+#~ "tiltaksverdier og grenseverdier for fysiske og kjemiske faktorer i "
+#~ "arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer (forskrift "
+#~ "om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></td><td><br></"
+#~ "td><td>0,005<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td></tr></tbody></table>"
+
+#~ msgid ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#~ "class=\"table-data\"><tr><td>Specific TLV</td><td>xxx</td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td></tr></tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"table table-bordered\"><thead class=\"table-"
+#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
+#~ "th><th colspan=\"3\">Valeurs de limite d’exposition à long terme (LTEL)</"
+#~ "th><th colspan=\"3\">Valeur de limite d’exposition à court terme (STEL)</"
+#~ "th><th rowspan=\"2\">Absorption dans la peau</th><th "
+#~ "rowspan=“2”>Sensibilisation cutanée</th><th rowspan=\"2\">Sensibilisation "
+#~ "respiratoire</th><th rowspan=\"2\">Secteur de travail</th><th "
+#~ "rowspan=\"2\">Date d’entrée en vigueur</th><th rowspan=\"2\">Date "
+#~ "d’expiration</th><th rowspan=\"2\">Notes</th></tr><tr><th>mg/m<sup>3</"
+#~ "sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</"
+#~ "th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+#~ "table>"
+
+#~ msgid "Acute Dermal Route"
+#~ msgstr "Voie cutanée aiguë"
+
+#~ msgid "Acute Inhalation Route"
+#~ msgstr "Voie d'inhalation aiguë"
+
+#~ msgid "Acute Oral Route"
+#~ msgstr "Voie orale aiguë"
+
+#~ msgid "Insert STOT RE details"
+#~ msgstr "Insérer les détails de STOT RE"
+
+#~ msgid "Insert STOT SE details"
+#~ msgstr "Insérer les détails de STOT SE"
+
+#~ msgid "Insert acute toxicity details"
+#~ msgstr "Insérer des détails de toxicité"
+
+#~ msgid "Insert mutagenicity details"
+#~ msgstr "Insérer les détails de la mutagène"
+
+#~ msgid "Insert toxicity details"
+#~ msgstr "Insérer des détails de toxicité"
+
+#~ msgid "Reproductive details:"
+#~ msgstr "Détails reproductifs :"
+
+#, python-format
+#~ msgid ""
+#~ "This substance/mixture does not meet the PBT criteria of REACH regulation, "
+#~ "annex XIII"
+#~ msgstr ""
+#~ "Cette substance / mélange ne remplit pas les critères PBT du règlement "
+#~ "REACH annexe XIII."
+
+#~ msgid "earth"
+#~ msgstr "terre"
+
+#~ msgid "fresh"
+#~ msgstr "frais"
+
+#~ msgid "<br/> Other Hazards:"
+#~ msgstr "<br/>Autres dangers :"
+
+#~ msgid "<br/> vPvB:"
+#~ msgstr "<br/> vPvB :"
+
+#~ msgid "PBT:"
+#~ msgstr "PBT :"
 
 #~ msgid ""
 #~ "1.2. Relevant identified uses of the substance or mixture\n"
@@ -8557,44 +9301,6 @@ msgstr "substances très persistantes et très bioaccumulables (substances vPvB)
 #~ msgstr ""
 #~ "7.2 Conditions d’un stockage sûr, y compris les éventuelles "
 #~ "incompatibilités"
-
-#~ msgid ""
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>Norway<br></td><td>Forskrift om endring i "
-#~ "forskrift om tiltaksverdier og grenseverdier for fysiske og kjemiske "
-#~ "faktorer i arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer "
-#~ "(forskrift om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></"
-#~ "td><td><br></td><td>0,005<br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
-#~ msgstr ""
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Région</th><th rowspan=\"2\">Législation</"
-#~ "th><th colspan=\"3\">Valeurs limites d'exposition à long terme (LTEL)</"
-#~ "th><th colspan=\"3\">Valeurs limites d'exposition à court terme (STEL)</"
-#~ "th><th rowspan=\"2\">Désignation de la peau</th><th "
-#~ "rowspan=\"2\">Sensibilisation cutanée</th><th "
-#~ "rowspan=\"2\">Sensibilisation respiratoire</th><th rowspan=\"2\">Secteur "
-#~ "d'activité</th><th rowspan=\"2\">Date d'entrée en vigueur</th><th "
-#~ "rowspan=\"2\">Date d'expiration</th><th rowspan=\"2\">Notes diverses</th></"
-#~ "tr><tr><th><sup>mg/m3</sup></th><th>ppm</th><th>f/ml</th><th><sup>mg/m3</"
-#~ "sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody class=\"table-"
-#~ "data\"><tr><td>Norvège<br></td><td>Forskrift om endring i forskrift om "
-#~ "tiltaksverdier og grenseverdier for fysiske og kjemiske faktorer i "
-#~ "arbeidsmiljøet samt smitterisikogrupper for biologiske faktorer (forskrift "
-#~ "om tiltaks- og grenseverdier), 21. august 2018 nr. 1255<br></td><td><br></"
-#~ "td><td>0,005<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td></tr></tbody></table>"
 
 #~ msgid "Bibliography:"
 #~ msgstr "Bibliographie :"
@@ -8696,11 +9402,6 @@ msgstr "substances très persistantes et très bioaccumulables (substances vPvB)
 
 #~ msgid ""
 #~ "<br/>\n"
-#~ "                            Other Hazards:"
-#~ msgstr "<br/>Autres dangers :"
-
-#~ msgid ""
-#~ "<br/>\n"
 #~ "                            vPvB:"
 #~ msgstr ""
 #~ "<br/>\n"
@@ -8779,29 +9480,6 @@ msgstr "substances très persistantes et très bioaccumulables (substances vPvB)
 #~ "class=\"sds\">ONU</td><td class=\"sds tdpl\">Nations Unies</td></"
 #~ "tr><tr><td class=\"sds\">vPvB</td><td class=\"sds tdpl\">Très persistant "
 #~ "et très bioaccumulatif</td></tr></tbody></table>"
-
-#, fuzzy, python-format
-#~| msgid ""
-#~| "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
-#~| "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></"
-#~| "tr></thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></"
-#~| "td><td><br></td></tr><tr><td>Inhalation</td><td><br></td><td><br></"
-#~| "td><td><br></td></tr><tr><td>Dermal</td><td><br></td><td><br></"
-#~| "td><td><br></td></tr></tbody></table>"
-#~ msgid ""
-#~ "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
-#~ "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
-#~ "thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></td><td><br></"
-#~ "td></tr><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
-#~ "tr><tr><td>Skin/eye</td><td><br></td><td><br></td><td><br></td></tr></"
-#~ "tbody></table>"
-#~ msgstr ""
-#~ "<table class=\"table table-bordered\"><thead><tr><th>Voie d’exposition</"
-#~ "th><th>Résultat / Effet</th><th>Espèce /Système d’essai</th><th>Source</"
-#~ "th></tr></thead><tbody><tr><td>Ingestion</td><td><br></td><td><br></"
-#~ "td><td><br></td></tr><tr><td>Inhalation</td><td><br></td><td><br></"
-#~ "td><td><br></td></tr><tr><td>Peau/oeil</td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></table>"
 
 #, python-format
 #~ msgid ""

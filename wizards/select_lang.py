@@ -43,11 +43,22 @@ class SelectLangRecap(models.AbstractModel):
     @api.model
     def _get_report_values(self, docids, data=None):
         if data:
-            lang = data['form']['lang'] if data['form'] else 'en_US'
-            country = data['form']['country'] if data['form'] else 'Italy'
-        else:
-            lang = 'en_US'
-            country = 'Italy'
+            if "form" in data:
+                lang = data['form']['lang']
+                country = data['form']['country']
+            else:
+                lang = 'en_US'
+                country = 'Italy'
+        if type(data['ids']) == str:
+            # I'm probably call it from the url :-)
+            # you can see html version using:
+            # https://<yourserver>/report/html/safety_datasheet.report_safety_datasheet?ids=<your_id>&model=sds.datasheet
+            data['ids'] = [data['ids']]
+            if data['lang']:
+                lang = data['lang']
+            if data['country']:
+                country = data['country']
+        
         datasheets = self.env['sds.datasheet'].search([('id','in',data['ids'])])
         
         # Here we inject the emergency telephone number (point 1.4) specific for the country

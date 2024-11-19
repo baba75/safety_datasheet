@@ -110,11 +110,16 @@ class SdsDatasheet(models.Model):
     section_2_2_Additional = fields.Html('Additional Labelling', translate=True)
     section_2_3_PBT = fields.Char(string="PBT",
                                   help="persistent, bioaccumulative and toxic substances (PBT substances)",
-                                  default=lambda s: _('none'), required=True, translate=True)
+                                  default=lambda s: _('This substance/mixture does not meet the PBT criteria of REACH regulation, annex XIII.'), required=True, translate=True)
     section_2_3_vPvB = fields.Char(string="vPvB",
                                    help="very persistent and very bioaccumulative substances (vPvB substances)",
-                                   default=lambda s: _('none'), required=True, translate=True)
-    section_2_3_OtherHazards = fields.Html(string="Other Hazards", default=lambda s: _('none'), required=True,
+                                   default=lambda s: _('This substance/mixture does not meet the vPvB criteria of REACH regulation, annex XIII.'), required=True, translate=True)
+    section_2_3_endocrine= fields.Char(string="Endocrine disrupting",
+                                   help="Endocrine disrupting properties",
+                                   default=lambda s: _('The product is not listed or identified as having endocrine disrupting properties in accordance with the criteria set out in Commission Delegated Regulation (EU) 2017/210.'), 
+                                   required=True, translate=True)
+    
+    section_2_3_OtherHazards = fields.Char(string="Other Hazards", default=lambda s: _('none'), required=True,
                                            translate=True)
     section_2_note = fields.Html(string="Section 2 notes", translate=True)
 
@@ -223,7 +228,9 @@ class SdsDatasheet(models.Model):
     section_7_note = fields.Html(string="Section 7 notes", translate=True)
 
     # Section 8: Exposure controls/personal protection
-    section_8_1_tlv_selector = fields.Boolean(string="Occupational exposure limit of the entire mixture (TLV).", default=False)
+    section_8_1_tlv_selector = fields.Boolean(string="TLV of the mixture",help="Occupational exposure limit of the entire mixture (TLV).", default=False)
+    section_8_1_tlv_selector_ing = fields.Boolean(string="TLV of the ingredients",help="Occupational exposure limit of the ingredients (TLV).", default=False)
+
     section_8_1_tlv = fields.Html(string='TLV',
                                   default=lambda s: _('<table class="table table-bordered">'
                                        '<thead class="table-columns">' 
@@ -249,7 +256,9 @@ class SdsDatasheet(models.Model):
                                             '<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td>'
                                         '</tr></tbody></table>'),
                                   translate=True,sanitize=False)
-    section_8_1_dnel_selector = fields.Boolean(string="Derived No Effect Level (DNEL)", default=False)
+    section_8_1_dnel_selector = fields.Boolean(string="DNEL of the mixture",help="Derived No Effect Level (DNEL) of the mixture", default=False)
+    section_8_1_dnel_selector_ing = fields.Boolean(string="DNEL of ingredients", help="Show DNEL of ingredients", default=False)
+
     section_8_1_dnel = fields.Html(string='DNEL',
                                    default=lambda s: _(
                                        '<p><b>Derived No Effect Level<br>'
@@ -291,8 +300,9 @@ class SdsDatasheet(models.Model):
                                         '</tbody>'
                                     '</table>'),
                                    translate=True, sanitize=False)
-    section_8_1_pnec_selector = fields.Boolean(string="Predicted No Effect Concentration (PNEC)",
+    section_8_1_pnec_selector = fields.Boolean(string="PNEC of the mixture",help="Predicted No Effect Concentration (PNEC) of the mixture",
                                                default=False)
+    section_8_1_pnec_selector_ing = fields.Boolean(string="PNEC of ingredients", help="Show PNEC of ingredients", default=False)
     section_8_1_pnec = fields.Html(string='PNEC',
                                    default=lambda s: _(
                                        '<p><b>Predicted No Effect Concentration</b><br>'
@@ -404,7 +414,8 @@ class SdsDatasheet(models.Model):
                                                  domain="[('category', '=', 'toxicity')]",
                                                  string='Acute inhalation toxicity',
                                                  context={'default_category': 'toxicity'})
-    section_11_1_1_selector = fields.Boolean(string="Insert acute toxicity details", default=False)
+    section_11_1_1_selector = fields.Boolean(string="Acute toxicity details (mixture)", default=False)
+    section_11_1_1_component = fields.Boolean(string="Acute toxicity details (ingredients)", default=False)
     section_11_1_1_text = fields.Html(string="Acute toxicity details",
                                       default=lambda s: _(
                                           '<table class="table table-bordered">'
@@ -421,25 +432,45 @@ class SdsDatasheet(models.Model):
                                       domain="[('category', '=', 'skin_corrosion')]",
                                       string='Skin corrosion/irritation',
                                       context={'default_category': 'skin_corrosion'})
-    section_11_1_2_selector = fields.Boolean(string="Insert skin corrosion/irritation details", default=False)
+    section_11_1_2_selector = fields.Boolean(string="Skin cor/irr details (mixture)",        
+                                      help="Insert skin corrosion/irritation details (mixture)", 
+                                      default=False)
+    section_11_1_2_component = fields.Boolean(string="Skin cor/irr det. (ingredients)",
+                                              help="Insert skin corrosion/irritation details (ingredients)",
+                                              default=False)
     section_11_1_2_text = fields.Html(string="Skin corrosion/irritation details", translate=True, sanitize=False)
     section_11_1_3 = fields.Many2many('sds.sentences', relation="sds_eye_damage_statement_rel",
                                       domain="[('category', '=', 'eye_damage')]",
                                       string='Serious eye damage/eye irritation',
                                       context={'default_category': 'eye_damage'})
-    section_11_1_3_selector = fields.Boolean(string="Insert eye damage corrosion/irritation details", default=False)
+    section_11_1_3_selector = fields.Boolean(string="Eye cor/irr details (mixture)",
+                                             help="Insert eye damage corrosion/irritation details (mixture)",
+                                             default=False)
+    section_11_1_3_component = fields.Boolean(string="Eye cor/irr details (ingredients)",
+                                              help="Insert eye damage corrosion/irritation details (ingredients)",
+                                              default=False)
     section_11_1_3_text = fields.Html(string="Eye damage/irritation details", translate=True,sanitize=False)
     section_11_1_4 = fields.Many2many('sds.sentences', relation="sds_respiratory_skin_sensitization_statement_rel",
                                       domain="[('category', '=', 'sensitization')]",
                                       string='Respiratory or skin sensitization',
                                       context={'default_category': 'sensitization'})
-    section_11_1_4_selector = fields.Boolean(string="Insert respiratory or skin sensitization details", default=False)
+    section_11_1_4_selector = fields.Boolean(string="Resp/skin sens. details (mixture)",
+                                             help="Insert respiratory or skin sensitization details (mixture)",
+                                             default=False)
+    section_11_1_4_component = fields.Boolean(string="Resp/skin sens. details (ingredients)",
+                                             help="Insert respiratory or skin sensitization details (ingredients)",
+                                             default=False)
     section_11_1_4_text = fields.Html(string="Respiratory or skin sensitization details", translate=True,sanitize=False)
     section_11_1_5 = fields.Many2many('sds.sentences', relation="sds_mutagenicity_statement_rel",
                                       domain="[('category', '=', 'mutagenicity')]",
                                       string='Germ cell mutagenicity',
                                       context={'default_category': 'mutagenicity'})
-    section_11_1_5_selector = fields.Boolean(string="Insert mutagenicity details", default=False)
+    section_11_1_5_selector = fields.Boolean(string="Mutagenicity details (mixture)",
+                                             help="Insert germ cell mutagenicity details (mixture)",
+                                             default=False)
+    section_11_1_5_component = fields.Boolean(string="Mutagenicity details (ingredients)",
+                                             help="Insert germ cell mutagenicity details (ingredients)",
+                                             default=False)
     section_11_1_5_text = fields.Html(string="Mutagenicity details",
                                       default=lambda s: _(
                                           '<table class="table table-bordered"><thead>'
@@ -450,31 +481,56 @@ class SdsDatasheet(models.Model):
                                       domain="[('category', '=', 'carcinogenicity')]",
                                       string='Carcinogenicity',
                                       context={'default_category': 'carcinogenicity'})
-    section_11_1_6_selector = fields.Boolean(string="Insert carcinogenicity details", default=False)
+    section_11_1_6_selector = fields.Boolean(string="Carcinogenicity details (mixture)",
+                                             help="Insert carcinogenicity details (mixture)",
+                                             default=False)
+    section_11_1_6_component = fields.Boolean(string="Carcinogenicity details (ingredients)",
+                                             help="Insert carcinogenicity details (ingredients)",
+                                             default=False)
     section_11_1_6_text = fields.Html(string="Carcinogenicity details", translate=True,sanitize=False)
     section_11_1_7 = fields.Many2many('sds.sentences', relation="sds_reproductive_toxicity_statement_rel",
                                       domain="[('category', '=', 'reproductive')]",
                                       string='Reproductive toxicity',
                                       context={'default_category': 'reproductive'})
-    section_11_1_7_selector = fields.Boolean(string="Insert reproductive toxicity details", default=False)
+    section_11_1_7_selector = fields.Boolean(string="Reproductive tox. details (mixture)",
+                                             help="Insert reproductive toxicity details (mixture)",
+                                             default=False)
+    section_11_1_7_component = fields.Boolean(string="Reproductive tox. details (ingredients)",
+                                             help="Insert reproductive toxicity details (ingredients)",
+                                             default=False)
     section_11_1_7_text = fields.Html(string="Reproductive toxicity details", translate=True,sanitize=False)
     section_11_1_8 = fields.Many2many('sds.sentences', relation="sds_specific_target_single_statement_rel",
-                                      domain="[('category', '=', 'STOST')]",
+                                      domain="[('category', '=', 'STOT')]",
                                       string='Specific Target Organ Systemic Toxicity (Single Exposure)',
-                                      context={'default_category': 'STOST'})
-    section_11_1_8_selector = fields.Boolean(string="Insert STOST SE details", default=False)
-    section_11_1_8_text = fields.Html(string="STOST SE details", translate=True,sanitize=False)
+                                      context={'default_category': 'STOT'})
+    section_11_1_8_selector = fields.Boolean(string="STOT SE details (mixture)", 
+                                             help="Insert pecific Target Organ Systemic Toxicity (Single Exposure) details (mixture)",
+                                             default=False)
+    section_11_1_8_component = fields.Boolean(string="STOT SE details (ingredients)", 
+                                             help="Insert pecific Target Organ Systemic Toxicity (Single Exposure) details (ingredients)",
+                                             default=False)
+    section_11_1_8_text = fields.Html(string="STOT SE details", translate=True,sanitize=False)
     section_11_1_9 = fields.Many2many('sds.sentences', relation="sds_specific_target_repeated_statement_rel",
-                                      domain="[('category', '=', 'STOST')]",
+                                      domain="[('category', '=', 'STOT')]",
                                       string='Specific Target Organ Systemic Toxicity (Repeated Exposure)',
-                                      context={'default_category': 'STOST'})
-    section_11_1_9_selector = fields.Boolean(string="Insert STOST RE details", default=False)
-    section_11_1_9_text = fields.Html(string="STOST RE details", translate=True,sanitize=False)
+                                      context={'default_category': 'STOT'})
+    section_11_1_9_selector = fields.Boolean(string="STOT RE details (mixture)",
+                                             help="insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details (mixture)",
+                                             default=False)
+    section_11_1_9_component = fields.Boolean(string="STOT RE details (ingredients)",
+                                             help="insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details (ingredients)",
+                                             default=False)
+    section_11_1_9_text = fields.Html(string="STOT RE details", translate=True,sanitize=False)
     section_11_1_10 = fields.Many2many('sds.sentences', relation="sds_aspiration_hazard_products_statement_rel",
                                        domain="[('category', '=', 'aspiration')]",
                                        string='Aspiration Hazard',
                                        context={'default_category': 'aspiration'})
-    section_11_1_10_selector = fields.Boolean(string="Insert aspiration Hazard details", default=False)
+    section_11_1_10_selector = fields.Boolean(string="Aspiration haz. details (mixture)",
+                                              help="Insert aspiration hazard details (mixture)",
+                                              default=False)
+    section_11_1_10_component = fields.Boolean(string="Aspiration haz. details (ingredients)",
+                                              help="Insert aspiration hazard details (ingredients)",
+                                              default=False)
     section_11_1_10_text = fields.Html(string="Aspiration Hazard details", translate=True, sanitize=False)
     section_11_2 = fields.Html(string='Information on other hazards', default=lambda s: _("None available."),
                                translate=True,sanitize=False)
@@ -485,7 +541,10 @@ class SdsDatasheet(models.Model):
     section_12_1 = fields.Many2many('sds.sentences', relation="sds_toxicity_statement_rel",
                                     domain="[('category', '=', 'ecotoxicity')]", string='Toxicity',
                                     context={'default_category': 'ecotoxicity'})
-    section_12_1_selector = fields.Boolean(string="Insert toxicity details", default=False)
+    section_12_1_selector = fields.Boolean(string="Toxicity details (mixture)", default=False)
+    section_12_1_component = fields.Boolean(string="Toxicity details (ingredients)",
+                                              help="Insert ingredients toxicity details",
+                                              default=False)
     section_12_1_text = fields.Html(string="Toxicity details",
                                     default=lambda s:_(
                                         '<table class="table table-bordered"><thead>'
@@ -496,7 +555,10 @@ class SdsDatasheet(models.Model):
     section_12_2 = fields.Many2many('sds.sentences', relation="sds_persistence_statement_rel",
                                     domain="[('category', '=', 'persistence')]", string='Persistence and degradability',
                                     context={'default_category': 'persistence'})
-    section_12_2_selector = fields.Boolean(string="Insert degradability details", default=False)
+    section_12_2_selector = fields.Boolean(string="Degradability details (mixture)", default=False)
+    section_12_2_component = fields.Boolean(string="Degradability details (ingredients)",
+                                              help="Insert ingredients degradability details",
+                                              default=False)
     section_12_2_text = fields.Html(string="Persistence and degradability details",
                                     default=lambda s:_(
                                         '<table class="table table-bordered"><thead><tr>'
@@ -508,28 +570,51 @@ class SdsDatasheet(models.Model):
     section_12_3 = fields.Many2many('sds.sentences', relation="sds_bioaccumulative_potential_statement_rel",
                                     domain="[('category', '=', 'bioaccumulative')]", string='Bioaccumulative potential',
                                     context={'default_category': 'bioaccumulative'})
-    section_12_3_selector = fields.Boolean(string="Insert bioaccumulative details", default=False)
+    section_12_3_selector = fields.Boolean(string="Bioaccumulative details (mixture)", 
+                                           help="Insert mixture bioaccumulative potential details",
+                                           default=False)
+    section_12_3_component = fields.Boolean(string="Bioaccumulative details (ingredients)",
+                                              help="Insert ingredients bioaccumulative details",
+                                              default=False)
     section_12_3_text = fields.Html(string="Bioaccumulative potential details", translate=True, sanitize=False)
     section_12_4 = fields.Many2many('sds.sentences', relation="sds_mobility_soil_statement_rel",
                                     domain="[('category', '=', 'mobility')]", string='Mobility in soil',
                                     context={'default_category': 'mobility'})
-    section_12_4_selector = fields.Boolean(string="Insert mobility details", default=False)
+    section_12_4_selector = fields.Boolean(string="Mobility details (mixture)", 
+                                           help="Insert mobility in soil details of the mixture",
+                                           default=False)
+    section_12_4_component = fields.Boolean(string="Mobility details (ingredients)",
+                                              help="Insert ingredients mobility in soil details",
+                                              default=False)
     section_12_4_text = fields.Html(string="Mobility in soil details", translate=True, sanitize=False)
     section_12_5 = fields.Many2many('sds.sentences', relation="sds_pbt_vpvb_statement_rel",
                                     domain="[('category', '=', 'pbtvpvb')]",
                                     string='Results of PBT and vPvB assessment',
                                     context={'default_category': 'pbtvpvb'})
-    section_12_5_selector = fields.Boolean(string="Insert PBT and vPvB details", default=False)
+    section_12_5_selector = fields.Boolean(string="PBT and vPvB details (mixture)", 
+                                           help="Insert results of mixture PBT and vPvB assessment",
+                                           default=False)
+    section_12_5_component = fields.Boolean(string="PBT and vPvB details (ingredients)",
+                                              help="Insert results of ingredients PBT and vPvB assessment",
+                                              default=False)
     section_12_5_text = fields.Html(string="Results of PBT and vPvB assessment details", translate=True, sanitize=False)
     section_12_6 = fields.Many2many('sds.sentences', relation="sds_endocrine_disrupting_statement_rel",
                                     domain="[('category', '=', 'endocrine')]", string='Endocrine disrupting properties',
                                     context={'default_category': 'endocrine'})
-    section_12_6_selector = fields.Boolean(string="Insert endocrine details", default=False)
+    section_12_6_selector = fields.Boolean(string="Endocrine details (mixture)", 
+                                           help="Insert endocrine disrupting properties details (mixture)",
+                                           default=False)
+    section_12_6_component = fields.Boolean(string="Endocrine details (ingredients)",
+                                              help="Insert endocrine disrupting properties details (ingredients)",
+                                              default=False)
     section_12_6_text = fields.Html(string="Endocrine disrupting properties details", translate=True, sanitize=False)
     section_12_7 = fields.Many2many('sds.sentences', relation="sds_other_adverse_statement_rel",
                                     domain="[('category', '=', 'adverse')]", string='Other adverse effects',
                                     context={'default_category': 'adverse'})
-    section_12_7_selector = fields.Boolean(string="Insert adverse effects details", default=False)
+    section_12_7_selector = fields.Boolean(string="Adverse effects details (mixture)", default=False)
+    section_12_7_component = fields.Boolean(string="Adverse effects details (ingredients)",
+                                              help="Insert other adverse effects details (ingredients)",
+                                              default=False)
     section_12_7_text = fields.Html(string="Other adverse effects details", translate=True, sanitize=False)
     section_12_note = fields.Html(string="Section 12 Notes", translate=True)
 
@@ -728,6 +813,8 @@ class SdsDatasheet(models.Model):
                         continue
                 xlat_dict = dict(zip(xlat_values.mapped('lang'),xlat_values.mapped('value')))
                 for lang in xlat_values.mapped('lang'):
+                    if lang == 'sr@latin':
+                        continue
                     xlat_obj._set_ids(
                         fname,
                         'model',

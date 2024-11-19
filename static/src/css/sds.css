@@ -1,5 +1,5 @@
 /* 
-  Copyright 2023 Alberto Carollo
+  Copyright 2024 Alberto Carollo
   License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 */
 h1.sds {
@@ -173,4 +173,39 @@ td_pl {
 .sds_h7 {
     text-decoration: underline;
     font-size: 10px;
+    margin-bottom: 2px;
+}
+
+table.sds_substances {
+    page-break-inside: avoid;
+    page-break-after: auto;
+    text-align: left;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+table.sds_substances p {
+    /* margin-left: 20px; */
+    margin-top: 10px;
+}
+
+table.sds_substances thead th {
+    font-weight: bold;
+    font-size: 9px;
+    padding: 10px;
+}
+
+table.sds_substances td {
+    /* padding-left: 5px;*/
+    font-size: 9px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+table.full {
+    width: 100%;
+}
+
+table.noborder {
+    border: none;
 }

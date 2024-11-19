@@ -25,14 +25,17 @@ class SdsChemicalSubstance(models.Model):
     _name = "sds.chemical.substance"
     _description = "Chemical Substances"
 
+    # Section no. 3
     name = fields.Char('Chemical Name', translate=True)
     IUPACname = fields.Char('IUPAC Name')
     CASno = fields.Char('CAS Number')
     ECno = fields.Char('EC Number')
     REACHno = fields.Char('REACH Number')
+    Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
     last_update = fields.Date(string="Revision date", default=fields.Date.today(), required=True)
-    wrk_exp_limit = fields.Boolean('Workplace exposure limit', default=False)
     
+    # Section no. 8
+    wrk_exp_limit = fields.Boolean('Workplace exposure limit', default=False)  
     wrk_exp_tlv = fields.Html(string="TLV details",
                                       default=lambda s: _(
                                           '<table class="table table-bordered"><thead class="table-columns">'
@@ -92,14 +95,138 @@ class SdsChemicalSubstance(models.Model):
     air = fields.Char('Air', translate=True)
     soil = fields.Char('Soil', translate=True)
     sec_poisoning = fields.Char('Secondary poisoning', translate=True)
-    
 
-
-    Classification = fields.Many2many('sds.chemical.classification', string="EU Chemical Classification")
+    # Section no. 10
     reactivity = fields.Many2many('sds.sentences', relation="sds_substance_reactivity_rel",
                                     domain="[('category', '=', 'reactivity')]",
                                     string='Reactivity',
                                     context={'default_category': 'reactivity'})
+    
+    # Section no. 11
+    toxicological = fields.Boolean('Toxicological', default=False)
+    acute_summary = fields.Html('Acute toxicity summary', 
+                                default=lambda s: _(
+                                    '<table class="table table-bordered">'
+                                    '<thead><tr><th>Route of exposure</th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                    '<tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '<tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '<tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '</tbody></table>'
+                                          ),
+                                translate=True, sanitize=False)
+    
+    skin_corrosion = fields.Html(string="Skin corrosion/irritation details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                                      translate=True, sanitize=False)
+    eye_damage = fields.Html(string="Eye damage/irritation details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                                      translate=True, sanitize=False)
+    sensitization = fields.Html(string="Respiratory or skin sensitization details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                                      translate=True, sanitize=False)
+    mutagenity = fields.Html(string="Mutagenicity details", 
+                                    default=lambda s: _(
+                                                '<table class="table table-bordered">'
+                                                '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                                '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                                ),
+                                    translate=True, sanitize=False)
+    carcinogenicity = fields.Html(string="Carcinogenicity details", translate=True, sanitize=False)
+    reproductive_toxicity = fields.Html(string="Reproductive toxicity details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered"><thead><tr><th><br></th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></td><td><br></td></tr>'
+                                          '<tr><td>Effect on developmental toxicity<br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>'
+                                          ),
+                                      translate=True, sanitize=False)
+
+    stot_se = fields.Html(string="STOT SE details", 
+                          default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                          translate=True, sanitize=False)
+    stot_re = fields.Html(string="STOT RE details",
+                                      default=lambda s: _(
+                                          '<table class="table table-bordered"><thead><tr><th>Route of exposure</th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></tr>'
+                                          '<tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></tr>'
+                                          '<tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr>'
+                                          '</tbody></table>'
+                                          ),
+                                      translate=True, sanitize=False)
+    aspiration_hazard = fields.Html(string="Aspiration Hazard details", 
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                                    translate=True, sanitize=False)
+    
+    # Section no. 12
+    ecological = fields.Boolean('Ecological Information', default=False)
+    toxicity_detail = fields.Html(string="Toxicity details", 
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></tbody></table>'
+                                          ),
+                                    translate=True, sanitize=False)
+    degradability = fields.Html(string="Persistence and degradability", 
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th><br></th><th>Results/Summaries</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Biodegradation in water - screening tests</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Biodegradation in water & sediment - simulation tests</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Biodegradation in soil</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '</tbody></table>'
+                                          ),
+                                    translate=True, sanitize=False)
+    bioaccumulation = fields.Html(string="Bioaccumulative potential", 
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th><br></th><th>Results/Summaries</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Bioaccumulation: aquatic / sediment</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '</tbody></table>'
+                                          ),
+                                    translate=True, sanitize=False)
+    mobility = fields.Html(string="Mobility in soil", 
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th><br></th><th>Results/Summaries</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Adsorption/desorption</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '</tbody></table>'
+                                          ),
+                                    translate=True, sanitize=False)
+    pbt_vPvB  = fields.Html(string="Results of PBT and vPvB assessment", 
+                                    translate=True, sanitize=False)
+    endocrine  = fields.Html(string="Endocrine disrupting properties", 
+                                    translate=True, sanitize=False)
+    other_effects  = fields.Html(string="Other adverse effects",
+                                    default=lambda s: _(
+                                          '<table class="table table-bordered">'
+                                          '<thead><tr><th><br></th><th>Results/Summaries</th><th>Source</th></tr></thead>'
+                                          '<tbody><tr><td>Environmental fate</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Photochemical ozone creation potential</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Ozone depletion potential</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '<tr><td>Global warming potential</td><td><br/><br></td><td><br/><br></td></tr>'
+                                          '</tbody></table>'
+                                          ), 
+                                    translate=True, sanitize=False)
 
 
 class SdsChemicalMixture(models.Model):

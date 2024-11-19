@@ -1287,7 +1287,7 @@ msgid "Adopt adequate precautions for the rescuer."
 msgstr "Treffen Sie angemessene Vorsichtsmaßnahmen für den Retter."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_10
+#: model:sds.sentences,name:safety_datasheet.STOT_10
 #, fuzzy
 msgid "Adrenal gland."
 msgstr "Nebenniere."
@@ -1558,7 +1558,7 @@ msgid "Avoid release to the environment."
 msgstr "Freisetzung in die Umwelt ist zu vermeiden."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
+#: model:sds.sentences,name:safety_datasheet.STOT_12
 #: model:sds.sentences,name:safety_datasheet.aspiration_2
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_3
 #: model:sds.sentences,name:safety_datasheet.eye_damage_4
@@ -1572,7 +1572,7 @@ msgstr ""
 "Aufgrund der verfügbaren Daten sind die Einstufungskriterien nicht erfüllt"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_3
+#: model:sds.sentences,name:safety_datasheet.STOT_3
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_1
 #: model:sds.sentences,name:safety_datasheet.reproductive_1
 msgid "Based on information for component(s):"
@@ -3508,7 +3508,7 @@ msgstr ""
 "                                    siehe Abschnitt 16."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_11
+#: model:sds.sentences,name:safety_datasheet.STOT_11
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_4
 #, fuzzy
@@ -3520,7 +3520,7 @@ msgstr ""
 "Produkt vor."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_4
+#: model:sds.sentences,name:safety_datasheet.STOT_4
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_2
 msgid "For this family of materials:"
@@ -3619,7 +3619,7 @@ msgid "Gases under pressure"
 msgstr "Gase unter Druck"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_9
+#: model:sds.sentences,name:safety_datasheet.STOT_9
 #, fuzzy
 msgid "Gastrointestinal tract."
 msgstr "Gastrointestinaltrakt."
@@ -4391,7 +4391,7 @@ msgid "In animal studies, did not interfere with reproduction."
 msgstr "In Tierversuchen hat es die Fortpflanzung nicht beeinträchtigt."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_5
+#: model:sds.sentences,name:safety_datasheet.STOT_5
 msgid "In animals, effects have been reported on the following organs:"
 msgstr "Bei Tieren wurden Auswirkungen auf die folgenden Organe festgestellt:"
 
@@ -4573,14 +4573,14 @@ msgstr "PBT- und vPvB-Details einfügen"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
 #, fuzzy
-msgid "Insert STOST RE details"
-msgstr "STOST RE Details einfügen"
+msgid "Insert STOT RE details"
+msgstr "STOT RE Details einfügen"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
 #, fuzzy
-msgid "Insert STOST SE details"
-msgstr "STOST SE Details einfügen"
+msgid "Insert STOT SE details"
+msgstr "STOT SE Details einfügen"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
@@ -4852,7 +4852,7 @@ msgstr ""
 "Von Kleidung/.../brennbaren Materialien fernhalten/entfernt aufbewahren."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_7
+#: model:sds.sentences,name:safety_datasheet.STOT_7
 msgid "Kidney."
 msgstr "Niere."
 
@@ -5016,7 +5016,7 @@ msgid "Lithium carbonate"
 msgstr "Lithiumcarbonat"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_6
+#: model:sds.sentences,name:safety_datasheet.STOT_6
 msgid "Liver."
 msgstr "Die Leber."
 
@@ -5107,7 +5107,7 @@ msgid "Maritime transport in bulk according to IMO instruments"
 msgstr "Massengutbeförderung im Seeverkehr gemäß den IMO-Instrumenten"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_1
+#: model:sds.sentences,name:safety_datasheet.STOT_1
 msgid "Material is corrosive."
 msgstr "Das Material ist ätzend."
 
@@ -5118,7 +5118,7 @@ msgid "Material is not biodegradable."
 msgstr "Das Material ist nicht biologisch abbaubar."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_2
+#: model:sds.sentences,name:safety_datasheet.STOT_2
 msgid ""
 "Material is not classified as a respiratory irritant; however, upper "
 "respiratory tract irritation or corrosivity may be expected."
@@ -5251,7 +5251,7 @@ msgstr "Kann Brand verursachen oder verstärken; Oxidationsmittel."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
-#: model:sds.sentences,name:safety_datasheet.STOST_13
+#: model:sds.sentences,name:safety_datasheet.STOT_13
 msgid "May cause respiratory irritation."
 msgstr "Kann die Atemwege reizen."
 
@@ -7029,14 +7029,14 @@ msgstr "ABSCHNITT 9: Freie Notizen"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_text
 #, fuzzy
-msgid "STOST RE details"
-msgstr "STOST RE Details"
+msgid "STOT RE details"
+msgstr "STOT RE Details"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
 #, fuzzy
-msgid "STOST SE details"
-msgstr "STOST SE Einzelheiten"
+msgid "STOT SE details"
+msgstr "STOT SE Einzelheiten"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -7571,7 +7571,7 @@ msgid "Specific Target Organ Systemic Toxicity (Single Exposure)"
 msgstr "Spezifische Zielorgan-Toxizität bei einmaliger Exposition"
 
 #. module: safety_datasheet
-#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__STOT
 #, fuzzy
 msgid "Specific Target Toxicity"
 msgstr "Spezifische Zieltoxizität"
@@ -8257,7 +8257,7 @@ msgstr ""
 "Verordnung, Anhang XIII."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_8
+#: model:sds.sentences,name:safety_datasheet.STOT_8
 msgid "Thyroid."
 msgstr "Schilddrüse."
 

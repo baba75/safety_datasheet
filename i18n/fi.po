@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20230116\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 13:41+0000\n"
-"PO-Revision-Date: 2024-10-30 14:57+0100\n"
+"POT-Creation-Date: 2024-11-19 09:26+0000\n"
+"PO-Revision-Date: 2024-11-19 11:26+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -29,6 +29,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Belgium - België | Belgisch Antigifcentrum<br/>\n"
+"                070 245 245 (elke dag, 24 op 24 uur)<br/>\n"
+"                <a href=\"https://www.poisoncentre.be/\">www.poisoncentre."
+"be</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Czech
@@ -42,6 +50,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Czech Republic - Česká republika | Toxikologické "
+"informační středisko<br/>\n"
+"                Telefon: +420 224 919 293, +420 224 915 402<br/>\n"
+"                <a href=\"http://www.tis-cz.cz/\">www.tis-cz.cz</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Finland
@@ -56,6 +72,15 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Finland - Suomi | Myrkytystietokeskus<br/>\n"
+"                Puhelin: 0800 147 111, 09 471 977<br/>\n"
+"                <a href=\"https://www.hus.fi/potilaalle/sairaalat-ja-"
+"toimipisteet/myrkytystietokeskus\">https://www.hus.fi/potilaalle/sairaalat-"
+"ja-toimipisteet/myrkytystietokeskus</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_France
@@ -69,6 +94,14 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>France | Centre AntiPoison et de ToxicoVigilance<br/>\n"
+"                numéro ORFILA : + 33 (0)1 45 42 59 59<br/>\n"
+"                <a href=\"https://reach-info.ineris.fr/numero-"
+"orfila\">https://reach-info.ineris.fr/numero-orfila</a></p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Hungary
@@ -79,6 +112,11 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Hungary - Magyarország | +36-80-201-199</p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Italy
@@ -93,6 +131,15 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Italy - Italia | Azienda Ospedaliera Integrata Verona: "
+"800 011 858<br/>\n"
+"                Lista completa su: <a href=\"https://preparatipericolosi.iss."
+"it/\">preparatipericolosi.iss.it</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Portugal
@@ -108,6 +155,16 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Portugal | CIAV - Centro de Informação Antivenenos<br/>\n"
+"                800 250 250<br/>\n"
+"                <a href=\"https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos/\">https://www.inem.pt/category/servicos/centro-de-"
+"informacao-antivenenos</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Romania
@@ -123,6 +180,16 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Romania - România | S.C.U.B. - Spitaulu Clinic de Urgență "
+"Bucureßști<br/>\n"
+"                021.599.23.00<br/>\n"
+"                <a href=\"https://www.urgentafloreasca.ro/#!/Ati2\">https://"
+"www.urgentafloreasca.ro/#!/Ati2</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Slovenia
@@ -133,6 +200,11 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Slovenia - Slovenija | Telefonska številka: 112</p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Spain
@@ -150,6 +222,18 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Spain - España | Servicio de Información Toxicológica "
+"(SIT)<br/>\n"
+"                + 34 91 562 04 20 <br/>\n"
+"                <a href=\"https://www.mjusticia.gob.es/es/institucional/"
+"organismos/instituto-nacional/servicios/servicio-informacion\">https://www."
+"mjusticia.gob.es/es/institucional/organismos/instituto-nacional/servicios/"
+"servicio-informacion</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Sweden
@@ -161,6 +245,12 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>Sweden - Sverige | 112 - begär Giftinformation\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_UK
@@ -173,6 +263,13 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
+"\n"
+"                \n"
+"                <p>United Kingdom | Call NHS 111 <br/>\n"
+"                111 online: <a href=\"http://111.nhs.uk/\">111.nhs.uk/</a>\n"
+"                </p>\n"
+"                \n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.poison.centre,name:safety_datasheet.PC_Austria
@@ -185,209 +282,19 @@ msgid ""
 "Vergiftungsinformation</a></p>\n"
 "                "
 msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-butoxyethanol
-msgid ""
 "\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</"
-"td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></"
-"td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-633-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</"
-"td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ammonia
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</"
-"td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
-"td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td></tr></tbody></table>\n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC203-473-3
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</"
-"td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></"
-"td><td>Yes</td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td></tr></tbody></table>\n"
-"            \n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-2-butoxyethoxyethanol
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
-"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
-"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
-"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
-"td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></"
-"td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></"
-"td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
-"table>\n"
-"            \n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.natural_cement
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.portland_cement
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
-"table>\n"
-"            "
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CSA
-msgid ""
-"\n"
-"            <table class=\"table table-bordered\"><thead class=\"table-"
-"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
-"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
-"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
-"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></"
-"table>\n"
-"            \n"
-"            "
-msgstr ""
+"                <p>Austria - Österreich | Vergiftungsinformationszentrale "
+"(VIZ)<br/>\n"
+"                Notruf 0-24 Uhr: 01 406 43 43<br>\n"
+"                <a href=\"https://goeg.at/Vergiftungsinformation\">goeg.at/"
+"Vergiftungsinformation</a></p>\n"
+"                "
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "%s (copy)"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_3779-63-3
-msgid ""
-"(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC252-104-2
-msgid "(2-methoxymethylethoxy)propanol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC220-120-9
-msgid "1,2-benzisothiazol-3(2H)-one"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.butoxy_propanol
-msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
-msgstr ""
+msgstr "%s (copy)"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -410,16 +317,12 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "1.2 Relevant identified uses of the substance or mixture and uses advised "
-#| "against recommended use:"
 msgid ""
 "1.2. Relevant identified uses of the substance or mixture and uses advised "
 "against recommended use"
 msgstr ""
 "1.2 Aineen tai seoksen merkitykselliset tunnistetut käytöt ja käytöt, joita "
-"ei suositella:"
+"ei suositella"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -576,10 +479,6 @@ msgstr "14.6. Erityiset varotoimet käyttäjälle"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid ""
-#| "14.7. Maritime transport in bulk according to IMO\n"
-#| "                                            instruments"
 msgid "14.7. Maritime transport in bulk according to IMO instruments"
 msgstr "14.7. Merikuljetus irtolastina IMO:n asiakirjojen mukaisesti"
 
@@ -608,26 +507,6 @@ msgid "16"
 msgstr "16"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.nitrilotriethanol
-msgid "2,2',2''-nitrilotriethanol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
-msgid "2-(2-butoxyethoxy)ethanol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.2-butoxyethanol
-msgid "2-butoxyethanol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_618-558-4
-msgid "2-tridecoxyethyl dihydrogen phosphate"
-msgstr ""
-
-#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "2.1 Classification of the substance or mixture"
 msgstr "2.1 Aineen tai seoksen luokitus"
@@ -646,15 +525,6 @@ msgstr "2.2. Merkinnät"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "2.3. Other Hazards"
 msgstr "2.3. Muut vaarat"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
-msgid ""
-"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
-"                oligomers reaction product with 3-(cyclohexylamino)propane-1-"
-"sulfonic acid\n"
-"                and N,N-dimethylcyclohexanamine"
-msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -761,29 +631,24 @@ msgstr "9.2. Muut tiedot"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<b>CAS no:</b>"
-msgstr ""
+msgstr "<b>CAS-nro:</b>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<b>EC no:</b>"
-msgstr ""
+msgstr "<b>EY-nro:</b>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<b>IUPAC:</b>"
-msgstr ""
+msgstr "<b>IUPAC:</b>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-#, fuzzy
-#| msgid "2.3. Other Hazards"
-msgid "<br/> Other Hazards:"
-msgstr "2.3. Muut vaarat"
-
-#. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "<br/> vPvB:"
-msgstr ""
+msgid ""
+"<br/>\n"
+"                            Other Hazards:"
+msgstr "<br/>Muut vaarat:"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -800,6 +665,15 @@ msgid ""
 "improper use.<br> Provide adequate training to personnel assigned to the use "
 "of chemical products.</p>"
 msgstr ""
+"<p class=\"sds\">Tämän lomakkeen sisältämät tiedot perustuvat viimeisimmän "
+"version päivämääränä käytettävissämme olevaan tietoon. Käyttäjän on "
+"varmistettava tietojen soveltuvuus ja täydellisyys tuotteen erityiseen "
+"käyttöön liittyen.<br> Tätä asiakirjaa ei tule tulkita tuotteen minkään "
+"tietyn ominaisuuden takuuksi.<br> Koska tuotteen käyttö ei ole suorassa "
+"hallinnassamme, on käyttäjän velvollisuus noudattaa voimassa olevia "
+"hygieniaa ja turvallisuutta koskevia lakeja ja määräyksiä omalla "
+"vastuullaan. Ei oteta vastuuta väärästä käytöstä.<br> Järjestä riittävä "
+"koulutus kemiallisten tuotteiden käyttöön määrätylle henkilöstölle.</p>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -824,6 +698,25 @@ msgid ""
 "td><td><br></td><td><br></td><td><br></td><td><br><br></td><td><br></"
 "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
+"<p><b>Johdettu Ei-vaikutustaso<br></b> Aineen nimi tässä</p><p> Työntekijät</"
+"p><table class=\"table table-bordered\"><thead><tr><th colspan=\"2\"> "
+"Akuutit systeemiset vaikutukset</th><th colspan=\"2\"> Akuutit paikalliset "
+"vaikutukset</th><th colspan=\"2\"> Pitkäaikaiset systeemiset vaikutukset</"
+"th><th colspan=\"2\"> Pitkäaikaiset paikalliset vaikutukset</th></tr></"
+"thead><tbody><tr><td> Ihon kautta</td><td> Hengitys</td><td> Ihon kautta</"
+"td><td> Hengitys</td><td> Ihon kautta</td><td> Hengitys</td><td> Ihon "
+"kautta</td><td> Hengitys</td></tr><tr><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table><p> Kuluttajat</p><table class=\"table table-"
+"bordered\"><thead><tr><th colspan=\"3\"> Akuutit systeemiset vaikutukset</"
+"th><th colspan=\"2\"> Akuutit paikalliset vaikutukset</th><th colspan=\"3\"> "
+"Pitkäaikaiset systeemiset vaikutukset</th><th colspan=\"2\"> Pitkäaikaiset "
+"paikalliset vaikutukset</th></tr></thead><tbody><tr><td> Ihon kautta</"
+"td><td> Hengitys</td><td> Oraalinen</td><td> Ihon kautta</td><td> Hengitys</"
+"td><td> Ihon kautta</td><td> Hengitys</td><td> Oraalinen</td><td> Ihon "
+"kautta</td><td> Hengitys</td></tr><tr><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -846,12 +739,28 @@ msgid ""
 "colspan=\"2\">Hazard for Predators</th></tr></thead><tbody><tr><td>Secondary "
 "poisoning</td><td>-</td></tr></tbody></table></div></div>"
 msgstr ""
+"<p><b>Ennustettu vaikutukseton pitoisuus</b><br> Komponentin nimi tässä</"
+"p><div class=\"row mt16\"><div class=\"col-6\"><table class=\"table table-"
+"bordered\"><thead><tr><th colspan=\"2\"> Vaara vesieliöille</th></tr></"
+"thead><tbody><tr><td> Makeanveden</td><td> -</td></tr><tr><td> Jaksottaiset "
+"päästöt (makea vesi)</td><td> -</td></tr><tr><td> Merivesi</td><td> -</td></"
+"tr><tr><td> Jaksottaiset päästöt (merivesi)</td><td> -</td></tr><tr><td> "
+"Jätevedenpuhdistamo (STP)</td><td> -</td></tr><tr><td> Sedimentti (makea "
+"vesi)</td><td> -</td></tr><tr><td> Sedimentti (merivesi)</td><td> -</td></"
+"tr></tbody></table></div><div class=\"col-6\"><table class=\"table table-"
+"bordered\"><thead><tr><th colspan=\"2\"> Vaara ilmalle</th></tr></"
+"thead><tbody><tr><td> ilmaa</td><td> -</td></tr></tbody></table><table "
+"class=\"table table-bordered\"><thead><tr><th colspan=\"2\"> Vaara "
+"maaeliöille</th></tr></thead><tbody><tr><td> Maaperä</td><td> -</td></tr></"
+"tbody></table><table class=\"table table-bordered\"><thead><tr><th "
+"colspan=\"2\"> Vaara saalistajille</th></tr></thead><tbody><tr><td> "
+"Toissijainen myrkytys</td><td> -</td></tr></tbody></table></div></div>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "<p><br></p>"
-msgstr ""
+msgstr "<p><br></p>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -862,16 +771,20 @@ msgid ""
 "verified adequate and reliable by analogy with similar products and with the "
 "information provided by ECHA.</p>"
 msgstr ""
+"<p>Tämän käyttöturvallisuustiedotteen sisältämät tiedot perustuvat seoksen "
+"aineosien toimittajien toimittamiin tiedoihin, jotka olemme todenneet "
+"vastaavien tuotteiden ja ECHA:n antamien tietojen perusteella riittävät ja "
+"luotettavat.</p>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span class=\"sds_h7\">Hand Protection:</span>"
-msgstr ""
+msgstr "<span class=\"sds_h7\">Käsien suojaus:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span class=\"sds_h7\">Other:</span>"
-msgstr ""
+msgstr "<span class=\"sds_h7\">Muuta:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -883,11 +796,13 @@ msgid ""
 "substance or mixture:\n"
 "                                                    </span>"
 msgstr ""
+"<span>Muut nimenomaisesti ainetta tai seosta koskevat turvallisuus-, "
+"terveys- ja ympäristömääräykset/lainsäädäntö:</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>&amp;nbsp;</span>"
-msgstr ""
+msgstr "<span>&amp;nbsp;</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -898,51 +813,23 @@ msgid ""
 "numbers under Tables -&gt;\n"
 "                                            Poison Centres</span>"
 msgstr ""
+"<span>1.3 Aseta kansallisten jakelijoiden yhteystiedot kohdassa Taulukot -"
+"&gt; Jakelijat</span><br/> <span>1.4 Aseta hätänumerot kohdassa Taulukot -"
+"&gt; Myrkytyskeskukset</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>First release</span>"
-msgstr ""
+msgstr "<span>Ensimmäinen julkaisu</span>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>Supersedes version:&amp;nbsp;</span>"
-msgstr ""
+msgstr "<span>Korvaa version:&amp;nbsp;</span>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
 #: code:addons/safety_datasheet/models/datasheet.py:0
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Aluminium_sulphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS12788-93-1
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS28182-81-2
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS7087-68-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC220-120-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-764-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-944-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EDTA_tetrasodium_salt
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Hexamethylene_diisocyanate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Natriummetasilicat_Pentahydrat
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Potassium_methylsilanetriolate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Sodium_silicate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Trisodium_nitrilotriacetate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Zinc_nitrate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.butoxy_propanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_1574548-27-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_3779-63-3
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_666723-27-9
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_202-715-5
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_618-558-4
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_931-274-8
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.citric_acid
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ec_932-183-6
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.lithum_carbonate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.nitrilotriethanol
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.potassium_pyrophosphate
-#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -959,6 +846,116 @@ msgid ""
 "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
 "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Alue</th><th rowspan=\"2\"> Lainsäädäntö</th><th "
+"colspan=\"3\"> Pitkän aikavälin altistusrajan (LTEL) arvot</th><th "
+"colspan=\"3\"> Lyhyen aikavälin altistusrajan (STEL) arvot</th><th "
+"rowspan=\"2\"> Ihon nimitys</th><th rowspan=\"2\"> Ihon herkistyminen</"
+"th><th rowspan=\"2\"> Hengitysteiden herkistyminen</th><th rowspan=\"2\"> "
+"Työsektori</th><th rowspan=\"2\"> Voimaantulopäivä</th><th rowspan=\"2\"> "
+"Viimeinen voimassaolopäivä</th><th rowspan=\"2\"> Muut huomautukset</th></"
+"tr><tr><th> mg/ <sup>m3</sup></th><th> ppm</th><th> f/ml</th><th> mg/ "
+"<sup>m3</sup></th><th> ppm</th><th> f/ml </th></tr></thead><tbody "
+"class=\"table-data\"><tr><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Result/"
+"Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td>Effect on developmental toxicity<br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Tulos/"
+"vaikutus</th><th> Laji/testijärjestelmä</th><th> Lähde</th></tr></"
+"thead><tbody><tr><td> Vaikutus hedelmällisyyteen<br></td><td><br></"
+"td><td><br></td><td><br></td></tr><tr><td> Vaikutus "
+"kehitysmyrkyllisyyteen<br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Adsorption/"
+"desorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Tulokset/"
+"yhteenvedot</th><th> Lähde</th></tr></thead><tbody><tr><td> Adsorptio/"
+"desorptio</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Bioaccumulation: "
+"aquatic / sediment</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/><br></"
+"td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Tulokset/"
+"yhteenvedot</th><th> Lähde</th></tr></thead><tbody><tr><td> Biokertyvyys: "
+"vesi / sedimentti</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Biokertyvyys: maanpäällinen</td><td><br/><br></td><td><br/><br></td></tr></"
+"tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Biodegradation in "
+"water - screening tests</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Biodegradation in water & sediment - simulation tests</td><td><br/"
+"><br></td><td><br/><br></td></tr><tr><td>Biodegradation in soil</td><td><br/"
+"><br></td><td><br/><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Tulokset/"
+"yhteenvedot</th><th> Lähde</th></tr></thead><tbody><tr><td> Biohajoavuus "
+"vedessä - seulontatestit</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td> Biohajoaminen vedessä ja sedimentissä - simulaatiotestit</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td> Biologinen hajoaminen "
+"maaperässä</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+"Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Environmental fate</"
+"td><td><br/><br></td><td><br/><br></td></tr><tr><td>Photochemical ozone "
+"creation potential</td><td><br/><br></td><td><br/><br></td></"
+"tr><tr><td>Ozone depletion potential</td><td><br/><br></td><td><br/><br></"
+"td></tr><tr><td>Global warming potential</td><td><br/><br></td><td><br/"
+"><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Tulokset/"
+"yhteenvedot</th><th> Lähde</th></tr></thead><tbody><tr><td> Ympäristön "
+"kohtalo</td><td><br/><br></td><td><br/><br></td></tr><tr><td> "
+"Valokemiallinen otsonin muodostumispotentiaali</td><td><br/><br></td><td><br/"
+"><br></td></tr><tr><td> Otsonikerroksen heikkenemispotentiaali</td><td><br/"
+"><br></td><td><br/><br></td></tr><tr><td> Ilmaston lämpenemispotentiaali</"
+"td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
+"th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td><br/></td><td><br/><br></td><td><br/><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Tulos/vaikutus</th><th> "
+"Laji/testijärjestelmä</th><th> Lähde</th></tr></thead><tbody><tr><td><br/></"
+"td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -968,6 +965,9 @@ msgid ""
 "th><th>Species/Test system</th><th>Source</th></tr></"
 "thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Tulos/vaikutus</th><th> "
+"Laji/testijärjestelmä</th><th> Lähde</th></tr></thead><tbody><tr><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -980,6 +980,48 @@ msgid ""
 "tr><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
 "table>"
 msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Altistumisreitti</"
+"th><th> Tulos/vaikutus</th><th> Laji/testijärjestelmä</th><th> Lähde</th></"
+"tr></thead><tbody><tr><td> Nieleminen</td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td> Hengitys</td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td> Ihon kautta</td><td><br></td><td><br></"
+"td><td><br></td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Altistumisreitti</"
+"th><th> Tulos/vaikutus</th><th> Laji/testausjärjestelmä</th><th> Lähde</th></"
+"tr></thead><tbody><tr><td> Oraalinen</td><td><br></td><td><br></td><td><br></"
+"td></tr><tbody><tr><td> Hengitys</td><td><br></td><td><br></td><td><br></"
+"td></tr><tbody><tr><td> Ihon kautta</td><td><br></td><td><br></td><td><br></"
+"td></tr></tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
+"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Altistumisreitti</"
+"th><th> Tulos/vaikutus</th><th> Laji/testausjärjestelmä</th><th> Lähde</th></"
+"tr></thead><tbody><tr><td> Oraalinen</td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td> Hengitys<br></td><td> mg/m³</td><td><br></td><td><br></td></"
+"tr><tr><td> Iho/silmä<br></td><td><br></td><td><br></td><td><br></td></tr></"
+"tbody></table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -989,32 +1031,35 @@ msgid ""
 "th><th>Biodegradation in water</th><th>Source</th></tr></"
 "thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table>"
 msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Aine</th><th> "
+"Biologinen hajoaminen vedessä</th><th> Lähde</th></tr></"
+"thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table>"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "ADR/RID/ADN"
-msgstr ""
+msgstr "ADR/RID/ADN"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_adr_notes
 msgid "ADR/RID/ADN additional notes"
-msgstr ""
+msgstr "ADR/RID/ADN lisähuomautuksia"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_pictogram__category__transport
 msgid "ADR/Transport Pictograms"
-msgstr ""
+msgstr "ADR/kuljetuskuvakkeet"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P390
 msgid "Absorb spillage to prevent material damage."
-msgstr ""
+msgstr "Imeytä roiskeet materiaalivahinkojen estämiseksi."
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_report_safety_datasheet_report_safety_datasheet
 msgid "Abstract model for custom SDS report"
-msgstr ""
+msgstr "Abstrakti malli mukautetulle SDS-raportille"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_2
@@ -1022,18 +1067,21 @@ msgid ""
 "According to current knowledge adverse effects on water purification plants "
 "are not expected."
 msgstr ""
+"Nykyisen tiedon mukaan haitallisia vaikutuksia vedenpuhdistamoihin ei ole "
+"odotettavissa."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.adverse_1
 msgid ""
 "According to present knowledge no adverse influence to environment expected."
 msgstr ""
+"Tämänhetkisen tiedon mukaan ei odoteta haitallista vaikutusta ympäristöön."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.EUH_440
 msgid ""
 "Accumulates in the environment and living organisms including in humans."
-msgstr ""
+msgstr "Kertyy ympäristöön ja eläviin organismeihin, myös ihmisiin."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_13
@@ -1042,16 +1090,20 @@ msgid ""
 "                due to the heat of an exothermic reaction with a high risk "
 "of fire."
 msgstr ""
+"Hapot, alkoholit, amiinit, emäkset ja hapettimet voivat aiheuttaa "
+"ylikuumenemista \n"
+"                johtuen eksotermisen reaktion kuumuudesta ja suuresta "
+"palovaarasta."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_1
 msgid "Acids."
-msgstr ""
+msgstr "Hapot."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__acronym
 msgid "Acronym"
-msgstr ""
+msgstr "Akronyymi"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_action_sentences
@@ -1059,12 +1111,29 @@ msgstr ""
 #: model:ir.ui.menu,name:safety_datasheet.sentences_tree
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_action_sentences_tree
 msgid "Action Sentences"
-msgstr ""
+msgstr "Toimintalauseet"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.action_sentence_view_form
 msgid "Action sentences"
-msgstr ""
+msgstr "Toimintalauseet"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_distributor__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_legend__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_poison_centre__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulatory_information__active
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__active
+msgid "Active"
+msgstr "Aktiivinen"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Acute / short term:"
+msgstr "Akuutti / lyhytaikainen:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_dermal
@@ -1080,27 +1149,23 @@ msgstr "Välitön myrkyllisyys hengitettynä"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_lcl_dermal
-#, fuzzy
-#| msgid "Acute dermal toxicity"
 msgid "Acute local dermal effect"
-msgstr "Välitön myrkyllisyys ihon kautta"
+msgstr "Akuutti paikallinen ihovaikutus"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_lcl_dermal
 msgid "Acute local dermal effect (workers)"
-msgstr ""
+msgstr "Akuutti paikallinen ihovaikutus (työntekijät)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_lcl_inhalation
-#, fuzzy
-#| msgid "Acute inhalation toxicity"
 msgid "Acute local inhalation effect"
-msgstr "Välitön myrkyllisyys hengitettynä"
+msgstr "Akuutti paikallinen hengitysvaikutus"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_lcl_inhalation
 msgid "Acute local inhalation effect (workers)"
-msgstr ""
+msgstr "Akuutti paikallinen hengitysvaikutus (työntekijät)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_oral
@@ -1110,32 +1175,28 @@ msgstr "Välitön myrkyllisyys suun kautta"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_dermal
-#, fuzzy
-#| msgid "Acute dermal toxicity"
 msgid "Acute systemic dermal effect"
-msgstr "Välitön myrkyllisyys ihon kautta"
+msgstr "Akuutti systeeminen ihovaikutus"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_sys_dermal
 msgid "Acute systemic dermal effect (workers)"
-msgstr ""
+msgstr "Akuutti systeeminen ihovaikutus (työntekijät)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_inhalation
-#, fuzzy
-#| msgid "Acute inhalation toxicity"
 msgid "Acute systemic inhalation effect"
-msgstr "Välitön myrkyllisyys hengitettynä"
+msgstr "Akuutti systeeminen hengitysvaikutus"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_aq_sys_inhalation
 msgid "Acute systemic inhalation effect (workers)"
-msgstr ""
+msgstr "Akuutti systeeminen hengitysvaikutus (työntekijät)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pop_aq_sys_oral
 msgid "Acute systemic oral effect"
-msgstr ""
+msgstr "Akuutti systeeminen oraalinen vaikutus"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__toxicity
@@ -1150,114 +1211,140 @@ msgstr "Välitön myrkyllisyys"
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_text
 msgid "Acute toxicity details"
-msgstr ""
+msgstr "Akuutin myrkyllisyyden tiedot"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_component
+msgid "Acute toxicity details (ingredients)"
+msgstr "Akuutin myrkyllisyyden tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
+msgid "Acute toxicity details (mixture)"
+msgstr "Tiedot välittömästä myrkyllisyydestä (sekoitus)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__acute_summary
+msgid "Acute toxicity summary"
+msgstr "Yhteenveto välittömästä myrkyllisyydestä"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_Additional
 msgid "Additional Labelling"
-msgstr ""
+msgstr "Lisämerkintä"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_inhalation_5
 msgid "Adopt adequate precautions for the rescuer."
-msgstr ""
+msgstr "Ota riittävät varotoimet pelastajaa varten."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_10
+#: model:sds.sentences,name:safety_datasheet.STOT_10
 msgid "Adrenal gland."
-msgstr ""
+msgstr "Lisämunuainen."
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Adverse effects details (ingredients)"
+msgstr "Haittavaikutuksia koskevat tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
+msgid "Adverse effects details (mixture)"
+msgstr "Tiedot haittavaikutuksista (seos)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__fire_fight_advice
 msgid "Advice for Firefighters"
-msgstr ""
+msgstr "Palontorjuntaa koskevat ohjeet"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_5_3
 msgid "Advice for firefighters"
-msgstr ""
+msgstr "Palontorjuntaa koskevat ohjeet"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Aerosol_3
 msgid "Aerosol"
-msgstr ""
+msgstr "Aerosoli"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_16
 msgid "After cleaning, flush away traces with water."
-msgstr ""
+msgstr "Puhdistuksen jälkeen huuhtele jäljet pois vedellä."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__air
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Air"
-msgstr ""
+msgstr "Ilma"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_2
 msgid "Alcohol-resistant foam."
-msgstr ""
+msgstr "Alkoholia kestävä vaahto."
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.ec_932-183-6
 msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
-msgstr ""
+msgstr "Alkoholit, C9-11-iso-, C10-rikas, etoksyloitu (> 2,5 mol EO)"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_7
 msgid "Alcohols."
-msgstr ""
+msgstr "Alkoholit."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_extinguishing_6
 msgid "All extinguishing agents can be used."
-msgstr ""
+msgstr "Kaikkia sammutusaineita voidaan käyttää."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_4
 msgid "Aluminium and other non-noble metals."
-msgstr ""
+msgstr "Alumiini ja muut ei-jalometallit."
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.Aluminium_sulphate
 msgid "Aluminium sulphate"
-msgstr ""
+msgstr "Alumiinisulfaatti"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
-msgstr ""
+msgstr "Alumiini."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_8
 msgid "Amines."
-msgstr ""
+msgstr "Amiinit."
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.ammonia
 msgid "Ammonia"
-msgstr ""
+msgstr "Ammoniakki"
 
 #. module: safety_datasheet
 #: model:sds.chemical.substance,name:safety_datasheet.EC231-764-5
 msgid "Ammonium dihydrogenorthophosphate"
-msgstr ""
+msgstr "Ammoniumdivetyortofosfaatti"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_3
 msgid "Ammonium salts."
-msgstr ""
+msgstr "Ammoniumsuolat."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P364
 msgid "And wash it before reuse."
-msgstr ""
+msgstr "Ja pese se ennen uudelleenkäyttöä."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_4
 msgid "Animal genetic toxicity studies were negative."
-msgstr ""
+msgstr "Eläinten geneettiset toksisuustutkimukset olivat negatiivisia."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.disposal_3
@@ -1265,16 +1352,19 @@ msgid ""
 "Any disposal practices must be in compliance with all national and "
 "provincial laws and any municipal or local by-laws governing hazardous waste."
 msgstr ""
+"Kaikkien hävittämiskäytäntöjen on noudatettava kaikkia kansallisia ja "
+"maakunnallisia lakeja sekä kaikkia kunnallisia tai paikallisia vaarallisia "
+"jätteitä koskevia lakeja."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_1
 msgid "Appropriate engineering controls"
-msgstr ""
+msgstr "Asianmukaiset tekniset torjuntatoimenpiteet"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Appropriate engineering controls:"
-msgstr ""
+msgstr "Asianmukaiset tekniset torjuntatoimenpiteet:"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_6
@@ -1282,6 +1372,8 @@ msgid ""
 "Aqueous solutions react with light metals, e.g. aluminum, with the formation "
 "of hydrogen."
 msgstr ""
+"Vesiliuokset reagoivat kevytmetallien, esim. alumiinia, jolloin muodostuu "
+"vetyä."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_9
@@ -1289,6 +1381,9 @@ msgid ""
 "As an exception to this general rule it is known that multilayer laminate "
 "gloves may offer prolonged protection at thicknesses less than 0.35 mm."
 msgstr ""
+"Poikkeuksena tähän yleissääntöön tiedetään, että monikerroksiset "
+"laminaattikäsineet voivat tarjota pitkäaikaisen suojan alle 0,35 mm:n "
+"paksuudella."
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10
@@ -1297,101 +1392,120 @@ msgid "Aspiration Hazard"
 msgstr "Aspiraatiovaara"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__aspiration_hazard
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_text
 msgid "Aspiration Hazard details"
-msgstr ""
+msgstr "Aspiraatiovaaran tiedot"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Aspiration Hazard details of the ingredients:"
+msgstr "Ainesosien aspiraatiovaaratiedot:"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Aspiration Hazard details:"
-msgstr ""
+msgstr "Aspiraatiovaaran tiedot:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Aspiration haz. details (ingredients)"
+msgstr "Aspiraatiohäiriö. yksityiskohdat (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Aspiration haz. details (mixture)"
+msgstr "Aspiraatiohäiriö. yksityiskohdat (sekoitus)"
 
 #. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Asp_Tox_1
 msgid "Aspiration hazard"
-msgstr ""
+msgstr "Aspiraatiovaara"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__aspiration
 msgid "Aspiration hazards"
-msgstr ""
+msgstr "Aspiraatiovaarat"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.decomposition_3
 msgid "At elevated temperature: acetic acid."
-msgstr ""
+msgstr "Korotetussa lämpötilassa: etikkahappo."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_10
 msgid "At high temperature formation of phosphorous oxides."
-msgstr ""
+msgstr "Korkeassa lämpötilassa fosforioksidien muodostuminen."
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__austria
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__austria
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__austria
 msgid "Austria"
-msgstr ""
+msgstr "Itävalta"
 
 #. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_9
 msgid "Auto-ignition temperature"
-msgstr ""
+msgstr "Itsesyttymislämpötila"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_fire_hazards_6
 msgid "Avoid breathing combustion products."
-msgstr ""
+msgstr "Vältä palamistuotteiden hengittämistä."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P261
 msgid "Avoid breathing dust/fume/gas/mist/vapours/ spray."
-msgstr ""
+msgstr "Vältä pölyn/savun/kaasun/sumun/höyryn/suihkeen hengittämistä."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P263
 msgid "Avoid contact during pregnancy/while nursing."
-msgstr ""
+msgstr "Vältä kosketusta raskauden / imetyksen aikana."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_4
 msgid "Avoid contact with eyes."
-msgstr ""
+msgstr "Vältä kosketusta silmiin."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_5
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_9
 msgid "Avoid contact with skin and eyes."
-msgstr ""
+msgstr "Vältä kosketusta iholle ja silmiin."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_storage_12
 msgid "Avoid contact with water or humidity."
-msgstr ""
+msgstr "Vältä kosketusta veden tai kosteuden kanssa."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_handling_16
 msgid "Avoid creating or spreading dust."
-msgstr ""
+msgstr "Vältä pölyn muodostumista tai leviämistä."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_4
 msgid "Avoid gloves made of: Polyvinyl alcohol (\"PVA\")."
 msgstr ""
+"Vältä käsineitä, jotka on valmistettu polyvinyylialkoholista (\"PVA\")."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P212
 msgid ""
 "Avoid heating under confinement or reduction of the desensitising agent."
 msgstr ""
+"Vältä kuumentamista suljetussa tilassa tai herkkyyttä vähentävän aineen "
+"vähentämistä."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P273
 msgid "Avoid release to the environment."
-msgstr ""
+msgstr "Vältä päästämistä ympäristöön."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
+#: model:sds.sentences,name:safety_datasheet.STOT_12
 #: model:sds.sentences,name:safety_datasheet.aspiration_2
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_3
 #: model:sds.sentences,name:safety_datasheet.eye_damage_4
@@ -1403,7 +1517,7 @@ msgid "Based on available data, the classification criteria are not met."
 msgstr "Saatavilla olevien tietojen perusteella luokituskriteerit eivät täyty."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_3
+#: model:sds.sentences,name:safety_datasheet.STOT_3
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_1
 #: model:sds.sentences,name:safety_datasheet.reproductive_1
 msgid "Based on information for component(s):"
@@ -1429,6 +1543,8 @@ msgid ""
 "Based on the available data a clinically relevant eye irritation hazard is "
 "not expected."
 msgstr ""
+"Saatavilla olevien tietojen perusteella ei ole odotettavissa kliinisesti "
+"merkittävää silmä-ärsytysvaaraa."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_corrosion_3
@@ -1436,6 +1552,8 @@ msgid ""
 "Based on the available data a clinically relevant skin irritation hazard is "
 "not expected."
 msgstr ""
+"Saatavilla olevien tietojen perusteella ei ole odotettavissa kliinisesti "
+"merkittävää ihoärsytysvaaraa."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sensitization_4
@@ -1474,6 +1592,17 @@ msgid "Bibliography entries"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Bioaccumulative details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Bioaccumulative details (mixture)"
+msgstr "Biokertyvyystiedot (seos)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__bioaccumulation
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__bioaccumulative
 msgid "Bioaccumulative potential"
@@ -1522,6 +1651,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "CAS / EC-No."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_20
+msgid "CAS No."
 msgstr ""
 
 #. module: safety_datasheet
@@ -1604,8 +1738,24 @@ msgid "Carcinogenicity"
 msgstr "Syöpää aiheuttavat vaikutukset"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__carcinogenicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_text
 msgid "Carcinogenicity details"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Carcinogenicity details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Carcinogenicity details (mixture)"
+msgstr "Karsinogeenisuustiedot (sekoitus)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Carcinogenicity details of the ingredients:"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1684,6 +1834,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Changes made to the previous version:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_20
+msgid "Chemical Abstracts Service (CAS) Registry Number"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1967,6 +2122,11 @@ msgid "Corrosion"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Corrosion/irritation details of the ingredients:"
+msgstr "Ainesosien syöpymis-/ärsytystiedot:"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_6
 msgid "Corrosive to metals."
 msgstr ""
@@ -2123,6 +2283,11 @@ msgid "Czech Republic"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DERMAL Exposure"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_10
 msgid ""
 "DIRECTIVE 2012/18/EU OF THE EUROPEAN PARLIAMENT AND OF THE\n"
@@ -2140,7 +2305,22 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "DNEL Exposure limit values: Not available"
+msgid "DNEL Exposure limit values for the whole mixture: Not available"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "DNEL Exposure limit values of the ingredients:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "DNEL of ingredients"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "DNEL of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2151,6 +2331,16 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_datasheet__section_2_2_signal__danger
 msgid "Danger"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for GENERAL POPULATION"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Data for WORKERS"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2179,6 +2369,16 @@ msgid "Decomposition temperature"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Degradability details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
+msgid "Degradability details (mixture)"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__denmark
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__denmark
@@ -2191,8 +2391,8 @@ msgid "Density and/or relative density"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
-msgid "Derived No Effect Level (DNEL)"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector
+msgid "Derived No Effect Level (DNEL) of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2498,8 +2698,12 @@ msgid "Dust mask FFP2"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model:sds.legend,acronym:safety_datasheet.legend_1
+msgid "EC No."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ECno
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_substances_search
 msgid "EC Number"
 msgstr ""
@@ -2546,6 +2750,16 @@ msgid "EWC"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "EYE Exposure"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__ecological
+msgid "Ecological Information"
+msgstr "Tiedot vaarallisuudesta ympäristölle"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P381
 msgid "Eliminate all ignition sources if safe to do so."
 msgstr ""
@@ -2557,17 +2771,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
-#, fuzzy
-#| msgid "1.3 Detail of the supplier of the safety data sheet"
 msgid "Email of the person responsible for safety data sheets"
-msgstr "1.3 Käyttöturvallisuustiedotteen toimittajan tiedot"
+msgstr "Käyttöturvallisuustiedotteista vastaavan henkilön sähköposti"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_3_info
-#, fuzzy
-#| msgid "1.3 Detail of the supplier of the safety data sheet"
 msgid "Email of the person responsible for the safety data sheet"
-msgstr "1.3 Käyttöturvallisuustiedotteen toimittajan tiedot"
+msgstr "Käyttöturvallisuustiedotteesta vastaavan henkilön sähköposti"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -2575,7 +2785,24 @@ msgid "End of safety datasheet"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Endocrine details (ingredients)"
+msgstr "Endokriiniset tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Endocrine details (mixture)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
+msgid "Endocrine disrupting"
+msgstr "Endokriiniset häiriöt"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__endocrine
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
 msgid "Endocrine disrupting properties"
 msgstr ""
 
@@ -2591,7 +2818,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__engineer_control
-msgid "Engineer control"
+msgid "Engineering control"
 msgstr ""
 
 #. module: safety_datasheet
@@ -2831,9 +3058,25 @@ msgid "Eye contact:"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Eye cor/irr details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Eye cor/irr details (mixture)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__eye_damage
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_text
 msgid "Eye damage/irritation details"
 msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Eye damage/irritation details of the ingredients:"
+msgstr "Ainesosien silmävaurio/ärsytystiedot:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__eye_protection
@@ -3052,7 +3295,7 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_11
+#: model:sds.sentences,name:safety_datasheet.STOT_11
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_4
 msgid ""
@@ -3061,7 +3304,7 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_4
+#: model:sds.sentences,name:safety_datasheet.STOT_4
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_2
 msgid "For this family of materials:"
@@ -3093,6 +3336,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__freshwater
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Freshwater"
 msgstr ""
 
@@ -3147,7 +3391,7 @@ msgid "Gases under pressure"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_9
+#: model:sds.sentences,name:safety_datasheet.STOT_9
 msgid "Gastrointestinal tract."
 msgstr ""
 
@@ -3177,8 +3421,13 @@ msgstr "Sukusolujen perimää vaurioittavat vaikutukset"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Germ cell mutagenicity details of the ingredients:"
+msgstr "Ainesosien sukusolujen mutageenisuustiedot:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Germ cell mutagenicity details:"
-msgstr ""
+msgstr "Yksityiskohdat sukusolujen mutageenisuudesta:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__germany
@@ -3373,7 +3622,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Air"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Hazard for Aquatic Organism"
 msgstr ""
 
 #. module: safety_datasheet
@@ -3383,11 +3638,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Predators"
 msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard for Terrestrial Organism"
 msgstr ""
 
@@ -3642,6 +3899,16 @@ msgid "IMO"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "INHALATION Exposure"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.legend,acronym:safety_datasheet.legend_21
+msgid "IUPAC"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__IUPACname
 msgid "IUPAC Name"
 msgstr ""
@@ -3795,7 +4062,7 @@ msgid "In animal studies, did not interfere with reproduction."
 msgstr "Eläinkokeissa ei häirinnyt lisääntymistä."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_5
+#: model:sds.sentences,name:safety_datasheet.STOT_5
 msgid "In animals, effects have been reported on the following organs:"
 msgstr "Eläimillä on raportoitu vaikutuksia seuraaviin elimiin:"
 
@@ -3918,6 +4185,11 @@ msgid "Ingestion:"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Ingredients details:"
+msgstr "Ainesosien tiedot:"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_inhalation
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__inhalation
 msgid "Inhalation"
@@ -3946,69 +4218,108 @@ msgid "Insert National Distributor contact"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
-msgid "Insert PBT and vPvB details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_component
+msgid "Insert aspiration hazard details (ingredients)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
-msgid "Insert STOST RE details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
+msgid "Insert aspiration hazard details (mixture)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
-msgid "Insert STOST SE details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_component
+msgid "Insert carcinogenicity details (ingredients)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
-msgid "Insert acute toxicity details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
+msgid "Insert carcinogenicity details (mixture)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7_selector
-msgid "Insert adverse effects details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_component
+msgid "Insert endocrine disrupting properties details (ingredients)"
+msgstr "Lisää hormonitoimintaa häiritsevien ominaisuuksien tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_6_selector
+msgid "Insert endocrine disrupting properties details (mixture)"
+msgstr "Lisää tiedot hormonitoimintaa häiritsevistä ominaisuuksista (seos)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_component
+msgid "Insert eye damage corrosion/irritation details (ingredients)"
+msgstr ""
+"Lisää silmävaurion syövyttävyyttä/ärsytystä koskevat tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
+msgid "Insert eye damage corrosion/irritation details (mixture)"
+msgstr "Lisää silmävaurion syövyttävyyttä/ärsytystä koskevat tiedot (seos)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Insert germ cell mutagenicity details (ingredients)"
+msgstr "Lisää sukusolujen mutageenisuustiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Insert germ cell mutagenicity details (mixture)"
+msgstr "Lisää sukusolujen mutageenisuustiedot (seos)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_component
+msgid "Insert ingredients bioaccumulative details"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_10_selector
-msgid "Insert aspiration Hazard details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_2_component
+msgid "Insert ingredients degradability details"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_3_selector
-msgid "Insert bioaccumulative details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Insert ingredients mobility in soil details"
+msgstr "Lisää ainesosien liikkuvuus maaperän yksityiskohtiin"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Insert ingredients toxicity details"
+msgstr "Lisää ainesosien myrkyllisyystiedot"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_3_selector
+msgid "Insert mixture bioaccumulative potential details"
+msgstr "Lisää seoksen bioakkumulaatiopotentiaalin tiedot"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Insert mobility in soil details of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_6_selector
-msgid "Insert carcinogenicity details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_7_component
+msgid "Insert other adverse effects details (ingredients)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2_selector
-msgid "Insert degradability details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(ingredients)"
 msgstr ""
+"Lisää tarkat tiedot kohde-elimen systeemisestä toksisuudesta (kerta-"
+"altistuminen) (ainesosat)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6_selector
-msgid "Insert endocrine details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid ""
+"Insert pecific Target Organ Systemic Toxicity (Single Exposure) details "
+"(mixture)"
 msgstr ""
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_3_selector
-msgid "Insert eye damage corrosion/irritation details"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
-msgid "Insert mobility details"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
-msgid "Insert mutagenicity details"
-msgstr ""
+"Lisää tarkat tiedot kohde-elimen systeemisestä toksisuudesta (kerta-"
+"altistuminen) (seos)"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -4021,38 +4332,65 @@ msgid "Insert reactivity of the components"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
-msgid "Insert reproductive toxicity details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Insert reproductive toxicity details (ingredients)"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
-msgid "Insert respiratory or skin sensitization details"
-msgstr "Lisää tiedot hengitysteiden tai ihon herkistymisestä"
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
-msgid "Insert skin corrosion/irritation details"
-msgstr "Lisää Ihosyövyttävyys/ihoärsytys koskevat tiedot"
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
-msgid "Insert toxicity details"
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Insert reproductive toxicity details (mixture)"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Insert respiratory or skin sensitization details (ingredients)"
+msgstr "Lisää tiedot hengitysteiden tai ihon herkistymisestä (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Insert respiratory or skin sensitization details (mixture)"
+msgstr "Lisää tiedot hengitysteiden tai ihon herkistymisestä (seos)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "Insert results of ingredients PBT and vPvB assessment"
+msgstr "Lisää ainesosien PBT- ja vPvB-arvioinnin tulokset"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "Insert results of mixture PBT and vPvB assessment"
+msgstr "Lisää PBT- ja vPvB-seoksen arvioinnin tulokset"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Insert skin corrosion/irritation details (ingredients)"
+msgstr "Lisää ihosyövyttävyys-/-ärsytystiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Insert skin corrosion/irritation details (mixture)"
+msgstr "Lisää ihosyövyttävyys-/-ärsytystiedot (seos)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (freshwater)"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__int_rel_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Intermittent releases (marine water)"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_4
 msgid "International Maritime Organization"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.legend,description:safety_datasheet.legend_21
+msgid "International Union of Pure and Applied Chemistry"
 msgstr ""
 
 #. module: safety_datasheet
@@ -4190,7 +4528,7 @@ msgid "Keep/Store away from clothing/…/combustible materials."
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_7
+#: model:sds.sentences,name:safety_datasheet.STOT_7
 msgid "Kidney."
 msgstr "Munuaiset."
 
@@ -4367,9 +4705,14 @@ msgid "Lithuania"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_6
+#: model:sds.sentences,name:safety_datasheet.STOT_6
 msgid "Liver."
 msgstr "Maksa."
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Local Effects"
+msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_env_precaution_5
@@ -4437,6 +4780,11 @@ msgid "Long-term systemic oral effect"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Long-term:"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_7
 msgid "Lower and upper explosion limit"
 msgstr ""
@@ -4462,6 +4810,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__marinew
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Marine water"
 msgstr ""
 
@@ -4471,7 +4820,7 @@ msgid "Maritime transport in bulk according to IMO instruments"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_1
+#: model:sds.sentences,name:safety_datasheet.STOT_1
 msgid "Material is corrosive."
 msgstr "Materiaali on syövyttävää."
 
@@ -4481,7 +4830,7 @@ msgid "Material is not biodegradable."
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_2
+#: model:sds.sentences,name:safety_datasheet.STOT_2
 msgid ""
 "Material is not classified as a respiratory irritant; however, upper "
 "respiratory tract irritation or corrosivity may be expected."
@@ -4588,7 +4937,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
-#: model:sds.sentences,name:safety_datasheet.STOST_13
+#: model:sds.sentences,name:safety_datasheet.STOT_13
 msgid "May cause respiratory irritation."
 msgstr "Saattaa aiheuttaa hengitysteiden ärsytystä."
 
@@ -4684,6 +5033,17 @@ msgid "Mixture:"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_component
+msgid "Mobility details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4_selector
+msgid "Mobility details (mixture)"
+msgstr "Liikkuvuustiedot (sekoitus)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mobility
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_4
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__mobility
 msgid "Mobility in soil"
@@ -4715,9 +5075,20 @@ msgid "Mutagenicity"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__mutagenity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_text
 msgid "Mutagenicity details"
 msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_component
+msgid "Mutagenicity details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_5_selector
+msgid "Mutagenicity details (mixture)"
+msgstr "Mutageenisuustiedot (seos)"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_18
@@ -4953,13 +5324,23 @@ msgid "OECD"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "ORAL Exposure"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P201
 msgid "Obtain special instructions before use."
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
 msgid "Occupational exposure limit of the entire mixture (TLV)."
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "Occupational exposure limit of the ingredients (TLV)."
 msgstr ""
 
 #. module: safety_datasheet
@@ -5019,6 +5400,7 @@ msgid "Other adverse"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__other_effects
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_7
 msgid "Other adverse effects"
 msgstr ""
@@ -5087,8 +5469,13 @@ msgid "PBT and vPvB assessment"
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PBT:"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_component
+msgid "PBT and vPvB details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
+msgid "PBT and vPvB details (mixture)"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5099,7 +5486,22 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "PNEC Exposure limit values: Not available"
+msgid "PNEC Exposure limit values for the entire mixture: Not available"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "PNEC Exposure limit values of the ingredients:"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "PNEC of ingredients"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "PNEC of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5128,6 +5530,7 @@ msgid "Persistence"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__degradability
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_2
 msgid "Persistence and degradability"
 msgstr ""
@@ -5293,9 +5696,13 @@ msgid "Precautions for safe handling"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.chemical_substances_view_form
 msgid "Predicted No Effect Concentration (PNEC)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector
+msgid "Predicted No Effect Concentration (PNEC) of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5788,9 +6195,14 @@ msgid "Repeated exposure may cause skin dryness or cracking."
 msgstr ""
 
 #. module: safety_datasheet
-#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
-msgid "Reproductive details:"
-msgstr "Lisääntymistiedot:"
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_component
+msgid "Reproductive tox. details (ingredients)"
+msgstr "Lisääntymismyrkky. yksityiskohdat (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_selector
+msgid "Reproductive tox. details (mixture)"
+msgstr "Lisääntymismyrkky. yksityiskohdat (sekoitus)"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7
@@ -5804,8 +6216,29 @@ msgid "Reproductive toxicity"
 msgstr "Lisääntymiselle vaaralliset vaikutukset"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__reproductive_toxicity
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_7_text
 msgid "Reproductive toxicity details"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details of the ingredients:"
+msgstr "Ainesosien lisääntymistoksisuustiedot:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Reproductive toxicity details:"
+msgstr "Lisääntymistoksisuustiedot:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_component
+msgid "Resp/skin sens. details (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_selector
+msgid "Resp/skin sens. details (mixture)"
 msgstr ""
 
 #. module: safety_datasheet
@@ -5815,6 +6248,7 @@ msgid "Respiratory or skin sensitization"
 msgstr "Hengitysteiden tai ihon herkistyminen"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sensitization
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_4_text
 msgid "Respiratory or skin sensitization details"
 msgstr "Hengitysteiden tai ihon herkistymistä koskevat tiedot"
@@ -5848,6 +6282,11 @@ msgid "Respiratory/Skin sensitization"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Respiratory/Skin sensitization details of the ingredients:"
+msgstr "Hengitysteiden/ihon herkistymistä koskevat tiedot aineosista:"
+
+#. module: safety_datasheet
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_1
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_2
 #: model:sds.hazard.class,h_class:safety_datasheet.Resp_Sens_3
@@ -5863,6 +6302,7 @@ msgid "Response"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pbt_vPvB
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5
 msgid "Results of PBT and vPvB assessment"
 msgstr ""
@@ -6108,19 +6548,51 @@ msgid "SECTION 9: free notes"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_re
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_text
-msgid "STOST RE details"
+msgid "STOT RE details"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
-msgid "STOST SE details"
-msgstr ""
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid "STOT RE details (ingredients)"
+msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid "STOT RE details (mixture)"
+msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot (sekoitus)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT RE details of the ingredients:"
+msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot (ainesosat):"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "STOT RE details:"
 msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stot_se
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
+msgid "STOT SE details"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_component
+msgid "STOT SE details (ingredients)"
+msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
+msgid "STOT SE details (mixture)"
+msgstr "Elinkohtainen myrkyllisyys - toistuvan altistuksen tiedot (sekoitus):"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "STOT SE details of the ingredients:"
+msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -6163,6 +6635,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sec_poisoning
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Secondary poisoning"
 msgstr ""
 
@@ -6320,11 +6793,13 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_fw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (freshwater)"
 msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__sediment_mw
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sediment (marine water)"
 msgstr ""
 
@@ -6439,7 +6914,18 @@ msgstr "Vakavia silmävaurioita/silmä-ärsytystä tiedot:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__stp
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Sewage treatment plant (STP)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_dnel_selector_ing
+msgid "Show DNEL of ingredients"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_8_1_pnec_selector_ing
+msgid "Show PNEC of ingredients"
 msgstr ""
 
 #. module: safety_datasheet
@@ -6489,6 +6975,16 @@ msgid "Skin contact:"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_component
+msgid "Skin cor/irr det. (ingredients)"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_selector
+msgid "Skin cor/irr details (mixture)"
+msgstr "Skin cor/irr tiedot (seos)"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_corrosion
 msgid "Skin corrosion"
 msgstr ""
@@ -6505,6 +7001,7 @@ msgid "Skin corrosion/irritation"
 msgstr "Ihosyövyttävyys/ihoärsytys"
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__skin_corrosion
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_2_text
 msgid "Skin corrosion/irritation details"
 msgstr "Ihosyövyttävyys/ihoärsytys tiedot"
@@ -6512,7 +7009,7 @@ msgstr "Ihosyövyttävyys/ihoärsytys tiedot"
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Skin corrosion/irritation details:"
-msgstr "Ihosyövyttävyys/ihoärsytys tiedot"
+msgstr "Ihosyövyttävyys/ihoärsytys tiedot:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__skin_protection
@@ -6551,6 +7048,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__soil
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Soil"
 msgstr ""
 
@@ -6589,7 +7087,7 @@ msgid "Specific Target Organ Systemic Toxicity (Single Exposure)"
 msgstr "Elinkohtainen myrkyllisyys – kerta-altistuminen"
 
 #. module: safety_datasheet
-#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stot
 msgid "Specific Target Toxicity"
 msgstr ""
 
@@ -6919,6 +7417,11 @@ msgid "Sweden"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Systemic Effects"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.stability_2
 msgid ""
 "TDI reacts with water to form predominantly solid and insoluble polyureas."
@@ -6935,8 +7438,23 @@ msgid "TLV Occupational exposure limit of the entire mixture: Not available"
 msgstr ""
 
 #. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "TLV Occupational exposure limit of the ingredients:"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_tlv
 msgid "TLV details"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector_ing
+msgid "TLV of the ingredients"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_1_tlv_selector
+msgid "TLV of the mixture"
 msgstr ""
 
 #. module: safety_datasheet
@@ -7034,6 +7552,15 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"The product is not listed or identified as having endocrine disrupting "
+"properties in accordance with the criteria set out in Commission Delegated "
+"Regulation (EU) 2017/2100"
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.ecotoxicity_3
 msgid "The product is to be considered as dangerous for the environment ."
 msgstr ""
@@ -7098,10 +7625,20 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_2
+#, python-format
 msgid ""
 "This substance/mixture does not meet the PBT criteria of REACH regulation, "
 "annex XIII."
+msgstr ""
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/datasheet.py:0
+#, python-format
+msgid ""
+"This substance/mixture does not meet the vPvB criteria of REACH regulation, "
+"annex XIII"
 msgstr ""
 
 #. module: safety_datasheet
@@ -7112,7 +7649,12 @@ msgid ""
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_8
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Threshold"
+msgstr ""
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.STOT_8
 msgid "Thyroid."
 msgstr "Kilpirauhanen."
 
@@ -7185,14 +7727,35 @@ msgid "Toxicity"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicity_detail
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_text
 msgid "Toxicity details"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_component
+msgid "Toxicity details (ingredients)"
+msgstr "Myrkyllisyystiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_1_selector
+msgid "Toxicity details (mixture)"
+msgstr "Myrkyllisyyttä koskevat tiedot (sekoitus):"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "Toxicity details of the ingredients:"
+msgstr "Ainesosien myrkyllisyystiedot:"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Toxicity details:"
 msgstr "Myrkyllisyyttä koskevat tiedot:"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__toxicological
+msgid "Toxicological"
+msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -7231,6 +7794,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,acronym:safety_datasheet.legend_19
 msgid "UFI"
 msgstr ""
 
@@ -7261,6 +7825,7 @@ msgstr ""
 
 #. module: safety_datasheet
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_1_1_UFI
+#: model:sds.legend,description:safety_datasheet.legend_19
 msgid "Unique Formula Identifier"
 msgstr ""
 
@@ -7672,6 +8237,24 @@ msgid "https://echa.europa.eu"
 msgstr ""
 
 #. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_component
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(ingredients)"
+msgstr ""
+"lisää Elinkohtaisen systeemisen myrkyllisyyden (toistuva altistuminen) "
+"tiedot (ainesosat)"
+
+#. module: safety_datasheet
+#: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
+msgid ""
+"insert Specific Target Organ Systemic Toxicity (Repeated Exposure) details "
+"(mixture)"
+msgstr ""
+"lisää Elinkohtaisen systeemisen myrkyllisyyden (toistuva altistuminen) "
+"tiedot (seos)"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "n.a."
@@ -7703,6 +8286,26 @@ msgstr ""
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Acute dermal toxicity"
+#~ msgid "Acute Dermal Route"
+#~ msgstr "Välitön myrkyllisyys ihon kautta"
+
+#, fuzzy
+#~| msgid "Acute inhalation toxicity"
+#~ msgid "Acute Inhalation Route"
+#~ msgstr "Välitön myrkyllisyys hengitettynä"
+
+#, fuzzy
+#~| msgid "Acute oral toxicity"
+#~ msgid "Acute Oral Route"
+#~ msgstr "Välitön myrkyllisyys suun kautta"
+
+#, fuzzy
+#~| msgid "2.3. Other Hazards"
+#~ msgid "<br/> Other Hazards:"
+#~ msgstr "2.3. Muut vaarat"
 
 #~ msgid ""
 #~ "1.2. Relevant identified uses of the substance or mixture and uses "

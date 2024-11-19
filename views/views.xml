@@ -116,6 +116,7 @@
                                         <field name="section_2_2_Additional" />
                                         <field name="section_2_3_PBT" />
                                         <field name="section_2_3_vPvB" />
+                                        <field name="section_2_3_endocrine" />
                                         <field name="section_2_3_OtherHazards" />
                                     </group>
                                     <group string="SECTION 2: free notes">
@@ -317,17 +318,20 @@
                                 <form>
                                     <group string="Section 8: Exposure controls/personal protection"
                                         name="protection">
+                                        <field name="section_8_1_tlv_selector_ing" />
                                         <field name="section_8_1_tlv_selector" />
                                         <div colspan="2"
                                             attrs="{'invisible': [('section_8_1_tlv_selector', '=', False)]}">
                                             <field name="section_8_1_tlv" widget="html" />
                                         </div>
+                                        <field name="section_8_1_dnel_selector_ing" />
                                         <field name="section_8_1_dnel_selector" />
                                         <div colspan="2"
                                             attrs="{'invisible': [('section_8_1_dnel_selector', '=', False)]}"
                                             class="oe_edit_only">
                                             <field name="section_8_1_dnel" />
                                         </div>
+                                        <field name="section_8_1_pnec_selector_ing" />
                                         <field name="section_8_1_pnec_selector" />
                                         <div colspan="2"
                                             attrs="{'invisible': [('section_8_1_pnec_selector', '=', False)]}">
@@ -483,6 +487,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_1_selector" widget="checkbox" />
+                                        <field name="section_11_1_1_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_1_selector', '=', False)]}">
@@ -496,6 +501,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_2_selector" widget="checkbox" />
+                                        <field name="section_11_1_2_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_2_selector', '=', False)]}">
@@ -509,6 +515,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_3_selector" widget="checkbox" />
+                                        <field name="section_11_1_3_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_3_selector', '=', False)]}">
@@ -522,6 +529,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_4_selector" widget="checkbox" />
+                                        <field name="section_11_1_4_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_4_selector', '=', False)]}">
@@ -535,6 +543,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_5_selector" widget="checkbox" />
+                                        <field name="section_11_1_5_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_5_selector', '=', False)]}">
@@ -548,6 +557,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_6_selector" widget="checkbox" />
+                                        <field name="section_11_1_6_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_6_selector', '=', False)]}">
@@ -561,6 +571,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_7_selector" widget="checkbox" />
+                                        <field name="section_11_1_7_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_7_selector', '=', False)]}">
@@ -574,6 +585,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_8_selector" widget="checkbox" />
+                                        <field name="section_11_1_8_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_8_selector', '=', False)]}">
@@ -587,6 +599,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_9_selector" widget="checkbox" />
+                                        <field name="section_11_1_9_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_9_selector', '=', False)]}">
@@ -600,6 +613,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_11_1_10_selector" widget="checkbox" />
+                                        <field name="section_11_1_10_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_11_1_10_selector', '=', False)]}">
@@ -627,6 +641,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_1_selector" widget="checkbox" />
+                                        <field name="section_12_1_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_1_selector', '=', False)]}">
@@ -640,6 +655,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_2_selector" widget="checkbox" />
+                                        <field name="section_12_2_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_2_selector', '=', False)]}">
@@ -653,6 +669,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_3_selector" widget="checkbox" />
+                                        <field name="section_12_3_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_3_selector', '=', False)]}">
@@ -666,6 +683,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_4_selector" widget="checkbox" />
+                                        <field name="section_12_4_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_4_selector', '=', False)]}">
@@ -679,6 +697,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_5_selector" widget="checkbox" />
+                                        <field name="section_12_5_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_5_selector', '=', False)]}">
@@ -692,6 +711,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_6_selector" widget="checkbox" />
+                                        <field name="section_12_6_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_6_selector', '=', False)]}">
@@ -705,6 +725,7 @@
                                             </tree>
                                         </field>
                                         <field name="section_12_7_selector" widget="checkbox" />
+                                        <field name="section_12_7_component" widget="checkbox" />
                                     </group>
                                     <group
                                         attrs="{'invisible': [('section_12_7_selector', '=', False)]}">
@@ -921,11 +942,49 @@
                             <field name="REACHno" />
                         </group>
                         <group>
+                            <field name="Classification" widget="one2many_list">
+                                <tree string="EU Classification" editable="bottom">
+                                    <field name="HazardCategories" />
+                                    <field name="HazardStatement" context="{'show_only_code': True}" />
+                                </tree>
+                            </field>
+                        </group>
+                        <group>
                             <field name="last_update" />
                             <field name="wrk_exp_limit" />
                         </group>
                         <group attrs="{'invisible': [('wrk_exp_limit', '=', False)]}">
                             <field name="wrk_exp_tlv" widget="html" />
+                        </group>
+                        <group>
+                            <field name="pnec" />
+                        </group>
+                        <group attrs="{'invisible': [('pnec', '=', False)]}">
+                            <group name="pnec_group"
+                                string="Predicted No Effect Concentration (PNEC)">
+                                <group name="pnec_aquatic" string="Hazard for Aquatic Organisms"
+                                    colspan="2">
+                                    <field name="freshwater" />
+                                    <field name="int_rel_fw" />
+                                    <field name="marinew" />
+                                    <field name="int_rel_mw" />
+                                    <field name="stp" />
+                                    <field name="sediment_fw" />
+                                    <field name="sediment_mw" />
+                                </group>
+                                <group name="pnec_air" string="Hazard for Air"
+                                    colspan="2">
+                                    <field name="air" />
+                                </group>
+                                <group name="pnec_soil" string="Hazard for Terrestrial Organism"
+                                    colspan="2">
+                                    <field name="soil" />
+                                </group>
+                                <group name="pnec_predators" string="Hazard for Predators"
+                                    colspan="2">
+                                    <field name="sec_poisoning" />
+                                </group>
+                            </group>
                         </group>
                         <group>
                             <field name="dnel" />
@@ -976,51 +1035,38 @@
                             </group>
                         </group>
                         <group>
-                            <field name="pnec" />
-                        </group>
-                        <group attrs="{'invisible': [('pnec', '=', False)]}">
-                            <group name="pnec_group"
-                                string="Predicted No Effect Concentration (PNEC)">
-                                <group name="pnec_aquatic" string="Hazard for Aquatic Organisms"
-                                    colspan="2">
-                                    <field name="freshwater" />
-                                    <field name="int_rel_fw" />
-                                    <field name="marinew" />
-                                    <field name="int_rel_mw" />
-                                    <field name="stp" />
-                                    <field name="sediment_fw" />
-                                    <field name="sediment_mw" />
-                                </group>
-                                <group name="pnec_air" string="Hazard for Air"
-                                    colspan="2">
-                                    <field name="air" />
-                                </group>
-                                <group name="pnec_soil" string="Hazard for Terrestrial Organism"
-                                    colspan="2">
-                                    <field name="soil" />
-                                </group>
-                                <group name="pnec_predators" string="Hazard for Predators"
-                                    colspan="2">
-                                    <field name="sec_poisoning" />
-                                </group>
-                            </group>
-                        </group>
-
-                        <group>
-                            <field name="Classification" widget="one2many_list">
-                                <tree string="EU Classification" editable="bottom">
-                                    <field name="HazardCategories" />
-                                    <field name="HazardStatement" context="{'show_only_code': True}" />
-                                </tree>
-                            </field>
-                        </group>
-                        <group>
                             <field name="reactivity" widget="many2many">
                                 <tree editable="bottom">
                                     <field name="sequence" widget="handle" />
                                     <field name="name" />
                                 </tree>
                             </field>
+                        </group>
+                        <group>
+                            <field name="toxicological" />
+                        </group>
+                        <group name="Toxicological information" attrs="{'invisible': [('toxicological', '=', False)]}">
+                            <field name="acute_summary" />
+                            <field name="skin_corrosion" />
+                            <field name="eye_damage" />
+                            <field name="sensitization" />
+                            <field name="mutagenity" />
+                            <field name="carcinogenicity" />
+                            <field name="reproductive_toxicity" />
+                            <field name="stot_se" />
+                            <field name="aspiration_hazard" />
+                        </group>
+                        <group>
+                            <field name="ecological" />
+                        </group>
+                        <group name="Ecological information" attrs="{'invisible': [('ecological', '=', False)]}">
+                            <field name="toxicity_detail" />
+                            <field name="degradability" />
+                            <field name="bioaccumulation" />
+                            <field name="mobility" />
+                            <field name="pbt_vPvB" />
+                            <field name="endocrine" />
+                            <field name="other_effects" />
                         </group>
                     </sheet>
                 </form>

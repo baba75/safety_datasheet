@@ -1160,7 +1160,7 @@ msgid "Adopt adequate precautions for the rescuer."
 msgstr "Přijměte odpovídající bezpečnostní opatření pro záchranné složky."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_10
+#: model:sds.sentences,name:safety_datasheet.STOT_10
 msgid "Adrenal gland."
 msgstr "Nadledvinka."
 
@@ -1383,12 +1383,12 @@ msgid "Based on available data, the classification criteria are not met"
 msgstr "Na základě dostupných údajů nejsou splněna klasifikační kritéria"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_12
+#: model:sds.sentences,name:safety_datasheet.STOT_12
 msgid "Based on available data, the classification criteria are not met."
 msgstr "Na základě dostupných údajů nejsou kritéria klasifikace splněna."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_3
+#: model:sds.sentences,name:safety_datasheet.STOT_3
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_1
 #: model:sds.sentences,name:safety_datasheet.reproductive_1
 msgid "Based on information for component(s):"
@@ -3003,7 +3003,7 @@ msgstr ""
 "                                naleznete v oddíle 16."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_11
+#: model:sds.sentences,name:safety_datasheet.STOT_11
 #: model:sds.sentences,name:safety_datasheet.carcinogenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_4
 msgid ""
@@ -3014,7 +3014,7 @@ msgstr ""
 "pro celý výrobek."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_4
+#: model:sds.sentences,name:safety_datasheet.STOT_4
 #: model:sds.sentences,name:safety_datasheet.mutagenicity_2
 #: model:sds.sentences,name:safety_datasheet.reproductive_2
 msgid "For this family of materials:"
@@ -3090,7 +3090,7 @@ msgid "Gases under pressure"
 msgstr "Plyny pod tlakem"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_9
+#: model:sds.sentences,name:safety_datasheet.STOT_9
 msgid "Gastrointestinal tract."
 msgstr "Gastrointestinální trakt."
 
@@ -3724,7 +3724,7 @@ msgid "In animal studies, did not interfere with reproduction."
 msgstr "Ve studiích na zvířatech nenarušoval reprodukci."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_5
+#: model:sds.sentences,name:safety_datasheet.STOT_5
 msgid "In animals, effects have been reported on the following organs:"
 msgstr "U zvířat byly zaznamenány účinky na tyto orgány:"
 
@@ -3875,13 +3875,13 @@ msgstr "Vložte podrobnosti o PBT a vPvB"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_selector
-msgid "Insert STOST RE details"
-msgstr "Vložte podrobnosti o STOST RE"
+msgid "Insert STOT RE details"
+msgstr "Vložte podrobnosti o STOT RE"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_selector
-msgid "Insert STOST SE details"
-msgstr "Vložte podrobnosti o STOST RE"
+msgid "Insert STOT SE details"
+msgstr "Vložte podrobnosti o STOT RE"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_1_selector
@@ -4098,7 +4098,7 @@ msgid "Keep/Store away from clothing/…/combustible materials."
 msgstr "Uchovávejte/skladujte odděleně od oděvů/…/hořlavých materiálů."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_7
+#: model:sds.sentences,name:safety_datasheet.STOT_7
 msgid "Kidney."
 msgstr "Ledviny."
 
@@ -4248,7 +4248,7 @@ msgid "Lithium carbonate"
 msgstr "Uhličitan lithný"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_6
+#: model:sds.sentences,name:safety_datasheet.STOT_6
 msgid "Liver."
 msgstr "Játra."
 
@@ -4292,7 +4292,7 @@ msgid "Maritime transport in bulk according to IMO instruments"
 msgstr "Hromadná námořní přeprava podle nástrojů IMO"
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_1
+#: model:sds.sentences,name:safety_datasheet.STOT_1
 msgid "Material is corrosive."
 msgstr "Materiál je korozivní."
 
@@ -4302,7 +4302,7 @@ msgid "Material is not biodegradable."
 msgstr "Materiál není biologicky odbouratelný."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_2
+#: model:sds.sentences,name:safety_datasheet.STOT_2
 msgid ""
 "Material is not classified as a respiratory irritant; however, upper "
 "respiratory tract irritation or corrosivity may be expected."
@@ -4412,7 +4412,7 @@ msgstr "Může způsobit nebo zesílit požár; oxidační činidlo."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H335
-#: model:sds.sentences,name:safety_datasheet.STOST_13
+#: model:sds.sentences,name:safety_datasheet.STOT_13
 msgid "May cause respiratory irritation."
 msgstr "Může způsobit podráždění dýchacích cest."
 
@@ -5906,13 +5906,13 @@ msgstr "ODDÍL 9: volné poznámky"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_9_text
-msgid "STOST RE details"
-msgstr "Podrobnosti STOST RE"
+msgid "STOT RE details"
+msgstr "Podrobnosti STOT RE"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_1_8_text
-msgid "STOST SE details"
-msgstr "Podrobnosti STOST RE"
+msgid "STOT SE details"
+msgstr "Podrobnosti STOT RE"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -6351,7 +6351,7 @@ msgid "Specific Target Organ Systemic Toxicity (Single Exposure)"
 msgstr "Systémová toxicita pro specifické cílové orgány (jednorázová expozice)"
 
 #. module: safety_datasheet
-#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__stost
+#: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_sentences__category__STOT
 msgid "Specific Target Toxicity"
 msgstr "Specifická cílová toxicita"
 
@@ -6676,7 +6676,7 @@ msgstr ""
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__wrk_exp_tlv
 msgid "TLV details"
-msgstr "Podrobnosti STOST RE"
+msgstr "Podrobnosti STOT RE"
 
 #. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_11
@@ -6845,7 +6845,7 @@ msgid ""
 msgstr "Tato látka/směs nesplňuje kritéria vPvB nařízení REACH, příloha XIII."
 
 #. module: safety_datasheet
-#: model:sds.sentences,name:safety_datasheet.STOST_8
+#: model:sds.sentences,name:safety_datasheet.STOT_8
 msgid "Thyroid."
 msgstr "Štítná žláza."
 
