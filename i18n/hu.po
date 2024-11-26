@@ -4,17 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0-20210302\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 09:26+0000\n"
-"PO-Revision-Date: 2024-11-19 11:50+0100\n"
+"POT-Creation-Date: 2024-11-21 10:55+0000\n"
+"PO-Revision-Date: 2024-11-21 14:11+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
 "X-Generator: Poedit 3.5\n"
 
 #. module: safety_datasheet
@@ -791,8 +790,8 @@ msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
 "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
 "thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
+"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
+"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
 "tbody></table>"
 msgstr ""
 
@@ -802,10 +801,10 @@ msgstr ""
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
 "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
-"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
-"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>"
+"thead><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1066,11 +1065,6 @@ msgid "Alcohol-resistant foam."
 msgstr "Alkoholálló hab."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ec_932-183-6
-msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
-msgstr "Alkoholok, C9-11-izo,. C10-gazdag, etoxilált (> 2,5 mol EO)"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_7
 msgid "Alcohols."
 msgstr ""
@@ -1086,11 +1080,6 @@ msgid "Aluminium and other non-noble metals."
 msgstr "Alumínium és más nem nemesfémek."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Aluminium_sulphate
-msgid "Aluminium sulphate"
-msgstr "Alumínium-szulfát"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
 msgstr "Alumínium."
@@ -1098,16 +1087,6 @@ msgstr "Alumínium."
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_8
 msgid "Amines."
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ammonia
-msgid "Ammonia"
-msgstr "Ammónia"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-764-5
-msgid "Ammonium dihydrogenorthophosphate"
 msgstr ""
 
 #. module: safety_datasheet
@@ -1388,11 +1367,6 @@ msgid "Bioaccumulative potential details"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_666723-27-9
-msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
-msgstr "Blokkolt poliizocianát hexametilén -diizocianát (HDI) alapján"
-
-#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr "Forráspont vagy kezdő forráspont és forráspont tartomány"
@@ -1593,6 +1567,7 @@ msgstr "Súlyos szemkárosodást okoz."
 msgid "Causes serious eye irritation."
 msgstr "Súlyos szemirritációt okoz."
 
+# H314
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H314
 msgid "Causes severe skin burns and eye damage."
@@ -1602,17 +1577,6 @@ msgstr "Súlyos égési sérülést és szemkárosodást okoz."
 #: model:sds.hazard.statement,name:safety_datasheet.H315
 msgid "Causes skin irritation."
 msgstr "Bőrirritáló hatású."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CSA
-msgid "Cement, calcium sulfoaluminate, chemicals"
-msgstr "Cement, kalcium-szulfoaluminát, vegyszerek"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cement
-#: model:sds.chemical.substance,name:safety_datasheet.portland_cement
-msgid "Cement, portland, chemicals"
-msgstr "Cement, portland, vegyszerek"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_changes
@@ -1682,11 +1646,6 @@ msgid "Chemical stability"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.citric_acid
-msgid "Citric Acid"
-msgstr "Citromsav"
-
-#. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.ADR_8
 msgid "Class 8 - Corrosive materials"
 msgstr "8. osztály – Maró anyagok"
@@ -1734,11 +1693,6 @@ msgstr ""
 "egyenértékű technika) - padlószövet, nedves kefe vagy\n"
 "                 tömlőcső permetezőcsatlakozóval (állítsa \"finom "
 "permetezésre\", hogy elkerülje a termék levegőben való szétszóródását)."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
-msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
-msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
@@ -2072,11 +2026,6 @@ msgstr ""
 "Gyermekektől elzárva tartandó."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_202-715-5
-msgid "Cyclohexyldimethylamine"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__cyprus
@@ -2295,11 +2244,6 @@ msgid "Discharge into the environment must be avoided."
 msgstr "Kerülni kell az anyag környezetbe jutását."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Natriummetasilicat_Pentahydrat
-msgid "Disodium dioxido(oxo)silane pentahydrate"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__display_name
@@ -2371,10 +2315,11 @@ msgstr "Nem érintkezhet vízzel."
 msgid "Do not breathe dust."
 msgstr "Ne lélegezze be a port. "
 
+# P260
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P260
 msgid "Do not breathe dust/fume/gas/mist/vapours/ spray."
-msgstr " A por/füst/gáz/köd/gőzök/permet belélegzése tilos."
+msgstr "A por/füst/gáz/köd/gőzök/permet belélegzése tilos."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_11
@@ -2690,21 +2635,6 @@ msgstr ""
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__estonia
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__estonia
 msgid "Estonia"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC203-473-3
-msgid "Ethane-1,2-diol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ethanol
-msgid "Ethanol"
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS7087-68-5
-msgid "Ethyldiisopropylamine"
 msgstr ""
 
 #. module: safety_datasheet
@@ -3350,11 +3280,6 @@ msgid "Ground/bond container and receiving equipment."
 msgstr "A tárolóedényt és a fogadóedényt le kell földelni és át kell kötni."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_931-274-8
-msgid "HDI oligomers, isocyanurate"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_3
 msgid "Half maximal inhibitory concentration"
 msgstr "Fél maximális gátló koncentráció"
@@ -3561,16 +3486,6 @@ msgid "Heating may cause an explosion."
 msgstr "Hő hatására robbanhat."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Hexamethylene_diisocyanate
-msgid "Hexamethylene diisocyanate"
-msgstr "Hexametilén-diizocianát"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS28182-81-2
-msgid "Hexamethylene diisocyanate, oligomers"
-msgstr "Hexametilén-diizocianát, oligomerek"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.avoid_condition_4
 msgid "High temperature."
 msgstr "Magas hőmérséklet."
@@ -3655,6 +3570,7 @@ msgstr "Azonosító"
 msgid "IF IN EYES:"
 msgstr "SZEMBE KERÜLÉS ESETÉN:"
 
+# P305 + P351 + P338
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P305_P351_P338
 msgid ""
@@ -3697,11 +3613,12 @@ msgstr ""
 msgid "IF ON SKIN (or hair):"
 msgstr "HA BŐRRE (vagy hajra) KERÜL:"
 
+# P303 + P361 + P353
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P303_P361_P353
 msgid ""
 "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse "
-"skin with water."
+"skin with water [or shower]."
 msgstr ""
 "HA BŐRRE (vagy hajra) KERÜL: Az összes szennyezett ruhadarabot azonnal le "
 "kell vetni. A bőrt le kell öblíteni vízzel [vagy zuhanyozás]."
@@ -3736,6 +3653,7 @@ msgstr ""
 msgid "IF SWALLOWED: Immediately call a POISON CENTER/doctor/..."
 msgstr "LENYELÉS ESETÉN: Azonnal forduljon TOXIKOLÓGIAI KÖZPONTHOZ/orvoshoz."
 
+# P301 + P330 + P331
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P301_P330_P331
 msgid "IF SWALLOWED: Rinse mouth. Do NOT induce vomiting."
@@ -3924,10 +3842,11 @@ msgstr ""
 msgid "Immediate medical attention is not required."
 msgstr ""
 
+# P310
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P310
 msgid "Immediately call a POISON CENTER/doctor/ ..."
-msgstr "Azonnal forduljon orvoshoz."
+msgstr "Azonnal forduljon TOXIKOLÓGIAI KÖZPONTHOZ/orvoshoz/…."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_2
@@ -4600,11 +4519,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__url
 msgid "Link URL"
 msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.lithum_carbonate
-msgid "Lithium carbonate"
-msgstr "Lítium-karbonát"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__lithuania
@@ -5318,11 +5232,6 @@ msgid "Organisation for Economic Co-operation and Development"
 msgstr "Gazdasági Együttműködési és Fejlesztési Szervezet"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-633-2
-msgid "Orthophosphoric acid"
-msgstr "Ortofoszforsav"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_OtherHazards
 msgid "Other Hazards"
 msgstr "Egyéb veszélyek"
@@ -5498,11 +5407,6 @@ msgid "Personal precautions for non-emergency personnel"
 msgstr ""
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS12788-93-1
-msgid "Phosphoric acid, butyl ester"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_property
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_9_1
 msgid "Physical and chemical properties"
@@ -5606,11 +5510,6 @@ msgstr "Lehetséges veszélyes reakció hipokloritokkal."
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_11
 msgid "Possible dangerous reaction with sulphates."
 msgstr "Lehetséges veszélyes reakció szulfátokkal."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Potassium_methylsilanetriolate
-msgid "Potassium methylsilanetriolate"
-msgstr "Kálium-metil-szilanetriolát"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_precautionary_statement
@@ -5842,11 +5741,6 @@ msgid "Pyrophoric solid"
 msgstr "Piroforos szilárd anyag"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.quartz
-msgid "Quartz (SiO2)"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_9
 msgid "REACH"
 msgstr ""
@@ -5870,14 +5764,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "REACH Registration no."
 msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
-msgid ""
-"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
-"                2-methyl-1,2-thiazol-3(2H)-one\n"
-"            "
-msgstr "5-klór-2-metil-1,2-tiazol-3 (2H) -on és  2-metil-1,2-tiazol-3 (2H) -on"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_4
@@ -6950,11 +6836,6 @@ msgid "SignalWords"
 msgstr "Figyelmeztetések"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Sodium_silicate
-msgid "Silicic acid, sodium salt"
-msgstr "Kovasav, nátriumsó"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_3_1
 msgid "Skin Protection - Hand"
 msgstr "Bőrvédelem - kézvédelem"
@@ -7552,17 +7433,6 @@ msgstr ""
 "Tegye meg a szükséges óvintézkedéseket az elektrosztatikus kisülések ellen."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.potassium_pyrophosphate
-msgid "Tetrapotassium pyrophosphate"
-msgstr "Tetrakálium-pirofoszfát"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EDTA_tetrasodium_salt
-#: model:sds.chemical.substance,name:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
-msgid "Tetrasodium ethylenediaminetetraacetate"
-msgstr "Tetranátrium-etilén-diamin-tetraacetát"
-
-#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P336
 msgid "Thaw frosted parts with lukewarm water. Do no rub affected area."
 msgstr ""
@@ -7599,7 +7469,7 @@ msgstr ""
 msgid ""
 "The product is not listed or identified as having endocrine disrupting "
 "properties in accordance with the criteria set out in Commission Delegated "
-"Regulation (EU) 2017/2100"
+"Regulation (EU) 2017/210."
 msgstr ""
 
 #. module: safety_datasheet
@@ -7684,14 +7554,8 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
-#, python-format
-msgid ""
-"This substance/mixture does not meet the vPvB criteria of REACH regulation, "
-"annex XIII"
-msgstr ""
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_3
+#, python-format
 msgid ""
 "This substance/mixture does not meet the vPvB criteria of REACH regulation, "
 "annex XIII."
@@ -7827,16 +7691,6 @@ msgstr "Szállítási veszélyességi osztály(ok) (IATA)"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_imdg
 msgid "Transport hazard class(es) (IMDG)"
 msgstr "Szállítási veszélyességi osztály(ok) (IMDG)"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Trisodium_nitrilotriacetate
-msgid "Trisodium nitrilotriacetate"
-msgstr "Trinátrium-nitrilotriacetát"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-944-3
-msgid "Trizinc bis(orthophosphate)"
-msgstr ""
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
@@ -8160,12 +8014,12 @@ msgstr ""
 "Viseljen II. kategóriájú professzionális hosszú ujjú védőruhát és biztonsági "
 "lábbelit (ref. irány- elv89/686/CEE és az EN 344)."
 
+# P280
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P280
 msgid ""
-"Wear protective gloves/protective clothing/eye protection/face protection/"
-"hearing protection/…"
-msgstr ""
+"Wear protective gloves/protective clothing/eye protection/face protection."
+msgstr "Védőkesztyű/védőruha/szemvédő/arcvédő használata kötelező."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_6
@@ -8202,11 +8056,6 @@ msgstr ""
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_6
 msgid "You will need to determine which regulations are applicable."
-msgstr ""
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Zinc_nitrate
-msgid "Zinc nitrate"
 msgstr ""
 
 #. module: safety_datasheet
@@ -8360,6 +8209,61 @@ msgstr ""
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr ""
+
+#~ msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
+#~ msgstr "Alkoholok, C9-11-izo,. C10-gazdag, etoxilált (> 2,5 mol EO)"
+
+#~ msgid "Aluminium sulphate"
+#~ msgstr "Alumínium-szulfát"
+
+#~ msgid "Ammonia"
+#~ msgstr "Ammónia"
+
+#~ msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
+#~ msgstr "Blokkolt poliizocianát hexametilén -diizocianát (HDI) alapján"
+
+#~ msgid "Cement, calcium sulfoaluminate, chemicals"
+#~ msgstr "Cement, kalcium-szulfoaluminát, vegyszerek"
+
+#~ msgid "Cement, portland, chemicals"
+#~ msgstr "Cement, portland, vegyszerek"
+
+#~ msgid "Citric Acid"
+#~ msgstr "Citromsav"
+
+#~ msgid "Hexamethylene diisocyanate"
+#~ msgstr "Hexametilén-diizocianát"
+
+#~ msgid "Hexamethylene diisocyanate, oligomers"
+#~ msgstr "Hexametilén-diizocianát, oligomerek"
+
+#~ msgid "Lithium carbonate"
+#~ msgstr "Lítium-karbonát"
+
+#~ msgid "Orthophosphoric acid"
+#~ msgstr "Ortofoszforsav"
+
+#~ msgid "Potassium methylsilanetriolate"
+#~ msgstr "Kálium-metil-szilanetriolát"
+
+#~ msgid ""
+#~ "Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
+#~ "                2-methyl-1,2-thiazol-3(2H)-one\n"
+#~ "            "
+#~ msgstr ""
+#~ "5-klór-2-metil-1,2-tiazol-3 (2H) -on és  2-metil-1,2-tiazol-3 (2H) -on"
+
+#~ msgid "Silicic acid, sodium salt"
+#~ msgstr "Kovasav, nátriumsó"
+
+#~ msgid "Tetrapotassium pyrophosphate"
+#~ msgstr "Tetrakálium-pirofoszfát"
+
+#~ msgid "Tetrasodium ethylenediaminetetraacetate"
+#~ msgstr "Tetranátrium-etilén-diamin-tetraacetát"
+
+#~ msgid "Trisodium nitrilotriacetate"
+#~ msgstr "Trinátrium-nitrilotriacetát"
 
 #~ msgid ""
 #~ "(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"

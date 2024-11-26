@@ -108,9 +108,9 @@ class SdsChemicalSubstance(models.Model):
                                 default=lambda s: _(
                                     '<table class="table table-bordered">'
                                     '<thead><tr><th>Route of exposure</th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></thead>'
-                                    '<tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></tr>'
-                                    '<tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></tr>'
-                                    '<tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '<tr><td>Oral</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '<tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></tr>'
+                                    '<tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr>'
                                     '</tbody></table>'
                                           ),
                                 translate=True, sanitize=False)
@@ -235,6 +235,7 @@ class SdsChemicalMixture(models.Model):
     """
     _name = "sds.chemical.mixture"
     _description = "Chemical Mixture"
+    _order = "sequence"
     
     active = fields.Boolean(default=True)
     
@@ -244,6 +245,7 @@ class SdsChemicalMixture(models.Model):
     def action_unarchive(self):
         self.active = True 
 
+    sequence = fields.Integer(string='Sequence', default=10)
     datasheet_id = fields.Many2one('sds.datasheet', 'Related Datasheet', copy=True)
     substance = fields.Many2one('sds.chemical.substance', 'Chemical Name')
     concentration = fields.Char('Concentration Range', translate=True)

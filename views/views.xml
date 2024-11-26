@@ -153,6 +153,7 @@
                                                         context="{'datasheet_id': active_id}"
                                                         widget="one2many_list">
                                                         <tree string="Mixture:" editable="bottom">
+                                                            <field name="sequence" widget="handle" />
                                                             <field name="substance" />
                                                             <field name="concentration" />
                                                             <!--
@@ -1054,6 +1055,7 @@
                             <field name="carcinogenicity" />
                             <field name="reproductive_toxicity" />
                             <field name="stot_se" />
+                            <field name="stot_re" />
                             <field name="aspiration_hazard" />
                         </group>
                         <group>

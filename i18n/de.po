@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 09:26+0000\n"
-"PO-Revision-Date: 2024-11-19 11:04+0100\n"
+"POT-Creation-Date: 2024-11-21 10:55+0000\n"
+"PO-Revision-Date: 2024-11-21 14:08+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -988,24 +988,6 @@ msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
 "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
 "thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>"
-msgstr ""
-"<table class=\"table table-bordered\"><thead><tr><th>Expositionsweg</th><th> "
-"Ergebnis/Wirkung</th><th> Spezies/Testsystem</th><th> Quelle</th></tr></"
-"thead><tbody><tr><td> Oral</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td> Inhalation</td><td><br></td><td><br></td><td><br></td></"
-"tr><tbody><tr><td> Dermale Haut</td><td><br></td><td><br></td><td><br></td></"
-"tr></tbody></table>"
-
-#. module: safety_datasheet
-#: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
-msgid ""
-"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
-"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
-"thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
 "tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
 "tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
 "tbody></table>"
@@ -1016,6 +998,24 @@ msgstr ""
 "tr><tr><td> Inhalation<br></td><td> mg/m³</td><td><br></td><td><br></td></"
 "tr><tr><td> Haut/Auge<br></td><td><br></td><td><br></td><td><br></td></tr></"
 "tbody></table>"
+
+#. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, python-format
+msgid ""
+"<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+"th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+"thead><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead><tr><th>Weg der Exposition</"
+"th><th>Ergebnis/Wirkung</th><th>Spezies/Testsystem</th><th>Quelle</th></tr></"
+"thead><tbody><tr><td>Verschlucken</td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td>Einatmen</td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -1282,11 +1282,6 @@ msgid "Alcohol-resistant foam."
 msgstr "Alkoholbeständiger Schaum."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ec_932-183-6
-msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
-msgstr "Alkohole, C9-11-iso-, C10-reich, ethoxyliert (>2,5 Mol EO)"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_7
 msgid "Alcohols."
 msgstr "Alkohole."
@@ -1302,11 +1297,6 @@ msgid "Aluminium and other non-noble metals."
 msgstr "Aluminium und andere unedle Metalle."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Aluminium_sulphate
-msgid "Aluminium sulphate"
-msgstr "Aluminiumsulfat"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
 msgstr "Aluminium."
@@ -1315,16 +1305,6 @@ msgstr "Aluminium."
 #: model:sds.sentences,name:safety_datasheet.incompatible_8
 msgid "Amines."
 msgstr "Amine."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ammonia
-msgid "Ammonia"
-msgstr "Ammoniak"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-764-5
-msgid "Ammonium dihydrogenorthophosphate"
-msgstr "Ammoniumdihydrogenorthophosphat"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_3
@@ -1608,11 +1588,6 @@ msgid "Bioaccumulative potential details"
 msgstr "Angaben zum Bioakkumulationspotenzial"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cas_666723-27-9
-msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
-msgstr "Blockiertes Polyisocyanat auf Basis von Hexamethylendiisocyanat (HDI)"
-
-#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr "Siedepunkt oder Anfangssiedepunkt und Siedebereich"
@@ -1817,26 +1792,16 @@ msgstr "Verursacht schwere Augenschäden."
 msgid "Causes serious eye irritation."
 msgstr "Verursacht schwere Augenreizungen."
 
+# H314
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H314
 msgid "Causes severe skin burns and eye damage."
-msgstr "Verursacht schwere Verätzungen der Haut und Augenschäden."
+msgstr "Verursacht schwere Verätzungen der Haut und schwere Augenschäden."
 
 #. module: safety_datasheet
 #: model:sds.hazard.statement,name:safety_datasheet.H315
 msgid "Causes skin irritation."
 msgstr "Verursacht Hautreizungen."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CSA
-msgid "Cement, calcium sulfoaluminate, chemicals"
-msgstr "Zement, Calciumsulfoaluminat, Chemikalien"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.cement
-#: model:sds.chemical.substance,name:safety_datasheet.portland_cement
-msgid "Cement, portland, chemicals"
-msgstr "Zement, Portland, Chemikalien"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_changes
@@ -1906,11 +1871,6 @@ msgid "Chemical stability"
 msgstr "Chemische Stabilität"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.citric_acid
-msgid "Citric Acid"
-msgstr "Zitronensäure"
-
-#. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.ADR_8
 msgid "Class 8 - Corrosive materials"
 msgstr "Klasse 8 - Ätzende Stoffe"
@@ -1961,11 +1921,6 @@ msgstr ""
 "gleichwertige Technik) - Wischtücher, feuchte Bürsten oder\n"
 "                schlauch mit Sprühaufsatz (auf \"feines Sprühen\" "
 "eingestellt, damit das Produkt nicht in der Luft verstreut wird)."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
-msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
-msgstr "Kokosalkylmethyl[polyoxyethylen]ammoniumchlorid"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
@@ -2316,11 +2271,6 @@ msgstr ""
 "Reichweite von Kindern aufbewahren."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_202-715-5
-msgid "Cyclohexyldimethylamine"
-msgstr "Cyclohexyldimethylamin"
-
-#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__cyprus
@@ -2548,11 +2498,6 @@ msgid "Discharge into the environment must be avoided."
 msgstr "Eine Freisetzung in die Umwelt muss vermieden werden."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Natriummetasilicat_Pentahydrat
-msgid "Disodium dioxido(oxo)silane pentahydrate"
-msgstr "Dinatriumdioxido(oxo)silan-Pentahydrat"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_bibliography__display_name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_classification__display_name
@@ -2622,10 +2567,11 @@ msgstr "Nicht mit Wasser in Berührung kommen lassen."
 msgid "Do not breathe dust."
 msgstr "Staub nicht einatmen."
 
+# P260
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P260
 msgid "Do not breathe dust/fume/gas/mist/vapours/ spray."
-msgstr "Staub/Rauch/Gas/Nebel/Dampf/Spray nicht einatmen."
+msgstr "Staub/Rauch/Gas/Nebel/Dampf/Aerosol nicht einatmen."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_protective_11
@@ -2946,21 +2892,6 @@ msgstr "Vorsichtsmaßnahmen für die Umwelt"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__estonia
 msgid "Estonia"
 msgstr "Estland"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC203-473-3
-msgid "Ethane-1,2-diol"
-msgstr "Ethan-1,2-diol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.ethanol
-msgid "Ethanol"
-msgstr "Ethanol"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS7087-68-5
-msgid "Ethyldiisopropylamine"
-msgstr "Ethyldiisopropylamin"
 
 #. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_4
@@ -3622,11 +3553,6 @@ msgid "Ground/bond container and receiving equipment."
 msgstr "Boden-/Bondcontainer und Empfangsgeräte."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_931-274-8
-msgid "HDI oligomers, isocyanurate"
-msgstr "HDI-Oligomere, Isocyanurat"
-
-#. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_3
 msgid "Half maximal inhibitory concentration"
 msgstr "Halbe maximale Hemmstoffkonzentration"
@@ -3736,7 +3662,7 @@ msgstr "Gefährdungscode"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_pictogram__category__hazard
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Hazard Pictograms"
-msgstr "Gefahrensymbole"
+msgstr "Gefahrenpiktogramme"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_hazard_statement
@@ -3834,16 +3760,6 @@ msgid "Heating may cause an explosion."
 msgstr "Erwärmung kann Explosion verursachen."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Hexamethylene_diisocyanate
-msgid "Hexamethylene diisocyanate"
-msgstr "Hexamethylen-Diisocyanat"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS28182-81-2
-msgid "Hexamethylene diisocyanate, oligomers"
-msgstr "Hexamethylen-Diisocyanat, Oligomere"
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.avoid_condition_4
 msgid "High temperature."
 msgstr "Hohe Temperatur."
@@ -3928,6 +3844,7 @@ msgstr "ID"
 msgid "IF IN EYES:"
 msgstr "BEI KONTAKT MIT DEN AUGEN:"
 
+# P305 + P351 + P338
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P305_P351_P338
 msgid ""
@@ -3935,8 +3852,7 @@ msgid ""
 "lenses, if present and easy to do. Continue rinsing."
 msgstr ""
 "BEI KONTAKT MIT DEN AUGEN: Einige Minuten lang behutsam mit Wasser spülen. "
-"Kontaktlinsen entfernen, falls vorhanden und leicht durchführbar. Weiter "
-"ausspülen."
+"Eventuell vorhandene Kontaktlinsen nach Möglichkeit entfernen. Weiter spülen."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P304
@@ -3969,14 +3885,15 @@ msgstr ""
 msgid "IF ON SKIN (or hair):"
 msgstr "BEI KONTAKT MIT DER HAUT (oder dem Haar):"
 
+# P303 + P361 + P353
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P303_P361_P353
 msgid ""
 "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse "
-"skin with water."
+"skin with water [or shower]."
 msgstr ""
-"BEI KONTAKT MIT DER HAUT (oder dem Haar): Alle kontaminierten Kleidungsstücke "
-"sofort ausziehen. Haut mit Wasser abspülen."
+"BEI BERÜHRUNG MIT DER HAUT (oder dem Haar): Alle kontaminierten "
+"Kleidungsstücke sofort ausziehen. Haut mit Wasser abwaschen [oder duschen]."
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P302
@@ -4012,6 +3929,7 @@ msgstr ""
 msgid "IF SWALLOWED: Immediately call a POISON CENTER/doctor/..."
 msgstr "BEI VERSCHLUCKEN: Sofort eine VERGIFTUNGSINFORMATIONSZENTRALE/Arzt/..."
 
+# P301 + P330 + P331
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P301_P330_P331
 msgid "IF SWALLOWED: Rinse mouth. Do NOT induce vomiting."
@@ -4214,11 +4132,11 @@ msgstr ""
 msgid "Immediate medical attention is not required."
 msgstr "Eine sofortige ärztliche Behandlung ist nicht erforderlich."
 
+# P310
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P310
 msgid "Immediately call a POISON CENTER/doctor/ ..."
-msgstr ""
-"Rufen Sie sofort eine VERGIFTUNGSINFORMATIONSZENTRALE/einen Arzt/eine ..."
+msgstr "Sofort GIFTINFORMATIONSZENTRUM/Arzt/…/anrufen."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_2
@@ -4900,11 +4818,6 @@ msgstr "Liechtenstein"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__url
 msgid "Link URL"
 msgstr "Link URL"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.lithum_carbonate
-msgid "Lithium carbonate"
-msgstr "Lithiumcarbonat"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__lithuania
@@ -5631,11 +5544,6 @@ msgid "Organisation for Economic Co-operation and Development"
 msgstr "Organisation für wirtschaftliche Zusammenarbeit und Entwicklung"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-633-2
-msgid "Orthophosphoric acid"
-msgstr "Orthophosphorsäure"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_OtherHazards
 msgid "Other Hazards"
 msgstr "Andere Gefährdungen"
@@ -5812,11 +5720,6 @@ msgstr ""
 "Persönliche Vorsichtsmaßnahmen für nicht für Notfälle geschultes Personal"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.CAS12788-93-1
-msgid "Phosphoric acid, butyl ester"
-msgstr "Phosphorsäure, Butylester"
-
-#. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_property
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_9_1
 msgid "Physical and chemical properties"
@@ -5920,11 +5823,6 @@ msgstr "Mögliche gefährliche Reaktion mit Hypochloriten."
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_11
 msgid "Possible dangerous reaction with sulphates."
 msgstr "Mögliche gefährliche Reaktion mit Sulfaten."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Potassium_methylsilanetriolate
-msgid "Potassium methylsilanetriolate"
-msgstr "Kalium-Methylsilanetriolat"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_precautionary_statement
@@ -6161,11 +6059,6 @@ msgid "Pyrophoric solid"
 msgstr "Pyrophorischer Feststoff"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.quartz
-msgid "Quartz (SiO2)"
-msgstr "Quarz (SiO2)"
-
-#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_9
 msgid "REACH"
 msgstr "REACH"
@@ -6189,17 +6082,6 @@ msgstr "REACH-Nummer"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "REACH Registration no."
 msgstr "REACH-Registrierungsnummer."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
-msgid ""
-"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
-"                2-methyl-1,2-thiazol-3(2H)-one\n"
-"            "
-msgstr ""
-"Reaktionsmasse von 5-Chlor-2-methyl-1,2-thiazol-3(2H)-one und\n"
-"                2-methyl-1,2-thiazol-3(2H)-one\n"
-"            "
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_4
@@ -7298,11 +7180,6 @@ msgid "SignalWords"
 msgstr "Signalwörter"
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Sodium_silicate
-msgid "Silicic acid, sodium salt"
-msgstr "Kieselsäure, Natriumsalz"
-
-#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_3_1
 msgid "Skin Protection - Hand"
 msgstr "Hautschutz - Hand"
@@ -7915,17 +7792,6 @@ msgid "Take precautionary measures against static discharges."
 msgstr "Treffen Sie Vorkehrungen gegen statische Entladungen."
 
 #. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.potassium_pyrophosphate
-msgid "Tetrapotassium pyrophosphate"
-msgstr "Tetrapotassiumpyrophosphat"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EDTA_tetrasodium_salt
-#: model:sds.chemical.substance,name:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
-msgid "Tetrasodium ethylenediaminetetraacetate"
-msgstr "Tetranatrium-Ethylendiamintetraacetat"
-
-#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P336
 msgid "Thaw frosted parts with lukewarm water. Do no rub affected area."
 msgstr ""
@@ -7962,7 +7828,7 @@ msgstr ""
 msgid ""
 "The product is not listed or identified as having endocrine disrupting "
 "properties in accordance with the criteria set out in Commission Delegated "
-"Regulation (EU) 2017/2100"
+"Regulation (EU) 2017/210."
 msgstr ""
 "Das Produkt ist nicht als Produkt mit endokrinen Eigenschaften gemäß den in "
 "der Delegierten Verordnung (EU) 2017/2100 der Kommission festgelegten "
@@ -8064,16 +7930,8 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
-#, python-format
-msgid ""
-"This substance/mixture does not meet the vPvB criteria of REACH regulation, "
-"annex XIII"
-msgstr ""
-"Dieser Stoff/dieses Gemisch erfüllt nicht die vPvB-Kriterien der REACH-"
-"Verordnung, Anhang XIII."
-
-#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.pbtvpvb_3
+#, python-format
 msgid ""
 "This substance/mixture does not meet the vPvB criteria of REACH regulation, "
 "annex XIII."
@@ -8212,16 +8070,6 @@ msgstr "Transportgefahrenklasse(n) (IATA)"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_14_3_imdg
 msgid "Transport hazard class(es) (IMDG)"
 msgstr "Transportgefahrenklasse(n) (IMDG)"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Trisodium_nitrilotriacetate
-msgid "Trisodium nitrilotriacetate"
-msgstr "Trinatriumnitrilotriacetat"
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.EC231-944-3
-msgid "Trizinc bis(orthophosphate)"
-msgstr "Trizinkbis(orthophosphat)"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
@@ -8550,14 +8398,12 @@ msgstr ""
 "Tragen Sie professionelle langärmelige Arbeitskleidung und Sicherheitsschuhe "
 "(Kategorie S2 oder höher)."
 
+# P280
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P280
 msgid ""
-"Wear protective gloves/protective clothing/eye protection/face protection/"
-"hearing protection/…"
-msgstr ""
-"Tragen Sie Schutzhandschuhe/Schutzkleidung/Augenschutz/Gesichtsschutz/"
-"Gehörschutz/…"
+"Wear protective gloves/protective clothing/eye protection/face protection."
+msgstr "Schutzhandschuhe/Schutzkleidung/Augenschutz/Gesichtsschutz tragen."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.skin_protection_6
@@ -8595,11 +8441,6 @@ msgstr "Grenzwert für die Exposition am Arbeitsplatz"
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_6
 msgid "You will need to determine which regulations are applicable."
 msgstr "Sie müssen herausfinden, welche Vorschriften anwendbar sind."
-
-#. module: safety_datasheet
-#: model:sds.chemical.substance,name:safety_datasheet.Zinc_nitrate
-msgid "Zinc nitrate"
-msgstr "Zinksalpeter"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P284
@@ -8752,6 +8593,124 @@ msgstr "vPvB"
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_vPvB
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr "sehr persistente und sehr bioakkumulierbare Stoffe (vPvB-Stoffe)"
+
+#, python-format
+#~ msgid ""
+#~ "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+#~ "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+#~ "thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tbody><tr><td>Inhalation</td><td><br></td><td><br></td><td><br></td></"
+#~ "tr><tbody><tr><td>Dermal</td><td><br></td><td><br></td><td><br></td></tr></"
+#~ "tbody></table>"
+#~ msgstr ""
+#~ "<table class=\"table table-bordered\"><thead><tr><th>Expositionsweg</"
+#~ "th><th> Ergebnis/Wirkung</th><th> Spezies/Testsystem</th><th> Quelle</th></"
+#~ "tr></thead><tbody><tr><td> Oral</td><td><br></td><td><br></td><td><br></"
+#~ "td></tr><tbody><tr><td> Inhalation</td><td><br></td><td><br></td><td><br></"
+#~ "td></tr><tbody><tr><td> Dermale Haut</td><td><br></td><td><br></"
+#~ "td><td><br></td></tr></tbody></table>"
+
+#~ msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
+#~ msgstr "Alkohole, C9-11-iso-, C10-reich, ethoxyliert (>2,5 Mol EO)"
+
+#~ msgid "Aluminium sulphate"
+#~ msgstr "Aluminiumsulfat"
+
+#~ msgid "Ammonia"
+#~ msgstr "Ammoniak"
+
+#~ msgid "Ammonium dihydrogenorthophosphate"
+#~ msgstr "Ammoniumdihydrogenorthophosphat"
+
+#~ msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
+#~ msgstr ""
+#~ "Blockiertes Polyisocyanat auf Basis von Hexamethylendiisocyanat (HDI)"
+
+#~ msgid "Cement, calcium sulfoaluminate, chemicals"
+#~ msgstr "Zement, Calciumsulfoaluminat, Chemikalien"
+
+#~ msgid "Cement, portland, chemicals"
+#~ msgstr "Zement, Portland, Chemikalien"
+
+#~ msgid "Citric Acid"
+#~ msgstr "Zitronensäure"
+
+#~ msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
+#~ msgstr "Kokosalkylmethyl[polyoxyethylen]ammoniumchlorid"
+
+#~ msgid "Cyclohexyldimethylamine"
+#~ msgstr "Cyclohexyldimethylamin"
+
+#~ msgid "Disodium dioxido(oxo)silane pentahydrate"
+#~ msgstr "Dinatriumdioxido(oxo)silan-Pentahydrat"
+
+#~ msgid "Ethane-1,2-diol"
+#~ msgstr "Ethan-1,2-diol"
+
+#~ msgid "Ethanol"
+#~ msgstr "Ethanol"
+
+#~ msgid "Ethyldiisopropylamine"
+#~ msgstr "Ethyldiisopropylamin"
+
+#~ msgid "HDI oligomers, isocyanurate"
+#~ msgstr "HDI-Oligomere, Isocyanurat"
+
+#~ msgid "Hexamethylene diisocyanate"
+#~ msgstr "Hexamethylen-Diisocyanat"
+
+#~ msgid "Hexamethylene diisocyanate, oligomers"
+#~ msgstr "Hexamethylen-Diisocyanat, Oligomere"
+
+#~ msgid "Lithium carbonate"
+#~ msgstr "Lithiumcarbonat"
+
+#~ msgid "Orthophosphoric acid"
+#~ msgstr "Orthophosphorsäure"
+
+#~ msgid "Phosphoric acid, butyl ester"
+#~ msgstr "Phosphorsäure, Butylester"
+
+#~ msgid "Potassium methylsilanetriolate"
+#~ msgstr "Kalium-Methylsilanetriolat"
+
+#~ msgid "Quartz (SiO2)"
+#~ msgstr "Quarz (SiO2)"
+
+#~ msgid ""
+#~ "Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
+#~ "                2-methyl-1,2-thiazol-3(2H)-one\n"
+#~ "            "
+#~ msgstr ""
+#~ "Reaktionsmasse von 5-Chlor-2-methyl-1,2-thiazol-3(2H)-one und\n"
+#~ "                2-methyl-1,2-thiazol-3(2H)-one\n"
+#~ "            "
+
+#~ msgid "Silicic acid, sodium salt"
+#~ msgstr "Kieselsäure, Natriumsalz"
+
+#~ msgid "Tetrapotassium pyrophosphate"
+#~ msgstr "Tetrapotassiumpyrophosphat"
+
+#~ msgid "Tetrasodium ethylenediaminetetraacetate"
+#~ msgstr "Tetranatrium-Ethylendiamintetraacetat"
+
+#, python-format
+#~ msgid ""
+#~ "This substance/mixture does not meet the vPvB criteria of REACH "
+#~ "regulation, annex XIII"
+#~ msgstr ""
+#~ "Dieser Stoff/dieses Gemisch erfüllt nicht die vPvB-Kriterien der REACH-"
+#~ "Verordnung, Anhang XIII."
+
+#~ msgid "Trisodium nitrilotriacetate"
+#~ msgstr "Trinatriumnitrilotriacetat"
+
+#~ msgid "Trizinc bis(orthophosphate)"
+#~ msgstr "Trizinkbis(orthophosphat)"
+
+#~ msgid "Zinc nitrate"
+#~ msgstr "Zinksalpeter"
 
 #~ msgid ""
 #~ "\n"

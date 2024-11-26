@@ -177,7 +177,7 @@
         </record>
         <record id="P280" model="sds.precautionary.statement">
             <field name="name">P280</field>
-            <field name="description">Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/…</field>
+            <field name="description">Wear protective gloves/protective clothing/eye protection/face protection.</field>
             <field name="mode">P2</field>
         </record>
         <record id="P282" model="sds.precautionary.statement">
@@ -467,7 +467,7 @@
         </record>
         <record id="P303_P361_P353" model="sds.precautionary.statement">
             <field name="name">P303 + P361 + P353</field>
-            <field name="description">IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water.</field>
+            <field name="description">IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water [or shower].</field>
             <field name="mode">P3</field>
         </record>
         <record id="P304_P340" model="sds.precautionary.statement">

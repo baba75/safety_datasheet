@@ -303,6 +303,11 @@
             <field name="name">Evacuate the personnel away from the fumes.</field>
             <field name="category">fire_fight_advice</field>
         </record>
+        <record id="sentence_fire_fight_13" model="sds.sentences">
+            <field name="name">Cool the containers with jets of water to avoid product decomposition 
+                and the development of substances potentially dangerous to health.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
 
         <record id="sentence_fire_protect_1" model="sds.sentences">
             <field name="name">In the event of fire, wear self-contained breathing apparatus.</field>
@@ -312,8 +317,11 @@
             <field name="name">Use personal protective equipment.</field>
             <field name="category">fire_fight_advice</field>
         </record>
-
-
+        <record id="sentence_fire_protect_3" model="sds.sentences">
+            <field name="name">Always wear full fire protection gear.</field>
+            <field name="category">fire_fight_advice</field>
+        </record>
+        
         <record id="sentence_protective_1" model="sds.sentences">
             <field name="name">Use personal protective equipment.</field>
             <field name="category">protective</field>
@@ -535,6 +543,10 @@
             <field name="name">Take precautionary measures against static discharges.</field>
             <field name="category">handling</field>
         </record>
+        <record id="sentence_handling_20" model="sds.sentences">
+            <field name="name">Wash hands after use.</field>
+            <field name="category">handling</field>
+        </record>
 
         <record id="sentence_storage_1" model="sds.sentences">
             <field name="name">Keep in properly labelled containers.</field>
@@ -665,6 +677,10 @@
         </record>
         <record id="eye_protection_4" model="sds.sentences">
             <field name="name">It is recommended to wear airtight protective goggles.</field>
+            <field name="category">eye_protection</field>
+        </record>
+        <record id="eye_protection_5" model="sds.sentences">
+            <field name="name">It is recommended to wear a hood visor or protective visor combined with airtight glasses.</field>
             <field name="category">eye_protection</field>
         </record>
 
