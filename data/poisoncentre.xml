@@ -77,8 +77,8 @@ see: https://echa.europa.eu/documents/10162/2322249/emergency_phone_numbers_en.p
         <record id="PC_Italy" model="sds.poison.centre">
             <field name="name">
                 <![CDATA[
-                <p>Italy - Italia | Azienda Ospedaliera Integrata Verona: 800 011 858<br/>
-                Lista completa su: <a href="https://preparatipericolosi.iss.it/">preparatipericolosi.iss.it</a>
+                <p>Italy - Italia | Verona Integrated Hospital Company: 800 011 858<br/>
+                Full list at: <a href="https://preparatipericolosi.iss.it/">preparatipericolosi.iss.it</a>
                 </p>
                 ]]>
             </field>

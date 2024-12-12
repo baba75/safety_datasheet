@@ -532,7 +532,11 @@ class SdsDatasheet(models.Model):
                                               help="Insert aspiration hazard details (ingredients)",
                                               default=False)
     section_11_1_10_text = fields.Html(string="Aspiration Hazard details", translate=True, sanitize=False)
-    section_11_2 = fields.Html(string='Information on other hazards', default=lambda s: _("None available."),
+    section_11_2_1 = fields.Many2many('sds.sentences', relation="sds_endocrine_disrupting_products_statement_rel",
+                                       domain="[('category', '=', 'endocrine')]",
+                                       string='Endocrine disrupting properties',
+                                       context={'default_category': 'endocrine'})
+    section_11_2_2 = fields.Html(string='Other information', default=lambda s: _("None available."),
                                translate=True,sanitize=False)
 
     section_11_note = fields.Html(string="Section 11 Notes", translate=True)

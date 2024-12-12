@@ -258,18 +258,6 @@
             </field>
             <field name="Classification" eval="[(6, 0, [ref('eye2_H319')])]"/>
         </record>
-        <record id="cement" model="sds.chemical.substance">
-            <field name="name">Cement, portland, chemicals</field>
-            <field name="CASno">65997-15-1</field>
-            <field name="ECno">266-043-4</field>
-            <field name="last_update">2022-02-04</field>
-            <field name="wrk_exp_limit">True</field>
-            <field name="wrk_exp_tlv"><![CDATA[
-            <table class="table table-bordered"><thead class="table-columns"><tr><th rowspan="2">Region</th><th rowspan="2">Legislation</th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure Limit (STEL) Values</th><th rowspan="2">Skin Designation</th><th rowspan="2">Dermal Sensitization</th><th rowspan="2">Respiratory Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></th></tr></thead><tbody class="table-data"><tr><td>UK<br></td><td>WEL TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>
-            ]]></field>
-            <field name="Classification"
-                   eval="[(6, 0, [ref('skin2_H315'),ref('eye1_H318'),ref('skinB_H317'),ref('STOT_SE3_H335')])]"/>
-        </record>
         <record id="lithum_carbonate" model="sds.chemical.substance">
             <field name="name">Lithium carbonate</field>
             <field name="CASno">554-13-2</field>
@@ -365,15 +353,6 @@
             <field name="Classification"
                    eval="[(6, 0, [ref('eye1_H318'),ref('MetCorr_H290')])]"/>
 		    <!-- <field name="reactivity" eval=""/> -->
-        </record>
-        <record id="EDTA_tetrasodium_salt" model="sds.chemical.substance">
-            <field name="name">Tetrasodium ethylenediaminetetraacetate</field>
-            <field name="IUPACname">EDTA tetrasodium salt</field>
-            <field name="CASno">64-02-8</field>
-            <field name="ECno">200-573-9</field>
-            <field name="REACHno">01-21194-86762-27</field>
-            <field name="Classification"
-                   eval="[(6, 0, [ref('tox4_H332'),ref('tox4_H302'),ref('eye1_H318'),ref('STOT_RE2_H373')])]"/>
         </record>
         <record id="Natriummetasilicat_Pentahydrat" model="sds.chemical.substance">
             <field name="name">Disodium dioxido(oxo)silane pentahydrate</field>
@@ -520,10 +499,7 @@
             <field name="name">Quartz (SiO2)</field>
             <field name="CASno">14808-60-7</field>
             <field name="ECno">238-878-4</field>
-            <field name="last_update">2022-02-07</field>
-            <field name="wrk_exp_limit">False</field>
-            <field name="Classification"
-                   eval="[(6, 0, [ref('STOT_RE2_H373'),ref('Carc2_H351')])]"/>
+            <field name="wrk_exp_limit">True</field>
         </record>
         <record id="EC231-944-3" model="sds.chemical.substance">
             <field name="name">Trizinc bis(orthophosphate)</field>

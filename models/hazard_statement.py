@@ -46,18 +46,11 @@ class SdsHazardStatement(models.Model):
 
     @api.model
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
-
-        if self._context.get('show_only_code') == True:
-            if operator == 'ilike' and not (name or '').strip():
-                return super(SdsHazardStatement, self)._name_search(name, args=args, operator=operator, limit=limit,
-                                                                 name_get_uid=name_get_uid)
-            elif operator in ('ilike', 'like', '=', '=like', '=ilike'):
-                domain = expression.AND([
-                    args or [],
-                    ['|', ('name', operator, name), ('code', operator, name)]
-                ])
-                hazard_ids = self._search(domain, limit=limit, access_rights_uid=name_get_uid)
-                return self.browse(hazard_ids).name_get()
+        if not args:
+            args = []
+        if name:
+            args.append((('code',operator,name)))
+            hazard_ids = list(self._search(args, limit=limit, access_rights_uid=name_get_uid))
         else:
-            return super(SdsHazardStatement, self)._name_search(name, args=args, operator=operator, limit=limit,
-                                                             name_get_uid=name_get_uid)
+            hazard_ids = self._search(args, limit=limit, access_rights_uid=name_get_uid)
+        return hazard_ids

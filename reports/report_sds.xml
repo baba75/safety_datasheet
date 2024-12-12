@@ -1233,7 +1233,14 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">11.2. Information on other hazards</h4>
-                        <span class="sds" t-raw="doc.section_11_2" />
+                        <h5 class="sds">11.2.1. Endocrine disrupting properties</h5>
+                            <p class="sds">
+                                <span t-foreach="doc.section_11_2_1" t-as="line">
+                                        <span class="sds" t-field="line.name" />
+                                </span>
+                            </p>
+                        <h5 class="sds">11.2.2. Other information</h5>
+                        <span class="sds" t-raw="doc.section_11_2_2" />
                     </div>
                     <t t-if="not doc.section_11_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <span class="sds" t-raw="doc.section_11_note" />
@@ -1299,7 +1306,7 @@
                                 <span t-field="line.name" />
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_3_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_3_selector==True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_3_text" />
@@ -1324,7 +1331,7 @@
                                 <span t-field="line.name" />
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_4_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_4_selector==True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_4_text" />
@@ -1349,7 +1356,7 @@
                                 <span t-field="line.name" />
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_5_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_5_selector==True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_5_text" />
@@ -1374,7 +1381,7 @@
                                 <span t-field="line.name" />
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_6_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_6_selector==True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_6_text" />
@@ -1399,7 +1406,7 @@
                                 <span t-field="line.name" />
                             </span>
                         </p>
-                        <t t-if="not doc.section_12_7_text=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <t t-if="doc.section_12_7_selector==True">
                             <h6 class="sds">Product details:</h6>
                             <div class="sds">
                                 <span t-field="doc.section_12_7_text" />

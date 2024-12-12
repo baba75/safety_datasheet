@@ -155,6 +155,11 @@
             <field name="description">Wash ... thoroughly after handling.</field>
             <field name="mode">P2</field>
         </record>
+        <record id="P264bis" model="sds.precautionary.statement">
+            <field name="name">P264</field>
+            <field name="description">Wash hands thoroughly after handling.</field>
+            <field name="mode">P2</field>
+        </record>
         <record id="P270" model="sds.precautionary.statement">
             <field name="name">P270</field>
             <field name="description">Do not eat, drink or smoke when using this product.</field>

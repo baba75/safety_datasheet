@@ -64,7 +64,7 @@ class SelectLangRecap(models.AbstractModel):
         # Here we inject the emergency telephone number (point 1.4) specific for the country
         pcenter = self.env['sds.poison.centre'].search([('country','=',country)])
         if pcenter:
-            doc_et = pcenter[0].name
+            doc_et = pcenter[0].with_context(lang=lang).name
         else:
             company = self.env.company
             doc_et = '<p>' + company.name + ' : ' + company.phone + '</p>'   

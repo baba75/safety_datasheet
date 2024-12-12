@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20231205\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:55+0000\n"
-"PO-Revision-Date: 2024-11-21 13:50+0100\n"
+"POT-Creation-Date: 2024-12-09 14:33+0000\n"
+"PO-Revision-Date: 2024-12-10 11:01+0100\n"
 "Last-Translator: Alberto Carollo <alberto.carollo@proton.me>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -278,10 +278,315 @@ msgstr ""
 "                "
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-butoxyethanol
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list</td><td>98.0</"
+"td><td>20.0</td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-633-2
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>1.0</"
+"td><td><br></td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ammonia
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>14.0</"
+"td><td>20.0</td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr></tbody></table>\n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
+"td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC203-473-3
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 1st list<br></td><td>52.0</"
+"td><td>20.0</td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.2-2-butoxyethoxyethanol
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+"th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+"Sector</th><th rowspan=\"2\">Effective Date</th><th rowspan=\"2\">Expiration "
+"Date</th><th rowspan=\"2\">Miscellaneous Notes</th></tr><tr><th>mg/m<sup>3</"
+"sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/"
+"ml</th></tr></thead><tbody class=\"table-data\"><tr><td>European Union<br></"
+"td><td>OELs - Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></"
+"td><td>10.0 &nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></"
+"td><td>15.0<br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.portland_cement
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
+"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CSA
+msgid ""
+"\n"
+"            <table class=\"table table-bordered\"><thead class=\"table-"
+"columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+"th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
+"Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
+"rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
+"Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
+"th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
+"TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></"
+"tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust <br>4 "
+"mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></td><td><br></"
+"td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ respirable dust<br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
+"            \n"
+"            "
+msgstr ""
+"\n"
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table> "
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (kopie)"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_3779-63-3
+msgid ""
+"(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
+msgstr "(2,4,6-trioxotriazin-1,3,5(2H,4H,6H)-triyl)tris(hexamethylen) isokyanát"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC252-104-2
+msgid "(2-methoxymethylethoxy)propanol"
+msgstr "(2-methoxymethylethoxy)propanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC220-120-9
+msgid "1,2-benzisothiazol-3(2H)-one"
+msgstr "1,2-benzisothiazol-3(2H)-on"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.butoxy_propanol
+msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
+msgstr "2-(2-butoxyethoxy)ethanol"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -375,6 +680,16 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "11.2. Information on other hazards"
 msgstr "11.2 Informace o jiných nebezpečích"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "11.2.1. Endocrine disrupting properties"
+msgstr "11.2.1. Endokrinní disrupční vlastnosti"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "11.2.2. Other information"
+msgstr "11.2.2. Další informace"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
@@ -491,6 +806,26 @@ msgid "16"
 msgstr "16"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.nitrilotriethanol
+msgid "2,2',2''-nitrilotriethanol"
+msgstr "2,2',2''-nitrilotriethanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.2-2-butoxyethoxyethanol
+msgid "2-(2-butoxyethoxy)ethanol"
+msgstr "2-(2-butoxyethoxy)ethanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.2-butoxyethanol
+msgid "2-butoxyethanol"
+msgstr "2-butoxyethanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_618-558-4
+msgid "2-tridecoxyethyl dihydrogen phosphate"
+msgstr "2-tridekoxyethyldihydrogenfosfát"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.safety_datasheet_view_form
 msgid "2.1 Classification of the substance or mixture"
 msgstr "2.1 Klasifikace látky nebo směsi"
@@ -509,6 +844,19 @@ msgstr "2.2 Prvky označení"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "2.3. Other Hazards"
 msgstr "2.3 Další nebezpečnost"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_1574548-27-8
+msgid ""
+"3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
+"                oligomers reaction product with 3-(cyclohexylamino)propane-1-"
+"sulfonic acid\n"
+"                and N,N-dimethylcyclohexanamine"
+msgstr ""
+"3-isokyanatomethyl-3,5,5-trimethylcyklohexyl isokyanát,\n"
+"                reakční produkt oligomerů s 3-(cyklohexylamino)propan-1-"
+"sulfonovou kyselinou\n"
+"                a N,N-dimethylcyklohexanamin"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
@@ -633,6 +981,15 @@ msgid ""
 msgstr ""
 "<br/>\n"
 "                            Další nebezpečí:"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid ""
+"<br/>\n"
+"                            vPvB:"
+msgstr ""
+"<br/>\n"
+"                            vPvB:"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
@@ -813,7 +1170,80 @@ msgstr "<span>Nahrazuje verzi:&amp;nbsp;</span>"
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead class=\"table-"
+#| "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
+#| "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
+#| "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
+#| "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
+#| "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
+#| "Sector</th><th rowspan=\"2\">Effective Date</th><th "
+#| "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
+#| "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
+#| "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
+#| "class=\"table-data\"><tr><td><br></td><td><br></td><td><br></td><td><br></"
+#| "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#| "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+#| "td><td><br></td></tr></tbody></table>"
+msgid ""
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</th><th "
+"colspan=\"2\">Long-term Exposure Limit (LTEL) Values</th><th "
+"colspan=\"2\">Short-term Exposure Limit (STEL) Values</th><th "
+"rowspan=\"2\">Expressed As</th><th rowspan=\"2\">Physical Form</th><th "
+"rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Miscellaneous Notes</"
+"th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>mg/m<sup>3</sup></"
+"th><th>ppm</th></tr></thead><tbody class=\"table-data\"><tr><td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+msgstr ""
+"<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
+"rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</th> <th "
+"colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
+"colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
+"rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
+"th><th rowspan=\"2\">Respirační senzibilizace</th><th rowspan=\"2\">Pracovní "
+"sektor</th><th rowspan=\"2\">Datum účinnosti</th><th rowspan=\"2\">Datum "
+"vypršení platnosti</th><th rowspan=\"2\">Různé poznámky</th></tr><tr><th> mg/"
+"m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/m<sup>3</sup></th ><th>ppm</"
+"th><th>f/ml</th></tr></thead><tbody class=\"table-data\"><tr><td><br></td> "
+"<td><br></td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td><td><br></td> <td><br></"
+"td><td><br></td><td><br></td><td><br></td></tr></tbody></ table>"
+
+#. module: safety_datasheet
 #: code:addons/safety_datasheet/models/datasheet.py:0
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.ethanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead class=\"table-columns\"><tr><th "
@@ -846,13 +1276,58 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.CSA
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.ammonia
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.ethanol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,reproductive_toxicity:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Result/"
+#| "Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+#| "thead><tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></"
+#| "td><td><br></td></tr><tr><td>Effect on developmental toxicity<br></"
+#| "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Result/"
 "Effect</th><th>Species/Test system</th><th>Source</th></tr></"
-"thead><tbody><tr><td>Effect on fertility<br></td><td><br></td><td><br></"
-"td><td><br></td></tr><tr><td>Effect on developmental toxicity<br></"
-"td><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
+"thead><tbody><tr><td>Effect on fertility</td><td><br></td><td><br></"
+"td><td><br></td></tr><tr><td>Effect on developmental toxicity</td><td><br></"
+"td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th>Cesta expozice</"
 "th><th>Výsledek/Účinek</th><th>Druh/Testovací systém</th><th >Zdroj</th></"
@@ -863,11 +1338,54 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,mobility:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,mobility:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,mobility:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,mobility:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,mobility:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,mobility:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,mobility:safety_datasheet.CSA
+#: model:sds.chemical.substance,mobility:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,mobility:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,mobility:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,mobility:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,mobility:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,mobility:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,mobility:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,mobility:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,mobility:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,mobility:safety_datasheet.ammonia
+#: model:sds.chemical.substance,mobility:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,mobility:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,mobility:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,mobility:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,mobility:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,mobility:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,mobility:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,mobility:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,mobility:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,mobility:safety_datasheet.ethanol
+#: model:sds.chemical.substance,mobility:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,mobility:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,mobility:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,mobility:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,mobility:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,mobility:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,mobility:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+#| "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Adsorption/"
+#| "desorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
 "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Adsorption/"
-"desorption</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
+"desorption</td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
 "Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Adsorpce/desorpce</"
@@ -875,13 +1393,58 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.CSA
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.ammonia
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.ethanol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,bioaccumulation:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+#| "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Bioaccumulation: "
+#| "aquatic / sediment</td><td><br/><br></td><td><br/><br></td></"
+#| "tr><tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/"
+#| "><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
 "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Bioaccumulation: "
-"aquatic / sediment</td><td><br/><br></td><td><br/><br></td></"
-"tr><tr><td>Bioaccumulation: terrestrial</td><td><br/><br></td><td><br/><br></"
-"td></tr></tbody></table>"
+"aquatic / sediment</td><td><br></td><td><br></td></"
+"tr><tr><td>Bioaccumulation: terrestrial</td><td><br></td><td><br></td></tr></"
+"tbody></table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
 "Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Bioakumulace: vodní / "
@@ -890,14 +1453,60 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,degradability:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,degradability:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,degradability:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,degradability:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,degradability:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,degradability:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,degradability:safety_datasheet.CSA
+#: model:sds.chemical.substance,degradability:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,degradability:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,degradability:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,degradability:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,degradability:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,degradability:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,degradability:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,degradability:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,degradability:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,degradability:safety_datasheet.ammonia
+#: model:sds.chemical.substance,degradability:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,degradability:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,degradability:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,degradability:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,degradability:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,degradability:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,degradability:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,degradability:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,degradability:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,degradability:safety_datasheet.ethanol
+#: model:sds.chemical.substance,degradability:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,degradability:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,degradability:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,degradability:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,degradability:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,degradability:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,degradability:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+#| "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Biodegradation in "
+#| "water - screening tests</td><td><br/><br></td><td><br/><br></td></"
+#| "tr><tr><td>Biodegradation in water & sediment - simulation tests</"
+#| "td><td><br/><br></td><td><br/><br></td></tr><tr><td>Biodegradation in "
+#| "soil</td><td><br/><br></td><td><br/><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
 "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Biodegradation in "
-"water - screening tests</td><td><br/><br></td><td><br/><br></td></"
-"tr><tr><td>Biodegradation in water & sediment - simulation tests</td><td><br/"
-"><br></td><td><br/><br></td></tr><tr><td>Biodegradation in soil</td><td><br/"
-"><br></td><td><br/><br></td></tr></tbody></table>"
+"water - screening tests</td><td><br></td><td><br></td></"
+"tr><tr><td>Biodegradation in water & sediment - simulation tests</"
+"td><td><br></td><td><br></td></tr><tr><td>Biodegradation in soil</"
+"td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
 "Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Biodegradace ve vodě "
@@ -908,15 +1517,61 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,other_effects:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,other_effects:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,other_effects:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,other_effects:safety_datasheet.CSA
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,other_effects:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.ammonia
+#: model:sds.chemical.substance,other_effects:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,other_effects:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,other_effects:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,other_effects:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,other_effects:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,other_effects:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,other_effects:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,other_effects:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,other_effects:safety_datasheet.ethanol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,other_effects:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,other_effects:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,other_effects:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,other_effects:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
+#| "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Environmental "
+#| "fate</td><td><br/><br></td><td><br/><br></td></tr><tr><td>Photochemical "
+#| "ozone creation potential</td><td><br/><br></td><td><br/><br></td></"
+#| "tr><tr><td>Ozone depletion potential</td><td><br/><br></td><td><br/><br></"
+#| "td></tr><tr><td>Global warming potential</td><td><br/><br></td><td><br/"
+#| "><br></td></tr></tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Results/"
 "Summaries</th><th>Source</th></tr></thead><tbody><tr><td>Environmental fate</"
-"td><td><br/><br></td><td><br/><br></td></tr><tr><td>Photochemical ozone "
-"creation potential</td><td><br/><br></td><td><br/><br></td></tr><tr><td>Ozone "
-"depletion potential</td><td><br/><br></td><td><br/><br></td></"
-"tr><tr><td>Global warming potential</td><td><br/><br></td><td><br/><br></td></"
-"tr></tbody></table>"
+"td><td><br></td><td><br></td></tr><tr><td>Photochemical ozone creation "
+"potential</td><td><br></td><td><br></td></tr><tr><td>Ozone depletion "
+"potential</td><td><br></td><td><br></td></tr><tr><td>Global warming "
+"potential</td><td><br></td><td><br></td></tr></tbody></table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th><br></th><th>Výsledky/"
 "Souhrny</th><th> Zdroj</th></tr></thead><tbody><tr><td> Environmentální osud</"
@@ -928,6 +1583,162 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.CSA
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.ammonia
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.ethanol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,eye_damage:safety_datasheet.quartz
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.CSA
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.ammonia
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.ethanol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,mutagenity:safety_datasheet.quartz
+#: model:sds.chemical.substance,sensitization:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,sensitization:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,sensitization:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,sensitization:safety_datasheet.CSA
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,sensitization:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.ammonia
+#: model:sds.chemical.substance,sensitization:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,sensitization:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,sensitization:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,sensitization:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,sensitization:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,sensitization:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,sensitization:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,sensitization:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,sensitization:safety_datasheet.ethanol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,sensitization:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,sensitization:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,sensitization:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,sensitization:safety_datasheet.quartz
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.CSA
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.ammonia
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.ethanol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,skin_corrosion:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
@@ -939,7 +1750,125 @@ msgstr ""
 "thead><tbody><tr><td><br></td><td><br></td><td><br></td></tr></tbody></table>"
 
 #. module: safety_datasheet
+#: code:addons/safety_datasheet/models/chemical_substance.py:0
 #: code:addons/safety_datasheet/models/datasheet.py:0
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.CSA
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.ammonia
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.ethanol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,aspiration_hazard:safety_datasheet.quartz
+#: model:sds.chemical.substance,stot_se:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,stot_se:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,stot_se:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,stot_se:safety_datasheet.CSA
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,stot_se:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.ammonia
+#: model:sds.chemical.substance,stot_se:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,stot_se:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,stot_se:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,stot_se:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,stot_se:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,stot_se:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,stot_se:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,stot_se:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,stot_se:safety_datasheet.ethanol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,stot_se:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,stot_se:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,stot_se:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,stot_se:safety_datasheet.quartz
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.CSA
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.ammonia
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.ethanol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,toxicity_detail:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Result/Effect</"
@@ -970,14 +1899,60 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
-#, python-format
+#: model:sds.chemical.substance,stot_re:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,stot_re:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,stot_re:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,stot_re:safety_datasheet.CSA
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,stot_re:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.ammonia
+#: model:sds.chemical.substance,stot_re:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,stot_re:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,stot_re:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,stot_re:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,stot_re:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,stot_re:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,stot_re:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,stot_re:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,stot_re:safety_datasheet.ethanol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,stot_re:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,stot_re:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,stot_re:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,stot_re:safety_datasheet.quartz
+#, fuzzy, python-format
+#| msgid ""
+#| "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
+#| "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
+#| "thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
+#| "tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
+#| "tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
+#| "tbody></table>"
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
 "th><th>Result/Effect</th><th>Species/Test system</th><th>Source</th></tr></"
 "thead><tbody><tr><td>Oral</td><td><br></td><td><br></td><td><br></td></"
-"tr><tr><td>Inhalation<br></td><td> mg/m³ </td><td><br></td><td><br></td></"
-"tr><tr><td>Skin/eye<br></td><td><br></td><td><br></td><td><br></td></tr></"
-"tbody></table>"
+"tr><tr><td>Inhalation</td><td> mg/m³ </td><td><br></td><td><br></td></"
+"tr><tr><td>Skin/eye</td><td><br></td><td><br></td><td><br></td></tr></tbody></"
+"table>"
 msgstr ""
 "<table class=\"table table-bordered\"><thead><tr><th>Cesta expozice</"
 "th><th>Výsledek/Účinek</th><th>Druh/Testovací systém</th><th >Zdroj</th></"
@@ -988,6 +1963,45 @@ msgstr ""
 
 #. module: safety_datasheet
 #: code:addons/safety_datasheet/models/chemical_substance.py:0
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.2-2-butoxyethoxyethanol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.2-butoxyethanol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Aluminium_sulphate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.CAS12788-93-1
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.CAS28182-81-2
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.CAS7087-68-5
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.CSA
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC203-473-3
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC220-120-9
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC231-633-2
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC231-764-5
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC231-944-3
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.EC252-104-2
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Hexamethylene_diisocyanate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Natriummetasilicat_Pentahydrat
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Potassium_methylsilanetriolate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Sodium_silicate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Trisodium_nitrilotriacetate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.Zinc_nitrate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.ammonia
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.butoxy_propanol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.cas_1574548-27-8
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.cas_3779-63-3
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.cas_666723-27-9
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.chem_EC_202-715-5
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.chem_EC_618-558-4
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.chem_EC_931-274-8
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.citric_acid
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.ec_932-183-6
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.ethanol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.lithum_carbonate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.natural_cement
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.nitrilotriethanol
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.portland_cement
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.potassium_pyrophosphate
+#: model:sds.chemical.substance,acute_summary:safety_datasheet.quartz
 #, python-format
 msgid ""
 "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
@@ -1266,6 +2280,11 @@ msgid "Alcohol-resistant foam."
 msgstr "Pěna odolná vůči alkoholu."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.ec_932-183-6
+msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
+msgstr "Alkoholy, C9-11-iso-, bohaté na C10, ethoxylované (>2,5 mol EO)"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_7
 msgid "Alcohols."
 msgstr "Alkoholy."
@@ -1281,14 +2300,34 @@ msgid "Aluminium and other non-noble metals."
 msgstr "Hliník a ostatní neušlechtilé kovy."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Aluminium_sulphate
+msgid "Aluminium sulphate"
+msgstr "Síran hlinitý"
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_store_products_4
 msgid "Aluminium."
 msgstr "Hliník."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_protect_3
+msgid "Always wear full fire protection gear."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_8
 msgid "Amines."
 msgstr "Aminy."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.ammonia
+msgid "Ammonia"
+msgstr "Amoniak"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-764-5
+msgid "Ammonium dihydrogenorthophosphate"
+msgstr "Dihydrogenorthofosforečnan amonný"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.incompatible_3
@@ -1566,6 +2605,11 @@ msgid "Bioaccumulative potential details"
 msgstr "Podrobnosti o bioakumulačním potenciálu"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.cas_666723-27-9
+msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
+msgstr "Blokovaný polyisokyanát na bázi hexametylendiisokyanátu (HDI)"
+
+#. module: safety_datasheet
 #: model:sds.chemical.property,name:safety_datasheet.chemical_property_5
 msgid "Boiling point or initial boiling point and boiling range"
 msgstr "Bod varu nebo počáteční bod varu a rozsah varu"
@@ -1776,6 +2820,16 @@ msgid "Causes skin irritation."
 msgstr "Způsobuje podráždění kůže."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CSA
+msgid "Cement, calcium sulfoaluminate, chemicals"
+msgstr "Cement, sulfoaluminát vápenatý, chemikálie"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.portland_cement
+msgid "Cement, portland, chemicals"
+msgstr "Cement, portland, chemikálie"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_16_changes
 msgid "Changes made to the previous version"
 msgstr "Změny oproti předchozí verzi"
@@ -1841,6 +2895,11 @@ msgid "Chemical stability"
 msgstr "Chemická stabilita"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.citric_acid
+msgid "Citric Acid"
+msgstr "Kyselina citronová"
+
+#. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.ADR_8
 msgid "Class 8 - Corrosive materials"
 msgstr "Třída 8 - Korozivní materiály"
@@ -1890,6 +2949,11 @@ msgstr ""
 "technika) - utěrky, vlhké kartáče popř.\n"
 "                hadici s nástavcem pro rozprašování (nastavte na \"jemné "
 "stříkání\", aby se zabránilo rozptýlení produktu do vzduchu)."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Cocoalkylmethyl_ammonium_chloride
+msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
+msgstr "Cocoalkylmethyl[polyoxyethylene] chlorid amonný"
 
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
@@ -2080,6 +3144,14 @@ msgid "Contaminated work clothing should not be allowed out of the workplace."
 msgstr "Kontaminovaný pracovní oděv by neměl být vynášen z pracoviště."
 
 #. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_fire_fight_13
+msgid ""
+"Cool the containers with jets of water to avoid product decomposition \n"
+"                and the development of substances potentially dangerous to "
+"health."
+msgstr ""
+
+#. module: safety_datasheet
 #: model:sds.pictogram,description:safety_datasheet.GHS05_corrosion
 msgid "Corrosion"
 msgstr "Koroze"
@@ -2229,6 +3301,11 @@ msgstr ""
 "mimo dosah dětí."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_202-715-5
+msgid "Cyclohexyldimethylamine"
+msgstr "Cyklohexyldimethylamin"
+
+#. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_poison_centre__country__cyprus
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__cyprus
@@ -2367,6 +3444,7 @@ msgstr "Dermální expozice"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_hazard_statement__name
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__description
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_hazard_statement_search
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_search
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
 msgid "Description"
 msgstr "Popis"
@@ -2450,6 +3528,11 @@ msgstr ""
 #: model:sds.sentences,name:safety_datasheet.sentence_env_precaution_1
 msgid "Discharge into the environment must be avoided."
 msgstr "Je třeba zabránit vypouštění do životního prostředí."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Natriummetasilicat_Pentahydrat
+msgid "Disodium dioxido(oxo)silane pentahydrate"
+msgstr "Natrium-metasilikát Pentahydrát"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_report_safety_datasheet_report_safety_datasheet__display_name
@@ -2781,6 +3864,7 @@ msgstr "Endokrinní narušení"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__endocrine
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_2_1
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_6
 #: model:ir.model.fields,help:safety_datasheet.field_sds_datasheet__section_2_3_endocrine
 msgid "Endocrine disrupting properties"
@@ -2839,6 +3923,21 @@ msgstr "Opatření na ochranu životního prostředí"
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__select_lang_report_wizard__country__estonia
 msgid "Estonia"
 msgstr "Estonsko"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC203-473-3
+msgid "Ethane-1,2-diol"
+msgstr "Ethan-1,2-diol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.ethanol
+msgid "Ethanol"
+msgstr "Ethanol"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS7087-68-5
+msgid "Ethyldiisopropylamine"
+msgstr "Ethyldiisopropylamin"
 
 #. module: safety_datasheet
 #: model:sds.bibliography,name:safety_datasheet.bibliography_4
@@ -3489,6 +4588,11 @@ msgid "Ground/bond container and receiving equipment."
 msgstr "Pozemní/vázaný kontejner a přijímací zařízení."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.chem_EC_931-274-8
+msgid "HDI oligomers, isocyanurate"
+msgstr "HDI oligomery, isokyanurát"
+
+#. module: safety_datasheet
 #: model:sds.legend,description:safety_datasheet.legend_3
 msgid "Half maximal inhibitory concentration"
 msgstr "Polovina maximální inhibiční koncentrace"
@@ -3694,6 +4798,16 @@ msgstr "Zahřívání může způsobit požár."
 #: model:sds.hazard.statement,name:safety_datasheet.H240
 msgid "Heating may cause an explosion."
 msgstr "Zahřívání může způsobit výbuch."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Hexamethylene_diisocyanate
+msgid "Hexamethylene diisocyanate"
+msgstr "Hexamethylen diizokyanát"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS28182-81-2
+msgid "Hexamethylene diisocyanate, oligomers"
+msgstr "Hexamethylendiisokyanát, oligomery"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.avoid_condition_4
@@ -3995,17 +5109,17 @@ msgstr "Pokud dojde k podráždění kůže:"
 msgid "If skin irritation occurs: Get medical advice/attention."
 msgstr "Pokud dojde k podráždění kůže: Vyhledejte lékařskou pomoc/opatření."
 
+# P333
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P333
 msgid "If skin irritation or rash occurs:"
-msgstr "Pokud se objeví podráždění kůže nebo vyrážka:"
+msgstr "Při podráždění kůže nebo vyrážce:"
 
+# P333 + P313
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P333_P313
 msgid "If skin irritation or rash occurs: Get medical advice/attention."
-msgstr ""
-"Pokud se objeví podráždění kůže nebo vyrážka: Vyhledejte lékařskou pomoc/"
-"opatření."
+msgstr "Při podráždění kůže nebo vyrážce: Vyhledejte lékařskou pomoc/ošetření."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_11
@@ -4200,11 +5314,6 @@ msgstr "Individuální ochranná opatření"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "Information about the Safety Data Sheet:"
 msgstr "Informace o bezpečnostním listu:"
-
-#. module: safety_datasheet
-#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_2
-msgid "Information on other hazards"
-msgstr "Informace o dalších nebezpečích"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_4_1_ingestion
@@ -4454,6 +5563,15 @@ msgid ""
 "It can react with aluminum, zinc, tin and their alloys to produce hydrogen."
 msgstr ""
 "Může reagovat s hliníkem, zinkem, cínem a jejich slitinami za vzniku vodíku."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.eye_protection_5
+#, fuzzy
+#| msgid "It is recommended to wear airtight protective goggles."
+msgid ""
+"It is recommended to wear a hood visor or protective visor combined with "
+"airtight glasses."
+msgstr "Doporučuje se nosit vzduchotěsné ochranné brýle."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.eye_protection_4
@@ -4734,6 +5852,11 @@ msgstr "Lichtenštejnsko"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_regulation__url
 msgid "Link URL"
 msgstr "URL odkazu"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.lithum_carbonate
+msgid "Lithium carbonate"
+msgstr "Uhličitan lithný"
 
 #. module: safety_datasheet
 #: model:ir.model.fields.selection,name:safety_datasheet.selection__sds_distributor__country__lithuania
@@ -5449,6 +6572,11 @@ msgid "Organisation for Economic Co-operation and Development"
 msgstr "Organizace pro hospodářskou spolupráci a rozvoj"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-633-2
+msgid "Orthophosphoric acid"
+msgstr "Kyselina ortofosforečná"
+
+#. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_3_OtherHazards
 msgid "Other Hazards"
 msgstr "Jiná nebezpečí"
@@ -5479,6 +6607,7 @@ msgstr ""
 "dostatečnou ochranu, pokud se očekává pouze krátký kontakt."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_11_2_2
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_9_2
 msgid "Other information"
 msgstr "Jiná informace"
@@ -5539,6 +6668,11 @@ msgstr "Podrobnosti o PBT a vPvB (ingredience)"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_12_5_selector
 msgid "PBT and vPvB details (mixture)"
 msgstr "Podrobnosti o PBT a vPvB (směs)"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
+msgid "PBT:"
+msgstr "PBT:"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_substance__pnec
@@ -5621,6 +6755,11 @@ msgstr "Osobní bezpečnostní opatření pro záchranné složky"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_6_1_1
 msgid "Personal precautions for non-emergency personnel"
 msgstr "Osobní opatření pro ty, kteří nezasahují přímo"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.CAS12788-93-1
+msgid "Phosphoric acid, butyl ester"
+msgstr "Kyselina fosforečná, butylester"
 
 #. module: safety_datasheet
 #: model:ir.model,name:safety_datasheet.model_sds_chemical_property
@@ -5726,6 +6865,25 @@ msgstr "Možná nebezpečná reakce s chlornany."
 #: model:sds.sentences,name:safety_datasheet.haz_reaction_11
 msgid "Possible dangerous reaction with sulphates."
 msgstr "Možná nebezpečná reakce se sírany."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Potassium_methylsilanetriolate
+msgid "Potassium methylsilanetriolate"
+msgstr "Methylsilantriolát draselný"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_search
+#, fuzzy
+#| msgid "Precautionary Statement"
+msgid "Precautionary"
+msgstr "Preventivní prohlášení"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_search
+#, fuzzy
+#| msgid "Precautionary Statement"
+msgid "Precautionary Code"
+msgstr "Preventivní prohlášení"
 
 #. module: safety_datasheet
 #: model:ir.actions.act_window,name:safety_datasheet.action_precautionary_statement
@@ -5955,6 +7113,11 @@ msgid "Pyrophoric solid"
 msgstr "Pyroforická pevná látka"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.quartz
+msgid "Quartz (SiO2)"
+msgstr "Křemen (SiO2)"
+
+#. module: safety_datasheet
 #: model:sds.legend,acronym:safety_datasheet.legend_9
 msgid "REACH"
 msgstr "REACH"
@@ -5977,6 +7140,17 @@ msgstr "Číslo REACH"
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "REACH Registration no."
 msgstr "REACH Registrační č."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.mixof_chloromrthylthiazol_and_methil_thiazol
+msgid ""
+"Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
+"                2-methyl-1,2-thiazol-3(2H)-one\n"
+"            "
+msgstr ""
+"Reakční hmota 5-chlor-2-methyl-1,2-thiazol-3(2H)-onu a\n"
+"                2-methyl-l,2-thiazol-3(2H)-onu\n"
+"            "
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.reactivity_4
@@ -6998,6 +8172,7 @@ msgid "Separation by flocculation is possible."
 msgstr "Je možná separace flokulací."
 
 #. module: safety_datasheet
+#: model:ir.model.fields,field_description:safety_datasheet.field_sds_chemical_mixture__sequence
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_pictogram__sequence
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_precautionary_statement__sequence
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_sentences__sequence
@@ -7047,6 +8222,11 @@ msgstr "Signální slovo"
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_2_2_signal
 msgid "SignalWords"
 msgstr "Signální slova"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Sodium_silicate
+msgid "Silicic acid, sodium salt"
+msgstr "Kyselina křemičitá, sodná sůl"
 
 #. module: safety_datasheet
 #: model:ir.model.fields,field_description:safety_datasheet.field_sds_datasheet__section_8_2_3_1
@@ -7637,6 +8817,16 @@ msgid "Take precautionary measures against static discharges."
 msgstr "Proveďte preventivní opatření proti výbojům statické elektřiny."
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.potassium_pyrophosphate
+msgid "Tetrapotassium pyrophosphate"
+msgstr "Pyrofosfát tetradraselný"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Tetrasodium_ethylenediaminetetraacetate
+msgid "Tetrasodium ethylenediaminetetraacetate"
+msgstr "Ethylendiamintetraacetát tetrasodný"
+
+#. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P336
 msgid "Thaw frosted parts with lukewarm water. Do no rub affected area."
 msgstr "Omrzlé části rozmrazujte vlažnou vodou. Postiženou oblast netřete."
@@ -7907,6 +9097,16 @@ msgid "Transport hazard class(es) (IMDG)"
 msgstr "Třída(y) přepravní nebezpečnosti (IMDG)"
 
 #. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Trisodium_nitrilotriacetate
+msgid "Trisodium nitrilotriacetate"
+msgstr "Nitrilotriacetát trisodný"
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.EC231-944-3
+msgid "Trizinc bis(orthophosphate)"
+msgstr "Trizinek bis (ortofosfát)"
+
+#. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.view_precautionary_statement_tree
 msgid "Type"
 msgstr "Typ"
@@ -8143,10 +9343,11 @@ msgstr ""
 "Pozor! Nepoužívejte společně s jinými produkty. Mohou se uvolňovat nebezpečné "
 "plyny (chlor)."
 
+# P264
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P264
 msgid "Wash ... thoroughly after handling."
-msgstr "Po manipulaci s ním jej důkladně omyjte."
+msgstr "Po manipulaci důkladně omyjte …"
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_6
@@ -8172,6 +9373,19 @@ msgstr "Je-li to možné, po cestě si umyjte oči."
 #: model:sds.sentences,name:safety_datasheet.sentence_eye_1
 msgid "Wash eyes immediately and continuously with water for 30 minutes."
 msgstr "Okamžitě a nepřetržitě vyplachujte oči vodou po dobu 30 minut."
+
+#. module: safety_datasheet
+#: model:sds.sentences,name:safety_datasheet.sentence_handling_20
+#, fuzzy
+#| msgid "Wash clothing before reuse."
+msgid "Wash hands after use."
+msgstr "Před opětovným použitím oděv vyperte."
+
+# P264bis
+#. module: safety_datasheet
+#: model:sds.precautionary.statement,description:safety_datasheet.P264bis
+msgid "Wash hands thoroughly after handling."
+msgstr "Po manipulaci důkladně omyjte ruce."
 
 #. module: safety_datasheet
 #: model:sds.sentences,name:safety_datasheet.sentence_skin_1_b
@@ -8270,6 +9484,11 @@ msgstr "Expoziční limit na pracovišti"
 #: model:sds.sentences,name:safety_datasheet.sentence_containment_6
 msgid "You will need to determine which regulations are applicable."
 msgstr "Musíte zjistit, které předpisy jsou relevantní."
+
+#. module: safety_datasheet
+#: model:sds.chemical.substance,name:safety_datasheet.Zinc_nitrate
+msgid "Zinc nitrate"
+msgstr "Dusičnan zinečnatý"
 
 #. module: safety_datasheet
 #: model:sds.precautionary.statement,description:safety_datasheet.P284
@@ -8423,6 +9642,9 @@ msgstr "vPvB"
 msgid "very persistent and very bioaccumulative substances (vPvB substances)"
 msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 
+#~ msgid "Information on other hazards"
+#~ msgstr "Informace o dalších nebezpečích"
+
 #, python-format
 #~ msgid ""
 #~ "<table class=\"table table-bordered\"><thead><tr><th>Route of exposure</"
@@ -8439,424 +9661,11 @@ msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 #~ "td><td><br></td></tr><tbody><tr><td> Kožní</td><td><br></td><td><br></"
 #~ "td><td><br></td></tr></tbody></table>"
 
-#~ msgid "Alcohols, C9-11-iso-, C10-rich, ethoxylated (>2.5 moles EO)"
-#~ msgstr "Alkoholy, C9-11-iso-, bohaté na C10, ethoxylované (>2,5 mol EO)"
-
-#~ msgid "Aluminium sulphate"
-#~ msgstr "Síran hlinitý"
-
-#~ msgid "Ammonia"
-#~ msgstr "Amoniak"
-
-#~ msgid "Ammonium dihydrogenorthophosphate"
-#~ msgstr "Dihydrogenorthofosforečnan amonný"
-
-#~ msgid "Blocked Polyisocyanate Based on Hexamethylene Diisocyanate (HDI)"
-#~ msgstr "Blokovaný polyisokyanát na bázi hexametylendiisokyanátu (HDI)"
-
-#~ msgid "Cement, calcium sulfoaluminate, chemicals"
-#~ msgstr "Cement, sulfoaluminát vápenatý, chemikálie"
-
-#~ msgid "Cement, portland, chemicals"
-#~ msgstr "Cement, portland, chemikálie"
-
-#~ msgid "Citric Acid"
-#~ msgstr "Kyselina citronová"
-
-#~ msgid "Cocoalkylmethyl[polyoxyethylene] ammonium chloride"
-#~ msgstr "Cocoalkylmethyl[polyoxyethylene] chlorid amonný"
-
-#~ msgid "Cyclohexyldimethylamine"
-#~ msgstr "Cyklohexyldimethylamin"
-
-#~ msgid "Disodium dioxido(oxo)silane pentahydrate"
-#~ msgstr "Natrium-metasilikát Pentahydrát"
-
-#~ msgid "Ethane-1,2-diol"
-#~ msgstr "Ethan-1,2-diol"
-
-#~ msgid "Ethanol"
-#~ msgstr "Ethanol"
-
-#~ msgid "Ethyldiisopropylamine"
-#~ msgstr "Ethyldiisopropylamin"
-
-#~ msgid "HDI oligomers, isocyanurate"
-#~ msgstr "HDI oligomery, isokyanurát"
-
-#~ msgid "Hexamethylene diisocyanate"
-#~ msgstr "Hexamethylen diizokyanát"
-
-#~ msgid "Hexamethylene diisocyanate, oligomers"
-#~ msgstr "Hexamethylendiisokyanát, oligomery"
-
-#~ msgid "Lithium carbonate"
-#~ msgstr "Uhličitan lithný"
-
-#~ msgid "Orthophosphoric acid"
-#~ msgstr "Kyselina ortofosforečná"
-
-#~ msgid "Phosphoric acid, butyl ester"
-#~ msgstr "Kyselina fosforečná, butylester"
-
-#~ msgid "Potassium methylsilanetriolate"
-#~ msgstr "Methylsilantriolát draselný"
-
-#~ msgid "Quartz (SiO2)"
-#~ msgstr "Křemen (SiO2)"
-
-#~ msgid ""
-#~ "Reaction mass of 5-chloro-2-methyl-1,2-thiazol-3(2H)-one and\n"
-#~ "                2-methyl-1,2-thiazol-3(2H)-one\n"
-#~ "            "
-#~ msgstr ""
-#~ "Reakční hmota 5-chlor-2-methyl-1,2-thiazol-3(2H)-onu a\n"
-#~ "                2-methyl-l,2-thiazol-3(2H)-onu\n"
-#~ "            "
-
-#~ msgid "Silicic acid, sodium salt"
-#~ msgstr "Kyselina křemičitá, sodná sůl"
-
-#~ msgid "Tetrapotassium pyrophosphate"
-#~ msgstr "Pyrofosfát tetradraselný"
-
-#~ msgid "Tetrasodium ethylenediaminetetraacetate"
-#~ msgstr "Ethylendiamintetraacetát tetrasodný"
-
 #, python-format
 #~ msgid ""
 #~ "This substance/mixture does not meet the vPvB criteria of REACH "
 #~ "regulation, annex XIII"
 #~ msgstr "Tato látka/směs nesplňuje kritéria vPvB nařízení REACH, příloha XIII"
-
-#~ msgid "Trisodium nitrilotriacetate"
-#~ msgstr "Nitrilotriacetát trisodný"
-
-#~ msgid "Trizinc bis(orthophosphate)"
-#~ msgstr "Trizinek bis (ortofosfát)"
-
-#~ msgid "Zinc nitrate"
-#~ msgstr "Dusičnan zinečnatý"
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 1st list</td><td>98.0</td><td>20.0</"
-#~ "td><td><br></td><td>246.0</td><td>50.0</td><td><br></td><td>Yes</"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></table>\n"
-#~ "            \n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 1st list<br></td><td>1.0</td><td><br></"
-#~ "td><td><br></td><td>2.0</td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></table>\n"
-#~ "            \n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 1st list<br></td><td>14.0</td><td>20.0</"
-#~ "td><td><br></td><td>36.0</td><td>50.0</td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></table>\n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 1st list<br></td><td>308.0<br></"
-#~ "td><td>50.0</td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td>yes<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td></tr></tbody></table>\n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 1st list<br></td><td>52.0</td><td>20.0</"
-#~ "td><td><br></td><td>104.0</td><td>40.0</td><td><br></td><td>Yes</"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></table>\n"
-#~ "            \n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th colspan=\"3\">Long-term Exposure Limit (LTEL) Values</th><th "
-#~ "colspan=\"3\">Short-term Exposure Limit (STEL) Values</th><th "
-#~ "rowspan=\"2\">Skin Designation</th><th rowspan=\"2\">Dermal Sensitization</"
-#~ "th><th rowspan=\"2\">Respiratory Sensitization</th><th rowspan=\"2\">Work "
-#~ "Sector</th><th rowspan=\"2\">Effective Date</th><th "
-#~ "rowspan=\"2\">Expiration Date</th><th rowspan=\"2\">Miscellaneous Notes</"
-#~ "th></tr><tr><th>mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</th><th>mg/"
-#~ "m<sup>3</sup></th><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td>European Union<br></td><td>OELs - "
-#~ "Occupational Exposure Limits - 2nd list<br></td><td>67.5<br></td><td>10.0 "
-#~ "&nbsp;&nbsp;&nbsp; <br></td><td><br></td><td>101.2<br></td><td>15.0<br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td><td><br></td></tr></tbody></table>\n"
-#~ "            \n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
-#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
-#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
-#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td></tr></tbody></table>\n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "\n"
-#~ "            <table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislation</"
-#~ "th><th>Long-term Exposure Limit (LTEL) Values</th><th>Short-term Exposure "
-#~ "Limit (STEL) Values</th><th rowspan=\"2\">Skin Designation</th><th "
-#~ "rowspan=\"2\">Dermal Sensitization</th><th rowspan=\"2\">Respiratory "
-#~ "Sensitization</th></tr><tr><th>mg/m<sup>3</sup></th><th>mg/m<sup>3</sup></"
-#~ "th></tr></thead><tbody class=\"table-data\"><tr><td>UK<br></td><td>WEL "
-#~ "TWA<br></td><td>10 mg/m³ inhalable dust <br>4 mg/m³ respirable dust<br></"
-#~ "td><td><br></td><td><br></td><td><br></td><td><br></td></"
-#~ "tr><tr><td>France<br></td><td>VME<br></td><td>10 mg/m³ inhalable dust "
-#~ "<br>4 mg/m³ respirable dust</td><td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr><tr><td><br></td><td>ACGIH<br></td><td>1 mg/m³ "
-#~ "respirable dust<br></td><td><br></td><td><br></td><td><br></td><td><br></"
-#~ "td></tr></tbody></table>\n"
-#~ "            \n"
-#~ "            "
-#~ msgstr ""
-#~ "\n"
-#~ "<table class=\"table table-bordered\"><thead class=\"table-"
-#~ "columns\"><tr><th rowspan=\"2\">Region</th><th rowspan=\"2\">Legislativa</"
-#~ "th> <th colspan=\"3\">Hodnoty dlouhodobého limitu expozice (LTEL)</th><th "
-#~ "colspan=\"3\">Hodnoty krátkodobého limitu expozice (STEL)</th><th "
-#~ "rowspan=\"2\"> Označení kůže</th><th rowspan=\"2\">Dermální senzibilizace</"
-#~ "th><th rowspan=\"2\">Respirační senzibilizace</th><th "
-#~ "rowspan=\"2\">Pracovní sektor</th><th rowspan=\"2\">Datum účinnosti</"
-#~ "th><th rowspan=\"2\">Datum vypršení platnosti</th><th rowspan=\"2\">Různé "
-#~ "poznámky</th></tr><tr><th> mg/m<sup>3</sup></th><th>ppm</th><th>f/ml</"
-#~ "th><th>mg/m<sup>3</sup></th ><th>ppm</th><th>f/ml</th></tr></thead><tbody "
-#~ "class=\"table-data\"><tr><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td><td><br></td> <td><br></td><td><br></td><td><br></"
-#~ "td><td><br></td></tr></tbody></ table> "
-
-#~ msgid ""
-#~ "(2,4,6-trioxotriazine-1,3,5(2H,4H,6H)-triyl)tris(hexamethylene) isocyanate"
-#~ msgstr ""
-#~ "(2,4,6-trioxotriazin-1,3,5(2H,4H,6H)-triyl)tris(hexamethylen) isokyanát"
-
-#~ msgid "(2-methoxymethylethoxy)propanol"
-#~ msgstr "(2-methoxymethylethoxy)propanol"
-
-#~ msgid "1,2-benzisothiazol-3(2H)-one"
-#~ msgstr "1,2-benzisothiazol-3(2H)-on"
-
-#~ msgid "1-(2-butoxy-1-methylethoxy)propan-2-ol"
-#~ msgstr "2-(2-butoxyethoxy)ethanol"
-
-#~ msgid "2,2',2''-nitrilotriethanol"
-#~ msgstr "2,2',2''-nitrilotriethanol"
-
-#~ msgid "2-(2-butoxyethoxy)ethanol"
-#~ msgstr "2-(2-butoxyethoxy)ethanol"
-
-#~ msgid "2-butoxyethanol"
-#~ msgstr "2-butoxyethanol"
-
-#~ msgid "2-tridecoxyethyl dihydrogen phosphate"
-#~ msgstr "2-tridekoxyethyldihydrogenfosfát"
-
-#~ msgid ""
-#~ "3-Isocyanatomethyl-3,5,5-trimethylcyclohexyl isocyanate,\n"
-#~ "                oligomers reaction product with 3-"
-#~ "(cyclohexylamino)propane-1-sulfonic acid\n"
-#~ "                and N,N-dimethylcyclohexanamine"
-#~ msgstr ""
-#~ "3-isokyanatomethyl-3,5,5-trimethylcyklohexyl isokyanát,\n"
-#~ "                reakční produkt oligomerů s 3-(cyklohexylamino)propan-1-"
-#~ "sulfonovou kyselinou\n"
-#~ "                a N,N-dimethylcyklohexanamin"
 
 #~ msgid ""
 #~ "<table class=\"table table-bordered\"><thead class=\"table-"
@@ -8966,9 +9775,6 @@ msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 
 #~ msgid "<br/> vPvB:"
 #~ msgstr "<br/> vPvB:"
-
-#~ msgid "PBT:"
-#~ msgstr "PBT:"
 
 #~ msgid ""
 #~ "1.2. Relevant identified uses of the substance or mixture\n"
@@ -9112,13 +9918,6 @@ msgstr "velmi perzistentní a velmi bioakumulativní látky (vPvB látky)"
 
 #~ msgid "1.4 Emergency telephone number"
 #~ msgstr "1.4 Telefonní číslo pro naléhavé situace"
-
-#~ msgid ""
-#~ "<br/>\n"
-#~ "                            vPvB:"
-#~ msgstr ""
-#~ "<br/>\n"
-#~ "                            vPvB:"
 
 #~ msgid "Emergency telephone number"
 #~ msgstr "Nouzové telefonní číslo"

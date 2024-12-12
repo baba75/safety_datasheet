@@ -621,8 +621,13 @@
                                         <field name="section_11_1_10_text" />
                                     </group>
                                     <group>
-                                        <field name="section_11_2" widget="html" />
-
+                                         <field name="section_11_2_1" widget="many2many">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle" />
+                                                <field name="name" />
+                                            </tree>
+                                        </field>
+                                        <field name="section_11_2_2" widget="html" />
                                     </group>
                                     <group string="SECTION 11: free notes">
                                         <field name="section_11_note" />
@@ -1155,6 +1160,17 @@
                 <search string="Hazard">
                     <field name="code" string="Hazard Code" />
                     <field name="name" string="Description" />
+                </search>
+            </field>
+        </record>
+
+        <record id="view_precautionary_statement_search" model="ir.ui.view">
+            <field name="name">sds.precautionary.statement.search</field>
+            <field name="model">sds.precautionary.statement</field>
+            <field name="arch" type="xml">
+                <search string="Precautionary">
+                    <field name="name" string="Precautionary Code" />
+                    <field name="description" string="Description" />
                 </search>
             </field>
         </record>
