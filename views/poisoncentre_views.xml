@@ -1,0 +1,48 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+    <record id="poisoncentre_view_form" model="ir.ui.view">
+        <field name="name">sds.poison.centre.view.form</field>
+        <field name="model">sds.poison.centre</field>
+        <field name="arch" type="xml">
+            <form string="Poison Centre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="country" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- search views -->
+
+    <!-- actions opening views on models -->
+    <record id="action_poisoncentre" model="ir.actions.act_window">
+        <field name="name">Poison Centre</field>
+        <field name="res_model">sds.poison.centre</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new Poison Centre entry
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_poisoncentre_tree" model="ir.ui.view">
+        <field name="name">sds.poison.centre.tree</field>
+        <field name="model">sds.poison.centre</field>
+        <field name="arch" type="xml">
+            <tree string="Poison Centre">
+                <field name="name" />
+                <field name="country" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

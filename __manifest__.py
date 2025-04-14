@@ -3,51 +3,50 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    'name': "Safety Data Sheets",
-
-    'summary': """
+    "name": "Safety Data Sheets",
+    "version": "16.0.1.0.0",
+    "category": "Specific Industry Applications",
+    "summary": """
         Product Safety Data Sheets""",
-
+    "author": "Alberto Carollo",    
+    "website": "https://github.com/baba75/safety_datasheet",
+    "license": "AGPL-3",
+    "depends": ["base","product"],
     'description': """
         Help to compose multilanguage/multiversion Product Safety Data Sheets
     """,
-
-    'author': "Alberto Carollo",
-    'website': "https://github.com/baba75/safety_datasheet",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Specific Industry Applications',
-    'version': '14.0.2',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base','product','web_tree_image_tooltip'],
-
-    # always loaded
-    'data': [
-        'views/templates.xml',
-        'wizards/select_lang.xml',
-        #'wizards/sci_property_wizard.xml',
-        'views/views.xml',
-        'reports/report_sds.xml',
-        'data/pictogram.xml',
-        'data/precautionary_statement.xml',
-        'data/hazard_class.xml',
-        'data/hazard_statement.xml',
-        'data/sentences.xml',
-        'data/chemical_property.xml',
-        'data/chemical_substance.xml',
-        'data/bibliography.xml',
-        'data/legend.xml',
-        'data/regulation.xml',
-        'data/poisoncentre.xml',
-        'security/ir.model.access.csv',
+    "data": [
+        "views/bibliography_views.xml",
+        "views/chemical_substance_views.xml",
+        "views/distributor_views.xml",
+        "views/hazard_classification_views.xml",
+        "views/hazard_statement_views.xml",
+        "views/legend_views.xml",
+        "views/pictogram_views.xml",
+        "views/poisoncentre_views.xml",
+        "views/precautionary_statement_views.xml",
+        "views/regulation_views.xml",
+        "views/safety_datasheet_views.xml",
+        "views/sentence_views.xml",
+        "views/safety_datasheet_menus.xml",
+        "wizards/select_lang.xml",
+        "reports/safety_datasheet_report.xml",
+        "data/pictogram_data.xml",
+        "data/precautionary_statement_data.xml",
+        "data/hazard_class_data.xml",
+        "data/hazard_statement_data.xml",
+        "data/sentences_data.xml",
+        "data/chemical_property_data.xml",
+        "data/chemical_substance_data.xml",
+        "data/bibliography_data.xml",
+        "data/legend_data.xml",
+        "data/regulation_data.xml",
+        "data/poisoncentre_data.xml",        
+        "security/ir.model.access.csv",
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
-    'css': ['static/src/css/sds.css'],
-    'application': True,
+    "assets": {
+        "web.assets_frontend": ["/safety_datasheet/static/src/css/sds.css"],
+    },
+    "application": True,
+    "development_status": "Beta",
 }

@@ -1,0 +1,35 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+
+    <!-- search views -->
+
+    <!-- actions opening views on models -->
+    <record id="action_precautionary_statement" model="ir.actions.act_window">
+        <field name="name">Precautionary Statement</field>
+        <field name="res_model">sds.precautionary.statement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new Precautionary Statement
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_precautionary_statement_tree" model="ir.ui.view">
+        <field name="name">sds.precautionary.statement.tree</field>
+        <field name="model">sds.precautionary.statement</field>
+        <field name="arch" type="xml">
+            <tree string="Precautionary Statement">
+                <field name="name" string="Code" />
+                <field name="description" string="Description" />
+                <field name="mode" string="Type" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

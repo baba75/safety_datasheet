@@ -24,6 +24,8 @@ class SdsHazardStatement(models.Model):
                                      copy=True)
     code = fields.Char('Hazard Code', required=True)
     name = fields.Char('Description', required=True, translate=True)
+    
+    _rec_names_search = ['name', 'code']
 
     def name_get(self):
         """
@@ -43,14 +45,3 @@ class SdsHazardStatement(models.Model):
                 name = hazard.code
                 res.append((hazard.id, name))
             return res
-
-    @api.model
-    def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
-        if not args:
-            args = []
-        if name:
-            args.append((('code',operator,name)))
-            hazard_ids = list(self._search(args, limit=limit, access_rights_uid=name_get_uid))
-        else:
-            hazard_ids = self._search(args, limit=limit, access_rights_uid=name_get_uid)
-        return hazard_ids

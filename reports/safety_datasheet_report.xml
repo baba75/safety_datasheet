@@ -25,7 +25,7 @@
                 <div id="title" class="sds_title">
                     <h1 class="sds">Safety Data Sheet</h1>
                     <h2 class="sds">
-                        <t t-raw="doc.section_1_1" />
+                        <t t-out="doc.section_1_1" />
                     </h2>
                     <!-- The date of compilation of the safety data sheet shall be given on the
                     first page.
@@ -59,29 +59,29 @@
                     </h3>
                     <div class="sds">
                         <h4 class="sds">1.1. Product Identifier</h4>
-                        <p class="sds" t-raw="doc.section_1_1" />
+                        <p class="sds" t-out="doc.section_1_1" />
                     </div>
                     <div t-if="doc.section_1_1_UFI">
-                        <p class="sds">UFI: <span class="sds" t-raw="doc.section_1_1_UFI" />
+                        <p class="sds">UFI: <span class="sds" t-out="doc.section_1_1_UFI" />
                         </p>
                     </div>
                     <div class="sds">
                         <h4 class="sds">
                             1.2. Relevant identified uses of the substance or mixture and uses advised against recommended use
                         </h4>
-                        <p class="sds" t-raw="doc.section_1_2" />
+                        <p class="sds" t-out="doc.section_1_2" />
                     </div>
                     <div class="sds">
                         <h4 class="sds">1.3. Detail of the supplier of the safety data sheet</h4>
                         <table class="sds" style="width: 100%;">
                             <tr>
                                 <td>
-                                    <p class="sds" t-raw="doc.section_1_3" />
+                                    <p class="sds" t-out="doc.section_1_3" />
                                 </td>
                                 <td>
                                     <t t-if="doc.section_1_3_distributor_selector == True">
                                         <h5 class="sds">National Distributor</h5>
-                                        <p class="sds" t-raw="doc_dist" />
+                                        <p class="sds" t-out="doc_dist" />
                                     </t>
                                 </td>
                             </tr>
@@ -89,18 +89,18 @@
                     </div>
                     <div class="sds">
                         <h5 class="sds" style="display: block;">Information about the Safety Data Sheet:</h5>
-                        <p class="sds" t-raw="doc.section_1_3_info" />
+                        <p class="sds" t-out="doc.section_1_3_info" />
                     </div>
 
                     <div class="sds">
                         <h4 class="sds">1.4. Emergency telephone number</h4>
-                        <p class="sds" t-raw="doc_et" />
+                        <p class="sds" t-out="doc_et" />
                     </div>
                     <!-- the html fields always contains at least: "<p><br></p>" -->
                     <!-- this will leave unwanted blank space at the end of each paragraph -->
                     <!--                    <t t-if="len(doc.section_1_note) > 12">-->
                     <t t-if="not doc.section_1_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_1_note" />
+                        <span class="sds" t-out="doc.section_1_note" />
                     </t>
                 </div>
                 <div id="section2">
@@ -204,18 +204,18 @@
                         </t>
                     </div>
                     <t t-if="not doc.section_2_2_Additional =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_2_2_Additional" />
+                        <span class="sds" t-out="doc.section_2_2_Additional" />
                     </t>
                     <div class="sds">
                         <h4 class="sds">2.3. Other Hazards</h4>
                         <p class="sds"> 
-                            PBT: <span t-raw="doc.section_2_3_PBT" /><br/>
-                            vPvB: <span t-raw="doc.section_2_3_vPvB" /><br/>
-                            <span t-raw="doc.section_2_3_endocrine" /><br/>
+                            PBT: <span t-out="doc.section_2_3_PBT" /><br/>
+                            vPvB: <span t-out="doc.section_2_3_vPvB" /><br/>
+                            <span t-out="doc.section_2_3_endocrine" /><br/>
                             Other Hazards: <span class="sds" t-field="doc.section_2_3_OtherHazards" />
                         </p>
                         <t t-if="not doc.section_2_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                            <span class="sds" t-raw="doc.section_2_note" />
+                            <span class="sds" t-out="doc.section_2_note" />
                         </t>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                         <t t-if="doc.section_3_type=='substance'">
                             <div class="sds">
                                 <h4 class="sds">3.1. Substances</h4>
-                                <span class="sds" t-raw="doc.section_3_1" />
+                                <span class="sds" t-out="doc.section_3_1" />
                             </div>
                         </t>
                         <t t-else="">
@@ -333,7 +333,7 @@
                         </t>
                     </div>
                     <t t-if="not doc.section_3_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_3_note" />
+                        <span class="sds" t-out="doc.section_3_note" />
                     </t>
                 </div>
                 <div id="section4">
@@ -376,16 +376,16 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">4.2. Most important symptoms and effects, both acute and delayed</h4>
-                        <span class="sds" t-raw="doc.section_4_2" />
+                        <span class="sds" t-out="doc.section_4_2" />
                     </div>
                     <div class="sds">
                         <h4 class="sds">
                             4.3. Indication of any immediate medical attention and special treatment needed
                         </h4>
-                        <span class="sds" t-raw="doc.section_4_3" />
+                        <span class="sds" t-out="doc.section_4_3" />
                     </div>
                     <t t-if="not doc.section_4_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_4_note" />
+                        <span class="sds" t-out="doc.section_4_note" />
                     </t>
                 </div>
                 <div id="section5">
@@ -425,7 +425,7 @@
                         </span>
                     </div>
                     <t t-if="not doc.section_5_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_5_note" />
+                        <span class="sds" t-out="doc.section_5_note" />
                     </t>
                 </div>
                 <div id="section6">
@@ -468,10 +468,10 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">6.4. Reference to other sections</h4>
-                        <span class="sds" t-raw="doc.section_6_4" />
+                        <span class="sds" t-out="doc.section_6_4" />
                     </div>
                     <t t-if="not doc.section_6_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_6_note" />
+                        <span class="sds" t-out="doc.section_6_note" />
                     </t>
                 </div>
                 <div id="section7">
@@ -516,10 +516,10 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">7.3. Specific end use(s)</h4>
-                        <span class="sds" t-raw="doc.section_7_3" />
+                        <span class="sds" t-out="doc.section_7_3" />
                     </div>
                     <t t-if="not doc.section_7_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_7_note" />
+                        <span class="sds" t-out="doc.section_7_note" />
                     </t>
                 </div>
                 <div id="section8">
@@ -877,7 +877,7 @@
                         </p>
                     </div>
                     <t t-if="not doc.section_8_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_8_note" />
+                        <span class="sds" t-out="doc.section_8_note" />
                     </t>
                 </div>
                 <div id="section9">
@@ -908,7 +908,7 @@
                     <div class="sds">
                         <h4 class="sds">9.2. Other information</h4>
                         <t t-if="doc.section_9_2">
-                            <span class="sds" t-raw="doc.section_9_2" />
+                            <span class="sds" t-out="doc.section_9_2" />
                         </t>
                         <t t-else="">
                             <p class="sds">No other information available.</p>
@@ -916,7 +916,7 @@
                     </div>
                     <t t-if="not doc.section_9_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_9_note" />
+                            <span t-out="doc.section_9_note" />
                         </p>
                     </t>
                 </div>
@@ -987,7 +987,7 @@
                     </div>
                     <t t-if="not doc.section_10_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_10_note" />
+                            <span t-out="doc.section_10_note" />
                         </p>
                     </t>
                 </div>
@@ -1022,7 +1022,7 @@
                             </div>
                             <t t-if="doc.section_11_1_1_selector==True">
                                 <h6 class="sds">Toxicity details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_1_text" />
+                                <span class="sds" t-out="doc.section_11_1_1_text" />
                             </t>
                             <t t-if="doc.section_11_1_1_component==True">
                                 <h6 class="sds">Toxicity details of the ingredients:</h6>
@@ -1030,7 +1030,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.acute_summary == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.acute_summary" />
+                                            <span class="sds" t-out="line.substance.acute_summary" />
                                         </t>
                                     </t>      
                                 </t>                                
@@ -1043,7 +1043,7 @@
                             </p>
                             <t t-if="doc.section_11_1_2_selector==True">
                                 <h6 class="sds">Skin corrosion/irritation details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_2_text" />
+                                <span class="sds" t-out="doc.section_11_1_2_text" />
                             </t>
                             <t t-if="doc.section_11_1_2_component==True">
                                 <h6 class="sds">Corrosion/irritation details of the ingredients:</h6>
@@ -1051,7 +1051,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.skin_corrosion == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.skin_corrosion" />
+                                            <span class="sds" t-out="line.substance.skin_corrosion" />
                                         </t>      
                                     </t>
                                 </t>                                
@@ -1064,7 +1064,7 @@
                             </p>
                             <t t-if="doc.section_11_1_3_selector==True">
                                 <h6 class="sds">Serious eye damage/eye irritation details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_3_text" />
+                                <span class="sds" t-out="doc.section_11_1_3_text" />
                             </t>
                             <t t-if="doc.section_11_1_3_component==True">
                                 <h6 class="sds">Eye damage/irritation details of the ingredients:</h6>
@@ -1072,7 +1072,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.eye_damage == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.eye_damage" />
+                                            <span class="sds" t-out="line.substance.eye_damage" />
                                         </t>
                                     </t>      
                                 </t>                                
@@ -1085,7 +1085,7 @@
                             </p>
                             <t t-if="doc.section_11_1_4_selector==True">
                                 <h6 class="sds">Respiratory or skin sensitization details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_4_text" />
+                                <span class="sds" t-out="doc.section_11_1_4_text" />
                             </t>
                             <t t-if="doc.section_11_1_4_component==True">
                                 <h6 class="sds">Respiratory/Skin sensitization details of the ingredients:</h6>
@@ -1093,7 +1093,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.sensitization == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.sensitization" />
+                                            <span class="sds" t-out="line.substance.sensitization" />
                                         </t>  
                                     </t>    
                                 </t>                                
@@ -1106,7 +1106,7 @@
                             </p>
                             <t t-if="doc.section_11_1_5_selector==True">
                                 <h6 class="sds">Germ cell mutagenicity details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_5_text" />
+                                <span class="sds" t-out="doc.section_11_1_5_text" />
                             </t>
                             <t t-if="doc.section_11_1_5_component==True">
                                 <h6 class="sds">Germ cell mutagenicity details of the ingredients:</h6>
@@ -1114,7 +1114,7 @@
                                     <t t-if="line.substance.toxicological==True">                                     
                                         <t t-if="not line.substance.mutagenity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.mutagenity" />
+                                            <span class="sds" t-out="line.substance.mutagenity" />
                                         </t>   
                                     </t>   
                                 </t>                                
@@ -1127,7 +1127,7 @@
                             </p>
                             <t t-if="doc.section_11_1_6_selector==True">
                                 <h6 class="sds">Carcinogenicity details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_6_text" />
+                                <span class="sds" t-out="doc.section_11_1_6_text" />
                             </t>
                             <t t-if="doc.section_11_1_6_component==True">
                                 <h6 class="sds">Carcinogenicity details of the ingredients:</h6>
@@ -1135,7 +1135,7 @@
                                     <t t-if="line.substance.toxicological==True">                                     
                                         <t t-if="not line.substance.carcinogenicity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.carcinogenicity" />
+                                            <span class="sds" t-out="line.substance.carcinogenicity" />
                                         </t> 
                                     </t>     
                                 </t>                                
@@ -1148,7 +1148,7 @@
                             </p>
                             <t t-if="doc.section_11_1_7_selector==True">
                                 <h6 class="sds">Reproductive toxicity details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_7_text" />
+                                <span class="sds" t-out="doc.section_11_1_7_text" />
                             </t>
                             <t t-if="doc.section_11_1_7_component==True">
                                 <h6 class="sds">Reproductive toxicity details of the ingredients:</h6>
@@ -1156,7 +1156,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.reproductive_toxicity == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.reproductive_toxicity" />
+                                            <span class="sds" t-out="line.substance.reproductive_toxicity" />
                                         </t> 
                                     </t>     
                                 </t>                                
@@ -1171,7 +1171,7 @@
                             </p>
                             <t t-if="doc.section_11_1_8_selector==True">
                                 <h6 class="sds">STOT SE details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_8_text" />
+                                <span class="sds" t-out="doc.section_11_1_8_text" />
                             </t>
                             <t t-if="doc.section_11_1_8_component==True">
                                 <h6 class="sds">STOT SE details of the ingredients:</h6>
@@ -1179,7 +1179,7 @@
                                     <t t-if="line.substance.toxicological==True">                                     
                                         <t t-if="not line.substance.stot_se == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.stot_se" />
+                                            <span class="sds" t-out="line.substance.stot_se" />
                                         </t>  
                                     </t>    
                                 </t>
@@ -1195,7 +1195,7 @@
                             </p>
                             <t t-if="doc.section_11_1_9_selector==True">
                                 <h6 class="sds">STOT RE details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_9_text" />
+                                <span class="sds" t-out="doc.section_11_1_9_text" />
                             </t>
                             <t t-if="doc.section_11_1_9_component==True">
                                 <h6 class="sds">STOT RE details of the ingredients:</h6>
@@ -1203,7 +1203,7 @@
                                     <t t-if="line.substance.toxicological==True">                                    
                                         <t t-if="not line.substance.stot_re == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.stot_re" />
+                                            <span class="sds" t-out="line.substance.stot_re" />
                                         </t>  
                                     </t>    
                                 </t>                                
@@ -1216,7 +1216,7 @@
                             </p>
                             <t t-if="doc.section_11_1_10_selector==True">
                                 <h6 class="sds">Aspiration Hazard details:</h6>
-                                <span class="sds" t-raw="doc.section_11_1_10_text" />
+                                <span class="sds" t-out="doc.section_11_1_10_text" />
                             </t>
                             <t t-if="doc.section_11_1_10_component==True">
                                 <h6 class="sds">Aspiration Hazard details of the ingredients:</h6>
@@ -1224,7 +1224,7 @@
                                     <t t-if="line.substance.toxicological==True">                                     
                                         <t t-if="not line.substance.aspiration_hazard == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.aspiration_hazard" />
+                                            <span class="sds" t-out="line.substance.aspiration_hazard" />
                                         </t>    
                                     </t>  
                                 </t>                                
@@ -1240,10 +1240,10 @@
                                 </span>
                             </p>
                         <h5 class="sds">11.2.2. Other information</h5>
-                        <span class="sds" t-raw="doc.section_11_2_2" />
+                        <span class="sds" t-out="doc.section_11_2_2" />
                     </div>
                     <t t-if="not doc.section_11_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <span class="sds" t-raw="doc.section_11_note" />
+                        <span class="sds" t-out="doc.section_11_note" />
                     </t>
                 </div>
                 <div id="section12">
@@ -1259,7 +1259,7 @@
                             </p>
                             <t t-if="doc.section_12_1_selector == True">
                                 <h6 class="sds">Product details:</h6>
-                                <span class="sds" t-raw="doc.section_12_1_text" />
+                                <span class="sds" t-out="doc.section_12_1_text" />
                             </t>
                             <t t-if="doc.section_12_1_component==True">
                                 <h6 class="sds">Ingredients details:</h6>
@@ -1267,7 +1267,7 @@
                                     <t t-if="line.substance.ecological==True">                                    
                                         <t t-if="not line.substance.toxicity_detail == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                             <p class="sds_h7" t-field="line.substance.name" />
-                                            <span class="sds" t-raw="line.substance.toxicity_detail" />
+                                            <span class="sds" t-out="line.substance.toxicity_detail" />
                                         </t>   
                                     </t>   
                                 </t>                                
@@ -1293,7 +1293,7 @@
                                 <t t-if="line.substance.ecological==True">                                     
                                     <t t-if="not line.substance.degradability == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.degradability" />
+                                        <span class="sds" t-out="line.substance.degradability" />
                                     </t> 
                                 </t>     
                             </t>                                
@@ -1318,7 +1318,7 @@
                                 <t t-if="line.substance.ecological==True">                                     
                                     <t t-if="not line.substance.bioaccumulation == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.bioaccumulation" />
+                                        <span class="sds" t-out="line.substance.bioaccumulation" />
                                     </t>  
                                 </t>    
                             </t>                                
@@ -1343,7 +1343,7 @@
                                 <t t-if="line.substance.ecological==True">                                    
                                     <t t-if="not line.substance.mobility == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.mobility" />
+                                        <span class="sds" t-out="line.substance.mobility" />
                                     </t>     
                                 </t> 
                             </t>                                
@@ -1368,7 +1368,7 @@
                                 <t t-if="line.substance.ecological==True">                                     
                                     <t t-if="not line.substance.pbt_vPvB == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.pbt_vPvB" />
+                                        <span class="sds" t-out="line.substance.pbt_vPvB" />
                                     </t>  
                                 </t>    
                             </t>                                
@@ -1393,7 +1393,7 @@
                                 <t t-if="line.substance.ecological==True">                                    
                                     <t t-if="not line.substance.endocrine == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.endocrine" />
+                                        <span class="sds" t-out="line.substance.endocrine" />
                                     </t>     
                                 </t> 
                             </t>                                
@@ -1418,7 +1418,7 @@
                                 <t t-if="line.substance.ecological==True">                                     
                                     <t t-if="not line.substance.other_effects == '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                                         <p class="sds_h7" t-field="line.substance.name" />
-                                        <span class="sds" t-raw="line.substance.other_effects" />
+                                        <span class="sds" t-out="line.substance.other_effects" />
                                     </t> 
                                 </t>     
                             </t>                                
@@ -1426,7 +1426,7 @@
                     </div>
                     <t t-if="not doc.section_12_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_12_note" />
+                            <span t-out="doc.section_12_note" />
                         </p>
                     </t>
                 </div>
@@ -1446,7 +1446,7 @@
                     </div>
                     <t t-if="not doc.section_13_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_13_note" />
+                            <span t-out="doc.section_13_note" />
                         </p>
                     </t>
                 </div>
@@ -1692,7 +1692,7 @@
                     </div>
                     <t t-if="not doc.section_14_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_14_note" />
+                            <span t-out="doc.section_14_note" />
                         </p>
                     </t>
                 </div>
@@ -1712,7 +1712,7 @@
                                                     <span t-field="line.regulation" />
                                                 </td>
                                                 <td style="text-align: left;">
-                                                    <span t-raw="line.text" />
+                                                    <span t-out="line.text" />
                                                 </td>
                                             </tr>
                                         </t>
@@ -1725,7 +1725,7 @@
                                                     </span>
                                                 </td>
                                                 <td style="text-align: left;">
-                                                    <span t-raw="doc.section_15_1" />
+                                                    <span t-out="doc.section_15_1" />
                                                 </td>
                                             </tr>
                                         </t>
@@ -1740,7 +1740,7 @@
                     </div>
                     <t t-if="not doc.section_15_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
-                            <span t-raw="doc.section_15_note" />
+                            <span t-out="doc.section_15_note" />
                         </p>
                     </t>
                 </div>
@@ -1754,7 +1754,7 @@
                                 <h4 class="sds">
                                     Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008</h4>
                                 <div class="sds">
-                                    <span t-raw="doc.section_16_classification_procedure" />
+                                    <span t-out="doc.section_16_classification_procedure" />
                                 </div>
                             </div>
                         </t>
@@ -1770,7 +1770,7 @@
                                             <td class="sds" style="width:100px;">
                                                 <span t-field="line.HazardStatement.code" />
                                             </td>
-                                            <td class="sds tdpl">
+                                            <td class="sds td_pl">
                                                 <span t-field="line.HazardStatement.name" />
                                             </td>
                                         </tr>
@@ -1790,7 +1790,7 @@
                                             <td class="sds" style="width:100px;">
                                                 <span t-field="line.name" />
                                             </td>
-                                            <td class="sds tdpl">
+                                            <td class="sds td_pl">
                                                 <span t-field="line.description" />
                                             </td>
                                         </tr>
@@ -1866,7 +1866,7 @@
                     </div>
                     <t t-if="not doc.section_16_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <div class="sds mt16">
-                            <span class="sds" t-raw="doc.section_16_note" />
+                            <span class="sds" t-out="doc.section_16_note" />
                         </div>
                     </t>
                 </div>

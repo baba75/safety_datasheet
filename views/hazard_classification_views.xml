@@ -1,0 +1,34 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+
+    <!-- search views -->
+
+    <!-- actions opening views on models -->
+    <record id="action_hazard_classification" model="ir.actions.act_window">
+        <field name="name">Hazard Classification</field>
+        <field name="res_model">sds.hazard.class</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new Hazard Classification
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_hazard_class_tree" model="ir.ui.view">
+        <field name="name">sds.hazard.class.tree</field>
+        <field name="model">sds.hazard.class</field>
+        <field name="arch" type="xml">
+            <tree string="Hazard Classification">
+                <field name="h_class" />
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

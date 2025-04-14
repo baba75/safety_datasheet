@@ -1,0 +1,66 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+    <record id="hazard_statement_view_form" model="ir.ui.view">
+        <field name="name">sds.hazard.statement.view.form</field>
+        <field name="model">sds.hazard.statement</field>
+        <field name="arch" type="xml">
+            <form string="Safety Datasheet">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="code" string="GHS Hazard Code" />
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="name" />
+                        <field name="pictogram_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- search views -->
+    <record id="view_hazard_statement_search" model="ir.ui.view">
+        <field name="name">sds.hazard.statement.search</field>
+        <field name="model">sds.hazard.statement</field>
+        <field name="arch" type="xml">
+            <search string="Hazard">
+                <field name="code" string="Hazard Code" />
+                <field name="name" string="Description" />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hazard_statement" model="ir.actions.act_window">
+        <field name="name">Hazard Statement</field>
+        <field name="res_model">sds.hazard.statement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_hazard_statement_search" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new Hazard Statement
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_hazard_statement_tree" model="ir.ui.view">
+        <field name="name">sds.hazard.statement.tree</field>
+        <field name="model">sds.hazard.statement</field>
+        <field name="arch" type="xml">
+            <tree string="Precautionary Statement">
+                <field name="code" />
+                <field name="name" />
+                <field name="pictogram_ids">
+                    <!--<field name="pictogram" widget="image"/>-->
+                </field>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

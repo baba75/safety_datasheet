@@ -1,0 +1,74 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+    <record id="regulation_view_form" model="ir.ui.view">
+        <field name="name">sds.regulation.view.form</field>
+        <field name="model">sds.regulation</field>
+        <field name="arch" type="xml">
+            <form string="Regulation">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="url" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="regulatory_information_view_form" model="ir.ui.view">
+        <field name="name">sds.regulatory.information.view.form</field>
+        <field name="model">sds.regulatory.information</field>
+        <field name="arch" type="xml">
+            <form string="Regulatory Information">
+                <sheet>
+                    <group>
+                        <field name="regulation" />
+                        <field name="text" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- search views -->
+
+    <!-- actions opening views on models -->
+    <record id="action_regulation" model="ir.actions.act_window">
+        <field name="name">Regulation</field>
+        <field name="res_model">sds.regulation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new regulation entry
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_regulation_tree" model="ir.ui.view">
+        <field name="name">sds.regulation.tree</field>
+        <field name="model">sds.regulation</field>
+        <field name="arch" type="xml">
+            <tree string="Regulation">
+                <field name="name" />
+                <field name="url" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_regulatory_information_tree" model="ir.ui.view">
+        <field name="name">sds.regulatory.information.tree</field>
+        <field name="model">sds.regulatory.information</field>
+        <field name="arch" type="xml">
+            <tree string="Regulation">
+                <field name="regulation" />
+                <field name="text" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,37 @@
+<odoo>
+    <!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+    <!-- form views -->
+
+    <!-- search views -->
+
+    <!-- actions opening views on models -->
+
+    <record id="action_pictograms" model="ir.actions.act_window">
+        <field name="name">Pictograms</field>
+        <field name="res_model">sds.pictogram</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                    Create a new Pictogram
+            </p>
+        </field>
+    </record>
+
+    <!-- tree views -->
+    <record id="view_pictogram_tree" model="ir.ui.view">
+        <field name="name">sds.pictogram.tree</field>
+        <field name="model">sds.pictogram</field>
+        <field name="arch" type="xml">
+            <tree string="Pictograms">
+                <field name="name" />
+                <field name="description" />
+                <field name="category" />
+                <field name="pictogram" widget="image" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
