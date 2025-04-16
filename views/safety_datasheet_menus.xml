@@ -5,20 +5,21 @@
     -->
 
     <!-- Menu item -->
-    <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user" web_icon="safety_datasheet,static/description/icon.png" />
-    <menuitem id="safety_datasheet_menu_tree" name="Datasheet" action="action_sds" parent="safety_datasheet_menu" />
-    <menuitem id="safety_datasheet_menu_tables" name="Tables" groups="base.group_user" parent="safety_datasheet_menu" />
-
-    <menuitem id="sds_menu_sentence" name="Action Sentences" action="action_action_sentences" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_bibliography" name="Bibliography" action="action_bibliography" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_substance" name="Chemical Substances" action="action_chemical_substances" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_distributor" name="National Distributors" action="action_distributor" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_hazard_classification" name="Hazard Classification" action="action_hazard_classification" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_hazard_statement" name="Hazard Statement" action="action_hazard_statement" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_legend" name="Legend" action="action_legend" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_pictogram" name="Pictograms" action="action_pictograms" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_poisoncentre" name="Poison Centres" action="action_poisoncentre" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_menu_precautionary" name="Precautionary Statement" action="action_precautionary_statement" parent="safety_datasheet_menu_tables" />
-    <menuitem id="sds_manu_regulation" name="Regulation" action="action_regulation" parent="safety_datasheet_menu_tables" />
+    <menuitem id="safety_datasheet_menu" name="Safety Datasheet" groups="base.group_user" web_icon="safety_datasheet,static/description/icon.png">
+        <menuitem id="safety_datasheet_menu_tree" name="Datasheet" action="action_sds"/>
+        <menuitem id="safety_datasheet_menu_tables" name="Tables" groups="base.group_user">
+            <menuitem id="sds_menu_sentence" name="Action Sentences" action="action_action_sentences"/>
+            <menuitem id="sds_menu_bibliography" name="Bibliography" action="action_bibliography"/>
+            <menuitem id="sds_menu_substance" name="Chemical Substances" action="action_chemical_substances"/>
+            <menuitem id="sds_menu_distributor" name="National Distributors" action="action_distributor"/>
+            <menuitem id="sds_menu_hazard_classification" name="Hazard Classification" action="action_hazard_classification"/>
+            <menuitem id="sds_menu_hazard_statement" name="Hazard Statement" action="action_hazard_statement"/>
+            <menuitem id="sds_menu_legend" name="Legend" action="action_legend"/>
+            <menuitem id="sds_menu_pictogram" name="Pictograms" action="action_pictograms"/>
+            <menuitem id="sds_menu_poisoncentre" name="Poison Centres" action="action_poisoncentre"/>
+            <menuitem id="sds_menu_precautionary" name="Precautionary Statement" action="action_precautionary_statement"/>
+            <menuitem id="sds_manu_regulation" name="Regulation" action="action_regulation"/>
+        </menuitem>
+    </menuitem>
 
 </odoo>

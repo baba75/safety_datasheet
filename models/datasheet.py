@@ -25,7 +25,9 @@ class SdsRegulationCriteria(models.Model):
     """
     _name = "sds.regulation.criteria"
     _description = "European Community Regulation Criteria"
+    _order = "sequence"
 
+    sequence = fields.Integer(string='Sequence', default=10)
     datasheet_id = fields.Many2one('sds.datasheet', 'Related Datasheet', copy=True)
     Classification = fields.Many2one('sds.hazard.class', 'Hazard Class', copy=True)
     HazardStatement = fields.Many2one('sds.hazard.statement', 'Hazard Statement', copy=True)
@@ -44,6 +46,10 @@ class SdsChemicalClassification(models.Model):
 
     HazardCategories = fields.Many2one('sds.hazard.class', 'Hazard Categories')
     HazardStatement = fields.Many2one('sds.hazard.statement', 'Hazard Statement')
+
+# TODO: Datasheet => Data Sheet
+# add a state field for published SDS in Submission portal
+# add submission information (no, date, ecc)
 
 class SdsDatasheet(models.Model):
     """
@@ -779,56 +785,6 @@ class SdsDatasheet(models.Model):
         result = self.update(vals)
         return result
 
-    def xlate_default(self,ids=False):
-        """
-        This function set the translation of default values.
-        It is called by the specific button
-        :return:
-        """
-        if self.ids:
-            ids = self.ids
-
-        xlat_obj = self.env['ir.translation']
-        model = 'sds'
-        my_fields = self.fields_get().keys()
-        my_defaults = self.default_get(my_fields)
-
-        for my_field in my_fields:
-            fname = model + '.datasheet,' + my_field
-            default_ids = xlat_obj._get_ids(fname, 'model', 'en_US', ids)
-            # FIXME: I have some troubles with sanitization of HTML and translation of default values.
-            # We do not want sanitization, because is splitting the translation into several pieces.
-            # On the other hand, I do not know how to manage quotes (like in "... user's ...") or <br/>
-            # that becomes magically <br>
-
-            if my_field in my_defaults:
-                xlat_src = my_defaults[my_field]
-                # First we want to see if the user made a translation
-                xlat_values = xlat_obj.search([('name','like',fname),
-                                               ('src','like',xlat_src),
-                                               ('state','like','translated')])
-                if not xlat_values:
-                    # Then we take the default
-                    xlat_values = xlat_obj.search([['name','like','addons/safety_datasheet'],
-                                               ['src','like',xlat_src]
-                                               ])
-                    # If even the default does not exists, give up
-                    if not xlat_values:
-                        continue
-                xlat_dict = dict(zip(xlat_values.mapped('lang'),xlat_values.mapped('value')))
-                for lang in xlat_values.mapped('lang'):
-                    if lang == 'sr@latin':
-                        continue
-                    xlat_obj._set_ids(
-                        fname,
-                        'model',
-                        lang,
-                        default_ids,
-                        xlat_dict[lang],
-                        xlat_src,
-                    )
-        return
-
     @api.returns('self', lambda value: value.id)
     def copy(self, default=None):
         self.ensure_one()
@@ -889,66 +845,21 @@ class SdsDatasheet(models.Model):
         pids = dict(pids or {})
         props = {}
         prop_obj = self.env['sds.chemical.property'].search([])
-        xlat_obj = self.env['ir.translation']
 
         prop_ids = []
 
         for prop in prop_obj:
             if prop.name in values:
                 props.update({prop.name: values[prop.name]})
-                # Find the translations
-                # I do not know why full name search (like 'sds.chemical.property.line,value') is not working
-                xlat_values = xlat_obj.search([
-                    ['name','like','sds.chemical.property.line,value'],
-                    ['res_id','=',pids[prop.name]],
-                    ['src','like',values[prop.name]]
-                ])
             else:
-                xlat_values = False
                 props.update({prop.name: _('n.a.')})
             prop_id = self.env['sds.chemical.property.line'].create(
                 {'name_id': prop.id , 'value': props[prop.name]})
             prop_ids += prop_id
-            if xlat_values:
-                xlat_dict = dict(zip(xlat_values.mapped('lang'), xlat_values.mapped('value')))
-                for lang in xlat_values.mapped('lang'):
-                    xlat_obj._set_ids(
-                        'sds.chemical.property.line,value',
-                        'model',
-                        lang,
-                        [prop_id.id],
-                        xlat_dict[lang],
-                        values[prop.name],
-                    )
 
         vals = {}
         vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
         return self.update(vals)
-
-    def clear_dnel(self, values=None, pids=None):
-        """
-        Clear the textbox about DNEL  (Section 8.1)
-        and all translations
-        :return:
-        """
-        vals = {}
-        vals.update({'section_8_1_dnel': _('<p><br></p>')})
-        self.update(vals)
-
-        xlat_obj = self.env['ir.translation']
-        xlat_values = xlat_obj.search([
-                    ['name','like','sds.datasheet,section_8_1_dnel']
-                ])
-        for lang in xlat_values.mapped('lang'):
-                    xlat_obj._set_ids(
-                        'sds.datasheet,section_8_1_dnel',
-                        'model',
-                        lang,
-                        [self.id],
-                        '<p><br></p>',
-                        '<p><br></p>',
-                    )  
-        return 
     
     @api.model
     def _get_available_dnel(self):
@@ -969,3 +880,11 @@ class SdsDatasheet(models.Model):
                 chem_sub.update({chem.substance.name: chem.substance.wrk_aq_sys_dermal})
 
         return chem_sub
+
+    def sds_preview(self):
+        if self.id:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '/report/html/safety_datasheet.report_safety_datasheet?ids=%s&model=sds.datasheet&lang=%s&country=%s' % (self.id,'en_US','Italy'),
+                'target': 'new',
+            }

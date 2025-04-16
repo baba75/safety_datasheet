@@ -11,7 +11,7 @@
             <form string="Safety Datasheet">
                 <header>
                     <button type="action" name="%(safety_datasheet.action_wizard_select_lang)d" string="Print" class="oe_highlight" />
-                    <button string="Translate default values" type="object" name="xlate_default" />
+                    <button type="object" name="sds_preview" string="Preview" />
                 </header>
                 <sheet>
                     <div class="oe_title">
@@ -31,19 +31,18 @@
                             <form>
                                 <!-- Identification of the substance/mixture and of the
                                     company/undertaking -->
-                                <group col="3" string="SECTION 1: Identification of the substance/mixture and of the company/undertaking" name="identification">
+                                <group string="SECTION 1: Identification of the substance/mixture and of the company/undertaking" name="identification">
                                     <field name="section_1_1" string="1.1 Product Identifier" />
-                                    <field name="section_1_1_UFI" string="Unique formula identifier (UFI)" />
-                                    <field name="section_1_2" string="1.2 Relevant identified uses of the substance or mixture and uses advised against recommended use:" />
-                                    <field name="section_1_3" string="1.3 Detail of the supplier of the safety data sheet" />
-                                    <field name="section_1_3_distributor_selector" string="Insert National Distributor contact" />
-                                    <field name="section_1_3_info" string="Email of the person responsible for safety data sheets"/>
+                                    <field name="section_1_1_UFI" string="UFI" />
+                                    <field name="section_1_2" string="1.2 Identified uses" />
+                                    <field name="section_1_3" string="1.3 SDS Supplier" />
+                                    <field name="section_1_3_distributor_selector" string="Insert distributor" />
+                                    <field name="section_1_3_info" string="Email of the person in charge"/>
                                 </group>
                                 <group>
-                                    <span>1.3 Set National Distributor contacts under Tables
+                                    <span colspan="2">1.3 Set National Distributor contacts under Tables
                                             -&gt; Distributors</span>
-                                    <br/>
-                                    <span>1.4 Set Emergency Telephone numbers under Tables -&gt;
+                                    <span colspan="2">1.4 Set Emergency Telephone numbers under Tables -&gt;
                                             Poison Centres</span>
                                 </group>
                                 <group string="SECTION 1: free notes">
@@ -61,21 +60,22 @@
                                         <field name="section_2_1_b_selector" />
                                         <field name="section_2_2_selector" />
                                     </group>
-                                    <group attrs="{'invisible': [('section_2_1_selector', '=', False)]}">
+                                    <group colspan="2" attrs="{'invisible': [('section_2_1_selector', '=', False)]}">
                                         <field name="section_2_1" string="2.1 Classification of the substance or mixture" context="{'datasheet_id': active_id}" widget="one2many_list">
-                                            <tree string="EC regulation criteria 1272/2008 (CLP):" editable="bottom">
+                                            <tree class="ml32" string="EC regulation criteria 1272/2008 (CLP):" editable="bottom">
+                                                <field name="sequence" widget="handle"/>
                                                 <field name="Classification" options="{'no_create': True}" />
                                                 <field name="HazardStatement" context="{'show_only_code': True}" />
                                             </tree>
                                         </field>
                                     </group>
-                                    <group attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
+                                    <group colspan="2" attrs="{'invisible': [('section_2_2_selector', '=', False)]}">
                                         <field name="section_2_2_pictograms" widget="many2many">
-                                            <tree editable="bottom">
+                                            <tree class="ml32" editable="bottom">
                                                 <field name="sequence" widget="handle" />
                                                 <field name="name" />
                                                 <field name="description" />
-                                                <field name="pictogram" widget="image" />
+                                                <field name="pictogram" widget="image" options='{"size": [30, 30]}' />
                                             </tree>
                                         </field>
                                     </group>
@@ -126,7 +126,7 @@
                                             </div>
                                             <div>
                                                 <field name="section_3_2" context="{'datasheet_id': active_id}" widget="one2many_list">
-                                                    <tree string="Mixture:" editable="bottom">
+                                                    <tree class="mt32" string="Mixture:" editable="bottom">
                                                         <field name="sequence" widget="handle" />
                                                         <field name="substance" />
                                                         <field name="concentration" />
@@ -149,31 +149,31 @@
                             <form>
                                 <group string="Section 4: First aid measures" name="firstaid">
                                     <field name="section_4_1_general" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_4_1_inhalation" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_4_1_skin" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_4_1_eye" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_4_1_ingestion" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -196,13 +196,13 @@
                                     <field name="section_5_1_1" widget="many2many_checkboxes" />
                                     <field name="section_5_1_2" widget="many2many_checkboxes" />
                                     <field name="section_5_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_5_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -219,25 +219,25 @@
                             <form>
                                 <group string="Section 6: Accidental release measures" name="accidental">
                                     <field name="section_6_1_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_6_1_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_6_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_6_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -255,25 +255,25 @@
                             <form>
                                 <group string="Section 7: Handling and storage" name="handling">
                                     <field name="section_7_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_7_2_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_7_2_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_7_2_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -308,43 +308,43 @@
                                 </group>
                                 <group>
                                     <field name="section_8_2_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_2_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_2_3_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_2_3_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_2_4" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_2_5" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_8_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -360,11 +360,11 @@
                         <page string="9" name="section9">
                             <form>
                                 <group string="Section 9: Physical and chemical properties" name="properties">
-                                    <button string="Insert properties" type="object" name="fill_properties" class="oe_highlight" />
+                                    <button colspan="2" string="Insert properties" type="object" name="fill_properties" class="oe_highlight" />
                                 </group>
                                 <group>
                                     <field name="section_9_1" context="{'datasheet_id': active_id}" widget="one2many_list">
-                                        <tree string="Physical and chemical properties:" editable="bottom">
+                                        <tree class="ml32 mt16" string="Physical and chemical properties:" editable="bottom">
                                             <field name="name_id" />
                                             <field name="value" />
                                         </tree>
@@ -382,38 +382,38 @@
                             <form>
                                 <group string="Section 10: Stability and reactivity" name="stability">
                                     <field name="section_10_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_10_1_component" />
                                     <field name="section_10_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_10_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_10_4" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_10_5" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_10_6" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -430,19 +430,19 @@
                             <form>
                                 <group string="Section 11: Toxicological information" name="toxicological">
                                     <field name="section_11_1_1_oral" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_11_1_1_dermal" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
                                     </field>
                                     <field name="section_11_1_1_inhalation" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -455,7 +455,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -468,7 +468,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -481,7 +481,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_4" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -494,7 +494,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_5" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -507,7 +507,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_6" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -520,7 +520,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_7" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -533,7 +533,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_8" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -546,7 +546,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_9" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -559,7 +559,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_1_10" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" ditable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -572,7 +572,7 @@
                                 </group>
                                 <group>
                                     <field name="section_11_2_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -590,7 +590,7 @@
                             <form>
                                 <group string="Section 12: Ecological information" name="ecological">
                                     <field name="section_12_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -603,7 +603,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_2" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -616,7 +616,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_3" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -629,7 +629,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_4" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -642,7 +642,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_5" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -655,7 +655,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_6" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -668,7 +668,7 @@
                                 </group>
                                 <group>
                                     <field name="section_12_7" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -692,7 +692,7 @@
                             <form>
                                 <group string="Section 13: Disposal considerations" name="disposal">
                                     <field name="section_13_1" widget="many2many">
-                                        <tree editable="bottom">
+                                        <tree class="ml32 mt16" editable="bottom">
                                             <field name="sequence" widget="handle" />
                                             <field name="name" />
                                         </tree>
@@ -749,7 +749,7 @@
                             <form>
                                 <group string="Section 15: Regulatory Information" name="regulatory">
                                     <field name="section_15_regulation" context="{'datasheet_id': active_id}" widget="one2many_list">
-                                        <tree string="Regulatory Information">
+                                        <tree class="ml32 mt16" string="Regulatory Information">
                                             <field name="regulation" />
                                             <field name="text" />
                                         </tree>
@@ -770,13 +770,13 @@
                             <form>
                                 <group string="Section 16: Other information" name="other">
                                     <field name="section_16_classification_procedure" />
-                                    <field name="section_16_legend" />
+                                    <field class="ml32" name="section_16_legend" />
                                     <field name="section_16_bibliography_url" widget="checkbox" />
-                                    <field name="section_16_bibliography" />
+                                    <field class="ml32" name="section_16_bibliography" />
                                     <field name="section_16_changes" />
                                 </group>
                                 <group string="SECTION 16: free notes">
-                                    <field name="section_16_note" />
+                                    <field class="ml32" name="section_16_note" />
                                 </group>
                             </form>
                         </page>

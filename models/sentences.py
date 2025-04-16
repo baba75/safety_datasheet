@@ -4,6 +4,8 @@
 
 from odoo import models, fields
 
+# TODO: Sentences -> Statements
+
 class SdsSentences(models.Model):
 
     _name = "sds.sentences"

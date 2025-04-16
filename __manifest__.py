@@ -45,7 +45,7 @@
         "security/ir.model.access.csv",
     ],
     "assets": {
-        "web.assets_frontend": ["/safety_datasheet/static/src/css/sds.css"],
+        "web.report_assets_common": ["/safety_datasheet/static/src/css/sds.css"],
     },
     "application": True,
     "development_status": "Beta",
