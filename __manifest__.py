@@ -4,7 +4,7 @@
 
 {
     "name": "Safety Data Sheets",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Specific Industry Applications",
     "summary": """
         Product Safety Data Sheets""",
@@ -45,7 +45,7 @@
         "security/ir.model.access.csv",
     ],
     "assets": {
-        "web.assets_frontend": ["/safety_datasheet/static/src/css/sds.css"],
+        "web.report_assets_common": ["/safety_datasheet/static/src/css/sds.css"],
     },
     "application": True,
     "development_status": "Beta",

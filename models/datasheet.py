@@ -25,7 +25,9 @@ class SdsRegulationCriteria(models.Model):
     """
     _name = "sds.regulation.criteria"
     _description = "European Community Regulation Criteria"
+    _order = "sequence"
 
+    sequence = fields.Integer(string='Sequence', default=10)
     datasheet_id = fields.Many2one('sds.datasheet', 'Related Datasheet', copy=True)
     Classification = fields.Many2one('sds.hazard.class', 'Hazard Class', copy=True)
     HazardStatement = fields.Many2one('sds.hazard.statement', 'Hazard Statement', copy=True)
@@ -44,6 +46,10 @@ class SdsChemicalClassification(models.Model):
 
     HazardCategories = fields.Many2one('sds.hazard.class', 'Hazard Categories')
     HazardStatement = fields.Many2one('sds.hazard.statement', 'Hazard Statement')
+
+# TODO: Datasheet => Data Sheet
+# add a state field for published SDS in Submission portal
+# add submission information (no, date, ecc)
 
 class SdsDatasheet(models.Model):
     """
@@ -108,24 +114,41 @@ class SdsDatasheet(models.Model):
                                           default='warning')
     section_2_2_P = fields.Many2many('sds.precautionary.statement', string="Precautionary Statement", copy=True)
     section_2_2_Additional = fields.Html('Additional Labelling', translate=True)
-    section_2_3_PBT = fields.Char(string="PBT",
-                                  help="persistent, bioaccumulative and toxic substances (PBT substances)",
-                                  default=lambda s: _('This substance/mixture does not meet the PBT criteria of REACH regulation, annex XIII.'), required=True, translate=True)
-    section_2_3_vPvB = fields.Char(string="vPvB",
-                                   help="very persistent and very bioaccumulative substances (vPvB substances)",
-                                   default=lambda s: _('This substance/mixture does not meet the vPvB criteria of REACH regulation, annex XIII.'), required=True, translate=True)
-    section_2_3_endocrine= fields.Char(string="Endocrine disrupting",
-                                   help="Endocrine disrupting properties",
-                                   default=lambda s: _('The product is not listed or identified as having endocrine disrupting properties in accordance with the criteria set out in Commission Delegated Regulation (EU) 2017/210.'), 
-                                   required=True, translate=True)
+   
+    """
+    At first look, the following three fields may be confused with the corresponding fields in section 11. 
+    Here, we should declare *IF* those properties are verified or listed; in section 11, we give the information 
+    on adverse health effects caused by. We will use the same sentence category.
+    """ 
+    section_2_3_PBT = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'pbtvpvb')]", 
+                                       string='is PBT ?',
+                                       help="Persistent, Bioaccumulative and Toxic substances (PBT substances)",
+                                       context={'default_category': 'pbtvpvb',},
+                                       required=True,
+                                       copy=True)
+    section_2_3_vPvB = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'pbtvpvb')]", 
+                                       string='is vPvB ?',
+                                       help="very persistent and very bioaccumulative substances (vPvB substances)",
+                                       context={'default_category': 'pbtvpvb',},
+                                       required=True,
+                                       copy=True)
+    section_2_3_endocrine = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'endocrine')]", 
+                                       string='is endocrine disrupting ?',
+                                       help="Endocrine disrupting properties",
+                                       context={'default_category': 'endocrine',},
+                                       required=True,
+                                       copy=True)
     
+ 
     section_2_3_OtherHazards = fields.Char(string="Other Hazards", default=lambda s: _('none'), required=True,
                                            translate=True)
     section_2_note = fields.Html(string="Section 2 notes", translate=True)
 
     # Section 3: Composition/information on ingredients
     # Hint: Look at https://www.echa.europa.eu/substance-information/
-    # FIXME: only subsection 3.1 or subsection 3.2 needs to be included as appropriate
     section_3 = fields.Char(string="Chemical identity", translate=True)
     section_3_type = fields.Selection([('substance', 'Substance'), ('mixture', 'Mixture')],
                                               string="Product type",
@@ -134,8 +157,6 @@ class SdsDatasheet(models.Model):
     section_3_2_selector = fields.Boolean(string="Mixture", default=False)
     section_3_2 = fields.One2many('sds.chemical.mixture', 'datasheet_id', string='Mixture elements')
     section_3_note = fields.Html(string="Section 3 notes", translate=True)
-
-    # FIXME: sds.sentences are not displaying in the right order on report.
 
     # Section 4: First aid measures
     section_4_1_general = fields.Many2many('sds.sentences', relation="sds_general_firstaid_statement_rel",
@@ -153,7 +174,6 @@ class SdsDatasheet(models.Model):
     section_4_1_ingestion = fields.Many2many('sds.sentences', relation="sds_ingestion_firstaid_statement_rel",
                                              domain="[('category', '=', 'ingestion')]", string='Ingestion',
                                              context={'default_category': 'ingestion'})
-
     section_4_2 = fields.Html(string="Most important symptoms and effects, both acute and delayed",
                               default=lambda s: _(
                                   "Specific information on symptoms and effects caused by the product are unknown."),
@@ -199,9 +219,12 @@ class SdsDatasheet(models.Model):
                                    domain="[('category', '=', 'containment')]",
                                    string='Methods and materials for containment and cleaning up',
                                    context={'default_category': 'containment'})
-    section_6_4 = fields.Html(string="Reference to other sections",
-                              default=lambda s: _("See sections: 7, 8, 11, 12 and 13."),
-                              translate=True, sanitize=False)
+    section_6_4 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'ref_section')]", 
+                                       string='Reference to other sections',
+                                       context={'default_category': 'ref_section',},
+                                       required=True,
+                                       copy=True)
     section_6_note = fields.Html(string="Section 6 notes", translate=True)
 
     # Section 7: Handling and storage
@@ -221,16 +244,17 @@ class SdsDatasheet(models.Model):
                                      domain="[('category', '=', 'store_products')]",
                                      string='Unsuitable materials for containers',
                                      context={'default_category': 'store_products'})
-    section_7_3 = fields.Html(string="Specific end use",
-                              default=lambda s: _(
-                                  "See the technical data sheet on this product for further information."),
-                              translate=True, sanitize=False)
+    section_7_3 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'end_use')]", 
+                                       string='Specific end use',
+                                       context={'default_category': 'end_use',},
+                                       required=True,
+                                       copy=True)
     section_7_note = fields.Html(string="Section 7 notes", translate=True)
 
     # Section 8: Exposure controls/personal protection
     section_8_1_tlv_selector = fields.Boolean(string="TLV of the mixture",help="Occupational exposure limit of the entire mixture (TLV).", default=False)
     section_8_1_tlv_selector_ing = fields.Boolean(string="TLV of the ingredients",help="Occupational exposure limit of the ingredients (TLV).", default=False)
-
     section_8_1_tlv = fields.Html(string='TLV',
                                   default=lambda s: _('<table class="table table-bordered">'
                                        '<thead class="table-columns">' 
@@ -258,7 +282,6 @@ class SdsDatasheet(models.Model):
                                   translate=True,sanitize=False)
     section_8_1_dnel_selector = fields.Boolean(string="DNEL of the mixture",help="Derived No Effect Level (DNEL) of the mixture", default=False)
     section_8_1_dnel_selector_ing = fields.Boolean(string="DNEL of ingredients", help="Show DNEL of ingredients", default=False)
-
     section_8_1_dnel = fields.Html(string='DNEL',
                                    default=lambda s: _(
                                        '<p><b>Derived No Effect Level<br>'
@@ -368,9 +391,12 @@ class SdsDatasheet(models.Model):
     # Section 9: Physical and chemical properties
     section_9_1 = fields.Many2many('sds.chemical.property.line', relation="sds_chemical_property_rel",
                                    string="Physical and chemical properties", copy=False)
-    section_9_2 = fields.Html(string="Other information", default=lambda s: _("No data available."),
-                              translate=True, sanitize=False)
-
+    section_9_2 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'other_info')]", 
+                                       string='Other information',
+                                       context={'default_category': 'other_info',},
+                                       required=True,
+                                       copy=True)
     section_9_note = fields.Html(string="Section 9 Notes", translate=True)
 
     # Section 10: Stability and reactivity
@@ -536,9 +562,12 @@ class SdsDatasheet(models.Model):
                                        domain="[('category', '=', 'endocrine')]",
                                        string='Endocrine disrupting properties',
                                        context={'default_category': 'endocrine'})
-    section_11_2_2 = fields.Html(string='Other information', default=lambda s: _("None available."),
-                               translate=True,sanitize=False)
-
+    section_11_2_2 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'other_info')]", 
+                                       string='Other information',
+                                       context={'default_category': 'other_info',},
+                                       required=True,
+                                       copy=True)
     section_11_note = fields.Html(string="Section 11 Notes", translate=True)
 
     # Section 12: Ecological information
@@ -630,9 +659,16 @@ class SdsDatasheet(models.Model):
     section_13_note = fields.Html(string="Section 13 Notes", translate=True)
 
     # Section 14: Transport information
+    """
+    When not specifying the transport regulation, we prefer the Many2one approach to reduce the proliferation of translations.
+    """ 
     section_14_selector = fields.Boolean(string="Specify ADR/RID/ADN/IMDG/IATA transport regulation", default=False)
-    # We assume UN number the same for ADR/RID/ADN/IMDG/IATA
-    section_14_1 = fields.Char('UN number', default=lambda s: _("Not regulated for transport."), translate=True)
+    section_14_1 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'transport')]", 
+                                       string='UN number',
+                                       context={'default_category': 'transport',},
+                                       required=True,
+                                       copy=True)
     # First part is for ADR/RID/ADN
     section_14_2 = fields.Char('Proper shipping name (ADR)', default=lambda s: _("Not regulated for transport."),
                                translate=True)
@@ -643,7 +679,8 @@ class SdsDatasheet(models.Model):
                                      domain="[('category', '=', 'transport')]",
                                      context={'default_category': 'transport'},copy=True)
     section_14_3_adr_notes = fields.Html(string="ADR/RID/ADN additional notes", translate=True)
-    # Maritime Dangerous Goods (IMDG)
+    # Maritime Dangerous Goods (IMDG)    
+    
     section_14_2_imdg = fields.Char('Proper shipping name (IMDG)', default=lambda s: _("Not regulated for transport."),
                                translate=True)
     section_14_3_imdg = fields.Char('Transport hazard class(es) (IMDG)', default=lambda s: _("Not regulated for transport."),
@@ -664,14 +701,30 @@ class SdsDatasheet(models.Model):
                                      context={'default_category': 'transport'},copy=True)
     section_14_3_iata_notes = fields.Html(string="ICAO - IATA additional notes", translate=True)
 
-    section_14_4 = fields.Char('Packing group', default=lambda s: _("Not regulated for transport."), translate=True)
-    section_14_5 = fields.Char('Environmental hazards', default=lambda s: _("Not Hazardous to the environment."),
-                               translate=True)
-    section_14_6 = fields.Char('Special precautions for user',
-                               default=lambda s: _("Relevant information in other sections has to be considered."),
-                               translate=True)
-    section_14_7 = fields.Char('Maritime transport in bulk according to IMO instruments',
-                               default=lambda s: _("Bulk transport in tankers is not intended."), translate=True)
+    section_14_4 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'transport')]", 
+                                       string='Packing group',
+                                       context={'default_category': 'transport',},
+                                       required=True,
+                                       copy=True)
+    section_14_5 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'transport')]", 
+                                       string='Environmental hazards',
+                                       context={'default_category': 'transport',},
+                                       required=True,
+                                       copy=True)
+    section_14_6 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'transport')]", 
+                                       string='Special precautions for user',
+                                       context={'default_category': 'transport',},
+                                       required=True,
+                                       copy=True)
+    section_14_7 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'transport')]", 
+                                       string='Maritime transport in bulk according to IMO instruments',
+                                       context={'default_category': 'transport',},
+                                       required=True,
+                                       copy=True)
     section_14_note = fields.Html(string="Section 14 Notes", translate=True)
 
     # Section 15: Regulatory Information
@@ -682,20 +735,21 @@ class SdsDatasheet(models.Model):
     section_15_1 = fields.Html(
         string="Other regulations specific for the substance or mixture",
         default=lambda s: _('None available.'), translate=True, sanitize=False)
-    section_15_2 = fields.Char('Chemical safety assessment',
-                               default=lambda s: _(
-                                   'No Chemical Safety Assessment has been carried out for this substance/mixture.'),
-                               translate=True)
+    section_15_2 = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'assessment')]", 
+                                       string='Chemical safety assessment',
+                                       context={'default_category': 'assessment',},
+                                       required=True,
+                                       copy=True)
     section_15_note = fields.Html(string="Section 15 Notes", translate=True)
 
     # Section 16: Other information
-    section_16_classification_procedure = fields.Html(
-        string="Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008",
-        default=lambda s: _('<p>The information contained in this Safety Data Sheet is derived '
-                            'from the data provided by the suppliers of the components of the mixture, '
-                            'that we verified adequate and reliable by analogy with similar products '
-                            'and with the information provided by ECHA.</p>'),
-        translate=True, sanitize=False)
+    section_16_classification_procedure = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'classification')]", 
+                                       string='Classification and procedure used',
+                                       context={'default_category': 'classification',},
+                                       required=True,
+                                       copy=True)
 
     # Only literal strings can be marked for exports, not expressions or variables.
 
@@ -706,18 +760,13 @@ class SdsDatasheet(models.Model):
                                    string="Bibliography entries")
 
     section_16_changes = fields.Char('Changes made to the previous version', default=lambda s: _('Initial version'), translate=True)
-    section_16_note = fields.Html(string="Section 16 Notes",
-                                  default=lambda s: _('<p class="sds">'
-                                                      'The information contained in this sheet is based on the knowledge available to us at the date '
-                                                      'of the latest version. The user must ensure the suitability and completeness of the information '
-                                                      'in relation to the specific use of the product.<br> This document should not be construed as a '
-                                                      'guarantee of any specific property of the product.<br> Since the use of the product does not fall '
-                                                      'under our direct control, it is the user s obligation to observe the laws and regulations in force '
-                                                      'regarding hygiene and safety under his own responsibility. No responsibility is assumed for '
-                                                      'improper use.<br> Provide adequate training to personnel assigned to the use of chemical products.'
-                                                      '</p>'),
-                                  translate=True, sanitize=False)
-
+    # FIXME: Change field name to 'section_16_disclaimer' or add a field
+    section_16_note = fields.Many2one('sds.sentences', 
+                                       domain="[('category', '=', 'disclaimer')]", 
+                                       string='Section 16 Notes',
+                                       context={'default_category': 'disclaimer',},
+                                       required=True,
+                                       copy=True)
 
     @api.onchange('product_id')
     def product_id_change(self):
@@ -779,56 +828,6 @@ class SdsDatasheet(models.Model):
         result = self.update(vals)
         return result
 
-    def xlate_default(self,ids=False):
-        """
-        This function set the translation of default values.
-        It is called by the specific button
-        :return:
-        """
-        if self.ids:
-            ids = self.ids
-
-        xlat_obj = self.env['ir.translation']
-        model = 'sds'
-        my_fields = self.fields_get().keys()
-        my_defaults = self.default_get(my_fields)
-
-        for my_field in my_fields:
-            fname = model + '.datasheet,' + my_field
-            default_ids = xlat_obj._get_ids(fname, 'model', 'en_US', ids)
-            # FIXME: I have some troubles with sanitization of HTML and translation of default values.
-            # We do not want sanitization, because is splitting the translation into several pieces.
-            # On the other hand, I do not know how to manage quotes (like in "... user's ...") or <br/>
-            # that becomes magically <br>
-
-            if my_field in my_defaults:
-                xlat_src = my_defaults[my_field]
-                # First we want to see if the user made a translation
-                xlat_values = xlat_obj.search([('name','like',fname),
-                                               ('src','like',xlat_src),
-                                               ('state','like','translated')])
-                if not xlat_values:
-                    # Then we take the default
-                    xlat_values = xlat_obj.search([['name','like','addons/safety_datasheet'],
-                                               ['src','like',xlat_src]
-                                               ])
-                    # If even the default does not exists, give up
-                    if not xlat_values:
-                        continue
-                xlat_dict = dict(zip(xlat_values.mapped('lang'),xlat_values.mapped('value')))
-                for lang in xlat_values.mapped('lang'):
-                    if lang == 'sr@latin':
-                        continue
-                    xlat_obj._set_ids(
-                        fname,
-                        'model',
-                        lang,
-                        default_ids,
-                        xlat_dict[lang],
-                        xlat_src,
-                    )
-        return
-
     @api.returns('self', lambda value: value.id)
     def copy(self, default=None):
         self.ensure_one()
@@ -889,66 +888,21 @@ class SdsDatasheet(models.Model):
         pids = dict(pids or {})
         props = {}
         prop_obj = self.env['sds.chemical.property'].search([])
-        xlat_obj = self.env['ir.translation']
 
         prop_ids = []
 
         for prop in prop_obj:
             if prop.name in values:
                 props.update({prop.name: values[prop.name]})
-                # Find the translations
-                # I do not know why full name search (like 'sds.chemical.property.line,value') is not working
-                xlat_values = xlat_obj.search([
-                    ['name','like','sds.chemical.property.line,value'],
-                    ['res_id','=',pids[prop.name]],
-                    ['src','like',values[prop.name]]
-                ])
             else:
-                xlat_values = False
                 props.update({prop.name: _('n.a.')})
             prop_id = self.env['sds.chemical.property.line'].create(
                 {'name_id': prop.id , 'value': props[prop.name]})
             prop_ids += prop_id
-            if xlat_values:
-                xlat_dict = dict(zip(xlat_values.mapped('lang'), xlat_values.mapped('value')))
-                for lang in xlat_values.mapped('lang'):
-                    xlat_obj._set_ids(
-                        'sds.chemical.property.line,value',
-                        'model',
-                        lang,
-                        [prop_id.id],
-                        xlat_dict[lang],
-                        values[prop.name],
-                    )
 
         vals = {}
         vals.update({'section_9_1': [(4, new_prop_id.id) for new_prop_id in prop_ids]})
         return self.update(vals)
-
-    def clear_dnel(self, values=None, pids=None):
-        """
-        Clear the textbox about DNEL  (Section 8.1)
-        and all translations
-        :return:
-        """
-        vals = {}
-        vals.update({'section_8_1_dnel': _('<p><br></p>')})
-        self.update(vals)
-
-        xlat_obj = self.env['ir.translation']
-        xlat_values = xlat_obj.search([
-                    ['name','like','sds.datasheet,section_8_1_dnel']
-                ])
-        for lang in xlat_values.mapped('lang'):
-                    xlat_obj._set_ids(
-                        'sds.datasheet,section_8_1_dnel',
-                        'model',
-                        lang,
-                        [self.id],
-                        '<p><br></p>',
-                        '<p><br></p>',
-                    )  
-        return 
     
     @api.model
     def _get_available_dnel(self):
@@ -969,3 +923,11 @@ class SdsDatasheet(models.Model):
                 chem_sub.update({chem.substance.name: chem.substance.wrk_aq_sys_dermal})
 
         return chem_sub
+
+    def sds_preview(self):
+        if self.id:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '/report/html/safety_datasheet.report_safety_datasheet?ids=%s&model=sds.datasheet&lang=%s&country=%s' % (self.id,'en_US','Italy'),
+                'target': 'new',
+            }

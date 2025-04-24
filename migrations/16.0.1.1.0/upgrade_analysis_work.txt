@@ -1,0 +1,20 @@
+---Fields in module 'safety_datasheet'---
+safety_datasheet         / sds.regulation.criteria        / sequence (integer)              : NEW hasdefault: default
+safety_datasheet         / sds.datasheet                  / section_2_3_PBT (char)          : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_2_3_vPvB (char)         : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_2_3_endocrine (char)    : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_6_4 (html)              : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_7_3 (html)              : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_9_2 (html)              : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_11_2_2 (html)           : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_14_1 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_14_4 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_14_5 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_14_6 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_14_7 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_15_2 (char)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_16_classification_procedure (html)             : type is now 'Many2one' ('char')
+safety_datasheet         / sds.datasheet                  / section_16_note (html)          : type is now 'Many2one' ('char')
+# DONE: pre-migration: updated the sds_sentence table, dropped the old column, create the new type column
+#       post-migration: linked the values to sds_sentence table.
+

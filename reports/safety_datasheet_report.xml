@@ -209,9 +209,9 @@
                     <div class="sds">
                         <h4 class="sds">2.3. Other Hazards</h4>
                         <p class="sds"> 
-                            PBT: <span t-out="doc.section_2_3_PBT" /><br/>
-                            vPvB: <span t-out="doc.section_2_3_vPvB" /><br/>
-                            <span t-out="doc.section_2_3_endocrine" /><br/>
+                            PBT: <span t-out="doc.section_2_3_PBT.name" /><br/>
+                            vPvB: <span t-out="doc.section_2_3_vPvB.name" /><br/>
+                            <span t-out="doc.section_2_3_endocrine.name" /><br/>
                             Other Hazards: <span class="sds" t-field="doc.section_2_3_OtherHazards" />
                         </p>
                         <t t-if="not doc.section_2_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
@@ -468,7 +468,7 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">6.4. Reference to other sections</h4>
-                        <span class="sds" t-out="doc.section_6_4" />
+                        <span class="sds" t-out="doc.section_6_4.name" />
                     </div>
                     <t t-if="not doc.section_6_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <span class="sds" t-out="doc.section_6_note" />
@@ -516,7 +516,7 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">7.3. Specific end use(s)</h4>
-                        <span class="sds" t-out="doc.section_7_3" />
+                        <span class="sds" t-out="doc.section_7_3.name" />
                     </div>
                     <t t-if="not doc.section_7_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <span class="sds" t-out="doc.section_7_note" />
@@ -908,7 +908,7 @@
                     <div class="sds">
                         <h4 class="sds">9.2. Other information</h4>
                         <t t-if="doc.section_9_2">
-                            <span class="sds" t-out="doc.section_9_2" />
+                            <span class="sds" t-out="doc.section_9_2.name" />
                         </t>
                         <t t-else="">
                             <p class="sds">No other information available.</p>
@@ -1240,7 +1240,9 @@
                                 </span>
                             </p>
                         <h5 class="sds">11.2.2. Other information</h5>
-                        <span class="sds" t-out="doc.section_11_2_2" />
+                        <p class="sds">
+                            <span t-out="doc.section_11_2_2.name" />
+                        </p>
                     </div>
                     <t t-if="not doc.section_11_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <span class="sds" t-out="doc.section_11_note" />
@@ -1460,7 +1462,7 @@
                                     <tr>
                                         <td style="text-align: left;">14.1. UN number or ID number</td>
                                         <td style="text-align: left;">
-                                            <span t-field="doc.section_14_1" />
+                                            <span t-field="doc.section_14_1.name" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -1663,19 +1665,19 @@
                                     <tr>
                                         <td style="text-align: left;">14.4. Packing group</td>
                                         <td style="text-align: left;">
-                                            <span t-field="doc.section_14_4" />
+                                            <span t-field="doc.section_14_4.name" />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="text-align: left;">14.5. Environmental hazards</td>
                                         <td style="text-align: left;">
-                                            <span t-field="doc.section_14_5" />
+                                            <span t-field="doc.section_14_5.name" />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="text-align: left;">14.6. Special precautions for user</td>
                                         <td style="text-align: left;">
-                                            <span t-field="doc.section_14_6" />
+                                            <span t-field="doc.section_14_6.name" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -1683,7 +1685,7 @@
                                             14.7. Maritime transport in bulk according to IMO instruments
                                         </td>
                                         <td style="text-align: left;">
-                                            <span t-field="doc.section_14_7" />
+                                            <span t-field="doc.section_14_7.name" />
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1736,7 +1738,7 @@
                     </div>
                     <div class="sds">
                         <h4 class="sds">15.2. Chemical safety assessment</h4>
-                        <p class="sds" t-field="doc.section_15_2" />
+                        <p class="sds" t-field="doc.section_15_2.name" />
                     </div>
                     <t t-if="not doc.section_15_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
                         <p class="sds">
@@ -1748,16 +1750,13 @@
                     <hr />
                     <div class="sds">
                         <h3 class="sds">SECTION 16: Other information</h3>
-                        <t
-                            t-if="not doc.section_16_classification_procedure=='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                        <div class="sds">
+                            <h4 class="sds">
+                                Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008</h4>
                             <div class="sds">
-                                <h4 class="sds">
-                                    Classification and procedure used to derive the classification for mixtures according to Regulation (EC) No 1272/2008</h4>
-                                <div class="sds">
-                                    <span t-out="doc.section_16_classification_procedure" />
-                                </div>
+                                <span t-out="doc.section_16_classification_procedure.name" />
                             </div>
-                        </t>
+                        </div>
                     </div>
                     <div class="sds">
                         <t t-if="doc.section_2_2_selector == True">
@@ -1864,11 +1863,11 @@
                         <h4 class="sds">Changes made to the previous version:</h4>
                         <span class="sds" t-field="doc.section_16_changes" />
                     </div>
-                    <t t-if="not doc.section_16_note =='&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
-                        <div class="sds mt16">
-                            <span class="sds" t-out="doc.section_16_note" />
-                        </div>
-                    </t>
+                    
+                    <div class="sds mt16">
+                        <span class="sds" t-out="doc.section_16_note.name" />
+                    </div>
+                   
                 </div>
                 <div id="end">
                     <h5 class="sds">End of safety datasheet</h5>

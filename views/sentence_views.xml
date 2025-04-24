@@ -22,6 +22,17 @@
 
     <!-- search views -->
 
+    <record id="sds_sentences_view_search" model="ir.ui.view">
+        <field name="name">sds.sentences.search</field>
+        <field name="model">sds.sentences</field>
+        <field name="arch" type="xml">
+            <search string="Sentences">
+                <field name="name" string="Sentence" />
+                <field name="category" string="Category" />
+            </search>
+        </field>
+    </record>
+
     <!-- actions opening views on models -->
     <record id="action_action_sentences" model="ir.actions.act_window">
         <field name="name">Action Sentences</field>

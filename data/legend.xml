@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <data>
+        <!-- Legend entries (Section 16) -->
+        <record id="legend_1" model="sds.legend">
+            <field name="acronym">EC No.</field>
+            <field name="description">European Community number</field>
+        </record>
+        <record id="legend_2" model="sds.legend">
+            <field name="acronym">GHS</field>
+            <field name="description">Globally Harmonized System</field>
+        </record>
+        <record id="legend_3" model="sds.legend">
+            <field name="acronym">IC50</field>
+            <field name="description">Half maximal inhibitory concentration</field>
+        </record>
+        <record id="legend_4" model="sds.legend">
+            <field name="acronym">IMO</field>
+            <field name="description">International Maritime Organization</field>
+        </record>
+        <record id="legend_5" model="sds.legend">
+            <field name="acronym">LC50</field>
+            <field name="description">Lethal Concentration to 50 % of a test population</field>
+        </record>
+        <record id="legend_6" model="sds.legend">
+            <field name="acronym">LD50</field>
+            <field name="description">Lethal Dose to 50% of a test population (Median Lethal Dose)</field>
+        </record>
+        <record id="legend_7" model="sds.legend">
+            <field name="acronym">OECD</field>
+            <field name="description">Organisation for Economic Co-operation and Development</field>
+        </record>
+        <record id="legend_8" model="sds.legend">
+            <field name="acronym">PBT</field>
+            <field name="description">Persistent, Bioaccumulative and Toxic substance</field>
+        </record>
+        <record id="legend_9" model="sds.legend">
+            <field name="acronym">REACH</field>
+            <field name="description">Regulation (EC) No 1907/2006 of the European Parliamentand of the Council concerning the
+Registration, Evaluation, Authorisation and Restriction of Chemicals</field>
+        </record>
+        <record id="legend_10" model="sds.legend">
+            <field name="acronym">SDS</field>
+            <field name="description">Safety Data Sheet</field>
+        </record>
+        <record id="legend_11" model="sds.legend">
+            <field name="acronym">TWA</field>
+            <field name="description">Time Weighted Average</field>
+        </record>
+        <record id="legend_12" model="sds.legend">
+            <field name="acronym">UN</field>
+            <field name="description">United Nations</field>
+        </record>
+        <record id="legend_13" model="sds.legend">
+            <field name="acronym">VOC</field>
+            <field name="description">Volatile Organic Compounds</field>
+        </record>
+        <record id="legend_14" model="sds.legend">
+            <field name="acronym">vPvB</field>
+            <field name="description">Very Persistent and Very Bioaccumulative</field>
+        </record>
+        <record id="legend_15" model="sds.legend">
+            <field name="acronym">ECHA</field>
+            <field name="description">European Chemicals Agency</field>
+        </record>
+        <record id="legend_16" model="sds.legend">
+            <field name="acronym">EWC</field>
+            <field name="description">European Waste Catalogue</field>
+        </record>
+        <record id="legend_17" model="sds.legend">
+            <field name="acronym">CLP</field>
+            <field name="description">Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures</field>
+        </record>
+        <record id="legend_18" model="sds.legend">
+            <field name="acronym">NOAEL</field>
+            <field name="description">No Observed Adverse Effect Level</field>
+        </record>
+        <record id="legend_19" model="sds.legend">
+            <field name="acronym">UFI</field>
+            <field name="description">Unique Formula Identifier</field>
+        </record>
+        <record id="legend_20" model="sds.legend">
+            <field name="acronym">CAS No.</field>
+            <field name="description">Chemical Abstracts Service (CAS) Registry Number</field>
+        </record>
+        <record id="legend_21" model="sds.legend">
+            <field name="acronym">IUPAC</field>
+            <field name="description">International Union of Pure and Applied Chemistry</field>
+        </record>
+
+    </data>
+</odoo>

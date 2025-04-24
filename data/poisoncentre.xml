@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2024 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+see: https://echa.europa.eu/documents/10162/2322249/emergency_phone_numbers_en.pdf/d911af43-4bcf-9371-a59d-a20736d91e7d?t=1628515444598
+-->
+
+<odoo>
+    <data>
+        <record id="PC_Austria" model="sds.poison.centre">
+            <field name="name"><![CDATA[
+                <p>Austria - Österreich | Vergiftungsinformationszentrale (VIZ)<br/>
+                Notruf 0-24 Uhr: 01 406 43 43<br>
+                <a href="https://goeg.at/Vergiftungsinformation">goeg.at/Vergiftungsinformation</a></p>
+                ]]></field>
+            <field name="country">Austria</field>
+        </record>          
+       <record id="PC_Belgium" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Belgium - België | Belgisch Antigifcentrum<br/>
+                070 245 245 (elke dag, 24 op 24 uur)<br/>
+                <a href="https://www.poisoncentre.be/">www.poisoncentre.be</a></p>
+                ]]>
+            </field>
+            <field name="country">Belgium</field>
+        </record>
+        <record id="PC_Czech" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Czech Republic - Česká republika | Toxikologické informační středisko<br/>
+                Telefon: +420 224 919 293, +420 224 915 402<br/>
+                <a href="http://www.tis-cz.cz/">www.tis-cz.cz</a></p>
+                ]]>
+            </field>
+            <field name="country">Czech Republic</field>
+        </record> 
+        <record id="PC_Finland" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Finland - Suomi | Myrkytystietokeskus<br/>
+                Puhelin: 0800 147 111, 09 471 977<br/>
+                <a href="https://www.hus.fi/potilaalle/sairaalat-ja-toimipisteet/myrkytystietokeskus">https://www.hus.fi/potilaalle/sairaalat-ja-toimipisteet/myrkytystietokeskus</a></p>
+                ]]>
+            </field>
+            <field name="country">Finland</field>
+        </record>
+        <record id="PC_France" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>France | Centre AntiPoison et de ToxicoVigilance<br/>
+                numéro ORFILA : + 33 (0)1 45 42 59 59<br/>
+                <a href="https://reach-info.ineris.fr/numero-orfila">https://reach-info.ineris.fr/numero-orfila</a></p>
+                ]]>
+            </field>
+            <field name="country">France</field>
+        </record> 
+        <!-- 
+        <record id="PC_Germany" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+             Poison control centers in Germany require a contract and the payment of a fee 
+                ]]>
+            </field>
+            <field name="country">Germany</field>
+        </record>    
+        -->  
+        <record id="PC_Hungary" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Hungary - Magyarország | +36-80-201-199</p>
+                ]]>
+            </field>
+            <field name="country">Hungary</field>
+        </record> 
+        <record id="PC_Italy" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Italy - Italia | Verona Integrated Hospital Company: 800 011 858<br/>
+                Full list at: <a href="https://preparatipericolosi.iss.it/">preparatipericolosi.iss.it</a>
+                </p>
+                ]]>
+            </field>
+            <field name="country">Italy</field>
+        </record> 
+        <record id="PC_Portugal" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Portugal | CIAV - Centro de Informação Antivenenos<br/>
+                800 250 250<br/>
+                <a href="https://www.inem.pt/category/servicos/centro-de-informacao-antivenenos/">https://www.inem.pt/category/servicos/centro-de-informacao-antivenenos</a>
+                </p>
+                ]]>
+            </field>
+            <field name="country">Portugal</field>
+        </record>
+        <record id="PC_Romania" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Romania - România | S.C.U.B. - Spitaulu Clinic de Urgență Bucureßști<br/>
+                021.599.23.00<br/>
+                <a href="https://www.urgentafloreasca.ro/#!/Ati2">https://www.urgentafloreasca.ro/#!/Ati2</a>
+                </p>
+                ]]>
+            </field>
+            <field name="country">Romania</field>
+        </record>
+        <record id="PC_Slovenia" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Slovenia - Slovenija | Telefonska številka: 112</p>
+                ]]>
+            </field>
+            <field name="country">Slovenia</field>
+        </record>
+        <record id="PC_Spain" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Spain - España | Servicio de Información Toxicológica (SIT)<br/>
+                + 34 91 562 04 20 <br/>
+                <a href="https://www.mjusticia.gob.es/es/institucional/organismos/instituto-nacional/servicios/servicio-informacion">https://www.mjusticia.gob.es/es/institucional/organismos/instituto-nacional/servicios/servicio-informacion</a>
+                </p>
+                ]]>
+            </field>
+            <field name="country">Spain</field>
+        </record>
+        <record id="PC_Sweden" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>Sweden - Sverige | 112 - begär Giftinformation
+                </p>
+                ]]>
+            </field>
+            <field name="country">Sweden</field>
+        </record>
+        <record id="PC_UK" model="sds.poison.centre">
+            <field name="name">
+                <![CDATA[
+                <p>United Kingdom | Call NHS 111 <br/>
+                111 online: <a href="http://111.nhs.uk/">111.nhs.uk/</a>
+                </p>
+                ]]>
+            </field>
+            <field name="country">United Kingdom</field>
+        </record>
+    </data>
+</odoo>
