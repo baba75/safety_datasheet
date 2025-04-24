@@ -33,17 +33,12 @@ h5.sds {
 h6.sds {
     font-size: 10px;
     font-weight: bold;
-    /* padding-left: 30px; */
     margin-top: 10px;
     display: inline;
 }
 
 div.subheader {
     padding-left: 30px;
-}
-
-h6.sds+p {
-    /* padding-left: 30px; */
 }
 
 p.sds,

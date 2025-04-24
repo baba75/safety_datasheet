@@ -29,7 +29,7 @@
                 <field name="name" />
                 <field name="description" />
                 <field name="category" />
-                <field name="pictogram" widget="image" />
+                <field name="pictogram" widget="image" options='{"size": [40, 40]}'/>
             </tree>
         </field>
     </record>

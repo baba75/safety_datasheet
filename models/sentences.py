@@ -4,13 +4,18 @@
 
 from odoo import models, fields
 
+# TODO: Sentences -> Statements
+
 class SdsSentences(models.Model):
 
     _name = "sds.sentences"
     _description = "Action Sentences"
     _order = "sequence"
 
-    SECTION = [('general', 'General'), ('inhalation', 'Inhalation'), ('skin', 'Skin contact'),
+    SECTION = [('ref_section','Ref. other sections'),('end_use','Spec. end use'),('other_info','Other info'),
+               ('transport','Transport'),('assessment','Chemical assessment'),('classification','Classification procedure'),
+               ('disclaimer','Disclaimer'),
+               ('general', 'General'), ('inhalation', 'Inhalation'), ('skin', 'Skin contact'),
                ('eye', 'Eye contact'), ('ingestion', 'Ingestion'), ('extinguishing', 'Extinguishing'),
                ('fire_hazards', 'Fire special hazards'), ('fire_fight_advice', 'Advice for Firefighters'),
                ('protective', 'Personal equipment'), ('env_precaution', 'Environmental precautions'),
