@@ -35,7 +35,7 @@
                                     <field name="section_1_1" string="1.1 Product Identifier" />
                                     <field name="section_1_1_UFI" string="UFI" />
                                     <field name="section_1_2" string="1.2 Identified uses" />
-                                    <field name="section_1_3" string="1.3 SDS Supplier" type="html" options="{'codeview': True}"/>
+                                    <field name="section_1_3" string="1.3 SDS Supplier" />
                                     <field name="section_1_3_distributor_selector" string="Insert distributor" />
                                     <field name="section_1_3_info" string="Email of the person in charge"/>
                                 </group>
@@ -46,7 +46,7 @@
                                             Poison Centres</span>
                                 </group>
                                 <group string="SECTION 1: free notes">
-                                    <field name="section_1_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_1_note" />
                                 </group>
                             </form>
                         </page>
@@ -94,14 +94,14 @@
                                     </group>
                                 </group>
                                 <group>
-                                    <field name="section_2_2_Additional" type="html" options="{'codeview': True}" />
+                                    <field name="section_2_2_Additional" />
                                     <field name="section_2_3_PBT" />
                                     <field name="section_2_3_vPvB" />
                                     <field name="section_2_3_endocrine" />
                                     <field name="section_2_3_OtherHazards" />
                                 </group>
                                 <group string="SECTION 2: free notes">
-                                    <field name="section_2_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_2_note" />
                                 </group>
                             </form>
                         </page>
@@ -139,7 +139,7 @@
                                     </group>
                                 </group>
                                 <group string="SECTION 3: free notes">
-                                    <field name="section_3_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_3_note" />
                                 </group>
                             </form>
                         </page>
@@ -180,11 +180,11 @@
                                     </field>
                                 </group>
                                 <group>
-                                    <field name="section_4_2" type="html" options="{'codeview': True}"/>
-                                    <field name="section_4_3" type="html" options="{'codeview': True}"/>
+                                    <field name="section_4_2" />
+                                    <field name="section_4_3" />
                                 </group>
                                 <group string="SECTION 4: free notes">
-                                    <field name="section_4_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_4_note" />
                                 </group>
                             </form>
                         </page>
@@ -209,7 +209,7 @@
                                     </field>
                                 </group>
                                 <group string="SECTION 5: free notes">
-                                    <field name="section_5_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_5_note" />
                                 </group>
                             </form>
                         </page>
@@ -242,10 +242,10 @@
                                             <field name="name" />
                                         </tree>
                                     </field>
-                                    <field name="section_6_4" />
+                                    <field name="section_6_4" widget="html" />
                                 </group>
                                 <group string="SECTION 6: free notes">
-                                    <field name="section_6_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_6_note" />
                                 </group>
                             </form>
                         </page>
@@ -278,10 +278,10 @@
                                             <field name="name" />
                                         </tree>
                                     </field>
-                                    <field name="section_7_3" />
+                                    <field name="section_7_3" widget="html" />
                                 </group>
                                 <group string="SECTION 7: free notes">
-                                    <field name="section_7_note" type="html" options="{'codeview': True}" />
+                                    <field name="section_7_note" />
                                 </group>
                             </form>
                         </page>
@@ -293,17 +293,17 @@
                                     <field name="section_8_1_tlv_selector_ing" />
                                     <field name="section_8_1_tlv_selector" />
                                     <div colspan="2" attrs="{'invisible': [('section_8_1_tlv_selector', '=', False)]}">
-                                        <field name="section_8_1_tlv" type="html" options="{'codeview': True}" />
+                                        <field name="section_8_1_tlv" widget="html" />
                                     </div>
                                     <field name="section_8_1_dnel_selector_ing" />
                                     <field name="section_8_1_dnel_selector" />
                                     <div colspan="2" attrs="{'invisible': [('section_8_1_dnel_selector', '=', False)]}" class="oe_edit_only">
-                                        <field name="section_8_1_dnel" type="html" options="{'codeview': True}"/>
+                                        <field name="section_8_1_dnel" />
                                     </div>
                                     <field name="section_8_1_pnec_selector_ing" />
                                     <field name="section_8_1_pnec_selector" />
                                     <div colspan="2" attrs="{'invisible': [('section_8_1_pnec_selector', '=', False)]}">
-                                        <field name="section_8_1_pnec" type="html" options="{'codeview': True}"/>
+                                        <field name="section_8_1_pnec" />
                                     </div>
                                 </group>
                                 <group>
@@ -351,7 +351,7 @@
                                     </field>
                                 </group>
                                 <group string="SECTION 8: free notes">
-                                    <field name="section_8_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_8_note" />
                                 </group>
                             </form>
                         </page>
@@ -369,10 +369,10 @@
                                             <field name="value" />
                                         </tree>
                                     </field>
-                                    <field name="section_9_2" />
+                                    <field name="section_9_2"/>
                                 </group>
                                 <group string="SECTION 9: free notes">
-                                    <field name="section_9_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_9_note" />
                                 </group>
                             </form>
                         </page>
@@ -420,7 +420,7 @@
                                     </field>
                                 </group>
                                 <group string="SECTION 10: free notes">
-                                    <field name="section_10_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_10_note" />
                                 </group>
                             </form>
                         </page>
@@ -451,7 +451,7 @@
                                     <field name="section_11_1_1_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_1_selector', '=', False)]}">
-                                    <field name="section_11_1_1_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_1_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_2" widget="many2many">
@@ -464,7 +464,7 @@
                                     <field name="section_11_1_2_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_2_selector', '=', False)]}">
-                                    <field name="section_11_1_2_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_2_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_3" widget="many2many">
@@ -477,7 +477,7 @@
                                     <field name="section_11_1_3_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_3_selector', '=', False)]}">
-                                    <field name="section_11_1_3_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_3_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_4" widget="many2many">
@@ -490,7 +490,7 @@
                                     <field name="section_11_1_4_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_4_selector', '=', False)]}">
-                                    <field name="section_11_1_4_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_4_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_5" widget="many2many">
@@ -503,7 +503,7 @@
                                     <field name="section_11_1_5_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_5_selector', '=', False)]}">
-                                    <field name="section_11_1_5_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_5_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_6" widget="many2many">
@@ -516,7 +516,7 @@
                                     <field name="section_11_1_6_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_6_selector', '=', False)]}">
-                                    <field name="section_11_1_6_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_6_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_7" widget="many2many">
@@ -529,7 +529,7 @@
                                     <field name="section_11_1_7_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_7_selector', '=', False)]}">
-                                    <field name="section_11_1_7_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_7_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_8" widget="many2many">
@@ -542,7 +542,7 @@
                                     <field name="section_11_1_8_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_8_selector', '=', False)]}">
-                                    <field name="section_11_1_8_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_8_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_9" widget="many2many">
@@ -555,7 +555,7 @@
                                     <field name="section_11_1_9_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_9_selector', '=', False)]}">
-                                    <field name="section_11_1_9_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_9_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_1_10" widget="many2many">
@@ -568,7 +568,7 @@
                                     <field name="section_11_1_10_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_11_1_10_selector', '=', False)]}">
-                                    <field name="section_11_1_10_text" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_1_10_text" />
                                 </group>
                                 <group>
                                     <field name="section_11_2_1" widget="many2many">
@@ -577,10 +577,10 @@
                                             <field name="name" />
                                         </tree>
                                     </field>
-                                    <field name="section_11_2_2" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_2_2"/>
                                 </group>
                                 <group string="SECTION 11: free notes">
-                                    <field name="section_11_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_11_note" />
                                 </group>
                             </form>
                         </page>
@@ -599,7 +599,7 @@
                                     <field name="section_12_1_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_1_selector', '=', False)]}">
-                                    <field name="section_12_1_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_1_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_2" widget="many2many">
@@ -612,7 +612,7 @@
                                     <field name="section_12_2_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_2_selector', '=', False)]}">
-                                    <field name="section_12_2_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_2_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_3" widget="many2many">
@@ -625,7 +625,7 @@
                                     <field name="section_12_3_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_3_selector', '=', False)]}">
-                                    <field name="section_12_3_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_3_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_4" widget="many2many">
@@ -638,7 +638,7 @@
                                     <field name="section_12_4_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_4_selector', '=', False)]}">
-                                    <field name="section_12_4_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_4_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_5" widget="many2many">
@@ -651,7 +651,7 @@
                                     <field name="section_12_5_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_5_selector', '=', False)]}">
-                                    <field name="section_12_5_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_5_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_6" widget="many2many">
@@ -664,7 +664,7 @@
                                     <field name="section_12_6_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_6_selector', '=', False)]}">
-                                    <field name="section_12_6_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_6_text" widget="html" />
                                 </group>
                                 <group>
                                     <field name="section_12_7" widget="many2many">
@@ -677,12 +677,12 @@
                                     <field name="section_12_7_component" widget="checkbox" />
                                 </group>
                                 <group attrs="{'invisible': [('section_12_7_selector', '=', False)]}">
-                                    <field name="section_12_7_text" type="html" options="{'codeview': True}" />
+                                    <field name="section_12_7_text" widget="html" />
                                 </group>
                                 <group>
                                 </group>
                                 <group string="SECTION 12: free notes">
-                                    <field name="section_12_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_12_note" />
                                 </group>
                             </form>
                         </page>
@@ -699,7 +699,7 @@
                                     </field>
                                 </group>
                                 <group string="SECTION 13: free notes">
-                                    <field name="section_13_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_13_note" />
                                 </group>
                             </form>
                         </page>
@@ -716,21 +716,21 @@
                                             <field name="section_14_2" />
                                             <field name="section_14_3" />
                                             <field name="section_14_3_adr_pictograms" />
-                                            <field name="section_14_3_adr_notes" type="html" options="{'codeview': True}" />
+                                            <field name="section_14_3_adr_notes" />
                                         </group>
                                         <!-- IMDG -->
                                         <group string="IMDG" name="imdg">
                                             <field name="section_14_2_imdg" />
                                             <field name="section_14_3_imdg" />
                                             <field name="section_14_3_imdg_pictograms" />
-                                            <field name="section_14_3_imdg_notes" type="html" options="{'codeview': True}" />
+                                            <field name="section_14_3_imdg_notes" />
                                         </group>
                                         <!-- IATA -->
                                         <group string="IATA / ICAO" name="iata">
                                             <field name="section_14_2_iata" />
                                             <field name="section_14_3_iata" />
                                             <field name="section_14_3_iata_pictograms" />
-                                            <field name="section_14_3_iata_notes" type="html" options="{'codeview': True}"/>
+                                            <field name="section_14_3_iata_notes" />
                                         </group>
                                     </div>
                                     <field name="section_14_4" />
@@ -739,7 +739,7 @@
                                     <field name="section_14_7" />
                                 </group>
                                 <group string="SECTION 14: free notes">
-                                    <field name="section_14_note" type="html" options="{'codeview': True}"/>
+                                    <field name="section_14_note" />
                                 </group>
                             </form>
                         </page>
@@ -756,11 +756,11 @@
                                     </field>
                                 </group>
                                 <group>
-                                    <field name="section_15_1" type="html" options="{'codeview': True}" />
+                                    <field name="section_15_1" />
                                     <field name="section_15_2" />
                                 </group>
                                 <group string="SECTION 15: free notes">
-                                    <field name="section_15_note" type="html" options="{'codeview': True}" />
+                                    <field name="section_15_note" />
                                 </group>
                             </form>
                         </page>
@@ -769,14 +769,14 @@
                         <page string="16" name="section16">
                             <form>
                                 <group string="Section 16: Other information" name="other">
-                                    <field name="section_16_classification_procedure"/>
+                                    <field name="section_16_classification_procedure" />
                                     <field class="ml32" name="section_16_legend" />
                                     <field name="section_16_bibliography_url" widget="checkbox" />
                                     <field class="ml32" name="section_16_bibliography" />
                                     <field name="section_16_changes" />
                                 </group>
                                 <group string="SECTION 16: free notes">
-                                    <field class="ml32" name="section_16_note"/>
+                                    <field class="ml32" name="section_16_note" />
                                 </group>
                             </form>
                         </page>
