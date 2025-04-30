@@ -129,28 +129,28 @@
                         <field name="toxicological" />
                     </group>
                     <group name="Toxicological information" attrs="{'invisible': [('toxicological', '=', False)]}">
-                        <field name="acute_summary" />
-                        <field name="skin_corrosion" />
-                        <field name="eye_damage" />
-                        <field name="sensitization" />
-                        <field name="mutagenity" />
-                        <field name="carcinogenicity" />
-                        <field name="reproductive_toxicity" />
-                        <field name="stot_se" />
-                        <field name="stot_re" />
-                        <field name="aspiration_hazard" />
+                        <field name="acute_summary" type="html" options="{'codeview': True}"/>
+                        <field name="skin_corrosion" type="html" options="{'codeview': True}"/>
+                        <field name="eye_damage" type="html" options="{'codeview': True}"/>
+                        <field name="sensitization" type="html" options="{'codeview': True}"/>
+                        <field name="mutagenity" type="html" options="{'codeview': True}"/>
+                        <field name="carcinogenicity" type="html" options="{'codeview': True}"/>
+                        <field name="reproductive_toxicity" type="html" options="{'codeview': True}"/>
+                        <field name="stot_se" type="html" options="{'codeview': True}"/>
+                        <field name="stot_re" type="html" options="{'codeview': True}"/>
+                        <field name="aspiration_hazard" type="html" options="{'codeview': True}"/>
                     </group>
                     <group>
                         <field name="ecological" />
                     </group>
                     <group name="Ecological information" attrs="{'invisible': [('ecological', '=', False)]}">
-                        <field name="toxicity_detail" />
-                        <field name="degradability" />
-                        <field name="bioaccumulation" />
-                        <field name="mobility" />
-                        <field name="pbt_vPvB" />
-                        <field name="endocrine" />
-                        <field name="other_effects" />
+                        <field name="toxicity_detail" type="html" options="{'codeview': True}"/>
+                        <field name="degradability" type="html" options="{'codeview': True}"/>
+                        <field name="bioaccumulation" type="html" options="{'codeview': True}"/>
+                        <field name="mobility" type="html" options="{'codeview': True}"/>
+                        <field name="pbt_vPvB" type="html" options="{'codeview': True}"/>
+                        <field name="endocrine" type="html" options="{'codeview': True}"/>
+                        <field name="other_effects" type="html" options="{'codeview': True}"/>
                     </group>
                 </sheet>
             </form>

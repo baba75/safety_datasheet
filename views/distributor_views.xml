@@ -11,7 +11,7 @@
             <form string="National Distributor">
                 <sheet>
                     <group>
-                        <field name="name" />
+                        <field name="name" type="html" options="{'codeview': True}"/>
                         <field name="country" />
                     </group>
                 </sheet>

@@ -1,0 +1,2 @@
+---Fields in module 'safety_datasheet'---
+safety_datasheet         / sds.regulation.criteria        / sequence (integer)      : NEW hasdefault: default
