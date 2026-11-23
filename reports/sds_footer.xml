@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2023 Alberto Carollo
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+  Safety data sheet footer: product identifier + page number.
+  The company header is kept; the company footer is hidden only when
+  `sds_custom_footer` is set (see template safety_datasheet.printpdf).
+  High priority so it applies after other modules that replace the footer
+  (e.g. ecobeton_report_ita).
+-->
+<odoo>
+    <template id="sds_footer">
+        <div t-attf-class="footer o_company_#{company.id}_layout sds_footer">
+            <div class="text-center" style="border-top: 1px solid #999; padding-top: 4px; font-size: 11px;">
+                <div t-out="doc.with_context(lang=doc_lang).section_1_1"/>
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                    <span>Page:</span> <span class="page"/> / <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="sds_footer_standard" inherit_id="web.external_layout_standard" priority="99">
+        <xpath expr="//div[contains(@t-attf-class, 'o_standard_footer')]" position="attributes">
+            <attribute name="t-if">not sds_custom_footer</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'o_standard_footer')]" position="after">
+            <t t-if="sds_custom_footer" t-call="safety_datasheet.sds_footer"/>
+        </xpath>
+    </template>
+
+    <template id="sds_footer_boxed" inherit_id="web.external_layout_boxed" priority="99">
+        <xpath expr="//div[contains(@t-attf-class, 'o_boxed_footer')]" position="attributes">
+            <attribute name="t-if">not sds_custom_footer</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'o_boxed_footer')]" position="after">
+            <t t-if="sds_custom_footer" t-call="safety_datasheet.sds_footer"/>
+        </xpath>
+    </template>
+
+    <template id="sds_footer_bold" inherit_id="web.external_layout_bold" priority="99">
+        <xpath expr="//div[contains(@t-attf-class, 'o_clean_footer')]" position="attributes">
+            <attribute name="t-if">not sds_custom_footer</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'o_clean_footer')]" position="after">
+            <t t-if="sds_custom_footer" t-call="safety_datasheet.sds_footer"/>
+        </xpath>
+    </template>
+
+    <template id="sds_footer_striped" inherit_id="web.external_layout_striped" priority="99">
+        <xpath expr="//div[contains(@t-attf-class, 'o_background_footer')]" position="attributes">
+            <attribute name="t-if">not sds_custom_footer</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'o_background_footer')]" position="after">
+            <t t-if="sds_custom_footer" t-call="safety_datasheet.sds_footer"/>
+        </xpath>
+    </template>
+</odoo>

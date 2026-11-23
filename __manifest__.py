@@ -4,7 +4,7 @@
 
 {
     'name': 'Safety Data Sheets',
-    'version': '16.0.1.1.1',
+    'version': '16.0.1.1.3',
     'category': 'Technical Documents',
     'summary': """
         Product Safety Data Sheets""",
@@ -31,6 +31,7 @@
         'views/sentence_views.xml',
         'views/safety_datasheet_menus.xml',        
         'reports/safety_datasheet_report.xml',
+        'reports/sds_footer.xml',
         'data/pictogram_data.xml',
         'data/precautionary_statement_data.xml',
         'data/hazard_class_data.xml',

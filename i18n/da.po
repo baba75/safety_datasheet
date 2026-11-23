@@ -12860,3 +12860,8 @@ msgstr "meget persistente og meget bioakkumulerende stoffer (vPvB-stoffer)"
 #: model_terms:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
 msgid "yes<br>"
 msgstr "ja<br>"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.sds_footer
+msgid "<span>Page:</span> <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "<span>Side:</span> <span class=\"page\"/> / <span class=\"topage\"/>"

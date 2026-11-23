@@ -12878,3 +12878,8 @@ msgstr "nagyon perzisztens és nagyon bioakkumulatív anyagok (vPvB-anyagok)"
 #: model_terms:sds.chemical.substance,wrk_exp_tlv:safety_datasheet.EC252-104-2
 msgid "yes<br>"
 msgstr "igen<br>"
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.sds_footer
+msgid "<span>Page:</span> <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "<span>Oldal:</span> <span class=\"page\"/> / <span class=\"topage\"/>"

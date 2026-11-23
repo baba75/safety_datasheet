@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20260918\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-11 16:46+0000\n"
-"PO-Revision-Date: 2026-11-11 16:46+0000\n"
+"POT-Creation-Date: 2026-11-12 11:12+0000\n"
+"PO-Revision-Date: 2026-11-12 11:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1507,6 +1507,11 @@ msgstr ""
 #. module: safety_datasheet
 #: model_terms:ir.ui.view,arch_db:safety_datasheet.printpdf
 msgid "<span>First release</span>"
+msgstr ""
+
+#. module: safety_datasheet
+#: model_terms:ir.ui.view,arch_db:safety_datasheet.sds_footer
+msgid "<span>Page:</span> <span class=\"page\"/> / <span class=\"topage\"/>"
 msgstr ""
 
 #. module: safety_datasheet

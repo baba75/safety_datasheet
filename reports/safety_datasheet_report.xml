@@ -19,6 +19,8 @@
     </record>
 
     <template id="printpdf" name="printpdf">
+        <!-- replaces the company footer with product identifier + page number (see reports/sds_footer.xml) -->
+        <t t-set="sds_custom_footer" t-value="True"/>
         <t t-call="web.external_layout">
             <t t-set="doc" t-value="doc.with_context(lang=doc_lang)" />
             <div id="container" style="font-family: sans-serif; font-size:11px;">
