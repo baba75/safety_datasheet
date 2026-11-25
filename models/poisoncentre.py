@@ -22,9 +22,7 @@ class SdsPoisonCentre(models.Model):
 
     @api.model
     def _default_emergency_phone(self):
-        company = self.env.company
-        default_phone = '<p>' + company.name + ' : ' + company.phone + '</p>'
-        return default_phone
+        return self.env['sds.datasheet']._company_phone_html()
    
     active = fields.Boolean(default=True)
     

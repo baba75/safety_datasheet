@@ -63,27 +63,19 @@ class SelectLangRecap(models.AbstractModel):
         
         # Here we inject the emergency telephone number (point 1.4) specific for the country
         pcenter = self.env['sds.poison.centre'].search([('country','=',country)])
+        sds_model = self.env['sds.datasheet']
         if pcenter:
             doc_et = pcenter[0].with_context(lang=lang).name
         else:
-            company = self.env.company
-            doc_et = '<p>' + company.name + ' : ' + company.phone + '</p>'   
-        
+            doc_et = sds_model._company_phone_html()
+
         # Here we inject the National Distributor
         distributor = self.env['sds.distributor'].search([('country','=',country)])
         if distributor:
             doc_dist = distributor[0].name
         else:
-            company = self.env.company
-            if(company.street and company.zip and company.city):
-                doc_dist = '<p>' + company.name + '<br/>' + company.street
-                doc_dist += '<br/>' + company.zip + ' ' + company.city + ' ' + company.state_id.name
-                doc_dist += '<br/>' + company.country_id.name 
-                doc_dist += '<br/> Phone: ' + company.phone
-                doc_dist += '<br/> Email: ' + company.email
-                doc_dist += '</p>'
-            else:
-                doc_dist = '<p><br/></p>'
+            # Markup, otherwise t-out escapes it and the tags show up in the PDF
+            doc_dist = sds_model._company_address_html()
 
         return {
             'doc_ids': data['ids'],

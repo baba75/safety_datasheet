@@ -2,6 +2,8 @@
 # Copyright 2023 Alberto Carollo
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+from markupsafe import Markup
+
 from odoo import models, fields, api, _
 
 COUNTRY = [('Austria','Austria'),('Belgium','Belgium'),('Bulgaria','Bulgaria'),
@@ -70,18 +72,36 @@ class SdsDatasheet(models.Model):
         self.active = True 
 
     @api.model
+    def _company_address_html(self, company=None):
+        """Return the company contact block as safe HTML (Markup), or an empty
+        Markup if the address is incomplete. Values are escaped and missing
+        optional fields (state, country, phone, email) are skipped."""
+        company = company or self.env.company
+        if not (company.street and company.zip and company.city):
+            return Markup('')
+        lines = [
+            company.name,
+            company.street,
+            ' '.join(filter(None, [company.zip, company.city, company.state_id.name])),
+        ]
+        if company.country_id:
+            lines.append(company.country_id.name)
+        if company.phone:
+            lines.append('Phone: %s' % company.phone)
+        if company.email:
+            lines.append('Email: %s' % company.email)
+        return Markup('<p>%s</p>') % Markup('<br/>').join(lines)
+
+    @api.model
+    def _company_phone_html(self, company=None):
+        """Return '<p>Company : phone</p>' as safe HTML (Markup)."""
+        company = company or self.env.company
+        return Markup('<p>%s : %s</p>') % (company.name, company.phone or '')
+
+    @api.model
     def _default_company(self):
-        company = self.env.company
-        if(company.street and company.zip and company.city):
-            result = '<p>' + company.name + '<br/>' + company.street
-            result += '<br/>' + company.zip + ' ' + company.city + ' ' + company.state_id.name
-            result += '<br/>' + company.country_id.name 
-            result += '<br/> Phone: ' + company.phone
-            result += '<br/> Email: ' + company.email
-            result += '</p>'
-        else:
-            result = '<p>' + company.name + '<br/>' + 'Insert you company full adrees here</p>'
-        return result
+        return self._company_address_html() or (
+            Markup('<p>%s<br/>Insert your company full address here</p>') % self.env.company.name)
 
     name = fields.Char(string='Name', required=True, index=True, default=lambda self: _('New SDS'))
     product_id = fields.Many2one('product.template', 'Product', required=True, copy=True)
