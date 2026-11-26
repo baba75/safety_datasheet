@@ -1867,7 +1867,8 @@
                     </div>
                     
                     <div class="sds mt16">
-                        <span class="sds" t-out="doc.section_16_note.name" />
+                        <!-- plain text: keep the line breaks between the disclaimer paragraphs -->
+                        <span class="sds" style="white-space: pre-line;" t-out="doc.section_16_note.name" />
                     </div>
                    
                 </div>
