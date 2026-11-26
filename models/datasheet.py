@@ -445,7 +445,7 @@ class SdsDatasheet(models.Model):
                                     domain="[('category', '=', 'decomposition')]",
                                     string='Hazardous decomposition products',
                                     context={'default_category': 'decomposition'})
-    section_10_note = fields.Html(string="Section 10 Notes")
+    section_10_note = fields.Html(string="Section 10 Notes", translate=True)
 
     # Section 11: Toxicological information
     section_11_1_1_oral = fields.Many2many('sds.sentences', relation="sds_acute_oral_toxicity_statement_rel",
